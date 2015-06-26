@@ -7,7 +7,8 @@ baseurl: ""
 url: "http://marclittlemore.com"
 twitter_username: marclittlemore
 github_username:  MarcL
-facebook_username: marcdavidlittlemore
+instagram_username: marclittlemore
+soundcloud_username: djcruze
 
 # Build settings
 markdown: kramdown
