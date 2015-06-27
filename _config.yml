@@ -2,7 +2,7 @@
 title: Marc Littlemore
 header-img: img/home-bg.jpg
 email: hello@marclitlemore.com
-description: "Description goes here"
+description: "Marc Littlemore writes here."
 baseurl: ""
 url: "http://marclittlemore.com"
 twitter_username: marclittlemore
@@ -13,6 +13,5 @@ soundcloud_username: djcruze
 # Build settings
 markdown: kramdown
 highlighter: pygments
-permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
