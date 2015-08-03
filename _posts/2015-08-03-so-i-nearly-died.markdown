@@ -7,11 +7,19 @@ permalink: /posts/so-i-nearly-died/
 header-img: img/posts/hospital.jpg
 ---
 
-So last year was an odd one. One day I was feeling fine, then next I had the classic symptoms of a stomach bug. "Nothing to worry about", I thought. But then it became worse and I wasn't just "a bit poorly", as your mum would say, more like "I can't believe I'm still here!"
+June 2014 was a somewhat strange month. One day I was "a bit poorly", as your mum would say. The next I was being kept alive with a combination of ventilators and a cocktail of prescription drugs.
 
 Here is my story.
 
+## A Quick Trip To A&E
+
 In June 2014, completely out of the blue, I became ill and it transpired that I had contracted streptococcus group A. This sent me into septic shock and in the space of a couple of days, I ended up being very close to death. Due to the wonderful doctors and nurses in the intensive care unit at Warrington Hospital, I managed to pull through and thankfully survived. It's been a whole year of learning to breathe, eat and walk again. In total I've had four operations to help me to deal with the aftermath of the illness. My recovery is incredibly hard at times but I've always thought of myself as a positive person, even when the going gets tough, and I try hard to never let it get me down.
+
+## Waking Up In Intensive Care
+
+## Learning To Walk
+
+## The Aftermath
 
 Prior to my illness, I had planned and was training for, the Warrington Half Marathon which took place in September 2014. As I lay in the intensive care bed, having lost most of my muscle mass and being unable to move, having been intubated and put on a ventilator which meant I was unable to speak, I kept thinking, "Will I be fit enough to run the half marathon?" Once I learnt to breathe again and was able to speak, I would often ask the nurses, in all seriousness, whether I would be able to run it. The observant amongst you will realise that the answer was a resounding "no" but it didn't stop it from being an odd goal for an intensive care patient to have. Ultimately I came to realise that it was unachievable after being as ill as I had been. In fact, I wasn't 100% sure at that point if I would ever walk again.
 
