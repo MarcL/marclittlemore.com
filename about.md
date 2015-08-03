@@ -3,6 +3,7 @@ layout: page
 title: About
 description: Things and stuff about me.
 permalink: /about/
+header-img: img/about-bg.jpg
 ---
 
 I'm Marc Littlemore. I'm a software engineer, ex-video games programmer, DJ, house music producer and technology tinkerer.
