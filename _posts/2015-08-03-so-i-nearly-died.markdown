@@ -4,6 +4,7 @@ title:  "So I Nearly Died..."
 subtitle: "But thankfully didn't."
 date:   2015-08-03 22:00:00
 permalink: /posts/so-i-nearly-died/
+header-img: img/posts/hospital.jpg
 ---
 
 So last year was an odd one. One day I was feeling fine, then next I had the classic symptoms of a stomach bug. "Nothing to worry about", I thought. But then it became worse and I wasn't just "a bit poorly", as your mum would say, more like "I can't believe I'm still here!"

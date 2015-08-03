@@ -6,7 +6,7 @@ permalink: /about/
 header-img: img/about-bg.jpg
 ---
 
-I'm Marc Littlemore. I'm a software engineer, ex-video games programmer, DJ, house music producer and technology tinkerer.
+I'm Marc Littlemore. I'm a software engineer, ex-video games console programmer, [DJ](http://www.djcruze.co.uk), [house music producer](http://soundcloud.com/djcruze) and technology tinkerer.
 
 I also nearly died in 2014. I'll tell you more about that later.
 
