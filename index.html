@@ -2,21 +2,26 @@
 layout: page
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
+{% if site.posts.size != 0 %}
+    {% for post in paginator.posts %}
+    <div class="post-preview">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post-title">{{ post.title }}</h2>
+            {% if post.subtitle %}
+            <h3 class="post-subtitle">
+                {{ post.subtitle }}
+            </h3>
+            {% endif %}
+        </a>
+        <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+    </div>
+    <hr>
+    {% endfor %}
+{% else %}
+    <div class="post-preview">
+        <h2>Nothing to see here yet.</h2>
+    </div>
+{% endif %}
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
