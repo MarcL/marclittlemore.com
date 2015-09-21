@@ -1,0 +1,8 @@
+---
+layout: none
+permalink: .htaccess
+---
+RewriteEngine On
+
+# Error document
+ErrorDocument 404 /404.html
