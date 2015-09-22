@@ -14,3 +14,22 @@ You can find me on [Twitter](https://www.twitter.com/marclittlemore), on [GitHub
 
 I currently work as a Principal Software Engineer at the BBC. Any views expressed here are my own and not those of the BBC. I originally came to the BBC to help with their global games strategy in order to enable third party developers to make games more easily for the BBC. However, my focus has ended up shifting and I'm now working with an amazing team in producing a more personal BBC experience. Phil Fearnley, the Director of myBBC, has written a great [blog post](http://www.bbc.co.uk/blogs/aboutthebbc/entries/46a896ea-e587-4c63-ae7e-9781bca58dd3) which will tell you more about our plans. We decided to use a JavaScript stack with [Node.js](https://nodejs.org/en/) and this has been a great move with some interesting problems and challenges. We're always looking for talented people to join our team so if you're a great software engineer then send me a tweet!
 
+I've worked on many projects over the years, both personal and for the companies I've worked for. Here are some of the highlights.
+
+#### Minipenny Limited (2010-2014)
+
+#### Lucid Games (2012-2013)
+
+#### Slightly Mad Studios (2010-2012)
+
+#### Sony (2004-2010)
+
+#### Acclaim Entertainment (2003-2004)
+
+#### Genepool Ltd (2002-2004)
+
+#### Spiral House Ltd (1999-2001)
+
+#### Ocean Software / Infogrames (1996-1999)
+
+#### Sensory Deception Ltd (1995-1996)
