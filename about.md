@@ -16,20 +16,20 @@ I currently work as a Principal Software Engineer at the BBC. Any views expresse
 
 I've worked on many projects over the years, both personal and for the companies I've worked for. Here are some of the highlights.
 
-#### Minipenny Limited (2010-2014)
+#### 2K Drive
 
-#### Lucid Games (2012-2013)
+#### The Walking Dead: Assault
 
-#### Slightly Mad Studios (2010-2012)
+![The Walking Dead: Assault](/img/games/walking-dead-assault-568x568.jpg){: .center-block}
 
-#### Sony (2004-2010)
+#### Shift 2: Unleashed
 
-#### Acclaim Entertainment (2003-2004)
+#### WipEout Pulse
 
-#### Genepool Ltd (2002-2004)
+#### WipEout Pure
 
-#### Spiral House Ltd (1999-2001)
+#### F1 2006 / F1 Championship Edition
 
-#### Ocean Software / Infogrames (1996-1999)
+#### Wolverine's Revenge
 
-#### Sensory Deception Ltd (1995-1996)
+#### Silver
