@@ -18,18 +18,33 @@ I've worked on many projects over the years, both personal and for the companies
 
 #### 2K Drive
 
+![2K Drive](/img/games/2k-drive-568x568.jpg)
+
 #### The Walking Dead: Assault
 
-![The Walking Dead: Assault](/img/games/walking-dead-assault-568x568.jpg){: .center-block}
+![The Walking Dead: Assault](/img/games/walking-dead-assault-568x568.jpg)
 
 #### Shift 2: Unleashed
 
+![Shift 2: Unleashed](/img/games/shift2-unleashed-640x360.jpg)
+
 #### WipEout Pulse
+
+![WipEout Pulse](/img/games/wipeout-pulse-480x272.jpg)
 
 #### WipEout Pure
 
+![WipEout Pure](/img/games/wipeout-pure-480x272.jpg)
+
 #### F1 2006 / F1 Championship Edition
+
+![F1 Championship Edition](/img/games/f1-championship-edition-640x360.jpg)
 
 #### Wolverine's Revenge
 
+![Wolverine's Revenge](/img/games/wolverines-revenge-512x384.jpg)
+
 #### Silver
+
+![Silver](/img/games/silver-640x480.jpg)
+
