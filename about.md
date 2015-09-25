@@ -40,13 +40,13 @@ After many years of being a Sony developer, contracting for [Slightly Mad Studio
 
 My first lead programmer role was developing the sequel to the successful PSP version of WipEout called WipEout Pure. Although a did a lot of bug fixing and implemented some low-level game saving, my job was mainly managing a team of 11 programmers and attempting to help to get the game out on time, within the memory constraints.
 
-#### WipEout Pure
-
 #### F1 2006 / F1 Championship Edition
 
 ![F1 Championship Edition](/img/games/f1-championship-edition-640x360.jpg)
 
 Another classic Sony developed franchise from the late 90s until the final PS3 version in 2007. I helped to get the game running on PSP and mainly managed and mentored a team of graduate programmers in implementing the game's user interface across the PSP, PS2 and PS3 versions of the game.
+
+#### WipEout Pure
 
 ![WipEout Pure](/img/games/wipeout-pure-480x272.jpg)
 
