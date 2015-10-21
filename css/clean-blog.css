@@ -217,6 +217,7 @@ a.navbar-brand {
 }
 .post-preview > a {
   color: #404040;
+  text-decoration: none;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
