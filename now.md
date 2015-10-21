@@ -3,7 +3,7 @@ layout: page
 title: Now
 description: What I am doing at the moment
 permalink: /now/
-header-img: img/home-office.jpg
+header-img: images/home-office.jpg
 ---
 
 **Last updated:** 21st October 2015

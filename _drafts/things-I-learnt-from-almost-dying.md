@@ -4,7 +4,7 @@ title:  "Things I Learnt From Almost Dying"
 subtitle: "Not sure what to put here"
 date:   2015-08-03 22:00:00
 permalink: /posts/things-i-learnt-from-almost-dying/
-header-img: img/posts/inspirational-surfer.jpg
+header-img: images/posts/inspirational-surfer.jpg
 ---
 
 ## Don't Let It Define You

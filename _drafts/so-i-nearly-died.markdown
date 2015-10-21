@@ -4,7 +4,7 @@ title:  "So I Nearly Died..."
 subtitle: "But thankfully didn't."
 date:   2015-08-03 22:00:00
 permalink: /posts/so-i-nearly-died/
-header-img: img/posts/hospital.jpg
+header-img: images/posts/hospital.jpg
 ---
 
 June 2014 was a somewhat strange month. One day I was "a bit poorly", as your mum would say. The next I was being kept alive with a combination of ventilators and a cocktail of prescription drugs.
