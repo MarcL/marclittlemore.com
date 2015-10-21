@@ -5,10 +5,7 @@ email: marc.littlemore@gmail.com
 description: "Things that Marc Littlemore said."
 baseurl: ""
 url: "http://marclittlemore.com"
-twitter_username: marclittlemore
-github_username:  MarcL
-instagram_username: marclittlemore
-soundcloud_username: djcruze
+googleAnalyticsId: UA-810717-3
 
 # Build settings
 markdown: kramdown
