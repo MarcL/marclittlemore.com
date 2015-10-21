@@ -143,6 +143,11 @@ hr.small {
   padding: 100px 0 50px;
   color: white;
 }
+.page-title {
+  padding: 25px;
+  display: inline-block;
+  background-color: rgba(34,34,34,0.75);
+}
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
