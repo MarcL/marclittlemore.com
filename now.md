@@ -13,9 +13,9 @@ These are things that I'm doing at the moment:
 * Finishing my current side-project: "What The Book" - an iOS book quiz game and hoping to release it before Christmas 2015
 * Learning more Javascript (especially ES6), Node.js and deployment to AWS for my day job at the BBC
 * Learning about [Jekyll](http://jekyllrb.com/) by writing this blog
-* Starting to blogging a bit more than I have previously
+* Starting to blog a bit more than I have previously
 * Recovering from a major illness and writing about it to help others
 
-**Last updated:** 21st October 2015
+**Last updated:** 23rd October 2015
 
 This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggestion. Thanks Derek!
