@@ -12,5 +12,4 @@ sumoMeId: "a260c264ca479174c95ace07722082ec75abbab6778c364ba7a24230cc55c451"
 markdown: kramdown
 highlighter: pygments
 permalink: pretty
-paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "LICENSE"]
