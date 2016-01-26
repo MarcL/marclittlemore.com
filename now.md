@@ -6,16 +6,14 @@ permalink: /now/
 header-img: images/home-office.jpg
 ---
 
-These are things that I'm doing at the moment:
+These are things that I am focussed on right now:
 
-* Playing with my two amazing children and helping them to grow up to be inspired human beings
-* Helping my wife [Clare](http://www.chlittle.com) to realise her dreams of being a writer with lots of technical help where needed
-* Finishing my current side-project: "What The Book" - an iOS book quiz game and hoping to release it before Christmas 2015
-* Learning more Javascript (especially ES6), Node.js and deployment to AWS for my day job at the BBC
-* Learning about [Jekyll](http://jekyllrb.com/) by writing this blog
-* Starting to blog a bit more than I have previously
-* Recovering from a major illness and writing about it to help others
+* Bringing up and playing with my two amazing children and helping them to grow up to be inspired human beings
+* Helping my wife [Clare](http://www.chlittle.com) to realise her dreams of being a full-time writer with lots of technical help where needed
+* Starting my next side project but first decide what it is!
+* [Writing every day](http://goinswriter.com/write-every-day), a skill which I think I need to practice as it's something I'm a little bit scared of
+* Continuing to recover from a major illness and write about it to help others
 
-**Last updated:** 23rd October 2015
+**Last updated:** 26th January 2016
 
 This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggestion. Thanks Derek!
