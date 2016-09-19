@@ -13,7 +13,9 @@ layout: default
                         {% if page.subtitle %}
                         <h2 class="subheading">{{ page.subtitle }}</h2>
                         {% endif %}
+                        {% if page.showDate %}
                         <span class="meta">{{ page.date | date: "%B %-d, %Y" }}</span>
+                        {% endif %}
                     </div>
                 </div>
             </div>
