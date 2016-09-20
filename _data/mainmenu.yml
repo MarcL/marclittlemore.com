@@ -1,0 +1,7 @@
+- name: About
+  url: /about
+  title: "Find out more about me"
+
+- name: "/now"
+  url: /test
+  title: "What I'm up to this right now"

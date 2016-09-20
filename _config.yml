@@ -10,6 +10,6 @@ sumoMeId: "a260c264ca479174c95ace07722082ec75abbab6778c364ba7a24230cc55c451"
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: pretty
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "LICENSE"]

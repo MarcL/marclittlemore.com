@@ -14,7 +14,7 @@
       </a>
 
       <div class="trigger">
-        {% for page in site.pages %}
+        {% for page in site.data.mainmenu %}
           {% if page.title %}
             {% if page.hide == null %}
             <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>

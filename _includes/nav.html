@@ -18,11 +18,11 @@
                 <li>
                     <a href="{{ site.baseurl }}/">Home</a>
                 </li>
-                {% for page in site.pages %}
-                {% if page.title %}
+                {% for page in site.data.mainmenu %}
+                {% if page.name %}
                     {% if page.hide == null %}
                     <li>
-                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                        <a href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.name }}</a>
                     </li>
                     {% endif %}
                 {% endif %}
