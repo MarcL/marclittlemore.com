@@ -7,6 +7,8 @@ header-img: images/posts/computer-code.jpg
 categories:
     - git
     - development
+
+enableComments: true
 ---
 
 ### A wild bug appears

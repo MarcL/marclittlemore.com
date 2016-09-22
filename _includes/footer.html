@@ -40,3 +40,7 @@
 <script src="{{ "/js/clean-blog.min.js " | prepend: site.baseurl }}"></script>
 
 <script async defer data-pin-hover="true" data-pin-color="red" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+{% if page.enableComments %}
+<script id="dsq-count-scr" src="//marclittlemore.disqus.com/count.js" async></script>
+{% endif %}
