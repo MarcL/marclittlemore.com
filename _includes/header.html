@@ -15,9 +15,9 @@
 
       <div class="trigger">
         {% for page in site.data.mainmenu %}
-          {% if page.title %}
+          {% if page.name %}
             {% if page.hide == null %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.name }}</a>
             {% endif %}
           {% endif %}
         {% endfor %}
