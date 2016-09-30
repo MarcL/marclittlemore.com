@@ -1,6 +1,8 @@
 ---
 layout: none
 permalink: .htaccess
+sitemap:
+    exclude: yes
 ---
 RewriteEngine On
 
