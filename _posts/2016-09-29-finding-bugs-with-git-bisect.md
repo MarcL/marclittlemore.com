@@ -9,7 +9,7 @@ categories:
     - development
 
 enableComments: true
-description: An essential guide that will teach you how to use git bisect to find quickly and easily find bugs in the history of your project.
+description: An essential guide that will teach you how to use git bisect to quickly and easily find bugs in the history of your project.
 ---
 
 A source control system is an essential tool if you're writing software, even for your own side projects. Although I've used many version control software over the past 20+ years of development, I've only been using `git` for the past 3 or 4 years. However it's quickly become my version control of choice due to its ability to quickly create branches, and its distributed nature. It's easy to master the basics of `git` but, as with most pieces of software, there's a lot of power available if you choose to go beyond them.
