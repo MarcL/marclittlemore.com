@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Getting Started With Unit Testing Your Node.js Applications"
-subtitle: ""
+title:  "Getting Started With Unit Testing Your JavaScript Applications"
+subtitle: "Testing JavaScript and Node.js applications the easy way"
 permalink: /posts/blah/
 header-img: images/posts/desk-mac-speakers.jpg
 categories:
