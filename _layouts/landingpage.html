@@ -8,10 +8,24 @@ stylesheets:
 {% include head.html %}
 
 <body class="fullscreen landing" style="background-image:url({{ page.images.background }});">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=149888928407526";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="overlay">
         <div class="container">
             <div class="row">
+                {% if page.formData %}
                 <div class="col-md-7">
+                {% else %}
+                <div class="col-md-12">
+                {% endif %}
 
                     <div class="logo">
                     <img src="/images/landingpages/dev-school-logo.png" alt="logo">
@@ -24,9 +38,11 @@ stylesheets:
                     </div>
                 </div>
 
-                <div class="col-md-5">
-                    {% include signUpForm.html formData=page.formData %}
-                </div>
+                {% if page.formData %}
+                    <div class="col-md-5">
+                        {% include signUpForm.html formData=page.formData %}
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>
