@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/clean-blog.css" | prepend: site.baseurl }}">
+    {% if layout.stylesheets != 0 %}
+    {% for stylesheet in layout.stylesheets %}
+    <link rel="stylesheet" href="{{ stylesheet | prepend: site.baseurl }}">
+    {% endfor %}
+    {% endif %}
 
     <!-- Pygments Github CSS -->
     <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
@@ -44,4 +48,22 @@
     {% include socialMediaTags.html %}
 
     <script src="//load.sumome.com/" data-sumo-site-id="{{ site.sumoMeId }}" async="async"></script>
+
+    {% if page.formData %}
+        {% if page.formData.button %}
+            {% if page.formData.button.backgroundColour and page.formData.button.backgroundColourHover and
+            page.formData.button.colour %}
+                <style type="text/css">
+                .form-header .btn {
+                    color: {{page.formData.button.colour}};
+                    background-color: {{page.formData.button.backgroundColour}};
+                }
+
+                .form-header .btn:hover {
+                    background-color: {{page.formData.button.backgroundColourHover}};
+                }
+                </style>
+            {% endif %}
+        {% endif %}
+    {% endif %}
 </head>
