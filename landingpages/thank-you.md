@@ -1,7 +1,7 @@
 ---
 layout: landingpage
 title: "Thank You!"
-permalink: /guides/thank-you/
+permalink: /guides/professional-javascript-environment-guide/thank-you/
 
 images:
     background: "/images/landingpages/javascript-bg.jpg"
