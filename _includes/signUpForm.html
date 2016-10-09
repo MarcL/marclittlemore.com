@@ -1,13 +1,15 @@
 <div class="signup-header">
     <h3 class="form-title text-center">{{ include.formData.title }}</h3>
-    <form class="form-header" action="http://moxdesign.us10.list-manage.com/subscribe/post" role="form" method="POST" id="#">
-    <input type="hidden" name="u" value="503bdae81fde8612ff4944435">
-    <input type="hidden" name="id" value="bfdba52708">
-        <div class="form-group">
-            <input class="form-control input-lg" name="MERGE1" id="name" type="text" placeholder="Your name" required>
+
+    <form class="form-header" action="{{ include.formData.mailchimp.signupUrl }}" role="form" method="POST" id="#">
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="{{ include.formData.mailchimp.botValue }}" tabindex="-1" value="">
         </div>
         <div class="form-group">
-            <input class="form-control input-lg" name="MERGE0" id="email" type="email" placeholder="Email address" required>
+            <input class="form-control input-lg" name="EMAIL" id="email" type="email" placeholder="Email address" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control input-lg" name="FNAME" id="name" type="text" placeholder="First name (optional)">
         </div>
         <div class="form-group last">
             <input type="submit" class="btn btn-warning btn-block btn-lg" value="{{ include.formData.button.text }}">
