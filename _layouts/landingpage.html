@@ -10,10 +10,12 @@ stylesheets:
 
 <body class="fullscreen landing" style="background-image:url({{ page.images.background }});">
 
+    {% include social/facebookSDK.html %}
+
     <div class="overlay">
         <div class="container">
             <div class="row">
-                {% if page.formData %}
+                {% if page.formData or page.sharing %}
                 <div class="col-md-7">
                 {% else %}
                 <div class="col-md-12">
@@ -33,6 +35,10 @@ stylesheets:
                 {% if page.formData %}
                     <div class="col-md-5">
                         {% include signUpForm.html formData=page.formData %}
+                    </div>
+                {% elsif page.sharing %}
+                    <div class="col-md-5">
+                        {% include sharing.html sharing =page.sharing %}
                     </div>
                 {% endif %}
             </div>

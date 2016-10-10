@@ -152,6 +152,24 @@ a:hover {
     color: white
 }
 
+.facebook-colour {
+    background-color: #3b5998;
+    color: white;
+}
+
+.facebook-colour:hover, .facebook-colour:focus, .facebook-colour:active, .facebook-colour.active, .open > .dropdown-toggle.facebook-colour {
+    background-color: #4467b0;
+}
+
+.twitter-colour {
+    background-color: #00aced;
+    color: white;
+}
+
+.twitter-colour:hover, .twitter-colour:focus, .twitter-colour:active, .twitter-colour.active, .open > .dropdown-toggle.twitter-colour {
+    background-color: #21c2ff;
+}
+
 .site-name img {
     width: 150px;
     height: 37px
