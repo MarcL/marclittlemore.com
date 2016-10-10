@@ -36,7 +36,7 @@ p {
     margin:0;
 }
 a {
-    color: #3eb0f7;
+    color: #00aced;
     outline: 0;
     font-weight: bold;
     -webkit-transition: all .8s ease;
@@ -44,7 +44,7 @@ a {
 }
 a:hover {
     text-decoration: none;
-    color: #1f2222;
+    color: #21c2ff;
     -webkit-transition: all .8s ease;
     transition: all .8s ease;
 }
