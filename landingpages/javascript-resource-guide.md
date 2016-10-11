@@ -1,7 +1,7 @@
 ---
 layout: landingpage
-title: Professional JavaScript Environment Guide
-permalink: /guides/professional-javascript-environment-guide/
+title: Free Professional JavaScript Environment Guide
+permalink: /guides/free-professional-javascript-environment-guide/
 
 images:
     background: "/images/landingpages/javascript-bg.jpg"
@@ -9,7 +9,7 @@ images:
     upsell: "/images/landingpages/ipad-js-book.png"
 
 formData:
-    title: GET THE GUIDE RIGHT NOW
+    title: GET THE FREE GUIDE RIGHT NOW
     button:
         text: DOWNLOAD NOW
 #        backgroundColour: "#98000D"
