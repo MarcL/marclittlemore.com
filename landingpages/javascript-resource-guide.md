@@ -34,6 +34,7 @@ formData:
             <li>Introduction to testing tools to write thorough tests</li>
             <li>The tools and knowledge to improve and impress at interviews</li>
         </ul>
-
     </div>
 </div>
+
+Your name and email address will only be used to send you this, and the occasional development related email from me. You can unsubscribe at any time.
