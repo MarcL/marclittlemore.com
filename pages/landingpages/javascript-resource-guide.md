@@ -5,7 +5,6 @@ permalink: /guides/free-professional-javascript-environment-guide/
 
 images:
     background: "/images/landingpages/javascript-bg.jpg"
-    logo: "/images/landingpages/dev-school-logo.png"
     upsell: "/images/landingpages/ipad-js-book.png"
 
 formData:

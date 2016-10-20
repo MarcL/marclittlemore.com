@@ -5,7 +5,6 @@ permalink: /guides/free-professional-javascript-environment-guide/thank-you/
 
 images:
     background: "/images/landingpages/javascript-bg.jpg"
-    logo: "/images/landingpages/dev-school-logo.png"
 
 sharing:
     title: "Please Share"
