@@ -70,7 +70,7 @@ a:hover {
 }
 .overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 100%;
     display: block;
