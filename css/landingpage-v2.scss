@@ -1,0 +1,71 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+sitemap:
+    exclude: yes
+---
+
+// Our variables
+$base-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-background-colour: #f0f0f0;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+body {
+    font-family: $base-font-family;
+    background-color: $base-background-colour;
+}
+
+.wrap {
+    background: #fff;
+    padding-bottom: 2.5em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0 ,0.2);
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+  font-size: 1.1em;
+}
+
+.landing-content {
+    margin-top: 40px;
+}
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 16px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+.action-button {
+    margin-top: 20px;
+}
+
+.confirm-panel {
+    background: #eee;
+    color: #999;
+}
+
+.active-panel {
+    background: #fff;
+    color: #333;
+    border: .3125em solid #eee;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width: 400px) {
+    .btn-xlarge {
+        font-size: 16px;
+    }
+}

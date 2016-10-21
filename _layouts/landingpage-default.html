@@ -1,0 +1,33 @@
+---
+hideSumo: yes
+stylesheets:
+    - "/css/landingpage-v2.css"
+---
+
+<!DOCTYPE html>
+<html lang="en" itemtype="http://schema.org/Article">
+
+{% include head.html %}
+
+<body>
+    {% include social/facebookSDK.html %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 wrap">
+
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h1 class="text-center">{{ page.landingpage.title }}</h1>
+                        <h2 class="text-center">{{ page.landingpage.subtitle }}</h2>
+                    </div>
+                </div>
+
+                {{ content }}
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

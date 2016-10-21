@@ -1,0 +1,23 @@
+---
+layout: landingpage-default
+---
+
+<div class="landing-content">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-1">
+            {{ content }}
+        </div>
+        <div class="col-md-4 col-sm-8 col-xs-8">
+            <img src="{{ page.images.upsell }}" class="img-responsive">
+        </div>
+    </div>
+    <div class="row action-button">
+        <div class="col-md-6 col-md-offset-3">
+            <button class="btn btn-primary btn-xlarge center-block" id="landing-page-popup">
+                <i class="fa fa-download"></i> {{ page.landingpage.button.text }}
+            </button>
+        </div>
+    </div>
+</div>
+
+{% include mailchimpPopup.html userId=page.landingpage.mailchimp.uuid listId=page.landingpage.mailchimp.lid buttonId="landing-page-popup" %}
