@@ -1,7 +1,7 @@
 ---
 layout: landingpage-thank-you
 title: Confirm your email
-permalink: /signup-thank-you
+permalink: /signup-thank-you/
 
 landingpage:
     title: Thank You For Signing Up
