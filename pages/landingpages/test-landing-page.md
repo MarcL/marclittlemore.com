@@ -12,21 +12,10 @@ landingpage:
         uuid: "72d3502c470827973d3e8dd63"
         lid: "9c88e1dd6a"
         listname: "gamesdeveloperlist"
+        botValue: "b_72d3502c470827973d3e8dd63_9c88e1dd6a"
 
 images:
     upsell: "/images/landingpages/ipad-js-book.png"
-
-    mailchimp:
-        signupUrl: "//gamesdeveloperlist.us1.list-manage.com/subscribe/post?u=72d3502c470827973d3e8dd63&amp;id=9c88e1dd6a"
-        botValue: "b_72d3502c470827973d3e8dd63_9c88e1dd6a"
-
-formData:
-    title: GET THE FREE GUIDE RIGHT NOW
-    button:
-        text: DOWNLOAD NOW
-    mailchimp:
-        signupUrl: "//gamesdeveloperlist.us1.list-manage.com/subscribe/post?u=72d3502c470827973d3e8dd63&amp;id=9c88e1dd6a"
-        botValue: "b_72d3502c470827973d3e8dd63_9c88e1dd6a"
 ---
 
 That's what hundreds of my students told themselves before using the Earn1K Idea Generator Tool.
