@@ -11,9 +11,6 @@ formData:
     title: GET THE FREE GUIDE RIGHT NOW
     button:
         text: DOWNLOAD NOW
-#        backgroundColour: "#98000D"
-#        backgroundColourHover: "#C62E3B"
-#        colour: "#fff"
     mailchimp:
         signupUrl: "//gamesdeveloperlist.us1.list-manage.com/subscribe/post?u=72d3502c470827973d3e8dd63&amp;id=9c88e1dd6a"
         botValue: "b_72d3502c470827973d3e8dd63_9c88e1dd6a"
