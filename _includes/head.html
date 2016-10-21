@@ -43,4 +43,10 @@
     {% if layout.hideSumo == yes %}
     <script src="//load.sumome.com/" data-sumo-site-id="{{ site.sumoMeId }}" async="async"></script>
     {% endif %}
+
+    {% if layout.scripts != 0 %}
+        {% for script in layout.scripts %}
+            <script type="text/javascript" src="{{script | prepend: site.baseurl}}" async></script>
+        {% endfor %}
+    {% endif %}
 </head>
