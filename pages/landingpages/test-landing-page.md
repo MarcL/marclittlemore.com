@@ -16,6 +16,9 @@ landingpage:
 
 images:
     upsell: "/images/landingpages/ipad-js-book.png"
+
+sitemap:
+    exclude: yes
 ---
 
 ### "I can't freelance... I don't even have an idea."
