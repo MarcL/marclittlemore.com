@@ -5,18 +5,20 @@ layout: landingpage-default
 <div class="landing-content">
     <div class="row">
         <div class="col-md-6 col-md-offset-1">
-            {{ content }}
+            <div class="row wrap-form">
+                <div class="col-md-10 col-md-offset-1">
+                    {% include signUpForm.html landingpage=page.landingpage %}
+                </div>
+            </div>
         </div>
         <div class="col-md-4 col-sm-8 col-xs-8">
             <img src="{{ page.images.upsell }}" class="img-responsive">
         </div>
     </div>
-</div>
-
-<div class="landing-content">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            {% include signUpForm.html landingpage=page.landingpage %}
+            {{ content }}
         </div>
     </div>
 </div>
+

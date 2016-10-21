@@ -18,6 +18,8 @@ images:
     upsell: "/images/landingpages/ipad-js-book.png"
 ---
 
+### "I can't freelance... I don't even have an idea."
+
 That's what hundreds of my students told themselves before using the Earn1K Idea Generator Tool.
 
 Hey guys, it's Ramit Sethi of I Will Teach You To Be Rich and I know that the first step — nailing down your freelance idea — can be the hardest.

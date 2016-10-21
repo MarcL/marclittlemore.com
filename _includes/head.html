@@ -44,22 +44,4 @@
     {% if layout.hideSumo == yes %}
     <script src="//load.sumome.com/" data-sumo-site-id="{{ site.sumoMeId }}" async="async"></script>
     {% endif %}
-
-    {% if page.formData %}
-        {% if page.formData.button %}
-            {% if page.formData.button.backgroundColour and page.formData.button.backgroundColourHover and
-            page.formData.button.colour %}
-                <style type="text/css">
-                .form-header .btn {
-                    color: {{page.formData.button.colour}};
-                    background-color: {{page.formData.button.backgroundColour}};
-                }
-
-                .form-header .btn:hover {
-                    background-color: {{page.formData.button.backgroundColourHover}};
-                }
-                </style>
-            {% endif %}
-        {% endif %}
-    {% endif %}
 </head>
