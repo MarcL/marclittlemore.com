@@ -59,8 +59,9 @@ p {
 }
 
 .signup-form {
-    padding-top: 2em;
-
+    h3 {
+        margin-bottom: 20px;
+    }
     .privacy {
         color: $dark-grey;
         font-size: 1em;
