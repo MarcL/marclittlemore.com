@@ -1,40 +1,51 @@
 ---
 layout: landingpage-v2
-title: Boost Your JavaScript Developer Experience With This Free Guide
+title: A Beginners Guide To A Professional JavaScript Environment
 permalink: /guides/free-professional-javascript-environment-guide/
+description: Some description.
 
 landingpage:
-    title: Boost Your JavaScript Developer Experience With This Free Guide
-    subtitle: "\"I've got no idea where to start...\""
+    title: Easily Set Up A Professional JavaScript Environment In 2 Hours
+    subtitle: "JavaScript developer environments made easy"
     button:
         text: EMAIL ME THE BOOK NOW
+        icon: fa-envelope-o
     signup:
         title: GET YOUR FREE EBOOK
         uuid: "72d3502c470827973d3e8dd63"
         lid: "9c88e1dd6a"
         listname: "gamesdeveloperlist"
         botValue: "b_72d3502c470827973d3e8dd63_9c88e1dd6a"
-        privacy: "We hate spam as much as you do. Your email will only be used to send you the ebook and for other occasional freebies and articles."
+        privacy: "We hate spam as much as you do. Your email be used to send you the ebook and for occasional freebies and JavaScript articles."
 
-images:
-    upsell: "/images/landingpages/js-book.png"
-
-# What's the goal?
-# - Opt in for newsletter / download ebook
+    images:
+        upsell: "/images/landingpages/js-book.png"
 ---
 
-### "JavaScript development is so confusing now. Where do I start?
+***
 
-Too many people think that modern JavaScript development is confusing. You've looked online and found too many frameworks, libraries and tools but you don't know which one to use.
+### Modern JavaScript development is so complicated. Where do I start?
 
-### This Free Guide Will Give You
+Are you new to JavaScript development and think that setting up a modern JavaScript development environment is confusing? Read about package managers, lots of frameworks and libraries, task runners, testing framerworks, linting tools, and ES6/ES2015 but have no idea where to start?
+
+Declare the problem:
+
+* JS environment set up is hard
+* Too many frameworks and libraries
+* Package manager
+* Automate tasks
+* Testing
+* Code quality
+* ES6 / ES2015 
+
+### Learn the secrets
 
 * A simple to understand, downloadable PDF guide to modern JavaScript development
 * Write clean code with a professional developer environment
 * Introduction to testing tools to write thorough tests
 * The knowledge to improve your skills and impress at interviews
 
-### IDEA: "Learn The Secret To ..."
+Outcome - With this knowledge...
 
 **SIGN UP AND GET THIS FREE JAVASCRIPT SETUP GUIDE, AND WEEKLY LINKS TO MORE FREEBIES AND DEVELOPMENT NEWS**
 
@@ -51,6 +62,9 @@ Too many people think that modern JavaScript development is confusing. You've lo
 * Will I surrender my first born to get it?
 * Who else thinks it's awesome and why?
 
+#### What's it about?
+
+
 ***
 
-![Marc Littlemore](/images/me/marc-littlemore-64x64.jpg){:title="Marc Littlemore" class="img-responsive img-circle"}
+{% include author.html %}

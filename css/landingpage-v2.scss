@@ -68,3 +68,16 @@ p {
     }
 }
 
+.author {
+    font-size: 0.8em;
+
+    p {
+        color: $dark-grey;
+        margin: 4px 0;
+    }
+
+    img {
+        margin-top: 10px;
+    }
+}
+
