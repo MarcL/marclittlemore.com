@@ -10,7 +10,7 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Current Focus
 
-* **Recovering from major surgery** - I've just had surgery to straighten and pin my toes. It's going to take me 6-8 weeks before the pins are removed so I'm pretty immobile until that happens.
+* **Still Recovering from major surgery** - My pins have been taken out of my toes now but I'll have a few weeks of getting back to walking again.
 * Technical writing on this site.
 * Bringing up, and playing with, my two amazing children and helping them to grow up to be inspired human beings.
 
@@ -20,4 +20,4 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 * Helping my wife [Clare](http://www.clarelittlemore.com) to realise her dreams of becoming a full-time writer and online teacher.
 * Continuing to recover from a major illness and write about it to help others. You can read about it on Clare's new blog [Out Of The Woods](http://outofthewoodsblog.com).
 
-**Last updated:** 30th September, 2016
+**Last updated:** 4th November, 2016
