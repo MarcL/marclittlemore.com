@@ -20,6 +20,8 @@ landingpage:
 
     images:
         upsell: "/images/landingpages/js-book.png"
+sitemap:
+    exclude: yes
 ---
 
 ***

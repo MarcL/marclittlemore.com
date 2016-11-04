@@ -4,6 +4,9 @@ title: How I Almost Died
 description: 
 permalink: /how-i-almost-died/
 header-img: images/banners/hospital-lights.jpg
+
+sitemap:
+    exclude: yes
 ---
 
 How do you start to tell someone that you nearly died? That your wife watched you in intensive care, fighting for your life? That your children nearly lost their father when he was only 42?
