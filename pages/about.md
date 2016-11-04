@@ -3,7 +3,7 @@ layout: page
 title: About
 description: Things and stuff about me.
 permalink: /about/
-header-img: images/about-bg.jpg
+header-img: images/banners/about-bg.jpg
 ---
 
 I'm Marc Littlemore. I'm a software engineer, a veteran of the video games industry with 18 years of games programming experience, a house music [DJ](http://www.djcruze.co.uk) since 1988, an occasional [house music producer](http://soundcloud.com/djcruze) and lover of technology. I'm a husband to my fantastic wife [Clare](http://www.clarelittlemore.com) and have two beautiful children.
