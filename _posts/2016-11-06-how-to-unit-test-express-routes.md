@@ -8,7 +8,7 @@ categories:
     - unit-testing
     - development
 enableComments: true
-description: How to unit test express routes and some reasons why you should do it. 
+description: How to unit test Express routes and some reasons why you should do it. 
 ---
 
 I was swiping through my Twitter timeline the other night when I saw a really interesting tweet from [Kent C Dodds](https://kentcdodds.com/), a great JavaScript developer who works at PayPal, and someone you should really follow on Twitter if you don't already. He asked the following question.
