@@ -25,7 +25,7 @@ Your unit tests should be the first line of defence for your project. As your te
 
 ![Human readable test names](/images/posts/human-readable-test-names.png){: title="Human readable test names" alt="Human readable test names"}
 
-As silly as this may sound, you should spend some time ensuring that your test names make sense. This means that they should show the developer reading them exactly what the code under test does. The tests should be written for you and your team and not for a computer. Make sure that they're easy to read and make sense as an English, or whatever language you speak, sentence. An example could be *"should add a new user to the database"* or *"should call the authentication API with the expected user credentials"*.
+As silly as this may sound, you should spend some time ensuring that your test names make sense. This means that they should show the developer reading them exactly what the code under test does. The tests should be written for you and your team and not for a computer. Make sure that they're easy to read and make sens as a sentence. An example could be *"should add a new user to the database"* or *"should call the authentication API with the expected user credentials"*.
 
 An advantage of writing good test names is that you should be able to scan through each test module and see what the feature requirements for the code. This suite of tests should then be treated as living documentation for your project. If your code's functionality changes then update your test names accordingly.
 
