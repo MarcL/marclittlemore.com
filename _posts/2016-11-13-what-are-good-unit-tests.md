@@ -55,13 +55,13 @@ Your unit tests should execute as quickly as possibly. Each test should have a s
 
 Your unit tests should always be independent of environment. This means that the tests suite passes all of the tests on your machine, your colleagues' machine and any continuous build server. You definitely want to avoid the "it works on my machine" problem.
 
-Ensure that the unit tests execute the same on all environments by correctly stubbing or mocking any dependencies and setting any state or external data by using mocks or stubs. Also make sure that there are no dependency on other tests. Each test should run in isolation and should not need the result of a previous test in order to execute correctly. In the same vein, make sure that a test doesn't have any side effects, for example adding data to a database. You need identical data inputs and state each time the test suite runs. If the tests don't have consistency, and tests begin to fail, your team will lose faith in unit testing and they will quickly be ignored.
+Ensure that the unit tests execute the same on all environments by correctly stubbing or mocking any dependencies and setting any state or external data. Also make sure that there is no dependency on other tests. Each test should run in isolation and should not need the result of a previous test in order to execute correctly. In the same vein, make sure that a test doesn't have any side effects, for example adding data to a database. You need identical data inputs and state each time the test suite runs. If the tests don't have consistency, and tests begin to fail, your team will lose faith in unit testing and they will quickly be ignored.
 
 ### Tests unit completely
 
 While some tests are better than none, the best quality unit tests ensure that all of the code paths are covered. This is often done in combination with test-driven development practices which mean you never write any code without a corresponding test. Even if you write your tests after you've written your code, you should try and test every route through your code.
 
-Another good practice is to attempt to cover all edge cases for your code if possible. You'll find that you sometimes forget some obscure inputs, or maybe receive input data that you didn't expect, but try and determine the full requirements of your code and write your tests accordingly. Even if you don't, it's still incredibly satisfying to find a new bug, add a an edge case test for it that fails as you expect, and then to fix it while still ensuring that all of your previous tests still pass.
+Another good practice is to attempt to cover all edge cases for your code if possible. You'll find that you sometimes forget some obscure inputs, or maybe receive input data that you didn't expect, but try and determine the full requirements of your code and write your tests accordingly. Even if you don't, it's still incredibly satisfying to find a new bug, add an edge case test for it that fails as you expect, and then to fix it while still ensuring that all of your previous tests still pass.
 
 ### Ultimately, make unit testing easy
 
