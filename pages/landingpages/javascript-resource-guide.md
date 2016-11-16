@@ -22,6 +22,7 @@ landingpage:
         upsell: "/images/landingpages/js-book.png"
 sitemap:
     exclude: yes
+published: false
 ---
 
 ***
@@ -38,7 +39,7 @@ Declare the problem:
 * Automate tasks
 * Testing
 * Code quality
-* ES6 / ES2015 
+* ES6 / ES2015
 
 ### Learn the secrets
 
