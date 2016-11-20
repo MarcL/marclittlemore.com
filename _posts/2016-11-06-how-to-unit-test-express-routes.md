@@ -8,7 +8,7 @@ categories:
     - unit-testing
     - development
 enableComments: true
-description: How to unit test Express routes and some reasons why you should do it. 
+description: How to unit test Express routes and some reasons why you should do it.
 ---
 
 I was swiping through my Twitter timeline the other night when I saw a really interesting tweet from [Kent C Dodds](https://kentcdodds.com/), a great JavaScript developer who works at PayPal, and someone you should really follow on Twitter if you don't already. He asked the following question.
@@ -37,7 +37,7 @@ Lastly, I've recently taken up the role as security champion of our team and hav
 
 ## How to write Express route unit tests
 
-So it's easy to say that we should unit test Express routes, but how do you do it in practice? As Kent said in his later tweets, there don't seem to be any good examples of how to do it so I've written a basic Express application and some corresponding tests in this [project on GitHub](https://github.com/MarcL/unit-test-express-routes) which show you a good way to set these tests up. We'll be using [mocha](https://mochajs.org/), [chai](http://chaijs.com/), [sinon](sinonjs.org), [sinon-chai](https://github.com/domenic/sinon-chai) (for some syntactic sugar) and [proxyquire](https://github.com/thlorenz/proxyquire).
+So it's easy to say that we should unit test Express routes, but how do you do it in practice? As Kent said in his later tweets, there don't seem to be any good examples of how to do it so I've written a basic Express application and some corresponding tests in this [project on GitHub](https://github.com/MarcL/unit-test-express-routes) which show you a good way to set these tests up. We'll be using [mocha](https://mochajs.org/), [chai](http://chaijs.com/), [sinon](http://sinonjs.org), [sinon-chai](https://github.com/domenic/sinon-chai) (for some syntactic sugar) and [proxyquire](https://github.com/thlorenz/proxyquire).
 
 Install the project as follows:
 
@@ -198,7 +198,7 @@ Notice that I've only stubbed the GET requests in my example project. If you wan
 Hopefully this was an easy-to-read explanation of how to create unit tests for Express routes. In case there is too much text to read above, my opinion is that, yes, I think you can easily unit test your Express routes and you probably should. You should do the following if you're planning to do so:
 
 * Use `proxyquire` to override dependencies so that you can stub/spy your express application and middleware functions
-* Use `sinon` to stub your middleware, which you should have already extracted to their own modules  
+* Use `sinon` to stub your middleware, which you should have already extracted to their own modules
 * Use these stubs to assert your expectations that the Express application routes use the correct middleware
 * These tests are an additional layer of confidence and are especially useful for security concerns
 * You should **always** have additional integration tests which test the full flow of the routes
