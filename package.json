@@ -7,10 +7,7 @@
   "scripts": {
     "link-check": "blc http://localhost:4000 -ro"
   },
-  "license": {
-    "type": "Apache 2.0",
-    "url": "https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE"
-  },
+  "license": "MIT",
   "devDependencies": {
     "broken-link-checker": "^0.7.3",
     "grunt": "~0.4.5",
