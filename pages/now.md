@@ -10,14 +10,18 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Current Focus
 
-* **Still Recovering from major surgery** - My pins have been taken out of my toes now but I'll have a few weeks of getting back to walking again.
+* Getting ready for Christmas with the family.
 * Technical writing on this site.
-* Bringing up, and playing with, my two amazing children and helping them to grow up to be inspired human beings.
+* Fixing a broken mac-mini.
 
 ## Up Next
-* Fixing some broken computers.
-* Building a course to help people to learn something computer related. I'm not quite sure what area to concentrate my efforts on so this month will be working that out.
+* Planning my Code Club course to help year 5 and 6 children to learn computer programming.
+* Planning a course to help people to learn something computer related. I'm not sure what area to concentrate my efforts on so this month will be working that out.
+
+## Always doing
+
+* Bringing up, and playing with, my two amazing children and helping them to grow up to be inspired human beings.
 * Helping my wife [Clare](http://www.clarelittlemore.com) to realise her dreams of becoming a full-time writer and online teacher.
 * Continuing to recover from a major illness and write about it to help others. You can read about it on Clare's new blog [Out Of The Woods](http://outofthewoodsblog.com).
 
-**Last updated:** 4th November, 2016
+**Last updated:** 5th December, 2016
