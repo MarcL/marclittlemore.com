@@ -14,5 +14,6 @@ categories:
 * Don't use sound on your first club
 * Don't use external resources if kids can't get online
   * USB didn't work - promised Pikachu but couldn't deliver
+  * Format USB for Mac and PC - Set scheme to "master boot record"
 * Some children said it was fun
   * My son's friend's mum said "it was awesome, he can't wait for next week"
