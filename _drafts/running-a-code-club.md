@@ -17,3 +17,7 @@ categories:
   * Format USB for Mac and PC - Set scheme to "master boot record"
 * Some children said it was fun
   * My son's friend's mum said "it was awesome, he can't wait for next week"
+* Y2 - Ghost Catcher
+  * Negative numbers are hard
+  * Scratch doesn't fit onto a screen on smaller laptops
+  * Scratch splash screen confuses children sometimes
