@@ -21,3 +21,5 @@ categories:
   * Negative numbers are hard
   * Scratch doesn't fit onto a screen on smaller laptops
   * Scratch splash screen confuses children sometimes
+* Show & Tell - kids like to show off
+* Ask questions to get the kids to answer - Rubber Duck Programming
