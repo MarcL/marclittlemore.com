@@ -10,15 +10,15 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Current Focus
 
-* Planning my Code Club course to help year 5 and 6 children to learn computer programming. It starts next week!
+* Writing about my experience in running a [Code Club](https://www.codeclub.org.uk/).
 * Writing an article on unit testing JavaScript applications.
-* Finishing a guide on JavaScript development environments
 * Planning a course on JavaScript unit testing.
+* Building an email list for my unit testing course.
+* Learning to use a [Bullet Journal](http://bulletjournal.com/).
 
 ## Up Next
 
 * Fixing a broken mac-mini.
-* Filling in the dreaded tax return!
 
 ## Always doing
 
@@ -26,4 +26,4 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 * Helping my wife [Clare](http://www.clarelittlemore.com) to realise her dreams of becoming a full-time writer and online teacher.
 * Continuing to recover from a major illness and write about it to help others. You can read about it on Clare's new blog [Out Of The Woods](http://outofthewoodsblog.com).
 
-**Last updated:** 4th January, 2017
+**Last updated:** 13th February, 2017
