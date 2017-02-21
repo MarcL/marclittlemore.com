@@ -1,7 +1,7 @@
 ---
 layout: landingpage-v2
 title: JavaScript Testing Made Easy
-permalink: /guides/javascript-testing-made-easy/
+permalink: /courses/javascript-testing-made-easy/
 description: How do you get good at unit testing JavaScript code? Sign up for this course to find out
 
 landingpage:
