@@ -79,7 +79,7 @@ If you want to level up your JavaScript testing skills then you'll want to begin
 * The best development practices to add testing to your workflow
 * [How to write high quality unit tests](http://www.marclittlemore.com/how-to-write-high-quality-unit-tests/)
 
-**Signup to be notified when this course is ready (approximately April 2017) and receive a discount price.**
+**Signup to be notified when this course is ready (around April 2017) and receive a discount price.**
 
 ***
 
