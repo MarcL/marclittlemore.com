@@ -14,7 +14,7 @@ landingpage:
         title: GET YOUR FREE EBOOK
         uuid: "72d3502c470827973d3e8dd63"
         lid: "9c88e1dd6a"
-        listname: "gamesdeveloperlist"
+        listname: "marclittlemore"
         botValue: "b_72d3502c470827973d3e8dd63_9c88e1dd6a"
         privacy: "We hate spam as much as you do. Your email be used to send you the ebook and for occasional freebies and JavaScript articles."
 

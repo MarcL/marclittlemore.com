@@ -39,7 +39,6 @@ h1 {
 
 p {
   line-height: 1.5;
-  margin: 30px 0;
   font-size: 1.1em;
 }
 
@@ -81,3 +80,14 @@ p {
     }
 }
 
+.highlight {
+    background-color: #ffc9c1;
+}
+
+blockquote {
+    color: #000;
+    background-color: #fffacc;
+    border-left: 5px solid #fffa88;
+    padding: 10px 20px;
+    font-size: 1.0em;
+}
