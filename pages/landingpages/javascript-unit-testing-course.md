@@ -11,7 +11,7 @@ landingpage:
         text: DOWNLOAD NOW
         icon: fa-envelope-o
     signup:
-        title: GET THE FREE GUIDE
+        title: SIGN UP FOR THE WAITING LIST
         uuid: "72d3502c470827973d3e8dd63"
         lid: "9c88e1dd6a"
         listname: "marclittlemore"
