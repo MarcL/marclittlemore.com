@@ -4,12 +4,13 @@ title:  "Simple Error Handling For Your Production Express Server"
 subtitle: "Adding error handling to your Express server doesn't have to be confusing."
 permalink: /simple-error-handling-for-your-production-express-server/
 header-img: images/banners/simple-error-handling-for-your-production-express-server.jpg
+social-img: images/posts/simple-error-handling-for-your-production-express-server.jpg
 categories:
     - express
     - javascript
     - development
 enableComments: true
-description: dding error handling to your Express server doesn't have to be confusing. Follow this simple guide to add production ready error handling to your Node.js Express application.
+description: Adding error handling to your Express server doesn't have to be confusing. Follow this simple guide to add production ready error handling to your Node.js Express application.
 ---
 
 Error handling is a big part of writing code and it's something that every developer should think about. When starting to write code, it's easy to overlook what happens when your code fails. As developers we like to assume we write perfect code. We never do though do we?! If you're writing a customer facing application then you should always try and gracefully catch any errors and return human-friendly error messages to give a better user experience. This is especially true if you have an application which deals with 3rd party APIs or other external dependencies, like a database server. In these cases, you can't guarantee that the services will be available and you should be ready to handle this.
