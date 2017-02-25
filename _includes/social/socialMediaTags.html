@@ -7,6 +7,9 @@
 {% if page.header-img %}
 {% assign imageUrl = page.header-img %}
 {% endif %}
+{% if page.social-img %}
+{% assign imageUrl = page.social-img %}
+{% endif %}
 
 {% assign pageDate = page.date | date: "%Y-%m-%d" %}
 
@@ -21,7 +24,6 @@
 <meta property="og:locale" content="en_GB" />
 <meta property="article:published_time" content="{{ pageDate }}" />
 <meta property="article:author" content="{{site.author}}" />
-
 
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="{{ page.title }}">
