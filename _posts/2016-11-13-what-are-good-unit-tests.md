@@ -4,6 +4,7 @@ title:  "How To Write High Quality Unit Tests"
 subtitle: "Make writing unit tests easy by following some simple ideas for better test quality"
 permalink: /how-to-write-high-quality-unit-tests/
 header-img: images/banners/qualities-of-good-unit-tests.jpg
+social-img: images/posts/how-to-write-high-quality-unit-tests.jpg
 categories:
     - unit-testing
     - development
