@@ -1,9 +1,9 @@
 {
-  "name": "clean-blog",
-  "title": "Clean Blog",
+  "name": "marclittlemore-site",
+  "title": "MarcLittlemore.com Website",
   "version": "1.0.0",
-  "homepage": "http://startbootstrap.com",
-  "author": "Start Bootstrap",
+  "homepage": "http://www.marclittlemore.com",
+  "author": "Marc Littlemore",
   "scripts": {
     "link-check": "blc http://localhost:4000 -ro"
   },
@@ -18,6 +18,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll.git"
+    "url": "git@bitbucket.org:MarcL/marclittlemore.com.git"
   }
 }
