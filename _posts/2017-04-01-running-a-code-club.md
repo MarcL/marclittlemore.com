@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Running a Code Club For Children"
+title:  "Lessons Learned From Running A Code Club"
 subtitle: "Some lessons learned from running a Code Club and teaching computer programming to children."
-permalink: /running-a-code-club/
+permalink: /lessons-learned-from-running-a-code-club/
 header-img: images/posts/teach-kids-to-code.jpg
 categories:
     - code-club
