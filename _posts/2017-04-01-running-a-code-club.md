@@ -66,8 +66,6 @@ In software engineering we have a method of finding problems in our code known a
 
 *Tip: If children have problems, ask them questions about their code. Try not to immediately offer solutions. They'll often work it out themselves.*
 
-* Some children said it was fun
-  * My son's friend's mum said "it was awesome, he can't wait for next week"
 * Y2 - Ghost Catcher
   * Negative numbers are hard
   * Scratch doesn't fit onto a screen on smaller laptops
@@ -81,9 +79,12 @@ One of the best ideas I encorporated was to have a "show and tell" at the end of
 
 ### Make it fun!
 
-Ultimately, you and the children both need to have fun.
+Ultimately, you and the children both need to have fun. Some of the children told me that "it was awesome - I can't wait for next week". It's been a pleasure to teach them all and I hope tht I've influenced some of them to eventually follow a path into software development.
 
-## Projects
+## The projects for my club
+
+If you're interested in following a similar structure to my club, here are the projects that we did. I've also listed some of the enhancements that I added.
+
 1. [Rockband](https://www.codeclubprojects.org/en-GB/scratch/rock-band/) + hip-hop pikachu - Playing sounds, changing sprites depending on whether sound is playing, movement based on input
 2. [Ghost Catcher](https://www.codeclubprojects.org/en-GB/scratch/ghostbusters/) - Game where you click on ghosts as they appear/disappear (like "whack-a-mole"). Adding variables to remember scores, high scores and a timer. Varying the frequency, size, speed of ghosts.
 3. [Chatbot](https://www.codeclubprojects.org/en-GB/scratch/chatbot/) - Simple "AI" to respond to questions, remember answers and use them later in responses. I added a challenge here to get them to make it respond to commands. I added "hide", "moonwalk", "basketball", "dab", "bottle flip" and got the character to do the responses, random success of basketball shot, bottle flipping etc.
