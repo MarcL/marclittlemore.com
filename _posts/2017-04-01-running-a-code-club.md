@@ -3,20 +3,14 @@ layout: post
 title:  "Lessons Learned From Running A Code Club"
 subtitle: "Some lessons learned from running a Code Club and teaching computer programming to children."
 permalink: /lessons-learned-from-running-a-code-club/
-header-img: images/posts/teach-kids-to-code.jpg
+header-img: images/posts/lessons-learned-from-running-a-code-club.jpg
 categories:
     - code-club
 description: Running a Code Club for children is great fun. Here are some lessons I've learned in running mine.
-# TODO
-social-img: images/posts/how-to-unit-test-express-routes.jpg
+social-img: images/posts/lessons-learned-from-running-a-code-club-fb.jpg
 ---
 
-Intro?
-As software engineer of 20+ years, computers are aroun
-
-As a parent of two children (9 and 7)
-
-[Code Club](https://www.codeclub.org.uk/)
+Here in the UK we have an organisation called [Code Club](https://www.codeclub.org.uk/) which aims to help all children learn to code. It's a network of volunteers and educators who run free coding clubs for 9 to 11 year olds. I have two children, aged 7 and 9, and I want to encourage them to learn more about computing and technology and not just watching gaming videos on YouTube. When my eldest son moved from his infant school to his junior school a couple of years ago, the teachers told me how ill prepared they were for the moving to teaching programming. Having over 20 years of professional programming experience, I knew that this would be a good time to get involved in helping schools to teach programming. Unfortunately, due to [almost dying](/how-i-almost-died/), it took a bit longer to help out but I'm glad that I did. Running a Code Club is definitely harder work than I imagined but it's a fantastically rewarding experience. Here are a some lessons I have learned along the way which could help others.
 
 ## Lessons Learned In Running My Code Club
 
@@ -28,11 +22,13 @@ My wife is an English teacher of over 17 years. She laughed at me when I returne
 
 Some children will listen. Others, not so much. There's noise, there are questions, somebody needs to go to the toilet, everyone needs to go to the toilet, somebody is showing the whole class their project and so on. It's great fun but it can get chaotic. There's a great article about [embracing the chaos](https://blog.codeclub.org.uk/2016/07/13/embracing-chaos-in-your-code-club/) on the Code Club website that everyone should read.
 
+*Tip: Embrace the chaos. It may be hard initally if you're not an educator. It gets easier and much more fun pretty quickly.*
+
 ### Class size
 
 I had a class size of 15 children in each group. As a non-teacher, this felt like a good class size to be able to control. For the first two weeks of Code Club I was alone in teaching until another parent helper had received his DBS check. It is harder than I imagined to be able to teach a class and answer all of their questions with one teacher and 15 children. Once an additional pair of hands was on-board, it made teaching much easier and big thanks to Dan for helping every week.
 
-*Make teaching easier by having a ratio of at least 1 adult helper to 6 or 7 children.*
+*Tip: Make teaching easier by having a ratio of at least 1 adult helper to 6 or 7 children.*
 
 ### A variety of programming experience
 
@@ -66,10 +62,11 @@ In software engineering we have a method of finding problems in our code known a
 
 *Tip: If children have problems, ask them questions about their code. Try not to immediately offer solutions. They'll often work it out themselves.*
 
-* Y2 - Ghost Catcher
-  * Negative numbers are hard
-  * Scratch doesn't fit onto a screen on smaller laptops
-  * Scratch splash screen confuses children sometimes
+### Schools can't afford the best technology
+
+I use a MacBook Pro for work. I am a developer who needs high end technology to do my job. Schools are not the same. They have constant budgetary constraints. They need to decide where to spend their hard fought for money. It won't be on the best computers. My son's school had reasonably usable Windows laptops with the latest version of Scratch on them. We generally had no issue with them. However, I helped out with teaching some programming at my daughter's infant school and it is a different story. They had half a room of desktop PCs which were usable and around 10 or 12 notebook-style laptops. These had tiny screens and missing keys. The Scratch interface didn't fit on the full screen meaning that children had to scroll up and down to add new script blocks. Some children couldn't understand how to do this.
+
+*Tip: Check out what equipment the schools have before you start. You'll have to work with what you've got but it helps to understand the problems you may have before you start.*
 
 ### Show and tell
 
@@ -83,10 +80,24 @@ Ultimately, you and the children both need to have fun. Some of the children tol
 
 ## The projects for my club
 
-If you're interested in following a similar structure to my club, here are the projects that we did. I've also listed some of the enhancements that I added.
+If you're interested in following a similar structure to my club, here are the projects that we did. I've also listed some of the enhancements that I added and have given links to the versions I made so you can remix them.
 
-1. [Rockband](https://www.codeclubprojects.org/en-GB/scratch/rock-band/) + hip-hop pikachu - Playing sounds, changing sprites depending on whether sound is playing, movement based on input
-2. [Ghost Catcher](https://www.codeclubprojects.org/en-GB/scratch/ghostbusters/) - Game where you click on ghosts as they appear/disappear (like "whack-a-mole"). Adding variables to remember scores, high scores and a timer. Varying the frequency, size, speed of ghosts.
-3. [Chatbot](https://www.codeclubprojects.org/en-GB/scratch/chatbot/) - Simple "AI" to respond to questions, remember answers and use them later in responses. I added a challenge here to get them to make it respond to commands. I added "hide", "moonwalk", "basketball", "dab", "bottle flip" and got the character to do the responses, random success of basketball shot, bottle flipping etc.
-4. [Clone Wars](https://www.codeclubprojects.org/en-GB/scratch/clone-wars/) - Making a space shoot-em-up. Player controls, cloning sprites, enemy AI. Bonuses for adding in lives, scores, health packs, shields, extra weapons.
-5. [Flappy Bird](https://www.codeclubprojects.org/en-GB/scratch/flappy-parrot/) - Going to make a clone of Flappy Bird game. Understanding most of what we've done before and then adding in gravity calculation and moving pipes, game states etc.
+#### Week 1 - [Rockband](https://www.codeclubprojects.org/en-GB/scratch/rock-band/)
+
+This project gives a great basic introduction to Scratch. It shows how to playing sounds, change costumes based upon state and user input. I expanded upon it with my [Beatbox Pikachu](https://scratch.mit.edu/projects/153704607/) version. Feel free to copy and remix that.
+
+#### Week 2 - [Ghost Catcher](https://www.codeclubprojects.org/en-GB/scratch/ghostbusters/)
+
+This is a "whack-a-mole" style gme where you click on ghosts as they appear and disappear to score points. A great introduction to variables fro remembering scores and a timer. Enhancements include varying the frequency, size and speed of ghosts and adding a high score. My version shows a complete game with a game over screen. My extended Ghostbusters game is [here](https://scratch.mit.edu/projects/153704687/).
+
+#### Week 3 - [Chatbot](https://www.codeclubprojects.org/en-GB/scratch/chatbot/)
+
+Ths is probably my favourite project. It's a great introduction to logic by getting Scratch to ask a question and then allowing the children use the response within their code. It can start off simple but then allows them to create their own "artificial intelligence". My enhancement shows a command based AI which responds to "hide", "moonwalk", "basketball", "dab", "bottle flip" and my character responded accordingly. Bottle flipping was particularly well received! 😄 Here's [my version](https://scratch.mit.edu/projects/153704739/) on the Scratch website.
+
+#### Week 4 - [Clone Wars](https://www.codeclubprojects.org/en-GB/scratch/clone-wars/)
+
+This project was particularly enjoyed by the Y5 children in my second group. It's a space shoot-em-up with a [Galaxians](https://www.youtube.com/watch?v=XhYVcwhSWjI) like feel to it. In this you learn about cloning sprites for repeated bullets and enemy AI. I found it an interesting project to explain to the children how I would experiment with good gameplay by tweaking variables for speed of enemies, time between bullets and so on. I added some enhancements like a shield which made it feel almost like a real game. You can find my version on the Scratch website [here](https://scratch.mit.edu/projects/153704809/).
+
+#### Week 5 - [Flappy Parrot](https://www.codeclubprojects.org/en-GB/scratch/flappy-parrot/)
+
+This was the project that the Y6 children were most excited about. Flappy Bird is an iconic mobile game for most of them and it was great to see their ideas. It gives an introduction to gravity and also allows the idea of moving the bird forward by actually moving the pipes backwards. This was quite a mind-blowing trick for some of the children. It's great to show off game developer cheats that we often use without realising. This is also a good project to show a full set of game states with. Try adding a start and end screen. Mine used the original Flappy Bird graphics and awarded a medal if you beat the high score. You can find my version of Flappy Bird [here](https://scratch.mit.edu/projects/153704839/).
