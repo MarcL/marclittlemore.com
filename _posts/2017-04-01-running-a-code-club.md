@@ -6,7 +6,7 @@ permalink: /lessons-learned-from-running-a-code-club/
 header-img: images/posts/lessons-learned-from-running-a-code-club.jpg
 categories:
     - code-club
-description: Running a Code Club for children is great fun. Here are some lessons I've learned in running mine.
+description: A Code Club is a great place for children to learn more about computing, and for adults to learn about teaching. Here are some tips and tricks on how to make your Code Club a fun learning environment for everyone.
 social-img: images/posts/lessons-learned-from-running-a-code-club-fb.jpg
 ---
 
