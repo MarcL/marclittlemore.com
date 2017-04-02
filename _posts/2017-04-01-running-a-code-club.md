@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lessons Learned From Running A Code Club"
-subtitle: "Some lessons learned from running a Code Club and teaching computer programming to children."
+subtitle: "Teaching children about computer programming is fun but challenging. Here's what I learnt."
 permalink: /lessons-learned-from-running-a-code-club/
 header-img: images/posts/lessons-learned-from-running-a-code-club.jpg
 categories:
