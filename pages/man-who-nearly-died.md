@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How I Almost Died
-description:
+description: Back in 2014, I almost died. Here's my story.
 permalink: /how-i-almost-died/
 header-img: images/banners/hospital-lights.jpg
 

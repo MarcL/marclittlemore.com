@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: Things and stuff about me.
+description: Things and stuff about me
 permalink: /about/
 header-img: images/banners/about-bg.jpg
 ---
