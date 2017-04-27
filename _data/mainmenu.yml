@@ -1,3 +1,7 @@
+- name: "Talks"
+  url: /talks
+  title: "Ideas I've shared.'"
+
 - name: About
   url: /about
   title: "Find out more about me"
