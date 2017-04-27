@@ -17,7 +17,7 @@ We’ll look at how my team at the BBC approached security concerns when creatin
 
 ## Slides
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/oeY1L0QVooxru3" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/oeY1L0QVooxru3" title="Securing Your BBC Identity" target="_blank">Securing Your BBC Identity</a> </strong> from <strong><a target="_blank" href="https://www.slideshare.net/MarcLittlemore">Marc Littlemore</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/oeY1L0QVooxru3" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/MarcLittlemore/securing-your-bbc-identity" title="Securing Your BBC Identity" target="_blank">Securing Your BBC Identity</a> </strong> from <strong><a target="_blank" href="https://www.slideshare.net/MarcLittlemore">Marc Littlemore</a></strong> </div>
 
 ## Video
 
