@@ -3,6 +3,7 @@ layout: page
 title: JavaScript Testing
 permalink: /javascript-testing/
 header-img: images/banners/computer-code.jpg
+social-img: images/social/javascript-testing.jpg
 ---
 
 Over the past few years I've been introduced to test driven development (TDD) in combination with using JavaScript and Node.js. It's something that I really enjoyed learning and then talking about. TDD is the practice of writing new production code by first writing a failing test. It often leads to reduced defects or bugs in your code, and helps to define a code contract for your applications.
