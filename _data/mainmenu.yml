@@ -2,6 +2,10 @@
   url: /talks/
   title: "Ideas I've shared.'"
 
+- name: "JavaScript Testing"
+  url: /javascript-testing/
+  title: "Learn more about JavaScript testing"
+
 - name: About
   url: /about/
   title: "Find out more about me"
