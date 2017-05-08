@@ -10,15 +10,13 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Current Focus
 
-* Writing about my experience in running a [Code Club](https://www.codeclub.org.uk/).
-* Writing an article on unit testing JavaScript applications.
-* Planning a course on JavaScript unit testing.
-* Building an email list for my unit testing course.
-* Learning to use a [Bullet Journal](http://bulletjournal.com/).
+* Writing about JavaScript testing.
+* Writing a course about JavaScript testing.
+* Building an email list for my JavaScript testing course which you can sign up for here: [JavaScript Testing Made Easy]({{site.url}}/courses/javascript-testing-made-easy)
 
 ## Up Next
 
-* Fixing a broken mac-mini.
+* Setting up my studio to record my new course.
 
 ## Always doing
 
@@ -26,4 +24,4 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 * Helping my wife [Clare](http://www.clarelittlemore.com) to realise her dreams of becoming a full-time writer and online teacher.
 * Continuing to recover from a major illness and write about it to help others. You can read about it on Clare's new blog [Out Of The Woods](http://outofthewoodsblog.com).
 
-**Last updated:** 13th February, 2017
+**Last updated:** 8th May, 2017
