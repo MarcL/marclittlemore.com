@@ -10,9 +10,6 @@ layout: default
                 <div class="post-heading">
                     <div class="page-title">
                         <h1>{{ page.title }}</h1>
-                        {% if page.subtitle %}
-                        <h2 class="subheading">{{ page.subtitle }}</h2>
-                        {% endif %}
                         {% if page.showDate %}
                         <span class="meta">{{ page.date | date: "%B %-d, %Y" }}</span>
                         {% endif %}
@@ -28,6 +25,10 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {% if page.subtitle %}
+                <h2 class="subheading">{{ page.subtitle }}</h2>
+                {% endif %}
+                {{ content }}
 
 				{{ content }}
 
