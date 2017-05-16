@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Talks
+subtitle: Talks that I've given
 permalink: /talks/
 header-img: images/banners/talks.jpg
 ---

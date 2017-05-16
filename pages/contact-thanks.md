@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Thank You
+subtitle: Thanks for sending me a message
 description: Thanks for sending me a message
 permalink: /contact/thanks/
 header-img: images/banners/contact-thanks.jpg

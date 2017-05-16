@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Games
+subtitle: Apps and games I've been involved with
 description: Apps and games I've been involved with
 permalink: /games/
 header-img: images/banners/game-controller.jpg

@@ -17,6 +17,7 @@ landingpage:
 images:
     upsell: "/images/landingpages/ipad-js-book.png"
 
+published: false
 sitemap:
     exclude: yes
 ---

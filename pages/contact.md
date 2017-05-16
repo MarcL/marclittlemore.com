@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact Me
+subtitle: Get in touch and say hello
 description: Get in touch and say hello
 permalink: /contact/
 header-img: images/banners/contact-me.jpg

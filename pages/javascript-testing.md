@@ -1,6 +1,7 @@
 ---
 layout: page
 title: JavaScript Testing
+subtitle: "Learn more about testing your JavaScript and sign up to my course"
 permalink: /javascript-testing/
 header-img: images/banners/computer-code.jpg
 social-img: images/social/javascript-testing.jpg
