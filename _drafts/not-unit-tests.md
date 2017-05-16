@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: post
 title: Not Unit Tests
-permalink: /talks/securing-your-bbc-identity/
+permalink: /not-unit-tests/
 header-img: images/banners/securing-your-bbc-identity.jpg
 social-img: images/posts/securing-your-bbc-identity-fb.jpg
 categories:
