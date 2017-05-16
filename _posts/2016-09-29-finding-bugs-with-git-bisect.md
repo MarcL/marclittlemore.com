@@ -2,7 +2,7 @@
 layout: post
 title:  "How To Find Bugs Using Git Bisect With This Easy Guide"
 subtitle: "A beginners guide to the world of git bisect"
-permalink: /posts/how-to-find-bugs-using-git-bisect-with-this-easy-guide/
+permalink: /how-to-find-bugs-using-git-bisect-with-this-easy-guide/
 header-img: images/banners/computer-code.jpg
 social-img: images/posts/how-to-find-bugs-using-git-bisect-with-this-easy-guide.jpg
 categories:

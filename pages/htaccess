@@ -8,3 +8,6 @@ RewriteEngine On
 
 # Error document
 ErrorDocument 404 /404.html
+
+# Redirect first post to new url
+RedirectMatch 301 ^/posts/how-to-find-bugs-using-git-bisect-with-this-easy-guide/ /how-to-find-bugs-using-git-bisect-with-this-easy-guide/
