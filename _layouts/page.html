@@ -15,6 +15,15 @@ layout: default
     </div>
 </div>
 
+<article class="pa3 pa5-ns w-100">
+    {% if page.subtitle %}
+       <p class="f2 measure-narrow lh-copy">{{page.subtitle}}</p>
+    {% endif %}
+    <div class="f4 measure-wide lh-copy">
+        {{content}}
+    </div>
+</article>
+
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
