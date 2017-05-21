@@ -4,7 +4,7 @@ title:  "Halloween Sound Effects Using Spotify And Raspberry Pi"
 subtitle: "Scare the neighbours and create a spooky Halloween by using your Raspberry Pi and Spotify"
 permalink: /spooky-halloween-sound-effects-with-raspberry-pi-and-spotify/
 header-img: images/banners/raspberry-pi.jpg
-social-img: images/posts/pooky-halloween-sound-effects-with-raspberry-pi-and-spotify.jpg
+social-img: images/social/spooky-halloween-sound-effects-with-raspberry-pi-and-spotify.jpg
 categories:
     - raspberry-pi
     - development

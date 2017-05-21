@@ -2,19 +2,18 @@
 layout: default
 ---
 
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <div class="page-title">
-                        <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+<style>
+.hero {
+    background: no-repeat center center;
+    background-size: cover;
+}
+</style>
+
+<div class="hero" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');">
+    <div class="pv6-ns pa5 tl-ns tc">
+        <h1 class="f-headline-ns f3 lh-title dib ph4 pv2 white bg-black-80">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
     </div>
-</header>
+</div>
 
 <div class="container">
 	<div class="row">
@@ -26,5 +25,3 @@ layout: default
 		</div>
 	</div>
 </div>
-
-<hr>
