@@ -22,13 +22,3 @@
   url: http://soundcloud.com/djcruze
   icon: "fa-soundcloud"
   title: "Follow DJ Cruze on SoundCloud"
-
-- name: Pinterest
-  url: https://pinterest.com/marclittlemore/
-  icon: "fa-pinterest"
-  title: "Follow me on Pinterest"
-
-- name: Google+
-  url: https://plus.google.com/+MarcLittlemore/
-  icon: "fa-google-plus"
-  title: "Follow me on Google+"

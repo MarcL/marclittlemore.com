@@ -2,56 +2,31 @@
 layout: default
 ---
 
-<!-- Post Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="page-title">
-                        <h1>{{ page.title }}</h1>
-                        {% if page.showDate %}
-                        <span class="meta">{{ page.date | date: "%B %-d, %Y" }}</span>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
+<style>
+.hero {
+    background: no-repeat center center;
+    background-size: cover;
+}
+</style>
+
+<div class="hero" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');">
+    <div class="pv6-ns pa5 tc-ns tc">
+        <h1 class="f1-ns f3 lh-title dib ph4 pv2 white bg-black-80">
+            {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+        </h1>
     </div>
-</header>
+</div>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {% if page.subtitle %}
-                <h2 class="subheading">{{ page.subtitle }}</h2>
-                {% endif %}
-                {{ content }}
+<section class="mw8 pa3 mw8-ns ph5-ns center">
+    {% if page.subtitle %}
+       <p class="f2 lh-copy">{{page.subtitle}}</p>
+    {% endif %}
 
-				{{ content }}
-
-                <hr>
-
-                {% include social/disqusComments.html %}
-
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-            </div>
-        </div>
+    <div class="roboto lh-copy">
+        {{content}}
     </div>
-</article>
 
-<hr>
+    <div id="comments">
+        {% include social/disqusComments.html %}
+    </div>
+</section>

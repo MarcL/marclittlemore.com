@@ -10,8 +10,10 @@ layout: default
 </style>
 
 <div class="hero" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');">
-    <div class="pv6-ns pa5 tl-ns tc">
-        <h1 class="f-headline-ns f3 lh-title dib ph4 pv2 white bg-black-80">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+    <div class="pv6-ns pa5 tc-ns tc">
+        <h1 class="f-subheadline-ns f3 lh-title dib ph4 pv2 white bg-black-80">
+            {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+        </h1>
     </div>
 </div>
 
