@@ -2,23 +2,13 @@
 layout: landingpage-default
 ---
 
-<div class="landing-content">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-1">
-            <div class="row wrap-form">
-                <div class="col-md-10 col-md-offset-1">
-                    {% include signUpForm.html landingpage=page.landingpage %}
-                </div>
-            </div>
+<article class="cf">
+    <div class="tc ">
+        <div class="fl w-100 w-50-ns bg-near-white tc">
+            {% include signUpForm.html landingpage=page.landingpage %}
         </div>
-        <div class="col-md-4">
-            <img src="{{ page.landingpage.images.upsell }}" class="img-responsive">
+        <div class="fl w-100 w-50-ns tc">
+            <img src="{{ page.landingpage.images.upsell }}" class="w-60 f5 measure">
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            {{ content }}
-        </div>
-    </div>
-</div>
-
+</article>
