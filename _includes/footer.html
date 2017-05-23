@@ -1,33 +1,29 @@
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="RSS feed">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
+<footer class="pv4 ph3 ph5-ns tc">
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="RSS feed" class="link dark-gray hover-silver dib h2 w2 mr3">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+{% for social_item in site.data.socialmedia %}
+    <a href="{{ social_item.url }}" target="_blank" title="{{ social_item.title }}" class="link dark-gray hover-silver dib h2 w2 mr3">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa {{social_item.icon}} fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+{% endfor %}
 
-                    {% for social_item in site.data.socialmedia %}
-                        <li>
-                            <a href="{{ social_item.url }}" target="_blank" title="{{ social_item.title }}">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa {{social_item.icon}} fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-                <p class="copyright text-muted">Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}</p>
-            </div>
-        </div>
-    </div>
+  <div class="mt4">
+    <a href="/javascript-testing" class="f6 link dim gray dib mr3 mr4-ns">JavaScript Testing</a>
+    <a href="/talks" class="f6 link dim gray dib mr3 mr4-ns">Talks</a>
+    <a href="/about" class="f6 link dim gray dib mr3 mr4-ns">About</a>
+    <a href="/now" class="f6 link dim gray dib mr3 mr4-ns">Now</a>
+    <a href="/contact" class="f6 link dim gray dib">Contact Me</a>
+  </div>
+  <div class="mt4 gray f6">
+      Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+  </div>
 </footer>
 
 {% include scripts.html %}
