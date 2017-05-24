@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Talks
-subtitle: Talks that I've given
+subtitle: Recent talks that I've given
 permalink: /talks/
 header-img: images/banners/talks.jpg
 ---
@@ -9,8 +9,6 @@ header-img: images/banners/talks.jpg
 I enjoy sharing ideas with people and talking publicly about the work I do. Here are some talks I've presented both internally to BBC teams, and to a wider audience. If you'd like me to come and speak at your event then get in touch.
 
 Most of my talks involve 80s and 90s rappers. Enjoy!
-
-<div class="f1-ns f5 bb b--black-20 pv3">Recent Talks I've Given</div>
 
 {% for post in site.categories["talks"] %}
 <article class="pv4 bb b--black-10 ph3 ph0-l">
