@@ -10,10 +10,6 @@
   url: /about/
   title: "Find out more about me"
 
-- name: "Now"
-  url: /now/
-  title: "What I'm up to this right now"
-
 - name: "Contact"
   url: /contact/
   title: "Send me a message"

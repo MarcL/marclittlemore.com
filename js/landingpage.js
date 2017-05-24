@@ -46,7 +46,7 @@ function setTimerCountdown(timerTextId, progressBarId, maxTimeSeconds) {
     var timeLeft = maxTime;
     var timer = document.getElementById(timerTextId);
     var progressTimer = document.getElementById(progressBarId);
-    var progressBarScreenReader = progressTimer.getElementsByClassName('sr-only')[0];
+    var progressBarScreenReader = document.getElementById('progressBarScreenReader');
     var timerInterval = setInterval(function() {
         timeLeft--;
 

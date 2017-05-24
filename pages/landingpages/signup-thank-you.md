@@ -8,4 +8,7 @@ landingpage:
     subtitle: "Now Just One Last Thing. Prove You Are Not A Robot..."
 sitemap:
     exclude: yes
+
+stylesheets:
+    - "//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 ---

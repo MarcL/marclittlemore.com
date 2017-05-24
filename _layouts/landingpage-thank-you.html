@@ -4,39 +4,37 @@ scripts:
     - "/js/landingpage.js"
 ---
 
-<div class="landing-content">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="row confirm-panel text-center">
-                <div class="col-md-4">
-                    <h4>STEP 1</h4>
-                    <p><i class="fa fa-3x fa-check"></i></p>
-                    <p><strong>Completed!</strong></p>
-                </div>
-                <div class="col-md-4 active-panel">
-                    <h4>STEP 2</h4>
-                    <p><i class="fa fa-3x fa-envelope text-primary"></i></p>
-                    <p><strong>Go to your inbox and click the confirmation link I just emailed you</strong></p>
-                </div>
-                <div class="col-md-4">
-                    <h4>STEP 3</h4>
-                    <p><i class="fa fa-3x fa-cloud-download"></i></p>
-                    <p><strong>You'll get access to some of my best material</strong></p>
-                </div>
-            </div>
-        </div>
+<div class="dt dt--fixed mv3 b--light-gray br2 b--solid">
+    <div class="dtc tc pv2 bg-light-gray helvetica">
+        <h4 class="f4 silver ttu">Step 1</h4>
+        <p><i class="fa fa-3x fa-check silver"></i></p>
+        <p class="b ttu silver">Completed!</p>
     </div>
+    <div class="dtc tc pv2 bg-white pa3">
+        <h4 class="f4 dark-gray ttu">Step 2</h4>
+        <p><i class="fa fa-3x fa-envelope text-primary blue"></i></p>
+        <p class="dark-gray b">Go to your inbox and click the confirmation link I just emailed you.</p>
+    </div>
+    <div class="dtc tc pv2 bg-light-gray pa3">
+        <h4 class="f4 silver ttu">Step 3</h4>
+        <p><i class="fa fa-3x fa-cloud-download silver"></i></p>
+        <p class="b silver">You'll get access to some of my best material.</p>
+    </div>
+</div>
+
+<h3 id="timer" class="f3 dark-gray tc">05:00</h3>
+<div class="bg-light-gray br-pill h2 overflow-y-hidden">
+    <div id="progressTimer" class="bg-blue br-pill h2 w-third" style="width:100%;"></div>
+    <span class="sr-only dn" id="progressBarScreenReader">0% Complete</span>
 </div>
 
 <div class="landing-content">
     <div class="row">
         <div class="col-md-10 col-md-offset-1 text-center">
-            <h3 id="timer">05:00</h3>
         </div>
         <div class="col-md-10 col-md-offset-1">
             <div class="progress">
                 <div id="progressTimer" class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                    <span class="sr-only" id="progressBarScreenReader">0% Complete</span>
                 </div>
             </div>
         </div>
