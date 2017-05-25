@@ -1,12 +1,13 @@
 <header class="bg-black-70 fixed w-100 ph2 pv2 pv2-ns ph3-m ph4-l" style="z-index:100;">
-  <nav class="f7 f5-ns fw6 ttu tracked tr-ns">
-    <a class="link dim white dib mr3" href="/" title="Home">Home</a>
-    {% for page in site.data.mainmenu %}
-        {% if page.name %}
-            {% if page.hide == null %}
-                <a class="link dim white dib mr3" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.name }}</a>
+    <nav class="f7 f5-ns fw6 ttu tracked tr-ns">
+        <a class="f4 link dib white dim mr3 mr4-ns rotate-90" href="#">|||</a>
+        <a class="link dim white dib mr3" href="/" title="Home">Home</a>
+        {% for page in site.data.mainmenu %}
+            {% if page.name %}
+                {% if page.hide == null %}
+                    <a class="link dim white dib mr3" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.name }}</a>
+                {% endif %}
             {% endif %}
-        {% endif %}
-    {% endfor %}
-  </nav>
+        {% endfor %}
+    </nav>
 </header>
