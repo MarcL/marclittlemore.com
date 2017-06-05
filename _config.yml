@@ -16,4 +16,4 @@ facebookAppId: "534953096696612"
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "LICENSE"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", "LICENSE", "gulpfile.js"]
