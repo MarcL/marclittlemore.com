@@ -2,27 +2,4 @@
 layout: default
 ---
 
-<style>
-.hero {
-    background: no-repeat center center;
-    background-size: cover;
-}
-</style>
-
-<div class="hero" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');">
-    <div class="pv4 pv6-l pa5 tc">
-        <h1 class="f-subheadline-ns f3 lh-title dib ph4 pv2 white bg-black-40">
-            {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
-        </h1>
-    </div>
-</div>
-
-<section class="mw8 pa3 mw8-ns ph5-ns center">
-    {% if page.subtitle %}
-       <h2 class="f2-ns f3 bb b--black-20 lh-copy ttu">{{page.subtitle}}</h2>
-    {% endif %}
-
-    <div class="roboto lh-copy">
-        {{content}}
-    </div>
-</section>
+{{content}}
