@@ -33,7 +33,11 @@ _He was probably the second person to save my life._
 
 Apparently, it all happened very fast. Clare left me at the hospital after visiting until 7pm having been told that I was doing well. She rang again at 10pm to check I was ok and the person who answered the phone said I was fine. She was then rudely awoken at 2.30am on Wednesday morning by the phonecall you never want from a hospital, "You need to come to the hospital immediately. Marc is very ill." My blood pressure had dropped through the floor. I had multi-organ failure and all of my major organs were beginning to shut down.
 
-> "You need to come to the hospital immediately. Marc is very ill."
+<blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+<p class="f5 f4-m f3-l lh-copy measure mt0">
+You need to come to the hospital immediately. Marc is very ill.
+</p>
+</blockquote>
 
 The symptoms seemed to be those of [sepsis](http://www.nhs.uk/conditions/blood-poisoning/Pages/Introduction.aspx), a condition where the body's immune system goes into overdrive and attempts to protect itself from infection. I was rushed down for a computerised tomography (CT) scan to get a better picture of what was causing the drop in blood pressure. My wife had a worrying wait at 4am as the on-call CT radiologist raced to get into the hospital for this emergency procedure. The scan showed a problem somewhere in my bowel but it wasn't immediately obvious what it was. The order was given to operate that morning to investigate and potential fix the problem with my bowel. Thankfully, one of their best colorectal surgeons was on hand to perform the operation but there was no guarantee that I would survive.
 
@@ -43,7 +47,11 @@ The operation had concluded that I had an [ischemic](https://en.wikipedia.org/wi
 
 I was [intubated](https://en.wikipedia.org/wiki/Tracheal_intubation) to prevent asphixiation, meaning that a large tube was put into my windpipe to keep my airway clear. I was too weak to breathe so my lungs were now controlled by a [ventilator](https://en.wikipedia.org/wiki/Medical_ventilator). I was given [inotropes](https://en.wikipedia.org/wiki/Inotrope) to increase the strength of my heartbeat in an attempt to keep the blood flowing properly to my quickly-dying organs. My blood was passed through a dialysis machine to clean it of the toxins that were busy attacking me. My blood pressure was dangerously low. My body was dying but I was being kept alive by the miracle of modern medicine until they could determine what was wrong. Every treatment that they were given me had the potential to cause knock-on effects elsewhere. The ITU consultant spoke to Clare and my family and told them "his condition is deteriorating, despite increased support, and he is unlikely to survive."
 
-> His condition is deteriorating, despite increased support, and he is unlikely to survive.
+<blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+<p class="f5 f4-m f3-l lh-copy measure mt0">
+His condition is deteriorating, despite increased support, and he is unlikely to survive.
+</p>
+</blockquote>
 
 _They were pretty sure I would die that night._
 
@@ -79,8 +87,12 @@ After six weeks of being home, I managed to have the catheter removed, which is 
 
 As I write this, it is November 2016 and it is just over two years since the madness of this part of my life occurred. People often assume that I'm now better. I guess I am to a certain extent, I'm definitely better than I was when I contracted streptococcus group A and sepsis. However, I'm acutely aware that I'll probably never be fully better so we've had to define what we call the "new normal". This means that I'll probably never run that half marathon that I was training for when I got ill back in June 2014. Not being able to feel my feet properly due to [peripheral neuropathy](http://www.nhs.uk/conditions/Peripheral-neuropathy/Pages/Introduction.aspx) means that it will be easy for me get sores without realising it. Doing so could easily mean gettting an infection and losing more toes which is something I'm hoping to avoid in the future. Suffering from constant hypersensitivity due to the neuropathy means pretty constant pain in my feet but this is something I just deal with without much complaint. As I mentioned earlier, I'm still pretty happy that my feet weren't removed in intensive care. I've always been pretty positive about these things.
 
-The new normal means thinking about things differently. It means planning holidays which are easy for me to deal with, where I don't have to do too much walking. It means accepting that I'll never run again but instead thinking of another way of exercising which has lower impact, such as cycling. It means setting myself new challenges and spending time with my family in the ways that I can. I'll never be the same as I was but that doesn't really matter any more. What really matters is that I'm still here with Clare and my children.
+The new normal means thinking about things differently. It means planning holidays which are easy for me to deal with, where I don't have to do too much walking. It means accepting that I'll never run again but instead thinking of another way of exercising which has lower impact, such as cycling. It means setting myself new challenges and spending time with my family in the ways that I can. I'll never be the same as I was but that doesn't really matter any more. What **really** matters is that I'm still here with Clare and my children.
 
-> I'll never be the same as I was but that doesn't really matter any more. What **really** matters is that I'm still here with Clare and my children.
+<blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+<p class="f5 f4-m f3-l lh-copy measure mt0">
+I'll never be the same as I was but that doesn't really matter any more. What really matters is that I'm still here with Clare and my children.
+</p>
+</blockquote>
 
 Thanks for reading this somewhat abridged version of my story. If you're interested in reading more then please take a look at Clare's blog where she writes about it in more detail and much better than I ever could. You can [read our story from the beginning here](http://outofthewoodsblog.com/from-the-beginning/). You can also consider [donating to the Sepsis Trust](http://sepsistrust.org/donate/) who are helping to raise awareness of sepsis, of which there are over 44,000 deaths per year.
