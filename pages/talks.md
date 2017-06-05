@@ -22,7 +22,7 @@ Most of my talks involve 80s and 90s rappers. Enjoy!
             </p>
         </div>
         <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-            <img src="/{{post.social-img}}" class="db" alt="{{post.title}}">
+            <img src="{{post.thumbnail}}" class="db" alt="{{post.title}}">
         </div>
     </div>
 </article>
