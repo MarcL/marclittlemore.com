@@ -5,6 +5,7 @@ subtitle: "A beginners guide to the world of git bisect."
 permalink: /how-to-find-bugs-using-git-bisect-with-this-easy-guide/
 header-img: images/banners/computer-code.jpg
 social-img: images/social/how-to-find-bugs-using-git-bisect-with-this-easy-guide.jpg
+thumbnail: /images/thumbnails/social/how-to-find-bugs-using-git-bisect-with-this-easy-guide-thumb.jpg
 categories:
     - git
     - development

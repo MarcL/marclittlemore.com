@@ -5,6 +5,7 @@ subtitle: "Scare the neighbours and create a spooky Halloween by using your Rasp
 permalink: /spooky-halloween-sound-effects-with-raspberry-pi-and-spotify/
 header-img: images/banners/raspberry-pi.jpg
 social-img: images/social/spooky-halloween-sound-effects-with-raspberry-pi-and-spotify.jpg
+thumbnail: /images/thumbnails/social/spooky-halloween-sound-effects-with-raspberry-pi-and-spotify-thumb.jpg
 categories:
     - raspberry-pi
     - development
