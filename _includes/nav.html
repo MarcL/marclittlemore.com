@@ -1,12 +1,9 @@
-<header class="bg-black-70 fixed w-100 ph2 pv2 pv2-ns ph3-m ph4-l" style="z-index:100;">
-    <nav class="fw6 ttu tracked tr-ns">
-        <a class="f5 f6-ns link dib white dim mr3 mr4-ns rotate-90 dn-m" href="#" id="navButton">|||</a>
-        <div class="db pt2 pt0-m" id="navLinks">
+<header class="bg-black-70 w-100 ph2 pv2 pv2-ns ph3-m ph4-l fixed" style="z-index:100;">
+    <nav class="fw6 ttu tracked tc">
+        <div class="db" id="navLinks">
             {% for page in site.data.mainmenu %}
                 {% if page.name %}
-                    {% if page.hide == null %}
-                        <a class="f5 f6-ns link dim white db dib-m mr3" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.name }}</a>
-                    {% endif %}
+                    <a class="f7 f6-ns link dim white dib mr2 mr3-ns" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.name }}</a>
                 {% endif %}
             {% endfor %}
         </div>
