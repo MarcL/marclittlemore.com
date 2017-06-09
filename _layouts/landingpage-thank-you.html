@@ -1,7 +1,7 @@
 ---
 layout: landingpage-default
 scripts:
-    - "/js/landingpage.js"
+    - "/js/bundle.min.js"
 ---
 
 <div class="dt dt--fixed mv3 b--light-gray br2 b--solid">
@@ -27,9 +27,3 @@ scripts:
     <div id="progressTimer" class="bg-blue br-pill h2 w-third" style="width:100%;"></div>
     <span class="sr-only dn" id="progressBarScreenReader">0% Complete</span>
 </div>
-
-<script>
-window.onload = function() {
-    setTimerCountdown('timer', 'progressTimer', 300);
-}
-</script>
