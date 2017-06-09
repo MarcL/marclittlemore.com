@@ -5,7 +5,8 @@
   "homepage": "http://www.marclittlemore.com",
   "author": "Marc Littlemore",
   "scripts": {
-    "build": "browserify src/index.js -o js/bundle.js && npm run build:minify && rimraf js/bundle.js",
+    "build": "npm run build:js && npm run build:minify && rimraf js/bundle.js",
+    "build:js": "browserify src/index.js -o js/bundle.js",
     "build:minify": "uglifyjs --compress --mangle -o js/bundle.min.js js/bundle.js",
     "deploy": "npm run build && npm run deploy:server",
     "deploy:server": "git push deploy master",
