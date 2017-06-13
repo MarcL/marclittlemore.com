@@ -5,6 +5,7 @@ subtitle: "Quick tips, tricks and gotchas for testing asynchronous JavaScript wi
 permalink: /how-to-unit-test-asynchronous-javascript-tips-and-tricks/
 header-img: images/banners/computer-code.jpg
 social-img: images/social/how-to-unit-test-asynchronous-javascript-tips-and-tricks-fb.jpg
+thumbnail: /images/thumbnails/social/how-to-unit-test-asynchronous-javascript-tips-and-tricks-fb-thumb.jpg
 categories:
     - unit-testing
     - development
@@ -72,7 +73,7 @@ describe('better asynchronous test that stubs timer', () => {
 
 ### Remember to handle your error conditions
 
-We've got the asynchronous test passing now and it runs nice and quickly. However, imagine that we're calling a service which throws an error and we want to have a test for this. If we don't call the `dpne` callback function when an error occurs, the test will timeout as `Mocha` doesn't know that it has finished.
+We've got the asynchronous test passing now and it runs nice and quickly. However, imagine that we're calling a service which throws an error and we want to have a test for this. If we don't call the `done` callback function when an error occurs, the test will timeout as `Mocha` doesn't know that it has finished.
 
 ```javascript
 it('should timeout because the done callback is not called when function has errors', (done) => {
@@ -101,26 +102,174 @@ it('should call the done callback when error occurs', (done) => {
 });
 ```
 
-* Remember to call the done callback function with any failure conditions too or your test will timeout if it fails.
+## Promises
 
+If you've not used Promises in your JavaScript then you really should. They allow you to remove some of the complexity of callback functions, especially when nesting multiple calls. In case you've never used them, a `Promise` is an object which represents the eventual completion or failure of an asychronous operation, and its resulting value. For more information, take a look at Jake Archibald's great article, [JavaScript Promises: an introduction](https://developers.google.com/web/fundamentals/getting-started/primers/promises).
 
-* When calling a function that is promise-based, remember to return the promise explicitly with a return statement. If you don’t do this, the test will execute as thought it is synchronous and will appear to pass because you haven’t yet hit the expectation within your then function.
+`Mocha` makes using Promises really simple in that its tests allow you to either call the `done` callback function to indicate that the test has finished, as we did above for the callback functions. Alternatively, you can just return a `Promise` and Mocha will wait for the resolution or rejection of the Promise.
 
-* For unit testing, ensure you fake or stub any function which will take a long time to execute. With JavaScript testing you can use sinon to fake timers and you can also stub promises, or yield to callbacks to quickly return the mocked data.
+### Forgetting to return the Promise
 
-## Promise : resolving
-- Test passes incorrectly because Promise isn't returned
-- Passing test because promise is returned
-- Passing test because `done` callback is called after resolution
-- Passing test because `done` callback is called after resolution using `chai-as-promised` syntax
+When calling a function that is promise-based, you must remember to return the promise explicitly with a return statement. If you don’t do this, the test will execute as though it is synchronous and will appear to pass, even though you haven’t yet hit the expectation within your `then` function. You won't believe the number of times I have done this and been happy that all of my tests pass when none of the assertions would have ever been executed.
 
-## Promise : rejecting
+```javascript
+it('test will pass but it never checks expectation', () => {
+    const givenString = 'finished';
+    Promise.resolve(givenString)
+        .then((data) => {
+            expect(data).to.equal(givenString);
+        });
+});
+```
+
+There are a few ways we can fix this issue, and I'll talk about each of them below.
+
+The easiest fix is to simply remember to return the `Promise` which will inform `Mocha` that it needs to wait for it to resolve or reject.
+
+```javascript
+it('should pass because it returns the promise and the expectation is met', () => {
+    const givenString = 'finished';
+    return Promise.resolve(givenString)
+        .then((data) => {
+            expect(data).to.equal(givenString);
+        });
+});
+```
+
+Alternatively, you can fix this by calling the `done` callback as we did earlier. In this case we **don't** return the Promise. We simply wait for it to resolve and then call the `done` callback as before.
+
+```javascript
+it('should pass because it calls the done callback when Promise has resolved', (done) => {
+    const givenString = 'finished';
+    Promise.resolve(givenString)
+        .then((data) => {
+            expect(data).to.equal(givenString);
+            done();
+        });
+});
+```
+
+A slightly clearer way involves using `chai-as-promised` which allows you to use the `should.notify(done)` syntax to call the `done` callback when the promise has resolved. This is essentially the same as the above call but with some syntactic sugar.
+
+```javascript
+it('should pass because it calls the done callback when Promise has resolved', (done) => {
+    const givenString = 'finished';
+
+    // Using chai-as-promised syntax to call "done" callback
+    Promise.resolve(givenString)
+        .then((data) => {
+            expect(data).to.equal(givenString);
+        })
+        .should.notify(done);
+});
+```
+
+Personally, I prefer returning the `Promises` from inside the `Mocha` tests as it feels a lot clearer but use one of the other methods if you feel it doesn't suit.
+
+### Promise : rejecting
 - Test passes incorrectly because Promise isn't returned
 - Failing test because rejected Promise error isn't caught
 - Passing test because Promise is returned and rejection is caught
 - Passing test because Promise rejection is caught and `done` callback is called
 - Passing test because Promise rejection is caught and `done` callback is called using `chai-as-promised` syntax
 
-## Slow tests
+### Slow tests
 - Passing test but is slow due to Promise function in chain taking a long time
 - Passing test and much faster as longer function is now stubbed to execute immediately
+
+// Cheat sheet download?
+
+```javascript
+describe('while testing Promises', () => {
+    describe('when Promise resolves', () => {
+    });
+
+    describe('when Promise rejects', () => {
+        it('[FAILING TEST] should pass because it does not return the Promise', () => {
+            const givenString = 'error';
+            Promise.reject(givenString);
+        });
+
+        it.skip('[FAILING TEST] should fail because it does not catch the rejection when returning the Promise', () => {
+            const givenString = 'error';
+            return Promise.reject(givenString);
+        });
+
+        it('[PASSING TEST] should pass because it catches the rejection and returns the Promise', () => {
+            const givenString = 'error';
+            return Promise.reject(givenString)
+                .catch((error) => {
+                    expect(error).to.equal(givenString);
+                });
+        });
+
+        it('[PASSING TEST] should pass because it catches the rejection and calls the done callback', (done) => {
+            const givenString = 'error';
+            Promise.reject(givenString)
+                .catch((error) => {
+                    expect(error).to.equal(givenString);
+                    done();
+                });
+        });
+
+        it('[PASSING TEST] should pass because it catches the rejection and calls the done callback using chai-as-promised syntax', (done) => {
+            const givenString = 'error';
+            Promise.reject(givenString)
+                .catch((error) => {
+                    expect(error).to.equal(givenString);
+                })
+                .should.notify(done);
+        });
+    });
+});
+```
+
+```javascript
+describe('while testing function with internal function which takes some time', () => {
+    const moduleUnderTest = {
+        longFunction(data) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(data);
+                }, 1000);
+            });
+        }
+    };
+
+    it('[BAD TEST] should pass but takes too long (~1000ms) to run', () => {
+        const givenString = 'finished';
+
+        return Promise.resolve(givenString)
+            .then(data => moduleUnderTest.longFunction(data))
+            .then((data) => {
+                expect(data).to.equal(givenString);
+            });
+    });
+
+    describe('when long function is stubbed to execute immediately', () => {
+        let stubLongFunction;
+
+        beforeEach(() => {
+            stubLongFunction = sinon.stub(moduleUnderTest, 'longFunction');
+        });
+
+        afterEach(() => {
+            stubLongFunction.restore();
+        });
+
+        it('[FIXED TEST] should pass and long function will execute immediately', () => {
+            const givenString = 'finished';
+
+            // Stub our long function so it returns immediately
+            // with the data we expect it to return
+            stubLongFunction.resolves(givenString);
+
+            return Promise.resolve(givenString)
+                .then(data => moduleUnderTest.longFunction(data))
+                .then((data) => {
+                    expect(data).to.equal(givenString);
+                });
+        });
+    });
+});
+```
