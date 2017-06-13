@@ -180,47 +180,35 @@ Personally, I prefer returning the `Promises` from inside the `Mocha` tests as i
 // Cheat sheet download?
 
 ```javascript
-describe('while testing Promises', () => {
-    describe('when Promise resolves', () => {
-    });
+it.skip('[FAILING TEST] should fail because it does not catch the rejection when returning the Promise', () => {
+    const givenString = 'error';
+    return Promise.reject(givenString);
+});
 
-    describe('when Promise rejects', () => {
-        it('[FAILING TEST] should pass because it does not return the Promise', () => {
-            const givenString = 'error';
-            Promise.reject(givenString);
+it('[PASSING TEST] should pass because it catches the rejection and returns the Promise', () => {
+    const givenString = 'error';
+    return Promise.reject(givenString)
+        .catch((error) => {
+            expect(error).to.equal(givenString);
         });
+});
 
-        it.skip('[FAILING TEST] should fail because it does not catch the rejection when returning the Promise', () => {
-            const givenString = 'error';
-            return Promise.reject(givenString);
+it('[PASSING TEST] should pass because it catches the rejection and calls the done callback', (done) => {
+    const givenString = 'error';
+    Promise.reject(givenString)
+        .catch((error) => {
+            expect(error).to.equal(givenString);
+            done();
         });
+});
 
-        it('[PASSING TEST] should pass because it catches the rejection and returns the Promise', () => {
-            const givenString = 'error';
-            return Promise.reject(givenString)
-                .catch((error) => {
-                    expect(error).to.equal(givenString);
-                });
-        });
-
-        it('[PASSING TEST] should pass because it catches the rejection and calls the done callback', (done) => {
-            const givenString = 'error';
-            Promise.reject(givenString)
-                .catch((error) => {
-                    expect(error).to.equal(givenString);
-                    done();
-                });
-        });
-
-        it('[PASSING TEST] should pass because it catches the rejection and calls the done callback using chai-as-promised syntax', (done) => {
-            const givenString = 'error';
-            Promise.reject(givenString)
-                .catch((error) => {
-                    expect(error).to.equal(givenString);
-                })
-                .should.notify(done);
-        });
-    });
+it('[PASSING TEST] should pass because it catches the rejection and calls the done callback using chai-as-promised syntax', (done) => {
+    const givenString = 'error';
+    Promise.reject(givenString)
+        .catch((error) => {
+            expect(error).to.equal(givenString);
+        })
+        .should.notify(done);
 });
 ```
 
