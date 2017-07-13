@@ -5,7 +5,7 @@ subtitle: How do you learn to write great unit tests?
 permalink: /talks/7-tips-for-writing-great-unit-tests/
 header-img: images/banners/qualities-of-good-unit-tests.jpg
 social-img: images/social/7-tips-for-writing-great-unit-tests
-thumbnail: /images/thumbnails/social/securing-your-bbc-identity-fb-thumb.jpg
+thumbnail: /images/thumbnails/social/7-tips-for-writing-great-unit-tests-thumb.jpg
 categories:
     - talks
 description: "How do you learn to write great unit tests? Why are some unit tests good and some bad? Here I talk about 7 tips for writing great unit tests and gaining confidence in your code."
