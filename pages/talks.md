@@ -15,10 +15,13 @@ Most of my talks involve 80s and 90s rappers. Enjoy!
     <div class="flex flex-column flex-row-ns">
         <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
             <a href="{{ post.url | prepend: site.baseurl }}" class="link dim black">
-                <h1 class="f3 roboto mt0 lh-title">{{ post.title }}</h1>
+                <h1 class="f3 roboto mt0 lh-title mb1">{{ post.title }}</h1>
             </a>
-            <p class="f5 f4-l lh-copy roboto">
+            <p class="f5 f4-l lh-copy roboto i mv2">
                 {{post.subtitle}}
+            </p>
+            <p class="f6 f5-l lh-copy roboto">
+                {{post.description}}
             </p>
         </div>
         <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
