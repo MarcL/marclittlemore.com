@@ -4,7 +4,7 @@ var jimp = require('gulp-jimp');
 const fileList = {
     images: [
         './images/**/*.jpg',
-        '!./images/thumbnails/*',
+        '!./images/thumbnails/**/*.jpg',
         '!./images/banners/*',
         '!./images/favicons/*',
         '!./images/landingpages/*',
