@@ -9,6 +9,9 @@ thumbnail: /images/thumbnails/social/securing-your-bbc-identity-fb-thumb.jpg
 categories:
     - talks
 description: "Application security is often an afterthought for developers, as we concentrate on the next shiny new feature for our projects. In this talk, I highlight the importance of application security and explore some simple and practical ways that we as developers can defend our services from intrusion. "
+
+slideShareId: "oeY1L0QVooxru3"
+youTubeId: "UgsJwcG979U"
 ---
 
 Application security is often an afterthought for developers, as we concentrate on the next shiny new feature for our projects. In this talk, we’ll highlight the importance of application security and explore some simple and practical ways that we as developers can defend our services from intrusion.
@@ -17,7 +20,7 @@ We’ll look at how my team at the BBC approached security concerns when creatin
 
 ## Slides
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/oeY1L0QVooxru3" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/MarcLittlemore/securing-your-bbc-identity" title="Securing Your BBC Identity" target="_blank">Securing Your BBC Identity</a> </strong> from <strong><a target="_blank" href="https://www.slideshare.net/MarcLittlemore">Marc Littlemore</a></strong> </div>
+{% include cards/slideShareEmbed.html id=page.slideShareId %}
 
 ## Video
 
