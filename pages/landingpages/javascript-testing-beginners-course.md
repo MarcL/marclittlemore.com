@@ -11,7 +11,7 @@ landingpage:
         text: SIGNUP NOW
         icon: fa-envelope-o
     signup:
-        title: SIGN UP AND GET STARTED
+        title: SIGN UP TO LEARN MORE
         uuid: "72d3502c470827973d3e8dd63"
         lid: "9c88e1dd6a"
         listname: "marclittlemore"
