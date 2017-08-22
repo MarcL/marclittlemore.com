@@ -1,5 +1,5 @@
 ---
-layout: landingpage-v2
+layout: landingpage-long
 title: JavaScript Testing Beginners Course
 permalink: /courses/javascript-testing-beginners-course/
 description: Struggling to get started with JavaScript testing? Let me help you.

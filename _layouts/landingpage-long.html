@@ -1,0 +1,30 @@
+---
+scripts:
+    - "/js/bundle.min.js"
+hideSumo: yes
+---
+
+<!DOCTYPE html>
+<html lang="en" itemtype="http://schema.org/Article">
+
+{% include head.html %}
+
+<body class="avenir">
+{% include social/facebookSDK.html %}
+
+<div class="bg-light-gray pb5">
+    <div class="relative">
+    <section class="mw5 mw7-ns center pa3 ph5-ns tc">
+        <h1 class="f1 mb2">{{ page.landingpage.title }}</h1>
+        <h2 class="f2 fw4 mt0" style="color:#3B4446">{{ page.landingpage.subtitle }}</h2>
+    </section>
+    </div>
+</div>
+<div class="tc relative">
+    <section class="mw5 mw7-ns center pa3 ph5-ns mb2 nt5">
+        {% include signUpForm.html landingpage=page.landingpage %}
+    </section>
+</div>
+
+</body>
+</html>
