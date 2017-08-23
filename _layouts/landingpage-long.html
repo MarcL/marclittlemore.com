@@ -14,17 +14,29 @@ hideSumo: yes
 
 <div class="bg-light-gray pb5">
     <div class="relative">
-    <section class="mw5 mw7-ns center pa3 ph5-ns tc">
-        <h1 class="f1 mb2">{{ page.landingpage.title }}</h1>
-        <h2 class="f2 fw4 mt0" style="color:#3B4446">{{ page.landingpage.subtitle }}</h2>
-    </section>
+        <section class="mw6 mw7-ns center pa3 ph5-ns tc">
+            {% if page.social-img %}
+                <img src="{{ site.url }}/{{ page.social-img }}" class="w-100 f5 measure">
+            {% else %}
+                <h1 class="f1 mb2">{{ page.landingpage.title }}</h1>
+            {% endif %}
+            <h2 class="f3 fw5 mt4" style="color:#3B4446">{{ page.landingpage.subtitle }}</h2>
+        </section>
     </div>
 </div>
 <div class="tc relative">
-    <section class="mw5 mw7-ns center pa3 ph5-ns mb2 nt5">
+    <section class="mw6 mw7-ns center pa3 ph5-ns mb2 nt5">
         {% include signUpForm.html landingpage=page.landingpage %}
     </section>
 </div>
+
+<section class="mw5 mw7-ns center lh-copy pa3 ph5-ns f4" style="color: #667477;">
+    {{content}}
+</section>
+
+<section class="mw5 mw7-ns center pa3 ph5-ns mb2">
+    {% include signUpForm.html landingpage=page.landingpage %}
+</section>
 
 </body>
 </html>
