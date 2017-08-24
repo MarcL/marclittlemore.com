@@ -41,3 +41,14 @@ This course will be delivered to you over 7 days, with one lesson per day. You w
 * A simpler way to configure your test setup.
 * How to automate your tests for continuous integration.
 Some ideas for better JavaScript testing to help you to level-up your skills.
+
+## How you'll get the lessons
+
+I want to make it as easy as possible for you to learn about JavaScript testing. I also appreciate that everybody learns differently. Here's what you'll receive from me:
+
+* **Daily lessons delivered by email.**
+* **Step-by-step instructions.** Each lesson will explain any dependencies you need to install (there aren't many!) and give you the exact steps to follow.
+* **Complete code examples.** The lesson will show you all of the code you need to include and any command line instructions to run the tests.
+* **A link to download the code sample.** I'll include a link to a zip file containing all of the code and tests for each lesson.
+* **A GitHub repository link.** If you'd prefer to clone or fork a git repository, I'll include a link to it on GitHub. I'll tag each lesson so you can checkout the right commit if you know how to do that.
+* **Videos for visual learners.** You may be someone who prefers a more visual learning experience. Don't worry, I haven't forgotten you! I'm going to record each lesson as a screencast and upload it to YouTube. You will see exactly what I'm typing and I'll talk you through the example and any reasons for my thinking. These videos for each lesson will also contain a more detailed explanation of each concept so they're worth watching even if you prefer to read the text.
