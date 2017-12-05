@@ -20,7 +20,7 @@ hideSumo: yes
             {% else %}
                 <h1 class="f1 mb2">{{ page.landingpage.title }}</h1>
             {% endif %}
-            <h2 class="f3 fw5 mt4" style="color:#3B4446">{{ page.landingpage.subtitle }}</h2>
+            <h2 class="f3 fw5 mt4" style="color:#3B4446">{{ page.landingpage.subtitle | markdownify}}</h2>
         </section>
     </div>
 </div>
