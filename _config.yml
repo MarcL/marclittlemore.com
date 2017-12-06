@@ -4,7 +4,7 @@ header-img: images/banners/home-bg.jpg
 email: marc.littlemore@gmail.com
 description: "Technical articles and information from Marc Littlemore, a full-stack developer, and ex-videogames programmer, with over 23 years of development experience."
 baseurl: ""
-url: "http://www.marclittlemore.com"
+url: "//www.marclittlemore.com"
 googleAnalyticsId: UA-810717-3
 sumoMeId: "a260c264ca479174c95ace07722082ec75abbab6778c364ba7a24230cc55c451"
 disqusId: "marclittlemore"
