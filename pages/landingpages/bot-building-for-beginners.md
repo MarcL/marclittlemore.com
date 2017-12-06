@@ -3,7 +3,7 @@ layout: landingpage-long
 title: Bot Building For Beginners
 permalink: /bots/sign-up-bot-building-for-beginners/
 description: Struggling to get started with JavaScript testing? Let me help you.
-social-img: "images/social/bot-building-for-beginners.png"
+social-img: "images/social/bot-building-for-beginners.jpg"
 
 landingpage:
     title: JavaScript Testing For Beginners
