@@ -11,13 +11,12 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Current Focus
 
-* Writing a mini-course on JavaScript testing.
-* Planning my larger [JavaScript testing course](({{site.url}}/courses/javascript-testing-made-easy)).
-* Building an email list for my JavaScript testing course which you can sign up for here: [JavaScript Testing Made Easy]({{site.url}}/courses/javascript-testing-made-easy)
+* Writing a PDF to show people how to easily build Facebook Chatbots with Chatfuel.
+* Planning a course on building bots. Want to join? Signup here [JavaScript testing course]({{site.url}}/bots/sign-up-bot-building-for-beginners/).
 
 ## Up Next
 
-* Learning Golang.
+* Creating chatbots for e-commerce companies.
 
 ## Always doing
 
@@ -25,4 +24,4 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 * Helping my wife [Clare](http://www.clarelittlemore.com) to realise her dreams of becoming a full-time writer.
 * Helping other sepsis survivors by speaking about [how I nearly died](/how-i-almost-died/). You can also read about it in more detail on Clare's new blog [Out Of The Woods](http://outofthewoodsblog.com).
 
-**Last updated:** 7th August, 2017
+**Last updated:** 16th January, 2018
