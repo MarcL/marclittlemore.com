@@ -1,13 +1,21 @@
 ---
-layout: page
+layout: homepage
+header-img: images/banners/about-bg.jpg
+title: Marc Littlemore
+subtitle: Developer, teacher, speaker and Messenger marketing & chatbot expert
 ---
 
+<section class="w-100 center bb b--light-gray pb4">
+    <p class="f3">Hello, I’m Marc Littlemore. I've been a developer since the early 1990s writing videogames and now building large scale web applications. I love <a href="/talks" alt="Talks">public speaking</a> and I'm an expert on Messenger marketing using chatbots. I'm teaching people how to build better chatbots with my <a href="https://www.youtube.com/playlist?list=PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM" target="_blank">YouTube videos</a> and my goal is to help more people to learn how to build amazing conversational commerce using them. <a href="/bots/sign-up-bot-building-for-beginners/">Want to learn more?</a></p>
+</section>
+
 <section class="w-100 center">
+<h3 class="f2">Articles</h3>
 {% if site.posts.size != 0 %}
     {% for post in site.posts %}
         {% if post.categories contains "talks" %}
         {% else %}
-            <article class="pv4 bb b--black-10 ph3 ph0-l">
+            <article class="pv4 ph3 ph0-l">
                 <div class="flex flex-column flex-row-ns">
                     <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
                         <a href="{{ post.url | prepend: site.baseurl }}" class="link dim black">
