@@ -7,7 +7,7 @@ permalink: /about/
 header-img: images/banners/about-bg.jpg
 ---
 
-I'm Marc Littlemore. I'm a software engineer, a veteran of the video games industry with 18 years of games programming experience, a house music [DJ](http://www.djcruze.co.uk) since 1988, an occasional [house music producer](http://soundcloud.com/djcruze) and lover of technology. I'm a husband to my fantastic wife [Clare](http://www.clarelittlemore.com) and have two beautiful children.
+<p class="f4">I'm Marc Littlemore. I'm a software engineer, a veteran of the video games industry with 18 years of games programming experience, <a href="http://www.djcruze.co.uk">a house music DJ</a> since 1988, an occasional <a href="http://soundcloud.com/djcruze">house music producer</a>, Messenger marketing and chatbot builder, and lover of technology. I'm a husband to my fantastic wife <a href="http://www.clarelittlemore.com">Clare</a> and have two beautiful children.</p>
 
 I also nearly died from multiple organ failure due to sepsis after contracting a streptococcal infection in June 2014. I've written a brief version of [how I nearly died](/how-i-almost-died/) so please take a look if you wonder what happened. Obviously I'm still here but you can read about what happened and how our lives have changed. My wife Clare is blogging about our experience of my illness in more detail so you should probably read it on her [Out Of The Woods Blog](http://outofthewoodsblog.com).
 
