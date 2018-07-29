@@ -8,7 +8,7 @@ social-img: images/social/bbc-account-engineering-excellence-at-strictly-scale.j
 thumbnail: /images/thumbnails/social/bbc-account-engineering-excellence-at-strictly-scale-thumb.jpg
 categories:
     - talks
-description: "How do you build a culture of engineering excellence within a development team? How does do you ensure code quality for applications that get used by millions of people as soon as they're deployed to your production environment? Learn more in this talk."
+description: "How do you build a culture of engineering excellence within a development team? How do you ensure code quality for applications that get used by millions of people as soon as they're deployed to your production environment? Learn more in this talk."
 speakerDeckId: "8f81c921e7c449999eeb8508c0355203"
 ---
 
@@ -17,7 +17,3 @@ Here's a talk that I gave at BBC North's "Women In Tech" event in February 2018,
 ## Slides
 
 {% include cards/speakerDeckEmbed.html id=page.speakerDeckId %}
-
-## Video
-
-No video was taken I'm afraid. :(
