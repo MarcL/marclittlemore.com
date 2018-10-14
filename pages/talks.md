@@ -6,11 +6,14 @@ permalink: /talks/
 header-img: images/banners/talks.jpg
 ---
 
-I enjoy sharing ideas with people and talking publicly about the work I do. Here are some talks I've presented both internally to BBC teams, and to a wider audience. If you'd like me to come and speak at your event then get in touch.
+I used to hate public speaking. I was really shy and the thought of talking in front of 5 people, let alone hundreds, really scared me. When I came to work at the BBC in 2013, I decided I had to overcome my fear of public speaking. I decided to say "yes" whenever anyone asked me to speak and then I began to enjoy sharing my ideas with people.
 
-Most of my talks involve 80s and 90s rappers. Enjoy!
+I love talking publicly about the work I do both at the BBC and outside of work. Here you will find an archive of the talks I've presented both internally to BBC teams, and to a wider audience and various events. Most of my talks involve 80s and 90s rappers or gifs. Enjoy!
+
+If you'd like me to come and speak at your event then get in [touch](/contact) or via [Twitter](https://twitter.com/marclittlemore).
 
 {% for post in site.categories["talks"] %}
+
 <article class="pv4 bb b--black-10 ph3 ph0-l">
     <div class="flex flex-column flex-row-ns">
         <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
