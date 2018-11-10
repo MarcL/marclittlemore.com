@@ -1,14 +1,14 @@
 ---
 layout: page
 title: 'From Space Invaders to Strictly'
-subtitle: Learn how the BBC account team build a culture of engineering excellence
+subtitle: Just getting started in the development industry? Top tips on how I got started.
 permalink: /talks/from-space-invaders-to-strictly/
 header-img: images/banners/bbc-account-engineering-excellence-at-strictly-scale.jpg
-social-img: images/social/bbc-account-engineering-excellence-at-strictly-scale.jpg
-thumbnail: /images/thumbnails/social/bbc-account-engineering-excellence-at-strictly-scale-thumb.jpg
+social-img: images/social/from-space-invaders-to-strictly.jpg
+thumbnail: /images/thumbnails/social/from-space-invaders-to-strictly-thumb.jpg
 categories:
   - talks
-description: "How do you build a culture of engineering excellence within a development team? How do you ensure code quality for applications that get used by millions of people as soon as they're deployed to your production environment? Learn more in this talk."
+description: 'Want to know how I got started in the technology industry? It all started with my love of Space Invaders and ended up with me creating high scale applications to support Strictly Come Dancing. I share some tips for up and coming developers and what to expect when you join the industry.'
 speakerDeckId: '3903e9d8a5484132a15715b96f1cbb64'
 ---
 
