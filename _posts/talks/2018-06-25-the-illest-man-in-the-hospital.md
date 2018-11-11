@@ -1,14 +1,14 @@
 ---
 layout: page
 title: 'The Illest Man In The Hospital'
-subtitle: Learn how the BBC account team build a culture of engineering excellence
+subtitle: In 2014 I nearly died after contracting sepsis. I shared my story of nearly dying with a group of intensive care doctors and nurses
 permalink: /talks/the-illest-man-in-the-hospital/
 header-img: images/banners/the-illest-man-in-the-hospital.jpg
 social-img: images/social/the-illest-man-in-the-hospital.jpg
 thumbnail: /images/thumbnails/social/the-illest-man-in-the-hospital-thumb.jpg
 categories:
   - talks
-description: "How do you build a culture of engineering excellence within a development team? How do you ensure code quality for applications that get used by millions of people as soon as they're deployed to your production environment? Learn more in this talk."
+description: 'After surviving a near-death experience when I contract an infection which caused sepsis, I wanted to share my story in order to help others. In this talk I share my experiences of 45 days in intensive care.'
 speakerDeckId: 'c4e8cd0138fc40c1b22dc9ec625799a9'
 ---
 

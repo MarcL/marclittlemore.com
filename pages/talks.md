@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Talks
-subtitle: Recent talks that I've given
+subtitle: Recent talks
 permalink: /talks/
 header-img: images/banners/talks.jpg
 ---
@@ -28,7 +28,9 @@ If you'd like me to come and speak at your event then get in [touch](/contact) o
             </p>
         </div>
         <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-            <img src="{{post.thumbnail}}" class="db" alt="{{post.title}}">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="grow dib">
+                <img src="{{post.thumbnail}}" class="db" alt="{{post.title}}">
+            </a>
         </div>
     </div>
 </article>
