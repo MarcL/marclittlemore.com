@@ -3,9 +3,9 @@ layout: page
 title: 'The Illest Man In The Hospital'
 subtitle: Learn how the BBC account team build a culture of engineering excellence
 permalink: /talks/the-illest-man-in-the-hospital/
-header-img: images/banners/bbc-account-engineering-excellence-at-strictly-scale.jpg
-social-img: images/social/bbc-account-engineering-excellence-at-strictly-scale.jpg
-thumbnail: /images/thumbnails/social/bbc-account-engineering-excellence-at-strictly-scale-thumb.jpg
+header-img: images/banners/the-illest-man-in-the-hospital.jpg
+social-img: images/social/the-illest-man-in-the-hospital.jpg
+thumbnail: /images/thumbnails/social/the-illest-man-in-the-hospital-thumb.jpg
 categories:
   - talks
 description: "How do you build a culture of engineering excellence within a development team? How do you ensure code quality for applications that get used by millions of people as soon as they're deployed to your production environment? Learn more in this talk."
