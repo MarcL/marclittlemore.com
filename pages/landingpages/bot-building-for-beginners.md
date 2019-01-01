@@ -2,11 +2,11 @@
 layout: landingpage-long
 title: Bot Building For Beginners
 permalink: /bots/sign-up-bot-building-for-beginners/
-description: Struggling to get started with JavaScript testing? Let me help you.
+description: Struggling to get started with bot building? Let me help you.
 social-img: "images/social/bot-building-for-beginners.jpg"
 
 landingpage:
-    title: JavaScript Testing For Beginners
+    title: Bot Building For Beginners
     subtitle: "Want to **learn some simple tricks** to make your Facebook Messenger bots **better than your competition**?"
     button:
         text: SEND ME THE CHEATSHEET
