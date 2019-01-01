@@ -9,7 +9,7 @@ landingpage:
     title: JavaScript Testing For Beginners
     subtitle: "Want to **learn some simple tricks** to make your Facebook Messenger bots **better than your competition**?"
     button:
-        text: SEND ME THE FREE GUIDE
+        text: SEND ME THE CHEATSHEET
         icon: fa-cogs
     signup:
         title: "Sign up now for your **FREE cheatsheet**"
@@ -32,7 +32,7 @@ published: true
 * Don't be confused! Let me teach you some simple ways to make your chatbot better than your competition.
 
 ## Get Your Free Cheetsheet
-Sign up now and I'll send you my **FREE Chatfuel JSON Cheatsheet**. In it you'll find quick and easy recipes to add external data to your Facebook chatbots.
+Sign up now and I'll send you my **FREE Chatfuel JSON Cheatsheet**. Learn how you can enhance your bots using interesting JSON responses for Facebook Messenger.
 
 **^^ Sign up right now! ^^**
 
