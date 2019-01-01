@@ -10,14 +10,13 @@ https://www.marclittlemore.com/contact/
 https://www.marclittlemore.com/games/
 https://www.marclittlemore.com/
 https://www.marclittlemore.com/now/
+https://www.marclittlemore.com/how-i-almost-died/
 https://www.marclittlemore.com/javascript-testing/
 
 ## Landing pages
 https://www.marclittlemore.com/bots/sign-up-bot-building-for-beginners/
 https://www.marclittlemore.com/courses/javascript-testing-beginners-course/
-https://www.marclittlemore.com/guides/javascript-unit-testing-best-practices/
-https://www.marclittlemore.com/courses/javascript-testing-made-easy/
-https://www.marclittlemore.com/how-i-almost-died/
+https://www.marclittlemore.com/signup-thank-you/
 
 ## Talks
 
