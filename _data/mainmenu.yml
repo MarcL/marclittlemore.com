@@ -1,19 +1,15 @@
-- name: "Home"
+- name: 'Home'
   url: /
-  title: "marclittlemore.com"
+  title: 'marclittlemore.com'
 
-- name: "Talks"
+- name: 'Talks'
   url: /talks/
   title: "Ideas I've shared"
 
-- name: "JS Testing"
-  url: /javascript-testing/
-  title: "Learn more about JavaScript testing"
+- name: 'Chatbots'
+  url: /bots/
+  title: 'Learn how to create your own chatbot'
 
 - name: About
   url: /about/
-  title: "Find out more about me"
-
-- name: "Contact"
-  url: /contact/
-  title: "Send me a message"
+  title: 'Find out more about me'
