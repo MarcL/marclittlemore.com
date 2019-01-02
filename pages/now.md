@@ -14,7 +14,7 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 - Creating [YouTube videos](https://www.youtube.com/playlist?list=PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM) to help people to create interesting Chatbots.
 - Learning more about serverless architectures using Google Cloud Functions and AWS Lambda.
 - Writing a PDF to show people how to build Facebook Chatbots with Chatfuel.
-- Planning a course on building bots. Want to join? Signup here [JavaScript testing course]({{site.url}}/bots/sign-up-bot-building-for-beginners/).
+- Planning a course on building bots. Want to join? Signup here [Bot Building For Beginners]({{site.url}}/bots/sign-up-bot-building-for-beginners/).
 
 ## Currently reading
 
