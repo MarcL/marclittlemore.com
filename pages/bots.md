@@ -24,6 +24,9 @@ videos:
   - title: 'Chatfuel & Facebook Messenger Webviews (Part 2)'
     subtitle: 'Want to make your Facebook Messenger webviews dynamic?'
     id: 'UrO5ztx1D5w'
+  - title: 'Create a location-aware chatbot using Chatfuel'
+    subtitle: 'Using the Chatfuel JSON API to share your nearest location'
+    id: '7uQtrQeyWdE'
 ---
 
 It seems like everyone in 2018 and 2019 is talking about **chatbots** as the next big thing in marketing but what are they?
