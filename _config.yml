@@ -30,5 +30,6 @@ exclude: [
   "package.json",
   "node_modules",
   "README.md",
-  "src"
+  "src",
+  "Gemfile"
 ]
