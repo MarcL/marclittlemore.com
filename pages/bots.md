@@ -27,6 +27,13 @@ videos:
   - title: 'Create a location-aware chatbot using Chatfuel'
     subtitle: 'Using the Chatfuel JSON API to share your nearest location'
     id: '7uQtrQeyWdE'
+  - title: 'Reset user and system attributes in Chatfuel'
+    subtitle: 'Learn how to reset user and system attributes using the JSON API and 6 lines of code!'
+    id: 'CGR47D1ArSk'
+quickTips:
+  - title: 'Chatfuel Quick Tip: Reset a user attribute in Chatfuel'
+    subtitle: 'Reset a Chatfuel attribute using the "set attributes" card'
+    id: 'gXZh9jijIS8'
 ---
 
 It seems like everyone in 2018 and 2019 is talking about **chatbots** as the next big thing in marketing but what are they?
@@ -52,6 +59,26 @@ Interested in learning more about chatbots but don't know where to start? Don't 
 <article>
   <div class="cf pa2">
 {% for video in page.videos %}
+    <div class="fl w-100 w-50-ns pa2">
+      <a href="https://www.youtube.com/watch?v={{video.id}}" class="db link tc" target="_blank">
+        <img src="https://i.ytimg.com/vi/{{video.id}}/hqdefault.jpg" alt="{{video.title}}" class="w-100 db outline black-10 grow"/>
+        <dl class="mt2 f7 f6-ns lh-copy">
+          <dt class="clip">Title</dt>
+          <dd class="ml0 black truncate w-100">{{video.title}}</dd>
+          <dt class="clip">Subtitle</dt>
+          <dd class="ml0 gray truncate w-100">{{video.subtitle}}</dd>
+        </dl>
+      </a>
+    </div>
+{% endfor %}
+  </div>
+</article>
+
+### Chatfuel Quick Tip Videos
+
+<article>
+  <div class="cf pa2">
+{% for video in page.quickTips %}
     <div class="fl w-100 w-50-ns pa2">
       <a href="https://www.youtube.com/watch?v={{video.id}}" class="db link tc" target="_blank">
         <img src="https://i.ytimg.com/vi/{{video.id}}/hqdefault.jpg" alt="{{video.title}}" class="w-100 db outline black-10 grow"/>
