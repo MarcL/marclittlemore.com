@@ -28,7 +28,7 @@ videos:
     subtitle: 'Using the Chatfuel JSON API to share your nearest location'
     id: '7uQtrQeyWdE'
   - title: 'Reset user and system attributes in Chatfuel'
-    subtitle: 'Learn how to reset user and system attributes using the JSON API and 6 lines of code!'
+    subtitle: 'Learn how to reset system attributes using the JSON API'
     id: 'CGR47D1ArSk'
 quickTips:
   - title: 'Chatfuel Quick Tip: Reset a user attribute in Chatfuel'
