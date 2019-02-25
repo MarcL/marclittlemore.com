@@ -109,9 +109,9 @@ function validateLoginMiddleware(request, response, next) {
 }
 ```
 
-Using a Promise returned from our authentication service also allows us to add a final `catch` function to our middleware. *But why do we need to add this final catch block?* Well our authentication service needs to determine if our user credentials are correct so it could do this by checking with a 3rd party API, such as an OAuth service, or it could be using a database query. What happens if either of these resources is unavailable? They may have heavy load. They might just fail due to unexpected server downtime. Either of these could cause a request timeout or an unknown response. Our `catch` block can now handle this more gracefully by passing the error on to the generic Express error handling middleware.
-
 **Note:** I'm using [Bluebird's typed promise catch method](http://bluebirdjs.com/docs/api/catch.html) in the above example.
+
+Using a Promise returned from our authentication service also allows us to add a final `catch` function to our middleware. *But why do we need to add this final catch block?* Well our authentication service needs to determine if our user credentials are correct so it could do this by checking with a 3rd party API, such as an OAuth service, or it could be using a database query. What happens if either of these resources is unavailable? They may have heavy load. They might just fail due to unexpected server downtime. Either of these could cause a request timeout or an unknown response. Our `catch` block can now handle this more gracefully by passing the error on to the generic Express error handling middleware.
 
 ## Handling Unexpected Application Errors
 
