@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Talks
-subtitle: Recent talks
+subtitle: A few of the talks that I've given recently
 permalink: /talks/
 header-img: images/banners/talks.jpg
 ---
