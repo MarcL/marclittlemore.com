@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Chat Bots
-subtitle: Chatbots and Messenger marketing
-description: Chatbots and Messenger marketing
+title: Chat Bots & Messenger Marketing
+subtitle: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger
+description: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger
 permalink: /bots/
 header-img: images/banners/chatbots-and-messenger-marketing.jpg
 videos:
