@@ -11,6 +11,7 @@ categories:
     - development
 enableComments: true
 description: Scare the trick or treaters with this simple Raspberry Pi Node.js project to play spooky sound effects.
+youTubeId: "77df-OO72U0"
 ---
 
 For Halloween back in 2015, I had an unused Raspberry Pi and decided that I should make a Halloween project in order to learn electronics again, and to scare the local children as they came trick or treating. I connected the Raspberry Pi GPIO pins to a breadboard with a [big red dome push button](https://www.coolcomponents.co.uk/big-dome-push-button-red.html). I hid the Pi and electronics inside a shoe box painted black, and made it look like a spooky spider as you can see in the picture below.
@@ -79,7 +80,7 @@ All you need to do now is leave this running and position your speakers in a pla
 
 Here's a video of it running in my study, the speakers are hidden behind the curtains with the windows open so it could be heard from the street.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/77df-OO72U0" frameborder="0" allowfullscreen></iframe>
+{% include cards/youTubeEmbed.html id=page.youTubeId %}
 
 ### Updating the sound effects
 
