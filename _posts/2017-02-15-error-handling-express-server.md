@@ -111,6 +111,8 @@ function validateLoginMiddleware(request, response, next) {
 
 Using a Promise returned from our authentication service also allows us to add a final `catch` function to our middleware. *But why do we need to add this final catch block?* Well our authentication service needs to determine if our user credentials are correct so it could do this by checking with a 3rd party API, such as an OAuth service, or it could be using a database query. What happens if either of these resources is unavailable? They may have heavy load. They might just fail due to unexpected server downtime. Either of these could cause a request timeout or an unknown response. Our `catch` block can now handle this more gracefully by passing the error on to the generic Express error handling middleware.
 
+**Note:** I'm using [Bluebird's typed promise catch method](http://bluebirdjs.com/docs/api/catch.html) in the above example.
+
 ## Handling Unexpected Application Errors
 
 Express allows us to define middleware functions which have access to the request, response and next middleware in the applications request-response cycle. It also gives us the ability to define a default middleware for our error handler. This makes it simple for us to handle two different general error conditions: an error handler for when we don't match any of our routes (i.e. a 404 handler) and a default error handler for all other Express errors.
@@ -118,7 +120,7 @@ Express allows us to define middleware functions which have access to the reques
 To use a 404 error middleware, we just use the same `(request, response, next)` middleware function signature but **we need to ensure it is the last normal middleware in the application**. This means that it'll match any route that we don't already handle with the previous middleware. In the example below, I create a `notFound` middleware which displays a "page not found" template. I also add a logger warning. It may not be an error as such but if you're logging events in your application, and you should be in some form, then it's useful to see what resource the user is attempting to access.
 
 ```javascript
-function notFound(request, response) {
+function notFoundHandler(request, response) {
     logger.warn(
         'Unhandled resource',
         {
@@ -129,7 +131,7 @@ function notFound(request, response) {
     );
 
     return response
-        .status(404);
+        .status(404)
         .render('pages/notFound');
 }
 ```
