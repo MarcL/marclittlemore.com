@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Now
-subtitle: What I am doing at the moment
-description: What I am doing at the moment
+subtitle: What I'm working on at the moment
+description: What I'm working on at the moment
 permalink: /now/
 header-img: images/banners/home-office.jpg
 ---

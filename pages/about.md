@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
-subtitle: Things and stuff about me
-description: Things and stuff about me
+title: About Me
+subtitle: Learn a little more about Marc Littlemore
+description: Learn a little more about Marc Littlemore
 permalink: /about/
 header-img: images/banners/about-bg.jpg
 ---

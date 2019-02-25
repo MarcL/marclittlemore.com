@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Contact Me
-subtitle: Get in touch and say hello
-description: Get in touch and say hello
+subtitle: Got something to say or a question to ask? Get in touch and say hello!
+description: Got something to say or a question to ask? Get in touch and say hello!
 permalink: /contact/
 header-img: images/banners/contact-me.jpg
 ---
