@@ -1,9 +1,9 @@
-<header class="bg-black-70 w-100 ph2 pv2 pv2-ns ph3-m ph4-l" style="z-index:100;">
+<header class="white w-100 pt3 pb3" style="z-index:100;">
     <nav class="fw6 ttu tracked tc">
         <div class="db" id="navLinks">
             {% for page in site.data.mainmenu %}
                 {% if page.name %}
-                    <a class="f7 f5-ns link dim white dib mr2 mr3-ns" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.name }}</a>
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.name }}</a>
                 {% endif %}
             {% endfor %}
         </div>
