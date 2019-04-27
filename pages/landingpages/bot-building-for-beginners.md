@@ -31,7 +31,7 @@ published: true
 * Want to **gain more customers** by making your chatbot work?
 * Don't be confused! Let me teach you some simple ways to make your chatbot better than your competition.
 
-## Get Your Free Cheetsheet
+## Get Your Free Cheatsheet
 Sign up now and I'll send you my **FREE Chatfuel JSON Cheatsheet**. Learn how you can enhance your bots using interesting JSON responses for Facebook Messenger.
 
 **^^ Sign up right now! ^^**
