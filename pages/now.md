@@ -18,7 +18,7 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Currently reading
 
-- [Hood Rat](https://amzn.to/2As98Xj) by Gavin Knight
+- [WTF](https://amzn.to/2J9mjlQ) by Robert Peston
 
 ## Always doing
 
@@ -26,4 +26,4 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 - Helping my wife [Clare](http://www.clarelittlemore.com) to realise her dreams of becoming a full-time writer.
 - Helping other sepsis survivors by speaking about [how I nearly died](/how-i-almost-died/). You can also read about it in more detail on Clare's new blog [Out Of The Woods](http://outofthewoodsblog.com).
 
-**Last updated:** 2nd January, 2019
+**Last updated:** 8th May, 2019
