@@ -16,9 +16,10 @@ On the 11th and 12th June 2019, I was lucky enough to attend the Lead Developer 
 
 Since moving to an engineering team lead role a few years ago, it’s been an interesting challenge to understand how to lead and grow a team of software engineers, so it was great to meet like-minded technical managers from other companies. It featured fascinating talks from CTOs, engineering managers and also junior engineers on the issues we face when building software and managing the teams that develop it. Some highlights included the power of positive transformation via the medium of dog training, different flavours of technical leadership, and levelling up your development team using analogies to video games. It concluded with a time travelling duo discussing flexible working through some on-brand Doctor Who time travelling!
 
-### Lara Hogan - "Navigating team friction"
+### Lead Developer Conference London Playlist 2019
+{% include cards/youTubePlaylistEmbed.html id="PLBzScQzZ83I9uW36NnjX6Pe5P63EpEk_q" %}
 
-{% include cards/youTubeEmbed.html id="lqqBktWqPLo" %}
+### Lara Hogan - "Navigating team friction"
 
 * Surgeons
   * Better at their job but only at their own hospital
@@ -71,8 +72,6 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
 
 ### Asim Hussain - "I can’t do that for you Dave: undefined is not a function"
 
-{% include cards/youTubeEmbed.html id="hMHyMj8A-EM" %}
-
 * [codecraft.tv](https://codecraft.tv)
 * [aijs.rocks](https://aijs.rocks)
 * [@aijavascript](https://twitter.com/aijavascript)
@@ -87,8 +86,6 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
 * Pix2Pix
 
 ### José Caldeira - "Engage teams to achieve high performance"
-
-{% include cards/youTubeEmbed.html id="4x3v2MkI3Wg" %}
 
 * High performance in 5 steps
   1. Set a goal (OKR/KPI)
@@ -126,8 +123,6 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
 
 ### Whitney O'Banner - "Bottoms up with OKRs"
 
-{% include cards/youTubeEmbed.html id="Us6jaZoXgdU" %}
-
 * OKRs - "Google got it wrong!"
 * Set goals / align / measure
 * Strategies
@@ -143,8 +138,6 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
 * Surface ideas from employess
 
 ### Ronald Ashri - "The developer’s conundrum: what on earth does it mean to build AI software?"
-
-{% include cards/youTubeEmbed.html id="7qXLj1SD8d4" %}
 
 * "AI Winter is coming"
 * AI
@@ -176,8 +169,6 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
 * Successfully delegate decision making to software
 
 ### Rebecca Hill - "Guiding self-organising teams"
-
-{% include cards/youTubeEmbed.html id="6nCY2pO6v30" %}
 
 * Support and trust people = more effective teams
 * Self-organising teams
@@ -218,8 +209,6 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
     * Perfection doesn't exist - that's ok!
 
 ### Heidi Waterhouse - "12/10, Excellent doggo: the power of positive transformation"
-
-{% include cards/youTubeEmbed.html id="8PdNgQhhrDg" %}
 
 * Crufts - heelwork to music
 * How to get developers to write documentation
@@ -283,8 +272,6 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
 
 ### Angie Jones - "The reality of testing in an artificial world"
 
-{% include cards/youTubeEmbed.html id="ouLawtQ87Dw" %}
-
 * Testing machine learning - how?
   * Learn how it learns
   * Train the system
@@ -296,8 +283,6 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
 * Test for security, privacy, ethics and bias
 
 ### Steve Williams - "A team in ten minutes"
-
-{% include cards/youTubeEmbed.html id="IhcMWeN3Jzc" %}
 
 * Volunteer for Royal National Lifeboat Institution (RNLI)
 * Traditional training
@@ -325,8 +310,6 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
   * Backlog
 
 ### Melinda Stockington - "Level Up: Developing Developers"
-
-{% include cards/youTubeEmbed.html id="18MI6n9hFDI" %}
 
 * Growing the team's software engineers
   * Hire less experienced engineers
@@ -381,71 +364,37 @@ Since moving to an engineering team lead role a few years ago, it’s been an in
 
 ### Bethan Vincent - "What I learnt about hiring diverse teams from conducting a fully-anonymous recruitment process"
 
-{% include cards/youTubeEmbed.html id="mE1zJ90nd0g" %}
-
 ### Brian Scanlan - "Volunteers, not conscripts: fixing out-of-hours on-call"
-
-{% include cards/youTubeEmbed.html id="baI_RUSPYDw" %}
 
 ### Katie Beard - "Give 10%, get 110%"
 
-{% include cards/youTubeEmbed.html id="1LrLiYQ3I60" %}
-
 ### Nickolas Means - "Eiffel's Tower"
-
-{% include cards/youTubeEmbed.html id="RNGZTkM2xOU" %}
 
 ### Pat Kua - "Flavours of technical leadership"
 
-{% include cards/youTubeEmbed.html id="YbGwoU2Ow4A" %}
-
 ### Dora Militaru - "Inclusion starts with an I"
-
-{% include cards/youTubeEmbed.html id="vSQdyFUuJVA" %}
 
 ### Jonathan Stott - "Business as usual: how to stop drowning and learn to swim"
 
-{% include cards/youTubeEmbed.html id="DrduEU-lwbU" %}
-
 ### Ola Sitarska - "Behind the scenes of an effective & inclusive hiring process"
-
-{% include cards/youTubeEmbed.html id="fM3xQMIWjbw" %}
 
 ### Miriam Busch - "Mobile development in 2019: native versus cross-platform"
 
-{% include cards/youTubeEmbed.html id="45JWJfss9GA" %}
-
 ### Franklin Hu - "Building security culture on infrastructure teams"
-
-{% include cards/youTubeEmbed.html id="-JtOKyELlr0" %}
 
 ### James Birnie - "Why we should be scared of Shor's Algorithm right now"
 
-{% include cards/youTubeEmbed.html id="MOcHLRWNSSw" %}
-
 ### Julia Nguyen - "Navigating front-end architecture like a Neopian"
-
-{% include cards/youTubeEmbed.html id="w9RZVfA60mY" %}
 
 ### Jonathan Rigby - "How long is a piece of string: the key to solving the conundrum of software estimation."
 
-{% include cards/youTubeEmbed.html id="OUA7vsKk-CA" %}
-
 ### Paula Kennedy - "Silence isn't golden, it's deadly!"
-
-{% include cards/youTubeEmbed.html id="JPvEF4Sc2Qo" %}
 
 ### Joanna Chwastowska - "Leading the team through a rapid growth"
 
-{% include cards/youTubeEmbed.html id="BzD3FMXnt0c" %}
-
 ### Neha Batra - "Facilitation techniques 202"
 
-{% include cards/youTubeEmbed.html id="dm413o3ML0o" %}
-
 ### Sal Freudenberg and Clare Sudbery - "A button to pause time: how to live outside the clock"
-
-{% include cards/youTubeEmbed.html id="u65cKMM7WK0" %}
 
 
 
