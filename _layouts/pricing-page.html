@@ -1,0 +1,35 @@
+---
+scripts:
+    - "/js/bundle.min.js"
+    - "https://gumroad.com/js/gumroad.js"
+hideSumo: yes
+---
+
+<!DOCTYPE html>
+<html lang="en" itemtype="http://schema.org/Article">
+
+{% include head.html %}
+
+<body class="avenir">
+{% include social/facebookSDK.html %}
+
+<div class="pb5" style="background-color: #3E4975">
+    <div class="relative">
+        <section class="mw6 mw7-ns center pa3 ph5-ns tc">
+            <h1 class="f1 mb2 white">{{ page.landingpage.title }}</h1>
+            <h2 class="f3 fw5 mt4 light-blue">{{ page.landingpage.subtitle | markdownify}}</h2>
+        </section>
+    </div>
+</div>
+<div class="tc relative">
+    <section class="mw6 mw7-ns center pa3 ph5-ns mb2 nt5">
+        {% include pricingForm.html landingpage=page.landingpage %}
+    </section>
+</div>
+
+<section class="mw7 center lh-copy pa3 ph5-ns f5 f4-ns pb6" style="color: #667477;">
+    {{content}}
+</section>
+
+</body>
+</html>

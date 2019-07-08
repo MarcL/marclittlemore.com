@@ -1,0 +1,21 @@
+<div id="signup-form" class="pt0 pb4 ph0 shadow-4 {{include.landingpage.background-colour}} br3">
+    <div class="pv2" style="background-color: #F3F7F9">
+        <h3 class="tc f3 fw4">{{include.landingpage.product.title | markdownify}}</h3>
+    </div>
+
+    <div class="center">
+        <img class="w-70 measure mt4 shadow-4 br2" src="{{ site.url }}/{{include.landingpage.product.imageUrl}}" >
+        <div class="pv4">
+            <span class="strike f2 light-silver ph2">{{include.landingpage.product.price}}</span>
+            <span class="f1 ph2">{{include.landingpage.product.discountPrice}}</span>
+        </div>
+        <ul class="list pl0 mt0 measure center">
+            {% for point in include.landingpage.sellingPoints %}
+                <li class="f4">{{point | markdownify}}</li>
+            {% endfor %}
+        </ul>
+        <a class="f4 f3-ns f4-m link dim br3 bn pv3 mt3 dib white w-60" style="background-color: #0084FF" href="{{include.landingpage.product.url}}">
+            {% if include.landingpage.button.icon %}<i class="fa {{include.landingpage.button.icon}}"></i>{% endif %}&nbsp;&nbsp;{{ include.landingpage.button.text }}
+        </a>
+    </div>
+</div>
