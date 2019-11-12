@@ -7,7 +7,7 @@ social-img: "images/social/javascript-testing-for-beginners.jpg"
 
 landingpage:
     title: JavaScript Testing For Beginners
-    subtitle: "Don't know where to get started with testing your JavaScript code?"
+    subtitle: "Become a JavaScript testing expert in **just 7 days**"
     button:
         text: SEND ME THE FREE COURSE
         icon: fa-envelope-o

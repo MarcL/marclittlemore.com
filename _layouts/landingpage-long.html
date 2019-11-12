@@ -14,13 +14,17 @@ hideSumo: yes
 
 <div class="bg-light-gray pb5">
     <div class="relative">
-        <section class="mw6 mw7-ns center pa3 ph5-ns tc">
-            {% if page.social-img %}
-                <img src="{{ site.url }}/{{ page.social-img }}" class="w-100 f5 measure">
-            {% else %}
-                <h1 class="f1 mb2">{{ page.landingpage.title }}</h1>
-            {% endif %}
-            <h2 class="f3 fw5 mt4" style="color:#3B4446">{{ page.landingpage.subtitle | markdownify}}</h2>
+        <section class="flex items-center flex-wrap mw6 mw7-ns center pa3 ph5-ns tc cf">
+            <div class="w-100 w-60-ns pa3-ns ">
+                <h1 class="f2 fw5" style="color:#3B4446">{{ page.landingpage.subtitle | markdownify}}</h1>
+            </div>
+            <div class="w-100 w-40-ns pa3-ns">
+                {% if page.social-img %}
+                    <img src="{{ site.url }}/{{ page.social-img }}" class="w-100">
+                {% else %}
+                    <h1 class="f1 mb2">{{ page.landingpage.title }}</h1>
+                {% endif %}
+            </div>
         </section>
     </div>
 </div>

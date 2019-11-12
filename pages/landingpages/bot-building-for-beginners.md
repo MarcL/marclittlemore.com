@@ -1,18 +1,18 @@
 ---
 layout: landingpage-long
-title: Bot Building For Beginners
+title: FREE Chatfuel Chatbot JSON Guide
 permalink: /bots/sign-up-bot-building-for-beginners/
 description: Struggling to get started with bot building? Let me help you.
-social-img: "images/social/bot-building-for-beginners.jpg"
+social-img: "images/social/chatfuel-chatbot-json-guide-cover.png"
 
 landingpage:
-    title: Bot Building For Beginners
-    subtitle: "Want to **learn some simple tricks** to make your Facebook Messenger bots **better than your competition**?"
+    title: FREE Chatfuel Chatbot JSON Guide
+    subtitle: "Unleash **JSON magic** in your Chatfuel chatbot without needing **a developer**"
     button:
-        text: SEND ME THE CHEATSHEET
+        text: SEND ME THE FREE GUIDE
         icon: fa-cogs
     signup:
-        title: "Sign up now for your **FREE cheatsheet**"
+        title: "Sign up now for your **FREE guide**"
         uuid: "72d3502c470827973d3e8dd63"
         lid: "03ba3a616a"
         listname: "marclittlemore"
@@ -28,11 +28,11 @@ published: true
 * Are you a complete chatbot beginner?
 * Have you heard about JSON and have no idea what it is or how you use it?
 * Are you confused by APIs and how they work with Chatfuel?
-* Want to **gain more customers** by making your chatbot work?
+* Want to **gain more customers** by making your chatbot work harder for you?
 * Don't be confused! Let me teach you some simple ways to make your chatbot better than your competition.
 
-## Get Your Free Cheatsheet
-Sign up now and I'll send you my **FREE Chatfuel JSON Cheatsheet**. Learn how you can enhance your bots using interesting JSON responses for Facebook Messenger.
+## Get Your Free Guide
+Sign up now and I'll send you my **FREE Chatfuel Chatbot JSON Guide**. Learn how you can enhance your bots using interesting JSON responses for Facebook Messenger.
 
 **^^ Sign up right now! ^^**
 
