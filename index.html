@@ -4,34 +4,11 @@ title: Marc Littlemore
 subtitle: Experienced developer, team lead, mentor, speaker and Messenger marketing & chatbot expert
 ---
 
-<section class="w-100 center bb b--light-gray pb4">
-    <p class="f3">Hello, I’m Marc Littlemore. I've been a developer since the early 1990s. I spent 20 years writing videogames and I'm now building large scale web applications at the BBC. I love <a href="/talks" alt="Talks">public speaking</a> and I've recently become an expert on Messenger marketing using chatbots. I'm teaching people how to build better chatbots with my <a href="https://www.youtube.com/playlist?list=PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM" target="_blank">YouTube videos</a> and my goal is to help more people to learn how to build amazing conversational commerce using them. <a href="/bots/sign-up-bot-building-for-beginners/">Want to learn more about chatbots?</a></p>
-</section>
-
-<section class="w-100 center">
-<h3 class="f2">Latest Articles</h3>
-{% if site.posts.size != 0 %}
-    {% for post in site.posts %}
-        {% if post.categories contains "talks" %}
-        {% else %}
-            <article class="pv3 ph3 ph0-l">
-                <div class="flex flex-column flex-row-ns">
-                    <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="link dim black">
-                            <h1 class="f3 roboto mt0 lh-title">{{ post.title }}</h1>
-                        </a>
-                        <p class="f5 f4-l lh-copy roboto">
-                            {{post.subtitle}}
-                        </p>
-                    </div>
-                    <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-                        <img src="{{post.thumbnail}}" class="db" alt="{{post.title}}">
-                    </div>
-                </div>
-            </article>
-        {% endif %}
-    {% endfor %}
-{% else %}
-    <h3 class="athelas ph3 ph0-l">Nothing to see here yet./h3>
-{% endif %}
+<section class="w-100 center pb4">
+    <p class="f2 tc">
+        Hello, I’m <strong>Marc Littlemore</strong>.
+    </p>
+    <p class="f3">
+        I've been a developer since the early 1990s. I spent 20 years writing videogames and I'm now building large scale web applications at the BBC. I love <a href="/talks" alt="Talks">public speaking</a> and I've recently become an expert on Messenger marketing using chatbots. I'm teaching people how to build better chatbots with my <a href="https://www.youtube.com/playlist?list=PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM" target="_blank">YouTube videos</a> and my goal is to help more people to learn how to build amazing conversational commerce using them. <a href="/bots/sign-up-bot-building-for-beginners/">Want to learn more about chatbots?</a>        
+    </p>
 </section>
