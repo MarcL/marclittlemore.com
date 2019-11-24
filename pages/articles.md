@@ -1,7 +1,6 @@
 ---
 layout: articles
 title: Articles
-subtitle: Articles I've written
 description: Articles I've written
 permalink: /articles/
 header-img: images/banners/old-typewriter.jpg
