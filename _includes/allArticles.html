@@ -2,19 +2,14 @@
     {% for post in site.posts %}
         {% if post.categories contains "talks" %}
         {% else %}
-            <article class="pv3 ph3 ph0-l">
-                <div class="flex flex-column flex-row-ns">
-                    <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
-                        <a href="{{ post.url | prepend: site.baseurl }}" class="link dim black">
-                            <h2 class="f3 roboto mt0 lh-title">{{ post.title }}</h2>
-                        </a>
-                        <p class="f5 f4-l lh-copy roboto">
-                            {{post.subtitle}}
-                        </p>
-                    </div>
-                    <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-                        <img src="{{post.thumbnail}}" class="db" alt="{{post.title}}">
-                    </div>
+            <article class="pt1 pb2 ph3 ph0-l">
+                <div class="w-100 pr3-ns">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="link underline-hover black">
+                        <h2 class="f4 roboto mv0 lh-title">{{ post.title }}</h2>
+                    </a>
+                    <p class="f5 f4-l lh-copy mt1">
+                        {{post.subtitle}}
+                    </p>
                 </div>
             </article>
         {% endif %}
