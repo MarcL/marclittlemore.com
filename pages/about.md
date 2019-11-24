@@ -11,7 +11,7 @@ header-img: images/banners/about-bg.jpg
 
 I also nearly died from multiple organ failure due to sepsis after contracting a streptococcal infection in June 2014. I've written a brief version of [how I nearly died](/how-i-almost-died/) so please take a look if you wonder what happened. Obviously I'm still here but you can read about what happened and how our lives have changed. My wife Clare is blogging about our experience of my illness in more detail so you should probably read it on her [Out Of The Woods Blog](http://outofthewoodsblog.com).
 
-You can find me on [Twitter](https://www.twitter.com/marclittlemore) for occasional wit and games and coding links, on [GitHub](https://www.github.com/MarcL) for my code, on [Pinterest](https://pinterest.com/marclittlemore) for business building and coding tips and on [Instagram](https://www.instagram.com/marclittlemore) for photos.
+You can find me on [Twitter](https://www.twitter.com/marclittlemore) for occasional wit and games and coding links, on [GitHub](https://www.github.com/MarcL) for my code, and on [Instagram](https://www.instagram.com/marclittlemore) for photos.
 
 I currently work as a Principal Software Engineer at the BBC, although I have a 20+ years of development experience, mainly in the video games industry. I originally came to the BBC to help with their global games strategy in order to enable third party developers to make games more easily for the BBC. However, my focus has ended up shifting and I'm now working with the  amazing myBBC team in producing a more personal BBC experience.
 

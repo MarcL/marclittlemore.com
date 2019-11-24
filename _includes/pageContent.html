@@ -10,7 +10,9 @@
 <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" title="{{page.title}} - {{page.subtitle}}" alt="{{page.title}} - {{page.subtitle}}" class="" />
 
 <section class="mw8 pa3 mw8-ns ph5-ns center">
-  <div class="roboto lh-copy f4-ns f5">{{ content }}</div>
+  <div class="roboto lh-copy f4-ns f5">
+    {{ content }}
+  </div>
 
   <div id="comments">{% include social/disqusComments.html %}</div>
 </section>
