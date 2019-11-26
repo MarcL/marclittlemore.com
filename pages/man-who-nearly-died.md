@@ -15,7 +15,7 @@ It's a story I never thought I'd have to tell but I've spent the past couple of 
 
 June 2014 started of as a normal month. My son's 7th birthday in early June. My best mate Mark's annual birthday party in the middle of the month which always involves a few beers and DJing some tunes to celebrate, this year being his 43rd birthday. On Wednesday 18th June, a train ride down to the BBC offices in London to talk about our team becoming part of the myBBC initiative. Post-meeting we gathered for some food at an African restaurant around the corner from Euston station. Some deliciously hot and spicy jerk chicken was devoured with some not-so-tasty, in my opinion, African ginger beer. Nothing unusual and I returned home to Warrington on the train having eaten my last solid meal in what would become a couple of months.
 
-![Jerk chicken](/images/posts/jerk-chicken.jpg){: title="Jerk chicken - my final meal" alt="Jerk chicken - my final meal"}
+![Jerk chicken](/images/posts/jerk-chicken.jpg){: title="Jerk chicken - my final meal" alt="Jerk chicken - my final meal" class="shadow-4 w-100"}
 
 ### The illness starts
 
@@ -51,7 +51,7 @@ _They were pretty sure I would die that night._
 
 After six or seven days in the induced coma, they started to decrease the amount of drugs they gave me meaning that I would drift in and out of conciousness. The combination of powerful coma-inducing drugs, incredibly strong painkillers, antibiotics and the fact that I had sepsis, which causes confusion and disorientation, meant that I literally had no idea where I was or what was going on. My dreams felt oddly lucid but were crazy and often involved things that I can only assume that I heard around the bedside. I'd dream that I was being held prisoner and my wife was being blackmailed to release me. I dreamt that I was being operated upon whilst on a boat in the Caribbean. I dreamt that I'd been in a fire in a Victorian building in London, only to be rescued and then subsequently stabbed and died. It's safe to say that my perceived reality was somewhat different to what was actually happening to me.
 
-![Me in intensive care](/images/posts/me-in-intensive-care.jpg){: title="Me in intensive care" alt="Me in intensive care"}
+![Me in intensive care](/images/posts/me-in-intensive-care.jpg){: title="Me in intensive care" alt="Me in intensive care" class="shadow-4 w-100"}
 
 Thanks to Clare, I slowly began to regain some semblance of understanding as to what had happened as she explained to me that I was in intensive care. The microbiologists had finally discovered that I'd contracted the streptococcus group A bacteria, which is normally found on the skin and is generally harmless. However, if it gets into the blood stream or deeper inside the tissues or organs of the body, as it had in my bowels, then it becomes an invasive infection. This seemingly innocuous bacteria had become the source of sepsis and had caused my body to shut down. To this day, they still don't know how I contracted it, although for some time it was thought it was related to the jerk chicken I'd eaten the week earlier.
 

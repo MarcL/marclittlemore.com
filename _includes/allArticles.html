@@ -2,7 +2,7 @@
     {% for post in site.posts %}
         {% if post.categories contains "talks" %}
         {% else %}
-            <article class="pt1 pb2 ph3 ph0-l">
+            <article class="pt1 pb2 ph1 ph0-l">
                 <div class="w-100 pr3-ns">
                     <a href="{{ post.url | prepend: site.baseurl }}" class="link underline-hover black">
                         <h2 class="f4 roboto mv0 lh-title">{{ post.title }}</h2>
