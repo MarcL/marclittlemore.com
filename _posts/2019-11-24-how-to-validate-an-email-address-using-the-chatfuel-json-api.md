@@ -9,8 +9,8 @@ categories:
     - chatfuel
     - json
 description: "When asking your chatbot user for an email address, how do you know if it's valid? Let's look at how you can validate an email address using the Chatfuel JSON API and a Node.js web server."
-social-img: images/social/lessons-learned-from-running-a-code-club-fb.jpg
-thumbnail: /images/thumbnails/social/lessons-learned-from-running-a-code-club-fb-thumb.jpg
+social-img: images/social/how-to-validate-an-email-address-using-the-chatfuel-json-api.jpg
+thumbnail: /images/thumbnails/social/how-to-validate-an-email-address-using-the-chatfuel-json-api.jpg
 ---
 
 Facebook Messenger chatbots are a great addition to your marketing toolbox but they have one big problem.
