@@ -49,7 +49,7 @@ Here's some example code to retrieve an email address and validate it.
 const dns = require('dns');
 
 // The dns library will return:
-// ENOTFOUND - if not records exist at all for the domain
+// ENOTFOUND - if no records exist at all for the domain
 // ENODATA - if no MX record was found for the domain,
 // or if the user data was invalid
 const hasMxRecordError = error => (
