@@ -11,19 +11,13 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Currently working on
 
-- Sharing my [Chatfuel Chatbot JSON Guide](http://bit.ly/chatfuel-json-guide) which shows people how to use JSON with Chatfuel.
-- Learning more about internet marketing and course creation.
-- Creating [YouTube videos](https://www.youtube.com/playlist?list=PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM) to help people to create interesting Chatbots.
-- Planning a course on building bots. Want to join? Sign up here for my [Chatbot Insiders]({{site.url}}/bots/sign-up-bot-building-for-beginners/) newsletter and **FREE Chatfuel Chatbot JSON Guide**.
+- Building excercise into a daily habit
+- Learning more about internet marketing and course creation. Currently learning more about building online courses thanks to Jaques Hopkins aka [The Online Course Guy](https://theonlinecourseguy.com/)
+- Attempting to build a writing habit by creating a new article every week on this website
+- Creating [YouTube videos](https://www.youtube.com/playlist?list=PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM) to help people to create interesting Chatbots
 
 ## Currently reading
 
-- [Building A StoryBrand](https://amzn.to/33ivZjs) by Donald Miller
+- [Gotta Get Theroux This](https://amzn.to/2QQjW99) by Louis Theroux
 
-## Always doing
-
-- Bringing up, and playing with, my two amazing children and helping them to grow up to be inspired human beings.
-- Helping my wife [Clare](http://www.clarelittlemore.com) to realise her dreams of becoming a full-time writer.
-- Helping other sepsis survivors by speaking about [how I nearly died](/how-i-almost-died/). You can also read about it in more detail on Clare's new blog [Out Of The Woods](http://outofthewoodsblog.com).
-
-**Last updated:** 24th November, 2019
+**Last updated:** 6th January, 2020
