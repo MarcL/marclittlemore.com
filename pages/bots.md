@@ -30,6 +30,9 @@ videos:
   - title: 'Reset user and system attributes in Chatfuel'
     subtitle: 'Learn how to reset system attributes using the JSON API'
     id: 'CGR47D1ArSk'
+  - title: 'How to validate an email address with the Chatfuel JSON API'
+    subtitle: 'Learn how to validate user email addresses in Chatfuel'
+    id: 'r4h4DD1DNE8'
 quickTips:
   - title: 'Chatfuel Quick Tip: Reset a user attribute in Chatfuel'
     subtitle: 'Reset a Chatfuel attribute using the "set attributes" card'
