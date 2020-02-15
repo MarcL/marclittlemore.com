@@ -1,4 +1,4 @@
-var URLSearchParams = require('url-search-params');
+var URLSearchParams = require('@ungap/url-search-params');
 
 function appendSignupLocation(formId) {
     var SIGNUP_KEY = 'signup';

@@ -23,9 +23,11 @@ gulp.task('thumbnails', function() {
         }
     };
 
-    gulp.src(fileList.images)
+    return gulp.src(fileList.images)
         .pipe(jimp(thumbnailConfig))
         .pipe(gulp.dest('./images/thumbnails'));
 });
 
-gulp.task('default', function() {});
+gulp.task('default', function(done) {
+    done();
+});
