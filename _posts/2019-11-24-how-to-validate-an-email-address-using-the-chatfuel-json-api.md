@@ -25,6 +25,12 @@ I always recommend that you should consider Facebook Messenger as one of your ma
 
 Let's take a look at how we can validate a given user email using Chatfuel as our chatbot platform. Chatfuel allows you to ask for a user's email using it's "Save User Email" element. Adding this to your chatbot flow allows you to send a quick reply to your and ask for an email address which is then stored in a Chatfuel user attribute. If you pass this to your server side API using the JSON API plugin, you can't validate it on the server to determine if it's valid.
 
+## Watch The Video
+
+Take a look at how I build this email validation using [Glitch](https://glitch.com) and a Node.js Express web server together with Chatfuel's JSON API.
+
+{% include cards/youTubeEmbed.html id="r4h4DD1DNE8" %}
+
 ### How to validate an email address?
 
 #### Using a regular expression
@@ -88,11 +94,5 @@ const checkValidMxRecord = email => (
 To make my APIs more robust, I always return user attributes back to Chatfuel to inform it whether an API has succeeded or not. This allows us to avoid hard coding any messages in the API and gives back control to Chatfuel, or whichever chatbot platform you use, and use that to display the correct user messaging. It's a good way to inform the user that they've potentially typed in their email incorrectly. You can also use this validation check to gate your content to only allow access to people who supply their email address.
 
 Of course, this method has a flaw in that we can't confirm that the username is valid without sending an email to it. We'll find this out when we send an email to them from our mailing list but at least we got halfway there.
-
-## Watch The Video
-
-Take a look at how I build this email validation using [Glitch](https://glitch.com) and a Node.js Express web server together with Chatfuel's JSON API.
-
-{% include cards/youTubeEmbed.html id="r4h4DD1DNE8" %}
 
 I hope you found this useful. All of the code is available on my [Chatfuel demo Glitch project](https://glitch.com/~chatfuel-demo-bot). Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please [send me a message](/contact). I love to hear from people and I'm always happy to answer your questions.
