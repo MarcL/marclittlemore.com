@@ -34,15 +34,17 @@ hideSumo: yes
     </section>
 </div>
 
-<section class="mw7 center lh-copy pa3 ph5-ns f5 f4-ns pb6" style="color: #667477;">
+<section class="mw7 center lh-copy pa3 ph5-ns f5 f4-ns pb5" style="color: #667477;">
     {{content}}
+
+    <a href="#signup-form">
+        <button class="f4 f3-ns f4-m link dim br3 bn pv3 mt3 dib bg-blue white w-100">
+            {% if page.landingpage.button.icon %}<i class="fa {{page.landingpage.button.icon}}"></i>{% endif %}&nbsp;&nbsp;{{ page.landingpage.button.text }}
+        </button>
+    </a>
 </section>
 
-<div class="bg-near-white pt4 bt bw1 b--light-gray relative">
-    <section class="mw6 mw7-ns center pa3 ph5-ns mb2 nt6">
-        {% include signUpForm.html landingpage=page.landingpage %}
-    </section>
-</div>
+<div class="bg-near-white pt4 bt bw1 b--light-gray relative"></div>
 
 </body>
 </html>
