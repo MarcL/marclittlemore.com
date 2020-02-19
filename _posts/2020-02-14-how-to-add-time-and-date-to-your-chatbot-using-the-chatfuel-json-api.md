@@ -1,16 +1,57 @@
 ---
 layout: post
 title:  "How to add time and date to your Messenger chatbot using the Chatfuel JSON API"
-subtitle: "When asking your chatbot user for an email address, how do you know if it's valid? Let's look at how you can validate an email address using the Chatfuel JSON API and a Node.js web server."
+subtitle: "Can your chatbot tell the time? Let's look at how we can make your chatbot aware of a user's time and date to improve your chatbot flows."
 permalink: /how-to-add-time-and-date-to-your-messenger-chatbot-using-the-chatfuel-json-api/
 header-img: images/banners/time-and-date.jpg
 categories:
     - chatbot
     - chatfuel
     - json
-description: "When asking your chatbot user for an email address, how do you know if it's valid? Let's look at how you can validate an email address using the Chatfuel JSON API and a Node.js web server."
 thumbnail: /images/thumbnails/social/time-and-date.jpg
 ---
+
+## Watch the video
+
+{% include cards/youTubeEmbed.html id="UDrGpc4Dp8w" %}
+
+One of the main benefits of creating a Facebook Messenger chatbot is that you don't have to be present to answer messages for 24 hours per day. But how do you make sure your bot knows what time is for your user and can answer appropriately? Let me teach you to build an API which adds time and date functions to your Chatfuel chatbot.
+
+Intro
+Hi I’m Marc and welcome to my videos about building better Chatfuel chatbots using its JSON API
+Today we’re going to talk about time and dates
+Why?
+Determine if your bot can do something based upon date and time
+Tell user if your shop is open
+Differentiate responses based upon time
+Give the customer the breakfast menu rather than the dinner menu
+Need to determine the current time and date for your user
+Chatfuel doesn’t do this for you
+Need to consider timezone
+
+
+How?
+Chatfuel
+JSON API
+Node / JavaScript date functions
+How to get the current date + time
+Date in JavaScript
+Returns UTC (Coordinate Universal Time)
+Chatfuel flow
+Call JSON API
+Pass timezone if needed
+Return as user attributes
+Code
+GET endpoint using Glitch
+Get current UTC timestamp in milliseconds
+Calculate offset in milliseconds
+Return a date string
+Parse the date string into its component parts
+Return as Chatfuel attributes
+Test in Chatfuel
+Get date / time
+Redirect and say “good morning”, “good afternoon” or “good evening”
+
 
 Facebook Messenger chatbots are a great addition to your marketing toolbox but they have one big problem.
 
@@ -87,11 +128,5 @@ const checkValidMxRecord = email => (
 To make my APIs more robust, I always return user attributes back to Chatfuel to inform it whether an API has succeeded or not. This allows us to avoid hard coding any messages in the API and gives back control to Chatfuel, or whichever chatbot platform you use, and use that to display the correct user messaging. It's a good way to inform the user that they've potentially typed in their email incorrectly. You can also use this validation check to gate your content to only allow access to people who supply their email address.
 
 Of course, this method has a flaw in that we can't confirm that the username is valid without sending an email to it. We'll find this out when we send an email to them from our mailing list but at least we got halfway there.
-
-## Watch The Video
-
-Take a look at how I build this email validation using [Glitch](https://glitch.com) and a Node.js Express web server together with Chatfuel's JSON API.
-
-{% include cards/youTubeEmbed.html id="UDrGpc4Dp8w" %}
 
 I hope you found this useful. All of the code is available on my [Chatfuel demo Glitch project](https://glitch.com/~chatfuel-demo-bot). Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please [send me a message](/contact). I love to hear from people and I'm always happy to answer your questions.
