@@ -96,3 +96,5 @@ To make my APIs more robust, I always return user attributes back to Chatfuel to
 Of course, this method has a flaw in that we can't confirm that the username is valid without sending an email to it. We'll find this out when we send an email to them from our mailing list but at least we got halfway there.
 
 I hope you found this useful. All of the code is available on my [Chatfuel demo Glitch project](https://glitch.com/~chatfuel-demo-bot). Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please [send me a message](/contact). I love to hear from people and I'm always happy to answer your questions.
+
+{% include jsonGuide.html %}
