@@ -5,10 +5,11 @@ subtitle: "Not all software testing is equal so let's compare the different type
 permalink: /different-types-of-software-testing/
 header-img: images/banners/heart-code.jpg
 categories:
-    - chatbot
-    - chatfuel
-    - json
-thumbnail: /images/thumbnails/social/heart-code.jpg
+    - express
+    - javascript
+    - development
+    - unit-testing
+thumbnail: /images/thumbnails/social/different-types-of-software-testing-thumb.jpg
 ---
 
 {% include testingGuide.html %}
