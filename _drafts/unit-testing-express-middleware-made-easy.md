@@ -8,6 +8,5 @@ social-img: images/posts/how-to-unit-test-express-routes.jpg
 categories:
     - unit-testing
     - development
-enableComments: true
 description: How to unit test Express middleware the easy way using Mocha and Chai.
 ---

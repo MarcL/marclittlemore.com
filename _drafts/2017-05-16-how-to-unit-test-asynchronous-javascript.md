@@ -9,7 +9,6 @@ thumbnail: /images/thumbnails/social/how-to-unit-test-asynchronous-javascript-ti
 categories:
     - unit-testing
     - development
-enableComments: true
 description: "Unit testing asynchronous JavaScript isn't as challenging as you think it might be. Here are some quick tips, tricks and gotchas for easy testing of asynchronous functions and Promises using Mocha."
 ---
 

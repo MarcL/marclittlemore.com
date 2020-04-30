@@ -9,7 +9,6 @@ thumbnail: /images/thumbnails/social/how-to-write-high-quality-unit-tests-thumb.
 categories:
     - unit-testing
     - development
-enableComments: true
 description: How do you ensure that you're writing high quality unit tests? Here you'll learn how to write good quality unit tests with some ideas that you can use in your everyday testing.
 ---
 
@@ -82,4 +81,4 @@ The best way to write high quality unit tests is to write the test with these qu
 
 If you answer all of those questions, you'll find you quickly have a higher quality unit test suite with high code coverage and you and your team can have much better confidence when deploying to your production environment.
 
-If you spot any errors or have and questions then please comment below.
+If you spot any errors or have and questions then please [contact me](/contact).

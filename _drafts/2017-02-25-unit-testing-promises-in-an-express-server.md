@@ -10,7 +10,6 @@ categories:
     - javascript
     - development
     - unit-testing
-enableComments: true
 description: Unit testing JavaScript Promises is much easier than you think.
 ---
 
