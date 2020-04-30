@@ -8,7 +8,6 @@ categories:
     - testing
     - development
 
-enableComments: true
 description: An essential guide that will teach you how to use git bisect to quickly and easily find bugs in the history of your project.
 ---
 
