@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Different types of software testing"
-subtitle: "Not all software testing is equal so let's compare the different types of software tests."
-permalink: /different-types-of-software-testing/
-header-img: images/banners/heart-code.jpg
+title:  "Different types of software tests"
+subtitle: "What are the different types of tests we can write for our software?"
+permalink: /different-types-of-software-tests/
+header-img: images/posts/heart-code.jpg
 categories:
     - express
     - javascript
@@ -16,14 +16,12 @@ thumbnail: /images/thumbnails/social/different-types-of-software-testing-thumb.j
 
 ## Understanding types of software testing
 
-It's day 1 of *JavaScript Testing For Beginners* and the course is finally here! Thank you so much for signing up. Over the next week you're going to learn about the tools and techniques you can use to test your JavaScript modules.
-
 One of the first things that I asked everyone on this list was "What is your biggest struggle when it comes to learning about JavaScript testing?" and I got some fantastic replies. If you haven't answered this question and want to then hit reply and I'm here to help and answer your questions.
 
 The two most common issues that people had were:
 
-. Understanding the different types of testing and what they all mean.
-. The tools needed to set up a testing environment for JavaScript code.
+* Understanding the different types of testing and what they all mean.
+* The tools needed to set up a testing environment for JavaScript code.
 
 In today's lesson, you're going to learn more about both of these. I'll help you to understand the differences in testing types and introduce you to some libraries and frameworks you can use to make JavaScript testing really easy. So let's get started.
 
