@@ -19,7 +19,7 @@ thumbnail: /images/thumbnails/social/different-types-of-software-testing-thumb.j
 New developers often don't know where to start with testing their code. They know that it's a good idea but there's an overwhelming amount of information out there. Common questions and comments I hear are:
 
 * What's a unit test?
-* How does it different from an integration test?
+* How does it differ from an integration test?
 * Should I be writing end-to-end tests?
 * I don't know where to start!
 
