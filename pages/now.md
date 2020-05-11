@@ -17,6 +17,6 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Currently reading
 
-- [Essentialism: The Disciplined Pursuit of Less](https://amzn.to/3erZtm6) by Greg McKeown
+- [Dotcom Secrets](https://amzn.to/2SY8dXX) by [Russell Brunson](https://www.russellbrunson.com/)
 
-**Last updated:** 15th April, 2020
+**Last updated:** 11th May, 2020
