@@ -35,3 +35,4 @@ exclude: [
   "IDEAS.md",
   "yarn.lock"
 ]
+include: ["_redirects"]
