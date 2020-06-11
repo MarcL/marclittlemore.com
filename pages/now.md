@@ -12,11 +12,12 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 ## Currently working on
 
 - Coping with the current Coronavirus pandemic!
-- Daily excercise with [Fitness Blender](https://www.fitnessblender.com/) and [Joe Wicks](https://www.youtube.com/channel/UCAxW1XT0iEJo0TYlRfn6rYQ).
-- Making musical videos on [YouTube](https://www.youtube.com/channel/UC_eDfE0Y7UoUiI45xgfzpXA) with the children.
+- Regular excercise with [Fitness Blender](https://www.fitnessblender.com/)
+- Mountain biking on an almost daily basis
+- Building a geolocation service for Facebook Messenger chatbots
 
 ## Currently reading
 
-- [Dotcom Secrets](https://amzn.to/2SY8dXX) by [Russell Brunson](https://www.russellbrunson.com/)
+- [Remote: Office Not Required](https://amzn.to/3hjus5e) by [David Heinemeier Hanson](https://dhh.dk/) and [Jason Fried](https://medium.com/@jasonfried)
 
-**Last updated:** 11th May, 2020
+**Last updated:** 11th June, 2020
