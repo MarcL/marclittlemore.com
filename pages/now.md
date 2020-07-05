@@ -14,10 +14,10 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 - Coping with the current Coronavirus pandemic!
 - Regular excercise with [Fitness Blender](https://www.fitnessblender.com/)
 - Mountain biking on an almost daily basis
-- Building a geolocation service for Facebook Messenger chatbots
+- Trying to work out what to do for a side project
 
 ## Currently reading
 
-- [Remote: Office Not Required](https://amzn.to/3hjus5e) by [David Heinemeier Hanson](https://dhh.dk/) and [Jason Fried](https://medium.com/@jasonfried)
+- [Essentialism: The Disciplined Persuit of Less](https://amzn.to/3ivZ57Z) by [Greg McKeown](https://gregmckeown.com/)
 
-**Last updated:** 11th June, 2020
+**Last updated:** 5th July, 2020
