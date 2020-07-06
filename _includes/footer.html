@@ -6,7 +6,7 @@
         </span>
     </a>
 {% for social_item in site.data.socialmedia %}
-    <a href="{{ social_item.url }}" target="_blank" title="{{ social_item.title }}" class="link dark-gray hover-silver dib h2 w2 mr3">
+    <a href="{{ social_item.url }}" target="_blank" rel="noreferrer" title="{{ social_item.title }}" class="link dark-gray hover-silver dib h2 w2 mr3">
         <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa {{social_item.icon}} fa-stack-1x fa-inverse"></i>
