@@ -63,7 +63,7 @@ Interested in learning more about chatbots but don't know where to start? Don't 
   <div class="cf pa2">
 {% for video in page.videos %}
     <div class="fl w-100 w-50-ns pa2">
-      <a href="https://www.youtube.com/watch?v={{video.id}}" class="db link tc" target="_blank">
+      <a href="https://www.youtube.com/watch?v={{video.id}}" class="db link tc" target="_blank" rel="noreferrer">
         <img src="https://i.ytimg.com/vi/{{video.id}}/hqdefault.jpg" alt="{{video.title}}" class="w-100 db outline black-10 grow"/>
         <dl class="mt2 f7 f6-ns lh-copy">
           <dt class="clip">Title</dt>
@@ -83,7 +83,7 @@ Interested in learning more about chatbots but don't know where to start? Don't 
   <div class="cf pa2">
 {% for video in page.quickTips %}
     <div class="fl w-100 w-50-ns pa2">
-      <a href="https://www.youtube.com/watch?v={{video.id}}" class="db link tc" target="_blank">
+      <a href="https://www.youtube.com/watch?v={{video.id}}" class="db link tc" target="_blank" rel="noreferrer">
         <img src="https://i.ytimg.com/vi/{{video.id}}/hqdefault.jpg" alt="{{video.title}}" class="w-100 db outline black-10 grow"/>
         <dl class="mt2 f7 f6-ns lh-copy">
           <dt class="clip">Title</dt>
