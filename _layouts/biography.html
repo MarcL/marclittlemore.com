@@ -15,7 +15,7 @@
         {% for bioItem in site.data.biography %}
         <article class="mw6 center bg-white br3 pa2 pa3-ns mv3 ba b--black-10 cf shadow-4">
             <div class="fl w-100 tc pv2 pv3-ns">
-                <a href="{{ bioItem.url }}" target="_blank" title="{{ bioItem.title }}" alt="{{ bioItem.title }}" class="f5 f4-ns fw5 link no-underline bg-animate bg-white hover-bg-light-blue">
+                <a href="{{ bioItem.url }}" target="_blank" rel="noreferrer" title="{{ bioItem.title }}" alt="{{ bioItem.title }}" class="f5 f4-ns fw5 link no-underline bg-animate bg-white hover-bg-light-blue">
                     <span>{{bioItem.title}}</span>
                 </a>
             </div>
@@ -25,7 +25,7 @@
 
     <footer class="pv4 ph3 ph5-ns tc bg-light-gray">
     {% for social_item in site.data.socialmedia %}
-        <a href="{{ social_item.url }}" target="_blank" title="{{ social_item.title }}" class="link dark-gray hover-silver dib h2 w2 mr3">
+        <a href="{{ social_item.url }}" target="_blank" rel="noreferrer" title="{{ social_item.title }}" class="link dark-gray hover-silver dib h2 w2 mr3">
             <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa {{social_item.icon}} fa-stack-1x fa-inverse"></i>
