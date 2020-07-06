@@ -17,13 +17,3 @@
   url: https://www.reddit.com/user/marclittlemore
   icon: "fa-reddit"
   title: "Upvote me on Reddit"
-
-- name: Soundcloud
-  url: http://soundcloud.com/djcruze
-  icon: "fa-soundcloud"
-  title: "Follow DJ Cruze on SoundCloud"
-
-- name: Mixcloud
-  url: http://mixcloud.com/djcruzeuk
-  icon: "fa-mixcloud"
-  title: "Follow DJ Cruze on Mixcloud"
