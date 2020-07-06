@@ -1,19 +1,20 @@
-<div class="mw8 center pt2 tc">
-    <h1 class="f3 f1-ns black fw6 mt1 mb1 ph1 pv0">
+<main id="main-content">
+  <div class="mw8 center pt2 tc">
+      <h1 class="f3 f1-ns black fw6 mt1 mb1 ph1 pv0">
         {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
-    </h1>
-    {% if page.subtitle %}
-    <h2 class="f3-ns f5 fw4 lh-copy gray mt1 mb2 ph1">{{ page.subtitle }}</h2>
-    {% endif %}
+      </h1>
+      {% if page.subtitle %}
+        <h2 class="f3-ns f5 fw4 lh-copy gray mt1 mb2 ph1">{{ page.subtitle }}</h2>
+      {% endif %}
   </div>
 
   <div class="mw8 center pt2 tc">
     <img class="w-100 br2 shadow-4" src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" title="{{page.title}} - {{page.subtitle}}" alt="{{page.title}} - {{page.subtitle}}" />
   </div>
 
-<section class="mw8 pa3 mw8-ns ph5-ns center">
-  <div class="roboto lh-copy f4-ns f5">
-    {{ content }}
-  </div>
-
-</section>
+  <section class="mw8 pa3 mw8-ns ph5-ns center">
+    <div class="roboto lh-copy f4-ns f5">
+      {{ content }}
+    </div>
+  </section>
+</main>
