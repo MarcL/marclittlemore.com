@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" itemtype="http://schema.org/Article">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn more about testing your JavaScript and sign up to my course">
+
+    <title>JavaScript Testing - Marc Littlemore</title>
+
+    <link rel="canonical" href="http://localhost:4000/javascript-testing/">
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+
+    <!-- Custom CSS -->
+    
+    
+    
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <script src="https://kit.fontawesome.com/d38990851e.js" crossorigin="anonymous"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+
+    <meta name="p:domain_verify" content="7613bb2239e62b55de06dc926e1b6431"/>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-810717-3', 'auto');
+  ga('send', 'pageview');
+</script>
+    
+
+
+
+
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Marc Littlemore" />
+<meta property="og:url" content="http://localhost:4000/javascript-testing/" />
+<meta property="og:title" content="JavaScript Testing" />
+<meta property="og:description" content="Learn more about testing your JavaScript and sign up to my course" />
+
+<meta property="og:image" content="http://localhost:4000/images/social/javascript-testing.jpg" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_GB" />
+<meta property="article:published_time" content="" />
+<meta property="article:author" content="https://www.facebook.com/marcdavidlittlemore" />
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="JavaScript Testing">
+<meta itemprop="description" content="Learn more about testing your JavaScript and sign up to my course">
+<meta itemprop="image" content="http://localhost:4000/images/social/javascript-testing.jpg">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@marclittlemore">
+<meta name="twitter:title" content="JavaScript Testing">
+<meta name="twitter:description" content="Learn more about testing your JavaScript and sign up to my course">
+<meta name="twitter:creator" content="@marclittlemore">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="http://localhost:4000/images/social/javascript-testing.jpg">
+
+
+    
+    <script src="//load.sumome.com/" data-sumo-site-id="a260c264ca479174c95ace07722082ec75abbab6778c364ba7a24230cc55c451" async="async"></script>
+    
+
+    
+        
+    
+
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '290377285027331'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=290377285027331&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+
+
+<body class="avenir helvetica bg-white">
+
+    <header class="white w-100 pt2 pb0 pb2-ns" style="z-index:100;">
+    <nav class="fw6 ttu tracked tc">
+        <div class="db" id="navLinks">
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/" title="marclittlemore.com">Home</a>
+                
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/talks/" title="Ideas I've shared">Talks</a>
+                
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/bots/" title="Learn how to create your own chatbot">Chatbots</a>
+                
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/about/" title="Find out more about me">About</a>
+                
+            
+        </div>
+    </nav>
+</header>
+
+
+    <main id="main-content">
+  <div class="mw8 center pt2 tc">
+      <h1 class="f3 f1-ns black fw6 mt1 mb1 ph1 pv0">
+        JavaScript Testing
+      </h1>
+      
+        <h2 class="f3-ns f5 fw4 lh-copy gray mt1 mb2 ph1">Want to learn more about testing your JavaScript code?</h2>
+      
+  </div>
+
+  <div class="mw8 center pt2 tc">
+    <img class="w-100 br2 shadow-4" src="/images/banners/computer-code.jpg" title="JavaScript Testing - Want to learn more about testing your JavaScript code?" alt="JavaScript Testing - Want to learn more about testing your JavaScript code?" />
+  </div>
+
+  <section class="mw8 pa3 mw8-ns ph5-ns center">
+    <div class="roboto lh-copy f4-ns f5">
+      <p>Over the past few years I’ve been introduced to test driven development (TDD) in combination with using JavaScript and Node.js. It’s something that I really enjoyed learning and then talking about. TDD is the practice of writing new production code by first writing a failing test. It often leads to reduced defects or bugs in your code, and helps to define a code contract for your applications.</p>
+
+<p>However, it’s often very confusing and difficult for beginners to get started. Here I hope to help beginners to get started with testing their JavaScript and also encourage less experienced developers to gain unit and integration testing skills for their JavaScript code. If you want to learn more then read the articles below or why not sign up for my <a href="http://localhost:4000/courses/javascript-testing-beginners-course/?signup=testing-page">JavaScript Testing Made Easy</a> course for some free videos showing you how to get started.</p>
+
+<article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column flex-row-ns">
+        <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+            <a href="/different-types-of-software-tests/" class="link dim black">
+                <h2 class="f3 roboto mt0 lh-title">Different types of software tests</h2>
+            </a>
+            <p class="f5 f4-l lh-copy roboto">
+                What are the different types of tests we can write for our software?
+            </p>
+        </div>
+        <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+            <img src="/images/thumbnails/social/different-types-of-software-testing-thumb.jpg" class="db" alt="Different types of software tests" />
+        </div>
+    </div>
+</article>
+
+<article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column flex-row-ns">
+        <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+            <a href="/how-to-write-high-quality-unit-tests/" class="link dim black">
+                <h2 class="f3 roboto mt0 lh-title">How To Write High Quality Unit Tests</h2>
+            </a>
+            <p class="f5 f4-l lh-copy roboto">
+                Make writing unit tests easy by following some simple ideas for better test quality.
+            </p>
+        </div>
+        <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+            <img src="/images/thumbnails/social/how-to-write-high-quality-unit-tests-thumb.jpg" class="db" alt="How To Write High Quality Unit Tests" />
+        </div>
+    </div>
+</article>
+
+<article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column flex-row-ns">
+        <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+            <a href="/how-to-unit-test-express-routes/" class="link dim black">
+                <h2 class="f3 roboto mt0 lh-title">How To Unit Test Express Routes</h2>
+            </a>
+            <p class="f5 f4-l lh-copy roboto">
+                Unit testing of Express routes is often tricky but it can be done. Here's how to do it and why you probably should.
+            </p>
+        </div>
+        <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+            <img src="/images/thumbnails/social/how-to-unit-test-express-routes-thumb.jpg" class="db" alt="How To Unit Test Express Routes" />
+        </div>
+    </div>
+</article>
+
+
+    </div>
+  </section>
+</main>
+
+
+    <footer class="pv4 ph3 ph5-ns tc bg-light-gray bt b--moon-gray">
+    <a href="/feed.xml" title="RSS feed" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="RSS feed icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="http://twitter.com/marclittlemore" target="_blank" rel="noreferrer" title="You should follow me on Twitter" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="Twitter icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="https://github.com/MarcL" target="_blank" rel="noreferrer" title="Follow me on GitHub" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="GitHub icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="https://www.instagram.com/marclittlemore" target="_blank" rel="noreferrer" title="Follow me on Instagram" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="Instagram icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="https://www.reddit.com/user/marclittlemore" target="_blank" rel="noreferrer" title="Upvote me on Reddit" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="Reddit icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+
+  <div class="mt4 ttu">
+    <a href="/javascript-testing" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">JS Testing</a>
+    <a href="/now" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Now</a>
+    <a href="/uses" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Uses</a>
+    <a href="/articles" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Articles</a>
+    <a href="/contact" class="f6 fw5 link underline-hover near-black dib">Contact</a>
+  </div>
+  <div class="mt4 dark-gray f6 fw6 ttu">
+      Copyright &copy; Marc Littlemore 2020
+  </div>
+</footer>
+
+<script async defer data-pin-hover="true" data-pin-color="red" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+</body>
+
+</html>

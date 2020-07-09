@@ -1,0 +1,19 @@
+- name: Twitter
+  url: http://twitter.com/marclittlemore
+  icon: "fa-twitter"
+  title: "You should follow me on Twitter"
+
+- name: GitHub
+  url: https://github.com/MarcL
+  icon: "fa-github"
+  title: "Follow me on GitHub"
+
+- name: Instagram
+  url: https://www.instagram.com/marclittlemore
+  icon: "fa-instagram"
+  title: "Follow me on Instagram"
+
+- name: Reddit
+  url: https://www.reddit.com/user/marclittlemore
+  icon: "fa-reddit"
+  title: "Upvote me on Reddit"

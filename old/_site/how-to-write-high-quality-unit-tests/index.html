@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" itemtype="http://schema.org/Article">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How do you ensure that you're writing high quality unit tests? Here you'll learn how to write good quality unit tests with some ideas that you can use in your everyday testing.">
+
+    <title>How To Write High Quality Unit Tests - Marc Littlemore</title>
+
+    <link rel="canonical" href="http://localhost:4000/how-to-write-high-quality-unit-tests/">
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+
+    <!-- Custom CSS -->
+    
+    
+    
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <script src="https://kit.fontawesome.com/d38990851e.js" crossorigin="anonymous"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+
+    <meta name="p:domain_verify" content="7613bb2239e62b55de06dc926e1b6431"/>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-810717-3', 'auto');
+  ga('send', 'pageview');
+</script>
+    
+
+
+
+
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Marc Littlemore" />
+<meta property="og:url" content="http://localhost:4000/how-to-write-high-quality-unit-tests/" />
+<meta property="og:title" content="How To Write High Quality Unit Tests" />
+<meta property="og:description" content="How do you ensure that you're writing high quality unit tests? Here you'll learn how to write good quality unit tests with some ideas that you can use in your everyday testing." />
+
+<meta property="og:image" content="http://localhost:4000/images/social/how-to-write-high-quality-unit-tests.jpg" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_GB" />
+<meta property="article:published_time" content="2016-11-13" />
+<meta property="article:author" content="https://www.facebook.com/marcdavidlittlemore" />
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="How To Write High Quality Unit Tests">
+<meta itemprop="description" content="How do you ensure that you're writing high quality unit tests? Here you'll learn how to write good quality unit tests with some ideas that you can use in your everyday testing.">
+<meta itemprop="image" content="http://localhost:4000/images/social/how-to-write-high-quality-unit-tests.jpg">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@marclittlemore">
+<meta name="twitter:title" content="How To Write High Quality Unit Tests">
+<meta name="twitter:description" content="How do you ensure that you're writing high quality unit tests? Here you'll learn how to write good quality unit tests with some ideas that you can use in your everyday testing.">
+<meta name="twitter:creator" content="@marclittlemore">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="http://localhost:4000/images/social/how-to-write-high-quality-unit-tests.jpg">
+
+
+    
+    <script src="//load.sumome.com/" data-sumo-site-id="a260c264ca479174c95ace07722082ec75abbab6778c364ba7a24230cc55c451" async="async"></script>
+    
+
+    
+        
+    
+
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '290377285027331'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=290377285027331&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+
+
+<body class="avenir helvetica bg-white">
+
+    <header class="white w-100 pt2 pb0 pb2-ns" style="z-index:100;">
+    <nav class="fw6 ttu tracked tc">
+        <div class="db" id="navLinks">
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/" title="marclittlemore.com">Home</a>
+                
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/talks/" title="Ideas I've shared">Talks</a>
+                
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/bots/" title="Learn how to create your own chatbot">Chatbots</a>
+                
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/about/" title="Find out more about me">About</a>
+                
+            
+        </div>
+    </nav>
+</header>
+
+
+    <main id="main-content">
+  <div class="mw8 center pt2 tc">
+      <h1 class="f3 f1-ns black fw6 mt1 mb1 ph1 pv0">
+        How To Write High Quality Unit Tests
+      </h1>
+      
+        <h2 class="f3-ns f5 fw4 lh-copy gray mt1 mb2 ph1">Make writing unit tests easy by following some simple ideas for better test quality.</h2>
+      
+  </div>
+
+  <div class="mw8 center pt2 tc">
+    <img class="w-100 br2 shadow-4" src="/images/banners/qualities-of-good-unit-tests.jpg" title="How To Write High Quality Unit Tests - Make writing unit tests easy by following some simple ideas for better test quality." alt="How To Write High Quality Unit Tests - Make writing unit tests easy by following some simple ideas for better test quality." />
+  </div>
+
+  <section class="mw8 pa3 mw8-ns ph5-ns center">
+    <div class="roboto lh-copy f4-ns f5">
+      <p>One of the often asked questions about unit testing is “how do I ensure I’m writing good quality unit tests?” It’s easy to start of down the path of writing unit tests for your code but you need to make sure you’re writing dependable tests which are easy to maintain. In this article, I talk about the defining characteristics of solid unit testing and how to ensure that the quality is high.</p>
+
+<h3 id="what-is-a-unit">What is a unit?</h3>
+
+<p>The first questions to ask is “what is a unit?” when talking about writing your unit tests. There are differing definitions of what a unit actually is, but it’s often defined as “the smallest component that it makes sense to test”. For object-oriented programming, this could be a whole class or an interface but, as with a functional programming approach, it could also be a single method or function. To test the unit you simply have to define your expectations of what it does, given any of the specified inputs. That’s it! If you’re the developer in charge of writing the code then the test defines what you know <strong>will happen</strong>. If you didn’t write the code under test, you can write your tests based upon your expectations of what you think <strong>should happen</strong>. If either of these things change then you want your tests to fail. Your unit tests then define a solid contract with your code.</p>
+
+<h3 id="what-are-good-qualities-of-unit-tests">What are good qualities of unit tests?</h3>
+
+<p>Your unit tests should be the first line of defence for your project. As your tests are so important to your code quality, you should always attempt to write high quality unit tests. But what does that actually mean? Let’s find out by looking at some of the features of good quality tests.</p>
+
+<h3 id="human-readable-and-understandable-test-names">Human readable and understandable test names</h3>
+
+<p><img src="/images/posts/human-readable-test-names.png" alt="Human readable test names" title="Human readable test names" /></p>
+
+<p>As silly as this may sound, you should spend some time ensuring that your test names make sense. This means that they should show the developer reading them exactly what the code under test does. The tests should be written for you and your team and not for a computer. Make sure that they’re easy to read and make sense as a sentence. An example could be <em>“should add a new user to the database”</em> or <em>“should call the authentication API with the expected user credentials”</em>.</p>
+
+<p>An advantage of writing good test names is that you should be able to scan through each test module and see what the feature requirements for the code. This suite of tests should then be treated as living documentation for your project. If your code’s functionality changes then update your test names accordingly.</p>
+
+<h3 id="isolation-of-dependencies">Isolation of dependencies</h3>
+
+<p><img src="/images/posts/stub-unit-test-dependencies.jpg" alt="Stub unit test dependencies" title="Stub unit test dependencies" /></p>
+
+<p>One of the most important feature of a unit test is that it’s isolated from any other external influences. This ensures that you’re only testing the code that you’ve written and aren’t dependent on the state of other modules. In order to do this you should write <a href="http://martinfowler.com/bliki/TestDouble.html">test doubles</a> to replace your production dependencies for testing purposes. These generally take the form of a stub or mock object which returns the data you specify in order to fulfil your test expectation.</p>
+
+<p>Some examples of things that you should make sure that you isolate are:</p>
+
+<ul>
+  <li><strong>Calls to services</strong> - these could be external 3rd party API calls, for example the Twitter API, or simply function calls to your own services.</li>
+  <li><strong>Serialisation calls</strong> - avoid actually serialising your data to real data stores by stubbing these function calls or mocking them with fake objects.</li>
+  <li><strong>State</strong> - ensure that any state of the system under test has pre-conditions which are initialised by you in your test setup. This could involve stubbing your configuration, initialising structures or objects with expected data or again mocking or stubbing external code dependencies.</li>
+</ul>
+
+<h3 id="provide-just-one-reason-to-fail">Provide just one reason to fail</h3>
+
+<p>A unit test should only have one reason to fail so you should always avoid putting multiple expectations into one test. You want to know exactly why a test fails and you’ll just make it harder if your test contains more than one assertion. By keeping it simple, and using only one test expectation, it allows you to quickly see <strong>why</strong> a test has failed. This will mean that you write more tests but it makes the code much easier to reason about. You’ll also find that it guides you to write tests to cover more of your code.</p>
+
+<h3 id="make-them-speedy">Make them speedy</h3>
+
+<p><img src="/images/posts/make-unit-tests-fast.png" alt="Make unit tests fast" title="Make unit tests fast" /></p>
+
+<p>Your unit tests should execute as quickly as possibly. Each test should have a small scope and should have all of its dependencies stubbed. By avoiding executing production code, such as that which serialises data to a database or uses 3rd party API calls, you can ensure that the whole of your unit test suite runs in a matter of seconds. This gives the team the confidence to run the tests often and will result in much better code quality. You can see from the image above that in one of our projects we run 2193 tests in 18 seconds, approximately 122 tests per second. This total includes integration tests as well as unit tests but is still fast enough for us to include those in every test run.</p>
+
+<h3 id="independent-of-environment">Independent of environment</h3>
+
+<p>Your unit tests should always be independent of environment. This means that the tests suite passes all of the tests on your machine, your colleagues’ machine and any continuous build server. You definitely want to avoid the “it works on my machine” problem.</p>
+
+<p>Ensure that the unit tests execute the same on all environments by correctly stubbing or mocking any dependencies and setting any state or external data. Also make sure that there is no dependency on other tests. Each test should run in isolation and should not need the result of a previous test in order to execute correctly. In the same vein, make sure that a test doesn’t have any side effects, for example adding data to a database. You need identical data inputs and state each time the test suite runs. If the tests don’t have consistency, and tests begin to fail, your team will lose faith in unit testing and they will quickly be ignored.</p>
+
+<h3 id="tests-unit-completely">Tests unit completely</h3>
+
+<p>While some tests are better than none, the best quality unit tests ensure that all of the code paths are covered. This is often done in combination with test-driven development practices which mean you never write any code without a corresponding test. Even if you write your tests after you’ve written your code, you should try and test every route through your code.</p>
+
+<p>Another good practice is to attempt to cover all edge cases for your code if possible. You’ll find that you sometimes forget some obscure inputs, or maybe receive input data that you didn’t expect, but try and determine the full requirements of your code and write your tests accordingly. Even if you don’t, it’s still incredibly satisfying to find a new bug, add an edge case test for it that fails as you expect, and then to fix it while still ensuring that all of your previous tests still pass.</p>
+
+<h3 id="ultimately-make-unit-testing-easy">Ultimately, make unit testing easy</h3>
+
+<p><img src="/images/posts/make-unit-testing-easy.jpg" alt="Make unit testing easy" title="Make unit testing easy" /></p>
+
+<p>You should always aim to make your unit tests easy. They should be easy to run, either from a simple terminal command or from your task runner or dependency manager. They should be easy to maintain such that refactoring the internals of your code should result in little work to update your tests as your test expectations will still be met.</p>
+
+<h3 id="simple-questions-to-ask-for-each-unit-test">Simple questions to ask for each unit test</h3>
+
+<p>The best way to write high quality unit tests is to write the test with these questions in mind:</p>
+
+<ol>
+  <li>What are you testing?</li>
+  <li>What should the code you’re testing do?</li>
+  <li>What is the actual output of the code under test?</li>
+  <li>What is the expected output of the code under test?</li>
+</ol>
+
+<p>If you answer all of those questions, you’ll find you quickly have a higher quality unit test suite with high code coverage and you and your team can have much better confidence when deploying to your production environment.</p>
+
+<p>If you spot any errors or have and questions then please <a href="/contact">contact me</a>.</p>
+
+
+    </div>
+  </section>
+</main>
+
+
+    <footer class="pv4 ph3 ph5-ns tc bg-light-gray bt b--moon-gray">
+    <a href="/feed.xml" title="RSS feed" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="RSS feed icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="http://twitter.com/marclittlemore" target="_blank" rel="noreferrer" title="You should follow me on Twitter" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="Twitter icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="https://github.com/MarcL" target="_blank" rel="noreferrer" title="Follow me on GitHub" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="GitHub icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="https://www.instagram.com/marclittlemore" target="_blank" rel="noreferrer" title="Follow me on Instagram" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="Instagram icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="https://www.reddit.com/user/marclittlemore" target="_blank" rel="noreferrer" title="Upvote me on Reddit" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="Reddit icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+
+  <div class="mt4 ttu">
+    <a href="/javascript-testing" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">JS Testing</a>
+    <a href="/now" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Now</a>
+    <a href="/uses" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Uses</a>
+    <a href="/articles" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Articles</a>
+    <a href="/contact" class="f6 fw5 link underline-hover near-black dib">Contact</a>
+  </div>
+  <div class="mt4 dark-gray f6 fw6 ttu">
+      Copyright &copy; Marc Littlemore 2020
+  </div>
+</footer>
+
+<script async defer data-pin-hover="true" data-pin-color="red" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+</body>
+
+</html>

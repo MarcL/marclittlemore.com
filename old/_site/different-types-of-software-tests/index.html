@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" itemtype="http://schema.org/Article">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="What are the different types of tests we can write for our software?">
+
+    <title>Different types of software tests - Marc Littlemore</title>
+
+    <link rel="canonical" href="http://localhost:4000/different-types-of-software-tests/">
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+
+    <!-- Custom CSS -->
+    
+    
+    
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <script src="https://kit.fontawesome.com/d38990851e.js" crossorigin="anonymous"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/images/favicons/manifest.json">
+<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+
+    <meta name="p:domain_verify" content="7613bb2239e62b55de06dc926e1b6431"/>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-810717-3', 'auto');
+  ga('send', 'pageview');
+</script>
+    
+
+
+
+
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Marc Littlemore" />
+<meta property="og:url" content="http://localhost:4000/different-types-of-software-tests/" />
+<meta property="og:title" content="Different types of software tests" />
+<meta property="og:description" content="What are the different types of tests we can write for our software?" />
+
+<meta property="og:image" content="http://localhost:4000/images/posts/heart-code.jpg" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_GB" />
+<meta property="article:published_time" content="2020-04-28" />
+<meta property="article:author" content="https://www.facebook.com/marcdavidlittlemore" />
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Different types of software tests">
+<meta itemprop="description" content="What are the different types of tests we can write for our software?">
+<meta itemprop="image" content="http://localhost:4000/images/posts/heart-code.jpg">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@marclittlemore">
+<meta name="twitter:title" content="Different types of software tests">
+<meta name="twitter:description" content="What are the different types of tests we can write for our software?">
+<meta name="twitter:creator" content="@marclittlemore">
+<!-- Twitter summary card with large image must be at least 280x150px -->
+<meta name="twitter:image:src" content="http://localhost:4000/images/posts/heart-code.jpg">
+
+
+    
+    <script src="//load.sumome.com/" data-sumo-site-id="a260c264ca479174c95ace07722082ec75abbab6778c364ba7a24230cc55c451" async="async"></script>
+    
+
+    
+        
+    
+
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '290377285027331'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=290377285027331&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+
+
+<body class="avenir helvetica bg-white">
+
+    <header class="white w-100 pt2 pb0 pb2-ns" style="z-index:100;">
+    <nav class="fw6 ttu tracked tc">
+        <div class="db" id="navLinks">
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/" title="marclittlemore.com">Home</a>
+                
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/talks/" title="Ideas I've shared">Talks</a>
+                
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/bots/" title="Learn how to create your own chatbot">Chatbots</a>
+                
+            
+                
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="/about/" title="Find out more about me">About</a>
+                
+            
+        </div>
+    </nav>
+</header>
+
+
+    <main id="main-content">
+  <div class="mw8 center pt2 tc">
+      <h1 class="f3 f1-ns black fw6 mt1 mb1 ph1 pv0">
+        Different types of software tests
+      </h1>
+      
+        <h2 class="f3-ns f5 fw4 lh-copy gray mt1 mb2 ph1">What are the different types of tests we can write for our software?</h2>
+      
+  </div>
+
+  <div class="mw8 center pt2 tc">
+    <img class="w-100 br2 shadow-4" src="/images/posts/heart-code.jpg" title="Different types of software tests - What are the different types of tests we can write for our software?" alt="Different types of software tests - What are the different types of tests we can write for our software?" />
+  </div>
+
+  <section class="mw8 pa3 mw8-ns ph5-ns center">
+    <div class="roboto lh-copy f4-ns f5">
+      <div class="i fw5">
+    <p>👉🏻 Want to learn more about testing your JavaScript code but don't know where to start? Get my <a href="/courses/javascript-testing-beginners-course/?signup=testing-page" title="FREE 7-day beginners testing course">FREE 7-day testing course</a> and you'll be a JavaScript testing expert in no time!</p>
+</div>
+
+<h2 id="understanding-types-of-software-testing">Understanding types of software testing</h2>
+
+<p>New developers often don’t know where to start with testing their code. They know that it’s a good idea but there’s an overwhelming amount of information out there. Common questions and comments I hear are:</p>
+
+<ul>
+  <li>What’s a unit test?</li>
+  <li>How does it differ from an integration test?</li>
+  <li>Should I be writing end-to-end tests?</li>
+  <li>I don’t know where to start!</li>
+</ul>
+
+<p>I’ll help you to understand the differences in testing types and make you a little less scared to get started on your software testing journey.</p>
+
+<h2 id="what-is-a-test">What is a test?</h2>
+
+<p>This seems like a simple question right but a lot of people get scared when you mention software tests. There’s an easy pattern which you can follow which will simplify how you think about writing tests. It’s known as <strong>Arrange, Act and Assert (AAA)</strong> and it’s a common way of writing tests.</p>
+
+<p>Firstly, you need to set up our <strong>pre-conditions</strong> for the function under test. This is your <strong>Arrange</strong>. Here you can initialise any objects, or data you need for your test. You can also define the output value you expect from your code after execution.</p>
+
+<p>Next, you <strong>call your code</strong> with the specified inputs for your test. This is your <strong>Act</strong>. Call your function or method with the given input as though you were calling the code in production.</p>
+
+<p>Lastly, you will <strong>verify your expectations</strong> based upon either the output value, or the code paths executed. This is your <strong>Assert</strong>. You know what you expect your code to do so you can now check that it happened. If it didn’t, then the test has failed and your code, or sometimes your test, is incorrect.</p>
+
+<h2 id="unit-tests">Unit tests</h2>
+
+<p>Most of the code that you write will need to interact with other code. It’ll call another function or class method in some way. We want to split up our code into the smallest <strong>unit</strong> that it makes sense to test. Most of my projects are written in JavaScript using Node.js so for me this is typically a function. We then test this small piece of code. Testing a small amount of code is known as a <strong>unit test</strong>. If your test still has to allow your code to use an external service, for example an API request or database call, then it’s not a unit test.</p>
+
+<p>A <strong>unit test</strong> should be one of the most basic tests you have. As you want to test the code in isolation, you might have to stub or mock some external dependencies to define specific scenarios. You’ll find that writing unit tests often helps to define the structure and design of your code. If it’s difficult to test, it’s often a <a href="https://en.wikipedia.org/wiki/Code_smell">code smell</a> that means you could refactor your code to make it easier to test.</p>
+
+<p>One major factor which defines a <strong>unit test</strong> is its speed. Due to the isolation of the code from its other dependencies, you expect these tests to be incredibly fast. You will often end up writing a lot more unit tests than you will the other test types. A typical unit test suite may have thousands of tests and you’d expect a single test to take much less than a second to run.</p>
+
+<h2 id="integration-tests">Integration tests</h2>
+
+<p>While your unit tests aim to be simple and test a single module or function, <strong>integration tests</strong>, as their name suggest, tests how code modules fit together in your application (i.e. how they integrate). In your unit tests, the aim is to isolate the external dependencies but for your integration tests, you may allow your code to communicate with data sources like your database, or also external APIs. This isn’t a requirement and you can still mock these external dependencies if you want to.</p>
+
+<p>Integration tests allow you to test the full flow of your application and test how code modules interface with each other. The classic gif below shows what could happen if you have unit tests for your project and no integration tests. Both unit tests appear to pass correctly, but when the code for both is combined, it’s actually incorrect.</p>
+
+<p><img src="https://gallery.mailchimp.com/72d3502c470827973d3e8dd63/images/3f98393a-27c9-4576-ba70-38a464d2f8ae.gif" alt="Unit vs integration tests" /></p>
+
+<p>Integration tests are generally slower than your unit tests so you’ll often have fewer of them to test complete code paths. You may need configuration of external applications, like databases or HTTP requests to external APIs, if they’re not mocked out. These types of tests are great for testing higher level logic and data flow through your application.</p>
+
+<p>An example of an <strong>integration test</strong> is to test the full flow of an API on a server. This may involve starting a server which runs your application code, responding to HTTP requests, authorising a client or user, validating query parameters or body data, connecting to a database or other APIs, converting data to JSON, and eventually returning the data.</p>
+
+<p>One thing to consider is that you can still mock external dependencies if you want to. It’s often better to have a thin wrapper around an external service which can return fake data in your integration tests. This still allows you to test your complete application flow as an <strong>integration test</strong>, but not talk to a production API or database. A good example would be an application which uses the Twitter API to send tweets. You wouldn’t want it to send a tweet every time you ran your test suite!</p>
+
+<h2 id="functional--end-to-end-tests">Functional / End-to-end tests</h2>
+
+<p><strong>Function tests</strong> are also know as <strong>end-to-end (E2E) tests</strong> and they test the complete functionality of your code. They runn the complete application, usually in a browser, without mocking any external dependencies at all. These types of tests are the slowest to run so you’ll generally have a lot less of these than integration or unit tests.</p>
+
+<p>An example of a <strong>functional test</strong> is to verify that a user can sign into a website and that they can view the expected data once authorised. This test would use automated browser interaction to enter the username and password and click on the sign-in button. The test would verify that the title of the next page is as expected and that the user’s data is displayed. This is often done by querying the DOM to determine if elements are present. There are a lot of pre-conditions for this test, such as having a valid username and password combination, and knowning the DOM elements to verify. This means that functional tests are often more brittle and prone to breaking than unit or integration tests. Be wary of relying on user interface data for test expectations as developers or designers often change it!</p>
+
+<h2 id="test-doubles">Test doubles</h2>
+
+<p>When writing tests, there are rarely functions or classes that operate in isolation. Most code interacts with other modules in some way. If you want to isolate your function for testing you can use a <strong>test double</strong>. This is the generic term for when you replace a production object for testing purposes with a fake. Think of it like a film where a <em>stunt double</em> replaces the actual actor for the dangerous scenes.</p>
+
+<p>There are various kinds of test doubles that you can use in your tests and there will be different uses for each of them.</p>
+
+<ul>
+  <li><strong>Dummy</strong> - A dummy object is used in place of your production object and will match the interface of the thing it replaces. However, you don’t care what it does. Think of it as a simple placeholder which you’ll need as one of your function parameters.</li>
+  <li><strong>Stub</strong> - A stub is an object or function which responds with a pre-programmed response. It normally only responds to what has been programmed for the test.</li>
+  <li><strong>Spy</strong> - A spy is a function which wraps an object and can record information about how the object is used. This is useful for avoiding altering the behaviour of the function, but still determining how it was interacted with.</li>
+  <li><strong>Mock</strong> - Mocks are fake objects which have fake methods. They also have pre-programmed responses like stubs. However, the main difference to spies and stubs is that they also have pre-programmed expectations. If the mock is not used as expected by your code, the test will fail.</li>
+  <li><strong>Fake</strong> - A fake object is similar to a stub and it will return some expected values. However, it also implements some of the functionality of the object it’s replacing. An example would be an in-memory data store which replaces the production database.</li>
+</ul>
+
+<h2 id="watch-the-video">Watch the video</h2>
+
+<p>Hopefully this been a brief but helpful walkthrough of the different types of software tests you can write. I’ve recorded a video which summarises what you’ve learnt. I talk about the different types of tests you might write as a developer and give some information on test doubles and some of the tools that exist in the JavaScript universe which will help you to write tests. You can watch it here:</p>
+
+<div class="aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100">
+    <iframe class="absolute top-0 left-0 w-100 h-100" src="https://www.youtube.com/embed/pMmXJcDLUFA" frameborder="0" allowfullscreen="">
+    </iframe>
+</div>
+
+<p>If this post was valuable to you, you can <a href="https://twitter.com/marclittlemore">follow my journey on Twitter</a>.</p>
+
+<h2 id="want-to-learn-more-about-javascript-testing">Want to learn more about JavaScript testing?</h2>
+
+<div class="i fw5">
+    <p>👉🏻 Want to learn more about testing your JavaScript code but don't know where to start? Get my <a href="/courses/javascript-testing-beginners-course/?signup=testing-page" title="FREE 7-day beginners testing course">FREE 7-day testing course</a> and you'll be a JavaScript testing expert in no time!</p>
+</div>
+
+
+
+    </div>
+  </section>
+</main>
+
+
+    <footer class="pv4 ph3 ph5-ns tc bg-light-gray bt b--moon-gray">
+    <a href="/feed.xml" title="RSS feed" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="RSS feed icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="http://twitter.com/marclittlemore" target="_blank" rel="noreferrer" title="You should follow me on Twitter" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="Twitter icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="https://github.com/MarcL" target="_blank" rel="noreferrer" title="Follow me on GitHub" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="GitHub icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="https://www.instagram.com/marclittlemore" target="_blank" rel="noreferrer" title="Follow me on Instagram" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="Instagram icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <a href="https://www.reddit.com/user/marclittlemore" target="_blank" rel="noreferrer" title="Upvote me on Reddit" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="Reddit icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+
+  <div class="mt4 ttu">
+    <a href="/javascript-testing" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">JS Testing</a>
+    <a href="/now" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Now</a>
+    <a href="/uses" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Uses</a>
+    <a href="/articles" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Articles</a>
+    <a href="/contact" class="f6 fw5 link underline-hover near-black dib">Contact</a>
+  </div>
+  <div class="mt4 dark-gray f6 fw6 ttu">
+      Copyright &copy; Marc Littlemore 2020
+  </div>
+</footer>
+
+<script async defer data-pin-hover="true" data-pin-color="red" data-pin-tall="true" src="//assets.pinterest.com/js/pinit.js"></script>
+
+
+</body>
+
+</html>
