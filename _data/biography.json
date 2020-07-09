@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://www.marclittlemore.com/bots/sign-up-bot-building-for-beginners/?signup=website-bio",
+    "title": "FREE Chatfuel Chatbot JSON Guide"
+  },
+  {
+    "url": "https://www.marclittlemore.com/courses/javascript-testing-beginners-course/?signup=website-bio ",
+    "title": "FREE JavaScript Testing Course"
+  },
+
+  {
+    "url": "http://twitter.com/marclittlemore",
+    "title": "Follow me on Twitter"
+  },
+
+  { "url": "https://github.com/MarcL", "title": "Follow me on GitHub" },
+
+  {
+    "url": "https://www.instagram.com/marclittlemore",
+    "title": "Follow me on Instagram"
+  },
+
+  {
+    "url": "https://www.reddit.com/user/marclittlemore",
+    "title": "Upvote me on Reddit"
+  },
+
+  {
+    "url": "http://soundcloud.com/djcruze",
+    "title": "Follow DJ Cruze on SoundCloud"
+  },
+
+  {
+    "url": "http://mixcloud.com/djcruzeuk",
+    "title": "Follow DJ Cruze on Mixcloud"
+  }
+]
