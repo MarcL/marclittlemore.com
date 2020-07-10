@@ -1,0 +1,35 @@
+{% for article in games %}
+<article class="pv4 bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column flex-row-ns">
+        <div class="w-100 w-50-ns pr3-ns order-2 order-1-ns">
+            {%- if article.url -%}
+            <h2>{{ article.title }}</h2>
+            <a href="{{article.url}}" class="link dim black" alt="{{article.title}}">
+                <h2 class="f3 roboto mt0 lh-title">{{article.title}}</h2>
+            </a>
+            {%- else -%}
+                <h2 class="f3 roboto mt0 lh-title">{{article.title}}</h2>
+            {%- endif -%}
+            <p class="f5 f4-l lh-copy roboto">
+                {{article.text | markdownify}}
+            </p>
+            {%- if article.icons -%}
+            <div class="gray tc">
+                {% for icon in article.icons %}
+                    <i class="fa fa-{{icon}} fa-3x ph2"></i>
+                {% endfor %}
+            </div>
+            {%- endif -%}
+        </div>
+        <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-50-ns">
+            {% if article.url %}
+                <a href="{{article.url}}" class="link dim black" alt="{{article.title}}">
+                    <img src="{{article.image}}" class="db" alt="{{article.title}}">
+                </a>
+            {% else %}
+                <img src="{{article.image}}" class="db" alt="{{article.title}}">
+            {% endif %}
+        </div>
+    </div>
+</article>
+{% endfor %}
