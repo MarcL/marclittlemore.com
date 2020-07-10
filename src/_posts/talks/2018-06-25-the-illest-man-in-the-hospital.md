@@ -6,8 +6,8 @@ permalink: /talks/the-illest-man-in-the-hospital/
 header-img: images/banners/the-illest-man-in-the-hospital.jpg
 social-img: images/social/the-illest-man-in-the-hospital.jpg
 thumbnail: /images/thumbnails/social/the-illest-man-in-the-hospital-thumb.jpg
-categories:
-  - talks
+tags:
+  - talk
 description: 'After surviving a near-death experience when I contract an infection which caused sepsis, I wanted to share my story in order to help others. In this talk I share my experiences of 45 days in intensive care.'
 speakerDeckId: 'c4e8cd0138fc40c1b22dc9ec625799a9'
 ---

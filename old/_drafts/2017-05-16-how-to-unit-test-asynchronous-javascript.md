@@ -6,7 +6,7 @@ permalink: /how-to-unit-test-asynchronous-javascript-tips-and-tricks/
 header-img: images/banners/computer-code.jpg
 social-img: images/social/how-to-unit-test-asynchronous-javascript-tips-and-tricks-fb.jpg
 thumbnail: /images/thumbnails/social/how-to-unit-test-asynchronous-javascript-tips-and-tricks-fb-thumb.jpg
-categories:
+tags:
     - unit-testing
     - development
 description: "Unit testing asynchronous JavaScript isn't as challenging as you think it might be. Here are some quick tips, tricks and gotchas for easy testing of asynchronous functions and Promises using Mocha."

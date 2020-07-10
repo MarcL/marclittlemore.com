@@ -4,8 +4,9 @@ title:  "Lessons Learned From Running A Code Club"
 subtitle: "Teaching children about computer programming is fun but challenging. Here's what I learnt."
 permalink: /lessons-learned-from-running-a-code-club/
 header-img: images/posts/lessons-learned-from-running-a-code-club.jpg
-categories:
+tags:
     - code-club
+    - post
 description: A Code Club is a great place for children to learn more about computing, and for adults to learn about teaching. Here are some tips and tricks on how to make your Code Club a fun learning environment for everyone.
 social-img: images/social/lessons-learned-from-running-a-code-club-fb.jpg
 thumbnail: /images/thumbnails/social/lessons-learned-from-running-a-code-club-fb-thumb.jpg

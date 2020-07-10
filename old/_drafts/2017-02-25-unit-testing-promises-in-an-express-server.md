@@ -5,7 +5,7 @@ subtitle: "Unit testing JavaScript Promises is much easier than you think."
 permalink: /unit-testing-javascript-promises-in-a-node-js-express-middleware/
 header-img: images/banners/unit-testing-javascript-promises-in-a-node-js-express-middleware.jpg
 social-img: images/posts/unit-testing-javascript-promises-in-a-node-js-express-middleware.jpg
-categories:
+tags:
     - express
     - javascript
     - development

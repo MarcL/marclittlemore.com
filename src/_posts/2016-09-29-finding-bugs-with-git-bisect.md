@@ -6,10 +6,10 @@ permalink: /how-to-find-bugs-using-git-bisect-with-this-easy-guide/
 header-img: images/banners/computer-code.jpg
 social-img: images/social/how-to-find-bugs-using-git-bisect-with-this-easy-guide.jpg
 thumbnail: /images/thumbnails/social/how-to-find-bugs-using-git-bisect-with-this-easy-guide-thumb.jpg
-categories:
+tags:
     - git
     - development
-
+    - post
 enableComments: true
 description: An essential guide that will teach you how to use git bisect to quickly and easily find bugs in the history of your project.
 ---

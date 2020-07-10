@@ -6,9 +6,10 @@ permalink: /spooky-halloween-sound-effects-with-raspberry-pi-and-spotify/
 header-img: images/banners/raspberry-pi.jpg
 social-img: images/social/spooky-halloween-sound-effects-with-raspberry-pi-and-spotify.jpg
 thumbnail: /images/thumbnails/social/spooky-halloween-sound-effects-with-raspberry-pi-and-spotify-thumb.jpg
-categories:
+tags:
     - raspberry-pi
     - development
+    - post
 enableComments: true
 description: Scare the trick or treaters with this simple Raspberry Pi Node.js project to play spooky sound effects.
 youTubeId: "77df-OO72U0"

@@ -6,9 +6,10 @@ permalink: /how-to-write-high-quality-unit-tests/
 header-img: images/banners/qualities-of-good-unit-tests.jpg
 social-img: images/social/how-to-write-high-quality-unit-tests.jpg
 thumbnail: /images/thumbnails/social/how-to-write-high-quality-unit-tests-thumb.jpg
-categories:
+tags:
     - unit-testing
     - development
+    - post
 description: How do you ensure that you're writing high quality unit tests? Here you'll learn how to write good quality unit tests with some ideas that you can use in your everyday testing.
 ---
 

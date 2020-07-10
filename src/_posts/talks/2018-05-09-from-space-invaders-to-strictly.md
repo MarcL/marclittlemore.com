@@ -6,8 +6,8 @@ permalink: /talks/from-space-invaders-to-strictly/
 header-img: images/banners/from-space-invaders-to-strictly.jpg
 social-img: images/social/from-space-invaders-to-strictly.jpg
 thumbnail: /images/thumbnails/social/from-space-invaders-to-strictly-thumb.jpg
-categories:
-  - talks
+tags:
+  - talk
 description: 'Want to know how I got started in the technology industry? It all started with my love of Space Invaders and ended up with me creating high scale applications to support Strictly Come Dancing. I share some tips for up and coming developers and what to expect when you join the industry.'
 speakerDeckId: '3903e9d8a5484132a15715b96f1cbb64'
 ---

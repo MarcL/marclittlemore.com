@@ -6,9 +6,10 @@ permalink: /how-to-unit-test-express-routes/
 header-img: images/banners/unit-testing-express-routes.jpg
 social-img: images/social/how-to-unit-test-express-routes.jpg
 thumbnail: /images/thumbnails/social/how-to-unit-test-express-routes-thumb.jpg
-categories:
+tags:
     - unit-testing
     - development
+    - post
 description: How to unit test Express routes and some reasons why you should do it.
 ---
 
