@@ -12,7 +12,7 @@ Over the past few years I've been introduced to test driven development (TDD) in
 
 However, it's often very confusing and difficult for beginners to get started. Here I hope to help beginners to get started with testing their JavaScript and also encourage less experienced developers to gain unit and integration testing skills for their JavaScript code. If you want to learn more then read the articles below or why not sign up for my [JavaScript Testing Made Easy]({{site.url}}/courses/javascript-testing-beginners-course/?signup=testing-page) course for some free videos showing you how to get started.
 
-{%- for post in collections["unit-testing"] -%}
+{%- for post in collections["unit-testing"] reversed -%}
 <article class="pv4 bb b--black-10 ph3 ph0-l">
 <div class="flex flex-column flex-row-ns">
 <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">

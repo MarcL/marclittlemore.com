@@ -1,7 +1,12 @@
 const markdownIt = require('markdown-it')();
+const markdownItAttributes = require('@gerhobbelt/markdown-it-attrs');
 const escape = require('lodash.escape');
 
 module.exports = (eleventyConfig) => {
+    // Set up markdown parser to allow class attributes
+    markdownIt.use(markdownItAttributes);
+    eleventyConfig.setLibrary('md', markdownIt);
+
     // Copy
     eleventyConfig.addPassthroughCopy({'src/images': 'images'});
     eleventyConfig.addPassthroughCopy({'src/css': 'css'});

@@ -9,6 +9,7 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "@gerhobbelt/markdown-it-attrs": "^3.0.3-19",
     "lodash.escape": "^4.0.1",
     "markdown-it": "^11.0.0"
   },

@@ -168,14 +168,14 @@ src="https://www.facebook.com/tr?id=290377285027331&ev=PageView
 <p>Let's take a look at how we can validate a given user email using Chatfuel as our chatbot platform. Chatfuel allows you to ask for a user's email using it's &quot;Save User Email&quot; element. Adding this to your chatbot flow allows you to send a quick reply to your and ask for an email address which is then stored in a Chatfuel user attribute. If you pass this to your server side API using the JSON API plugin, you can't validate it on the server to determine if it's valid.</p>
 <h2>Watch The Video</h2>
 <p>Take a look at how I build this email validation using <a href="https://glitch.com">Glitch</a> and a Node.js Express web server together with Chatfuel's JSON API.</p>
-<div class="aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100">
-    <iframe
-        class="absolute top-0 left-0 w-100 h-100"
-        src="https://www.youtube.com/embed/"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</div>
+<p>&lt;div class=&quot;aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100&quot;&gt;
+&lt;iframe
+class=&quot;absolute top-0 left-0 w-100 h-100&quot;
+src=&quot;https://www.youtube.com/embed/&quot;
+frameborder=&quot;0&quot;
+allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;</p>
 <h3>How to validate an email address?</h3>
 <h4>Using a regular expression</h4>
 <p>Validating email addresses correctly can be tricky. One way is to use something called a <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a>. This is a sequence of characters that define a search pattern that you attempt to match against. You'll find hundreds of different email regular expressions on the internet which give you various queries to validate against. However, they often come with caveats that they make a trade-off between speed and accuracy. You can use one of these to match the given email address with a specific pattern but you may incorrectly accept or reject some email addresses. The official regular expression which matches all email addresses is <a href="http://www.ex-parrot.com/~pdw/Mail-RFC822-Address.html">ridiculously big</a>. I can't imagine attempting to debug this if it doesn't work as expected in your programming language. While a regular expression will confirm if your email matches a specific pattern, we can't confirm whether we can send an email to it.</p>
@@ -227,9 +227,9 @@ const checkValidMxRecord = email =&gt; (
 <p>To make my APIs more robust, I always return user attributes back to Chatfuel to inform it whether an API has succeeded or not. This allows us to avoid hard coding any messages in the API and gives back control to Chatfuel, or whichever chatbot platform you use, and use that to display the correct user messaging. It's a good way to inform the user that they've potentially typed in their email incorrectly. You can also use this validation check to gate your content to only allow access to people who supply their email address.</p>
 <p>Of course, this method has a flaw in that we can't confirm that the username is valid without sending an email to it. We'll find this out when we send an email to them from our mailing list but at least we got halfway there.</p>
 <p>I hope you found this useful. All of the code is available on my <a href="https://glitch.com/~chatfuel-demo-bot">Chatfuel demo Glitch project</a>. Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please <a href="/contact">send me a message</a>. I love to hear from people and I'm always happy to answer your questions.</p>
-<div class="i fw5">
-    <p>👉🏻 Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my <a href="/bots/sign-up-bot-building-for-beginners/" title="FREE JSON guide">FREE JSON guide</a> and you'll have JSON skills in no time!</p>
-</div>
+<p>&lt;div class=&quot;i fw5&quot;&gt;
+&lt;p&gt;👉🏻 Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my &lt;a href=&quot;/bots/sign-up-bot-building-for-beginners/&quot; title=&quot;FREE JSON guide&quot;&gt;FREE JSON guide&lt;/a&gt; and you'll have JSON skills in no time!&lt;/p&gt;
+&lt;/div&gt;</p>
 
 
     </div>

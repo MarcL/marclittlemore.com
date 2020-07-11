@@ -14,9 +14,9 @@
     <lastBuildDate>2020-04-27T23:00:00.000Z</lastBuildDate>
     <generator>Eleventy</generator><item>
         <title>Different types of software tests</title>
-        <description>&lt;div class=&quot;i fw5&quot;&gt;
-    &lt;p&gt;👉🏻 Want to learn more about testing your JavaScript code but don&#39;t know where to start? Get my &lt;a href=&quot;/courses/javascript-testing-beginners-course/?signup=testing-page&quot; title=&quot;FREE 7-day beginners testing course&quot;&gt;FREE 7-day testing course&lt;/a&gt; and you&#39;ll be a JavaScript testing expert in no time!&lt;/p&gt;
-&lt;/div&gt;
+        <description>&lt;p&gt;&amp;lt;div class=&amp;quot;i fw5&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;👉🏻 Want to learn more about testing your JavaScript code but don&#39;t know where to start? Get my &amp;lt;a href=&amp;quot;/courses/javascript-testing-beginners-course/?signup=testing-page&amp;quot; title=&amp;quot;FREE 7-day beginners testing course&amp;quot;&amp;gt;FREE 7-day testing course&amp;lt;/a&amp;gt; and you&#39;ll be a JavaScript testing expert in no time!&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;h2&gt;Understanding types of software testing&lt;/h2&gt;
 &lt;p&gt;New developers often don&#39;t know where to start with testing their code. They know that it&#39;s a good idea but there&#39;s an overwhelming amount of information out there. Common questions and comments I hear are:&lt;/p&gt;
 &lt;ul&gt;
@@ -57,37 +57,37 @@
 &lt;/ul&gt;
 &lt;h2&gt;Watch the video&lt;/h2&gt;
 &lt;p&gt;Hopefully this been a brief but helpful walkthrough of the different types of software tests you can write. I&#39;ve recorded a video which summarises what you&#39;ve learnt. I talk about the different types of tests you might write as a developer and give some information on test doubles and some of the tools that exist in the JavaScript universe which will help you to write tests. You can watch it here:&lt;/p&gt;
-&lt;div class=&quot;aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100&quot;&gt;
-    &lt;iframe
-        class=&quot;absolute top-0 left-0 w-100 h-100&quot;
-        src=&quot;https://www.youtube.com/embed/&quot;
-        frameborder=&quot;0&quot;
-        allowfullscreen&gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;&amp;lt;div class=&amp;quot;aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100&amp;quot;&amp;gt;
+&amp;lt;iframe
+class=&amp;quot;absolute top-0 left-0 w-100 h-100&amp;quot;
+src=&amp;quot;https://www.youtube.com/embed/&amp;quot;
+frameborder=&amp;quot;0&amp;quot;
+allowfullscreen&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;p&gt;If this post was valuable to you, you can &lt;a href=&quot;https://twitter.com/marclittlemore&quot;&gt;follow my journey on Twitter&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;Want to learn more about JavaScript testing?&lt;/h2&gt;
-&lt;div class=&quot;i fw5&quot;&gt;
-    &lt;p&gt;👉🏻 Want to learn more about testing your JavaScript code but don&#39;t know where to start? Get my &lt;a href=&quot;/courses/javascript-testing-beginners-course/?signup=testing-page&quot; title=&quot;FREE 7-day beginners testing course&quot;&gt;FREE 7-day testing course&lt;/a&gt; and you&#39;ll be a JavaScript testing expert in no time!&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&amp;lt;div class=&amp;quot;i fw5&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;👉🏻 Want to learn more about testing your JavaScript code but don&#39;t know where to start? Get my &amp;lt;a href=&amp;quot;/courses/javascript-testing-beginners-course/?signup=testing-page&amp;quot; title=&amp;quot;FREE 7-day beginners testing course&amp;quot;&amp;gt;FREE 7-day testing course&amp;lt;/a&amp;gt; and you&#39;ll be a JavaScript testing expert in no time!&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 27 Apr 2020 23:00:00 GMT</pubDate>
         <link>https://www.marclittlemore.com/different-types-of-software-tests/</link>
         <guid isPermaLink="true">https://www.marclittlemore.com/different-types-of-software-tests/</guid>
       </item><item>
         <title>How to add time and date to your Messenger chatbot using the Chatfuel JSON API</title>
-        <description>&lt;div class=&quot;i fw5&quot;&gt;
-    &lt;p&gt;👉🏻 Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my &lt;a href=&quot;/bots/sign-up-bot-building-for-beginners/&quot; title=&quot;FREE JSON guide&quot;&gt;FREE JSON guide&lt;/a&gt; and you&#39;ll have JSON skills in no time!&lt;/p&gt;
-&lt;/div&gt;
+        <description>&lt;p&gt;&amp;lt;div class=&amp;quot;i fw5&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;👉🏻 Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my &amp;lt;a href=&amp;quot;/bots/sign-up-bot-building-for-beginners/&amp;quot; title=&amp;quot;FREE JSON guide&amp;quot;&amp;gt;FREE JSON guide&amp;lt;/a&amp;gt; and you&#39;ll have JSON skills in no time!&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;h2&gt;Watch the video&lt;/h2&gt;
-&lt;div class=&quot;aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100&quot;&gt;
-    &lt;iframe
-        class=&quot;absolute top-0 left-0 w-100 h-100&quot;
-        src=&quot;https://www.youtube.com/embed/&quot;
-        frameborder=&quot;0&quot;
-        allowfullscreen&gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;&amp;lt;div class=&amp;quot;aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100&amp;quot;&amp;gt;
+&amp;lt;iframe
+class=&amp;quot;absolute top-0 left-0 w-100 h-100&amp;quot;
+src=&amp;quot;https://www.youtube.com/embed/&amp;quot;
+frameborder=&amp;quot;0&amp;quot;
+allowfullscreen&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;p&gt;One of the main benefits of creating a Facebook Messenger chatbot is that you don&#39;t have to be present to answer messages for 24 hours per day. Your chatbot should be on hand to do this while you&#39;re fast asleep. What would be even better is if it could understand where your user lives and give them relevant content for their time of day. It could let them know whether your shop is open for business. Or it could send your users the breakfast menu rather than the dinner menu because it knows it&#39;s 9am where they are. This functionality doesn&#39;t exist in Chatfuel by default so let me teach you how to build an API which adds time and date functions to your chatbot.&lt;/p&gt;
 &lt;h2&gt;Timezones &amp;amp; Coordinated Universal Time&lt;/h2&gt;
 &lt;p&gt;When your users talk to you on Facebook Messenger, they may live anywhere around the world. This means we need to know what the time is where they live. Each user can potential live in a different &lt;a href=&quot;https://en.wikipedia.org/wiki/Time_zone&quot;&gt;time zone&lt;/a&gt;. This means we may need to add or subtract a number of hours to the time where your server is to allow for this time difference. Although you might think that it&#39;s always a whole number of hours, there are time zones which have half hours too. But what time is it where your API server is hosted? Well, this depends on where the data centre is that is storing and executing your code. What happens if your server is in New York, which is 5 hours behind &lt;a href=&quot;https://en.wikipedia.org/wiki/Greenwich_Mean_Time&quot;&gt;Greenwich Mean Time&lt;/a&gt; (GMT), but your user is Germany, which is 1 hour ahead of GMT. And what happens if &lt;a href=&quot;https://en.wikipedia.org/wiki/Daylight_saving_time&quot;&gt;daylight saving time&lt;/a&gt; has happened in one of those countries? Calculating the time is hard and things can get even more complicated. That&#39;s why we have a time standard which everyone uses. It&#39;s called &lt;a href=&quot;https://en.wikipedia.org/wiki/Coordinated_Universal_Time&quot;&gt;Coordinated Universal Time&lt;/a&gt; or UTC. The Wikipedia page will explain why it&#39;s not an acronym of CUT! Using UTC allows us to define all times as relative to this standard. If we store all of our times in UTC, life becomes a bit easier.&lt;/p&gt;
@@ -170,9 +170,9 @@ module.exports = router;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The last thing you need to do is to use this code in your Chatfuel chatbot. You can use the redirect blocks to check the value of &amp;quot;hours&amp;quot; returned after calling your API. If they are greater than 18, or 6pm, you could consider it to be evening and change the user responses accordingly. In a similar way, you can check if the value is greater than 6, or 6am, and then consider it to be breakfast time. Once you&#39;ve got the user&#39;s time and date, you can give timely responses to your user. Watch &lt;a href=&quot;https://www.youtube.com/watch?v=UDrGpc4Dp8w&quot;&gt;my video&lt;/a&gt; for more examples.&lt;/p&gt;
 &lt;p&gt;All of the code is available on my &lt;a href=&quot;https://glitch.com/~chatfuel-demo-bot&quot;&gt;Chatfuel demo Glitch project&lt;/a&gt;. Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please &lt;a href=&quot;/contact&quot;&gt;send me a message&lt;/a&gt;. I love to hear from people and I&#39;m always happy to answer your questions.&lt;/p&gt;
-&lt;div class=&quot;i fw5&quot;&gt;
-    &lt;p&gt;👉🏻 Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my &lt;a href=&quot;/bots/sign-up-bot-building-for-beginners/&quot; title=&quot;FREE JSON guide&quot;&gt;FREE JSON guide&lt;/a&gt; and you&#39;ll have JSON skills in no time!&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&amp;lt;div class=&amp;quot;i fw5&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;👉🏻 Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my &amp;lt;a href=&amp;quot;/bots/sign-up-bot-building-for-beginners/&amp;quot; title=&amp;quot;FREE JSON guide&amp;quot;&amp;gt;FREE JSON guide&amp;lt;/a&amp;gt; and you&#39;ll have JSON skills in no time!&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Feb 2020 00:00:00 GMT</pubDate>
         <link>https://www.marclittlemore.com/how-to-add-time-and-date-to-your-messenger-chatbot-using-the-chatfuel-json-api/</link>
@@ -229,14 +229,14 @@ In software development, we use the idea of the &lt;a href=&quot;https://www.scr
 &lt;p&gt;Let&#39;s take a look at how we can validate a given user email using Chatfuel as our chatbot platform. Chatfuel allows you to ask for a user&#39;s email using it&#39;s &amp;quot;Save User Email&amp;quot; element. Adding this to your chatbot flow allows you to send a quick reply to your and ask for an email address which is then stored in a Chatfuel user attribute. If you pass this to your server side API using the JSON API plugin, you can&#39;t validate it on the server to determine if it&#39;s valid.&lt;/p&gt;
 &lt;h2&gt;Watch The Video&lt;/h2&gt;
 &lt;p&gt;Take a look at how I build this email validation using &lt;a href=&quot;https://glitch.com&quot;&gt;Glitch&lt;/a&gt; and a Node.js Express web server together with Chatfuel&#39;s JSON API.&lt;/p&gt;
-&lt;div class=&quot;aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100&quot;&gt;
-    &lt;iframe
-        class=&quot;absolute top-0 left-0 w-100 h-100&quot;
-        src=&quot;https://www.youtube.com/embed/&quot;
-        frameborder=&quot;0&quot;
-        allowfullscreen&gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;&amp;lt;div class=&amp;quot;aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100&amp;quot;&amp;gt;
+&amp;lt;iframe
+class=&amp;quot;absolute top-0 left-0 w-100 h-100&amp;quot;
+src=&amp;quot;https://www.youtube.com/embed/&amp;quot;
+frameborder=&amp;quot;0&amp;quot;
+allowfullscreen&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;h3&gt;How to validate an email address?&lt;/h3&gt;
 &lt;h4&gt;Using a regular expression&lt;/h4&gt;
 &lt;p&gt;Validating email addresses correctly can be tricky. One way is to use something called a &lt;a href=&quot;https://en.wikipedia.org/wiki/Regular_expression&quot;&gt;regular expression&lt;/a&gt;. This is a sequence of characters that define a search pattern that you attempt to match against. You&#39;ll find hundreds of different email regular expressions on the internet which give you various queries to validate against. However, they often come with caveats that they make a trade-off between speed and accuracy. You can use one of these to match the given email address with a specific pattern but you may incorrectly accept or reject some email addresses. The official regular expression which matches all email addresses is &lt;a href=&quot;http://www.ex-parrot.com/~pdw/Mail-RFC822-Address.html&quot;&gt;ridiculously big&lt;/a&gt;. I can&#39;t imagine attempting to debug this if it doesn&#39;t work as expected in your programming language. While a regular expression will confirm if your email matches a specific pattern, we can&#39;t confirm whether we can send an email to it.&lt;/p&gt;
@@ -288,9 +288,9 @@ const checkValidMxRecord = email =&amp;gt; (
 &lt;p&gt;To make my APIs more robust, I always return user attributes back to Chatfuel to inform it whether an API has succeeded or not. This allows us to avoid hard coding any messages in the API and gives back control to Chatfuel, or whichever chatbot platform you use, and use that to display the correct user messaging. It&#39;s a good way to inform the user that they&#39;ve potentially typed in their email incorrectly. You can also use this validation check to gate your content to only allow access to people who supply their email address.&lt;/p&gt;
 &lt;p&gt;Of course, this method has a flaw in that we can&#39;t confirm that the username is valid without sending an email to it. We&#39;ll find this out when we send an email to them from our mailing list but at least we got halfway there.&lt;/p&gt;
 &lt;p&gt;I hope you found this useful. All of the code is available on my &lt;a href=&quot;https://glitch.com/~chatfuel-demo-bot&quot;&gt;Chatfuel demo Glitch project&lt;/a&gt;. Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please &lt;a href=&quot;/contact&quot;&gt;send me a message&lt;/a&gt;. I love to hear from people and I&#39;m always happy to answer your questions.&lt;/p&gt;
-&lt;div class=&quot;i fw5&quot;&gt;
-    &lt;p&gt;👉🏻 Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my &lt;a href=&quot;/bots/sign-up-bot-building-for-beginners/&quot; title=&quot;FREE JSON guide&quot;&gt;FREE JSON guide&lt;/a&gt; and you&#39;ll have JSON skills in no time!&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;&amp;lt;div class=&amp;quot;i fw5&amp;quot;&amp;gt;
+&amp;lt;p&amp;gt;👉🏻 Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my &amp;lt;a href=&amp;quot;/bots/sign-up-bot-building-for-beginners/&amp;quot; title=&amp;quot;FREE JSON guide&amp;quot;&amp;gt;FREE JSON guide&amp;lt;/a&amp;gt; and you&#39;ll have JSON skills in no time!&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 24 Nov 2019 00:00:00 GMT</pubDate>
         <link>https://www.marclittlemore.com/how-to-validate-an-email-address-using-the-chatfuel-json-api/</link>
@@ -351,8 +351,8 @@ const checkValidMxRecord = email =&amp;gt; (
         <title>Simple Error Handling For Your Production Express Server</title>
         <description>&lt;p&gt;Error handling is a big part of writing code and it&#39;s something that every developer should think about. When starting to write code, it&#39;s easy to overlook what happens when your code fails. As developers we like to assume we write perfect code. We never do though do we?! If you&#39;re writing a customer facing application then you should always try and gracefully catch any errors and return human-friendly error messages to give a better user experience. This is especially true if you have an application which deals with 3rd party APIs or other external dependencies, like a database server. In these cases, you can&#39;t guarantee that the services will be available and you should be ready to handle this.&lt;/p&gt;
 &lt;p&gt;In my current job I write a lot of server-side JavaScript and we have a few &lt;a href=&quot;http://expressjs.com/&quot;&gt;Express&lt;/a&gt; applications running with Node.js. While checking out Twitter this evening I saw an interesting question from top JavaScript afficianado &lt;a href=&quot;http://wesbos.com/&quot;&gt;Wes Bos&lt;/a&gt;. He asked an interesting question about error handling with Express servers:&lt;/p&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Talk to me about your Express error handling strategy. How (not what package) do you handle app errors as well as model validation fails?&lt;/p&gt;&amp;mdash; Wes Bos (@wesbos) &lt;a href=&quot;https://twitter.com/wesbos/status/831930095967358989&quot;&gt;February 15, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; data-lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;p lang=&amp;quot;en&amp;quot; dir=&amp;quot;ltr&amp;quot;&amp;gt;Talk to me about your Express error handling strategy. How (not what package) do you handle app errors as well as model validation fails?&amp;lt;/p&amp;gt;— Wes Bos (@wesbos) &amp;lt;a href=&amp;quot;https://twitter.com/wesbos/status/831930095967358989&amp;quot;&amp;gt;February 15, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/p&gt;
 &lt;p&gt;Our &lt;a href=&quot;https://www.bbc.com/signin&quot;&gt;applications&lt;/a&gt; are used by millions of people each day so we have quite robust error handling for our Express servers. Hence this was a question I am qualified to answer. I&#39;ll explain our approach to error handling using a simple example with some basic Express middleware functions and error handlers. The code uses ES6 syntax and Promises so if you&#39;re not familiar with these, then check out Wes Bos&#39; excellent &lt;a href=&quot;https://es6.io/&quot;&gt;ES6 course&lt;/a&gt; and read up on &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise&quot;&gt;Promises&lt;/a&gt;. I&#39;ve not shown the code for the service calls as it&#39;s not important to know what that code does. What is important is that we ensure that our Express application correctly handles the errors which may occur after we execute the function.&lt;/p&gt;
 &lt;h2&gt;Setting Up A Simple Express Application&lt;/h2&gt;
 &lt;p&gt;Firstly, we can set up a basic user-facing Express application. It&#39;ll expose a few routes for us:&lt;/p&gt;
@@ -476,11 +476,11 @@ function defaultErrorHandler(error, request, response, next) {
 &lt;h3&gt;What are good qualities of unit tests?&lt;/h3&gt;
 &lt;p&gt;Your unit tests should be the first line of defence for your project. As your tests are so important to your code quality, you should always attempt to write high quality unit tests. But what does that actually mean? Let&#39;s find out by looking at some of the features of good quality tests.&lt;/p&gt;
 &lt;h3&gt;Human readable and understandable test names&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/human-readable-test-names.png&quot; alt=&quot;Human readable test names&quot;&gt;{: title=&amp;quot;Human readable test names&amp;quot; alt=&amp;quot;Human readable test names&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/human-readable-test-names.png&quot; alt=&quot;Human readable test names&quot; :=&quot;&quot; title=&quot;Human readable test names&quot; alt=&quot;Human readable test names&quot;&gt;&lt;/p&gt;
 &lt;p&gt;As silly as this may sound, you should spend some time ensuring that your test names make sense. This means that they should show the developer reading them exactly what the code under test does. The tests should be written for you and your team and not for a computer. Make sure that they&#39;re easy to read and make sense as a sentence. An example could be &lt;em&gt;&amp;quot;should add a new user to the database&amp;quot;&lt;/em&gt; or &lt;em&gt;&amp;quot;should call the authentication API with the expected user credentials&amp;quot;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;An advantage of writing good test names is that you should be able to scan through each test module and see what the feature requirements for the code. This suite of tests should then be treated as living documentation for your project. If your code&#39;s functionality changes then update your test names accordingly.&lt;/p&gt;
 &lt;h3&gt;Isolation of dependencies&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/stub-unit-test-dependencies.jpg&quot; alt=&quot;Stub unit test dependencies&quot;&gt;{: title=&amp;quot;Stub unit test dependencies&amp;quot; alt=&amp;quot;Stub unit test dependencies&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/stub-unit-test-dependencies.jpg&quot; alt=&quot;Stub unit test dependencies&quot; :=&quot;&quot; title=&quot;Stub unit test dependencies&quot; alt=&quot;Stub unit test dependencies&quot;&gt;&lt;/p&gt;
 &lt;p&gt;One of the most important feature of a unit test is that it&#39;s isolated from any other external influences. This ensures that you&#39;re only testing the code that you&#39;ve written and aren&#39;t dependent on the state of other modules. In order to do this you should write &lt;a href=&quot;http://martinfowler.com/bliki/TestDouble.html&quot;&gt;test doubles&lt;/a&gt; to replace your production dependencies for testing purposes. These generally take the form of a stub or mock object which returns the data you specify in order to fulfil your test expectation.&lt;/p&gt;
 &lt;p&gt;Some examples of things that you should make sure that you isolate are:&lt;/p&gt;
 &lt;ul&gt;
@@ -491,7 +491,7 @@ function defaultErrorHandler(error, request, response, next) {
 &lt;h3&gt;Provide just one reason to fail&lt;/h3&gt;
 &lt;p&gt;A unit test should only have one reason to fail so you should always avoid putting multiple expectations into one test. You want to know exactly why a test fails and you&#39;ll just make it harder if your test contains more than one assertion. By keeping it simple, and using only one test expectation, it allows you to quickly see &lt;strong&gt;why&lt;/strong&gt; a test has failed. This will mean that you write more tests but it makes the code much easier to reason about. You&#39;ll also find that it guides you to write tests to cover more of your code.&lt;/p&gt;
 &lt;h3&gt;Make them speedy&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/make-unit-tests-fast.png&quot; alt=&quot;Make Unit Tests Fast&quot;&gt;{: title=&amp;quot;Make unit tests fast&amp;quot; alt=&amp;quot;Make unit tests fast&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/make-unit-tests-fast.png&quot; alt=&quot;Make Unit Tests Fast&quot; :=&quot;&quot; title=&quot;Make unit tests fast&quot; alt=&quot;Make unit tests fast&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Your unit tests should execute as quickly as possibly. Each test should have a small scope and should have all of its dependencies stubbed. By avoiding executing production code, such as that which serialises data to a database or uses 3rd party API calls, you can ensure that the whole of your unit test suite runs in a matter of seconds. This gives the team the confidence to run the tests often and will result in much better code quality. You can see from the image above that in one of our projects we run 2193 tests in 18 seconds, approximately 122 tests per second. This total includes integration tests as well as unit tests but is still fast enough for us to include those in every test run.&lt;/p&gt;
 &lt;h3&gt;Independent of environment&lt;/h3&gt;
 &lt;p&gt;Your unit tests should always be independent of environment. This means that the tests suite passes all of the tests on your machine, your colleagues&#39; machine and any continuous build server. You definitely want to avoid the &amp;quot;it works on my machine&amp;quot; problem.&lt;/p&gt;
@@ -500,7 +500,7 @@ function defaultErrorHandler(error, request, response, next) {
 &lt;p&gt;While some tests are better than none, the best quality unit tests ensure that all of the code paths are covered. This is often done in combination with test-driven development practices which mean you never write any code without a corresponding test. Even if you write your tests after you&#39;ve written your code, you should try and test every route through your code.&lt;/p&gt;
 &lt;p&gt;Another good practice is to attempt to cover all edge cases for your code if possible. You&#39;ll find that you sometimes forget some obscure inputs, or maybe receive input data that you didn&#39;t expect, but try and determine the full requirements of your code and write your tests accordingly. Even if you don&#39;t, it&#39;s still incredibly satisfying to find a new bug, add an edge case test for it that fails as you expect, and then to fix it while still ensuring that all of your previous tests still pass.&lt;/p&gt;
 &lt;h3&gt;Ultimately, make unit testing easy&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/make-unit-testing-easy.jpg&quot; alt=&quot;Make unit testing easy&quot;&gt;{: title=&amp;quot;Make unit testing easy&amp;quot; alt=&amp;quot;Make unit testing easy&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/make-unit-testing-easy.jpg&quot; alt=&quot;Make unit testing easy&quot; :=&quot;&quot; title=&quot;Make unit testing easy&quot; alt=&quot;Make unit testing easy&quot;&gt;&lt;/p&gt;
 &lt;p&gt;You should always aim to make your unit tests easy. They should be easy to run, either from a simple terminal command or from your task runner or dependency manager. They should be easy to maintain such that refactoring the internals of your code should result in little work to update your tests as your test expectations will still be met.&lt;/p&gt;
 &lt;h3&gt;Simple questions to ask for each unit test&lt;/h3&gt;
 &lt;p&gt;The best way to write high quality unit tests is to write the test with these questions in mind:&lt;/p&gt;
@@ -519,8 +519,8 @@ function defaultErrorHandler(error, request, response, next) {
       </item><item>
         <title>How To Unit Test Express Routes</title>
         <description>&lt;p&gt;I was swiping through my Twitter timeline the other night when I saw a really interesting tweet from &lt;a href=&quot;https://kentcdodds.com/&quot;&gt;Kent C Dodds&lt;/a&gt;, a great JavaScript developer who works at PayPal, and someone you should really follow on Twitter if you don&#39;t already. He asked the following question.&lt;/p&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;[POLL]: Is it reasonable to *unit* test express routes? Or is it better to do an *integration* test of your server (with supertest for ex.)?&lt;/p&gt;&amp;mdash; Kent C. Dodds (@kentcdodds) &lt;a href=&quot;https://twitter.com/kentcdodds/status/794251165844185088&quot;&gt;November 3, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&amp;lt;blockquote class=&amp;quot;twitter-tweet&amp;quot; data-lang=&amp;quot;en&amp;quot;&amp;gt;&amp;lt;p lang=&amp;quot;en&amp;quot; dir=&amp;quot;ltr&amp;quot;&amp;gt;[POLL]: Is it reasonable to &lt;em&gt;unit&lt;/em&gt; test express routes? Or is it better to do an &lt;em&gt;integration&lt;/em&gt; test of your server (with supertest for ex.)?&amp;lt;/p&amp;gt;— Kent C. Dodds (@kentcdodds) &amp;lt;a href=&amp;quot;https://twitter.com/kentcdodds/status/794251165844185088&amp;quot;&amp;gt;November 3, 2016&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src=&amp;quot;//platform.twitter.com/widgets.js&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/p&gt;
 &lt;p&gt;I thought the poll posed an interesting question as to whether you should test Express routes or not. As I&#39;m quite an evangelist of test driven development at the BBC, and I like a challenge and love writing code, I thought I&#39;d have a think about it. I like to aim for as much test coverage as possible but I&#39;m pragmatic enough to understand that 100% code coverage doesn&#39;t necessarily mean you&#39;re always testing the right things.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;quot;Yes, you should unit test Express routes&amp;quot;&lt;/p&gt;
@@ -678,8 +678,8 @@ it(&#39;should setup dashboard route&#39;, () =&amp;gt; {
       </item><item>
         <title>Halloween Sound Effects Using Spotify And Raspberry Pi</title>
         <description>&lt;p&gt;For Halloween back in 2015, I had an unused Raspberry Pi and decided that I should make a Halloween project in order to learn electronics again, and to scare the local children as they came trick or treating. I connected the Raspberry Pi GPIO pins to a breadboard with a &lt;a href=&quot;https://www.coolcomponents.co.uk/big-dome-push-button-red.html&quot;&gt;big red dome push button&lt;/a&gt;. I hid the Pi and electronics inside a shoe box painted black, and made it look like a spooky spider as you can see in the picture below.&lt;/p&gt;
-&lt;blockquote class=&quot;instagram-media&quot; data-instgrm-captioned data-instgrm-version=&quot;7&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:8px;&quot;&gt; &lt;div style=&quot; background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;&quot;&gt; &lt;div style=&quot; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&quot;&gt;&lt;/div&gt;&lt;/div&gt; &lt;p style=&quot; margin:8px 0 0 0; padding:0 4px;&quot;&gt; &lt;a href=&quot;https://www.instagram.com/p/9eGMutCXUh/&quot; style=&quot; color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;&quot; target=&quot;_blank&quot;&gt;Our Raspberry Pi powered Halloween spider. Press the big red button if you dare! LEDs to be added tonight. #halloween #spider #raspberrypi #spooky&lt;/a&gt;&lt;/p&gt; &lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;A photo posted by Marc Littlemore (@marclittlemore) on &lt;time style=&quot; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&quot; datetime=&quot;2015-10-30T17:33:27+00:00&quot;&gt;Oct 30, 2015 at 10:33am PDT&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;
-&lt;script async defer src=&quot;//platform.instagram.com/en_US/embeds.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&amp;lt;blockquote class=&amp;quot;instagram-media&amp;quot; data-instgrm-captioned data-instgrm-version=&amp;quot;7&amp;quot; style=&amp;quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&amp;quot;&amp;gt;&amp;lt;div style=&amp;quot;padding:8px;&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot; background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;&amp;quot;&amp;gt; &amp;lt;div style=&amp;quot; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;p style=&amp;quot; margin:8px 0 0 0; padding:0 4px;&amp;quot;&amp;gt; &amp;lt;a href=&amp;quot;https://www.instagram.com/p/9eGMutCXUh/&amp;quot; style=&amp;quot; color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;Our Raspberry Pi powered Halloween spider. Press the big red button if you dare! LEDs to be added tonight. #halloween #spider #raspberrypi #spooky&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p style=&amp;quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&amp;quot;&amp;gt;A photo posted by Marc Littlemore (@marclittlemore) on &amp;lt;time style=&amp;quot; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&amp;quot; datetime=&amp;quot;2015-10-30T17:33:27+00:00&amp;quot;&amp;gt;Oct 30, 2015 at 10:33am PDT&amp;lt;/time&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async defer src=&amp;quot;//platform.instagram.com/en_US/embeds.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/p&gt;
 &lt;p&gt;Unfortunately, this year I&#39;ve had a major operation so wasn&#39;t feeling up to recreating or bettering my Raspberry Pi project from last year. Instead, I decided to simplify it in order to play random spooky sound effects via the Raspberry Pi and combine it with some spooky ambient music from Spotify. This is a simple project to set up so read on if you want to scare your local trick or treaters!&lt;/p&gt;
 &lt;h3&gt;What You&#39;ll Need&lt;/h3&gt;
 &lt;ul&gt;
@@ -692,7 +692,7 @@ it(&#39;should setup dashboard route&#39;, () =&amp;gt; {
 &lt;p&gt;The first thing you&#39;ll need to do is to install Node.js on the Rasbperry Pi, assuming that you haven&#39;t already. You&#39;ll also need &lt;code&gt;git&lt;/code&gt; installed for for cloning the project from GitHub, but this should come with the standard Rasbian install.&lt;/p&gt;
 &lt;p&gt;Next you&#39;ll need your PC or Mac up and running and you&#39;ll want Spotify on it. You can use a Spotify free account but bear in mind that you&#39;ll have adverts popping up which might not scare the neighbours as much as the spooky music will. Alternatively, you can use your own playlist of haunting music or find another one on SoundCloud or YouTube. Again, just watch out for adverts playing or you&#39;ll ruin the effect.&lt;/p&gt;
 &lt;p&gt;You&#39;ll need a set of speakers attached to your computer in some way. I run the output of my PC to an amplifier and speakers so I can boost the volume, but you can just use a small pair of computer speakers straight from the computer. Just make sure they&#39;re loud enough for people to be able to hear them. I kept my speakers indoors and put them by open windows but if you can run your speakers outside, and they&#39;re waterproof, then that&#39;ll work too.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/stanton-dj-mixer.jpg&quot; alt=&quot;Stanton DJ Mixer&quot;&gt;{: title=&amp;quot;Stanton DJ Mixer&amp;quot; alt=&amp;quot;Stanton DJ Mixer&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/stanton-dj-mixer.jpg&quot; alt=&quot;Stanton DJ Mixer&quot; :=&quot;&quot; title=&quot;Stanton DJ Mixer&quot; alt=&quot;Stanton DJ Mixer&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Finally, you&#39;ll need something to mix the two audio sources together. I&#39;ve spent nearly 30 years DJing so I had my Stanton DJ mixer to hand and plugged both the PC and the Raspberry Pi into it using RCA cables. This allowed me to alter the volumes of the two input sources and the final volume of the output to my amplifier. If you don&#39;t have an audio mixer, you can easily achieve the same thing by using a software mixer on your PC or Mac. Simply attach the output of the Raspberry Pi to the microphone input of your computer using a 3.5mm RCA cable and start the audio mixer in your settings or preferences panel. Note that the output of the Raspberry Pi seems to be really quiet in comparison to the output from the PC. You may be able to change this but I didn&#39;t investigate it too much. It just means that you&#39;ll need to make the Pi audio a lot higher than that from the PC using your hardware or software mixer.&lt;/p&gt;
 &lt;h3&gt;Install Node.js on your Raspberry Pi&lt;/h3&gt;
 &lt;p&gt;As I love working with Node.js and JavaScript, I decided that this was an easy way to get a project up and running. I installed Node when I first got the Raspberry Pi back in April 2015 so I have version 0.10 by following &lt;a href=&quot;http://weworkweplay.com/play/raspberry-pi-nodejs/&quot;&gt;this guide&lt;/a&gt;. However, at the time of writing, I think the easiest way to install v4.2.1 is by following the instructions on the &lt;a href=&quot;https://github.com/nathanjohnson320/node_arm&quot;&gt;Node Arm GitHub project&lt;/a&gt; which does the following:&lt;/p&gt;
@@ -712,18 +712,18 @@ npm install
 &lt;p&gt;After installation you should have the project and all of the samples necessary. Run the project and you should start hearing sound effects at intervals of between 15 and 40 seconds. I found this to be about right so that you actually get to hear them without them being too repetitive.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;npm start
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/raspberry-pi-spooky-halloween-sound-effects.jpg&quot; alt=&quot;Raspberry Pi and Spotify&quot;&gt;{: title=&amp;quot;Raspberry Pi and Spotify Setup&amp;quot; alt=&amp;quot;Raspberry Pi and Spotify Setup&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/raspberry-pi-spooky-halloween-sound-effects.jpg&quot; alt=&quot;Raspberry Pi and Spotify&quot; :=&quot;&quot; title=&quot;Raspberry Pi and Spotify Setup&quot; alt=&quot;Raspberry Pi and Spotify Setup&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Now you need to also play the spooky ambient music from a Spotify playlist. I created this &lt;a href=&quot;https://open.spotify.com/user/marclittlemore/playlist/18JeNeypZVxJLMqVcGvR84&quot;&gt;Spotify Playlist of spooky Halloween noises&lt;/a&gt; which you can use. It&#39;s nearly 7 hours long so it should be enough for playing throughout the night but feel free to make your own too. You&#39;ll have to use your audio mixer to determine the correct balance between the ambient music from Spotify and the one-shot sound effects triggered by the Raspberry Pi. As I mentioned earlier, the Raspberry Pi output seems to be incredibly quiet so I probably had my inputs at around 20% of the PC output mixed with 100% of the Pi output.&lt;/p&gt;
 &lt;p&gt;All you need to do now is leave this running and position your speakers in a place, and at a volume, where they can be heard by your visitors. A lot of children and their parents commented about how great this sounded so I was pleased with the eventual outcome.&lt;/p&gt;
 &lt;p&gt;Here&#39;s a video of it running in my study, the speakers are hidden behind the curtains with the windows open so it could be heard from the street.&lt;/p&gt;
-&lt;div class=&quot;aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100&quot;&gt;
-    &lt;iframe
-        class=&quot;absolute top-0 left-0 w-100 h-100&quot;
-        src=&quot;https://www.youtube.com/embed/&quot;
-        frameborder=&quot;0&quot;
-        allowfullscreen&gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;&amp;lt;div class=&amp;quot;aspect-ratio aspect-ratio--16x9 overflow-hidden mw-100&amp;quot;&amp;gt;
+&amp;lt;iframe
+class=&amp;quot;absolute top-0 left-0 w-100 h-100&amp;quot;
+src=&amp;quot;https://www.youtube.com/embed/&amp;quot;
+frameborder=&amp;quot;0&amp;quot;
+allowfullscreen&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;h3&gt;Updating the sound effects&lt;/h3&gt;
 &lt;p&gt;If you want to update the sound effects that are being played then it&#39;s really simple. First, you need to add the MP3 files to the &lt;code&gt;/assets&lt;/code&gt; directory. Secondly, you need to update the config file which points at them. I chose to be explicit in what sound effects I wanted playing rather than just playing every file it finds in the assets directory. Just update the &lt;code&gt;/config/config.js&lt;/code&gt; array of paths to the sound effects and add your new effects, or remove any that you don&#39;t want.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;module.exports = {
@@ -759,7 +759,7 @@ npm install
 &lt;code&gt;git bisect&lt;/code&gt;, which is something I&#39;ve only recently started using too. It&#39;s a great tool for quickly tracking down bugs in your project so let&#39;s take a look at how we can use it.&lt;/p&gt;
 &lt;h3&gt;A wild bug appears&lt;/h3&gt;
 &lt;p&gt;I&#39;m currently working on some high-traffic Node.js projects for work and, as I normally do at the start of a new task, I ran &lt;code&gt;git pull&lt;/code&gt; to ensure I had the latest code from our master branch, and then ran &lt;code&gt;npm install&lt;/code&gt; to update any dependencies. I ran the tests to check everything was ok but an odd thing happened: our test suite hung when it finished although all of the tests still passed. &lt;strong&gt;WHAT?&lt;/strong&gt; Time to investigate.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/posts/a-wild-bug-appeared.jpg&quot; alt=&quot;A wild bug appears&quot;&gt;{:title=&amp;quot;A wild bug appears&amp;quot;}&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/a-wild-bug-appeared.jpg&quot; alt=&quot;A wild bug appears&quot; :title=&quot;A wild bug appears&quot;&gt;&lt;/p&gt;
 &lt;p&gt;I had no idea why this bug had crept into the project, nor when it first appeared in the master branch. My initial thought was that it was the last pull request that had been merged, so I checked out the previous merge instead but again, the tests were still hanging. This felt like a perfect opportunity to try out &lt;code&gt;git bisect&lt;/code&gt; for the first time in order to quickly work out which commit had caused the error.&lt;/p&gt;
 &lt;h3&gt;What does the &amp;quot;git bisect&amp;quot; command do?&lt;/h3&gt;
 &lt;p&gt;Bisect performs a &lt;a href=&quot;https://en.wikipedia.org/wiki/Binary_search_algorithm&quot;&gt;binary search&lt;/a&gt; to quickly find out the revision that caused a bug in your project&#39;s history. You do this by telling it which was the &amp;quot;bad&amp;quot; commit, the one which contains the bug, and which was a &amp;quot;good&amp;quot; commit, one in which you think the bug wasn&#39;t there. You can then use &lt;code&gt;git bisect&lt;/code&gt; to pick a commit which is halfway between the two endpoints and you determine whether that one is bad or good. This can be repeated by choosing the revision between these two points until you determine the specific commit which caused the bug. It&#39;s then up to you to look at the code to see what has changed and is probably the cause.&lt;/p&gt;

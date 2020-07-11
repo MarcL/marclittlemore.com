@@ -15,7 +15,7 @@ It's a story I never thought I'd have to tell but I've spent the past couple of 
 
 June 2014 started of as a normal month. My son's 7th birthday in early June. My best mate Mark's annual birthday party in the middle of the month which always involves a few beers and DJing some tunes to celebrate, this year being his 43rd birthday. On Wednesday 18th June, a train ride down to the BBC offices in London to talk about our team becoming part of the myBBC initiative. Post-meeting we gathered for some food at an African restaurant around the corner from Euston station. Some deliciously hot and spicy jerk chicken was devoured with some not-so-tasty, in my opinion, African ginger beer. Nothing unusual and I returned home to Warrington on the train having eaten my last solid meal in what would become a couple of months.
 
-![Jerk chicken](/images/posts/jerk-chicken.jpg){: title="Jerk chicken - my final meal" alt="Jerk chicken - my final meal" class="shadow-4 w-100"}
+![Jerk chicken](/images/posts/jerk-chicken.jpg "Jerk chicken - my final meal"){.shadow-4 .w-100}
 
 ### The illness starts
 
@@ -33,7 +33,7 @@ _He was probably the second person to save my life._
 
 Apparently, it all happened very fast. Clare left me at the hospital after visiting until 7pm having been told that I was doing well. She rang again at 10pm to check I was ok and the person who answered the phone said I was fine. She was then rudely awoken at 2.30am on Wednesday morning by the phonecall you never want from a hospital, "You need to come to the hospital immediately. Marc is very ill." My blood pressure had dropped through the floor. I had multi-organ failure and all of my major organs were beginning to shut down.
 
-{% include elements/blockquote.html text="You need to come to the hospital immediately. Marc is very ill." %}
+> You need to come to the hospital immediately. Marc is very ill. {.helvetica .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue .f5 .f4-m .f3-l .lh-copy .measure}
 
 The symptoms seemed to be those of [sepsis](http://www.nhs.uk/conditions/blood-poisoning/Pages/Introduction.aspx), a condition where the body's immune system goes into overdrive and attempts to protect itself from infection. I was rushed down for a computerised tomography (CT) scan to get a better picture of what was causing the drop in blood pressure. My wife had a worrying wait at 4am as the on-call CT radiologist raced to get into the hospital for this emergency procedure. The scan showed a problem somewhere in my bowel but it wasn't immediately obvious what it was. The order was given to operate that morning to investigate and potential fix the problem with my bowel. Thankfully, one of their best colorectal surgeons was on hand to perform the operation but there was no guarantee that I would survive.
 
@@ -43,7 +43,7 @@ The operation had concluded that I had an [ischemic](https://en.wikipedia.org/wi
 
 I was [intubated](https://en.wikipedia.org/wiki/Tracheal_intubation) to prevent asphixiation, meaning that a large tube was put into my windpipe to keep my airway clear. I was too weak to breathe so my lungs were now controlled by a [ventilator](https://en.wikipedia.org/wiki/Medical_ventilator). I was given [inotropes](https://en.wikipedia.org/wiki/Inotrope) to increase the strength of my heartbeat in an attempt to keep the blood flowing properly to my quickly-dying organs. My blood was passed through a dialysis machine to clean it of the toxins that were busy attacking me. My blood pressure was dangerously low. My body was dying but I was being kept alive by the miracle of modern medicine until they could determine what was wrong. Every treatment that they were given me had the potential to cause knock-on effects elsewhere. The ITU consultant spoke to Clare and my family and told them "his condition is deteriorating, despite increased support, and he is unlikely to survive."
 
-{% include elements/blockquote.html text="His condition is deteriorating, despite increased support, and he is unlikely to survive." %}
+> His condition is deteriorating, despite increased support, and he is unlikely to survive. {.helvetica .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue .f5 .f4-m .f3-l .lh-copy .measure}
 
 _They were pretty sure I would die that night._
 
@@ -51,7 +51,7 @@ _They were pretty sure I would die that night._
 
 After six or seven days in the induced coma, they started to decrease the amount of drugs they gave me meaning that I would drift in and out of conciousness. The combination of powerful coma-inducing drugs, incredibly strong painkillers, antibiotics and the fact that I had sepsis, which causes confusion and disorientation, meant that I literally had no idea where I was or what was going on. My dreams felt oddly lucid but were crazy and often involved things that I can only assume that I heard around the bedside. I'd dream that I was being held prisoner and my wife was being blackmailed to release me. I dreamt that I was being operated upon whilst on a boat in the Caribbean. I dreamt that I'd been in a fire in a Victorian building in London, only to be rescued and then subsequently stabbed and died. It's safe to say that my perceived reality was somewhat different to what was actually happening to me.
 
-![Me in intensive care](/images/posts/me-in-intensive-care.jpg){: title="Me in intensive care" alt="Me in intensive care" class="shadow-4 w-100"}
+![Marc Littlemore in intensive care](/images/posts/me-in-intensive-care.jpg "Me in intensive care"){.shadow-4 .w-100}
 
 Thanks to Clare, I slowly began to regain some semblance of understanding as to what had happened as she explained to me that I was in intensive care. The microbiologists had finally discovered that I'd contracted the streptococcus group A bacteria, which is normally found on the skin and is generally harmless. However, if it gets into the blood stream or deeper inside the tissues or organs of the body, as it had in my bowels, then it becomes an invasive infection. This seemingly innocuous bacteria had become the source of sepsis and had caused my body to shut down. To this day, they still don't know how I contracted it, although for some time it was thought it was related to the jerk chicken I'd eaten the week earlier.
 
@@ -81,6 +81,6 @@ As I write this, it is November 2016 and it is just over two years since the mad
 
 The new normal means thinking about things differently. It means planning holidays which are easy for me to deal with, where I don't have to do too much walking. It means accepting that I'll never run again but instead thinking of another way of exercising which has lower impact, such as cycling. It means setting myself new challenges and spending time with my family in the ways that I can. I'll never be the same as I was but that doesn't really matter any more. What **really** matters is that I'm still here with Clare and my children.
 
-{% include elements/blockquote.html text="I'll never be the same as I was but that doesn't really matter any more. What really matters is that I'm still here with Clare and my children." %}
+> I'll never be the same as I was but that doesn't really matter any more. What really matters is that I'm still here with Clare and my children. {.helvetica .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue .f5 .f4-m .f3-l .lh-copy .measure}
 
 Thanks for reading this somewhat abridged version of my story. If you're interested in reading more then please take a look at Clare's blog where she writes about it in more detail and much better than I ever could. You can [read our story from the beginning here](http://outofthewoodsblog.com/from-the-beginning/). You can also consider [donating to the Sepsis Trust](http://sepsistrust.org/donate/) who are helping to raise awareness of sepsis, of which there are over 44,000 deaths per year.
