@@ -8,7 +8,8 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "markdown-it": "^11.0.0"
   },
   "scripts": {
     "build": "eleventy",

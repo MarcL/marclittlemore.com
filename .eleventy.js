@@ -1,3 +1,4 @@
+const markdownIt = require('markdown-it')();
 module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({'src/images': 'images'});
     eleventyConfig.addPassthroughCopy({'src/css': 'css'});
@@ -12,6 +13,10 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addLayoutAlias('landingpage-default', 'layouts/landingpage-default.html');
     eleventyConfig.addLayoutAlias('landingpage-long', 'layouts/landingpage-long.html');
     eleventyConfig.addLayoutAlias('landingpage-thank-you', 'layouts/landingpage-thank-you.html');
+
+    eleventyConfig.addLiquidFilter('markdownify', (value) => {
+        return markdownIt.render(value);
+    });
 
     // Liquid template options
     eleventyConfig.setLiquidOptions({
