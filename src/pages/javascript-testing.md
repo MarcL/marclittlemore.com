@@ -12,23 +12,22 @@ Over the past few years I've been introduced to test driven development (TDD) in
 
 However, it's often very confusing and difficult for beginners to get started. Here I hope to help beginners to get started with testing their JavaScript and also encourage less experienced developers to gain unit and integration testing skills for their JavaScript code. If you want to learn more then read the articles below or why not sign up for my [JavaScript Testing Made Easy]({{site.url}}/courses/javascript-testing-beginners-course/?signup=testing-page) course for some free videos showing you how to get started.
 
-{% for post in collections["unit-testing"] %}
-{%- if post.categories contains "talks" -%}
-{% else %}
+{%- for post in collections["unit-testing"] -%}
 <article class="pv4 bb b--black-10 ph3 ph0-l">
 <div class="flex flex-column flex-row-ns">
 <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
 <a href="{{ post.url }}" class="link dim black">
-<h2 class="f3 roboto mt0 lh-title">{{ post.title }}</h2>
+<h2 class="f3 roboto mt0 lh-title">{{ post.data.title }}</h2>
 </a>
 <p class="f5 f4-l lh-copy roboto">
-{{post.subtitle}}
+{{post.data.subtitle}}
 </p>
 </div>
 <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-<img src="{{post.thumbnail}}" class="db" alt="{{post.title}}">
+    <a href="{{ post.url }}" class="grow dib">
+        <img src="{{post.data.thumbnail}}" class="db" alt="{{post.data.title}}">
+    </a>
 </div>
 </div>
 </article>
-{% endif %}
 {%- endfor -%}
