@@ -3,7 +3,7 @@
         <div class="db" id="navLinks">
             {% for page in mainmenu %}
                 {% if page.name %}
-                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="{{ page.url | prepend: site.baseurl }}" title="{{ page.title }}">{{ page.name }}</a>
+                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="{{ page.url }}" title="{{ page.title }}">{{ page.name }}</a>
                 {% endif %}
             {% endfor %}
         </div>

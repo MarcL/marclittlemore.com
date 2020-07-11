@@ -6,19 +6,19 @@
 
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
 
     <!-- Custom CSS -->
     {% if layout.stylesheets != 0 %}
     {% for stylesheet in layout.stylesheets %}
-    <link rel="stylesheet" href="{{ stylesheet | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ stylesheet }}">
     {% endfor %}
     {% endif %}
 
     <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom Fonts -->
     <script src="https://kit.fontawesome.com/d38990851e.js" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@
 
     {% if layout.scripts != 0 %}
         {% for script in layout.scripts %}
-            <script type="text/javascript" src="{{script | prepend: site.baseurl}}" async></script>
+            <script type="text/javascript" src="{{script}}" async></script>
         {% endfor %}
     {% endif %}
 

@@ -18,7 +18,7 @@ If you'd like me to come and speak at your event then get in [touch](/contact) o
 <article class="pv4 bb b--black-10 ph3 ph0-l">
     <div class="flex flex-column flex-row-ns">
         <div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
-            <a href="{{ post.url | prepend: site.baseurl }}" class="link dim black">
+            <a href="{{ post.url }}" class="link dim black">
                 <h1 class="f3 roboto mt0 lh-title mb1">{{ post.data.title }}</h1>
             </a>
             <p class="f5 f4-l lh-copy roboto i mv2">
@@ -29,7 +29,7 @@ If you'd like me to come and speak at your event then get in [touch](/contact) o
             </p>
         </div>
         <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-            <a href="{{ post.data.url | prepend: site.baseurl }}" class="grow dib">
+            <a href="{{ post.url }}" class="grow dib">
                 <img src="{{post.data.thumbnail}}" class="db" alt="{{post.data.title}}">
             </a>
         </div>
