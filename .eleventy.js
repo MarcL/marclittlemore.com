@@ -1,5 +1,8 @@
 const markdownIt = require('markdown-it')();
+const escape = require('lodash.escape');
+
 module.exports = (eleventyConfig) => {
+    // Copy
     eleventyConfig.addPassthroughCopy({'src/images': 'images'});
     eleventyConfig.addPassthroughCopy({'src/css': 'css'});
 
@@ -18,8 +21,29 @@ module.exports = (eleventyConfig) => {
         return markdownIt.render(value);
     });
 
+    const dateToISO = dateValue => new Date(dateValue).toISOString();
+
     eleventyConfig.addLiquidFilter('toISOString', (dateValue) => {
-        return new Date(dateValue).toISOString();
+        return dateToISO(dateValue);
+    });
+
+    eleventyConfig.addLiquidFilter('toUTCString', (dateValue) => {
+        return new Date(dateValue).toUTCString();
+    });
+
+    eleventyConfig.addLiquidFilter('xmlEscape', (value) => {
+        return escape(value);
+    });
+
+    eleventyConfig.addFilter("collectionLastUpdatedDate", collection => {
+        if( !collection || !collection.length ) {
+            throw new Error( "Collection is empty in collectionLastUpdatedDate filter." );
+        }
+
+        // Newest date in the collection
+        return dateToISO(
+            new Date(Math.max(...collection.map(item => {return item.date})))
+        );
     });
 
     // Liquid template options
