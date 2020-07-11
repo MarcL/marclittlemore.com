@@ -18,6 +18,10 @@ module.exports = (eleventyConfig) => {
         return markdownIt.render(value);
     });
 
+    eleventyConfig.addLiquidFilter('toISOString', (dateValue) => {
+        return new Date(dateValue).toISOString();
+    });
+
     // Liquid template options
     eleventyConfig.setLiquidOptions({
         dynamicPartials: false,

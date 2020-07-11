@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marc Littlemore</title>
+    <description>Technical articles from Marc Littlemore, a full-stack developer, and ex-videogames programmer, with over 26 years of development experience.</description>
+    <link>https://www.marclittlemore.com/</link>
+    <atom:link href="https://www.marclittlemore.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate></pubDate>
+    <lastBuildDate></lastBuildDate>
+    <generator>Eleventy</generator><item>
+        <title>How To Find Bugs Using Git Bisect With This Easy Guide</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/how-to-find-bugs-using-git-bisect-with-this-easy-guide/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/how-to-find-bugs-using-git-bisect-with-this-easy-guide/</guid><category>git</category><category>development</category><category>post</category>
+      </item><item>
+        <title>Halloween Sound Effects Using Spotify And Raspberry Pi</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/spooky-halloween-sound-effects-with-raspberry-pi-and-spotify/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/spooky-halloween-sound-effects-with-raspberry-pi-and-spotify/</guid><category>raspberry-pi</category><category>development</category><category>post</category>
+      </item><item>
+        <title>How To Unit Test Express Routes</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/how-to-unit-test-express-routes/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/how-to-unit-test-express-routes/</guid><category>unit-testing</category><category>development</category><category>post</category>
+      </item><item>
+        <title>How To Write High Quality Unit Tests</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/how-to-write-high-quality-unit-tests/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/how-to-write-high-quality-unit-tests/</guid><category>unit-testing</category><category>development</category><category>post</category>
+      </item><item>
+        <title>Simple Error Handling For Your Production Express Server</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/simple-error-handling-for-your-production-express-server/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/simple-error-handling-for-your-production-express-server/</guid><category>express</category><category>javascript</category><category>development</category><category>post</category>
+      </item><item>
+        <title>Lessons Learned From Running A Code Club</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/lessons-learned-from-running-a-code-club/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/lessons-learned-from-running-a-code-club/</guid><category>code-club</category><category>post</category>
+      </item><item>
+        <title>How to validate an email adress using the Chatfuel JSON API</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/how-to-validate-an-email-address-using-the-chatfuel-json-api/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/how-to-validate-an-email-address-using-the-chatfuel-json-api/</guid><category>chatbot</category><category>chatfuel</category><category>json</category><category>post</category>
+      </item><item>
+        <title>2019: Personal Retrospective</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/2019-personal-retrospective/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/2019-personal-retrospective/</guid><category>review</category><category>post</category>
+      </item><item>
+        <title>How to add time and date to your Messenger chatbot using the Chatfuel JSON API</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/how-to-add-time-and-date-to-your-messenger-chatbot-using-the-chatfuel-json-api/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/how-to-add-time-and-date-to-your-messenger-chatbot-using-the-chatfuel-json-api/</guid><category>chatbot</category><category>chatfuel</category><category>json</category><category>post</category>
+      </item><item>
+        <title>Different types of software tests</title>
+        <description></description>
+        <pubDate></pubDate>
+        <link>https://www.marclittlemore.com/different-types-of-software-tests/</link>
+        <guid isPermaLink="true">https://www.marclittlemore.com/different-types-of-software-tests/</guid><category>express</category><category>javascript</category><category>development</category><category>unit-testing</category><category>post</category>
+      </item></channel>
+</rss>

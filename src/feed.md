@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: "/feed.xml"
 sitemap:
   exclude: yes
 ---
@@ -10,23 +11,23 @@ sitemap:
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <pubDate>{{ date | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ date | date_to_rfc822 }}</lastBuildDate>
+    <generator>Eleventy</generator>
+    {%- for post in collections.post limit:10 -%}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <title>{{ post.data.title | xml_escape }}</title>
+        <description>{{ post.data.content | xml_escape }}</description>
+        <pubDate>{{ post.data.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
+        {%- for tag in post.data.tags -%}
         <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
+        {%- endfor -%}
+        {%- for cat in post.categories -%}
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
       </item>
-    {% endfor %}
+    {%- endfor -%}
   </channel>
 </rss>

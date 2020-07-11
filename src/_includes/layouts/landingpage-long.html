@@ -8,21 +8,23 @@ hideSumo: yes
 <html lang="en" itemtype="http://schema.org/Article">
 
 {% include head.html %}
+{% include cards/giphy.html %}
 
 <body class="avenir">
-{% include social/facebookSDK.html %}
+
+{%- include "social/facebookSDK.html" -%}
 
 <div class="bg-light-gray pb5">
     <div class="relative">
         <section class="flex items-center flex-wrap mw6 mw7-ns center pa3 ph5-ns tc cf">
             <div class="w-100 w-60-ns pa3-ns ">
-                <h1 class="f2 fw5" style="color:#3B4446">{{ page.landingpage.subtitle | markdownify}}</h1>
+                <h1 class="f2 fw5" style="color:#3B4446">{{ landingpage.subtitle | markdownify}}</h1>
             </div>
             <div class="w-100 w-40-ns pa3-ns">
-                {% if page.social-img %}
-                    <img src="{{ site.url }}/{{ page.social-img }}" class="w-100">
+                {% if social-img %}
+                    <img src="{{ site.url }}/{{ social-img }}" class="w-100">
                 {% else %}
-                    <h1 class="f1 mb2">{{ page.landingpage.title }}</h1>
+                    <h1 class="f1 mb2">{{ landingpage.title }}</h1>
                 {% endif %}
             </div>
         </section>
@@ -30,7 +32,7 @@ hideSumo: yes
 </div>
 <div class="tc relative">
     <section class="mw6 mw7-ns center pa3 ph5-ns mb2 nt5">
-        {% include signUpForm.html landingpage=page.landingpage %}
+        {% include signUpForm.html landingpage=landingpage %}
     </section>
 </div>
 
@@ -39,7 +41,7 @@ hideSumo: yes
 
     <a href="#signup-form">
         <button class="f4 f3-ns f4-m link dim br3 bn pv3 mt3 dib bg-blue white w-100">
-            {% if page.landingpage.button.icon %}<i class="fa {{page.landingpage.button.icon}}"></i>{% endif %}&nbsp;&nbsp;{{ page.landingpage.button.text }}
+            {% if landingpage.button.icon %}<i class="fa {{landingpage.button.icon}}"></i>{% endif %}&nbsp;&nbsp;{{ landingpage.button.text }}
         </button>
     </a>
 </section>
