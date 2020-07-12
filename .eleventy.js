@@ -18,6 +18,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({'src/images': 'images'});
     eleventyConfig.addPassthroughCopy({'src/css': 'css'});
     eleventyConfig.addPassthroughCopy({'src/robots.txt': 'robots.txt'});
+    eleventyConfig.addPassthroughCopy({'src/browserconfig.xml': 'browserconfig.xml'});
 
     // Temporary aliases
     eleventyConfig.addLayoutAlias('default', 'layouts/default.html');
