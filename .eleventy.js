@@ -7,6 +7,7 @@ module.exports = (eleventyConfig) => {
     // Plugins
     eleventyConfig.addPlugin(syntaxHighlight);
 
+    // Create own markdown renderer so we can add class attributes
     // https://www.11ty.dev/docs/languages/markdown/#markdown-options
     const markdownItOptions = {
         html: true,
@@ -68,6 +69,7 @@ module.exports = (eleventyConfig) => {
         dynamicPartials: false,
         root: [
             'src/_includes/_includes',
+            'src/_includes/_includes/social',
             '.'
         ]
     });

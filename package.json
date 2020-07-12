@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "eleventy",
-    "build:js": "browserify src/index.js -o js/bundle.js",
+    "build:js": "browserify src/clientjs/index.js -o src/js/bundle.js",
     "build:minify": "uglifyjs --compress --mangle -o js/bundle.min.js js/bundle.js",
     "link-check": "blc http://localhost:4000 -ro",
     "thumbnails": "gulp thumbnails",
