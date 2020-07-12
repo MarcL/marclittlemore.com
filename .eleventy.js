@@ -1,15 +1,23 @@
-const markdownIt = require('markdown-it')();
+const markdownIt = require('markdown-it');
 const markdownItAttributes = require('@gerhobbelt/markdown-it-attrs');
 const escape = require('lodash.escape');
 
 module.exports = (eleventyConfig) => {
+    // https://www.11ty.dev/docs/languages/markdown/#markdown-options
+    const markdownItOptions = {
+        html: true,
+    };
+    const markdownLib = markdownIt(markdownItOptions);
+
     // Set up markdown parser to allow class attributes
-    markdownIt.use(markdownItAttributes);
-    eleventyConfig.setLibrary('md', markdownIt);
+    markdownLib.use(markdownItAttributes);
+
+    eleventyConfig.setLibrary('md', markdownLib);
 
     // Copy
     eleventyConfig.addPassthroughCopy({'src/images': 'images'});
     eleventyConfig.addPassthroughCopy({'src/css': 'css'});
+    eleventyConfig.addPassthroughCopy({'src/robots.txt': 'robots.txt'});
 
     // Temporary aliases
     eleventyConfig.addLayoutAlias('default', 'layouts/default.html');
@@ -23,7 +31,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addLayoutAlias('landingpage-thank-you', 'layouts/landingpage-thank-you.html');
 
     eleventyConfig.addLiquidFilter('markdownify', (value) => {
-        return markdownIt.render(value);
+        return markdownLib.render(value);
     });
 
     const dateToISO = dateValue => new Date(dateValue).toISOString();
