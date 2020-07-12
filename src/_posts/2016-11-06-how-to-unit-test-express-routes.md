@@ -43,7 +43,7 @@ So it's easy to say that we should unit test Express routes, but how do you do i
 
 Install the project as follows:
 
-```JavaScript
+``` bash
 git clone git@github.com:MarcL/unit-test-express-routes.git
 cd unit-test-express-routes
 npm install
@@ -51,7 +51,7 @@ npm install
 
 Now you should see a basic Express application in the `src/launch.js` module and the corresponding tests in the `test/launch.test.js` module. The application starts an Express server on port 7080 and exposes three example routes: `/`, `/login` and `/dashboard`. These are meant to mimic a homepage, a login page and a dashboard page which is only exposed after authentication.
 
-```javascript
+``` js
 import express from 'express';
 
 import homepage from './middleware/homepage';
@@ -91,7 +91,7 @@ You can see from the code above, there are four example middlewares which have b
 
 We need to set up our tests so that we can stub the Express application that is created and then we can return a fake server that we can use in our test expectations. As each test needs this fake server to be initialised, I chose to do this using Mocha's `beforeEach` pre-condition block. As we don't need to return anything when we perform an `app.get` to set up our routes which respond to the GET request, we can use `sinon` spy. However, we want to return a fake HTTP server for the `app.listen` call, so we make this a `sinon` stub. We can then set up a fake Express server which is return via a `sinon` stub.
 
-```javascript
+``` js
 beforeEach(() => {
     // Initialise our spy and stub
     spyExpressGet = sinon.spy();
@@ -112,7 +112,7 @@ beforeEach(() => {
 
 Next, we can set up a fake HTTP server which is what we'd expect `app.listen` to return. We do this so we can compare it in our test which checks that the app is listening as we expect.
 
-```javascript
+``` js
 // We never use the fake HTTP server but we want to compare it
 const fakeHttpServer = {};
 
@@ -122,7 +122,7 @@ stubExpressListen.returns(fakeHttpServer);
 
 It's easy to spy on each of the middlewares used for our routes by creating `sinon` spies. We don't need to test any of these middlewares here, so we don't need to use a stub. You should test each middleware separately from this route code.
 
-```javascript
+``` js
 spyHomepage = sinon.spy();
 spyLogin = sinon.spy();
 spyAuthenticate = sinon.spy();
@@ -131,7 +131,7 @@ spyDashboard = sinon.spy();
 
 We now use `proxyquire` to override the module dependencies. This will allow us to inject our fake Express server and to spy on all of the middleware. All of these spies and stubs will be used in our test expectations. The `proxyquire` initialisation looks complex, but we're simply stubbing the call to `app.express` so that it returns our `stubExpress` and making sure that the calls to `import` or `require` the middleware modules in the real code will now be using our spies.
 
-```javascript
+``` js
 // Use proxyquire to stub required modules and return
 // our spies so we can check assertions
 server = proxyquire('../../src/launch', {
@@ -150,7 +150,7 @@ The hard part has now been done as we've set up our server before each test. We 
 ### Assertion that our server is listening
 First, we can write tests to check that our server is returning the expected HTTP server and runs on either the default port or a port we pass when initialising. We have stubbed `app.listen` to return a fake HTTP server so we can check that our call to `server.start()` returns it correctly. We can also confirm that it is called with either the default port of 7080, or another port that we pass through to the function call. The expectations are simple and readable so our fellow developers know exactly what the code should do. Note, for simplicity I'm using the general `sinon.match.func` matcher to match *any* function for the second parameter to `app.listen`.
 
-```javascript
+``` js
     it('should return expected http server', () => {
         const returnedServer = server.start();
         expect(returnedServer).to.eql(fakeHttpServer);
@@ -170,7 +170,7 @@ First, we can write tests to check that our server is returning the expected HTT
 
 We can then check each route using our `spyExpressGet` which spies on `app.get` for our routes. This is a simple case of confirming that each call sets the expected route string and the corresponding middleware(s).
 
-```javascript
+``` js
 it('should setup default route', () => {
     server.start();
     spyExpressGet.should.have.been.calledWithExactly('/', spyHomepage);

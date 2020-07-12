@@ -8,18 +8,9 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
-
-    <!-- Custom CSS -->
-    {% if layout.stylesheets != 0 %}
-    {% for stylesheet in layout.stylesheets %}
-    <link rel="stylesheet" href="{{ stylesheet }}">
-    {% endfor %}
-    {% endif %}
-
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
-
+    <link href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
+    
     <!-- Custom Fonts -->
     <script src="https://kit.fontawesome.com/d38990851e.js" crossorigin="anonymous"></script>
 

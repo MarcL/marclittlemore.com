@@ -1,8 +1,12 @@
 const markdownIt = require('markdown-it');
 const markdownItAttributes = require('@gerhobbelt/markdown-it-attrs');
 const escape = require('lodash.escape');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = (eleventyConfig) => {
+    // Plugins
+    eleventyConfig.addPlugin(syntaxHighlight);
+
     // https://www.11ty.dev/docs/languages/markdown/#markdown-options
     const markdownItOptions = {
         html: true,
@@ -16,7 +20,6 @@ module.exports = (eleventyConfig) => {
 
     // Copy
     eleventyConfig.addPassthroughCopy({'src/images': 'images'});
-    eleventyConfig.addPassthroughCopy({'src/css': 'css'});
     eleventyConfig.addPassthroughCopy({'src/robots.txt': 'robots.txt'});
     eleventyConfig.addPassthroughCopy({'src/browserconfig.xml': 'browserconfig.xml'});
 
