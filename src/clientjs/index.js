@@ -1,5 +1,5 @@
-var mailChimpTracking = require('./mailChimpTracking');
-var countdownTimer = require('./countdownTimer');
+import mailChimpTracking from './mailChimpTracking';
+import countdownTimer from './countdownTimer';
 
 window.onload = function() {
     countdownTimer('timer', 'progressTimer', 300);

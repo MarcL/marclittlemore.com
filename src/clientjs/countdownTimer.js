@@ -1,30 +1,28 @@
-var leftPad = require('leftpad');
-
 function setTime(element, timeInSeconds) {
-    var minutes = Math.floor(timeInSeconds / 60);
-    var seconds = Math.floor(timeInSeconds % 60);
-    element.innerText = leftPad(minutes, 2, '0') + ':' + leftPad(seconds, 2, '0');
+    const minutes = Math.floor(timeInSeconds / 60).toString();
+    const seconds = Math.floor(timeInSeconds % 60).toString();
+    element.innerText = minutes.padStart(2, '0') + ':' + seconds.padStart(2, '0');
 }
 
 function setProgressBar(element, screenReaderElement, percentage) {
-    var roundedPercentage = Math.floor(percentage);
+    const roundedPercentage = Math.floor(percentage);
     element.style.width = percentage + '%';
     element.setAttribute('aria-valuenow', roundedPercentage);
     screenReaderElement.innerText = (100 - roundedPercentage) + '% Complete';
 }
 
 function setTimerCountdown(timerTextId, progressBarId, maxTimeSeconds) {
-    var timer = document.getElementById(timerTextId);
+    const timer = document.getElementById(timerTextId);
     if (timer) {
-        var maxTime = maxTimeSeconds;
-        var timeLeft = maxTime;
+        const maxTime = maxTimeSeconds;
+        let timeLeft = maxTime;
 
-        var progressTimer = document.getElementById(progressBarId);
-        var progressBarScreenReader = document.getElementById('progressBarScreenReader');
-        var timerInterval = setInterval(function() {
+        const progressTimer = document.getElementById(progressBarId);
+        const progressBarScreenReader = document.getElementById('progressBarScreenReader');
+        const timerInterval = setInterval(function() {
             timeLeft--;
 
-            var timeWidth = (timeLeft / maxTime) * 100;
+            const timeWidth = (timeLeft / maxTime) * 100;
             setProgressBar(progressTimer, progressBarScreenReader, timeWidth);
 
             if (timeLeft > 0) {
@@ -38,4 +36,4 @@ function setTimerCountdown(timerTextId, progressBarId, maxTimeSeconds) {
     }
 }
 
-module.exports = setTimerCountdown;
+export default setTimerCountdown;

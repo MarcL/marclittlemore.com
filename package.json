@@ -5,19 +5,21 @@
   "homepage": "http://www.marclittlemore.com",
   "author": "Marc Littlemore <marc.littlemore@gmail.com>",
   "repository": "git@github.com:MarcL/marclittlemore.com.git",
-  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@gerhobbelt/markdown-it-attrs": "^3.0.3-19",
+    "@ungap/url-search-params": "^0.2.2",
     "lodash.escape": "^4.0.1",
-    "markdown-it": "^11.0.0"
+    "markdown-it": "^11.0.0",
+    "parcel-bundler": "^1.12.4"
   },
   "scripts": {
-    "build": "eleventy",
-    "build:js": "browserify src/clientjs/index.js -o src/js/bundle.js",
-    "build:minify": "uglifyjs --compress --mangle -o js/bundle.min.js js/bundle.js",
+    "build": "yarn build:all",
+    "build:all": "yarn build:js && yarn build:site",
+    "build:site": "eleventy",
+    "build:js": "parcel build src/clientjs/index.js --out-dir src/distjs --out-file bundle.js",
     "link-check": "blc http://localhost:4000 -ro",
     "thumbnails": "gulp thumbnails",
     "serve": "eleventy --serve"

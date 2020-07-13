@@ -32,8 +32,8 @@
     <script src="//load.sumome.com/" data-sumo-site-id="{{ site.sumoMeId }}" async="async"></script>
     {% endif %}
 
-    {% if layout.scripts != 0 %}
-        {% for script in layout.scripts %}
+    {% if scripts != 0 %}
+        {% for script in scripts %}
             <script type="text/javascript" src="{{script}}" async></script>
         {% endfor %}
     {% endif %}
