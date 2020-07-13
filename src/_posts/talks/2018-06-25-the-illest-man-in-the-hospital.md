@@ -3,7 +3,7 @@ layout: page
 title: The Illest Man In The Hospital
 subtitle: In 2014 I nearly died after contracting sepsis, and so I shared my near-death experience with a group of intensive care doctors and nurses
 permalink: /talks/the-illest-man-in-the-hospital/
-header-img: images/banners/the-illest-man-in-the-hospital.jpg
+headerImage: images/banners/the-illest-man-in-the-hospital.jpg
 social-img: images/social/the-illest-man-in-the-hospital.jpg
 thumbnail: /images/thumbnails/social/the-illest-man-in-the-hospital-thumb.jpg
 tags:

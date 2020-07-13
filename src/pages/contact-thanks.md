@@ -4,7 +4,7 @@ title: Thank You
 subtitle: Thanks for sending me a message
 description: Thanks for sending me a message
 permalink: /contact/thanks/
-header-img: images/banners/contact-thanks.jpg
+headerImage: images/banners/contact-thanks.jpg
 ---
 
 Thanks so much for sending me a message. I love to hear from people and I'll reply as soon as I can.

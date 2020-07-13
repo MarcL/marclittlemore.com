@@ -3,7 +3,7 @@ layout: page
 title: 'From Space Invaders to Strictly'
 subtitle: Just getting started in the development industry? Top tips on how I got started
 permalink: /talks/from-space-invaders-to-strictly/
-header-img: images/banners/from-space-invaders-to-strictly.jpg
+headerImage: images/banners/from-space-invaders-to-strictly.jpg
 social-img: images/social/from-space-invaders-to-strictly.jpg
 thumbnail: /images/thumbnails/social/from-space-invaders-to-strictly-thumb.jpg
 tags:

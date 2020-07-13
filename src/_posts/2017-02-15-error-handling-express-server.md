@@ -3,7 +3,7 @@ layout: post
 title:  "Simple Error Handling For Your Production Express Server"
 subtitle: "Adding error handling to your Express server doesn't have to be confusing."
 permalink: /simple-error-handling-for-your-production-express-server/
-header-img: images/banners/simple-error-handling-for-your-production-express-server.jpg
+headerImage: images/banners/simple-error-handling-for-your-production-express-server.jpg
 social-img: images/social/simple-error-handling-for-your-production-express-server.jpg
 thumbnail: /images/thumbnails/social/simple-error-handling-for-your-production-express-server-thumb.jpg
 tags:

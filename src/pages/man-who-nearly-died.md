@@ -4,7 +4,7 @@ title: How I Almost Died
 subtitle: Back in 2014, I almost died. Here's my story.
 description: Back in 2014, I almost died. Here's my story.
 permalink: /how-i-almost-died/
-header-img: images/banners/hospital-lights.jpg
+headerImage: images/banners/hospital-lights.jpg
 ---
 
 How do you start to tell someone that you nearly died? That your wife watched you in intensive care, fighting for your life? That your children nearly lost their father when he was only 42?
