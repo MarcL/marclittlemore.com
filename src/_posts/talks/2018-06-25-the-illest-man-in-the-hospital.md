@@ -20,4 +20,4 @@ If you have any questions then get in [contact](/contact) or tweet at me on [Twi
 
 ## Slides
 
-{% include cards/speakerDeckEmbed.html id=page.speakerDeckId %}
+{% include cards/speakerDeckEmbed.html, speakerDeckId: {{speakerDeckId}} %}

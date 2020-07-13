@@ -30,7 +30,7 @@ Let's take a look at how we can validate a given user email using Chatfuel as ou
 
 Take a look at how I build this email validation using [Glitch](https://glitch.com) and a Node.js Express web server together with Chatfuel's JSON API.
 
-{% include cards/youTubeEmbed.html id="r4h4DD1DNE8" %}
+{% include cards/youTubeEmbed.html, youTubeId: "r4h4DD1DNE8" %}
 
 ### How to validate an email address?
 

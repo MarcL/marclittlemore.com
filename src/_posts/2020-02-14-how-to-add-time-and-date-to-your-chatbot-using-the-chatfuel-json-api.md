@@ -16,7 +16,7 @@ thumbnail: /images/thumbnails/social/time-and-date.jpg
 
 ## Watch the video
 
-{% include cards/youTubeEmbed.html id="UDrGpc4Dp8w" %}
+{% include cards/youTubeEmbed.html, youTubeId:"UDrGpc4Dp8w" %}
 
 One of the main benefits of creating a Facebook Messenger chatbot is that you don't have to be present to answer messages for 24 hours per day. Your chatbot should be on hand to do this while you're fast asleep. What would be even better is if it could understand where your user lives and give them relevant content for their time of day. It could let them know whether your shop is open for business. Or it could send your users the breakfast menu rather than the dinner menu because it knows it's 9am where they are. This functionality doesn't exist in Chatfuel by default so let me teach you how to build an API which adds time and date functions to your chatbot.
 

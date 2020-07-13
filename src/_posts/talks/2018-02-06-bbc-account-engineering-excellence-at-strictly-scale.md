@@ -21,4 +21,4 @@ Here's a talk that I gave at BBC North's "Women In Tech" event in February 2018,
 
 ## Slides
 
-{% include cards/speakerDeckEmbed.html id=page.speakerDeckId %}
+{% include cards/speakerDeckEmbed.html, speakerDeckId: {{speakerDeckId}} %}

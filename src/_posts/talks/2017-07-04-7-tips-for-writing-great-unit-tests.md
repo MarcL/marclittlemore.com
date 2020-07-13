@@ -17,8 +17,8 @@ How do you learn to write great unit tests? Why are some unit tests good and som
 
 ## Slides
 
-{% include cards/speakerDeckEmbed.html id=page.speakerDeckId %}
+{% include cards/speakerDeckEmbed.html, speakerDeckId: {{speakerDeckId}} %}
 
 ## Video
 
-{% include cards/youTubeEmbed.html id=page.youTubeId %}
+{% include cards/youTubeEmbed.html, youTubeId: {{youTubeId}} %}

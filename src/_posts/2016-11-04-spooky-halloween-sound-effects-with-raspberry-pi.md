@@ -10,7 +10,6 @@ tags:
     - raspberry-pi
     - development
     - post
-enableComments: true
 description: Scare the trick or treaters with this simple Raspberry Pi Node.js project to play spooky sound effects.
 youTubeId: "77df-OO72U0"
 ---
@@ -81,7 +80,7 @@ All you need to do now is leave this running and position your speakers in a pla
 
 Here's a video of it running in my study, the speakers are hidden behind the curtains with the windows open so it could be heard from the street.
 
-{% include cards/youTubeEmbed.html id=page.youTubeId %}
+{% include cards/youTubeEmbed.html, youTubeId: {{youTubeId}} %}
 
 ### Updating the sound effects
 
