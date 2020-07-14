@@ -8,7 +8,6 @@ thumbnail: /images/thumbnails/social/how-to-unit-test-express-routes-thumb.jpg
 tags:
     - unit-testing
     - development
-    - post
 description: How to unit test Express routes and some reasons why you should do it.
 ---
 
