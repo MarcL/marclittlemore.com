@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "How To Unit Test Express Routes"
 subtitle: "Unit testing of Express routes is often tricky but it can be done. Here's how to do it and why you probably should."
 permalink: /how-to-unit-test-express-routes/

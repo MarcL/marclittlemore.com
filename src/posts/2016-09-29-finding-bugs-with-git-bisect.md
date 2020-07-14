@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "How To Find Bugs Using Git Bisect With This Easy Guide"
 subtitle: "A beginners guide to the world of git bisect."
 permalink: /how-to-find-bugs-using-git-bisect-with-this-easy-guide/
@@ -9,7 +8,6 @@ thumbnail: /images/thumbnails/social/how-to-find-bugs-using-git-bisect-with-this
 tags:
     - git
     - development
-    - post
 description: An essential guide that will teach you how to use git bisect to quickly and easily find bugs in the history of your project.
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "How to validate an email adress using the Chatfuel JSON API"
 subtitle: "When asking your chatbot user for an email address, how do you know if it's valid? Let's look at how you can validate an email address using the Chatfuel JSON API and a Node.js web server."
 permalink: /how-to-validate-an-email-address-using-the-chatfuel-json-api/
@@ -8,7 +7,6 @@ tags:
     - chatbot
     - chatfuel
     - json
-    - post
 description: "When asking your chatbot user for an email address, how do you know if it's valid? Let's look at how you can validate an email address using the Chatfuel JSON API and a Node.js web server."
 social-img: images/social/how-to-validate-an-email-address-using-the-chatfuel-json-api.jpg
 thumbnail: /images/thumbnails/social/how-to-validate-an-email-address-using-the-chatfuel-json-api.jpg
