@@ -1,0 +1,29 @@
+<footer class="pv4 ph3 ph5-ns tc bg-light-gray bt b--moon-gray">
+    <a href="/feed.xml" title="RSS feed" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="RSS feed icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+{% for social_item in socialmedia %}
+    <a href="{{ social_item.url }}" target="_blank" rel="noreferrer" title="{{ social_item.title }}" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="{{social_item.name}} icon">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa {{social_item.icon}} fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+{% endfor %}
+
+  <div class="mt4 ttu">
+    <a href="/javascript-testing" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">JS Testing</a>
+    <a href="/now" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Now</a>
+    <a href="/uses" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Uses</a>
+    <a href="/articles" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">Articles</a>
+    <a href="/contact" class="f6 fw5 link underline-hover near-black dib">Contact</a>
+  </div>
+  <div class="mt4 dark-gray f6 fw6 ttu">
+      Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+  </div>
+</footer>
+
+{% include scripts.html %}
