@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const markdownIt = require('markdown-it');
 const markdownItAttributes = require('@gerhobbelt/markdown-it-attrs');
 const escape = require('lodash.escape');
