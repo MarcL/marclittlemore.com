@@ -6,4 +6,5 @@
 
 # Redirect old landing pages
 /guides/javascript-unit-testing-best-practices/ /courses/javascript-testing-beginners-course/
-/courses/javascript-testing-made-easy/ /courses/javascript-testing-beginners-course/
+/courses/javascript-testing-made-easy/ /javascript-testing-beginners-course/
+/courses/javascript-testing-beginners-course/ /javascript-testing-beginners-course/
