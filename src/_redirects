@@ -1,0 +1,10 @@
+# Netlify redirects
+# https://docs.netlify.com/routing/redirects/
+
+# Redirect first post to new url
+/posts/how-to-find-bugs-using-git-bisect-with-this-easy-guide/ /how-to-find-bugs-using-git-bisect-with-this-easy-guide/
+
+# Redirect old landing pages
+/guides/javascript-unit-testing-best-practices/ signup=:value /javascript-testing-beginners-course/?signup=:value 301
+/courses/javascript-testing-made-easy/ signup=:value /javascript-testing-beginners-course/?signup=:value 301
+/courses/javascript-testing-beginners-course/ signup=:value /javascript-testing-beginners-course/?signup=:value 301

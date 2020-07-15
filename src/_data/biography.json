@@ -1,10 +1,10 @@
 [
   {
-    "url": "https://www.marclittlemore.com/bots/sign-up-bot-building-for-beginners/?signup=website-bio",
+    "url": "{{site.url}}/bots/sign-up-bot-building-for-beginners/?signup=website-bio",
     "title": "FREE Chatfuel Chatbot JSON Guide"
   },
   {
-    "url": "https://www.marclittlemore.com/courses/javascript-testing-beginners-course/?signup=website-bio ",
+    "url": "{{site.url}}/javascript-testing-beginners-course/?signup=website-bio ",
     "title": "FREE JavaScript Testing Course"
   },
 

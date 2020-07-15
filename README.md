@@ -16,7 +16,7 @@ https://www.marclittlemore.com/javascript-testing/
 
 ## Landing pages
 https://www.marclittlemore.com/bots/sign-up-bot-building-for-beginners/
-https://www.marclittlemore.com/courses/javascript-testing-beginners-course/
+https://www.marclittlemore.com/javascript-testing-beginners-course/
 https://www.marclittlemore.com/signup-thank-you/
 
 ## Talks

@@ -1,9 +1,0 @@
-# Netlify redirects
-# https://docs.netlify.com/routing/redirects/
-
-# Redirect first post to new url
-/posts/how-to-find-bugs-using-git-bisect-with-this-easy-guide/ /how-to-find-bugs-using-git-bisect-with-this-easy-guide/
-
-# Redirect old landing pages
-/guides/javascript-unit-testing-best-practices/ /courses/javascript-testing-beginners-course/
-/courses/javascript-testing-made-easy/ /courses/javascript-testing-beginners-course/
