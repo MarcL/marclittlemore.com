@@ -61,35 +61,13 @@ Interested in learning more about chatbots but don't know where to start? Don't 
 
 <article>
   <div class="cf pa2">
-{%- for video in videos -%}
+{%- for video in youTubeVideos.marketing.items -%}
     <div class="fl w-100 w-50-ns pa2">
-      <a href="https://www.youtube.com/watch?v={{video.id}}" class="db link tc" target="_blank" rel="noreferrer">
-        <img src="https://i.ytimg.com/vi/{{video.id}}/hqdefault.jpg" alt="{{video.title}}" class="w-100 db outline black-10 grow"/>
-        <dl class="mt2 f7 f6-ns lh-copy">
+      <a href="https://www.youtube.com/watch?v={{video.snippet.resourceId.videoId}}" class="db link tc" target="_blank" rel="noreferrer">
+        <img src="{{video.snippet.thumbnails.high.url}}" alt="{{video.snippet.title}}" class="w-100 db outline black-10 grow"/>
+        <dl class="mt2 f6 f5-ns fw5 lh-copy">
           <dt class="clip">Title</dt>
-          <dd class="ml0 black truncate w-100">{{video.title}}</dd>
-          <dt class="clip">Subtitle</dt>
-          <dd class="ml0 gray truncate w-100">{{video.subtitle}}</dd>
-        </dl>
-      </a>
-    </div>
-{% endfor %}
-  </div>
-</article>
-
-### Chatfuel Quick Tip Videos
-
-<article>
-  <div class="cf pa2">
-{%- for video in quickTips -%}
-    <div class="fl w-100 w-50-ns pa2">
-      <a href="https://www.youtube.com/watch?v={{video.id}}" class="db link tc" target="_blank" rel="noreferrer">
-        <img src="https://i.ytimg.com/vi/{{video.id}}/hqdefault.jpg" alt="{{video.title}}" class="w-100 db outline black-10 grow"/>
-        <dl class="mt2 f7 f6-ns lh-copy">
-          <dt class="clip">Title</dt>
-          <dd class="ml0 black truncate w-100">{{video.title}}</dd>
-          <dt class="clip">Subtitle</dt>
-          <dd class="ml0 gray truncate w-100">{{video.subtitle}}</dd>
+          <dd class="ml0 near-black truncate w-100">{{video.snippet.title}}</dd>
         </dl>
       </a>
     </div>
