@@ -25,9 +25,12 @@ const convertImage = (sourceFilePath, resizeOptions, outputFilePath) => {
         .toFile(outputFilePath);
 };
 
-const resizeFilesInDirectory = async ({imagesDirectoryPath, destinationDirectoryPath, fileList, resizeOptions}) => {
+const resizeFilesInDirectory = async (options) => {
+    const {imagesDirectoryPath, destinationImagesPath, fileList, resizeOptions} = options;
+    console.log(options);
     await Promise.all(fileList.map(sourceFilePath => {
-        const outputFilePath = join(destinationDirectoryPath, sourceFilePath.split(imagesDirectoryPath)[1]);
+        const splitSourceImagesPath = sourceFilePath.split(imagesDirectoryPath);
+        const outputFilePath = join(destinationImagesPath, splitSourceImagesPath[1]);
         const outputDirectoryWithFilename = outputFilePath.split('/');
         const directoryLengthWithoutFilename = outputDirectoryWithFilename.slice(0, outputDirectoryWithFilename.length - 1);
         const outputDirectory = directoryLengthWithoutFilename.join('/');
@@ -40,23 +43,29 @@ const resizeFilesInDirectory = async ({imagesDirectoryPath, destinationDirectory
 };
 
 const convertAllDirectoryImages = async (options) => {
-    const {sourceDirectoryPath, sourceDirectory, outputDirectory, resizeOptions} = options;
-    const imagesDirectoryPath = join(sourceDirectoryPath, sourceDirectory);
-    const destinationDirectoryPath = join(sourceDirectoryPath, outputDirectory);
+    const {imagesDirectory, resizeOptions} = options;
+
+    const sourceDirectory = '../src'
+    const sourceDirectoryPath = join(__dirname, sourceDirectory);
+    const imagesDirectoryPath = join(sourceDirectoryPath, 'images');
+    const sourceImagesPath = join(imagesDirectoryPath, imagesDirectory);
+    const destinationImagesPath = join(sourceDirectoryPath, 'thumbnails');
     
-    const fileList = await getAllFilesInDirectory(imagesDirectoryPath);
+    const fileList = await getAllFilesInDirectory(sourceImagesPath);
 
     try {
-        await resizeFilesInDirectory({imagesDirectoryPath, destinationDirectoryPath, fileList, resizeOptions});
+        await resizeFilesInDirectory({
+            imagesDirectoryPath,
+            destinationImagesPath,
+            fileList,
+            resizeOptions
+        });
     }
     catch(error) {
         console.log(error.toString());
-    }
-};
+    }};
 
 const convertAllFiles = async () => {
-    const sourceDirectory = '../src/images'
-    const sourceDirectoryPath = join(__dirname, sourceDirectory);
     // const imageDirectories = [
     //     'banners',
     //     'games',
@@ -65,27 +74,15 @@ const convertAllFiles = async () => {
     //     'social'
     // ];
 
-    // await convertAllDirectoryImages({
-    //     sourceDirectoryPath,
-    //     sourceDirectory: 'landingpages',
-    //     outputDirectory: 'thumbnails',
-    //     resizeOptions
-    // });
-    const imagesDirectoryPath = join(sourceDirectoryPath, 'landingpages');
-    const destinationDirectoryPath = join(sourceDirectoryPath, 'thumbnails');
     const resizeOptions = {
         width: 825,
         // height: 510
     };
-    
-    const fileList = await getAllFilesInDirectory(imagesDirectoryPath);
 
-    try {
-        await resizeFilesInDirectory({imagesDirectoryPath, destinationDirectoryPath, fileList, resizeOptions});
-    }
-    catch(error) {
-        console.log(error.toString());
-    }
+    await convertAllDirectoryImages({
+        imagesDirectory: 'banners',
+        resizeOptions
+    })
 };
 
 convertAllFiles();
