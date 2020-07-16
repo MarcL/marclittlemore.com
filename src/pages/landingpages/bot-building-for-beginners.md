@@ -3,7 +3,7 @@ layout: landingpage-long
 title: FREE Chatfuel Chatbot JSON Guide
 permalink: /bots/sign-up-bot-building-for-beginners/
 description: Struggling to get started with bot building? Let me help you.
-social-img: "images/social/chatfuel-chatbot-json-guide-cover.png"
+socialImage: "images/social/chatfuel-chatbot-json-guide-cover.png"
 
 landingpage:
     title: FREE Chatfuel Chatbot JSON Guide

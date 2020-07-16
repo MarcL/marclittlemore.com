@@ -23,6 +23,7 @@ module.exports = (eleventyConfig) => {
 
     // Copy
     eleventyConfig.addPassthroughCopy({'src/images': 'images'});
+    eleventyConfig.addPassthroughCopy({'src/thumbnails': 'thumbnails'});
     eleventyConfig.addPassthroughCopy({'src/favicons': 'favicons'});
     eleventyConfig.addPassthroughCopy({'src/robots.txt': 'robots.txt'});
     eleventyConfig.addPassthroughCopy({'src/browserconfig.xml': 'browserconfig.xml'});

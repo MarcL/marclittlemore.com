@@ -4,8 +4,8 @@ title: 'From Space Invaders to Strictly'
 subtitle: Just getting started in the development industry? Top tips on how I got started
 permalink: /talks/from-space-invaders-to-strictly/
 headerImage: images/banners/from-space-invaders-to-strictly.jpg
-social-img: images/social/from-space-invaders-to-strictly.jpg
-thumbnail: /images/thumbnails/social/from-space-invaders-to-strictly-thumb.jpg
+socialImage: images/social/from-space-invaders-to-strictly.jpg
+thumbnail: /thumbnails/social/from-space-invaders-to-strictly.jpg
 tags:
   - talk
 description: 'Want to know how I got started in the technology industry? It all started with my love of Space Invaders and ended up with me creating high scale applications to support Strictly Come Dancing. I share some tips for up and coming developers and what to expect when you join the industry.'

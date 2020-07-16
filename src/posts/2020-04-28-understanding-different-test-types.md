@@ -8,7 +8,7 @@ tags:
     - javascript
     - development
     - unit-testing
-thumbnail: /images/thumbnails/social/different-types-of-software-testing-thumb.jpg
+thumbnail: /thumbnails/social/different-types-of-software-testing.jpg
 ---
 
 {% include testingGuide.html %}
