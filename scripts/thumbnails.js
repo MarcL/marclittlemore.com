@@ -27,7 +27,7 @@ const convertImage = (sourceFilePath, resizeOptions, outputFilePath) => {
 
 const resizeFilesInDirectory = async (options) => {
     const {imagesDirectoryPath, destinationImagesPath, fileList, resizeOptions} = options;
-    console.log(options);
+
     await Promise.all(fileList.map(sourceFilePath => {
         const splitSourceImagesPath = sourceFilePath.split(imagesDirectoryPath);
         const outputFilePath = join(destinationImagesPath, splitSourceImagesPath[1]);
@@ -66,23 +66,28 @@ const convertAllDirectoryImages = async (options) => {
     }};
 
 const convertAllFiles = async () => {
-    // const imageDirectories = [
-    //     'banners',
-    //     'games',
-    //     'landingpages',
-    //     'posts',
-    //     'social'
-    // ];
+    const imageDirectories = [
+        {
+            directory: 'banners',
+            resizeOptions: {
+                width: 1024
+            }
+        },
+        {
+            directory: 'social',
+            resizeOptions: {
+                width: 600
+            }
+        }
+    ];
 
-    const resizeOptions = {
-        width: 825,
-        // height: 510
-    };
-
-    await convertAllDirectoryImages({
-        imagesDirectory: 'banners',
-        resizeOptions
-    })
+    await Promise.all(imageDirectories.map((imageDirectoryInfo) => {
+        const {directory, resizeOptions} = imageDirectoryInfo;
+        return convertAllDirectoryImages({
+            imagesDirectory: directory,
+            resizeOptions
+        });
+    }));
 };
 
 convertAllFiles();
