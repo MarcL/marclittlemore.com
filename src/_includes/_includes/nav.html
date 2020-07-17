@@ -2,7 +2,7 @@
     <nav class="fw6 ttu tracked tc dn db-l db-m pt2" id="navLinksWeb">
         {% for page in mainmenu %}
             {% if page.name %}
-                <a class="f7 f5-ns link dim mr2 mr3-ns" href="{{ page.url }}" title="{{ page.title }}">{{ page.name }}</a>
+                <a class="f7 f5-ns link dim mr2 mr3-ns near-black" href="{{ page.url }}" title="{{ page.title }}">{{ page.name }}</a>
             {% endif %}
         {% endfor %}
     </nav>
@@ -12,7 +12,7 @@
             {% for page in mainmenu %}
                 {% if page.name %}
                     <li class="pv1">
-                        <a class="f6 f4-ns link mr2 mr3-ns" href="{{ page.url }}" title="{{ page.title }}">{{ page.name }}</a>
+                        <a class="f6 f4-ns link mr2 mr3-ns near-black" href="{{ page.url }}" title="{{ page.title }}">{{ page.name }}</a>
                     </li>
                 {% endif %}
             {% endfor %}
