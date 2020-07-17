@@ -1,6 +1,7 @@
 [
   { "name": "Home", "url": "/", "title": "marclittlemore.com" },
-  { "name": "Talks", "url": "/talks/", "title": "Ideas I've shared" },
+  { "name": "Articles", "url": "/articles/", "title": "Latest articles" },
+  { "name": "Talks", "url": "/talks/", "title": "Ideas I've shared in public" },
   {
     "name": "Chatbots",
     "url": "/bots/",
