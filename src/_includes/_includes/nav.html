@@ -1,11 +1,21 @@
-<header class="white w-100 pt2 pb0 pb2-ns" style="z-index:100;">
-    <nav class="fw6 ttu tracked tc">
-        <div class="db" id="navLinks">
+<header class="w-100 pt2 pb0 pb2-ns near-black" style="z-index:100;">
+    <nav class="fw6 ttu tracked tc dn db-l db-m pt2" id="navLinksWeb">
+        {% for page in mainmenu %}
+            {% if page.name %}
+                <a class="f7 f5-ns link dim mr2 mr3-ns near-black" href="{{ page.url }}" title="{{ page.title }}">{{ page.name }}</a>
+            {% endif %}
+        {% endfor %}
+    </nav>
+    <nav class="fw6 ttu tracked tc dn-ns dn-m dt w-100 center" id="navLinksMobile">
+        <i class="fa fa-2x fa-bars near-black dn-l" aria-hidden="true" id="displayNavButton"></i>
+        <ul id="navLinks" class="list center mw6 pl0 ml0 dn">
             {% for page in mainmenu %}
                 {% if page.name %}
-                    <a class="f7 f5-ns link dim black dib mr2 mr3-ns" href="{{ page.url }}" title="{{ page.title }}">{{ page.name }}</a>
+                    <li class="pv1">
+                        <a class="f6 f4-ns link mr2 mr3-ns near-black" href="{{ page.url }}" title="{{ page.title }}">{{ page.name }}</a>
+                    </li>
                 {% endif %}
             {% endfor %}
-        </div>
+        </ul>
     </nav>
 </header>
