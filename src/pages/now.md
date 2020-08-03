@@ -11,13 +11,13 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Currently working on
 
-- Coping with the current Coronavirus pandemic!
-- Regular excercise with [Fitness Blender](https://www.fitnessblender.com/)
+- Regular excercise
 - Mountain biking on an almost daily basis
-- Trying to work out what to do for a side project
+- Updating my [DJ Cruze](http://www.djcruze.co.uk/) website using [11ty](https://www.11ty.dev/)
 
 ## Currently reading
 
 - [Essentialism: The Disciplined Persuit of Less](https://amzn.to/3ivZ57Z) by [Greg McKeown](https://gregmckeown.com/)
+- [Your Music and People](https://sivers.org/m) by [Derek Sivers](https://sivers.org)
 
-**Last updated:** 5th July, 2020
+**Last updated:** 3rd August, 2020
