@@ -22,7 +22,13 @@ sitemap:
     {%- for post in collections.post reversed -%}
       <item>
         <title>{{ post.data.title | xmlEscape }}</title>
-        <description>{{ post.templateContent | xmlEscape }}</description>
+        {%- if post.data.excerpt -%}
+          <description>{{ post.data.excerpt | xmlEscape }}</description>
+        {%- elsif post.data.subtitle -%}
+          <description>{{ post.data.subtitle | xmlEscape }}</description>
+        {%- else -%}
+        <description><![CDATA[{{ post.templateContent | xmlEscape }}]]></description>
+        {%- endif -%}
         <pubDate>{{ post.date | toUTCString }}</pubDate>
         <link>{{ post.url | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>

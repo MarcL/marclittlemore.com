@@ -4,6 +4,7 @@ const markdownIt = require('markdown-it');
 const markdownItAttributes = require('@gerhobbelt/markdown-it-attrs');
 const escape = require('lodash.escape');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const rfc822Date = require('rfc822-date');
 
 module.exports = (eleventyConfig) => {
     // Plugins
@@ -45,6 +46,10 @@ module.exports = (eleventyConfig) => {
         return markdownLib.render(value);
     });
 
+    eleventyConfig.addLiquidFilter('rfc822Date', (dateValue) => {
+        return rfc822Date(dateValue);
+    });
+
     const dateToISO = dateValue => new Date(dateValue).toISOString();
 
     eleventyConfig.addLiquidFilter('toISOString', (dateValue) => {
@@ -65,7 +70,7 @@ module.exports = (eleventyConfig) => {
         }
 
         // Newest date in the collection
-        return dateToISO(
+        return rfc822Date(
             new Date(Math.max(...collection.map(item => {return item.date})))
         );
     });
