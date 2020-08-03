@@ -17,6 +17,7 @@
     "markdown-it": "^11.0.0",
     "mkdirp": "^1.0.4",
     "parcel-bundler": "^1.12.4",
+    "rfc822-date": "^0.0.3",
     "sharp": "^0.25.4"
   },
   "scripts": {
