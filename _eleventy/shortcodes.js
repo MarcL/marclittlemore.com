@@ -11,8 +11,8 @@ const callout = (content, type = 'info') => {
             icon: 'fa-exclamation-circle dark-red'
         },
         tip: {
-            background: 'bg-light-blue b--dark-blue',
-            icon: 'fa-lightbulb dark-blue'
+            background: 'bg-lightest-blue b--dark-blue',
+            icon: 'fa-fire-alt dark-blue'
         }
     };
 
