@@ -11,7 +11,9 @@ tags:
 thumbnail: /thumbnails/social/different-types-of-software-testing.jpg
 ---
 
-{% include testingGuide.html %}
+{% callout "info" %}
+Want to learn more about testing your JavaScript code but don't know where to start? Get my [FREE 7-day testing course](/javascript-testing-beginners-course/?signup=testing-page") and you'll be a JavaScript testing expert in no time!
+{% endcallout %}
 
 ## Understanding types of software testing
 
@@ -82,6 +84,7 @@ Hopefully this been a brief but helpful walkthrough of the different types of so
 
 If this post was valuable to you, you can [follow my journey on Twitter](https://twitter.com/marclittlemore).
 
-## Want to learn more about JavaScript testing?
+{% callout "info" %}
+Want to learn more about testing your JavaScript code but don't know where to start? Get my [FREE 7-day testing course](/javascript-testing-beginners-course/?signup=testing-page") and you'll be a JavaScript testing expert in no time!
+{% endcallout %}
 
-{% include testingGuide.html %}

@@ -10,7 +10,9 @@ tags:
 thumbnail: /images/thumbnails/social/time-and-date.jpg
 ---
 
-{% include jsonGuide.html %}
+{% callout "info" %}
+Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my [FREE JSON guide](/bots/sign-up-bot-building-for-beginners/) and you'll have JSON skills in no time!
+{% endcallout %}
 
 ## Watch the video
 
@@ -112,4 +114,6 @@ The last thing you need to do is to use this code in your Chatfuel chatbot. You 
 
 All of the code is available on my [Chatfuel demo Glitch project](https://glitch.com/~chatfuel-demo-bot). Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please [send me a message](/contact). I love to hear from people and I'm always happy to answer your questions.
 
-{% include jsonGuide.html %}
+{% callout "info" %}
+Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my [FREE JSON guide](/bots/sign-up-bot-building-for-beginners/) and you'll have JSON skills in no time!
+{% endcallout %}
