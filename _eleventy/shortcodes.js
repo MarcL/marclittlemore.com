@@ -19,13 +19,13 @@ const callout = (content, type = 'info') => {
     const chosenType = typeClasses[type] || typeClasses['info'];
     const renderedHtml = markdownLib.render(content);
 
-    const iconInfo = `<div class="dtc w-10 v-mid"><i class="fa fa-2x pa1 bg-white br-100 shadow-4 ${chosenType.icon}"aria-hidden="true"></i></div>`;
-    return `<div class="dt fw5 bt bw2 br2 br--bottom shadow-4 ph3 pv2 mv2 ${chosenType.background}">${iconInfo}${renderedHtml}</div>`
+    const iconInfo = `<div class="dtc w-20 w-10-l tc v-mid"><i class="fa fa-2x pa1 bg-white br-100 shadow-4 ${chosenType.icon}"aria-hidden="true"></i></div>`;
+    return `<div class="dt fw5 bt bw2 br2 br--bottom shadow-4 ph3 pv2 mv2 ${chosenType.background}">${iconInfo}<div class="w-90">${renderedHtml}</div></div>`
 };
 
 const quote = (content) => {
     const renderedHtml = markdownLib.render(content);
-    return `<blockquote class="helvetica ml0 mt0 pl4 black-90 bl bw2 b--blue f5 f4-m f3-l lh-copy measure"><div class="dtc w-90">${renderedHtml}</div></blockquote>`;
+    return `<blockquote class="helvetica ml0 mt0 pl4 black-90 bl bw2 b--blue f5 f4-m f3-l lh-copy measure"><div class="dtc w-100">${renderedHtml}</div></blockquote>`;
 };
 
 const addAll = (eleventyConfig) => {
