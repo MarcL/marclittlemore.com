@@ -1,12 +1,5 @@
 <header class="w-100 pt2 pb0 pb2-ns near-black" style="z-index:100;">
-    <nav class="mw8 center fw6 ttu tracked dn db-l db-m pt2" id="navLinksWeb">
-        <div class="fl v-mid w-30">
-            <a class="pr2 v-mid link grow" href="/">
-                <img src="/images/me/marc-littlemore-64x64.jpg" class="dib w2 h2 br-100" alt="Site Name">
-                <a class="pr2 v-mid link" href="/"><span class="fw7">Marc Littlemore</span></a>
-            </a>
-        </div>
-        <div clas="v-mid w-20 fl">
+    <nav class="fw6 ttu tracked tc dn db-l db-m pt2" id="navLinksWeb">
         {% for menuItem in mainMenu %}
             {% if page.url contains menuItem.url and
                 menuItem.url != "/" or page.url == "/" and menuItem.url == "/" %}        
@@ -15,7 +8,6 @@
                 <a class="f7 f5-ns link dim mr2 mr3-ns near-black" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
             {% endif %}
         {% endfor %}
-        </div>
     </nav>
     <nav class="fw6 ttu tracked tc dn-ns dn-m dt w-100 center" id="navLinksMobile">
         <i class="fa fa-2x fa-bars near-black dn-l" aria-hidden="true" id="displayNavButton"></i>
