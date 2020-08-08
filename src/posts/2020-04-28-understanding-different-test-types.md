@@ -7,9 +7,9 @@ tags:
     - javascript
     - development
     - unit-testing
-    - featured
 headerImage: /images/posts/heart-code.jpg
 thumbnail: /thumbnails/social/different-types-of-software-testing.jpg
+description: "There are many different types of tests you can write. Let's find out about what they are."
 ---
 
 {% callout "info" %}

@@ -2,11 +2,11 @@
 title:  "How to add time and date to your Messenger chatbot using the Chatfuel JSON API"
 subtitle: "Can your chatbot tell the time? Let's look at how we can make your chatbot aware of a user's time and date to improve your chatbot flows."
 permalink: /how-to-add-time-and-date-to-your-messenger-chatbot-using-the-chatfuel-json-api/
+description: "Let's help your customers decide if you're open by adding time and date to your Chatfuel chatbot."
 tags:
     - chatbot
     - chatfuel
     - json
-    - featured
 headerImage: /images/banners/time-and-date.jpg
 # thumbnail: /thumbnails/social/time-and-date.jpg
 ---

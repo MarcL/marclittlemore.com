@@ -24,21 +24,16 @@ scripts:
             </div>
         </section>
 
+        {% if collections.featured.size > 0 %}
         <section id="featured-content" class="w-100 ph0 pt3">
             <div class="w-100">
                 <h2 class="f2 tl mv0">Featured articles</h2>
             </div>
             <div class="cf w-100">
-            {% for article in collections.featured reversed %}
-            <article class="fl bg-white w-100 ba b--black-10 mv4 br2 shadow-4 ma2">
-                <img src="{{article.data.thumbnail}}" class="w-100 db br2 br--top" alt="{{article.data.title}}">
-                <div class="pa3 tc">
-                  <a href="#" class="link dim f4">{{article.data.title}}</a>
-                </div>
-            </article>
-            {% endfor %}
+                {% include articleList, collection: collections.featured %}
             </div>
         </section>
+        {% endif %}
     </main>
 
     {% include footer.html %}
