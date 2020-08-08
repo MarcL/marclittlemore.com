@@ -4,7 +4,7 @@ title: Contact Me
 subtitle: Got something to say or a question to ask? Get in touch and say hello!
 description: Got something to say or a question to ask? Get in touch and say hello!
 permalink: /contact/
-headerImage: images/banners/contact-me.jpg
+headerImage: /images/banners/contact-me.jpg
 ---
 
 I'm always happy to answer any questions people have or love it when people want to say hello. You can easily send me a message via [Twitter](https://twitter.com/marclittlemore) or [GitHub](https://github.com/MarcL) but if you want to send me an email, then use the form below and I'll reply as soon as possible.

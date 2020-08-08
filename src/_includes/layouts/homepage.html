@@ -10,7 +10,7 @@ scripts:
 <body class="avenir helvetica bg-white">
     {% include nav.html %}
 
-    <section class="tc pv3 pv4-ns ph3 ph3-m ph0-l bg-white mw8 center">
+    <main class="pv3 pv4-ns ph3 ph3-m ph0-l bg-white mw8 center">
         <div class="w-100 pt2 pt3-l">
             <p class="f4 f3-l fw6 tl mt0 mb1 mw6 dark-red ttu">
                 Hello, I’m Marc
@@ -18,12 +18,28 @@ scripts:
             <h1 class="db dtc-ns tl f2 f1-l mv0 w-100">I help developers to build their careers</h1>
         </div>
 
-        <main id="main-content" class="dt w-100 cf ph0">
+        <section id="main-content" class="dt w-100 cf ph0">
             <div class="db dtc-ns v-mid-ns w-100 f3 tl lh-title">
                 {{content}}
             </div>
-        </main>
-    </section>
+        </section>
+
+        <section id="featured-content" class="w-100 ph0 pt3">
+            <div class="w-100">
+                <h2 class="f2 tl mv0">Featured articles</h2>
+            </div>
+            <div class="cf w-100">
+            {% for article in collections.featured reversed %}
+            <article class="fl bg-white w-100 ba b--black-10 mv4 br2 shadow-4 ma2">
+                <img src="{{article.data.thumbnail}}" class="w-100 db br2 br--top" alt="{{article.data.title}}">
+                <div class="pa3 tc">
+                  <a href="#" class="link dim f4">{{article.data.title}}</a>
+                </div>
+            </article>
+            {% endfor %}
+            </div>
+        </section>
+    </main>
 
     {% include footer.html %}
 </body>

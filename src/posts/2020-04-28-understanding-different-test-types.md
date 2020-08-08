@@ -2,12 +2,13 @@
 title:  "Different types of software tests"
 subtitle: "What are the different types of tests we can write for our software?"
 permalink: /different-types-of-software-tests/
-headerImage: images/posts/heart-code.jpg
 tags:
     - express
     - javascript
     - development
     - unit-testing
+    - featured
+headerImage: /images/posts/heart-code.jpg
 thumbnail: /thumbnails/social/different-types-of-software-testing.jpg
 ---
 

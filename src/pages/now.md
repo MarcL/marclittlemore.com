@@ -4,7 +4,7 @@ title: Now
 subtitle: What I'm working on at the moment
 description: What I'm working on at the moment
 permalink: /now/
-headerImage: images/banners/home-office.jpg
+headerImage: /images/banners/home-office.jpg
 ---
 
 This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggestion and his [Now Now Now](http://nownownow.com/) movement. The purpose of this page is to share my current focus.

@@ -2,8 +2,8 @@
 title:  "How To Unit Test Express Routes"
 subtitle: "Unit testing of Express routes is often tricky but it can be done. Here's how to do it and why you probably should."
 permalink: /how-to-unit-test-express-routes/
-headerImage: images/banners/unit-testing-express-routes.jpg
-socialImage: images/social/how-to-unit-test-express-routes.jpg
+headerImage: /images/banners/unit-testing-express-routes.jpg
+socialImage: /images/social/how-to-unit-test-express-routes.jpg
 thumbnail: /thumbnails/social/how-to-unit-test-express-routes.jpg
 tags:
     - unit-testing

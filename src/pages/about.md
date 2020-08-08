@@ -4,7 +4,7 @@ title: About Me
 subtitle: Learn a little more about Marc Littlemore
 description: Learn a little more about Marc Littlemore
 permalink: /about/
-headerImage: images/banners/about-bg.jpg
+headerImage: /images/banners/about-bg.jpg
 ---
 
 <p class="f4">I'm Marc Littlemore. I'm a software engineer, a veteran of the video games industry with 18 years of games programming experience, <a href="http://www.djcruze.co.uk">a house music DJ</a> since 1988, an occasional <a href="http://soundcloud.com/djcruze">house music producer</a>, Messenger marketing and chatbot builder, and lover of technology. I'm a husband to my fantastic wife <a href="http://www.clarelittlemore.com">Clare</a> and have two beautiful children.</p>

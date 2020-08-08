@@ -3,8 +3,8 @@ layout: page
 title: Securing Your BBC Identity
 subtitle: Security is a mission, not an intermission...
 permalink: /talks/securing-your-bbc-identity/
-headerImage: images/banners/securing-your-bbc-identity.jpg
-socialImage: images/social/securing-your-bbc-identity-fb.jpg
+headerImage: /images/banners/securing-your-bbc-identity.jpg
+socialImage: /images/social/securing-your-bbc-identity-fb.jpg
 thumbnail: /thumbnails/social/securing-your-bbc-identity-fb.jpg
 tags:
     - talk
