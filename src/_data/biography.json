@@ -1,37 +1,29 @@
 [
   {
     "url": "{{site.url}}/bots/sign-up-bot-building-for-beginners/?signup=website-bio",
-    "title": "FREE Chatfuel Chatbot JSON Guide"
+    "title": "👉🏻 FREE Chatfuel Chatbot JSON Guide 👈🏻"
   },
   {
     "url": "{{site.url}}/javascript-testing-beginners-course/?signup=website-bio ",
-    "title": "FREE JavaScript Testing Course"
+    "title": "👉🏻 FREE JavaScript Testing Course 👈🏻"
   },
 
   {
     "url": "http://twitter.com/marclittlemore",
-    "title": "Follow me on Twitter"
+    "title": "Follow me on Twitter",
+    "icon": "fa-twitter"
   },
 
-  { "url": "https://github.com/MarcL", "title": "Follow me on GitHub" },
+  { "url": "https://github.com/MarcL", "title": "Follow me on GitHub", "icon": "fa-github" },
 
   {
     "url": "https://www.instagram.com/marclittlemore",
-    "title": "Follow me on Instagram"
+    "title": "Follow me on Instagram",
+    "icon": "fa-instagram"
   },
-
   {
     "url": "https://www.reddit.com/user/marclittlemore",
-    "title": "Upvote me on Reddit"
-  },
-
-  {
-    "url": "http://soundcloud.com/djcruze",
-    "title": "Follow DJ Cruze on SoundCloud"
-  },
-
-  {
-    "url": "http://mixcloud.com/djcruzeuk",
-    "title": "Follow DJ Cruze on Mixcloud"
+    "title": "Upvote me on Reddit",
+    "icon": "fa-reddit"
   }
 ]

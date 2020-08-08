@@ -8,7 +8,7 @@ tags:
     - json
     - featured
 headerImage: /images/banners/time-and-date.jpg
-thumbnail: /thumbnails/social/time-and-date.jpg
+# thumbnail: /thumbnails/social/time-and-date.jpg
 ---
 
 {% callout "info" %}

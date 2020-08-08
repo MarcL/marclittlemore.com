@@ -9,13 +9,16 @@
 <body class="avenir helvetica bg-light-gray">
     <div class="pt2 pb0 mw6 center">
         <img src="/images/me/marc-littlemore-512x512.jpg" class="db center br-100 h3 w3 shadow-4" alt="avatar">
-        <h3 class="tc fw6">Marc Littlemore</h3>
+        <h3 class="tc fw6 ttu">Marc Littlemore</h3>
     </div>
     <div class="pt0 pb2 mw6 center">
         {% for bioItem in biography %}
         <article class="mw6 center bg-white br3 pa2 pa3-ns mv3 ba b--black-10 cf shadow-4">
             <div class="fl w-100 tc pv2 pv3-ns">
                 <a href="{{ bioItem.url }}" target="_blank" rel="noreferrer" title="{{ bioItem.title }}" alt="{{ bioItem.title }}" class="f5 f4-ns fw5 link no-underline bg-animate bg-white hover-bg-light-blue">
+                    {% if bioItem.icon %}
+                    <i class="fa {{bioItem.icon}}"></i>
+                    {% endif %}
                     <span>{{bioItem.title}}</span>
                 </a>
             </div>
