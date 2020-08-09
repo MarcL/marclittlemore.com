@@ -2,9 +2,12 @@
 layout: page
 title: How I Almost Died
 subtitle: Back in 2014, I almost died. Here's my story.
-description: Back in 2014, I almost died. Here's my story.
+description: Out of the blue I contracted a bacterial infection in my bowel. It almost killed me. Read what happened to me.
 permalink: /how-i-almost-died/
 headerImage: /images/banners/hospital-lights.jpg
+date: 2015-01-01
+tags:
+    - post
 ---
 
 How do you start to tell someone that you nearly died? That your wife watched you in intensive care, fighting for your life? That your children nearly lost their father when he was only 42?

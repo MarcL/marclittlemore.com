@@ -1,11 +1,12 @@
 [
-  { "name": "Home", "url": "/", "title": "marclittlemore.com" },
-  { "name": "Articles", "url": "/articles/", "title": "Latest articles" },
-  { "name": "Talks", "url": "/talks/", "title": "Ideas I've shared in public" },
+  { "name": "Home", "url": "/", "title": "marclittlemore.com", "tag": null },
+  { "name": "Articles", "url": "/articles/", "title": "Latest articles", "tag": "post" },
+  { "name": "Talks", "url": "/talks/", "title": "Ideas I've shared in public", "tag": "talk" },
   {
     "name": "Chatbots",
     "url": "/bots/",
-    "title": "Learn how to create your own chatbot"
+    "title": "Learn how to create your own chatbot",
+    "tag": null
   },
-  { "name": "About", "url": "/about/", "title": "Find out more about me" }
+  { "name": "About", "url": "/about/", "title": "Find out more about me", "tag": null }
 ]

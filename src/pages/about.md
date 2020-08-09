@@ -19,7 +19,7 @@ My current role is as a Software Engineering Team Lead at the BBC, although I st
 
 If you want to know what games I've worked on then take a look at my non-exhaustive [game list](/games).
 
-My team develops high availability web applications using JavaScript on the client and server using Node.js and React. I've also become a test-driven development evangelist, encouraging the team to write solid code through [testing](/javasript-testing).
+My team develops high availability web applications using JavaScript on the client and server using Node.js and React. I've also become a test-driven development evangelist, encouraging the team to write solid code through [testing](/javascript-testing).
 
 Outside of work you'll find me playing with my kids and helping them to grow up to be wonderful human beings. I also spent the 25+ years DJing house music and producing house music as [DJ Cruze](http://www.djcruze.co.uk/). The site is being rebuilt using [11ty](https://www.11ty.dev/) and should be live soon.
 
