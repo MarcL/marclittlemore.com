@@ -3,8 +3,8 @@ layout: page
 title: JavaScript Testing
 subtitle: Want to learn more about testing your JavaScript code?
 permalink: /javascript-testing/
-headerImage: images/banners/computer-code.jpg
-socialImage: images/social/javascript-testing.jpg
+headerImage: /images/banners/computer-code.jpg
+socialImage: /images/social/javascript-testing.jpg
 description: "Learn more about testing your JavaScript and sign up to my course"
 ---
 

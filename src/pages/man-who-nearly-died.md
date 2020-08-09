@@ -4,7 +4,7 @@ title: How I Almost Died
 subtitle: Back in 2014, I almost died. Here's my story.
 description: Back in 2014, I almost died. Here's my story.
 permalink: /how-i-almost-died/
-headerImage: images/banners/hospital-lights.jpg
+headerImage: /images/banners/hospital-lights.jpg
 ---
 
 How do you start to tell someone that you nearly died? That your wife watched you in intensive care, fighting for your life? That your children nearly lost their father when he was only 42?
@@ -33,7 +33,9 @@ _He was probably the second person to save my life._
 
 Apparently, it all happened very fast. Clare left me at the hospital after visiting until 7pm having been told that I was doing well. She rang again at 10pm to check I was ok and the person who answered the phone said I was fine. She was then rudely awoken at 2.30am on Wednesday morning by the phonecall you never want from a hospital, "You need to come to the hospital immediately. Marc is very ill." My blood pressure had dropped through the floor. I had multi-organ failure and all of my major organs were beginning to shut down.
 
-> You need to come to the hospital immediately. Marc is very ill. {.helvetica .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue .f5 .f4-m .f3-l .lh-copy .measure}
+{% quote %}
+You need to come to the hospital immediately. Marc is very ill.
+{% endquote %}
 
 The symptoms seemed to be those of [sepsis](http://www.nhs.uk/conditions/blood-poisoning/Pages/Introduction.aspx), a condition where the body's immune system goes into overdrive and attempts to protect itself from infection. I was rushed down for a computerised tomography (CT) scan to get a better picture of what was causing the drop in blood pressure. My wife had a worrying wait at 4am as the on-call CT radiologist raced to get into the hospital for this emergency procedure. The scan showed a problem somewhere in my bowel but it wasn't immediately obvious what it was. The order was given to operate that morning to investigate and potential fix the problem with my bowel. Thankfully, one of their best colorectal surgeons was on hand to perform the operation but there was no guarantee that I would survive.
 
@@ -43,7 +45,9 @@ The operation had concluded that I had an [ischemic](https://en.wikipedia.org/wi
 
 I was [intubated](https://en.wikipedia.org/wiki/Tracheal_intubation) to prevent asphixiation, meaning that a large tube was put into my windpipe to keep my airway clear. I was too weak to breathe so my lungs were now controlled by a [ventilator](https://en.wikipedia.org/wiki/Medical_ventilator). I was given [inotropes](https://en.wikipedia.org/wiki/Inotrope) to increase the strength of my heartbeat in an attempt to keep the blood flowing properly to my quickly-dying organs. My blood was passed through a dialysis machine to clean it of the toxins that were busy attacking me. My blood pressure was dangerously low. My body was dying but I was being kept alive by the miracle of modern medicine until they could determine what was wrong. Every treatment that they were given me had the potential to cause knock-on effects elsewhere. The ITU consultant spoke to Clare and my family and told them "his condition is deteriorating, despite increased support, and he is unlikely to survive."
 
-> His condition is deteriorating, despite increased support, and he is unlikely to survive. {.helvetica .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue .f5 .f4-m .f3-l .lh-copy .measure}
+{% quote %}
+His condition is deteriorating, despite increased support, and he is unlikely to survive.
+{% endquote %}
 
 _They were pretty sure I would die that night._
 
@@ -81,6 +85,8 @@ As I write this, it is November 2016 and it is just over two years since the mad
 
 The new normal means thinking about things differently. It means planning holidays which are easy for me to deal with, where I don't have to do too much walking. It means accepting that I'll never run again but instead thinking of another way of exercising which has lower impact, such as cycling. It means setting myself new challenges and spending time with my family in the ways that I can. I'll never be the same as I was but that doesn't really matter any more. What **really** matters is that I'm still here with Clare and my children.
 
-> I'll never be the same as I was but that doesn't really matter any more. What really matters is that I'm still here with Clare and my children. {.helvetica .ml0 .mt0 .pl4 .black-90 .bl .bw2 .b--blue .f5 .f4-m .f3-l .lh-copy .measure}
+{% quote %}
+I'll never be the same as I was but that doesn't really matter any more. What really matters is that I'm still here with Clare and my children.
+{% endquote %}
 
 Thanks for reading this somewhat abridged version of my story. If you're interested in reading more then please take a look at Clare's blog where she writes about it in more detail and much better than I ever could. You can [read our story from the beginning here](http://outofthewoodsblog.com/from-the-beginning/). You can also consider [donating to the Sepsis Trust](http://sepsistrust.org/donate/) who are helping to raise awareness of sepsis, of which there are over 44,000 deaths per year.

@@ -3,8 +3,8 @@ layout: page
 title: 'BBC Account : Engineering Excellence at Strictly Scale'
 subtitle: Learn how the BBC account team build a culture of engineering excellence
 permalink: /talks/bbc-account-engineering-excellence-at-strictly-scale/
-headerImage: images/banners/bbc-account-engineering-excellence-at-strictly-scale.jpg
-socialImage: images/social/bbc-account-engineering-excellence-at-strictly-scale.jpg
+headerImage: /images/banners/bbc-account-engineering-excellence-at-strictly-scale.jpg
+socialImage: /images/social/bbc-account-engineering-excellence-at-strictly-scale.jpg
 thumbnail: /thumbnails/social/bbc-account-engineering-excellence-at-strictly-scale.jpg
 tags:
   - talk

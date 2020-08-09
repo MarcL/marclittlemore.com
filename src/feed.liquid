@@ -29,7 +29,7 @@ sitemap:
         {%- else -%}
         <description><![CDATA[{{ post.templateContent | xmlEscape }}]]></description>
         {%- endif -%}
-        <pubDate>{{ post.date | toUTCString }}</pubDate>
+        <pubDate>{{ post.date | rfc822Date }}</pubDate>
         <link>{{ post.url | prepend: site.url }}</link>
         <guid>{{ post.url | prepend: site.url }}</guid>
       </item>

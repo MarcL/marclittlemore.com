@@ -2,14 +2,14 @@
 title:  "How to validate an email adress using the Chatfuel JSON API"
 subtitle: "When asking your chatbot user for an email address, how do you know if it's valid? Let's look at how you can validate an email address using the Chatfuel JSON API and a Node.js web server."
 permalink: /how-to-validate-an-email-address-using-the-chatfuel-json-api/
-headerImage: images/banners/gmail-interface.jpg
+headerImage: /images/banners/gmail-interface.jpg
 tags:
     - chatbot
     - chatfuel
     - json
 description: "When asking your chatbot user for an email address, how do you know if it's valid? Let's look at how you can validate an email address using the Chatfuel JSON API and a Node.js web server."
-socialImage: images/social/how-to-validate-an-email-address-using-the-chatfuel-json-api.jpg
-thumbnail: /images/thumbnails/social/how-to-validate-an-email-address-using-the-chatfuel-json-api.jpg
+socialImage: /images/social/how-to-validate-an-email-address-using-the-chatfuel-json-api.jpg
+thumbnail: /thumbnails/social/how-to-validate-an-email-address-using-the-chatfuel-json-api.jpg
 ---
 
 Facebook Messenger chatbots are a great addition to your marketing toolbox but they have one big problem.
@@ -96,4 +96,6 @@ Of course, this method has a flaw in that we can't confirm that the username is 
 
 I hope you found this useful. All of the code is available on my [Chatfuel demo Glitch project](https://glitch.com/~chatfuel-demo-bot). Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please [send me a message](/contact). I love to hear from people and I'm always happy to answer your questions.
 
-{% include jsonGuide.html %}
+{% callout "info" %}
+Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my [FREE JSON guide](/bots/sign-up-bot-building-for-beginners/) and you'll have JSON skills in no time!
+{% endcallout %}

@@ -4,7 +4,7 @@ title: Uses
 subtitle: A list of software and hardware that I use regularly
 description: A list of software and hardware that I use every day for software development and audio production.
 permalink: /uses/
-headerImage: images/banners/laptop.jpg
+headerImage: /images/banners/laptop.jpg
 ---
 
 ## Hardware

@@ -4,7 +4,7 @@ title: Chat Bots & Messenger Marketing
 subtitle: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger
 description: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger
 permalink: /bots/
-headerImage: images/banners/chatbots-and-messenger-marketing.jpg
+headerImage: /images/banners/chatbots-and-messenger-marketing.jpg
 videos:
   - title: 'Beginners Guide To Chatfuel, JSON & APIs'
     subtitle: 'Learn all about JSON and integrating with Chatfuel'

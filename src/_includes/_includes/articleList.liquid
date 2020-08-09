@@ -1,0 +1,32 @@
+{%- for article in collection reversed -%}
+<article class="pv4 bt b--black-10 ph3 ph0-l">
+<div class="flex flex-column flex-row-ns">
+<div class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+<a href="{{ article.url }}" class="link dim black">
+<h1 class="f3 roboto mt0 lh-title mb1">{{ article.data.title }}</h1>
+</a>
+{% if article.data.subtitle %}
+<p class="f5 f4-l lh-copy roboto i mv2">
+{{article.data.subtitle}}
+</p>
+{% endif %}
+{% if article.data.description %}
+<p class="f6 f5-l lh-copy roboto">
+{{article.data.description}}
+</p>
+{% endif %}
+</div>
+
+<div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+<a href="{{ article.url }}" class="grow dib">
+
+{% if article.data.thumbnail %}
+<img src="{{article.data.thumbnail}}" class="db" alt="{{article.data.title}}">
+{% else %}
+<img src="{{article.data.headerImage}}" class="db" alt="{{article.data.title}}">
+{% endif %}
+</a>
+</div>
+</div>
+</article>
+{%- endfor -%}

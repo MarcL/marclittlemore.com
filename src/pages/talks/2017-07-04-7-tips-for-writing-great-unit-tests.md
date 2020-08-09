@@ -3,8 +3,8 @@ layout: page
 title: 7 Tips For Writing Great Unit Tests
 subtitle: How do you learn to write great unit tests?
 permalink: /talks/7-tips-for-writing-great-unit-tests/
-headerImage: images/banners/qualities-of-good-unit-tests.jpg
-socialImage: images/social/7-tips-for-writing-great-unit-tests.jpg
+headerImage: /images/banners/qualities-of-good-unit-tests.jpg
+socialImage: /images/social/7-tips-for-writing-great-unit-tests.jpg
 thumbnail: /thumbnails/social/7-tips-for-writing-great-unit-tests.jpg
 tags:
     - talk

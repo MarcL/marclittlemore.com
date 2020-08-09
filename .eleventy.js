@@ -1,24 +1,14 @@
 require('dotenv').config();
 
-const markdownIt = require('markdown-it');
-const markdownItAttributes = require('@gerhobbelt/markdown-it-attrs');
-const escape = require('lodash.escape');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const rfc822Date = require('rfc822-date');
+
+const addAllShortcodes = require('./_eleventy/shortcodes');
+const addAllFilters = require('./_eleventy/filters');
+const markdownLib = require('./_eleventy/markdown');
 
 module.exports = (eleventyConfig) => {
     // Plugins
     eleventyConfig.addPlugin(syntaxHighlight);
-
-    // Create own markdown renderer so we can add class attributes
-    // https://www.11ty.dev/docs/languages/markdown/#markdown-options
-    const markdownItOptions = {
-        html: true,
-    };
-    const markdownLib = markdownIt(markdownItOptions);
-
-    // Set up markdown parser to allow class attributes
-    markdownLib.use(markdownItAttributes);
 
     eleventyConfig.setLibrary('md', markdownLib);
 
@@ -42,38 +32,8 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addLayoutAlias('landingpage-long', 'layouts/landingpage-long.html');
     eleventyConfig.addLayoutAlias('landingpage-thank-you', 'layouts/landingpage-thank-you.html');
 
-    eleventyConfig.addLiquidFilter('markdownify', (value) => {
-        return markdownLib.render(value);
-    });
-
-    eleventyConfig.addLiquidFilter('rfc822Date', (dateValue) => {
-        return rfc822Date(dateValue);
-    });
-
-    const dateToISO = dateValue => new Date(dateValue).toISOString();
-
-    eleventyConfig.addLiquidFilter('toISOString', (dateValue) => {
-        return dateToISO(dateValue);
-    });
-
-    eleventyConfig.addLiquidFilter('toUTCString', (dateValue) => {
-        return new Date(dateValue).toUTCString();
-    });
-
-    eleventyConfig.addLiquidFilter('xmlEscape', (value) => {
-        return escape(value);
-    });
-
-    eleventyConfig.addFilter("collectionLastUpdatedDate", collection => {
-        if( !collection || !collection.length ) {
-            throw new Error( "Collection is empty in collectionLastUpdatedDate filter." );
-        }
-
-        // Newest date in the collection
-        return rfc822Date(
-            new Date(Math.max(...collection.map(item => {return item.date})))
-        );
-    });
+    addAllFilters(eleventyConfig);
+    addAllShortcodes(eleventyConfig);
 
     // Liquid template options
     eleventyConfig.setLiquidOptions({

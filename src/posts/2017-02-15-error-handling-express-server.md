@@ -2,9 +2,9 @@
 title:  "Simple Error Handling For Your Production Express Server"
 subtitle: "Adding error handling to your Express server doesn't have to be confusing."
 permalink: /simple-error-handling-for-your-production-express-server/
-headerImage: images/banners/simple-error-handling-for-your-production-express-server.jpg
-socialImage: images/social/simple-error-handling-for-your-production-express-server.jpg
-thumbnail: /images/thumbnails/social/simple-error-handling-for-your-production-express-server-thumb.jpg
+headerImage: /images/banners/simple-error-handling-for-your-production-express-server.jpg
+socialImage: /images/social/simple-error-handling-for-your-production-express-server.jpg
+thumbnail: /thumbnails/social/simple-error-handling-for-your-production-express-server.jpg
 tags:
     - express
     - javascript
