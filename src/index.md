@@ -2,12 +2,13 @@
 layout: homepage
 permalink: /
 title: Hello, I'm Marc Littlemore
+subtitle: I help people to profit through automation
 ---
 
-I've been a professional software engineer since 1993 and I build and manage high performing engineering teams and applications at the BBC.
+I've been a professional software engineer since 1993 and I build and manage high performing software engineering teams at the BBC.
 
-I love software development and like to [write about it](/articles). I'm building digital products and _I love to learn and teach others what I know._
+I use my software development skills to help people to make more money by automating their marketing using automation with [chatbots](/bots).
 
-I can teach you more about [JavaScript testing](/javascript-testing) and [chatbot development](/bots). If you want to know more then you should also follow my journey on [Twitter](https://twitter.com/marclittlemore).
+I also teach developers how to level up their careers by learning how to properly [test their code](/javascript-testing).
 
-Learn more [about me here](/about).
+### Learn more [about me here](/about).
