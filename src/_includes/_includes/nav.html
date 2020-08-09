@@ -2,7 +2,7 @@
     <nav class="fw6 ttu tracked tc dn db-l db-m pt2" id="navLinksWeb">
         {% for menuItem in mainMenu %}
             {% if page.url contains menuItem.url and
-                menuItem.url != "/" or page.url == "/" and menuItem.url == "/" %}        
+                menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
                 <a class="f7 f5-ns link dim mr2 mr3-ns near-black pb1 bb bw2 b--red" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
             {% else %}
                 <a class="f7 f5-ns link dim mr2 mr3-ns near-black" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>

@@ -1,10 +1,13 @@
 ---
 layout: page
 title: Uses
-subtitle: A list of software and hardware that I use regularly
-description: A list of software and hardware that I use every day for software development and audio production.
+subtitle: Software and hardware that I use.
+description: A list of software and hardware that I use almost every day for software development and audio production.
 permalink: /uses/
 headerImage: /images/banners/laptop.jpg
+date: 2020-01-30
+tags:
+    - post
 ---
 
 ## Hardware
