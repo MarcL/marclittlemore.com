@@ -15,7 +15,7 @@ You should follow my journey on [Twitter](https://www.twitter.com/marclittlemore
 
 You'll find my code on [GitHub](https://www.github.com/MarcL) and I sometimes post photos on [Instagram](https://www.instagram.com/marclittlemore).
 
-My current role is as a Software Engineering Team Lead at the BBC, although I started my software development journey in 1993 in the video games industry. I came to the BBC to help with their global games strategy to simplify third party developers integration with BBC gaming technologies. Since 2015 ,y focus has shifted and I'm now responsible for the audience-facing authentication and authorisation systems which provide a better personalised experience for all.
+My current role is as a Software Engineering Team Lead at the BBC, although I started my software development journey in 1993 in the video games industry. I came to the BBC to help with their global games strategy to simplify third party developers integration with BBC gaming technologies. Since 2015, my focus has shifted and I'm now responsible for the audience-facing authentication and authorisation systems which provide a better personalised experience for all.
 
 If you want to know what games I've worked on then take a look at my non-exhaustive [game list](/games).
 
