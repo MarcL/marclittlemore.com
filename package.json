@@ -11,6 +11,8 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@gerhobbelt/markdown-it-attrs": "^3.0.3-19",
     "@ungap/url-search-params": "^0.2.2",
+    "cache-manager": "^3.3.0",
+    "cache-manager-fs": "^1.0.8",
     "dotenv": "^8.2.0",
     "googleapis": "^54.0.0",
     "got": "^11.5.2",
