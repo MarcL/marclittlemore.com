@@ -25,12 +25,12 @@
     "xml2js": "^0.4.23"
   },
   "scripts": {
-    "build": "yarn build:all",
+    "build": "ELEVENTY_ENV=production yarn build:all",
     "build:all": "yarn build:images && yarn build:js && yarn build:site",
     "build:images": "node scripts/thumbnails.js",
     "build:site": "eleventy",
     "build:js": "parcel build src/clientjs/index.js --out-dir src/distjs --out-file bundle.js",
     "link-check": "blc http://localhost:4000 -ro",
-    "serve": "eleventy --serve"
+    "serve": "ELEVENTY_ENV=dev eleventy --serve"
   }
 }
