@@ -20,11 +20,23 @@ const collectionLastUpdatedDateFilter = collection => {
     );
 };
 
+const starRating = value => {
+    const rating = Number.parseInt(value, 10);
+
+    const ratingList = [];
+    for(let i = 0; i < rating; i++) {
+        ratingList.push('<i class="fas fa-star"></i>');
+    }
+
+    return ratingList.join('');
+};
+
 const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('rfc822Date', rfc822DateFilter);
     eleventyConfig.addLiquidFilter('toISOString', toISOStringFilter);
     eleventyConfig.addLiquidFilter('xmlEscape', xmlEscapeFilter);
     eleventyConfig.addLiquidFilter('markdownify', markdownifyFilter);
+    eleventyConfig.addLiquidFilter('starRating', starRating);
     eleventyConfig.addFilter('collectionLastUpdatedDate', collectionLastUpdatedDateFilter);
 };
 

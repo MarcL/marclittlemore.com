@@ -1,18 +1,16 @@
 <div class="w-100">
 {% for book in bookshelf %}
-<div class="cf">
-<a href="{{book.book.link}}" target="_blank" rel="noreferrer" class="link grow">
-<div class="fl w-20">
-<img src="{{book.book.image_url}}" title="{{book.book.title}}" alt="{{book.book.title}}" />
+<article class="cf pv3 bt bw1 b--black-10">
+<a href="{{book.book.link}}" target="_blank" rel="noreferrer" class="link blue grow">
+<div class="fl w-40 w-10-ns">
+<img class="shadow-4" src="{{book.book.image_url}}" title="{{book.book.title}}" alt="{{book.book.title}}" />
 </div>
-<div class="fl w-80">
-<h2 class="f4 fw7 near-black">{{book.book.title}}</h2>
-<h3 class="f5 silver">By {{book.book.authors.author.name}}</h3>
-{% if book.read_at %}
-<h4 class="f6 fw3">{{book.read_at}}</h4>
-{%endif %}
-</div>
+<div class="fl w-60 w-90-ns pl0 pl4-ns">
+<h2 class="f5 f4-ns fw7 near-black ma0">{{book.book.title}}</h2>
+<h3 class="f6 f5-ns mid-gray ma0">By {{book.book.authors.author.name}}</h3>
+<div class="gold">{{book.rating | starRating}}</div>
 </div>
 </a>
+</article>
 {% endfor %}
 </div>
