@@ -1,0 +1,16 @@
+<div class="w-100">
+{% for book in bookshelf %}
+<article class="cf pv3 bt bw1 b--black-10">
+<a href="{{book.book.link}}" target="_blank" rel="noreferrer" class="link blue grow">
+<div class="fl w-40 w-10-ns">
+<img class="shadow-4" src="{{book.book.image_url}}" title="{{book.book.title}}" alt="{{book.book.title}}" />
+</div>
+<div class="fl w-60 w-90-ns pl0 pl4-ns">
+<h2 class="f5 f4-ns fw7 near-black ma0">{{book.book.title}}</h2>
+<h3 class="f6 f5-ns mid-gray ma0">By {{book.book.authors.author.name}}</h3>
+<div class="gold">{{book.rating | starRating}}</div>
+</div>
+</a>
+</article>
+{% endfor %}
+</div>

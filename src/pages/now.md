@@ -18,9 +18,6 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 - Mountain biking on an almost daily basis
 - Updating my [DJ Cruze](http://www.djcruze.co.uk/) website using [11ty](https://www.11ty.dev/)
 
-## Currently reading
+Check out the current [books I'm reading](/books) here.
 
-- [Essentialism: The Disciplined Persuit of Less](https://amzn.to/3ivZ57Z) by [Greg McKeown](https://gregmckeown.com/)
-- [Your Music and People](https://sivers.org/m) by [Derek Sivers](https://sivers.org)
-
-**Last updated:** 3rd August, 2020
+**Last updated:** 22nd August, 2020
