@@ -1,6 +1,6 @@
 const cachedHttpRequest = require('../../helpers/cachedHttpRequest');
 
-const {parseStringPromise} = require('xml2js');
+const xml2js = require('xml2js');
 
 const getGoodreadsShelf = async (shelfName) => {
     try {
@@ -19,9 +19,10 @@ const getGoodreadsShelf = async (shelfName) => {
             }
         });
     
-        const data = await parseStringPromise(response);
-    
-        return data.GoodreadsResponse.reviews[0].review;
+        const parser = xml2js.Parser({explicitArray: false});
+        const data = await parser.parseStringPromise(response);
+
+        return data.GoodreadsResponse.reviews.review;
     }
     catch(error) {
         console.error(error.toString());

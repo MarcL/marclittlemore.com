@@ -1,0 +1,18 @@
+<div class="w-100">
+{% for book in bookshelf %}
+<div class="cf">
+<a href="{{book.book.link}}" target="_blank" rel="noreferrer" class="link grow">
+<div class="fl w-20">
+<img src="{{book.book.image_url}}" title="{{book.book.title}}" alt="{{book.book.title}}" />
+</div>
+<div class="fl w-80">
+<h2 class="f4 fw7 near-black">{{book.book.title}}</h2>
+<h3 class="f5 silver">By {{book.book.authors.author.name}}</h3>
+{% if book.read_at %}
+<h4 class="f6 fw3">{{book.read_at}}</h4>
+{%endif %}
+</div>
+</div>
+</a>
+{% endfor %}
+</div>

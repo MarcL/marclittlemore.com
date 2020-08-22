@@ -8,14 +8,8 @@ headerImage: /images/banners/books.jpg
 
 ## Books I'm Reading
 
-{% for book in goodreadsBooks.currentlyReading %}
-### {{book.book[0].title[0]}}
-<pre>{{book.book[0]}}</pre>
-{% endfor %}
+{% include partials/bookshelf.liquid, bookshelf: goodreadsBooks.currentlyReading %}
 
 ## Books I've Read
 
-{% for book in goodreadsBooks.read %}
-### {{book.book[0].title[0]}}
-<pre>{{book.book[0]}}</pre>
-{% endfor %}
+{% include partials/bookshelf.liquid, bookshelf: goodreadsBooks.read %}
