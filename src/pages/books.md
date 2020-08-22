@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Books"
-description: Books I'm currently reading or have read.
+description: A look at the books on my bookshelf.
 permalink: /books/
 headerImage: /images/banners/books.jpg
 ---
