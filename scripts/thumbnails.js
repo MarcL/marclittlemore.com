@@ -121,7 +121,8 @@ const convertAllDirectoryImages = async (imagesDirectory) => {
 const convertAllFiles = async () => {
     const imageDirectories = [
         'social',
-        'banners'
+        'banners',
+        'posts'
     ];
 
     await Promise.all(imageDirectories.map((imageDirectory) => {
