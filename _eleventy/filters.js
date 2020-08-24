@@ -31,12 +31,26 @@ const starRating = value => {
     return ratingList.join('');
 };
 
+const thumbnailUrl = imageUrl => {
+    const thumbnailSuffix = '-thumb';
+    const imageUrlParts = imageUrl.split('/');
+    const imageName = imageUrlParts[imageUrlParts.length - 1];
+    const [filename, extension] = imageName.split('.');
+    const newImageName = `${filename}${thumbnailSuffix}.${extension}`;
+    const newImageParts = [...imageUrlParts.slice(0, imageUrlParts.length - 1), newImageName];
+    
+    const newImageUrl = newImageParts.join('/').replace('images', 'thumbnails');
+
+    return newImageUrl;
+};
+
 const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('rfc822Date', rfc822DateFilter);
     eleventyConfig.addLiquidFilter('toISOString', toISOStringFilter);
     eleventyConfig.addLiquidFilter('xmlEscape', xmlEscapeFilter);
     eleventyConfig.addLiquidFilter('markdownify', markdownifyFilter);
     eleventyConfig.addLiquidFilter('starRating', starRating);
+    eleventyConfig.addLiquidFilter('thumbnailUrl', thumbnailUrl);
     eleventyConfig.addFilter('collectionLastUpdatedDate', collectionLastUpdatedDateFilter);
 };
 

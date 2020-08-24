@@ -23,7 +23,7 @@
 {% if article.data.thumbnail %}
 <img src="{{article.data.thumbnail}}" class="db" alt="{{article.data.title}}">
 {% else %}
-<img src="{{article.data.headerImage}}" class="db" alt="{{article.data.title}}">
+<img src="{{article.data.headerImage | thumbnailUrl}}" class="db" alt="{{article.data.title}}">
 {% endif %}
 </a>
 </div>
