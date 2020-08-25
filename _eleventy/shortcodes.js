@@ -20,7 +20,7 @@ const callout = (content, type = 'info') => {
     const renderedHtml = markdownLib.render(content);
 
     const iconInfo = `<div class="dtc w-20 w-10-l tc v-mid"><i class="fa fa-2x pa1 bg-white br-100 shadow-4 ${chosenType.icon}"aria-hidden="true"></i></div>`;
-    return `<div class="dt fw5 bt bw2 br2 br--bottom shadow-4 ph3 pv2 mv2 ${chosenType.background}">${iconInfo}<div class="w-90">${renderedHtml}</div></div>`
+    return `<div class="w-100 dt fw5 bt bw2 br2 br--bottom shadow-4 ph3 pv2 mv2 ${chosenType.background}">${iconInfo}<div class="w-90">${renderedHtml}</div></div>`
 };
 
 const quote = (content) => {

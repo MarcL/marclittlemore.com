@@ -10,29 +10,33 @@ scripts:
 <body class="avenir helvetica bg-white">
     {% include nav.html %}
 
-    <main class="pv3 pv4-ns ph3 ph3-m ph0-l bg-white mw8 center">
-        <div class="w-100 pt2 pt3-l">
-            <p class="f4 f3-l fw6 tl mt0 mb1 mw6 dark-red ttu">
-                Hello, I’m Marc
-            </p>
-            <h1 class="db dtc-ns tl f2 f1-l mv0 w-100">{{subtitle}}</h1>
-        </div>
-
-        <section id="main-content" class="dt w-100 cf ph0">
-            <div class="db dtc-ns w-100 f3 lh-title">
-                {{content}}
+    <main class="">
+        <section class="bg-white pv3 pv4-ns ph3 ph3-m ph0-l mw8 center">
+            <div class="w-100 pt2 pt3-l">
+                <p class="f4 f3-l fw6 tl mt0 mb1 mw6 dark-red ttu">
+                    Hello, I’m Marc
+                </p>
+                <h1 class="db dtc-ns tl f2 f1-l mv0 w-100">{{subtitle}}</h1>
             </div>
+    
+            <section id="main-content" class="dt w-100 cf ph0">
+                <div class="db dtc-ns w-100 f3 lh-title">
+                    {{content}}
+                </div>
+            </section>
         </section>
 
         {% if collections.featured.size > 0 %}
-        <section id="featured-content" class="w-100 ph0 pt3">
-            <div class="w-100">
-                <h2 class="f2 tl mv0">Featured articles</h2>
-            </div>
-            <div class="cf w-100">
-                {% include articleList, collection: collections.featured %}
-            </div>
-        </section>
+        <div class="bg-light-gray">
+            <section id="featured-content" class="w-100 ph0 pt3 mw8 center">
+                <div class="w-100">
+                    <h2 class="f3 f2-ns tc pb2 mv1">Latest</h2>
+                </div>
+                <div class="cf w-100 roboto lh-copy f4-ns f5">
+                    {% include articleList, collection: collections.featured %}
+                </div>
+            </section>
+        </div>
         {% endif %}
     </main>
 

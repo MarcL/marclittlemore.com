@@ -1,9 +1,12 @@
 ---
 layout: page
 title: "Books"
-description: A look at the books on my bookshelf.
+description: I've tried to read a lot more books in the past few years. This is a look at the books on my bookshelf and those that I'm currently reading.
 permalink: /books/
 headerImage: /images/banners/books.jpg
+date: 2020-08-23
+tags:
+    - featured
 ---
 
 ## Reading at the moment
