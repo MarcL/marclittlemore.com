@@ -11,4 +11,6 @@ I use my software development skills to help people to make more money by automa
 
 I also teach developers how to level up their careers by learning how to properly [test their code](/javascript-testing).
 
-### Learn more [about me here](/about).
+{% callout "tip" %}
+Learn more [about me here](/about)
+{% endcallout %}

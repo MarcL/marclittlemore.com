@@ -2,10 +2,12 @@
 layout: page
 title: Podcasts
 # subtitle: Interviews with me
-description: Podcasts and interviews with me.
+description: Over the past couple of years, some wonderful podcasters have asked me to contribute to their shows. Enjoy a collection of interviews and discussions about technology and life.
 permalink: /podcasts/
 headerImage: /images/banners/interview-microphone-headphones.jpg
 date: 2020-08-25
+tags:
+    - featured
 ---
 
 Over the past couple of years, some wonderful podcasters have asked me to contribute to their shows. I talk about technology, the games industry, my love of learning, and how I try and achieve a postive work-life balance. Take a listen to one of the shows below to hear my thoughts and stories.
