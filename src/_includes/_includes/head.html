@@ -28,10 +28,6 @@
     {% include social/googleTracking.html %}
     {% include social/socialMediaTags.html %}
 
-    {% if hideSumo == yes %}
-    <script src="//load.sumome.com/" data-sumo-site-id="{{ site.sumoMeId }}" async="async"></script>
-    {% endif %}
-
     {% if scripts != 0 %}
         {% for script in scripts %}
             <script type="text/javascript" src="{{script}}" async></script>
