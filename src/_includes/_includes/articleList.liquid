@@ -12,20 +12,36 @@
 {% endif %}
 {% if article.data.description %}
 <p class="f6 f5-l lh-copy roboto">
-{{article.data.description}}
+{{article.data.description | markdownify}}
 </p>
 {% endif %}
+{%- if article.data.icons -%}
+<div class="gray tc">
+{%- for icon in article.data.icons -%}
+<i class="fa fa-{{icon}} fa-3x ph2"></i>
+{% endfor %}
+</div>
+{%- endif -%}
 </div>
 
 <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+
+{% if article.url %}
 <a href="{{ article.url }}" class="grow dib">
+{% endif %}
 
 {% if article.data.thumbnail %}
-<img src="{{article.data.thumbnail}}" class="db" alt="{{article.data.title}}">
-{% else %}
-<img src="{{article.data.headerImage | thumbnailUrl}}" class="db" alt="{{article.data.title}}">
+<img src="{{article.data.thumbnail}}" class="db shadow-4" alt="{{article.data.title}}">
+{% elsif article.data.headerImage %}
+<img src="{{article.data.headerImage | thumbnailUrl}}" class="db shadow-4" alt="{{article.data.title}}">
+{% elsif article.data.image %}
+<img src="{{article.data.image}}" class="db shadow-4" alt="{{article.data.title}}">
 {% endif %}
+
+{% if article.url %}
 </a>
+{% endif %}
+
 </div>
 </div>
 </article>
