@@ -1,15 +1,18 @@
 [
   {
     "url": "{{site.url}}/bots/sign-up-bot-building-for-beginners/?signup=website-bio",
-    "title": "👉🏻 FREE Chatfuel Chatbot JSON Guide 👈🏻"
+    "title": "🤖 FREE Chatfuel Chatbot JSON Guide 🤖"
   },
   {
-    "url": "{{site.url}}/javascript-testing-beginners-course/?signup=website-bio ",
-    "title": "👉🏻 FREE JavaScript Testing Course 👈🏻"
+    "url": "{{site.url}}/javascript-testing-beginners-course/?signup=website-bio",
+    "title": "💻 FREE JavaScript Testing Course 💻"
   },
-
   {
-    "url": "http://twitter.com/marclittlemore",
+    "url": "https://gumroad.com/marclittlemore",
+    "title": "👉🏻 Check out my Gumroad products 👈🏻"
+  },
+  {
+    "url": "https://twitter.com/marclittlemore",
     "title": "Follow me on Twitter",
     "icon": "fa-twitter"
   },
