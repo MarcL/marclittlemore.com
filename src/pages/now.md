@@ -15,10 +15,10 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 ## Currently doing
 
 - Updating my [DJ Cruze](http://www.djcruze.co.uk/) website using [11ty](https://www.11ty.dev/) - almost finished
-- Reading more about [personal knowledge management](https://en.wikipedia.org/wiki/Personal_knowledge_management)
 - Learning to use [Obsidian](https://obsidian.md/) for better note taking
+- Writing a Telegram bot to capture Obsidian links
 - Working out what side project I should work on
 
 Check out the current [books I'm reading](/books) here.
 
-**Last updated:** 8th October, 2020
+**Last updated:** 12th November, 2020
