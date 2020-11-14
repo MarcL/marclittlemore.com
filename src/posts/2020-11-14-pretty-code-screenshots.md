@@ -2,7 +2,7 @@
 title:  "Create pretty code screenshots"
 subtitle: "Learn how to make pretty code screenshots and win developer Twitter!"
 permalink: /create-pretty-code-screenshots/
-headerImage: /images/banners/create-pretty-code-screenshots.jpg
+headerImage: /images/banners/create-pretty-code-screenshots.png
 thumbnail: /thumbnails/social/different-types-of-software-testing.jpg
 description: "Want to share pretty code screenshots with your developer friends on Twitter? Read on to find out how."
 tags:
