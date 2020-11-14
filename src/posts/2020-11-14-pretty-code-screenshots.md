@@ -1,9 +1,8 @@
 ---
 title:  "Create pretty code screenshots"
-subtitle: "Learn how to make pretty code screenshots and win developer Twitter!"
+subtitle: "Learn how to make pretty code screenshots and impress other developers on Twitter!"
 permalink: /create-pretty-code-screenshots/
 headerImage: /images/banners/create-pretty-code-screenshots.png
-thumbnail: /thumbnails/social/different-types-of-software-testing.jpg
 description: "Want to share pretty code screenshots with your developer friends on Twitter? Read on to find out how."
 tags:
     - devtip
@@ -50,6 +49,12 @@ Cutting and pasting code from your open project will allow Polacode to match you
 
 ### [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 
+Similar to Polacode, CodeSnap is another VS Code extension. Again, you can easily install it via the VS Code extensions sidebar. CodeSnap is a bit more fully featured than Polacode and allows more adjustments in the settings menu. It also has quick access by right clicking in the current window to choose it from the pop-up menu.
+
+![CodeSnap screenshot](/images/posts/codesnap-screenshot.png)
+
+One of the advantages of CodeSnap over Polacode is that it automatically captures any text in your clipboard and creates a pretty code screenshot based on that. It's also attempts to
+
 ## Non-code screenshots
 
 In some cases you might not need to take screenshots of code. Instead you can make pretty screenshots of websites, photos, or any other image you might have. There are a few ways to do this.
@@ -60,28 +65,31 @@ In some cases you might not need to take screenshots of code. Instead you can ma
 
 [Screely](https://www.screely.com/) is a great website which works in a similar way to Carbon. It allows you to use any image file and displays it in a browser-style window. Again, you have the ability to style the image with a variety of options for the background colour, padding, and window type and style. Have fun and make your non-code images beautiful too.
 
+## Using your operating system
+
+While there are websites and code editor extensions you can use, maybe you just want to use your operating system. You can just take screenshots of your code using Windows or Mac OSX. You'll have your styling and code theme exactly the same as you see it on the screen. Let's look at how we can do that.
+
 ### Windows users
 
-https://www.businessinsider.com/how-to-screenshot-on-windows
+Windows 10 makes it simple to save a copy of whatever is on your screen by using the "Print Screen" key on your keyboard. This if normally labelled as "PrtScn" on a Windows keyboard and is often located on the top row near the function keys. On laptops, you often have to hold down the function key first before pressing "PrtScn".
 
-The simplest way to save a copy of whatever is on your computer screen is to simply press the "Print Screen" key on your keyboard. It's usually labeled "PrtScn" (or something very similar) and is located in the top row, among or near the Function keys. 
+If you press "PrtScn" on its own then it will copy the entire screen to the clipboard. You can then paste the image into Microsoft Paint or similar picture editing software.
 
-On some keyboards (particularly laptops) you might need to trigger the Print Screen using the Function key (in other words, hold the Function key and then press PrtScn).
+If you use press the Alt key and "PrtScn" then this copies the active window into the clipboard. Again, you'll need to paste this into your picture editing software to save it.
 
-Press Alt + PrtScn. This copies the active window to the clipboard, which you can paste into another program. 
+If you press the Windows key and "PrtScn" then it'll save the entire screen as an image file. This will be saved in the "Pictures" folder in a sub-folder called "Screenshots".
 
 ### Mac users
 
-https://www.cnet.com/how-to/mac-screenshots-4-ways-to-capture-your-macbooks-screen/
+Mac users also have easy ways to create good looking screenshots.
 
-Shift-Command-4 
-Use this keyboard combo to turn your cursor into a crosshair, which you can drag to select a portion of your screen to capture. Release the mouse button or trackpad to take the shot.
+Use "Shift + Command + 4" to turn the cursor into a crosshair. This then allows you to drag and select part of the screen to capture as an image. If you release the mouse, this gets saved to your desktop (unless you've [changed the folder](https://www.macworld.co.uk/how-to/change-where-mac-screenshots-saved-3682381/) you save images to.)
 
-You have a number of other options after hitting Shift-Command-4:
+If you press and hold the space bar before releasing the mouse button, you can move the selected area around the screen before taking the screenshot. This is useful for changing your selection and making it pixel perfect. Release the mouse button to save the image to your selected screenshot folder.
 
-Press and release the space bar: The crosshair turns into a little camera icon, which you can move over any open window. Click on your desired window to take a screenshot of it. A screenshot captured by this method features a white border around the window with a bit of a drop shadow.
+If you press "Shift + Command + 4" and then press the space bar, this turns the cursor into a camera icon. If you move over any open window and press the left mouse button, this will save an image of the whole window, including the window bar, to your chosen screenshot folder. This is a great way to make screenshots that look great.
 
-Press and hold the space bar (after dragging to highlight an area but before releasing the mouse button or trackpad): This locks in the shape and size of the selection area but lets you reposition it on the screen. It's very handy if your initial selection area is off by a few pixels; just hold down the space bar to reposition it before releasing the mouse button to snap a screenshot.
+*****
 
 Hold down the Shift key (after dragging to highlight an area but before releasing the mouse button or trackpad): This locks in each side of the selection area made with the crosshairs save the bottom edge, letting you move your mouse up or down to position the bottom edge. 
 
