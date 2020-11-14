@@ -9,7 +9,7 @@ tags:
     - devtip
 ---
 
-If you're a developer, and you hang out on developer Twitter, then you'll have seen people sharing their hot code tip. They're often accompanied by code examples and the hot tip fire emoji 🔥.
+If you're a developer, and you hang out on developer Twitter, then you'll have seen people sharing their hot code tips. They're often accompanied by code examples and the "hot tip" fire 🔥 or lightbulb 💡 emojis.
 
 Here's a great example from [Simon Høiberg](https://twitter.com/SimonHoiberg):
 
@@ -27,7 +27,7 @@ There are many tools available to create these so let's take a look at how to cr
 
 ![Carbon screenshot](/images/posts/carbon-screenshot.png)
 
-[Carbon](https://carbon.now.sh/) is one of the easiest tools to use. You can quickly create great looking code screenshots on their website. Their code is also [open source on GitHub](https://github.com/carbon-app/carbon) if you want to use it yourself.
+[Carbon](https://carbon.now.sh/) is one of the easiest tools to use. There are no applications or extensions to install. You can quickly create great looking code screenshots on their website. Their code is also [open source on GitHub](https://github.com/carbon-app/carbon) if you want to use it yourself.
 
 Type your code into their online editor and you can see a prettified version of it inside a Mac-styled window. It allows you to choose a variety of code themes and can syntax highlight your code in various programming languages. You can also alter the background colour, padding, and many other window or editor options. Play around with it to see what you can create.
 
@@ -36,17 +36,19 @@ If you use [GitHub gists](https://docs.github.com/en/free-pro-team@latest/github
 {% endcallout %}
 
 
-## Extensions if you use VS Code
+## VS Code extensions
 
-### Polacode
+If you're a developer who uses [VS Code](https://code.visualstudio.com/) there are a couple of extensions which will make creating pretty code screenshots incredibly easy. VS Code extensions add new features, themes, and more to the editor. If you install one of these extensions, you can avoid the need to use an external website and screenshot your code instantly.
 
-#### Download link
-[Polacode VS Code Extension](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
+### [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 
-### CodeSnap
+I've used this extension for a while and it's an easy way to create shareable screenshots of your code without leaving the editor. Install it via the extensions sidebar as you would with other extensions. You can then use the command palatte to choose Polacode. This will bring up a new tab where you can cut and past code into the Polacode window.
 
-#### Download link
-[CodeSnap VS Code Extension](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
+![Polacode screenshot](/images/posts/polacode-screenshot.png)
+
+Cutting and pasting code from your open project will allow Polacode to match your current theme. Hit the button underneath the code snippet and you'll get a lovely code screenshot to share. You can update the background colour and shadow using VS Code's settings for the extension. The only issue I have with this extension is that it struggles with longer lines of code. These often wrap onto the next line which isn't as aesthetically pleasing. For this you'll have to edit the code yourself, perhaps using [Prettier](https://prettier.io/) or similar.
+
+### [CodeSnap](https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap)
 
 ## Non-code screenshots
 
@@ -58,7 +60,7 @@ In some cases you might not need to take screenshots of code. Instead you can ma
 
 [Screely](https://www.screely.com/) is a great website which works in a similar way to Carbon. It allows you to use any image file and displays it in a browser-style window. Again, you have the ability to style the image with a variety of options for the background colour, padding, and window type and style. Have fun and make your non-code images beautiful too.
 
-### Windows
+### Windows users
 
 https://www.businessinsider.com/how-to-screenshot-on-windows
 
@@ -68,7 +70,7 @@ On some keyboards (particularly laptops) you might need to trigger the Print Scr
 
 Press Alt + PrtScn. This copies the active window to the clipboard, which you can paste into another program. 
 
-### Mac
+### Mac users
 
 https://www.cnet.com/how-to/mac-screenshots-4-ways-to-capture-your-macbooks-screen/
 
