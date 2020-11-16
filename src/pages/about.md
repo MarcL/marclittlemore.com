@@ -11,9 +11,9 @@ I'm Marc Littlemore. I'm a software engineer, a veteran of the video games indus
 
 I also nearly died from multiple organ failure due to sepsis after contracting a streptococcal infection in June 2014. I've written a brief version of [how I nearly died](/how-i-almost-died/) so please take a look if you wonder what happened. Obviously I'm still here but you can read about what happened and how our lives have changed. My wife Clare is blogging about our experience of my illness in more detail so you should probably read it on her [Out Of The Woods Blog](http://outofthewoodsblog.com).
 
-You should follow my journey on [Twitter](https://www.twitter.com/marclittlemore) as I start to build and document how I build my online business.
+You should follow my journey on [Twitter]({{socialMedia.twitter.url}}) as I start to build and document how I build my online business.
 
-You'll find my code on [GitHub](https://www.github.com/MarcL) and I sometimes post photos on [Instagram](https://www.instagram.com/marclittlemore).
+You'll find my code on [GitHub]({{socialMedia.github.url}}) and I sometimes post photos on [Instagram]({{socialMedia.instagram.url}}).
 
 My current role is as a Software Engineering Team Lead at the BBC, although I started my software development journey in 1993 in the video games industry. I came to the BBC to help with their global games strategy to simplify third party developers integration with BBC gaming technologies. Since 2015, my focus has shifted and I'm now responsible for the audience-facing authentication and authorisation systems which provide a better personalised experience for all.
 
@@ -23,4 +23,4 @@ My team develops high availability web applications using JavaScript on the clie
 
 Outside of work you'll find me playing with my kids and helping them to grow up to be wonderful human beings. I also spent the 25+ years DJing house music and producing house music as [DJ Cruze](http://www.djcruze.co.uk/). The site is being rebuilt using [11ty](https://www.11ty.dev/) and should be live soon.
 
-If you want to know more then you should also follow my journey on [Twitter](https://twitter.com/marclittlemore).
+If you want to know more then you should also follow my journey on [Twitter]({{socialMedia.twitter.url}}).
