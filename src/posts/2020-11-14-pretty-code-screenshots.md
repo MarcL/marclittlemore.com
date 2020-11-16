@@ -1,6 +1,6 @@
 ---
 title:  "Create pretty code screenshots"
-subtitle: "Learn how to make pretty code screenshots and impress other developers on Twitter!"
+subtitle: "Learn how to make pretty code screenshots and impress your developer friends on Twitter!"
 permalink: /create-pretty-code-screenshots/
 headerImage: /images/banners/create-pretty-code-screenshots.png
 description: "Want to share pretty code screenshots with your developer friends on Twitter? Read on to find out how."
@@ -16,11 +16,11 @@ Here's a great example from [Simon Høiberg](https://twitter.com/SimonHoiberg):
 
 These are _not ordinary code screenshots_ straight from a code editor. They contain the code, syntax highlighting for the language, and are often embedded in a browser window with a colourful background.
 
-**It's a beautiful code screenshot!**
+**🔥 It's a beautiful code screenshot!**
 
 If you read the comments on these code tweets, you'll usually see a list of people asking how to create such pretty code screenshots. So how do we do it?
 
-There are many tools available to create these so let's take a look at how to create them then you can share them too.
+Read on to find out how to create beautiful code screenshots to share with your Twitter or Instagram followers.
 
 ## [Carbon](https://carbon.now.sh)
 
@@ -89,4 +89,6 @@ Mac users also have easy ways to create good looking screenshots using the OSX o
 
 - If you press `Shift + Command + 4` (`⇧ + ⌘ + 4`) and then press the space bar, this turns the cursor into a camera icon. If you move over any open window and press the left mouse button, this will save an image of the whole window, including the window bar, to your chosen screenshot folder. This is a great way to make screenshots that look great.
 
-Got any other ways to style your images that I've not mentioned? [Send me a message](./contact) and let me know. 
+Got any other ways to style your images that I've not mentioned? [Send me a message](./contact) and let me know.
+
+Like this post? You should [follow me on Twitter]({{socialMedia.twitter.url}})
