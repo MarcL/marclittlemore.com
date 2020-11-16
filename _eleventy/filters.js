@@ -51,6 +51,7 @@ const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('markdownify', markdownifyFilter);
     eleventyConfig.addLiquidFilter('starRating', starRating);
     eleventyConfig.addLiquidFilter('thumbnailUrl', thumbnailUrl);
+    eleventyConfig.addFilter('keys', object => Object.keys(object));
     eleventyConfig.addFilter('collectionLastUpdatedDate', collectionLastUpdatedDateFilter);
 };
 
