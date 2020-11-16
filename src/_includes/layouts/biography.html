@@ -27,7 +27,9 @@
         </div>
 
     <footer class="pv4 ph3 ph5-ns tc bg-light-gray">
+    {% assign socialMediaKeys = socialMedia | keys %}
     {% for socialItem in socialMedia %}
+        {% assign socialItem = socialMedia[socialMediaKey] %}
         {% if socialItem.external %}
         <a href="{{ socialItem.url }}" target="_blank" rel="noreferrer" title="{{ socialItem.title }}" class="link dark-gray hover-silver dib h2 w2 mr3">
             <span class="fa-stack fa-lg">

@@ -84,7 +84,7 @@ Hopefully this been a brief but helpful walkthrough of the different types of so
 
 {% include cards/youTubeEmbed.html, youTubeId: "pMmXJcDLUFA" %}
 
-If this post was valuable to you, you can [follow my journey on Twitter](https://twitter.com/marclittlemore).
+If this post was valuable to you, you can [follow my journey on Twitter]({{socialMedia.twitter.url}}).
 
 {% callout "info" %}
 Want to learn more about testing your JavaScript code but don't know where to start? Get my [FREE 7-day testing course](/javascript-testing-beginners-course/?signup=testing-page") and you'll be a JavaScript testing expert in no time!

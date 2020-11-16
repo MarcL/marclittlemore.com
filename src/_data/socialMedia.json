@@ -1,36 +1,36 @@
-[
-  {
+{
+  "feed":   {
     "name": "RSS Feed",
     "url": "/feed.xml",
     "icon": "fa-rss",
     "title": "Follow my RSS feed"
   },
-  {
+  "twitter": {
     "name": "Twitter",
     "url": "http://twitter.com/marclittlemore",
     "icon": "fa-twitter",
     "title": "You should follow me on Twitter",
     "external": true
   },
-  {
+  "github":   {
     "name": "GitHub",
     "url": "https://github.com/MarcL",
     "icon": "fa-github",
     "title": "You should follow me on GitHub",
     "external": true
   },
-  {
+  "instagram":   {
     "name": "Instagram",
     "url": "https://www.instagram.com/marclittlemore",
     "icon": "fa-instagram",
     "title": "You should follow me on Instagram",
     "external": true
   },
-  {
+  "reddit":   {
     "name": "Reddit",
     "url": "https://www.reddit.com/user/marclittlemore",
     "icon": "fa-reddit",
     "title": "You should upvote me on Reddit",
     "external": true
   }
-]
+}

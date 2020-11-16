@@ -1,5 +1,7 @@
 <footer class="pv4 ph3 ph5-ns tc bg-white bt b--moon-gray">
-{% for socialItem in socialMedia %}
+{% assign socialMediaKeys = socialMedia | keys %}
+{% for socialMediaKey in socialMediaKeys %}
+    {% assign socialItem = socialMedia[socialMediaKey] %}
     {% if socialItem.external %}
     <a href="{{ socialItem.url }}" target="_blank" rel="noreferrer" title="{{ socialItem.title }}" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="{{socialItem.name}} icon">
     {% else %}

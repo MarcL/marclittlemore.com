@@ -7,7 +7,7 @@ permalink: /contact/
 headerImage: /images/banners/contact-me.jpg
 ---
 
-I'm always happy to answer any questions people have or love it when people want to say hello. You can easily send me a message via [Twitter](https://twitter.com/marclittlemore) or [GitHub](https://github.com/MarcL) but if you want to send me an email, then use the form below and I'll reply as soon as possible.
+I'm always happy to answer any questions people have or love it when people want to say hello. You can easily send me a message via [Twitter]({{socialMedia.twitter.url}}) or [GitHub]({{socialMedia.github.url}}) but if you want to send me an email, then use the form below and I'll reply as soon as possible.
 
 <form id="contact-form" class="pa4 black-80" method="POST" action="/contact/thanks/" subject="Contact form" netlify>
   <div class="measure-wide">
