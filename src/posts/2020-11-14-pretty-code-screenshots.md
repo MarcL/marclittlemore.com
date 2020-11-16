@@ -91,4 +91,4 @@ Mac users also have easy ways to create good looking screenshots using the OSX o
 
 Got any other ways to style your images that I've not mentioned? [Send me a message](./contact) and let me know.
 
-Like this post? You should [follow me on Twitter]({{socialMedia.twitter.url}})
+👉🏻 Like this post? You should [follow me on Twitter]({{socialMedia.twitter.url}})
