@@ -41,7 +41,7 @@ If you're a developer who uses [VS Code](https://code.visualstudio.com/) there a
 
 ### [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 
-I've used this extension for a while and it's an easy way to create shareable screenshots of your code without leaving the editor. Install it via the extensions sidebar as you would with other extensions. You can then use the command palatte to choose Polacode. This will bring up a new tab where you can cut and past code into the Polacode window.
+I've used this extension for a while and it's an easy way to create shareable screenshots of your code without leaving the editor. Install it via the extensions sidebar as you would with other extensions. You can then use the command palette to choose Polacode. This will bring up a new tab where you can cut and past code into the Polacode window.
 
 ![Polacode screenshot](/images/posts/polacode-screenshot.png)
 
@@ -71,28 +71,22 @@ While there are websites and code editor extensions you can use, maybe you just 
 
 ### Windows users
 
-Windows 10 makes it simple to save a copy of whatever is on your screen by using the "Print Screen" key on your keyboard. This if normally labelled as "PrtScn" on a Windows keyboard and is often located on the top row near the function keys. On laptops, you often have to hold down the function key first before pressing "PrtScn".
+Windows 10 makes it simple to save a copy of whatever is on your screen by using the "Print Screen" key on your keyboard. This if normally labelled as `PrtScn` on a Windows keyboard and is often located on the top row near the function keys. On laptops, you often have to hold down the function key first before pressing `PrtScn`.
 
-If you press "PrtScn" on its own then it will copy the entire screen to the clipboard. You can then paste the image into Microsoft Paint or similar picture editing software.
+- If you press `PrtScn` on its own then it will copy the entire screen to the clipboard. You can then paste the image into Microsoft Paint or similar picture editing software.
 
-If you use press the Alt key and "PrtScn" then this copies the active window into the clipboard. Again, you'll need to paste this into your picture editing software to save it.
+- If you use press the `Alt key` and `PrtScn` then this copies the active window into the clipboard. Again, you'll need to paste this into your picture editing software to save it.
 
-If you press the Windows key and "PrtScn" then it'll save the entire screen as an image file. This will be saved in the "Pictures" folder in a sub-folder called "Screenshots".
+- If you press the `Windows` key and `PrtScn` then it'll save the entire screen as an image file. This will be saved in the "Pictures" folder in a sub-folder called "Screenshots".
 
 ### Mac users
 
-Mac users also have easy ways to create good looking screenshots.
+Mac users also have easy ways to create good looking screenshots using the OSX operating system.
 
-Use "Shift + Command + 4" to turn the cursor into a crosshair. This then allows you to drag and select part of the screen to capture as an image. If you release the mouse, this gets saved to your desktop (unless you've [changed the folder](https://www.macworld.co.uk/how-to/change-where-mac-screenshots-saved-3682381/) you save images to.)
+- Use `Shift + Command + 4` to turn the cursor into a crosshair. This then allows you to drag and select part of the screen to capture as an image. If you release the mouse, this gets saved to your desktop (unless you've [changed the folder](https://www.macworld.co.uk/how-to/change-where-mac-screenshots-saved-3682381/) you save images to.)
 
-If you press and hold the space bar before releasing the mouse button, you can move the selected area around the screen before taking the screenshot. This is useful for changing your selection and making it pixel perfect. Release the mouse button to save the image to your selected screenshot folder.
+- If you press and hold the space bar before releasing the mouse button, you can move the selected area around the screen before taking the screenshot. This is useful for changing your selection and making it pixel perfect. Release the mouse button to save the image to your selected screenshot folder.
 
-If you press "Shift + Command + 4" and then press the space bar, this turns the cursor into a camera icon. If you move over any open window and press the left mouse button, this will save an image of the whole window, including the window bar, to your chosen screenshot folder. This is a great way to make screenshots that look great.
-
-*****
-
-Hold down the Shift key (after dragging to highlight an area but before releasing the mouse button or trackpad): This locks in each side of the selection area made with the crosshairs save the bottom edge, letting you move your mouse up or down to position the bottom edge. 
-
-Without releasing the mouse button, release the Shift key and hit it again to reposition the right edge of your selection area. You can toggle between moving the bottom edge and right edge by keeping the mouse button or touchpad engaged and pressing the Shift key.
+- If you press `Shift + Command + 4` (`⇧ + ⌘ + 4`) and then press the space bar, this turns the cursor into a camera icon. If you move over any open window and press the left mouse button, this will save an image of the whole window, including the window bar, to your chosen screenshot folder. This is a great way to make screenshots that look great.
 
 Got any other ways to style your images that I've not mentioned? [Send me a message](./contact) and let me know. 
