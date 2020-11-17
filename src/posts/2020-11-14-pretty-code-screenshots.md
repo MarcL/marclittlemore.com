@@ -79,6 +79,8 @@ Windows 10 makes it simple to save a copy of whatever is on your screen by using
 
 - If you press the `Windows` key and `PrtScn` then it'll save the entire screen as an image file. This will be saved in the "Pictures" folder in a sub-folder called "Screenshots".
 
+- If you press the `Windows` key with `Shift` and `S`, you can screenshot a portion of the screen. The screen will be covered with an overlay and mouse cursor turns into a plus (+) symbol, which indicates that capture mode is on. At the top of the screen you'll see a menu bar with the options: rectangular snip, freeform snip, or fullscreen snip. If you choose rectangular or freeform, you can select a region on the screen. This copies that area to the clipboard.
+
 ### Mac users
 
 Mac users also have easy ways to create good looking screenshots using the OSX operating system.
