@@ -89,6 +89,10 @@ Mac users also have easy ways to create good looking screenshots using the OSX o
 
 - If you press `Shift + Command + 4` (`⇧ + ⌘ + 4`) and then press the space bar, this turns the cursor into a camera icon. If you move over any open window and press the left mouse button, this will save an image of the whole window, including the window bar, to your chosen screenshot folder. This is a great way to make screenshots that look great.
 
+## Accessibility
+
+Don't forget that posting screenshots of code aren't accessible. Make sure that you add a link to a [GitHub gist](https://gist.github.com) or to your code repository so that people with any visual impairments can read your code in other ways.
+
 Got any other ways to style your images that I've not mentioned? [Send me a message](./contact) and let me know.
 
 👉🏻 Like this post? You should [follow me on Twitter]({{socialMedia.twitter.url}})
