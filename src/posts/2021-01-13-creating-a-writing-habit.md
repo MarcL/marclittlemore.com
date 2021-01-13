@@ -3,7 +3,7 @@ title:  "Creating a writing habit"
 # subtitle: "Can you make writing a habit? Let's find out."
 permalink: /creating-a-writing-habit/
 headerImage: /images/banners/write-ideas.jpg
-description: "Can you make writing a habit? Do you write for a while and you become a natural writer? 2021 is the year I attempt to make writing a habit."
+description: "How can you make writing a habit? It's hard to overcome the fear of writing but by making it habitual, it should become easier. I hope to make 2021 my year of writing. Read more."
 tags:
     - writing
 image:
