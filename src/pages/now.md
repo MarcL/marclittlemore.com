@@ -14,11 +14,10 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Currently doing
 
-- Updating my [DJ Cruze](http://www.djcruze.co.uk/) website using [11ty](https://www.11ty.dev/) - almost finished
-- Learning to use [Obsidian](https://obsidian.md/) for better note taking
-- Writing a Telegram bot to capture Obsidian links
-- Working out what side project I should work on
+- Considering my career and what to do next
+- Continuing to use and understand [Obsidian](https://obsidian.md/) for better note taking
+- Learning [Tailwind CSS](https://tailwindcss.com/) to rebuild my wife's [Out Of The Woods Blog](http://outofthewoodsblog.com/)
 
 Check out the current [books I'm reading](/books) here.
 
-**Last updated:** 12th November, 2020
+**Last updated:** 13th January, 2021
