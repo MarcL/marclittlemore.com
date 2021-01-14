@@ -33,7 +33,7 @@ Your job is now to manage and lead a team. It's your job to set the tone for the
 
 ## Trust is the key
 
-Most people won't let you down. Trust them to do their best work without micromanaging them and telling them what to do. Yes, it's your resonsibility to ensure the work gets done but do this by setting the direction and not piloting the ship. If you do this then your team will trust you. There may be times when the team doesn't enjoy the work so your role is to explain the difficult choices which may have been made. If you've built an culture of honesty and openness, the team will understand. Allowing autonomy in the team will lead to greater motivation and a belief in their own decisions.
+Most people won't let you down. Trust them to do their best work without micromanaging them and telling them what to do. Yes, it's your resonsibility to ensure the work gets done but do this by setting the direction and not piloting the ship. There may be times when the team doesn't enjoy the work so your role is to explain the difficult choices which may have been made. If you've built an culture of honesty and openness, the team will understand. Allowing autonomy in the team will lead to greater motivation and a belief in their own decisions. If you trust your team then your team will trust you. 
 
 ## Become a great listener and communicator
 
@@ -47,14 +47,13 @@ Your job as a manager means you'll have to deal with the good and the bad. Your 
 
 When you first start to lead a team, you expect to be able to answer all of the questions from all of the people. You quickly realise that this isn't achievable. It's time to be comfortable with saying "I don't know" to people. It's better to become an enabler for the team. You might not know the answer but you can find out from your senior engineers, or other team members. Open up your network to the team and connect them with the people who can answer their questions. You become more valuable to the team when you realise you don't have to know everything but you can know where to find things.
 
-Strategic thinking
-Advocate for your team
-Blame the process and not the individual
-Mentor and develop your people
-Takes emotional maturity
-Inclusive
+## Advocate for your team
 
-Keep learning
+Your team won't necessarily have the voice that you have in meetings. It's your job to shout loudly about the great work they do. You should be sharing the great work they're doing with the rest of the department. You can be a supporter of team members and help to guide them in their career. It's up to you to help to mentor and develop the team. Open up your network to your team and help them to find new opportunities to grow. If you do this you'll bring the whole team up. I've always loved the saying ["A rising tide lifts all boats"](https://en.wikipedia.org/wiki/A_rising_tide_lifts_all_boats). Bring everyone along on the journey with you and help the whole team to succeed.
+## Keep on learning
 
-https://devtomanager.com/interviews/marc-littlemore/
-https://mdcore.github.io/2020/12/22/Towards-a-High-View-of-Managers.html
+Being a better software engineering manager is an on-going process. Ask for help from your manager and peers. Talk to your team and ask them how you can improve what you do. Ask for a step-level 1:1 with your manager's manager and learn from them. New challenges will come at you each day but embrace them and work out strategies to deal with them.
+
+This isn't an exhaustive list and I'm sure I'll think of more ways of becoming a better manager as I learn them myself. You can [read some other great suggestions](https://mdcore.github.io/2020/12/22/Towards-a-High-View-of-Managers.html) on my good friend Gavin's website. He's another software engineering manager that I trust.
+
+If you want to read about my journey from a being a developer to a software engineering team lead then I shared my thoughts in [an interview on the Dev To Manager website](https://devtomanager.com/interviews/marc-littlemore/).
