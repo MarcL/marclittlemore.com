@@ -1,6 +1,5 @@
 ---
 title:  "Creating a writing habit"
-# subtitle: "Can you make writing a habit? Let's find out."
 permalink: /creating-a-writing-habit/
 headerImage: /images/banners/write-ideas.jpg
 description: "How can you make writing a habit? It's hard to overcome the fear of writing but by making it habitual, it should become easier. I hope to make 2021 my year of writing. Read more."
