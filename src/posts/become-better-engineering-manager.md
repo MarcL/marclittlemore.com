@@ -2,7 +2,7 @@
 title:  "Become a better software engineering manager"
 permalink: /become-better-software-engineering-manager/
 headerImage: /images/banners/up-arrows.jpg
-description: ""
+description: "If you're not sure if you want to be involved in the management of teams building software, here are a few thoughts on what makes it takes to become a better software engineering manager."
 tags:
     - writing
 image:
@@ -11,7 +11,7 @@ image:
     url: https://unsplash.com/@hjwinunsplsh
 ---
 
-I didn't set out to become a manager of software engineers. It crept up on me. But I now really enjoy it.
+I didn't set out to become a manager of software engineers. One day I was the principal software engineer on the team. The next I'd shifted to a management track. I initially wasn't sure if I'd made the right move but I now really love building great software teasm.
 
 I've dipped in and out of management over the years and I'm now a software engineering team lead and manage a team of 8 software engineers of different levels of experience. Here's are some things I've learnt which have helped me on my journey.
 
@@ -21,7 +21,7 @@ A software engineering management role is often seen as the next step up from be
 
 ## You'll have imposter syndrome
 
-You've spent 20+ years writing code. You can reverse a binary tree on a whiteboard while deploying a Kubernetes cluster. Being a manager is easy right?
+You've spent 20+ years writing code. You can reverse a binary tree on a whiteboard while deploying a Kubernetes cluster. If you can do that, being a manager must be easy right?
 
 STOP!
 
@@ -43,9 +43,11 @@ Your new role as a manager is mostly about clear communication. You'll be talkin
 
 Your job as a manager means you'll have to deal with the good and the bad. Your team won't be happy all of the time. You'll need to be a great listener and able to deal with tricky conversations. This has been even more apparent over 2020 and a global pandemic! If you've built a culture of openness, these conversations should happen regularly and you should embrace the fact that your team feel comfortable enough to be honest with you about how they feel. If you don't know the answer, it's ok to say you don't know. Ensure you've got support networks to help you find answers. If it's a conflict within the team, talk to everyone involved and help to resolve it as quickly as you can.
 
-Don't have to be the smartest in the room, know where to find the answers
+## Your job isn't to know everything
+
+When you first start to lead a team, you expect to be able to answer all of the questions from all of the people. You quickly realise that this isn't achievable. It's time to be comfortable with saying "I don't know" to people. It's better to become an enabler for the team. You might not know the answer but you can find out from your senior engineers, or other team members. Open up your network to the team and connect them with the people who can answer their questions. You become more valuable to the team when you realise you don't have to know everything but you can know where to find things.
+
 Strategic thinking
-Servant leadership
 Advocate for your team
 Blame the process and not the individual
 Mentor and develop your people
