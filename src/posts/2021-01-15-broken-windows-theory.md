@@ -25,15 +25,19 @@ The [broken windows theory](https://en.wikipedia.org/wiki/Broken_windows_theory)
 
 This theory, from 1982, suggests that a building with broken windows, a potential indicator of criminal behavior, causes the local residents to not care about their environment and other windows soon become broken. After a while, more windows are broken and ultimately the building becomes so damaged that it becomes abandonded.
 
-We can apply this theory to software development and the teams who build and own applications. Small hacks added to the code can quickly add up over time. Leaving badly named variables or functions can encourage the next developer to do the same. If the previous developer didn't care about the code, why should you? Over the time a software project can quickly incur more and more technical debt.
+We can apply this theory to software development and the teams who build and own applications. Small hacks added to the code can quickly add up over time. Leaving badly named variables or functions can encourage the next developer to do the same. If the previous developer didn't care about the code, why should you? Over the time a software project can quickly incur more and more technical debt. Over time the project quickly becomes a tangled mess and you'll start to see your team wince when asked to work on that application.
 
-*So what should we do to avoid this?*
+## Avoiding rotting software
 
-Let's look at fixing the broken windows we find. Martin Fowler calls it [opportunistic refactoring](https://martinfowler.com/bliki/OpportunisticRefactoring.html). This is when a developer sees code that isn't clear as it should be, and takes the chance to fix it by tidying up variables or refactoring a function. If everyone does this regularly, the team can continue to keep the codebase healthy. This little act of fixing a small piece of code encourages the whole team to care about their code. It avoids a "cut and paste" mentality and builds a consistency in the code. By doing this we quickly build a culture of engineering excellence.
+Want to avoid software going bad? Let's look at fixing some broken windows we find.
 
-One practice that I encourage is to avoid large pull requests. These become difficult to review and often get merged with few comments due to their size. If you're writing new code and spot the opportunity to fix one of these broken windows, sometimes it's more useful to note down where the code needs fixing. Instead raise a second pull request to make these changes so that the improvements are isolated from new features. Don't leave it for too long though or code entropy can set it.
+Martin Fowler calls it [opportunistic refactoring](https://martinfowler.com/bliki/OpportunisticRefactoring.html). This is when a developer sees code that isn't as clear as it should be and takes the chance to fix it by tidying up variables or refactoring a function. If everyone does this regularly, the team can continue to keep the codebase healthy. This little act of fixing a small piece of code encourages the whole team to care about their code. It avoids a "cut and paste" mentality and builds a consistency in the code.
 
-Be pragmatic about fixing all of the issues you find. While there is a benefit to refactoring, no software will ever be perfect and you can only work with the best knowledge you have right now. Consistent small changes to make the code better may make a bigger impact in the long run and will help you to balance new features with fixing technical debt. They will also make your product owners happy!
+**By doing this we quickly build a culture of engineering excellence. 🎉**
+
+One practice that I encourage is to avoid large pull requests. These become difficult to review and often get merged with few comments due to their size. If you're writing new code and spot the opportunity to fix one of these broken windows, sometimes it's more useful to note down where the code needs fixing rather than adding it to your current feature work. Instead raise a second pull request to make these changes so that the improvements are isolated from new features. Don't leave it for too long though or that code will start to rot again.
+
+Be pragmatic about fixing all of the issues you find. While there is a huge benefit to refactoring and fixing your broken windows, no software will ever be perfect. You can only work with the best knowledge you have right now. Consistent small changes to make the code better may make a bigger impact in the long run and will help you to balance building new features with fixing the technical debt.
 
 [Robert Baden-Powell](https://en.wikipedia.org/wiki/Robert_Baden-Powell,_1st_Baron_Baden-Powell), the father of scouting, says it nicely:
 
@@ -45,4 +49,4 @@ Be pragmatic about fixing all of the issues you find. While there is a benefit t
 *- Robert Baden-Powell*
 {% endquote %}
 
-I think this is a nice rule to live your life by as well as help you to decide how you write your software.
+I think this is a wonderful rule to live your life by as well as using it to help you to decide when to refactor your software.
