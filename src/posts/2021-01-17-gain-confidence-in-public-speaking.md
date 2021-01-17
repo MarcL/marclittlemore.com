@@ -81,11 +81,11 @@ If your speech is accompanied by a set of PowerPoint or Keynote slides, use thes
 
 This will be hard for the first few talks but if you come across as your confident self that I know you are, the audience will warm to you immediately. You are the expert in front of a crowd of people who want to hear what you have to say. Remember that. If you can inject a bit of humour into the talk then that's helpful to put both you and the crowd at ease. But remember it's not a stand-up comedy gig!
 
-Try and make some eye contact with your audience. Choose a few people in the group and imagine you're just talking to them. Spending the talk looking down at your notes, or even worse, holding them in front of your face is not whatt the audience want. Don't use looking at your notes as a defence mechanism.
+Try and make some eye contact with your audience. Choose a few people in the group and imagine you're just talking to them. Spending the talk looking down at your notes, or even worse, holding them in front of your face, is not what the audience want. Don't use looking at your notes as a defence mechanism.
 
 ### A final reminder - It'll be ok
 
-Take a deep breath before you start. Remember to speak slowly and don't rush it. And remember that things might go wrong. You might forget a section of your talk. You might introduce something before you wanted to. The technology might go wrong. These are all part of public speaking. Shrug it off and carry on. I know you'll be brilliant anway!
+Take a deep breath before you start. Remember to speak slowly and don't rush it. And remember that things might go wrong. You might forget a section of your talk. You might introduce something before you wanted to. The technology might go wrong. These are all part of public speaking. Shrug it off and carry on. It'll be better next time. I know you'll be brilliant anway!
 
 I hope this article helps you to gain a bit more confidence. Go out and speak publicly to others and please say "yes" more when the opportunity arises.
 
