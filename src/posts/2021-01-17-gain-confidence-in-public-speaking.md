@@ -18,7 +18,7 @@ Really shy.
 
 The sort of shy where I'd blush bright red if somebody I didn't know talked to me.
 
-The sort of shy where I'd blush bright red if I did know them too!
+The sort of shy where I'd blush bright red if I knew them too!
 
 <div class="mw6 center pv2 pv4-ns">
 {% include partials/giphyEmbed.html, id: "OpfkuToK5gSHK" %}
