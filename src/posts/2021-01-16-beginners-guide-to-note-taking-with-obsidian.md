@@ -1,5 +1,5 @@
 ---
-title:  "A beginner's guide to note taking with Obsidian"
+title:  "A beginner's guide to note taking using Obsidian"
 subtitle: "Learn to build your second brain using Obsidian"
 permalink: /beginners-guide-note-taking-obsidian/
 headerImage: /images/banners/second-brain-note-taking-obsidian.jpg
