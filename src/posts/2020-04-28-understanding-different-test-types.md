@@ -82,7 +82,7 @@ There are various kinds of test doubles that you can use in your tests and there
 
 Hopefully this been a brief but helpful walkthrough of the different types of software tests you can write. I've recorded a video which summarises what you've learnt. I talk about the different types of tests you might write as a developer and give some information on test doubles and some of the tools that exist in the JavaScript universe which will help you to write tests. You can watch it here:
 
-{% include cards/youTubeEmbed.html, youTubeId: "pMmXJcDLUFA" %}
+https://www.youtube.com/watch?v=pMmXJcDLUFA
 
 If this post was valuable to you, you can [follow my journey on Twitter]({{socialMedia.twitter.url}}).
 
