@@ -25,7 +25,7 @@ The sort of shy where I'd blush bright red if I knew them too!
 </div>
 
 
-Since my teenage years, the thought of having to get up in front of people and give a speech or presentation absolutely terrified me. I had to explain my university dissertation to my tutors and peers at 21 and I mumbled and sweated my way through that. I then managed to avoid public speaking for a long time. I became less shy over time but I still avoided talking to large groups. And then two things changed which allowed me to start to give me confidence to start giving talks.
+Since my teenage years, the thought of having to get up in front of people and give a speech or presentation absolutely terrified me. I had to explain my university dissertation to my tutors and peers at 21 and I mumbled and sweated my way through that. I then managed to avoid public speaking for a long time. I became less shy over time but I still avoided talking to large groups. And then two things changed which gave me more confidence to start giving speaking to an audience.
 
 Firstly, I got married in 2006. I spent 12 months prior to the big day preparing for my groom's speech. It filled me with fear but I practiced it so often that I knew most of the points by heart. As the groom, you have the obvious advantage that everyone is on your side and they want you to give a great performance. I gave the heartfelt speech and it was incredibly well received. That was the first inflection point which made me think I might enjoy public speaking.
 
