@@ -1,9 +1,8 @@
 ---
 title:  "Gain confidence at public speaking"
-#subtitle: "Learn to build your second brain using Obsidian"
 permalink: /gain-confidence-at-public-speaking/
 headerImage: /images/banners/gain-confidence-in-public-speaking.jpg
-description: "I was shy. I hated speaking in public. Now I love it. Learn how you can overcome your fear of public speaking."
+description: "I was shy. I hated speaking in public. Now I love it. Learn how you can overcome your fear of talking to an audience."
 tags:
     - writing
     - essay
