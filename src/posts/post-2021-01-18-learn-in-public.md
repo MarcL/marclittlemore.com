@@ -26,13 +26,14 @@ I first read about the idea after following [Shawn SWYX Wang](https://twitter.co
 
 Most of us learn something new by consuming content. We read a book or an online article. We watch a YouTube video or a Netflix documentary. And the thinking ends there. We might use that knowledge in private but we don't often share it with others in a public forum.
 
-**Learning in public** is the idea of creating a habit of re-teaching what you've learnt so that others can benefit. It allows you to clarify your understanding of the subject using [the protégé effect](https://effectiviology.com/protege-effect-learn-by-teaching/). This is where teaching others also helps you, the teacher, to absorb that information more easily.
+**Learning in public** is the idea of creating a habit of re-teaching what you've learnt so that others can benefit from it. It allows you to clarify your understanding of the subject using [the protégé effect](https://effectiviology.com/protege-effect-learn-by-teaching/). This is where teaching others also helps you, the teacher, to absorb that information more easily.
 
 You can teach what you've learnt it in lots of different ways:
 
 - a blog post or tutorial on your website
-- a YouTube video or live stream
-- create some public example code on GitHub
+- a thread of tweets on Twitter
+- a YouTube video or Twitch live stream
+- creating a public example of code on GitHub
 - speaking at a local meetup
 - starting a newsletter
 
@@ -48,13 +49,13 @@ I don't know about you but I can't remember what I did last week.
 
 Learning in public is a great way to help future you remember what you learnt last year. It helps the person who was in your shoes six months ago who has picked up the technology for the first time and wants to get started. Once you start writing more about a subject, you'll start to become an expert on it. People will come to you for advice and ask you questions online. I did this with my [chatbots](/bots) knowledge. I'd never written a Facebook Messenger chatbot before the end of 2017 and within three or four months I had become an "expert" in the field by [sharing my videos](https://www.youtube.com/playlist?list=PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM) of what I'd learnt.
 
-In reality, a lot of online experts are online a few steps ahead of you. The reason you think they know so much is because they're sharing it with you. Most people don't. Share what you've just learnt online and you can quickly become one too. Eventually people will ask you for advice and may well offer to pay you for your time. Learning in public can lead to a side hustle and will definitely open the door to more opportunities. Who is a new employer going to look more favourably at? The person with just a resumé or the person with resumé which links to an expert blog post that people reference on the subject?
+In reality, a lot of online experts are online a few steps ahead of you. The reason you think they know so much is because they're sharing it with you. Most people don't do this. Share what you've just learnt publicly and you can quickly become an expert too. Eventually people will ask you for advice and may well offer to pay you for your time. Again, this has happened with me and I consulted on a few chatbot projects. Learning in public could lead to a new side project. It will definitely open the door to more opportunities. Who is a new employer going to look more favourably at? The person with a simple resumé or the person with a resumé which links to an expert blog post that other people reference?
 
 Learning in public also gives you the opportunity to amplify your message. I can sit down with one person and teach them something I've learnt. But if I write it down, or make a YouTube video, I may reach 5, 50, or 500 people more easily. It allows you to scale your teaching and also your own learning.
 
 ## What to do next?
 
-Learn something and write it down. Share those notes on your Twitter account. If you've got a blog then write a blog post. If you don't have a blog, learn how to set one up. And then write about the experience.
+Learn something and write it down. Share those notes on your Twitter account. If you've got a website then write an article on there. If you don't have a blog, learn how to set one up. And then write about the experience!
 
 By writing out this article, it's made me attempt to clarify my thoughts on learning in public. Do the same with your learning and I look forward to reading more about it online.
 
