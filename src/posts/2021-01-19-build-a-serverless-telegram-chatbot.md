@@ -1,5 +1,5 @@
 ---
-title:  "Build a serverless Telegram chatbot using Vercel"
+title:  "Build a serverless Telegram chatbot deployed using Vercel"
 permalink: /serverless-telegram-chatbot-vercel/
 headerImage: /images/banners/telegram-chatbot.jpg
 description: "Serverless functions are a perfect compliment to event driven chatbots. Let's see how we can quickly deploy a Telegram bot using Vercel"
