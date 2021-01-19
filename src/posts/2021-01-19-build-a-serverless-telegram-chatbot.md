@@ -18,18 +18,20 @@ Back in 2018/19, I spent a lot of time building [automated chatbots](/bots) usin
 
 In the past year, I've moved over to using Telegram to build bots and often use them to integrate with other online services and APIs. They have their own fully-featured [bot API](https://core.telegram.org/bots/api) which makes it much easier to interact with.
 
-Telegram supports two ways of interacting with the messages that users send to its bots. The first is [long polling](https://en.wikipedia.org/wiki/Push_technology#Long_polling). This is similar standard polling techniques where the client requests data from the server at regular intervals. With long polling, there's an expectation that the server may not reply instantly and then the client holds open the request open and waits. This works if you are happy with deploying bot server code and infrastructure that never shuts down.
+## Telegram messages
+
+Telegram supports two ways of interacting with the messages that users send to its bots. The first is [long polling](https://en.wikipedia.org/wiki/Push_technology#Long_polling). This is similar to standard polling techniques where the client requests data from the server at regular intervals. With long polling, there's an expectation that the server may not reply instantly and then the client holds open the request and waits. This works if you are happy with deploying bot server code and infrastructure that never shuts down.
 
 The alternative way to receive messages from Telegram is using [webhooks](https://en.wikipedia.org/wiki/Webhook). This method is event-driven and Telegram will send you a HTTP POST request only when a new message is sent from a user. This fits perfectly with the idea of event-driven architecture such as [serverless functions](https://en.wikipedia.org/wiki/Serverless_computing).
 
-Today we're going to look at using Telegram's API and [Vercel](https://vercel.com) serverless functions to create a basic bot.
+Let's look at using Telegram's API and [Vercel](https://vercel.com) serverless functions to create a basic bot and deploy it to their cloud hosting.
 
-![Botfather](/images/posts/botfather.jpg) {.db .center .w4 .h4}
+![Botfather](/images/posts/botfather.jpg) {.db .center .w4 .h4 .w5-ns .h5-ns}
 ## Creating a new Telegram bot
 
-The first thing we must do is to create a new bot that our user can interact with. To do this we must talk to the Botfather. This is Telegram's own bot which creates and updates new bots. Either start a new chat with Botfather or click on this URL to open the bot in Telegram: [https://t.me/botfather](https://t.me/botfather)
+The first task is to create a new bot that our user can interact with. To do this we must talk to the Botfather. This is Telegram's own bot which creates and updates new bots. Either start a new chat with Botfather or click on this URL to open the bot in Telegram: [https://t.me/botfather](https://t.me/botfather)
 
-To create a new bot we must send it the `/newbot` command. It will ask you for a name and username of the bot. The name is displayed in the contact details. The username is a shortname which is used for mentions, `@mybot` for example, or in `t.me` links for sharing. The username has to end in `bot`. As bot usernames are unique, you can see from the screenshot that it took me a couple of attempts to get a bot name `MarcDevBot` that hasn't already been used by another developer.
+To create a new bot we must send it the `/newbot` command. It will ask you for a name and username of the bot. The name is displayed in the contact details. The username is a shortname which is used for mentions, `@mybot` for example, or in `t.me` links for sharing. The username has to end in `bot`. As bot usernames are unique, you can see from the screenshot that it took me a couple of attempts to get the bot name `MarcDevBot` that hasn't already been used by another developer.
 
 ![Telegram new bot](/images/posts/telegram-new-bot.png)
 
@@ -39,22 +41,24 @@ Botfather will send you an authorisation token which is a long string. You use t
 Make sure you keep your **Telegram authorisation token** safe and don't share it with anyone. If you do, they can send messages to users on behalf of your bot by using it.
 {% endcallout %}
 
+![Vercel](/images/posts/vercel-logo.jpg) {.db .center .w4 .h4 .w5-ns .h5-ns}
+
 ## Vercel account
 
 To deploy our chatbot code to Vercel, we must create a Vercel account. Head to the [signup page](https://vercel.com/signup) and create a new account using your GitHub, GitLab, or BitBucket account. If you've already got one, then that's great!
 
 ## Creating our bot serverless function
 
-We're going to use Node.js and JavaScript and a couple of `npm` packages to create a serverless function. I'm going to assume that you have Node.js set up on your local development maching and understand the basics of adding packages to a project using a command terminal.
+We're going to use Node.js and JavaScript and a couple of `npm` packages to create a serverless function. I'm going to assume that you have Node.js set up on your local development machine and understand the basics of adding packages to a project using a command terminal.
 
-Let's get the project set up. Create a directory called `test-bot` and change into it:
+Let's get the project set up. Create a directory called `test-bot` and change directory into it:
 
 ```bash
 mkdir test-bot
 cd test-bot
 ```
 
-Next we'll create a basic Node.js project using `npm`. Here we're skipping the part where we fill in the details of the project. I'll leave that for you to do later.
+Next we'll create a basic Node.js project using `npm`. Here we're skipping the part where we fill in the details of the project into the `package.json` file. I'll leave that for you to do later.
 
 ```bash
 npm init -y
@@ -72,7 +76,7 @@ Next we can login to `vercel` which allows it to know which account we're deploy
 vercel login
 ```
 
-Vercel will send you an email with a link to verify your email. Once you click on that it will save the correct tokens to allow you to deploy your application.
+Vercel will send you an email with a link to verify your account. Once you click on that link it will save the correct tokens to your machine to allow you to deploy your application.
 
 ![Vercel login](/images/posts/vercel-login.png)
 
@@ -88,17 +92,17 @@ mkdir api
 
 In your editor of choice create a file called `webhook.js` in the `/api` directory.
 
-```javascript
+```js
 module.exports = (request, response) => {
     response.json({
-    body: request.body,
-    query: request.query,
-    cookies: request.cookies,
+      body: request.body,
+      query: request.query,
+      cookies: request.cookies,
     });
 };
 ```
 
-This will expose an API function on the following path `/api/webhook`. For basic usage, the name of the function matches the name of the file and it always sits under the `/api` path. We can test that the code works correctly in our browser by running a development version of Vercel using the following command:
+This will expose an API function on the following path `/api/webhook`. For basic usage, the name of the file represents the last part of our path (i.e. `webhook.js` becomes `/webhook`). It always sits under the `/api` path unless you change it through configuration. We can test that the code works correctly in our browser by running a development version of Vercel using the following command:
 
 ```bash
 vercel dev
@@ -128,17 +132,17 @@ You should see a similar response to the following:
 }
 ```
 
-Yay! Our serverless function is working locally and is responding with a JSON response.
+Yay! Our serverless function is working locally and is responding with a JSON response. 🎉
 
 ## Creating the Telegram bot message handler
 
-Telegram will expect a webhook and will send us a POST request when a message is sent. Let's build the message handler. We can install an `npm` package called `node-telegram-bot-api` which will allow us to easily receive and send messages to a Telegram bot.
+Telegram expects to call a webhook by sending us a POST request when a message is entered by the user. Let's build the message handler to receive this. We can install an `npm` package called `node-telegram-bot-api` which will allow us to easily receive and send messages to a Telegram bot.
 
 ```bash
 npm install node-telegram-bot-api
 ```
 
-Let's update our webhook API to receive the messages that Telegram sends us. A Telegram message is a POST request with a JSON body with a `message` property in it. There are other messages that Telegram can send us but this message handler will only consider text messages for now.
+Let's update our webhook API to receive the messages that Telegram sends us. A Telegram message contains a JSON body with a `message` property in it. There are other messages that Telegram can send us but this function will only handle text messages for now.
 
 In order to send messages using the Bot API, we need to use the authorisation token that the Botfather sent us earlier. We don't want to hardcode this as a variable in our code as this would be a security risk. Instead we'll set it as an environment variable that we can use.
 
@@ -195,9 +199,9 @@ module.exports = async (request, response) => {
 
 ## Testing our function locally
 
-Telegram needs to send us a message to a public URL which has SSL/TLS encryption. As `vercel dev` only exposes an HTTP and not an HTTPS endpoint, we need to expose an HTTPS endpoint to the public internet so the Telegram server can send us messages. We can do this using a great library called `ngrok`. This allows us to expose a secure connection to our local server.
+Telegram needs to send us a message to a public URL which has SSL/TLS encryption. As `vercel dev` only exposes an HTTP and not an HTTPS endpoint, we need to expose an HTTPS endpoint to the public internet so that the Telegram server can send us messages. We can do this using a great library called `ngrok`. This allows us to expose a secure connection to our local server.
 
-Let's onstall `ngrok` as a development dependency for our project:
+Let's install `ngrok` as a development dependency for our project:
 
 ```bash
 npm install --save-dev ngrok
@@ -209,11 +213,11 @@ To expose a web sever on port 3000 to the internet we can now run this command:
 ngrok http 3000
 ```
 
-`ngrok` will now be up and running and will give us two URLS: one for HTTP and another for HTTPS. You need the HTTPS URL to set as the webhook URL for Telegram to communicate with. Note that `ngrok` will generate a unique URL each time you run it. If it changes then you'll also have to update the Telegram webhook URL.
+`ngrok` will now be up and running and will give us two URLs: one for HTTP and another for HTTPS. You need the HTTPS URL to set as the webhook URL for Telegram to communicate with. Note that `ngrok` will generate a unique URL each time you run it. If you restart it then you'll also have to update the Telegram webhook URL.
 
 ## Setting up the Telegram webhook
 
-Using the `ngrok` HTTPS URL you were given, we can make a POST HTTP request to the Telegram API using `curl` to send messages to our local serverless function. Use the following command to do this. Make sure your replace `<YOUR-BOT-TOKEN>` (including the <> brackets) and the `https://your-ngrok-subdomain.ngrok.io` URL to the ones you've been given:
+Using the `ngrok` HTTPS URL you were given, we can make a POST HTTP request to the Telegram API using `curl` to tell it to send messages to our local serverless function. Use the following command to do this. Make sure your replace `<YOUR-BOT-TOKEN>` (including the <> brackets) and the `https://your-ngrok-subdomain.ngrok.io` URL to the ones you've been given:
 
 ```bash
 curl -X POST https://api.telegram.org/bot<YOUR-BOT-TOKEN>/setWebhook -H "Content-type: application/json" -d '{"url": "https://your-ngrok-subdomain.ngrok.io/api/webhook"}'
@@ -255,9 +259,9 @@ Before we can switch over to using our production Telegram bot, we need to set u
 
 ![Vercel environment variables](/images/posts/vercel-environment-variables.png)
 
-Add a new `plaintext` variable called `TELEGRAM_TOKEN` which is what we expect in our code. Set the value to the authorisation token that the Botfather gave you earlier and hit `save`.
+Add a new `plaintext` variable called `TELEGRAM_TOKEN` which is what we expect to find in our code. Set the value to the authorisation token that the Botfather gave you earlier and hit `save`.
 
-Once this environment variable has been added, we'll need to redploy the application to ensure the serverless function reads it when it starts up. Vercel makes it easy again:
+Once this environment variable has been added, we'll need to redeploy the application to ensure the serverless function reads it when it starts up. Vercel makes it easy again so run the following command:
 
 ```bash
 vercel
@@ -265,7 +269,7 @@ vercel
 
 ## And finally...
 
-Now that we've got our serverless Telegram bot deployed to Vercel, we need to update Telegram to tell it to route the messages to our Vercel URL. Let's set the Telegram webhook again using a `curl` command. Again, don't forget to replace `<YOUR-BOT-TOKEN>` with the Telegram authorisation token and the `project-name.username.vercel.app` domain name with your own URL which Vercel gave you when you deployed the application.
+Now that we've got our serverless Telegram bot deployed to Vercel, we need to update Telegram to tell it to route the messages to our Vercel function. Set the Telegram webhook using a `curl` command. Again, don't forget to replace `<YOUR-BOT-TOKEN>` with the Telegram authorisation token and the `project-name.username.vercel.app` domain name with your own URL which Vercel gave you when you deployed the application.
 
 ```bash
 curl -X POST https://api.telegram.org/bot<YOUR-BOT-TOKEN>/setWebhook -H "Content-type: application/json" -d '{"url": "https://project-name.username.vercel.app/api/webhook"}'
@@ -282,6 +286,6 @@ Now that you know how to deploy a Telegram bot using Vercel, it's time to update
 
 I've uploaded the code to a GitHub repository here: [https://github.com/MarcL/telegram-test-bot](https://github.com/MarcL/telegram-test-bot) Feel free to fork and reuse it how you wish.
 
-Read the [Telegram API](https://core.telegram.org/api) to understand for some in-depth knowledge of what you can do.
+Read the [Telegram API](https://core.telegram.org/api) for some in-depth knowledge of what bots can do.
 
 Take a look at the [Vercel documentation](https://vercel.com/docs) to see what other things you can deploy to their hosting.
