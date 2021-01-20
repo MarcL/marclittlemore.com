@@ -15,7 +15,7 @@ image:
 
 Some days I can't shut my brain off.
 
-I often worry about something that happened at work or home. Sometimes I remember a situation that happened in the mid-90s when I was DJing in a nightclub. Yes, this regularly happens and I'm always surprised I can remember that far back! Wondering whether the last 7 articles I've written for my [writing habit challenge](/creating-a-writing-habit/) are good enough or not. I can't stop thinking about how I could have approached a situation differently and changed the outcome.
+I often worry about something that happened at work or home. Sometimes I remember a situation that happened in the mid-90s when I was DJing in a nightclub. Yes, this regularly happens and I'm always surprised I can remember that far back! Today I've been worrying whether the last 7 articles I've written for my [writing habit challenge](/creating-a-writing-habit/) are good enough or not. I can't stop thinking about how I could have approached a situation differently and changed the outcome.
 
 It can be mentally exhausting.
 
