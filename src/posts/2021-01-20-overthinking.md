@@ -19,15 +19,15 @@ I often worry about something that happened at work or home. Sometimes I remembe
 
 It can be mentally exhausting.
 
-I'm sure I'm no different to many people in being an overthinker but I wonder how you can challenge your brain to organise the good thoughts and solve problems, rather than being bogged down in things you can't affect.
+I'm sure I'm no different to many people in being an overthinker but I wonder how you can challenge your brain to organise the good thoughts and solve problems, rather than being bogged down with things you can't affect.
 
-Overthinking can take many forms. It can be thinking too much about the past situations that you could have changed. It can be worrying about future events and how they will play out. For me it's often deliberating when attempting to make a decision on something, and then questioning the decision once I've made it. Just ask my wife [Clare](https://clarelittlemore.com) how long it takes me to buy anything! It can also build a running commentary in your head, putting words into others mouths in a fictional situation. Inevitably, you think you know how the conversation will end and that's usually badly.
+Overthinking can take many forms. It can be thinking too much about the past situations that you could have changed. It can be worrying about future events and how they will play out. For me it's often deliberating when attempting to make a decision on something, and then questioning the decision once I've made it. Just ask my wife [Clare](https://clarelittlemore.com) how long it takes me to buy anything! It can also build a running commentary in your head, putting words into others mouths in a fictional situation. Inevitably, you think you know how the conversation will end and in your own mind that's usually badly.
 
-Overthinking isn't problem solving to find a solution. It's problem dwelling.
+Overthinking isn't problem solving to find a solution. It's dwelling on the problem itself and not getting beyond that.
 
 ## How can we deal with overthinking?
 
-I'm trying to get better at scheduling my downtime to stop my brain from spinning. I used to spend too many hours in front of a laptop after 10 pm at night. Wherever possible I put the computer and phone away to try and allow my thinking to slow down. I've also tried to read more as it's a much nicer way to end the day and helps me to avoid thinking too much about what's happened.
+I'm trying to get better at scheduling my downtime to stop my brain from spinning. I used to spend too many hours in front of a laptop after 10 pm at night. Wherever possible, I put the computer and phone away to try and allow my thinking to slow down. I've also tried to read more in bed as it's a much nicer way to end the day and helps me to avoid thinking too much about what's happened.
 
 Some research suggests, as strange as it sounds, that you [schedule your worries](https://www.inc.com/amy-morin/the-simple-but-effective-way-to-stop-worrying-so-much-it-sounds-ridiculous-but-it-actually-works.html) into a set time each day. I've not tried it myself but sounds like an interesting idea.
 
@@ -37,9 +37,15 @@ Noticing that you're overthinking is a good thing. Once you realise that you're 
 
 Move from dwelling on a problem to suggesting potential actions to solve it instead. If it's something you can control, see if you can come up with one or more solutions which you can explore instead. If it's something that's not within your circle of influence, try and move it aside and focus on areas you can control.
 
-Remember that overthinking is often your brain over-exaggerating towards the negative. Try and step back and remember a similar situation that's happened before. The chances are that it didn't turn out as bad as you thought. I know this is hard as I struggle with this a lot. 
+Remember that overthinking is often your brain over-exaggerating towards the negative. Try and step back and remember a similar situation that's happened before. The chances are that it didn't turn out as bad as you thought. I know this is hard as I struggle with this a lot but it does help.
 
-So yes, I'm trying to get better and stop overthinking. To realise that things in the past can't change. That things in the future haven't happened yet. I'm trying to take more time out to reflect and meditate, especially with the current pandemic that we're all living through.
+So yes, I'm trying to get better and stop overthinking.
+
+To realise that things in the past can't change.
+
+That things in the future haven't happened yet.
+
+I'm trying to take more time out to reflect and meditate, especially with the current pandemic that we're all living through.
 
 Stay safe and keep thinking of the positives instead of dwelling on the negatives.
 
