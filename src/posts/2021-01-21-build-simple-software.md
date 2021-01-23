@@ -25,13 +25,13 @@ So what can we as software developers do?
 
 ## How do we reduce software complexity?
 
-[Ross](https://twitter.com/rossalexwilson), the principal engineer on my team at the BBC, loves this quote from well known software engineer [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) and think this is applicable in software design.
+[Ross](https://twitter.com/rossalexwilson), the principal engineer on my team at the BBC, loves this quote from well known software engineer [Kent Beck](https://en.wikipedia.org/wiki/Kent_Beck) and I think this is applicable in software design.
 
 https://twitter.com/KentBeck/status/250733358307500032
 
-In this instance, Kent was referring to refactoring your code but it also applies to the design of your software. You simplify the design of your code such that you can be more easily be ready for future requirements.
+In this instance, Kent was referring to refactoring your code but it also applies to the design of your software. You simplify the design of your code such that you can lay simpler foundations for future requirements.
 
-Simplicity in code is not necessarily easy to achieve but there are some ways we can help to head in the right direction.
+Simplicity in code is not necessarily easy to achieve but there are some ways we can help to point us in the right direction.
 
 ## Make it human readable
 
@@ -41,7 +41,7 @@ It's easy to write more code than you need to and overcomplicate your software. 
 **"There are only two hard things in Computer Science: cache invalidation and naming things."** - [Phil Karlton](https://www.karlton.org/2017/12/naming-things-hard/)
 {% endquote %}
 
-People underestimate how important it is to clearly name your variables and functions. If you can read the code like you're reading it set of instructions, it means you've done a good job. If there's a potential to cause confusion in what the code does, consider simplifying the names. Agree on naming conventions with your team.
+People underestimate how important it is to clearly name your variables and functions. If you can read the code like you're reading it set of instructions, it means you've done a good job. If there's a potential to cause confusion in what the code does, consider simplifying the names. If you agree on naming conventions with your team, this makes life simpler.
 
 ## Easily testable
 
@@ -60,16 +60,16 @@ The ["don't repeat yourself" (DRY)](https://en.wikipedia.org/wiki/Don%27t_repeat
 It's really easy to search the JavaScript [npm](https://npmjs.com) registry, or the equivalent registry for other programming languages, to add some open-source code to your project. Be mindful of additional dependencies you're adding to your software by doing so. While some of the packages might be useful, it adds a layer of complexity in code that you and your team haven't written. Try not to import packages just because you can and only use them when you need to.
 ## Avoid developing for edge cases
 
-During tight deadlines, it's often easy to fix issues by adding special cases into your functions. Code which branches based upon state passed into the function, or even worse, based on global state. It's a slippery slope if you start adding these edge cases to your code. It's much harder to determine what a function done once there are more potential branches of logic to follow. Attempt to keep your code [functional](https://en.wikipedia.org/wiki/Functional_programming) and avoid the need for global state.
+During tight deadlines, it's often easy to fix issues by adding special cases into your functions. Code which branches based upon state passed into the function, or even worse, based on global state. It's a slippery slope if you start adding these edge cases to your code. It's much harder to determine what a function does once there are more branches of logic to follow. Attempt to keep your code [functional](https://en.wikipedia.org/wiki/Functional_programming) and avoid the need for global state.
 
-As an example, about 20 years ago I was involved in writing a AAA videogame. Right before mastering the finished DVD, we discovered issues with the final boss battle AI that I had written. The main character had a move which was too powerful and would kill the final foe with one hit. This hadn't been thought of from the start so I was asked to add a line of code which removed the special move for this level only. An additional `if` statement to check the global level state. In the main characters joypad input code. 🤦🏻‍♂️
+As an example, about 20 years ago, I was involved in writing a AAA videogame. Right before mastering the finished DVD, we discovered issues with the final boss battle that I had developed the AI for. The main character had a move which was too powerful and would kill the final foe with one hit. This hadn't been thought of from the start so I was asked to add a line of code which removed the special move for this level only. So I had to add an additional `if` statement to check the global level state and remove the special move for this level only. This was in the main characters input code. 🤦🏻‍♂️
 
 Don't do this!
 ## Conclusion
 
-There's no silver bullet for writing simple code. You have to think about your architecture before hitting the keyboard. Make time for your application design. Allow the team to think about good coding practices and don't try and cut corners. Make sure you build in contingency for refactoring tech debt if you need to.
+There's no silver bullet for writing simple code. You have to think about your architecture before hitting the keyboard. Make time to build a good foundation for your application architecture. Allow the team to think about good coding practices and don't try and cut corners. Make sure you build in contingency for refactoring tech debt as the requirements change.
 
-How do you keep your code simple?
+And remember to [Keep It Simple Stupid](https://en.wikipedia.org/wiki/KISS_principle)!
 ## Useful resources
 
 - A great [naming cheatsheet](https://github.com/kettanaito/naming-cheatsheet) on how to get better at naming variables and functions in your code
