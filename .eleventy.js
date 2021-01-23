@@ -2,6 +2,7 @@ require('dotenv').config();
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const embedYouTube = require('eleventy-plugin-youtube-embed');
+const embedTwitter = require('eleventy-plugin-embed-twitter');
 
 const addAllShortcodes = require('./_eleventy/shortcodes');
 const addAllFilters = require('./_eleventy/filters');
@@ -11,6 +12,7 @@ module.exports = (eleventyConfig) => {
     // Plugins
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(embedYouTube);
+    eleventyConfig.addPlugin(embedTwitter);
 
     eleventyConfig.setLibrary('md', markdownLib);
 
