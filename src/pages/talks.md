@@ -6,7 +6,7 @@ permalink: /talks/
 headerImage: /images/banners/talks.jpg
 ---
 
-I used to hate public speaking. I was really shy and the thought of talking in front of 5 people, let alone hundreds, really scared me. When I came to work at the BBC in 2013, I decided I had to overcome my fear of public speaking. I decided to say "yes" whenever anyone asked me to speak and then I began to enjoy sharing my ideas with people.
+I used to hate public speaking. I was really shy and the thought of talking in front of 5 people, let alone hundreds, really scared me. When I came to work at the BBC in 2013, I decided I had to [overcome my fear of public speaking](/gain-confidence-at-public-speaking/). I decided to say "yes" whenever anyone asked me to speak and then I began to enjoy sharing my ideas with people.
 
 After 6+ years of practice, I now **love** public speaking!
 
