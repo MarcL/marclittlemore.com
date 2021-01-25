@@ -15,10 +15,12 @@ image:
 One of my team asked me a fantastic question today.
 
 {% quote %}
-"How do I stay on top of learning with software development technologies and best practices?"
+"How do I stay on top of learning about software development technologies and best practices?"
 {% endquote %}
 
 There's an information overload in the software development world. Every day there's a new framework, a new library, a new technology stack, or a new programming language. It feels like you have to learn everything, especially if you're not an experienced developer yet.
+
+But you don't!
 
 So how do you manage to learn new skills when there's a massive influx of articles and videos competing for your attention? 
 
@@ -26,7 +28,7 @@ My day-to-day role is as a software engineering team lead. This means I'm not as
 
 ## Knowing what to learn
 
-I'm somewhat addicted to Twitter, although I try my best not to be. This is my first port of call when it comes to ideas for new technologies or frameworks to investigate. You can follow some interesting developers and technologists on Twitter but it's sometimes difficult to keep up if you follow too many people. Alternatively, you can create and follow lists of people, or follow lists that others have made. This is a great way to expose yourself to new people and their ideas. Don't forget to keep your ideas diverse by following more than just people inside your own area of knowledge.
+I'm somewhat addicted to Twitter, although I try my best not to be. This is my first port of call when it comes to ideas for new technologies to investigate. You can follow some interesting developers and technologists on Twitter but it's sometimes difficult to keep up with your Twitter timeline if you follow too many people. Alternatively, you can create and follow lists of people, or follow lists that others have made. This is a great way to expose yourself to new people and their ideas. Don't forget to keep your ideas diverse by following more than just people who look and think like you or who use the same technologies.
 
 Another great source of new technologies are technology aggregators such as [Hacker News](https://news.ycombinator.com/) (don't read the comments!), [Dev.to](https://dev.to/), [Reddit](https://www.reddit.com/), and [Hashnode](https://hashnode.com/explore).
 
@@ -36,9 +38,9 @@ You'll find plenty to read on Twitter, YouTube, and these sites and it'll help y
 
 ## Scratch your own itch
 
-I always like to investigate new ideas and technologies by "scratching my own itch". This means that I have an idea for something I'd like to do and it allows me to learn whilst I'm implementing.
+I always like to investigate new ideas and technologies by "scratching my own itch". This means that I have an idea for something which solves a current problem I have and it allows me to learn whilst I'm implementing a solution.
 
-For example, my wife was watching a series of online webinars that were only available for the next 5 days. She had no time to watch it so wondered if I could download the video so she could watch it later. It was a video hosted by [Wistia](https://wistia.com/) so I investigated how I could find the source video file by digging through the websites source code and discovering how the video was launched. As I needed to download multiple videos, I wondered if I could automate the process through a command line tool. This took me off on a voyage of discovery as I scraped a webpage, used regular expressions to parse script tags to pull out JSON data, and worked out which hidden binary file URL to download. Leading on from this I investigated Node.js streams, which I'd not used before with any force, to stream the video file and write it to disk.
+For example, my wife was watching a series of online webinars that were only available for the next 5 days. She had no time to watch them so wondered if I could download the videos so she could watch them later. The videos were hosted by [Wistia](https://wistia.com/) so I investigated how I could find the source video files by digging through the websites source code and discovering how the video was embedded. As I needed to download multiple videos, I wondered if I could automate the process through a command line tool. This took me off on a voyage of discovery as I scraped a webpage, used regular expressions to parse script tags to pull out JSON data, and worked out which hidden binary file URL to download. This led me to Node.js streams, which I'd not used before with any force, to stream the video file and write it to disk. All of this from a simple question from my wife!
 
 As you can see, working a project that you're interested in can open up a world of learning opportunities.
 
@@ -46,14 +48,16 @@ As you can see, working a project that you're interested in can open up a world 
 
 Once you've discovered what you want to learn it's a good idea to dig into other people's code. When I'm thinking about functionality I need for a project, I have to decide whether it's worth writing the code myself or exploring an open source library which might do what I need.
 
-If it's an open source library I'm using, I quickly jump to their GitHub, GitLab, or BitBucket repository. A well-written README file can teach you a lot about the architecture and design of their library. Once I've got an idea of how it works, I'll attempt to use the library in my project to understand their public API. If I struggle to get something working, now is a good time to jump into the code. The great thing about open source projects is that their code is their for you to read. Take a look through and work out the code path for what you're attempting. You'll fix your own bug and learn how their code is designed.
+If it's an open source library I'm using, I quickly jump to their GitHub, GitLab, or BitBucket repository. A well-written README file can teach you a lot about the architecture and design of their library. Once I've got an idea of how it works, I'll attempt to use the library in my project to understand their public API. If I struggle to get something working, now is a good time to jump into the code. The great thing about open source projects is that their code is available for you to read. Take a look at the code modules and work out the code path for the action that you're attempting. You'll fix your own bug and learn how their code is designed.
 
 ## Take notes and share them
 
-As I've mentioned previously, I take a lot of notes using [Obsidian](/beginners-guide-note-taking-obsidian/). I use this to build up a list of technologies, languages or frameworks I'd like to learn as I discover them. I use this to remember what I want to look at next. As I start using something new, I take notes as I'm learning and note down any problems I've encountered, other libraries that they use, or how they're structured. This helps me to make my own technical decisions for my code.
+As I've mentioned previously, I take a lot of notes using [Obsidian](/beginners-guide-note-taking-obsidian/). I use this to build up a list of technologies, languages or frameworks I'd like to learn as I discover them. Every few weeks I revisit my notes to see what I want to learn next. As I start using something new, I take notes as I'm learning and note down any problems I've encountered, other libraries that they use, or how they're structured. This helps me to make my own technical decisions for my code and allows me to expand my area of knowledge in new directions.
 
-Once you've done that, try and write up your notes so that you can [learn in public](/learn-in-public/). You might not know all of the details yet but you're one step ahead of someone who's not yet discovered it. Why not write up some notes on Twitter or if you have a personal website, blog about it.
+Once you've done that, try and write up your notes so that you can [learn in public](/learn-in-public/). You might not know all of the details yet but you're one step ahead of someone who's not yet discovered it. Why not write up some notes on Twitter or if you have a personal website, write a blog post about it.
 
 ## Just-in-time learning
 
-If you're anything like me, you've probably now got hundreds of ideas of what you want to build. But you can't learn everything. You have to be ruthless with your time, especially if you have other commitments like a partner or family. I try and employ just-in-time learning. I don't go off and attempt to become an expert in a technology that I don't currently need. I learn it when I need it for my job or my side projects. You can't learn everything so gain your knowledge at the right time.
+If you're anything like me, you've probably now got hundreds of ideas of what you want to build. But you can't learn everything. You have to be ruthless with your time, especially if you have other commitments like a partner or family. I try and employ just-in-time learning. I don't go off and attempt to become an expert in a technology that I don't currently need. I learn it when I need it for my job or my side projects.
+
+You can't learn everything so gain your knowledge at the right time. Before you know it, you've learnt an awful lot more than you thought.
