@@ -2,7 +2,7 @@
 title:  "It's not too late to start"
 permalink: /its-not-too-late-to-start/
 headerImage: /images/banners/its-not-too-late-to-start.jpg
-description: ""
+description: "Most people think they're too old or inexperienced to start something new. All you have to do is start."
 tags:
     - writing
     - essay
