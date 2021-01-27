@@ -2,7 +2,7 @@
 title:  "Lift your team up"
 permalink: /lift-your-team-up/
 headerImage: /images/banners/balloons-lift-your-team-up.jpg
-description: "Building a great culture in software engineering teams can be hard. By helping to lift up all of your team."
+description: "Building a great culture in teams can be hard. If you help to lift them up, you create an inclusive team and everybody wins."
 tags:
     - writing
     - essay
