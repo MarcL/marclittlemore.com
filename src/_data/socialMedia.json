@@ -19,6 +19,13 @@
     "title": "You should follow me on GitHub",
     "external": true
   },
+  "youtube":   {
+    "name": "YouTube",
+    "url": "https://www.youtube.com/c/MarcLittlemore",
+    "icon": "fa-youtube",
+    "title": "Subscribe on YouTube",
+    "external": true
+  },
   "instagram":   {
     "name": "Instagram",
     "url": "https://www.instagram.com/marclittlemore",
