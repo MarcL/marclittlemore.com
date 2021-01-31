@@ -2,7 +2,7 @@
 title:  "Create animated gifs using Camtasia"
 permalink: /create-animated-gifs-camtasia/
 headerImage: /images/banners/create-animated-gifs-camtasia.jpg
-description: ""
+description: "Everyone loves gifs right? In this article you'll learn how to make your own using Camtasia."
 tags:
     - writing
     - essay
