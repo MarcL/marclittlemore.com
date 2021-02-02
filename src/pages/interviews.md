@@ -29,3 +29,9 @@ Earlier in 2020, I caught up with my long time internet friend, [Si Jobling](htt
 In this podcast I chatted with chatbot expert Thomas Hybki about Messenger Marketing and [chatbots](/bots). I delve deep into my software development past and share my thoughts on the future of conversational marketing.
 
 {% include partials/spotifyEmbedPodcast, podcastEpisodeId: "0eX0dvjipXtPCHANcbsa2n" %}
+
+### Surviving Sepsis Interview - January 2018
+
+Back in 2014, I contracted sepsis and [almost died](/how-i-almost-died/). In 2017, I was contacte by a student, [Georgia Woolf](https://twitter.com/tacklingsepsis), who was making an audio documentary on sepsis survivors. It was wonderful to be invited to share my story and to help others who struggled with life after contracting such a terrible disease. Here's the full interview.
+
+{% include partials/soundcloudEmbed, trackId: "381971720" %}
