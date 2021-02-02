@@ -1,6 +1,6 @@
 ---
 title:  "Ship your code with confidence"
-permalink: /code-confidence/
+permalink: /ship-your-code-with-confidence/
 headerImage: /images/banners/ship-your-code-with-confidence.jpg
 description: "All developers want to ship code on a daily basis. If we want to get our code to our users more frequently, how can we ensure we release with confidence?"
 tags:
