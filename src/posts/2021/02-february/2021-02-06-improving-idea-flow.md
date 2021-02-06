@@ -22,7 +22,7 @@ Once I start writing, I love it. But some days I hit a roadblock.
 
 ## A habit of ideas
 
-I found a great [Twitter thread](https://twitter.com/MarkShpuntov/status/1357834827748302855) from [Mark Shpuntov](https://twitter.com/MarkShpuntov/) which summarised a workshop where [Ali Abdaal](https://twitter.com/AliAbdaal/) and [David Perell](https://twitter.com/david_perell) discussed "building an idea factory". Here are some learnings from it.
+I found a great [Twitter thread](https://twitter.com/MarkShpuntov/status/1357834827748302855) from [Mark Shpuntov](https://twitter.com/MarkShpuntov/) which summarised a workshop where [Ali Abdaal](https://twitter.com/AliAbdaal/) and [David Perell](https://twitter.com/david_perell) discussed "building an idea factory". I thought this was a fantastic description of what your brain could become.
 
 Very few people have 100% original ideas. You don't have to constantly come up with unique ideas to create good content. When you combine an idea with your voice and your knowledge and experience of somthing, it becomes original.
 
@@ -33,14 +33,20 @@ Very few people have 100% original ideas. You don't have to constantly come up w
 3. Create your own ideas and content based upon their work but give it a unique angle.
 4. Make sure you reference the original idea and creator.
 
-You can ensure that you don't feel like you're just stealing their ideas but using more than just a single source to create your own ideas. Use multiple sources to gain inspiration but by applying your own thinking and experience, you can make it different.
+You can ensure that you don't feel like you're just stealing their ideas by using more than just a single source to create your own. Read multiple articles or watch videos from different creators to gain the initial inspiration but apply your own thinking and experience, to enable you to make it different.
 
-To be more creative you can diversify the content you consume. As [Steve Jobs](https://en.wikipedia.org/wiki/Steve_Jobs) once said, ["Creativity is just connecting things"](https://www.wired.com/1996/02/jobs-2/). Take inspiration from different places, different fields of study, and different places. The more things you can connect, the better your ideas will become. Try to consume quality content and look for inspiration and ideas in unique books, documentaries, YouTube videos, podcasts, and blogs.
+To be more creative you can diversify the content you consume. As [Steve Jobs](https://en.wikipedia.org/wiki/Steve_Jobs) once said:
 
-One thing that I'm trying to get better at is capturing the things I learn using [Obsidian](/beginners-guide-note-taking-obsidian/). Good ideas are everywhere but our brain can struggle to notice them. As with most things, I believe that this can be improved with practice. Having a reliable process for capturing ideas is a great way to let your brain think of the ideas and then dump them into a place that you can curate them. Pay attention to any ideas you may have and attempt to write everyone down.
+{% quote %}
+["Creativity is just connecting things"](https://www.wired.com/1996/02/jobs-2/)
+{% endquote %}
 
-Telling others your ideas can help you to clarify your thinking and maybe see it in a new way. This could be writing it down in a blog post like this, or having a chat with others. Having a discussion allows people to ask more questions which will lead to new ideas and thinking.
+Take inspiration from different places, different fields of study, and different places. The more things you can connect, the better your ideas will become. Try to consume quality content and look for inspiration and ideas in unique books, documentaries, YouTube videos, podcasts, and blogs.
 
-The last thing I'm planning on doing before my next blog post is to brainstorm ideas. I have a lot of diverse interests and sometimes it's hard to slim down all of my thoughts into simple ideas.
+One thing that I'm trying to get better at is capturing the things I learn using [Obsidian](/beginners-guide-note-taking-obsidian/). Good ideas are everywhere but our brains can struggle to notice them. As with most things, I believe that this can be improved with practice. Having a reliable process for capturing ideas is a great way to let your brain think of the ideas and then dump them into a place that you can curate them. Pay attention to any ideas you may have and attempt to write each one down.
+
+Telling others your ideas can help you to clarify your thinking and maybe allow you to see it in a new way. This could be writing it down in a blog post like this, tweeting it out on Twitter, or having a chat with others. Having a discussion allows people to ask more questions which will lead to new ideas and thinking.
+
+The last thing I'm planning on doing before my next blog post is to brainstorm ideas. I have a lot of diverse interests and sometimes it's hard to slim down all of my thoughts into simple ideas. A 30-minute session where I concentrate on coming up with as many thoughts as possible will help me to consider options and ideas I'd not previously considered.
 
 It's time to break out the [mind mapping](https://en.wikipedia.org/wiki/Mind_map) software before tomorrow's post.
