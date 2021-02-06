@@ -28,8 +28,6 @@ module.exports = (eleventyConfig) => {
     // Temporary aliases
     eleventyConfig.addLayoutAlias('default', 'layouts/default.html');
     eleventyConfig.addLayoutAlias('homepage', 'layouts/homepage.html');
-    eleventyConfig.addLayoutAlias('post', 'layouts/post.html');
-    eleventyConfig.addLayoutAlias('page', 'layouts/page.html');
     eleventyConfig.addLayoutAlias('articles', 'layouts/articles.html');
     eleventyConfig.addLayoutAlias('biography', 'layouts/biography.html');
     eleventyConfig.addLayoutAlias('landingpage-default', 'layouts/landingpage-default.html');

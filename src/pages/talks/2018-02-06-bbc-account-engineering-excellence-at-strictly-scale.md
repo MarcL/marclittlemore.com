@@ -1,5 +1,4 @@
 ---
-layout: page
 title: 'BBC Account : Engineering Excellence at Strictly Scale'
 subtitle: Learn how the BBC account team build a culture of engineering excellence
 permalink: /talks/bbc-account-engineering-excellence-at-strictly-scale/

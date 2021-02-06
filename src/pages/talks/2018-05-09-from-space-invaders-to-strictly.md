@@ -1,5 +1,4 @@
 ---
-layout: page
 title: 'From Space Invaders to Strictly'
 subtitle: Just getting started in the development industry? Top tips on how I got started
 permalink: /talks/from-space-invaders-to-strictly/

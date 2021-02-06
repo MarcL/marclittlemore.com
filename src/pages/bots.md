@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Chat Bots & Messenger Marketing
 subtitle: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger
 description: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger

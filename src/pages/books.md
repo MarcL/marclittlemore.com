@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Books"
 description: I've tried to read a lot more books in the past few years. This is a look at the books on my bookshelf and those that I'm currently reading.
 permalink: /books/

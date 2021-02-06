@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Talks
 subtitle: A few of the talks that I've given recently
 permalink: /talks/

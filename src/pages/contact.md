@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Contact Me
 subtitle: Got something to say or a question to ask? Get in touch and say hello!
 description: Got something to say or a question to ask? Get in touch and say hello!

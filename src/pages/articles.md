@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Articles
 description: Articles I've written
 permalink: /articles/

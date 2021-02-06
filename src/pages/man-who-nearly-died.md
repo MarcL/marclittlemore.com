@@ -1,5 +1,4 @@
 ---
-layout: page
 title: How I Almost Died
 subtitle: Back in 2014, I almost died. Here's my story.
 description: Out of the blue I contracted a bacterial infection in my bowel. It almost killed me. Read what happened to me.

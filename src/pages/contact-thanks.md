@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Thank You
 subtitle: Thanks for sending me a message
 description: Thanks for sending me a message

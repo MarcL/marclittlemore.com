@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Securing Your BBC Identity
 subtitle: Security is a mission, not an intermission...
 permalink: /talks/securing-your-bbc-identity/

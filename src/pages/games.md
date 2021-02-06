@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Games
 subtitle: Video games that I've worked on.
 description: I worked in the video games industry for 20 years. Here are some of the games which you may have played.
