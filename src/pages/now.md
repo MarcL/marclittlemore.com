@@ -14,11 +14,12 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Currently doing
 
-- Writing 30 blog posts from mid-January to mid-February 2021
-- Considering my career and what to do next
-- Continuing to use and understand [Obsidian](https://obsidian.md/) for better note taking
+- Halfway through my 30-day writing challenge
+- Taken a new job with [Gamma](https://www.gamma.co.uk/) as an Engineering Manager
+- Busy handing over my BBC job and making sure my team are supported
+- Still learning to use and understand [Obsidian](https://obsidian.md/) for better note taking
 - Learning [Tailwind CSS](https://tailwindcss.com/) to rebuild my wife's [Out Of The Woods Blog](http://outofthewoodsblog.com/)
 
 Check out the current [books I'm reading](/books) here.
 
-**Last updated:** 13th January, 2021
+**Last updated:** 6th February, 2021
