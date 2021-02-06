@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Interviews
 # subtitle: Interviews with me
 description: Over the past couple of years, some wonderful people have asked me to contribute to their podcasts and websites. Enjoy a collection of interviews and discussions about technology and life.

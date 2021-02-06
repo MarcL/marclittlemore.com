@@ -1,5 +1,4 @@
 ---
-layout: page
 title: About Me
 # subtitle: Learn a little more about Marc Littlemore
 description: Learn a little more about Marc Littlemore

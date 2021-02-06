@@ -1,5 +1,4 @@
 ---
-layout: page
 title: JavaScript Testing
 subtitle: Want to learn more about testing your JavaScript code?
 permalink: /javascript-testing/

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Now
 subtitle: What I'm doing at the moment
 description: Inspired by Derek Sivers, this is my now page. It tells you what I'm doing at this moment in time.
