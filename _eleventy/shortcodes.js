@@ -30,18 +30,24 @@ const quote = (content) => {
 };
 
 const imageShortcode = async (src, alt, size, className = 'db shadow-4') => {
-    // if (alt === undefined) {
-    //     throw new Error(`Missing \`alt\` on myImage from: ${src}`);
-    // }
+    if (alt === undefined) {
+        throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+    }
 
     const dataSrc = `./src${src}`;
 
-    const metadata = await Image(dataSrc, {
-        widths: [size],
-        formats: ['jpeg'],
-        urlPath: '/images/generated/',
-        outputDir: './_site/images/generated/'
-    });
+    let metadata;
+    try {
+        metadata = await Image(dataSrc, {
+            widths: [size],
+            formats: ['jpeg'],
+            urlPath: '/images/generated/',
+            outputDir: './_site/images/generated/'
+        });
+    } catch(error) {
+        console.log(error);
+        throw error;
+    }
 
     const data = metadata.jpeg.pop();
     return `<img src="${data.url}" width="${data.width}" alt="${alt}" class="${className}" loading="lazy" decoding="async">`;
