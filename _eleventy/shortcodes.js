@@ -1,5 +1,5 @@
 const markdownLib = require('markdown-it')();
-const Image = require("@11ty/eleventy-img");
+const imageShortcode = require('./image');
 
 const callout = (content, type = 'info') => {
     const typeClasses = {
@@ -27,30 +27,6 @@ const callout = (content, type = 'info') => {
 const quote = (content) => {
     const renderedHtml = markdownLib.render(content);
     return `<blockquote class="helvetica ml0 mt0 pl2 pl3-ns pv2 pv3-ns black-90 bl bw2 b--blue f5 f4-ns lh-copy"><div class="dtc w-100">${renderedHtml}</div></blockquote>`;
-};
-
-const imageShortcode = async (src, alt, size, className = 'db shadow-4') => {
-    if (alt === undefined) {
-        throw new Error(`Missing \`alt\` on myImage from: ${src}`);
-    }
-
-    const dataSrc = `./src${src}`;
-
-    let metadata;
-    try {
-        metadata = await Image(dataSrc, {
-            widths: [size],
-            formats: ['jpeg'],
-            urlPath: '/images/generated/',
-            outputDir: './_site/images/generated/'
-        });
-    } catch(error) {
-        console.log(error);
-        throw error;
-    }
-
-    const data = metadata.jpeg[0];
-    return `<img src="${data.url}" width="${data.width}" alt="${alt}" class="${className}" loading="lazy" decoding="async">`;
 };
 
 const addAll = (eleventyConfig) => {
