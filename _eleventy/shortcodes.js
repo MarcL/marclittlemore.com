@@ -49,7 +49,7 @@ const imageShortcode = async (src, alt, size, className = 'db shadow-4') => {
         throw error;
     }
 
-    const data = metadata.jpeg.pop();
+    const data = metadata.jpeg[0];
     return `<img src="${data.url}" width="${data.width}" alt="${alt}" class="${className}" loading="lazy" decoding="async">`;
 };
 
