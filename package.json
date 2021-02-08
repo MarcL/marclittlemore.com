@@ -28,8 +28,7 @@
   },
   "scripts": {
     "build": "ELEVENTY_ENV=production yarn build:all",
-    "build:all": "yarn build:images && yarn build:js && yarn build:site",
-    "build:images": "node scripts/thumbnails.js",
+    "build:all": "yarn build:js && yarn build:site",
     "build:site": "eleventy",
     "build:js": "parcel build src/clientjs/index.js --out-dir src/distjs --out-file bundle.js",
     "link-check": "blc http://localhost:4000 -ro",
