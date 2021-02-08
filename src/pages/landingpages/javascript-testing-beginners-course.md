@@ -3,11 +3,11 @@ layout: landingpage-long
 title: JavaScript Testing Beginners Course
 permalink: /javascript-testing-beginners-course/
 description: Struggling to get started with JavaScript testing? Let me help you.
-socialImage: /images/social/javascript-testing-for-beginners.jpg
 
 landingpage:
     title: JavaScript Testing For Beginners
     subtitle: "Become a JavaScript testing expert in **just 7 days**"
+    image: /images/landingpages/javascript-testing-for-beginners.jpg
     button:
         text: SEND ME THE FREE COURSE
         icon: fa-envelope-o

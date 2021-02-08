@@ -3,9 +3,9 @@ layout: landingpage-long
 title: FREE Chatfuel Chatbot JSON Guide
 permalink: /bots/sign-up-bot-building-for-beginners/
 description: Struggling to get started with bot building? Let me help you.
-socialImage: /images/social/chatfuel-chatbot-json-guide-cover.png
 
 landingpage:
+    image: /images/landingpages/chatfuel-chatbot-json-guide-cover.png
     title: FREE Chatfuel Chatbot JSON Guide
     subtitle: "Unleash **JSON magic** in your Chatfuel chatbot without needing **a developer**"
     button:

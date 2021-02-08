@@ -3,7 +3,6 @@ title: Securing Your BBC Identity
 subtitle: Security is a mission, not an intermission...
 permalink: /talks/securing-your-bbc-identity/
 headerImage: /images/banners/securing-your-bbc-identity.jpg
-socialImage: /images/social/securing-your-bbc-identity-fb.jpg
 tags:
     - talk
 description: "Application security is often an afterthought for developers, as we concentrate on the next shiny new feature for our projects. In this talk, I highlight the importance of application security and explore some simple and practical ways that we as developers can defend our services from intrusion. "
