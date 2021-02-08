@@ -20,16 +20,13 @@
     "got": "^11.5.2",
     "lodash.escape": "^4.0.1",
     "markdown-it": "^12.0.4",
-    "mkdirp": "^1.0.4",
     "parcel-bundler": "^1.12.4",
     "rfc822-date": "^0.0.3",
-    "sharp": "^0.27.0",
     "xml2js": "^0.4.23"
   },
   "scripts": {
     "build": "ELEVENTY_ENV=production yarn build:all",
-    "build:all": "yarn build:images && yarn build:js && yarn build:site",
-    "build:images": "node scripts/thumbnails.js",
+    "build:all": "yarn build:js && yarn build:site",
     "build:site": "eleventy",
     "build:js": "parcel build src/clientjs/index.js --out-dir src/distjs --out-file bundle.js",
     "link-check": "blc http://localhost:4000 -ro",

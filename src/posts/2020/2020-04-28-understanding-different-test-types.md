@@ -3,7 +3,6 @@ title:  "Different types of software tests"
 subtitle: "What are the different types of tests we can write for our software?"
 permalink: /different-types-of-software-tests/
 headerImage: /images/banners/heart-code.jpg
-thumbnail: /thumbnails/social/different-types-of-software-testing.jpg
 description: "There are many different types of tests you can write. Let's find out about what they are."
 tags:
     - express

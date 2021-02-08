@@ -8,3 +8,4 @@
 ## Done
 
 - [x] Remove page and post templates as they both map to default
+- [x] Refactor thumbnail generation

@@ -6,8 +6,6 @@ headerImage: /images/posts/lessons-learned-from-running-a-code-club.jpg
 tags:
     - code-club
 description: A Code Club is a great place for children to learn more about computing, and for adults to learn about teaching. Here are some tips and tricks on how to make your Code Club a fun learning environment for everyone.
-socialImage: /images/social/lessons-learned-from-running-a-code-club-fb.jpg
-thumbnail: /thumbnails/social/lessons-learned-from-running-a-code-club-fb.jpg
 ---
 
 Here in the UK we have an organisation called [Code Club](https://www.codeclub.org.uk/) which aims to help all children learn to code. It's a network of volunteers and educators who run free coding clubs for 9 to 11 year olds. I have two children, aged 7 and 9, and I want to encourage them to learn more about computing and technology and not just watch gaming videos on YouTube. When my eldest son moved from his infant school to his junior school a couple of years ago, the teachers told me how ill prepared they were for the move from Information Communication Technology (ICT) to computing. This was due to ICT being more about how to use a computer rather than how to write computer code. Having over 20 years of professional programming experience, I thought that this would be a good time to get involved to help my son's school. Unfortunately, due to [almost dying](/how-i-almost-died/), it took a bit longer to help out thank expected but I finally started running a Code Club this year. It's harder work than I imagined but it's a fantastically rewarding experience. Here are a some lessons I have learned along the way which could help others.
