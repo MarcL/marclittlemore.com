@@ -4,7 +4,6 @@ subtitle: Learn how the BBC account team build a culture of engineering excellen
 permalink: /talks/bbc-account-engineering-excellence-at-strictly-scale/
 headerImage: /images/banners/bbc-account-engineering-excellence-at-strictly-scale.jpg
 socialImage: /images/social/bbc-account-engineering-excellence-at-strictly-scale.jpg
-thumbnail: /thumbnails/social/bbc-account-engineering-excellence-at-strictly-scale-thumb.jpg
 tags:
   - talk
 description: "How do you build a culture of engineering excellence within a development team? How do you ensure code quality for applications that get used by millions of people as soon as they're deployed to your production environment? Learn more in this talk."
