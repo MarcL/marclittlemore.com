@@ -20,7 +20,7 @@ For many years I created the DJ Cruze podcast show so I wanted to move over the 
 
 Eleventy supports a wide range of [data sources](https://www.11ty.dev/docs/data/).
 
-For my podcast I define a JSON file which contains the metadata needed for the podcast. All of this data will be used to populate the RSS feed. You may have this information in other data files in your Eleventy site but I wanted to keep all of the data together.
+For my podcast I define a JSON file which contains the metadata needed for the podcast. All of this data will be used to populate the RSS feed. You may have this information in other data files in your Eleventy site but I wanted to keep most of the data for the podcast together.
 
 It's stored in the data directory like this: `/data/podcast.json`. This will expose a global data object called `podcast` which matches the filename of the JSON file and can be used in your template files.
 
@@ -42,11 +42,13 @@ It's stored in the data directory like this: `/data/podcast.json`. This will exp
 }
 ```
 
-Most of the metadata properties should be obvious. Both iTunes and Google Podcasts support the standard RSS schema but with additional tags. Google Podcasts is essentially the same as an iTunes feeds and parses the iTunes specific tags. Make sure that your `category` property matches the expected [iTunes categories](https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12) for podcasts and matches the correct case. In my case I'm using the "Music" category. Note that you can use sub-categories too but I'm not in my example.
+Most of the metadata properties should be obvious.
+
+Both iTunes and Google Podcasts support the standard RSS schema but with additional tags. Google Podcasts is essentially the same as an iTunes feeds and uses the iTunes specific tags in its feed too. Make sure that your `category` property matches the expected [iTunes categories](https://help.apple.com/itc/podcasts_connect/#/itc9267a2f12) and be careful that you also match the correct case. If you don't, it may well be rejected. In my case I'm using the "Music" category. Note that you can use sub-categories too but I'm not in my example.
 
 ## Set up a podcast post
 
-In Wordpress, each of my podcasts was a new post with a specific tag. I exported these as markdown files and added some custom Markdown frontmatter to mark it up with per-podcast metadata.
+In Wordpress, each of my podcasts was a new post with a specific tag. I exported these as Markdown files and added some custom frontmatter to mark it up with per-podcast metadata.
 
 ```markdown
 ---
@@ -92,15 +94,15 @@ RSS feeds expect some dates using the [RFC822 date format](https://www.w3.org/Pr
 npm install --save-dev rfc822-date
 ```
 
-We also need to escape some of our text to ensure some special characters are encoded correctly. I use the [Lodash](https://lodash.com/) [escape](https://lodash.com/docs/4.17.15#escape) method to do this. Again, lets install this a development dependency as follows:
+We also need to escape some of our text to ensure any special characters are encoded correctly. I use the [Lodash](https://lodash.com/) [escape](https://lodash.com/docs/4.17.15#escape) method to do this. Again, lets install this a development dependency as follows:
 
 ```bash
 npm install --save-dev lodash.escape
 ```
 
-Lastly, we need to know what the date of the last episode was so we can add a special `LastBuildDate` tag. This tells any podcast readers when the podcast was last modified. By adding this, any new podcasts will bump this date and allow new episodes to be downloaded.
+Lastly, we need to know what the date of the last episode was so we can add a special `LastBuildDate` tag. This tells any clients when the podcast was last modified. By adding this, any new podcasts will update to the latest date and allow new episodes to be downloaded.
 
-Here's the additional filters we add to our `.eleventy.js` configuration file. This just shows the filters we've created for the podcast feed.
+Here are the additional filters we add to our `.eleventy.js` configuration file. I've only added the filters we've created for the podcast feed and intentionally left out any other Eleventy configuration.
 
 ```js
 const escape = require('lodash.escape');
@@ -140,13 +142,13 @@ module.exports = (eleventyConfig) => {
 
 ## Template file
 
-Now we can create a post with a custom template in it to iterate over our `podcast` collection and render each podcast episode correctly.
+Now we can create a post with a custom template in it to define our podcast URL. In this template we can iterate over our `podcast` collection and render each podcast episode correctly into the expected RSS XML format.
 
 I created a podcast Liquid template file with a `/podcast/feed.xml` permalink. I'm excluding this file from other collections and from my sitemap. You might want to do this too.
 
 The podcast feed is split up into the intial channel metadata which is mostly created from our `podcast.json` metadata. Ensure that any text is escaped correctly by passing it through the `escape` filter.
 
-As I'm attempting to redirect my old Wordpress theme from an old URL to a new URL, I add in the `itunes:new-feed-url` tag as follows. You won't need this unless you are moving your podcast feed.
+As I'm attempting to redirect my old Wordpress theme from an old URL to a new URL, I've also added in the `itunes:new-feed-url` tag as follows. You won't need this unless you are migration your podcast feed too.
 
 {% raw %}
 ```xml
@@ -154,7 +156,7 @@ As I'm attempting to redirect my old Wordpress theme from an old URL to a new UR
 ```
 {% endraw %}
 
-The second part of the podcast feed iterates through our `collections.podcast` feed in reverse order. In that way, we always get the latest episode first in the RSS feed. The metadata used for each episode is the Markdown frontmatter that we defined earlier.
+The second part of the podcast feed iterates through our `collections.podcast` feed in reverse order. In that way, we always get the latest episode first in the RSS feed. The metadata used for each episode comes from the Markdown frontmatter that we defined earlier.
 
 The `enclosure` tag defines the media file needed to play the podcast. As I host my podcasts on a different URL to the DJ Cruze site itself, I have an additional URL in my `site.json` data file which defines the external server to load them from. This explains the `site.mediaFilesUrl` URL which is prepended before the content path.
 
@@ -248,9 +250,13 @@ sitemap:
 ```
 {% endraw %}
 
+If you head to my [DJ Cruze podcast feed](https://www.djcruze.co.uk/podcasts/feed.xml), you can see all of the episodes rendered correctly.
+
 ## Next steps
 
 There is some metadata which could be automatically generated from the media files. I add to the duration and file size properties to my Markdown frontmatter for each podcast episode. I do this by hand but it could easily be generated by reading the file when Eleventy builds the feed.
+
+Here is the [DJ Cruze website](https://github.com/MarcL/djcruze.co.uk/) on GitHub. Feel free to take a look through the code and adapt it for your own use.
 
 I hope you find this useful. [Let me know](/contact/) if you have any questions or comments.
 
