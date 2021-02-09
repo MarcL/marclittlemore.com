@@ -26,7 +26,7 @@ const callout = (content, type = 'info') => {
 
 const quote = (content) => {
     const renderedHtml = markdownLib.render(content);
-    return `<blockquote class="helvetica ml0 mt0 pl2 pl3-ns pv2 pv3-ns black-90 bl bw2 b--blue f5 f4-ns lh-copy"><div class="dtc w-100">${renderedHtml}</div></blockquote>`;
+    return `<blockquote class="helvetica i ml0 mt4 pl3 near-black bl bw2 b--blue f4 f3-ns lh-copy"><p>${renderedHtml}</p></blockquote>`;
 };
 
 const addAll = (eleventyConfig) => {
