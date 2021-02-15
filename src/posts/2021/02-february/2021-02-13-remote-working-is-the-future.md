@@ -2,7 +2,7 @@
 title:  "Remote working is the future"
 permalink: /remote-working-is-the-future/
 headerImage: /images/banners/remote-working-is-the-future.jpg
-description: "Remote working is the future."
+description: "The technology world changed in 2020. Remote working has jumped forward faster than ever. It's time to embrace remote working as the future"
 tags:
     - writing
     - essay
@@ -58,6 +58,7 @@ Remote working is the future for those companies that can embrace it. While ther
 The future is remote-first working. The pendulum won't swing back now.
 
 ## References and further reading
+
 - [MondayNote](https://mondaynote.com/tech-will-return-to-work-but-habits-will-be-changed-forever-de30ce4a9190)
 - [Om](https://om.co/2020/05/03/the-inevitable-has-happened/)
 - [Tim Casasola](http://www.timcasasola.com/blog/writing)
