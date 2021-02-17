@@ -24,9 +24,11 @@ const callout = (content, type = 'info') => {
     return `<div class="w-100 dt fw5 bt bw2 br2 br--bottom shadow-4 ph3 pv2 mv2 ${chosenType.background}">${iconInfo}<div class="w-90">${renderedHtml}</div></div>`
 };
 
-const quote = (content) => {
-    const renderedHtml = markdownLib.render(content);
-    return `<blockquote class="helvetica i ml0 mt4 pl3 near-black bl bw2 b--blue f4 f3-ns lh-copy">${renderedHtml}</blockquote>`;
+const quote = (content, addQuotes = true) => {
+    const renderableContent = addQuotes ? `&ldquo;${content.trim()}&rdquo;` : content;
+    const renderedHtml = markdownLib.render(renderableContent);
+
+    return `<blockquote class="mw7 center helvetica i near-black f3 f2-ns lh-title tc fw5 bg-washed-blue ma2 pa2 pa3-ns br1">${renderedHtml}</blockquote>`;
 };
 
 const addAll = (eleventyConfig) => {

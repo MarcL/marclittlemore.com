@@ -15,7 +15,7 @@ image:
 I've always loved the following saying:
 
 {% quote %}
-"A rising tide lifts all boats"
+A rising tide lifts all boats
 {% endquote %}
 
 Although John F Kennedy may have borrowed it from the chamber of commerce of the [New England Council](https://en.wikipedia.org/wiki/A_rising_tide_lifts_all_boats), the idea behind it really resonates with me. The true meaning behind it was to suggest that an improved economy will benefit all participants. However, I like to apply it to how you build a positive team culture. By helping one person, you quickly help to lift the whole team up.

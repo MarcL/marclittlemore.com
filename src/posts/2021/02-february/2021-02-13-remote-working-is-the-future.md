@@ -2,7 +2,7 @@
 title:  "Remote working is the future"
 permalink: /remote-working-is-the-future/
 headerImage: /images/banners/remote-working-is-the-future.jpg
-description: "The technology world changed in 2020. Remote working has jumped forward faster than ever. It's time to embrace remote working as the future"
+description: "The technology world changed in 2020. Remote working has jumped forward faster than ever. It's time to embrace remote working as the future."
 tags:
     - writing
     - essay

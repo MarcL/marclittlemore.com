@@ -38,7 +38,7 @@ Simplicity in code is not necessarily easy to achieve but there are some ways we
 It's easy to write more code than you need to and overcomplicate your software. Try to eliminate unnecessary code where possible but not to the point of losing readibility. As developers we often spend more time reading code than writing it, especially if it's not a new project. Optimise for making this easy.
 
 {% quote %}
-**"There are only two hard things in Computer Science: cache invalidation and naming things."** - [Phil Karlton](https://www.karlton.org/2017/12/naming-things-hard/)
+**There are only two hard things in Computer Science: cache invalidation and naming things.** - [Phil Karlton](https://www.karlton.org/2017/12/naming-things-hard/)
 {% endquote %}
 
 People underestimate how important it is to clearly name your variables and functions. If you can read the code like you're reading it set of instructions, it means you've done a good job. If there's a potential to cause confusion in what the code does, consider simplifying the names. If you agree on naming conventions with your team, this makes life simpler.
