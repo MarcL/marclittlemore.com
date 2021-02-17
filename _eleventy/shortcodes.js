@@ -25,7 +25,7 @@ const callout = (content, type = 'info') => {
 };
 
 const quote = (content, addQuotes = true) => {
-    const renderableContent = addQuotes ? `&ldquo;${content}&rdquo;` : content;
+    const renderableContent = addQuotes ? `&ldquo;${content.trim()}&rdquo;` : content;
     const renderedHtml = markdownLib.render(renderableContent);
 
     return `<blockquote class="mw7 center helvetica i near-black f3 f2-ns lh-title tc fw5 bg-washed-blue ma2 pa2 pa3-ns br1">${renderedHtml}</blockquote>`;
