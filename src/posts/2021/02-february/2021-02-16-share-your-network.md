@@ -2,7 +2,7 @@
 title:  "Share your network"
 permalink: /share-your-network/
 headerImage: /images/banners/share-your-network.jpg
-description: ""
+description: "Strong leaders build great networks over time. Sharing those networks can help to unlock your team's potential too."
 tags:
     - writing
     - essay
@@ -18,9 +18,9 @@ I went to the [Lead Developer Conference](https://theleaddeveloper.com/) back in
 Share your network
 {% endquote %}
 
-## What does it mean?
+## Different types of networks
 
-The Harvard Business Review's "How leaders create and use networks", Herminia Ibarra and Mark Lee Hunter suggest that there are three different types of networks:
+Anyone who has been in an idustry for a while has a network of people that they know that has built up over time. The Harvard Business Review's "How leaders create and use networks", Herminia Ibarra and Mark Lee Hunter suggest that there are three different types of networks:
 
 ### 1. Operation network
 
@@ -41,11 +41,15 @@ I wrote a little bit about sharing your network in my article on [lifting your t
 
 By introducing your team to others, you're creating new opportunities. These can help your team to grow and learn from people with different experiences than your own. You'll find the potential for mentoring and coaching outside of your own knowledge and this will help your own team to thrive. Networking with others is important for your own career so by sharing the network you have it helps to grow the careers of others. You will understand your team's needs and can help them to connect with relevant people.
 
+An introduction to a senior leader or engineer is an endorsement or sponsorship from someone trusted. Hopefully you've gained a reputation within the company as being someone reliable. By encouraging your team to talk to people outside of the department, you're subconciously telling others how much you trust and believe in your team member. This goes much further than you think in helping to grow their career.
+
+What differentiates a leader from a manager, is the ability to understand who to talk to enlist the help that you need. By sharing this with your team, your unlocking their ability to become independent and grow their potential both with and without you.
+
+Look at your own network today and see who you can share it with.
+
 ## Watch the talk
 
 https://www.youtube.com/watch?v=YbGwoU2Ow4A
-
-You can lift the whole team up by sharing your network, especially if you've been at a company for a while. You'll have gained a reputation, and hopefully a good one. Use this to sponsor members of your team. Introduce them to other people they might not normally meet and create those opportunities for career growth. Lend your privilege to others who may not have it yet. A short introduction to another team might not mean much to you, but it'll do wonders for the confidence of your engineer who is being raised up to represent your team.
 
 ## References
 
