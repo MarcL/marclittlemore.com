@@ -20,8 +20,6 @@ Share your network
 
 ## What does it mean?
 
-I wrote a little bit about sharing your network in my article on [lifting your team up](/lift-your-team-up/). Most strong leaders use networking to develop relationships in their team and beyond. Talking to people is a good way to forge personal and professional relationships and enable you and your team to do your best work.
-
 The Harvard Business Review's "How leaders create and use networks", Herminia Ibarra and Mark Lee Hunter suggest that there are three different types of networks:
 
 ### 1. Operation network
@@ -30,15 +28,18 @@ An operation network consists of people that help to fulfil your current respons
 
 ### 2. Personal network
 
-These are likeminded people outside your own organisation who can assist your personal development and boost your advancement. You might know them through a mutual interest or pastime – but you can still leverage your acquaintance for business success. Ibarra and Hunter say: “these contacts provide important referrals, information, and, often, developmental support such as coaching and mentoring”.
+You can find people outside of your team, department, or company who can help you or you can help them. This is your personal network. They can be people with similar interests or thinking and you can leverage their help for your own success. Always remember that you should be helping them too.
 
 ### 3. Strategic network
 
-These are external people who will draw your attention to new business possibilities, new directions and new stakeholders necessary to achieve the key objectives of your organisation. According to Ibarra & Hunter, “The key to a good strategic network is leverage: the ability to marshal information, support, and resources from one sector of a network to achieve results in another.”
+A strategic network are people within or external to your organisation which will help you to find new directions for your team. They may be external stakeholders that you can work with or find support from. They'll help to open up interesting opportunities for you and your team.
 
-## Leaders should share their network
+These three networks will consist of different people who will be valuable to both you and others that you introduce them too. To help to build a high-performing team, you can make introductions to others in these networks and share your network.
+## Why leaders should share their network
 
-Create opportunities 
+I wrote a little bit about sharing your network in my article on [lifting your team up](/lift-your-team-up/). Most strong leaders use networking to develop relationships in their team and beyond. Talking to people is a good way to forge personal and professional relationships and enable you and your team to do your best work.
+
+By introducing your team to others, you're creating new opportunities. These can help your team to grow and learn from people with different experiences than your own. You'll find the potential for mentoring and coaching outside of your own knowledge and this will help your own team to thrive. Networking with others is important for your own career so by sharing the network you have it helps to grow the careers of others. You will understand your team's needs and can help them to connect with relevant people.
 
 ## Watch the talk
 

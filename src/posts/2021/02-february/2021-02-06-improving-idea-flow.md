@@ -38,7 +38,7 @@ You can ensure that you don't feel like you're just stealing their ideas by usin
 To be more creative you can diversify the content you consume. As [Steve Jobs](https://en.wikipedia.org/wiki/Steve_Jobs) once said:
 
 {% quote %}
-["Creativity is just connecting things"](https://www.wired.com/1996/02/jobs-2/)
+[Creativity is just connecting things](https://www.wired.com/1996/02/jobs-2/)
 {% endquote %}
 
 Take inspiration from different places, different fields of study, and different places. The more things you can connect, the better your ideas will become. Try to consume quality content and look for inspiration and ideas in unique books, documentaries, YouTube videos, podcasts, and blogs.

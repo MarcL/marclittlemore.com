@@ -18,7 +18,7 @@ Every decision to add new code to a project has the potential to introduce new b
 
 Let's think about the broken windows theory.
 
-{% quote %}
+{% quote false %}
 #### The Broken Windows Theory
 
 The [broken windows theory](https://en.wikipedia.org/wiki/Broken_windows_theory) is a criminological theory that states that visible signs of crime, anti-social behaviour, and civil disorder create an urban environment that encourages further crime and disorder, including serious crimes.

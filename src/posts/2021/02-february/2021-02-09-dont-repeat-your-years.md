@@ -17,7 +17,7 @@ I recently attended an "away day" for the leadership team of our department. In 
 One of the speakers talked about her experience in moving from being a managing director at a newspaper to becoming a business manager at the BBC. She had to work her way up again after having senior role. And then she said one thing that really resonated with me:
  
 {% quote %}
-"Don't repeat your years."
+Don't repeat your years.
 {% endquote %}
 
 She'd stayed in a role for over a year because she didn't believe she was ready to take the next step up even though she had the experience. She taken the easier route because she didn't yet believe in herself and the skills she had. She did the same thing she'd done the previous year for the next 12 months.

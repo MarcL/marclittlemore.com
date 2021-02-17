@@ -15,7 +15,7 @@ image:
 One of my team asked me a fantastic question today.
 
 {% quote %}
-"How do I stay on top of learning about software development technologies and best practices?"
+How do I stay on top of learning about software development technologies and best practices?
 {% endquote %}
 
 There's an information overload in the software development world. Every day there's a new framework, a new library, a new technology stack, or a new programming language. It feels like you have to learn everything, especially if you're not an experienced developer yet.
