@@ -20,7 +20,9 @@ Share your network
 
 ## Different types of networks
 
-Anyone who has been in an idustry for a while has a network of people that they know that has built up over time. The Harvard Business Review's "How leaders create and use networks", Herminia Ibarra and Mark Lee Hunter suggest that there are three different types of networks:
+Anyone who has been in an idustry for a while has a network of people that they know and trust. This builds up over time and expands the impact and opportunities you have.
+
+There are differing networks you can be a part of. The Harvard Business Review's "How leaders create and use networks", Herminia Ibarra and Mark Lee Hunter suggest that there are three main types of networks:
 
 ### 1. Operation network
 
@@ -41,11 +43,11 @@ I wrote a little bit about sharing your network in my article on [lifting your t
 
 By introducing your team to others, you're creating new opportunities. These can help your team to grow and learn from people with different experiences than your own. You'll find the potential for mentoring and coaching outside of your own knowledge and this will help your own team to thrive. Networking with others is important for your own career so by sharing the network you have it helps to grow the careers of others. You will understand your team's needs and can help them to connect with relevant people.
 
-An introduction to a senior leader or engineer is an endorsement or sponsorship from someone trusted. Hopefully you've gained a reputation within the company as being someone reliable. By encouraging your team to talk to people outside of the department, you're subconciously telling others how much you trust and believe in your team member. This goes much further than you think in helping to grow their career.
+An introduction to a senior leader or engineer is an endorsement or sponsorship from someone trusted. Hopefully you've gained a reputation within the company as being someone reliable. By encouraging your team to talk to people outside of the department, you're subconciously telling others how much you trust and believe in your team member. This goes much further than you think in helping to grow their careers.
 
-What differentiates a leader from a manager, is the ability to understand who to talk to enlist the help that you need. By sharing this with your team, your unlocking their ability to become independent and grow their potential both with and without you.
+What differentiates a leader from a manager, is the ability to understand who to talk to enlist the help that is needed. By sharing this with your team, you're unlocking their ability to become independent and grow their potential both with and without you.
 
-Look at your own network today and see who you can share it with.
+Take a look at your own network today and see who you can share it with. Empower your team to be amazing.
 
 ## Watch the talk
 
