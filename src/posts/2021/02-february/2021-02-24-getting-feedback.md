@@ -1,8 +1,8 @@
 ---
-title:  "Getting feedback as a manager"
-permalink: /getting-feedback-as-a-manager/
-headerImage: /images/banners/manager-feedback.jpg
-description: ""
+title:  "Asking for feedback as a leader"
+permalink: /asking-for-feedback-as-a-leader/
+headerImage: /images/banners/leader-feedback.jpg
+description: "Feedback is necessary for a growth mindset and to continuously improve. As a leader, we often give feedback to our team but forget to ask others for it."
 tags:
     - writing
     - essay
