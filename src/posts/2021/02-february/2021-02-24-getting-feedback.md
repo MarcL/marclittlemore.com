@@ -36,7 +36,7 @@ Asking for feedback is key to improving as a person and leader but how should yo
 
 ### Find an appropriate time
 
-While it's easy to approach your manager and ask them for feedback, it's probably better to set aside some time when you can both discuss things in more detail. This gives both of you some time to prepare for the conversation. It will be a good idea to forewarn them of your expectations.
+While it's easy to approach your manager and ask them for feedback, it's probably better to set aside some time when you can both discuss things in more detail. This gives both of you some time to prepare for the conversation. It can be a good idea to forewarn them of your expectations.
 
 ### Prepare questions to ask
 
@@ -57,8 +57,8 @@ Anyone that knows me, knows that I take a lot of notes. I'm currently a big fan 
 
 ### Learn from the feedback
 
-There's little point in asking for feedback if you don't then use it. Take some time to reflect on what's been said, especially if there is room for improvement. Consider how you could apply any suggestions to how you work and make a development plan for yourself. Perhaps creating a list of goals would be useful here.
+There's little point in asking for feedback if you don't then use it. Take some time to reflect on what's been said, and the notes you've taken, especially if there is room for improvement. Consider how you could apply any suggestions to how you work and make a development plan for yourself. Perhaps creating a list of goals would be useful here.
 
 ### Say thank you
 
-Finally, don't forget to thank people for taking the time to give you feedback. It's not easy to give feedback and we should all be doing it more regularly than we probably do. Make sure you thank people for their time and thoughts and use it to help your personal development.
+Finally, don't forget to thank people for taking the time to give you feedback. It's not easy to give feedback and we should all be doing it more regularly than we probably do. Make sure you thank people for their time and thoughts and use it to help your personal development and growth.
