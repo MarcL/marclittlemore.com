@@ -39,5 +39,11 @@
     "icon": "fa-reddit",
     "title": "You should upvote me on Reddit",
     "external": true
-  }
-}
+  },
+  "linkedin":   {
+    "name": "Linked In",
+    "url": "https://www.linkedin.com/in/marclittlemore/",
+    "icon": "fa-linkedin",
+    "title": "Connect with me on Linked In",
+    "external": true
+  }}
