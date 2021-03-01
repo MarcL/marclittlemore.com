@@ -3,7 +3,7 @@
 {% for socialMediaKey in socialMediaKeys %}
     {% assign socialItem = socialMedia[socialMediaKey] %}
     {% if socialItem.external %}
-    <a href="{{ socialItem.url }}" target="_blank" rel="noreferrer" title="{{ socialItem.title }}" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="{{socialItem.name}} icon">
+    <a href="{{ socialItem.url }}" target="_blank" rel="me noreferrer" title="{{ socialItem.title }}" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="{{socialItem.name}} icon">
     {% else %}
     <a href="{{ socialItem.url }}" title="{{ socialItem.title }}" class="link dark-gray hover-silver dib h2 w2 mr3" aria-label="{{socialItem.name}} icon">
     {% endif %}
