@@ -38,8 +38,7 @@ const webmentionLikes = webmentions => {
 
 const webmentionsForUrl = (webmentions, url) => {
     return webmentions
-//        .filter(mention => mention['wm-target'] === '/');
-        .filter(mention => mention.author.name === 'Gilson Nunes');
+       .filter(mention => mention['wm-target'] === url);
 };
 
 const addAll = (eleventyConfig) => {
@@ -52,7 +51,7 @@ const addAll = (eleventyConfig) => {
     eleventyConfig.addFilter('collectionLastUpdatedDate', collectionLastUpdatedDateFilter);
 
     // Webmentions
-    eleventyConfig.addLiquidFilter('webmentionForUrl', webmentionsForUrl);
+    eleventyConfig.addFilter('webmentionForUrl', webmentionsForUrl);
     eleventyConfig.addFilter('webmentionLikes', webmentionLikes);
 };
 
