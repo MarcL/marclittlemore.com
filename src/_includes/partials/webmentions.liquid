@@ -1,0 +1,21 @@
+{% if site.features.enableWebmentions %}
+{% if webmentions %}
+{% assign absoluteUrl = page.url | prepend: site.url %}
+{% assign mentionsForPage = webmentions | webmentionsForUrl: absoluteUrl %}
+
+<code>
+{{mentionsForPage}}
+</code>
+
+{% if mentionsForPage %}
+<section id="webmentions" class="mw8 pa3 mw8-ns ph5-ns center">
+<h2>Webmentions: {{absoluteUrl}}</h2>
+{% for mention in mentionsForPage %}
+<a class="db" href="{{mention.url}}">{{mention.author.name}}</a>
+{% endfor %}
+</section>
+{% endif %}
+
+{% endif %}
+
+{% endif %}

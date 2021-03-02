@@ -31,6 +31,17 @@ const starRating = value => {
     return ratingList.join('');
 };
 
+const webmentionLikes = webmentions => {
+    return webmentions
+        .filter(mention => mention['wm-property'] === 'like-of');
+};
+
+const webmentionsForUrl = (webmentions, url) => {
+    return webmentions
+//        .filter(mention => mention['wm-target'] === '/');
+        .filter(mention => mention.author.name === 'Gilson Nunes');
+};
+
 const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('rfc822Date', rfc822DateFilter);
     eleventyConfig.addLiquidFilter('toISOString', toISOStringFilter);
@@ -39,6 +50,10 @@ const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('starRating', starRating);
     eleventyConfig.addFilter('keys', object => Object.keys(object));
     eleventyConfig.addFilter('collectionLastUpdatedDate', collectionLastUpdatedDateFilter);
+
+    // Webmentions
+    eleventyConfig.addLiquidFilter('webmentionForUrl', webmentionsForUrl);
+    eleventyConfig.addFilter('webmentionLikes', webmentionLikes);
 };
 
 module.exports = addAll;
