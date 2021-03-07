@@ -13,12 +13,11 @@ This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggest
 
 ## Currently doing
 
-- Halfway through my 30-day writing challenge
-- Taken a new job with [Gamma](https://www.gamma.co.uk/) as an Engineering Manager
-- Busy handing over my BBC job and making sure my team are supported
-- Still learning to use and understand [Obsidian](https://obsidian.md/) for better note taking
-- Learning [Tailwind CSS](https://tailwindcss.com/) to rebuild my wife's [Out Of The Woods Blog](http://outofthewoodsblog.com/)
+- Last few days of my 30-day writing challenge
+- Getting ready for my new job with [Gamma](https://www.gamma.co.uk/) as an Engineering Manager
+- Learning how to use [Davinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) for better video editing
+- Continuing to learn [Tailwind CSS](https://tailwindcss.com/) to rebuild my wife's [Out Of The Woods Blog](http://outofthewoodsblog.com/)
 
 Check out the current [books I'm reading](/books) here.
 
-**Last updated:** 6th February, 2021
+**Last updated:** 7th March, 2021
