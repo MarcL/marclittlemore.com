@@ -1,8 +1,8 @@
 ---
-title:  "You've got this: becoming a confident developer"
-permalink: /youve-got-this-becoming-a-confident-developer/
+title:  "You've got this: become a confident developer"
+permalink: /youve-got-this-become-a-confident-developer/
 headerImage: /images/banners/you-got-this.jpg
-description: "."
+description: "If you're early in your software development career, you might not realise how good you are yet. Here are a few ideas to boost your confidence."
 tags:
     - writing
     - essay
