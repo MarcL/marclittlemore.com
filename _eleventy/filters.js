@@ -31,6 +31,27 @@ const starRating = value => {
     return ratingList.join('');
 };
 
+const webmentionsForUrl = (webmentions, url) => {
+    return webmentions
+       .filter(mention => mention['wm-target'] === url);
+};
+
+const webmentionsSortedByProperty = (webmentions, url) => {
+    const mentions = webmentionsForUrl(webmentions, url);
+    const sorted = mentions.reduce((accumulator, mention) => {
+        const propertyType = mention['wm-property'];
+        if (accumulator[propertyType]) {
+            accumulator[propertyType] = [mention, ...accumulator[propertyType]];
+        } else {
+            accumulator[propertyType] = [mention];
+        }
+    
+        return accumulator;
+    }, {});
+    
+    return sorted;
+};
+
 const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('rfc822Date', rfc822DateFilter);
     eleventyConfig.addLiquidFilter('toISOString', toISOStringFilter);
@@ -39,6 +60,9 @@ const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('starRating', starRating);
     eleventyConfig.addFilter('keys', object => Object.keys(object));
     eleventyConfig.addFilter('collectionLastUpdatedDate', collectionLastUpdatedDateFilter);
+
+    // Webmentions
+    eleventyConfig.addFilter('webmentionsForUrl', webmentionsSortedByProperty);
 };
 
 module.exports = addAll;

@@ -1,0 +1,26 @@
+{% if webmentions %}
+{% assign absoluteUrl = page.url | prepend: site.url %}
+{% assign mentionsForPage = webmentions | webmentionsForUrl: absoluteUrl %}
+{% assign likes = mentionsForPage['like-of'] %}
+{% assign reposts = mentionsForPage['repost-of'] %}
+{% assign comments = mentionsForPage['in-reply-to'] %}
+
+{% if likes.length or reposts.length or comments.length %}
+
+<section id="webmentions" class="mw8 pa3 mw8-ns ph5-ns center">
+<div class="flex justify-center items-center">
+    <div class="w-33 w-20-ns pa3 mr2 tc red flex justify-center items-center">
+        <i class="fas fa-2x fa-heart"></i><span class="pl2 f3 fw7">{{likes.length | default: 0}}</span>
+    </div>
+    <div class="w-33 w-20-ns pa3 mr2 tc blue flex justify-center items-center">
+        <i class="fas fa-2x fa-retweet"></i><span class="pl2 f3 fw7">{{reposts.length | default: 0}}</span>
+    </div>
+    <div class="w-33 w-20-ns pa3 mr2 tc green flex justify-center items-center">
+        <i class="fas fa-2x fa-comment"></i><span class="pl2 f3 fw7">{{comments.length | default: 0}}</span>
+    </div>
+</div>
+
+</section>
+{% endif %}
+
+{% endif %}
