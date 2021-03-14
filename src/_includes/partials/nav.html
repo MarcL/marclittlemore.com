@@ -1,0 +1,27 @@
+<header class="w-100 pt2 pb0 pb2-ns near-black" style="z-index:100;">
+    <nav class="fw6 ttu tracked tc dn db-l db-m pt2" id="navLinksWeb">
+        {% for menuItem in mainMenu %}
+            {% if page.url contains menuItem.url and
+                menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
+                <a class="f7 f5-ns link dim mr2 mr3-ns near-black pb1 bb bw2 b--red" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+            {% else %}
+                <a class="f7 f5-ns link dim mr2 mr3-ns near-black" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+            {% endif %}
+        {% endfor %}
+    </nav>
+    <nav class="fw6 ttu tracked tc dn-ns dn-m dt w-100 center" id="navLinksMobile">
+        <i class="fa fa-2x fa-bars near-black dn-l" aria-hidden="true" id="displayNavButton"></i>
+        <ul id="navLinks" class="list center mw6 pl0 ml0 dn">
+            {% for menuItem in mainMenu %}
+                <li class="pv2">
+                    {% if page.url contains menuItem.url and
+                        menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
+                        <a class="f6 f4-ns link mr2 mr3-ns near-black bb bw2 b--red" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                    {% else %}
+                        <a class="f6 f4-ns link mr2 mr3-ns near-black" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
