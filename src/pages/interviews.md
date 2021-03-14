@@ -15,7 +15,7 @@ Over the past couple of years, some wonderful people have asked me to contribute
 
 [Siddhant Goel](https://www.linkedin.com/in/siddhantgoel/) emailed me to see if I'd be interested in sharing my experience of transitioning from a software engineering role to a managerial position. His DevToManager website is a platform dedicated to interviewing engineering leaders on how to make the jump from software development to management. I was keen to share my views and to help other engineers who were interested in team leadership to consider management as their next step. You can read about my story on the [Dev To Manager](https://devtomanager.com/interviews/marc-littlemore/) website.
 
-{% include image, imageSrc: "/images/posts/marc-littlemore-dev-to-manager-interview.png", title: "Marc Littlemore DevToManager", alt: "DevToManager Website Image" %}
+{% include partials/image, imageSrc: "/images/posts/marc-littlemore-dev-to-manager-interview.png", title: "Marc Littlemore DevToManager", alt: "DevToManager Website Image" %}
 
 ### Make Life Work Podcast - March 2020
 

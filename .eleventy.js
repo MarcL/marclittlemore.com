@@ -27,14 +27,6 @@ module.exports = (eleventyConfig) => {
     addAllFilters(eleventyConfig);
     addAllShortcodes(eleventyConfig);
 
-    // Liquid template options
-    eleventyConfig.setLiquidOptions({
-        root: [
-            'src/_includes/_includes',
-            '.'
-        ]
-    });
-
     eleventyConfig.setDataDeepMerge(true);
 
     return {
