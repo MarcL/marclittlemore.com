@@ -16,4 +16,4 @@ However, it's often very confusing and difficult for beginners to get started. H
 Want to learn more about testing your JavaScript code but don't know where to start? Get my [FREE 7-day testing course](/javascript-testing-beginners-course/?signup=testing-page) and you'll be a JavaScript testing expert in no time!
 {% endcallout %}
 
-{% include articleList, collection: collections["unit-testing"] %}
+{% include partials/articleList, collection: collections["unit-testing"] %}

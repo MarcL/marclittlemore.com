@@ -31,7 +31,6 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.setLiquidOptions({
         root: [
             'src/_includes/_includes',
-            'src/_includes/_includes/social',
             '.'
         ]
     });
