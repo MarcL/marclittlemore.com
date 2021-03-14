@@ -13,4 +13,4 @@ I really enjoy sharing the work I do both at the BBC and outside of the day job.
 
 If you'd like me to come and speak at your event then get in touch [here](/contact) or via [Twitter]({{socialMedia.twitter.url}}).
 
-{% include articleList, collection: collections.talk %}
+{% include partials/articleList, collection: collections.talk %}

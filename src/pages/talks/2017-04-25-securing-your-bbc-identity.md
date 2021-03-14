@@ -17,6 +17,6 @@ We’ll look at how my team at the BBC approached security concerns when creatin
 
 ## Slides
 
-{% include cards/slideShareEmbed.html, slideShareId: {{slideShareId}} %}
+{% include partials/slideShareEmbed.html, slideShareId: {{slideShareId}} %}
 
 Location: [JavaScript North West Meetup](https://www.meetup.com/JavaScript-North-West/events/239152184/)

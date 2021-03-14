@@ -24,27 +24,8 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({'src/distjs/': 'js/'});
     eleventyConfig.addPassthroughCopy({'src/_redirects': '_redirects'});
 
-    // Temporary aliases
-    eleventyConfig.addLayoutAlias('default', 'layouts/default.html');
-    eleventyConfig.addLayoutAlias('homepage', 'layouts/homepage.html');
-    eleventyConfig.addLayoutAlias('articles', 'layouts/articles.html');
-    eleventyConfig.addLayoutAlias('biography', 'layouts/biography.html');
-    eleventyConfig.addLayoutAlias('landingpage-default', 'layouts/landingpage-default.html');
-    eleventyConfig.addLayoutAlias('landingpage-long', 'layouts/landingpage-long.html');
-    eleventyConfig.addLayoutAlias('landingpage-thank-you', 'layouts/landingpage-thank-you.html');
-
     addAllFilters(eleventyConfig);
     addAllShortcodes(eleventyConfig);
-
-    // Liquid template options
-    eleventyConfig.setLiquidOptions({
-        dynamicPartials: false,
-        root: [
-            'src/_includes/_includes',
-            'src/_includes/_includes/social',
-            '.'
-        ]
-    });
 
     eleventyConfig.setDataDeepMerge(true);
 
