@@ -29,7 +29,6 @@ module.exports = (eleventyConfig) => {
 
     // Liquid template options
     eleventyConfig.setLiquidOptions({
-        dynamicPartials: false,
         root: [
             'src/_includes/_includes',
             'src/_includes/_includes/social',
