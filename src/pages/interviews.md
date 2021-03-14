@@ -11,6 +11,16 @@ tags:
 
 Over the past couple of years, some wonderful people have asked me to contribute to their podcasts and websites. I talk about technology, the games industry, my love of learning, and how I try and achieve a postive work-life balance. Have a read or take a listen below to hear my thoughts and stories.
 
+### Genepool Software Interview - January 2020
+
+<div class="mw6 center pv2 pv4-ns">
+{% include partials/image, imageSrc: "/images/games/wolverines-revenge-512x384.jpg", title: "Wolverine's Revenge", alt: "Wolverine's Revenge videogame" %}
+</div>
+
+Back in the early 2000s, I worked on a game called Wolverine's Revenge. I was approached by the fantastic games journalist [Jack Yarwood](https://twitter.com/JackGYarwood) to learn more about Genepool Software, the company that I worked for at the time. While Genepool had a very short tenure, it was a fun but challenging place to work.
+
+[Read Jack's story](https://www.fanbyte.com/features/from-x-men-to-iron-man-the-strange-tale-of-genepool-software/) about how we worked on the Wolverine's Revenge title and the demo we made for the Iron Man franchise for Marvel.
+
 ### Dev To Manager - October 2020
 
 [Siddhant Goel](https://www.linkedin.com/in/siddhantgoel/) emailed me to see if I'd be interested in sharing my experience of transitioning from a software engineering role to a managerial position. His DevToManager website is a platform dedicated to interviewing engineering leaders on how to make the jump from software development to management. I was keen to share my views and to help other engineers who were interested in team leadership to consider management as their next step. You can read about my story on the [Dev To Manager](https://devtomanager.com/interviews/marc-littlemore/) website.
