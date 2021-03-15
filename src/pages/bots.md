@@ -1,42 +1,10 @@
 ---
 layout: page
-title: Chat Bots & Messenger Marketing
+title: Chatbots & Messenger Marketing
 subtitle: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger
 description: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger
 permalink: /bots/
 headerImage: /images/banners/chatbots-and-messenger-marketing.jpg
-videos:
-  - title: 'Beginners Guide To Chatfuel, JSON & APIs'
-    subtitle: 'Learn all about JSON and integrating with Chatfuel'
-    id: 'HXBh6fQ0-QY'
-  - title: 'Chatfuel Joke Bot'
-    subtitle: 'Using external APIs to make your Messenger chatbot funny'
-    id: 'oLFOy0f4AFQ'
-  - title: 'Chatfuel Weather Bot'
-    subtitle: 'Learn about external APIs and Chatfuel attributes'
-    id: '7ixD6_4Vsq4'
-  - title: 'Chatfuel Geofencing'
-    subtitle: 'Create location based chatbots with ease'
-    id: 'l4D1tQBjJnI'
-  - title: 'Chatfuel & Facebook Messenger Webviews (Part 1)'
-    subtitle: 'Want to get a webview hooked up to Chatfuel for your chatbot?'
-    id: 'waeBQU47GFU'
-  - title: 'Chatfuel & Facebook Messenger Webviews (Part 2)'
-    subtitle: 'Want to make your Facebook Messenger webviews dynamic?'
-    id: 'UrO5ztx1D5w'
-  - title: 'Create a location-aware chatbot using Chatfuel'
-    subtitle: 'Using the Chatfuel JSON API to share your nearest location'
-    id: '7uQtrQeyWdE'
-  - title: 'Reset user and system attributes in Chatfuel'
-    subtitle: 'Learn how to reset system attributes using the JSON API'
-    id: 'CGR47D1ArSk'
-  - title: 'How to validate an email address with the Chatfuel JSON API'
-    subtitle: 'Learn how to validate user email addresses in Chatfuel'
-    id: 'r4h4DD1DNE8'
-quickTips:
-  - title: 'Chatfuel Quick Tip: Reset a user attribute in Chatfuel'
-    subtitle: 'Reset a Chatfuel attribute using the "set attributes" card'
-    id: 'gXZh9jijIS8'
 ---
 
 It seems like everyone in 2018 and 2019 is talking about **chatbots** as the next big thing in marketing but what are they?
