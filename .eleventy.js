@@ -24,6 +24,9 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({'src/distjs/': 'js/'});
     eleventyConfig.addPassthroughCopy({'src/_redirects': '_redirects'});
 
+    // Watch
+    eleventyConfig.addWatchTarget('./src/distjs/')
+
     addAllFilters(eleventyConfig);
     addAllShortcodes(eleventyConfig);
 
