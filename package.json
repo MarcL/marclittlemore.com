@@ -29,7 +29,8 @@
     "build:site": "eleventy",
     "build:js": "parcel build src/clientjs/index.js --dist-dir src/distjs",
     "link-check": "blc http://localhost:4000 -ro",
-    "serve": "ELEVENTY_ENV=dev eleventy --serve"
+    "serve": "yarn serve:js & ELEVENTY_ENV=dev eleventy --serve",
+    "serve:js": "parcel watch src/clientjs/index.js"
   },
   "app": "src/distjs/bundle.js",
   "targets": {
