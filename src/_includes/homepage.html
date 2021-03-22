@@ -7,16 +7,18 @@ scripts:
 
 {% include partials/head.html %}
 
-<body class="avenir helvetica bg-white">
+<body class="bg-white font-sans">
+    <div class="container mx-auto px-4">
+
     {% include partials/nav.html %}
 
     <main class="">
         <section class="bg-white pv3 pv4-ns ph3 ph3-m ph0-l mw8 center">
             <div class="w-100 pt2 pt3-l">
-                <p class="f4 f3-l fw6 tl mt0 mb1 mw6 dark-red ttu">
+                <p class="max-w-screen-lg text-lg sm:text-2xl sm:leading-10 font-semibold mb-10 sm:mb-11 text-red-600 uppercase">
                     Hello, I’m Marc
                 </p>
-                <h1 class="db dtc-ns tl f2 f1-l mv0 w-100">{{subtitle}}</h1>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900 mt-8 mb-8 sm:mt-12 sm:mb-10">{{subtitle}}</h1>
             </div>
     
             <section id="main-content" class="dt w-100 cf ph0">
@@ -41,6 +43,7 @@ scripts:
     </main>
 
     {% include partials/footer.html %}
+    </div>
 </body>
 
 </html>

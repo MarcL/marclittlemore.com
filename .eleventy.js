@@ -23,10 +23,12 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({'src/browserconfig.xml': 'browserconfig.xml'});
     eleventyConfig.addPassthroughCopy({'src/distjs/': 'js/'});
     eleventyConfig.addPassthroughCopy({'src/_redirects': '_redirects'});
+    eleventyConfig.addPassthroughCopy({'./_tmp/css/main.css': 'css/main.css'});
 
     // Watch - including files in .gitignore
     eleventyConfig.setUseGitIgnore(false);
     eleventyConfig.addWatchTarget('./src/distjs/')
+    eleventyConfig.addWatchTarget('./_tmp/css/main.css');
 
     addAllFilters(eleventyConfig);
     addAllShortcodes(eleventyConfig);

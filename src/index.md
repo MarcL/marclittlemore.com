@@ -2,7 +2,7 @@
 layout: homepage
 permalink: /
 title: Hello, I'm Marc Littlemore
-subtitle: I help people to profit through automation
+subtitle: I build and lead great teams
 ---
 
 I've been a professional software engineer since 1993 and I build and manage high performing software engineering teams at the BBC.
