@@ -29,7 +29,7 @@
   },
   "scripts": {
     "build": "ELEVENTY_ENV=production yarn build:all",
-    "build:all": "yarn build:js && yarn build:site",
+    "build:all": "yarn build:css && yarn build:js && yarn build:site",
     "build:css": "postcss src/css/main.css -o _tmp/css/main.css",
     "build:site": "eleventy",
     "build:js": "parcel build src/clientjs/index.js --dist-dir src/distjs",
