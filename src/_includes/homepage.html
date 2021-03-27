@@ -7,34 +7,36 @@ scripts:
 
 {% include partials/head.html %}
 
-<body class="bg-white font-sans">
+<body class="bg-white font-sans text-gray-500 antialiased">
     <div class="container mx-auto px-4">
 
     {% include partials/nav.html %}
 
     <main class="">
-        <section class="bg-white pv3 pv4-ns ph3 ph3-m ph0-l mw8 center">
-            <div class="w-100 pt2 pt3-l">
-                <p class="max-w-screen-lg text-lg sm:text-2xl sm:leading-10 font-semibold mb-10 sm:mb-11 text-red-600 uppercase">
+        <section class="">
+            <div class="">
+                <p class="max-w-screen-lg text-lg sm:text-2xl sm:leading-10 font-extrabold text-red-600 uppercase">
                     Hello, I’m Marc
                 </p>
-                <h1 class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900 mt-8 mb-8 sm:mt-12 sm:mb-10">{{subtitle}}</h1>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900">
+                    {{subtitle}}
+                </h1>
             </div>
     
-            <section id="main-content" class="dt w-100 cf ph0">
-                <div class="db dtc-ns w-100 f3 lh-title">
+            <section id="main-content" class="">
+                <div class="max-w-screen-lg text-lg sm:text-2xl sm:leading-10 font-medium mb-10 sm:mb-11">
                     {{content}}
                 </div>
             </section>
         </section>
 
         {% if collections.featured.size > 0 %}
-        <div class="bg-light-gray">
-            <section id="featured-content" class="w-100 ph0 pt3 mw8 center">
-                <div class="w-100">
-                    <h2 class="f3 f2-ns tc pb2 mv1">Latest</h2>
+        <div class="">
+            <section id="featured-content" class="">
+                <div class="">
+                    <h2 class="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-900 tracking-tight mb-8">Latest</h2>
                 </div>
-                <div class="cf w-100 roboto lh-copy f4-ns f5">
+                <div class="">
                     {% include partials/articleList, collection: collections.featured %}
                 </div>
             </section>
