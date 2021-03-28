@@ -1,19 +1,19 @@
-<main id="main-content">
-  <div class="mw8 center pt2 tc">
-      <h1 class="f3 f1-ns black fw6 mt1 mb1 ph1 pv0">
+<main id="main-content" class="flex flex-col justify-center items-center max-w-screen-lg mx-auto">
+  <div class="text-center">
+      <h1 class="font-bold text-5xl text-gray-900 py-4">
         {% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}
       </h1>
       {% if subtitle %}
-        <h2 class="f3-ns f5 fw4 lh-copy gray mt1 mb2 ph1">{{ subtitle }}</h2>
+        <h2 class="font-normal text-3xl text-gray-600 pb-4">{{ subtitle }}</h2>
       {% endif %}
   </div>
 
-  <div class="mw8 center pt2 tc">
-    <img class="w-100 br2 shadow-4" src="{% if headerImage %}{{ headerImage }}{% else %}{{ site.headerImage }}{% endif %}" title="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" alt="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" />
+  <div class="py-4">
+    <img class="rounded-lg shadow-lg" src="{% if headerImage %}{{ headerImage }}{% else %}{{ site.headerImage }}{% endif %}" title="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" alt="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" />
   </div>
 
-  <section class="mw8 pa3 mw8-ns ph5-ns center">
-    <div class="roboto lh-copy f4-ns f5">
+  <section class="pt-4">
+    <div class="prose prose-xl">
       {{ content }}
     </div>
   </section>
