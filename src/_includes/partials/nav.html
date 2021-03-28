@@ -6,7 +6,7 @@
                     menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
                     <a class="border-b-4 border-red-500 py-1 font-semibold" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
                 {% else %}
-                    <a class="font-medium border-b-4 border-white py-1 hover:border-red-500 hover:text-gray-500" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                    <a class="font-medium border-b-4 border-white py-1 hover:border-red-500" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
                 {% endif %}
             {% endfor %}
         </div>
