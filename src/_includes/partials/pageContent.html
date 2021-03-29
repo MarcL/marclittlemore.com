@@ -9,7 +9,14 @@
   </div>
 
   <div class="py-4">
-    <img class="rounded-lg shadow-lg" src="{% if headerImage %}{{ headerImage }}{% else %}{{ site.headerImage }}{% endif %}" title="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" alt="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" />
+    <figure>
+      <img class="rounded-lg shadow-lg" src="{% if headerImage %}{{ headerImage }}{% else %}{{ site.headerImage }}{% endif %}" title="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" alt="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" />
+      {% if image %}
+      <figcaption class="py-2 text-center">
+        <a href="{{image.source}}" title="Image by {{image.creator}}" class="underline" target="_blank" rel="noreferrer">Original image</a> by <a href="{{image.url}}" title="{{image.creator}}" class="underline" target="_blank" rel="noreferrer">{{image.creator}}</a>
+      </figcaption>
+      {% endif %}
+    </figure>
   </div>
 
   <section class="pt-4">
