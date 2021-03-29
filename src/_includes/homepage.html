@@ -12,7 +12,7 @@ scripts:
 
         {% include partials/nav.html %}
 
-        <main class="py-4 md:py-8 lg:py-10">
+        <main class="space-y-20">
             <section class="flex flex-col items-center">
                 <div class="pb-8 max-w-screen-lg">
                     <p class="text-lg sm:text-2xl sm:leading-10 font-extrabold text-red-600 uppercase">
@@ -31,11 +31,11 @@ scripts:
             </section>
 
             {% if collections.featured.size > 0 %}
-            <section id="featured-content" class="flex flex-col max-w-screen-lg mx-auto">
-                <h2 class="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-900 tracking-tight mb-8">
+            <section id="featured-content" class="flex flex-col max-w-screen-lg mx-auto py-4 lg:py-10">
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-900 tracking-tight mb-8 mx-auto">
                     Latest
                 </h2>
-                <div class="">
+                <div class="mx-auto">
                     {% include partials/articleList, collection: collections.featured %}
                 </div>
             </section>
