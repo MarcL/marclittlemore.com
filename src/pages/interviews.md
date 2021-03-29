@@ -13,9 +13,7 @@ Over the past couple of years, some wonderful people have asked me to contribute
 
 ### Genepool Software Interview - January 2020
 
-<div class="mw6 center pv2 pv4-ns">
 {% include partials/image, imageSrc: "/images/games/wolverines-revenge-512x384.jpg", title: "Wolverine's Revenge", alt: "Wolverine's Revenge videogame" %}
-</div>
 
 Back in the early 2000s, I worked on a game called Wolverine's Revenge. I was approached by the fantastic games journalist [Jack Yarwood](https://twitter.com/JackGYarwood) to learn more about Genepool Software, the company that I worked for at the time. While Genepool had a very short tenure, it was a fun but challenging place to work.
 
