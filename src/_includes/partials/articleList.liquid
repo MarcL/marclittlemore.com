@@ -19,9 +19,9 @@
 {% endif %}
 
 {%- if article.data.icons -%}
-<div class="gray tc">
+<div class="text-red-700 space-x-4 text-4xl">
 {%- for icon in article.data.icons -%}
-<i class="fa fa-{{icon}} fa-3x ph2"></i>
+<i class="fa fa-{{icon}}"></i>
 {% endfor %}
 </div>
 {%- endif -%}
