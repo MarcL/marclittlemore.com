@@ -6,41 +6,27 @@
 
 {% include partials/head.html %}
 
-<body class="avenir helvetica bg-light-gray">
-    <div class="pt2 pb0 mw6 center">
-        <img src="/images/me/marc-littlemore-512x512.jpg" class="db center br-100 h3 w3 shadow-4" alt="avatar">
-        <h3 class="tc fw6 ttu">Marc Littlemore</h3>
-    </div>
-    <div class="pt0 pb2 mw6 center">
-        {% for bioItem in biography %}
-        <article class="mw6 center bg-white br3 pa2 pa3-ns mv3 ba b--black-10 cf shadow-4">
-            <div class="fl w-100 tc pv2 pv3-ns">
-                <a href="{{ bioItem.url }}" target="_blank" rel="noreferrer" title="{{ bioItem.title }}" alt="{{ bioItem.title }}" class="f5 f4-ns fw5 link no-underline bg-animate bg-white hover-bg-light-blue">
-                    {% if bioItem.icon %}
-                    <i class="fa {{bioItem.icon}}"></i>
-                    {% endif %}
-                    <span>{{bioItem.title}}</span>
-                </a>
-            </div>
-          </article>
-          {% endfor %}
+<body class="font-sans bg-gray-500 antialiased">
+    <div class="flex flex-col justify-center items-center space-y-10">
+        <div class="flex flex-col justify-center items-center pt-8">
+            <img src="/images/me/marc-littlemore-512x512.jpg" class="shadow-lg rounded-full w-16 h-16" alt="avatar">
+            <h3 class="text-lg font-semibold text-white py-4">Marc Littlemore</h3>
         </div>
 
-    <footer class="pv4 ph3 ph5-ns tc bg-light-gray">
-    {% assign socialMediaKeys = socialMedia | keys %}
-    {% for socialItem in socialMedia %}
-        {% assign socialItem = socialMedia[socialMediaKey] %}
-        {% if socialItem.external %}
-        <a href="{{ socialItem.url }}" target="_blank" rel="noreferrer" title="{{ socialItem.title }}" class="link dark-gray hover-silver dib h2 w2 mr3">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa {{socialItem.icon}} fa-stack-1x fa-inverse"></i>
-            </span>
-        </a>
-        {% endif %}
-    {% endfor %}
-    </footer>
-    
+        <div class="text-xl font-medium text-center space-y-8">
+            {% for bioItem in biography %}
+            <article class="bg-white px-8 py-4 rounded-md shadow-lg hover:bg-gray-300">
+                <div class="">
+                    <a href="{{ bioItem.url }}" target="_blank" rel="noreferrer" title="{{ bioItem.title }}" alt="{{ bioItem.title }}" class="space-x-2">
+                        {% if bioItem.icon %}
+                        <i class="fa {{bioItem.icon}}"></i>
+                        {% endif %}
+                        <span>{{bioItem.title}}</span>
+                    </a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
 </body>
-
 </html>
