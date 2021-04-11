@@ -1,26 +1,26 @@
 <footer class="bg-gradient-to-b from-gray-700 to-gray-900 text-white">
 <div class="container mx-auto px-4 flex flex-col">
 
-<div class="flex flex-row justify-center mt-8 space-x-6">
+<div class="flex flex-row justify-center items-center mt-8 space-x-6 max-w-screen-md mx-auto">
 {% assign socialMediaKeys = socialMedia | keys %}
 {% for socialMediaKey in socialMediaKeys %}
     {% assign socialItem = socialMedia[socialMediaKey] %}
     {% if socialItem.external %}
-    <a href="{{ socialItem.url }}" target="_blank" rel="me noreferrer" title="{{ socialItem.title }}" class="hover:bg-gray-700 rounded-md px-3 py-3" aria-label="{{socialItem.name}} icon">
+    <a href="{{ socialItem.url }}" target="_blank" rel="me noreferrer" title="{{ socialItem.title }}" class="hover:bg-gray-700 rounded-md px-3 py-3 w-1/6" aria-label="{{socialItem.name}} icon">
     {% else %}
-    <a href="{{ socialItem.url }}" title="{{ socialItem.title }}" class="hover:bg-gray-700 rounded-md px-3 py-3" aria-label="{{socialItem.name}} icon">
+    <a href="{{ socialItem.url }}" title="{{ socialItem.title }}" class="hover:bg-gray-700 rounded-md px-3 py-3 w-1/6" aria-label="{{socialItem.name}} icon">
     {% endif %}
         <i class="fa text-white {{socialItem.icon}} text-2xl lg:text-3xl"></i>
     </a>
 {% endfor %}
 </div>
 
-  <div class="mt-4 uppercase space-x-8 mx-auto text-base md:text-lg lg:text-xl">
+  <div class="mt-4 uppercase space-x-8 mx-auto text-base md:text-lg lg:text-xl flex flex-row justify-center">
     {% for menuItem in footerMenu %}
         <a href="{{menuItem.url}}" class="hover:underline">{{menuItem.name}}</a>
     {% endfor %}
   </div>
-  <div class="my-4 mx-auto uppercase">
+  <div class="my-4 mx-auto uppercase text-center">
       Copyright &copy; 2007-{{"now" | date: "%Y"}} {{ site.title }} {{ site.time | date: '%Y' }}
   </div>
 </div>
