@@ -13,13 +13,13 @@ scripts:
 {%- include partials/social/facebookSDK.html -%}
 
 <div class="bg-gray-200 pb-32">
-    <div class="container mx-auto px-4 max-w-5xl">
+    <div class="container mx-auto px-4 max-w-2xl">
         <div class="relative">
-            <section class="flex flex-row justify-center items-center py-8">
-                <div class="px-4 py-4 w-7/12">
+            <section class="flex flex-col md:flex-row justify-center items-center py-0 md:py-8">
+                <div class="px-4 py-4 w-full md:w-7/12">
                     <h1 class="text-4xl text-gray-700">{{ landingpage.subtitle | markdownify}}</h1>
                 </div>
-                <div class="py-4 w-5/12">
+                <div class="py-4 w-full md:w-5/12">
                     {% if landingpage.image %}
                         <img src="{{landingpage.image}}" class="w-full object-fill h-3/4 shadow-lg">
                     {% else %}
@@ -31,14 +31,14 @@ scripts:
     </div>
 </div>
 <div class="relative">
-    <section class="flex justify-center items-center -mt-32">
+    <section class="flex justify-center items-center -mt-16">
         {% include partials/signUpForm.html %}
     </section>
 </div>
 
 <div class=" bg-white">
 
-<section class="container mx-auto px-4 max-w-5xl prose prose-2xl py-8 flex flex-col items-center">
+<section class="container mx-auto px-4 py-16 max-w-5xl prose prose-2xl flex flex-col items-center">
     {{content}}
 
     <a href="#signup-form">
