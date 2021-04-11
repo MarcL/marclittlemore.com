@@ -26,7 +26,7 @@ The alternative way to receive messages from Telegram is using [webhooks](https:
 
 Let's look at using Telegram's API and [Vercel](https://vercel.com) serverless functions to create a basic bot and deploy it to their cloud hosting.
 
-![Botfather](/images/posts/botfather.jpg) {.db .center .w4 .h4 .w5-ns .h5-ns}
+![Botfather](/images/posts/botfather.jpg) {.flex .justify-center}
 ## Creating a new Telegram bot
 
 The first task is to create a new bot that our user can interact with. To do this we must talk to the Botfather. This is Telegram's own bot which creates and updates new bots. Either start a new chat with Botfather or click on this URL to open the bot in Telegram: [https://t.me/botfather](https://t.me/botfather)
@@ -41,7 +41,7 @@ Botfather will send you an authorisation token which is a long string. You use t
 Make sure you keep your **Telegram authorisation token** safe and don't share it with anyone. If you do, they can send messages to users on behalf of your bot by using it.
 {% endcallout %}
 
-![Vercel](/images/posts/vercel-logo.jpg) {.db .center .w4 .h4 .w5-ns .h5-ns}
+![Vercel](/images/posts/vercel-logo.jpg) {.flex .justify-center}
 
 ## Vercel account
 
