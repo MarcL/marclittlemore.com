@@ -1,14 +1,16 @@
-<div class="flex flex-row flex-wrap items-start w-full text-base">
+<div class="flex flex-row flex-wrap w-full text-base space-y-8">
 {% for book in bookshelf %}
-<article class="w-full sm:w-1/2 text-center border-2 border-red-500 flex flex-row justify-center">
+<article class="w-full flex flex-row items-center space-x-16 px-8">
     <a href="{{book.book.link}}" target="_blank" rel="noreferrer">
-        <img class="shadow-lg" src="{{book.book.image_url}}" title="{{book.book.title}}" alt="{{book.book.title}}" />
-        <div class="space-y-0">
-            <h2 class="text-gray-900">{{book.book.title}}</h2>
-            <h3 class="text-gray-600">By {{book.book.authors.author.name}}</h3>
-            <div class="text-yellow-400">{{book.rating | starRating}}</div>
-        </div>
+        <img class="shadow-lg w-24" src="{{book.book.image_url}}" title="{{book.book.title}}" alt="{{book.book.title}}" />
     </a>
+    <div class="space-y-0">
+        <a href="{{book.book.link}}" target="_blank" rel="noreferrer">
+            <h2 class="text-gray-900">{{book.book.title}}</h2>
+        </a>
+        <h3 class="text-gray-600">By {{book.book.authors.author.name}}</h3>
+        <div class="text-yellow-400 text-2xl py-4">{{book.rating | starRating}}</div>
+    </div>
 </article>
 {% endfor %}
 </div>
