@@ -1,7 +1,7 @@
 <footer class="bg-gradient-to-b from-gray-700 to-gray-900 text-white">
-<div class="container mx-auto px-4 flex flex-col">
+<div class="max-w-screen-md mx-auto px-4 flex flex-col">
 
-<div class="flex flex-row justify-center items-center mt-8 space-x-6 max-w-screen-md mx-auto">
+<div class="flex flex-row flex-wrap justify-center items-center mt-8 space-x-1">
 {% assign socialMediaKeys = socialMedia | keys %}
 {% for socialMediaKey in socialMediaKeys %}
     {% assign socialItem = socialMedia[socialMediaKey] %}
@@ -10,12 +10,12 @@
     {% else %}
     <a href="{{ socialItem.url }}" title="{{ socialItem.title }}" class="hover:bg-gray-700 rounded-md px-3 py-3 w-1/6" aria-label="{{socialItem.name}} icon">
     {% endif %}
-        <i class="fa text-white {{socialItem.icon}} text-2xl lg:text-3xl"></i>
+        <i class="fa text-white {{socialItem.icon}} text-2xl"></i>
     </a>
 {% endfor %}
 </div>
 
-  <div class="mt-4 uppercase space-x-8 mx-auto text-base md:text-lg lg:text-xl flex flex-row justify-center">
+  <div class="mt-4 uppercase space-x-8 mx-auto text-base md:text-lg lg:text-xl flex flex-row flex-wrap justify-center">
     {% for menuItem in footerMenu %}
         <a href="{{menuItem.url}}" class="hover:underline">{{menuItem.name}}</a>
     {% endfor %}
