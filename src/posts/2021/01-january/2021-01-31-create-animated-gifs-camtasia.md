@@ -14,9 +14,7 @@ image:
 
 I love gifs!
 
-<div class="mw6 center pv2 pv4-ns">
 {% include partials/giphyEmbed.html, id: "3oriO6qJiXajN0TyDu" %}
-</div>
 
 I used to create them in the 90s when I was learning how to build my early websites. It was probably mostly the animated "under construction" gif. They went out of fashion in the late 90s due to [better file formats and a patent on the gif format](https://www.smithsonianmag.com/history/brief-history-gif-early-internet-innovation-ubiquitous-relic-180963543/). When Slack was launched in 2013, and other messaging apps became commonplace, they made a reappearance as an animated response to messages. I think I probably send at least 10 gifs a day but I'd only made a few of my own. As I use [Camtasia](https://www.techsmith.com/video-editor.html) for my [own videos on YouTube]({{socialMedia.youtube.url}}), let's look at how we can make our own using that.
 
@@ -42,9 +40,7 @@ Next, drag the video you've added or created onto the timeline. You'll probably 
 
 A gif needs to be short and sweet.
 
-<div class="mw6 center pv2 pv4-ns">
 {% include partials/giphyEmbed.html, id: "5wWf7GR2nhgamhRnEuA" %}
-</div>
 
 ## Add text
 
@@ -89,6 +85,4 @@ Gifs are not high quality videos so think about the following for optimising the
 
 Enjoy and keep on creating great gifs!
 
-<div class="mw6 center pv2 pv4-ns">
 {% include partials/giphyEmbed.html, id: "l4HodBpDmoMA5p9bG" %}
-</div>

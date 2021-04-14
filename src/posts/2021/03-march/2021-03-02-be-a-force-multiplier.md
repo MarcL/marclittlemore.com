@@ -20,9 +20,7 @@ I don't want to work with 10x developers.
 
 I much prefer **force multipliers**.
 
-<div class="mw6 center pv2 pv3-ns">
 {% include partials/giphyEmbed.html, id: "26wBbcfILlypQ5a7K" %}
-</div>
 
 ## Force multiplier
 

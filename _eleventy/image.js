@@ -1,6 +1,6 @@
 const Image = require("@11ty/eleventy-img");
 
-const imageShortcode = async (src, alt, size, className = 'db shadow-4') => {
+const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
     if (alt === undefined) {
         throw new Error(`Missing \`alt\` on image from: ${src}`);
     }

@@ -7,39 +7,41 @@ scripts:
 
 {% include partials/head.html %}
 
-<body class="avenir helvetica bg-white">
-    {% include partials/nav.html %}
+<body class="bg-white font-sans text-gray-500 antialiased">
+    <div class="container mx-auto px-4">
 
-    <main class="">
-        <section class="bg-white pv3 pv4-ns ph3 ph3-m ph0-l mw8 center">
-            <div class="w-100 pt2 pt3-l">
-                <p class="f4 f3-l fw6 tl mt0 mb1 mw6 dark-red ttu">
-                    Hello, I’m Marc
-                </p>
-                <h1 class="db dtc-ns tl f2 f1-l mv0 w-100">{{subtitle}}</h1>
-            </div>
-    
-            <section id="main-content" class="dt w-100 cf ph0">
-                <div class="db dtc-ns w-100 f3 lh-title">
-                    {{content}}
+        {% include partials/nav.html %}
+
+        <main class="space-y-20 pt-4">
+            <section class="flex flex-col items-center">
+                <div class="pb-8 max-w-screen-lg">
+                    <p class="text-lg sm:text-2xl sm:leading-10 font-extrabold text-red-600 uppercase">
+                        Hello, I’m Marc
+                    </p>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900">
+                        {{subtitle}}
+                    </h1>
                 </div>
+        
+                <section id="main-content" class="text-center max-w-screen-lg mx-auto">
+                    <div class="prose prose-2xl md:text-3xl">
+                        {{content}}
+                    </div>
+                </section>
             </section>
-        </section>
 
-        {% if collections.featured.size > 0 %}
-        <div class="bg-light-gray">
-            <section id="featured-content" class="w-100 ph0 pt3 mw8 center">
-                <div class="w-100">
-                    <h2 class="f3 f2-ns tc pb2 mv1">Latest</h2>
-                </div>
-                <div class="cf w-100 roboto lh-copy f4-ns f5">
+            {% if collections.featured.size > 0 %}
+            <section id="featured-content" class="flex flex-col max-w-screen-lg mx-auto py-4 lg:py-10">
+                <h2 class="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-900 tracking-tight mb-8 mx-auto">
+                    Latest
+                </h2>
+                <div class="mx-auto">
                     {% include partials/articleList, collection: collections.featured %}
                 </div>
             </section>
-        </div>
-        {% endif %}
-    </main>
-
+            {% endif %}
+        </main>
+    </div>
     {% include partials/footer.html %}
 </body>
 

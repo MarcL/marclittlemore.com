@@ -1,25 +1,28 @@
-<footer class="pv4 ph3 ph5-ns tc bg-white bt b--moon-gray">
+<footer class="bg-gradient-to-b from-gray-700 to-gray-900 text-white">
+<div class="max-w-screen-md mx-auto px-4 flex flex-col">
+
+<div class="flex flex-row flex-wrap justify-center items-center mt-8 space-x-1">
 {% assign socialMediaKeys = socialMedia | keys %}
 {% for socialMediaKey in socialMediaKeys %}
     {% assign socialItem = socialMedia[socialMediaKey] %}
     {% if socialItem.external %}
-    <a href="{{ socialItem.url }}" target="_blank" rel="me noreferrer" title="{{ socialItem.title }}" class="link dark-gray hover-silver dib h3 w3 h2-ns w2-ns mr2 mr3-ns" aria-label="{{socialItem.name}} icon">
+    <a href="{{ socialItem.url }}" target="_blank" rel="me noreferrer" title="{{ socialItem.title }}" class="hover:bg-gray-700 rounded-md px-3 py-3 w-1/6" aria-label="{{socialItem.name}} icon">
     {% else %}
-    <a href="{{ socialItem.url }}" title="{{ socialItem.title }}" class="link dark-gray hover-silver dib h3 w3 h2-ns w2-ns mr2 mr3-ns" aria-label="{{socialItem.name}} icon">
+    <a href="{{ socialItem.url }}" title="{{ socialItem.title }}" class="hover:bg-gray-700 rounded-md px-3 py-3 w-1/6" aria-label="{{socialItem.name}} icon">
     {% endif %}
-        <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa {{socialItem.icon}} fa-stack-1x fa-inverse"></i>
-        </span>
+        <i class="fa text-white {{socialItem.icon}} text-2xl"></i>
     </a>
 {% endfor %}
+</div>
 
-  <div class="mt4 ttu">
+  <div class="mt-4 uppercase space-x-8 mx-auto text-base md:text-lg lg:text-xl flex flex-row flex-wrap justify-center">
     {% for menuItem in footerMenu %}
-        <a href="{{menuItem.url}}" class="f6 fw5 link underline-hover near-black dib mr3 mr4-ns">{{menuItem.name}}</a>
+        <a href="{{menuItem.url}}" class="hover:underline">{{menuItem.name}}</a>
     {% endfor %}
   </div>
-  <div class="mt4 dark-gray f6 fw6 ttu">
+  <div class="my-4 mx-auto uppercase text-center">
       Copyright &copy; 2007-{{"now" | date: "%Y"}} {{ site.title }} {{ site.time | date: '%Y' }}
   </div>
+</div>
+
 </footer>

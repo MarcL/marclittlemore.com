@@ -4,31 +4,31 @@ const imageShortcode = require('./image');
 const callout = (content, type = 'info') => {
     const typeClasses = {
         info: {
-            background: 'bg-washed-green b--dark-green',
-            icon: 'fa-info-circle dark-green'
+            background: 'bg-green-100 border-green-800',
+            icon: 'fa-info-circle text-green-800'
         },
         warning: {
-            background: 'bg-washed-red b--dark-red',
-            icon: 'fa-exclamation-circle dark-red'
+            background: 'bg-red-100 border-red-800',
+            icon: 'fa-exclamation-circle text-red-800'
         },
         tip: {
-            background: 'bg-lightest-blue b--dark-blue',
-            icon: 'fa-fire-alt dark-blue'
+            background: 'bg-blue-100 border-blue-800',
+            icon: 'fa-fire-alt text-blue-800'
         }
     };
 
     const chosenType = typeClasses[type] || typeClasses['info'];
     const renderedHtml = markdownLib.render(content);
 
-    const iconInfo = `<div class="dtc w-20 w-10-l tc v-mid"><i class="fa fa-2x pa1 bg-white br-100 shadow-4 ${chosenType.icon}"aria-hidden="true"></i></div>`;
-    return `<div class="w-100 dt fw5 bt bw2 br2 br--bottom shadow-4 ph3 pv2 mv2 ${chosenType.background}">${iconInfo}<div class="w-90">${renderedHtml}</div></div>`
+    const iconInfo = `<div class="w-1/6 text-center"><i class="fa fa-2x px-1 py-1 bg-white rounded-full shadow-sm ${chosenType.icon}"aria-hidden="true"></i></div>`;
+    return `<div class="w-full px-3 py-4 shadow-lg border-t-2 ${chosenType.background} flex flex-row items-center">${iconInfo}<div class="w-5/6">${renderedHtml}</div></div>`
 };
 
 const quote = (content, addQuotes = true) => {
     const renderableContent = addQuotes ? `&ldquo;${content.trim()}&rdquo;` : content;
     const renderedHtml = markdownLib.render(renderableContent);
 
-    return `<blockquote class="mw7 center helvetica i near-black f3 f2-ns lh-title tc fw5 bg-washed-blue ma2 pa2 pa3-ns br1">${renderedHtml}</blockquote>`;
+    return `<div class="p-4 font-semibold text-xl sm:text-2xl italic border-l-4 border-red-600">${renderedHtml}</div>`;
 };
 
 const addAll = (eleventyConfig) => {

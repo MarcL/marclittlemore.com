@@ -18,7 +18,7 @@ I was swiping through my Twitter timeline the other night when I saw a really in
 
 I thought the poll posed an interesting question as to whether you should test Express routes or not. As I'm quite an evangelist of test driven development at the BBC, and I like a challenge and love writing code, I thought I'd have a think about it. I like to aim for as much test coverage as possible but I'm pragmatic enough to understand that 100% code coverage doesn't necessarily mean you're always testing the right things.
 
-> "Yes, you should unit test Express routes"
+> Yes, you should unit test Express routes
 
 My answer to the poll was "Yes, you should unit test Express routes", which I appreciate goes against the majority who said unit tests weren't reasonable. At the minimum, I think that you should **definitely** test Express routes with some solid integration testing. In our team, we use [supertest](https://github.com/visionmedia/supertest) for our HTTP expectations and also [nock](https://github.com/node-nock/nock) to mock responses from API calls and it works really well for testing full flows on Express routes. I'll be honest and say that we don't currently have full unit testing for the Express routes on the three main Node.js projects that our team work on, but having thought about it, I think there are some reasons why we probably should consider it.
 

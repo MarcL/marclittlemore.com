@@ -10,16 +10,14 @@ landingpage:
     subtitle: "Unleash **JSON magic** in your Chatfuel chatbot without needing **a developer**"
     button:
         text: SEND ME THE FREE GUIDE
-        icon: fa-cogs
+        icon: fa-envelope-o
     signup:
         title: "Sign up now for your **FREE guide**"
         uuid: "72d3502c470827973d3e8dd63"
         lid: "03ba3a616a"
         listname: "marclittlemore"
         botValue: "b_72d3502c470827973d3e8dd63_03ba3a616a"
-        privacy: "<i class=\"fa fa-lock\"></i> I hate spam as much as you do: your email address will **never** be shared."
 
-    background-colour: "bg-white"
 published: true
 ---
 

@@ -26,18 +26,13 @@ As a software engineer and chatbot developer, I've been experimenting with lots 
 
 Interested in learning more about chatbots but don't know where to start? Don't worry! I've made some videos which will make life much easier. I've put them all on YouTube so you can enjoy them at your own pace. If you have some ideas for videos you want me to record then [let me know](/contact) and I'll add the ideas to my list.
 
-<article>
-  <div class="cf pa2">
+<div class="flex flex-col sm:flex-row flex-wrap justify-center w-full prose prose-sm max-w-full">
 {%- for video in youTubeVideos.marketing.items -%}
-    <div class="fl w-100 w-50-ns pa2">
-      <a href="https://www.youtube.com/watch?v={{video.snippet.resourceId.videoId}}" class="db link tc" target="_blank" rel="noreferrer">
-        <img src="{{video.snippet.thumbnails.high.url}}" alt="{{video.snippet.title}}" class="w-100 db outline black-10 grow"/>
-        <dl class="mt2 f6 f5-ns fw5 lh-copy">
-          <dt class="clip">Title</dt>
-          <dd class="ml0 near-black truncate w-100">{{video.snippet.title}}</dd>
-        </dl>
-      </a>
-    </div>
-{% endfor %}
-  </div>
+<article class="w-full md:w-1/2 px-2 py-2 text-center">
+    <a href="https://www.youtube.com/watch?v={{video.snippet.resourceId.videoId}}" class="" target="_blank" rel="noreferrer">
+      <img src="{{video.snippet.thumbnails.high.url}}" alt="{{video.snippet.title}}" class="object-cover rounded-sm shadow-lg mt-2 mb-2"/>
+      <h3 class="text-sm">{{video.snippet.title}}</h3>
+    </a>
 </article>
+{% endfor %}
+</div>

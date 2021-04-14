@@ -44,9 +44,7 @@ If your code isn't purely [functional](https://en.wikipedia.org/wiki/Functional_
 
 ### 4. Find your problem
 
-<div class="mw6 center pv0">
 {% include partials/giphyEmbed.html, id: "xT5LMzIK1AdZJ4cYW4" %}
-</div>
 
 At this point you should have your "DOH!" moment. Talking about the code out loud will help you to realise the assumptions you've made which might not be true. Maybe you'll spot the typo where you've misnamed a variable. Or perhaps you'll see that your logic is incorrect.
 

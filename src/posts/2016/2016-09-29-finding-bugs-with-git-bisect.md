@@ -18,7 +18,7 @@ One `git` command that you might not have seen or used before is
 
 I'm currently working on some high-traffic Node.js projects for work and, as I normally do at the start of a new task, I ran `git pull` to ensure I had the latest code from our master branch, and then ran `npm install` to update any dependencies. I ran the tests to check everything was ok but an odd thing happened: our test suite hung when it finished although all of the tests still passed. **WHAT?** Time to investigate.
 
-![A wild bug appears](/images/posts/a-wild-bug-appeared.jpg){:title="A wild bug appears"}
+![A wild bug appears](/images/posts/a-wild-bug-appeared.jpg "A wild bug appears!")
 
 I had no idea why this bug had crept into the project, nor when it first appeared in the master branch. My initial thought was that it was the last pull request that had been merged, so I checked out the previous merge instead but again, the tests were still hanging. This felt like a perfect opportunity to try out `git bisect` for the first time in order to quickly work out which commit had caused the error.
 
@@ -53,7 +53,7 @@ git bisect good da5e24d
 
 Now that you've chosen your two endpoints, `git bisect` will choose a revision that's in the middle of these two and tell you how many more revisions it will need to check from this point.
 
-```
+```shell
 > git bisect good da5e24d
 Bisecting: 54 revisions left to test after this (roughly 6 steps)
 [dac781864e62c49b279c122c42d447ed26ad16e2] Merge pull request #100 from features/my-feature
@@ -61,7 +61,7 @@ Bisecting: 54 revisions left to test after this (roughly 6 steps)
 
 It's now a process of elimination to determine which specific commit caused the bug. You do this by running your test suite or using your project to see if the bug is still present in the current revision. At this point `git bisect` wants to know if this commit is good or bad so you answer `git bisect good` or `git bisect bad`.
 
-```
+```shell
 > git bisect bad
 Bisecting: 27 revisions left to test after this (roughly 5 steps)
 [4f455b6e42487657e0492305f025dd82021735d5] some commit message from this revision
@@ -69,7 +69,7 @@ Bisecting: 27 revisions left to test after this (roughly 5 steps)
 
 In my case, the `gulp` task was still hanging so I answered that the commit was bad. The revisions are then split into two again and you need to continue to answer whether the revisions are good or bad until you reach the last revision and find the guilty commit. At this point `git bisect` will show you which commit caused the problem and you can check the code in this revision to determine what has changed.
 
-```
+```shell
 02ce44a7491e9b0151169647115f9a073513e0ce is the first bad commit
 commit 02ce44a7491e9b0151169647115f9a073513e0ce
 Author: some-author <some-author@gmail.com>

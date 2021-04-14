@@ -1,27 +1,29 @@
-<header class="w-100 pt2 pb0 pb2-ns near-black" style="z-index:100;">
-    <nav class="fw6 ttu tracked tc dn db-l db-m pt2" id="navLinksWeb">
-        {% for menuItem in mainMenu %}
-            {% if page.url contains menuItem.url and
-                menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
-                <a class="f7 f5-ns link dim mr2 mr3-ns near-black pb1 bb bw2 b--red" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
-            {% else %}
-                <a class="f7 f5-ns link dim mr2 mr3-ns near-black" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
-            {% endif %}
-        {% endfor %}
-    </nav>
-    <nav class="fw6 ttu tracked tc dn-ns dn-m dt w-100 center" id="navLinksMobile">
-        <i class="fa fa-2x fa-bars near-black dn-l" aria-hidden="true" id="displayNavButton"></i>
-        <ul id="navLinks" class="list center mw6 pl0 ml0 dn">
+<header class="mx-auto text-xl uppercase">
+    <nav class="text-gray-900 space-x-4 text-center hidden md:flex justify-center py-8" id="navLinksWeb">
+        <div class="space-x-4 lg:space-x-8 items-center">
             {% for menuItem in mainMenu %}
-                <li class="pv2">
-                    {% if page.url contains menuItem.url and
-                        menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
-                        <a class="f6 f4-ns link mr2 mr3-ns near-black bb bw2 b--red" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
-                    {% else %}
-                        <a class="f6 f4-ns link mr2 mr3-ns near-black" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
-                    {% endif %}
-                </li>
+                {% if page.url contains menuItem.url and
+                    menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
+                    <a class="border-b-4 border-red-500 py-1 font-semibold" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                {% else %}
+                    <a class="font-medium border-b-4 border-white py-1 hover:border-red-500" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                {% endif %}
             {% endfor %}
-        </ul>
+        </div>
+    </nav>
+    <nav class="text-gray-900 space-x-4 pb-0 text-center block md:hidden" id="navLinksMobile">
+        <div class="flex flex-col justify-center items-center">
+            <i class="fa fa-2x fa-bars w-16" aria-hidden="true" id="displayNavButton"></i>
+            <div id="mobileLinks" class="flex flex-col justify-center items-center my-4 hidden">
+            {% for menuItem in mainMenu %}
+                {% if page.url contains menuItem.url and
+                    menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
+                    <a class="w-28 border-b-4 border-red-500 py-1 font-semibold" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                {% else %}
+                    <a class="w-28 inline-block font-medium border-b-4 border-white py-1 hover:border-red-500 hover:text-gray-500" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                {% endif %}
+            {% endfor %}
+            </div>
+        </div>
     </nav>
 </header>
