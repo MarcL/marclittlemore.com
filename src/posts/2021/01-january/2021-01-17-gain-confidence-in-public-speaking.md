@@ -20,9 +20,7 @@ The sort of shy where I'd blush bright red if somebody I didn't know talked to m
 
 The sort of shy where I'd blush bright red if I knew them too!
 
-<div class="mw6 center pv2 pv4-ns">
 {% include partials/giphyEmbed.html, id: "OpfkuToK5gSHK" %}
-</div>
 
 
 Since my teenage years, the thought of having to get up in front of people and give a speech or presentation absolutely terrified me. I had to explain my university dissertation to my tutors and peers at 21 and I mumbled and sweated my way through that. I then managed to avoid public speaking for a long time. I became less shy over time but I still avoided talking to large groups. And then two things changed which gave me more confidence to start giving speaking to an audience.
