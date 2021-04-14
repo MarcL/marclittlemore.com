@@ -2,6 +2,7 @@ module.exports = {
   purge: [
     './src/**/*.html',
     './src/**/*.liquid',
+    './_eleventy/**/*.js'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
