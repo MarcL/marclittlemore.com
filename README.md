@@ -7,6 +7,6 @@ My personal blog.
 ## Technologies used
 
 - Built with [11ty](https://www.11ty.dev/)
-- Styled with [Tachyons](https://tachyons.io)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
 - Deployed using [Netlify](http://netlify.com/)
 
