@@ -28,7 +28,7 @@ const quote = (content, addQuotes = true) => {
     const renderableContent = addQuotes ? `&ldquo;${content.trim()}&rdquo;` : content;
     const renderedHtml = markdownLib.render(renderableContent);
 
-    return `<blockquote class="mw7 center helvetica i near-black f3 f2-ns lh-title tc fw5 bg-washed-blue ma2 pa2 pa3-ns br1">${renderedHtml}</blockquote>`;
+    return `<div class="p-4 font-semibold text-xl sm:text-2xl italic border-l-4 border-red-600">${renderedHtml}</div>`;
 };
 
 const addAll = (eleventyConfig) => {
