@@ -42,7 +42,7 @@ Be pragmatic about fixing all of the issues you find. While there is a huge bene
 
 [Robert Baden-Powell](https://en.wikipedia.org/wiki/Robert_Baden-Powell,_1st_Baron_Baden-Powell), the father of scouting, says it nicely:
 
-{% quote %}
+{% quote false %}
 #### The Scouting Rule
 
 “Try and leave the world a little better than you found it”

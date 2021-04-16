@@ -67,7 +67,7 @@ You have to shape your own life. It's easy to plod along and feel a lack of achi
 I read [an article from a palliative nurse]((https://www.theguardian.com/lifeandstyle/2012/feb/01/top-five-regrets-of-the-dying)) who recorded the most common regrets of people on their deathbeds. This one stood out to me.
 
 {% quote %}
-"I wish I'd had the courage to live a life true to myself, not the life others expected of me."
+I wish I'd had the courage to live a life true to myself, not the life others expected of me.
 {% endquote %}
 
 Don't spend your own life waiting for life to happen to you.
