@@ -1,5 +1,5 @@
 ---
-title: Chat Bots & Messenger Marketing
+title: Chatbots & Messenger Marketing
 subtitle: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger
 description: Learn more about building automating your marketing and brands using chatbots and Facebook Messenger
 permalink: /bots/
@@ -12,7 +12,7 @@ It seems like everyone in 2018 and 2019 is talking about **chatbots** as the nex
 
 A chatbot allows users or customers to interact with an automated service via a chat interface. This could be using one of the main chat platforms like Facebook Messenger, Slack, WeChat, WhatsApp or Telegram, or it could be via a pop-up on your website. They contain a set of rules, or sometimes some more advance artificial intelligence, which allows them to have a conversation with your users. This often helps to automate your business or funnel your users into finding out information about your website, product or brand. Think of it as your own little robot butler!
 
-## Why should I be using a Chatbot?
+## Why should I be using a chatbot?
 
 The [use of messenging applications has sky rocketed](https://www.businessinsider.com/the-messaging-app-report-2015-11) in the past few years far beyond social networks. Everyone is using them to chat with friends and family, but now people are moving beyond that to connect with brands, buy products, and consume content. Wouldn't you like to be a part of it?
 
