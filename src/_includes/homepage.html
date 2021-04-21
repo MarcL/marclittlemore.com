@@ -44,7 +44,7 @@ scripts:
     </div>
 
     <div class="bg-gray-100 text-gray-800 py-8">
-        <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap">
+        <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
             {% assign testPost = collections.all | getPostByPath: '/javascript-testing/' %}
             {% include partials/card.html, image: testPost.data.headerImage, title: testPost.data.title, text: testPost.data.description, url: testPost.url %}
 
@@ -52,7 +52,7 @@ scripts:
             {% include partials/card.html, image: botPost.data.headerImage, title: botPost.data.title, text: botPost.data.description, url: botPost.url %}
 
             {% assign talksPost = collections.all | getPostByPath: '/talks/' %}
-            {% include partials/card.html, image: talksPost.data.headerImage, title: talksPost.data.title, text: talksPost.data.description, url: talksPost.url %}
+            {% include partials/card.html, image: talksPost.data.headerImage, title: talksPost.data.title, text: talksPost.data.subtitle, url: talksPost.url %}
 
             {% for article in collections.featured %}
                 {% include partials/card.html, image: article.data.headerImage, title: article.data.title, text: article.data.description, url: article.url %}
