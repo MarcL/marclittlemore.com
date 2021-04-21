@@ -11,16 +11,20 @@ scripts:
     <div class="container mx-auto px-4">
 
         {% include partials/nav.html %}
-
+    </div>
+    <div class="container mx-auto px-4">
         <main class="space-y-20 pt-4">
             <section class="flex flex-col items-center">
-                <div class="pb-8 max-w-screen-lg">
-                    <p class="text-lg sm:text-2xl sm:leading-10 font-extrabold text-red-600 uppercase">
-                        Hello, I’m Marc
-                    </p>
-                    <h1 class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900">
-                        {{subtitle}}
-                    </h1>
+                <div class="mb-0 sm:mb-8 max-w-screen-lg bg-white sm:bg-yellow-50 flex flex-col sm:flex-row items-center justify-center shadow-none sm:shadow-md">
+                    <div class="w-full sm:w-1/2 px-0 sm:px-8 flex flex-col items-center sm:items-start">
+                        <p class="text-lg sm:text-2xl sm:leading-10 font-extrabold text-red-600 uppercase">
+                            Hello, I’m Marc
+                        </p>
+                        <h1 class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900">
+                            {{subtitle}}
+                        </h1>
+                    </div>
+                    <img class="w-full sm:w-1/2 my-4 sm:my-0 shadow-lg sm:shadow-none rounded-md sm:rounded-none" src="/images/banners/marc-littlemore-homepage-banner-small.jpg">
                 </div>
         
                 <section id="main-content" class="text-center max-w-screen-lg mx-auto">
