@@ -52,6 +52,16 @@ const webmentionsSortedByProperty = (webmentions, url) => {
     return sorted;
 };
 
+const getPostByPath = (collection, path) => {
+    const matchingPosts = collection.filter(post => post.url === path);
+
+    if (matchingPosts.length > 0) {
+        return matchingPosts[0];
+    }
+
+    throw new Error(`getPostByPath filter: Can't find post '${path}'`)
+}
+
 const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('rfc822Date', rfc822DateFilter);
     eleventyConfig.addLiquidFilter('toISOString', toISOStringFilter);
@@ -60,6 +70,7 @@ const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('starRating', starRating);
     eleventyConfig.addFilter('keys', object => Object.keys(object));
     eleventyConfig.addFilter('collectionLastUpdatedDate', collectionLastUpdatedDateFilter);
+    eleventyConfig.addFilter('getPostByPath', getPostByPath);
 
     // Webmentions
     eleventyConfig.addFilter('webmentionsForUrl', webmentionsSortedByProperty);
