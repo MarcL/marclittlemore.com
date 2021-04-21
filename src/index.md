@@ -2,11 +2,12 @@
 layout: homepage
 permalink: /
 title: Hello, I'm Marc Littlemore
-subtitle: I help people to profit through automation
+subtitle: I help development teams to build quality software
 ---
 
-I've been a professional software engineer since 1993 and I build and manage high performing software engineering teams at the BBC.
+Hello! I'm Marc and I'm an <strong>Engineering Manager</strong> at <a href="https://www.gamma.co.uk/" target="_blank" rel="noreferrer" title="Gamma Telecom" alt="Gamma Telecom">Gamma Telecom</a>.
 
-I use my software development skills to help people to make more money by automating their marketing using [chatbots](/bots).
+I love helping to build inclusive teams of software developers who build quality applications at scale.
 
-I also teach developers how to level up their careers by learning how to properly [test their code](/javascript-testing).
+
+<a class="mt-10 px-6 py-4 bg-red-600 hover:bg-red-500 text-white shadow-md rounded-sm" href="/about" title="About Marc Littlemore" alt="">Find out more</a>

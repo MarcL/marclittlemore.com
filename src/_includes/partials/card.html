@@ -1,0 +1,16 @@
+<div class="bg-white shadow-md rounded-md w-full sm:w-1/2 flex flex-col mx-0">
+    {% image image "title" 500 "rounded-t-md h-52 w-full inset-0 object-cover" %}
+    <div class="flex-auto p-6">
+      <div class="flex flex-wrap">
+        <h1 class="flex-auto text-2xl font-semibold uppercase">
+          {{title}}
+        </h1>
+        <div class="w-full flex-none text-lg font-normal text-gray-500 mt-2">
+            <p>{{text}}</p>
+        </div>
+      </div>
+      <div class="flex text-base font-medium uppercase">
+          <a class="w-1/2 flex rounded-md underline py-4" href="#">Read more</a>
+      </div>
+    </div>
+</div>
