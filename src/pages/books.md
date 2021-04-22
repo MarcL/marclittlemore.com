@@ -1,11 +1,9 @@
 ---
 title: "Books"
-description: I've tried to read a lot more books in the past few years. This is a look at the books on my bookshelf and those that I'm currently reading.
+description: I've tried to read a lot more books in the past few years and redeveloped my love of reading. Take a look at the books on my bookshelf and see what I've read and am currently reading.
 permalink: /books/
 headerImage: /images/banners/books.jpg
 date: 2020-08-23
-tags:
-    - featured
 ---
 
 This page is generated using the [Goodreads API](https://www.goodreads.com/api) and built using the static site generator [11ty](https://www.11ty.dev/). This allows me to automatically update this page each time I publish the site with any books I add to Goodreads.

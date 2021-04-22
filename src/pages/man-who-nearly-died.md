@@ -1,7 +1,7 @@
 ---
 title: How I Almost Died
 subtitle: Back in 2014, I almost died. Here's my story.
-description: Out of the blue I contracted a bacterial infection in my bowel. It almost killed me. Read what happened to me.
+description: In 2014, completely out of the blue, I contracted a bacterial infection in my bowel. My body's immune system reacted and gave me sepsis. It almost killed me but luckily I survived. Here's my story.
 permalink: /how-i-almost-died/
 headerImage: /images/banners/hospital-lights.jpg
 date: 2015-01-01

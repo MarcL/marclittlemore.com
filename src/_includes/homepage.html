@@ -11,37 +11,59 @@ scripts:
     <div class="container mx-auto px-4">
 
         {% include partials/nav.html %}
+    </div>
 
-        <main class="space-y-20 pt-4">
-            <section class="flex flex-col items-center">
-                <div class="pb-8 max-w-screen-lg">
-                    <p class="text-lg sm:text-2xl sm:leading-10 font-extrabold text-red-600 uppercase">
-                        Hello, I’m Marc
-                    </p>
-                    <h1 class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900">
-                        {{subtitle}}
-                    </h1>
+    <div class="container max-w-screen-lg mx-auto px-4">
+        <main class="py-4">
+            <section class="flex flex-col flex-wrap items-center">
+                <div class="mb-0 sm:mb-8 max-w-screen-lg bg-white sm:bg-yellow-50 flex flex-col sm:flex-row items-center justify-center shadow-none sm:shadow-md">
+                    <div class="w-full sm:w-1/2 px-0 sm:px-8 flex flex-col items-center sm:items-start">
+                        <h1 class="text-4xl lg:text-6xl leading-none font-extrabold tracking-tight text-gray-900 text-center sm:text-left">
+                            {{subtitle}}
+                        </h1>
+                    </div>
+                    {% image "/images/banners/marc-littlemore-homepage-banner-small.jpg" "Marc Littlemore" 500 "w-full sm:w-1/2 my-4 sm:my-0 shadow-lg sm:shadow-none rounded-md sm:rounded-none" %}
                 </div>
         
-                <section id="main-content" class="text-center max-w-screen-lg mx-auto">
-                    <div class="prose prose-2xl md:text-3xl">
+                <section id="main-content" class="text-center max-w-screen-lg mx-auto py-8">
+                    <div class="text-gray-800 text-2xl sm:text-3xl leading-9 space-y-10">
                         {{content}}
                     </div>
+                    <div class="w-full md:w-2/5 max-w-screen-lg mx-auto">
+                        <a class="block mt-10 px-6 py-4 bg-red-600 hover:bg-red-500 text-white shadow-md rounded-sm text-xl sm:text-2xl uppercase"
+                            href="/about"
+                            title="About Marc Littlemore"
+                            alt="About Marc Littlemore"
+                        >
+                            Find out more
+                        </a>
+                    </div>                    
                 </section>
             </section>
-
-            {% if collections.featured.size > 0 %}
-            <section id="featured-content" class="flex flex-col max-w-screen-lg mx-auto py-4 lg:py-10">
-                <h2 class="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-900 tracking-tight mb-8 mx-auto">
-                    Latest
-                </h2>
-                <div class="mx-auto">
-                    {% include partials/articleList, collection: collections.featured %}
-                </div>
-            </section>
-            {% endif %}
         </main>
     </div>
+
+    <div class="bg-gray-700 text-gray-800 py-8">
+        <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
+            <h2 class="text-white text-3xl sm:text-4xl font-bold pb-8 uppercase">Latest posts</h2>
+            <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
+                {% assign latestPosts = collections.post | reverse %}
+                {% for post in latestPosts limit: 2 %}
+                    {% include partials/card.html, image: post.data.headerImage, title: post.data.title, text: post.data.description, url: post.url %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 text-gray-800 py-8">
+        <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
+            {% for path in featured %}
+                {% assign cardPost = collections.all | getPostByPath: path %}
+                {% include partials/card.html, image: cardPost.data.headerImage, title: cardPost.data.title, text: cardPost.data.description, url: cardPost.url %}
+            {% endfor %}
+        </div>
+    </div>
+
     {% include partials/footer.html %}
 </body>
 

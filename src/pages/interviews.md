@@ -5,8 +5,6 @@ description: Over the past couple of years, some wonderful people have asked me 
 permalink: /interviews/
 headerImage: /images/banners/interviews-conversation.jpg
 date: 2020-08-25
-tags:
-    - featured
 ---
 
 Over the past couple of years, some wonderful people have asked me to contribute to their podcasts and websites. I talk about technology, the games industry, my love of learning, and how I try and achieve a postive work-life balance. Have a read or take a listen below to hear my thoughts and stories.

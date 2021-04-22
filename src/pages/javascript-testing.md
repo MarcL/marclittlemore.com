@@ -3,7 +3,7 @@ title: JavaScript Testing
 subtitle: Want to learn more about testing your JavaScript code?
 permalink: /javascript-testing/
 headerImage: /images/banners/computer-code.jpg
-description: "Learn more about testing your JavaScript and sign up to my course"
+description: "Testing your JavaScript code can be confusing for beginners. I share my tips for getting started and why you need to test your code."
 tags:
     - testing
 ---
