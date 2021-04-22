@@ -45,21 +45,10 @@ scripts:
 
     <div class="bg-gray-100 text-gray-800 py-8">
         <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
-            {% assign testPost = collections.all | getPostByPath: '/javascript-testing/' %}
-            {% include partials/card.html, image: testPost.data.headerImage, title: testPost.data.title, text: testPost.data.description, url: testPost.url %}
-
-            {% assign botPost = collections.all | getPostByPath: '/bots/' %}
-            {% include partials/card.html, image: botPost.data.headerImage, title: botPost.data.title, text: botPost.data.description, url: botPost.url %}
-
-            {% assign talksPost = collections.all | getPostByPath: '/talks/' %}
-            {% include partials/card.html, image: talksPost.data.headerImage, title: talksPost.data.title, text: talksPost.data.subtitle, url: talksPost.url %}
-
-            {% for article in collections.featured %}
-                {% include partials/card.html, image: article.data.headerImage, title: article.data.title, text: article.data.description, url: article.url %}
+            {% for path in featured %}
+                {% assign cardPost = collections.all | getPostByPath: path %}
+                {% include partials/card.html, image: cardPost.data.headerImage, title: cardPost.data.title, text: cardPost.data.description, url: cardPost.url %}
             {% endfor %}
-
-            {% assign gamesPost = collections.all | getPostByPath: '/games/' %}
-            {% include partials/card.html, image: gamesPost.data.headerImage, title: gamesPost.data.title, text: gamesPost.data.description, url: gamesPost.url %}
         </div>
     </div>
 

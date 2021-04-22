@@ -1,6 +1,7 @@
 ---
 title: Talks
 subtitle: A few of the talks that I've given recently
+description: I used to hate public speaking but now I love it. Here are a few of my recent talks.
 permalink: /talks/
 headerImage: /images/banners/talks.jpg
 ---

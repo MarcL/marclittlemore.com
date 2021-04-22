@@ -1,7 +1,7 @@
 ---
 title: Games
 subtitle: Video games that I've worked on.
-description: I worked in the video games industry for 20 years. Here are some of the games which you may have played.
+description: I worked in the video games industry for almost 20 years. I worked on some fantastic projects and here are some of the games which you may have played.
 permalink: /games/
 headerImage: /images/banners/game-controller.jpg
 date: 2015-02-01
