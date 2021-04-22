@@ -43,6 +43,18 @@ scripts:
         </main>
     </div>
 
+    <div class="bg-gray-700 text-gray-800 py-8">
+        <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
+            <h2 class="text-white text-3xl sm:text-4xl font-bold pb-8 uppercase">Latest posts</h2>
+            <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
+                {% assign latestPosts = collections.post | reverse %}
+                {% for post in latestPosts limit: 2 %}
+                    {% include partials/card.html, image: post.data.headerImage, title: post.data.title, text: post.data.description, url: post.url %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
     <div class="bg-gray-100 text-gray-800 py-8">
         <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
             {% for path in featured %}
