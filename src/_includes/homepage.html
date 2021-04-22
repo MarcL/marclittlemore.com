@@ -57,6 +57,9 @@ scripts:
             {% for article in collections.featured %}
                 {% include partials/card.html, image: article.data.headerImage, title: article.data.title, text: article.data.description, url: article.url %}
             {% endfor %}
+
+            {% assign gamesPost = collections.all | getPostByPath: '/games/' %}
+            {% include partials/card.html, image: gamesPost.data.headerImage, title: gamesPost.data.title, text: gamesPost.data.description, url: gamesPost.url %}
         </div>
     </div>
 
