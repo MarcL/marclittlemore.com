@@ -16,7 +16,7 @@ In the middle of January 2021, I decided to start a [habit of writing](http://lo
 
 I was inspired by the [#ship30for30](https://ship30for30.com/) community I'd seen on Twitter. The hashtags were appearing daily and I thought a writing habit would be good to start and could be a useful tool to clarify my thinking.
 
-Here's are some of the lessons I learned after my [writing 30 articles](/articles) experiment was over.
+Here are some of the lessons I learned after my [30 days of writing](/articles) experiment was over.
 
 ## It took more than 30 days
 
@@ -38,7 +38,7 @@ Having a website where you share personal views is a double-edged sword. On the 
 
 Every time I wrote a new article, I shared it on Twitter and on Linked In. While the aim was never to attempt to go viral, I found that people enjoyed reading the articles. Twitter wasn't the biggest driver of traffic but as I ended up writing more articles around team cultures, Linked In became a great place for a discussion. I found that my writing resonated with people and they commented on each article I shared.
 
-I talked about [sharing your network](/share-your-network/) and [learning in public](/learn-in-public/) in one of my articles and I found that sharing my work expanded my own network. I talked to a few recruiters who had "heard of me" from my articles.
+I talked about [sharing your network](/share-your-network/) and [learning in public](/learn-in-public/) in one of my articles and I found that sharing my work expanded my own network. I talked to a few recruiters who had "heard of me" from my articles. It also allowed me to have great conversations with new people. I especially enjoyed a Zoom chat I had with [Duncan Skelton](https://www.linkedin.com/in/duncanskelton/) about leadership and coaching. Writing has really opened up my network to more opportunities.
 
 ## Finding my cadence
 
@@ -67,3 +67,7 @@ Whilst I really enjoy writing technical articles, the time taken meant I wrote f
 ## Would I do it again?
 
 I very much enjoyed the challenge and I think its made me a better writer. My website readership has increased and I'm starting to rank for various keywords now too. I don't think I'd attempt to write every day again as this was difficult at times. However, writing a new article weekly is what I want to do from now on.
+
+You should try a 30-day writing challenge if you haven't.
+
+I promise that it'll change the way you think.
