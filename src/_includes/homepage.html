@@ -52,6 +52,11 @@ scripts:
                     {% include partials/card.html, image: post.data.headerImage, title: post.data.title, text: post.data.description, url: post.url %}
                 {% endfor %}
             </div>
+            <div class="py-2 sm:py-4">
+                <a href="/articles" title="See all articles" alt="See all articles" class="text-white font-medium text-xl sm:text-2xl uppercase hover:text-gray-200 hover:underline">
+                    See all articles
+                </a>
+            </div>
         </div>
     </div>
 

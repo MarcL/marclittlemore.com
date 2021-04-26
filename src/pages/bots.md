@@ -1,7 +1,7 @@
 ---
 title: Chatbots & Messenger Marketing
 subtitle: Learn more about automating your marketing using chatbots and Facebook Messenger
-description: Learn more aboutautomating your marketing using chatbots and Facebook Messenger.
+description: Learn more about automating your marketing using chatbots and Facebook Messenger.
 permalink: /bots/
 headerImage: /images/banners/chatbots-and-messenger-marketing.jpg
 ---

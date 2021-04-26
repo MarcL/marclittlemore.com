@@ -2,7 +2,7 @@
 title:  "Never get too comfortable"
 permalink: /never-get-too-comfortable/
 headerImage: /images/banners/never-get-too-comfortable.jpg
-description: "Everyone needs to feel comfortable at work. Howeer, getting too comfortable can become a problem."
+description: "Everyone needs to feel comfortable at work. However, getting too comfortable can become a problem."
 tags:
     - writing
     - essay
