@@ -5,8 +5,6 @@ description: In 2014, completely out of the blue, I contracted a bacterial infec
 permalink: /how-i-almost-died/
 headerImage: /images/banners/hospital-lights.jpg
 date: 2015-01-01
-tags:
-    - post
 ---
 
 How do you start to tell someone that you nearly died? That your wife watched you in intensive care, fighting for your life? That your children nearly lost their father when he was only 42?
