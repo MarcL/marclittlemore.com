@@ -19,11 +19,15 @@
     </figure>
   </div>
 
-  <section class="pt-4 w-full mx-auto flex flex-col items-center">
+  <section class="py-4 w-full mx-auto flex flex-col items-center">
     <div class="prose prose-xl">
       {{ content }}
     </div>
   </section>
+  
+  {% if tags contains "post" %}
+  {% include partials/author.html %}
+  {% endif %}
 
   {% include partials/webmentions.liquid %}
 </main>

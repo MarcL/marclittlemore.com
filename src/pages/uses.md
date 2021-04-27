@@ -5,8 +5,6 @@ description: A list of software and hardware that I use almost every day for sof
 permalink: /uses/
 headerImage: /images/banners/laptop.jpg
 date: 2020-01-30
-tags:
-    - post
 ---
 
 ## Hardware
