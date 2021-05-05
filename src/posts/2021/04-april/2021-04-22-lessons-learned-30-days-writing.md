@@ -12,7 +12,7 @@ image:
     url: https://unsplash.com/@lucabravo
 ---
 
-In the middle of January 2021, I decided to start a [habit of writing](http://localhost:8080/creating-a-writing-habit/).
+In the middle of January 2021, I decided to start a [habit of writing](/creating-a-writing-habit/).
 
 I was inspired by the [#ship30for30](https://ship30for30.com/) community I'd seen on Twitter. The hashtags were appearing daily and I thought a writing habit would be good to start and could be a useful tool to clarify my thinking.
 
