@@ -7,7 +7,7 @@ headerImage: /images/banners/home-office.jpg
 date: 2015-10-09
 ---
 
-This page is inspired by Derek Siver's [now page](http://sivers.org/now) suggestion and his [Now Now Now](http://nownownow.com/) movement. The purpose of this page is to share my current focus.
+This page is inspired by Derek Siver's [now page](https://sivers.org/now) suggestion and his [Now Now Now](https://nownownow.com/) movement. The purpose of this page is to share my current focus.
 
 ## Currently doing
 - Started a new job at [Gamma](https://www.gamma.co.uk/) as an Engineering Manager and understanding their domain

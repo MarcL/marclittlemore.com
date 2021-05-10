@@ -12,7 +12,7 @@ image:
     url: https://unsplash.com/@farber
 ---
 
-At the end of last year I converted my [DJ Cruze website](https://djcruze.co.uk) from Wordpress to [Eleventy](https://www.11ty.dev/). Much like this website, it's easy to deploy using [Netlify](http://netlify.com/). Moving to a statically generated site made it much easier to update and avoided me having to maintain a server, PHP, Wordpress versions, and so on.
+At the end of last year I converted my [DJ Cruze website](https://djcruze.co.uk) from Wordpress to [Eleventy](https://www.11ty.dev/). Much like this website, it's easy to deploy using [Netlify](https://netlify.com/). Moving to a statically generated site made it much easier to update and avoided me having to maintain a server, PHP, Wordpress versions, and so on.
 
 For many years I created the DJ Cruze podcast show so I wanted to move over the podcast RSS feed from Wordpress to Eleventy. Creating a custom RSS feed based on my podcast episodes took a bit of work so I thought I'd share how I did it.
 
