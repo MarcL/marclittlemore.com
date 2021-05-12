@@ -46,7 +46,7 @@ I love learning. It's something I actively try and encourage my children to unde
 
 ## Share your network
 
-You can lift the whole team up by sharing your network, especially if you've been at a company for a while. You'll have gained a reputation, and hopefully a good one. Use this to sponsor members of your team. Introduce them to other people they might not normally meet and create those opportunities for career growth. Lend your privilege to others who may not have it yet. A short introduction to another team might not mean much to you, but it'll do wonders for the confidence of your engineer who is being raised up to represent your team.
+You can lift the whole team up by [sharing your network](/share-your-network/), especially if you've been at a company for a while. You'll have gained a reputation, and hopefully a good one. Use this to sponsor members of your team. Introduce them to other people they might not normally meet and create those opportunities for career growth. Lend your privilege to others who may not have it yet. A short introduction to another team might not mean much to you, but it'll do wonders for the confidence of your engineer who is being raised up to represent your team.
 
 ## Inspire the team
 
