@@ -1,10 +1,8 @@
-<div class="max-w-screen-lg mx-auto w-full sm:w-3/4 py-4 sm:py-8 bg-gray-50 text-gray-600 shadow-md flex flex-col sm:flex-row justify-center items-center my-4">
+<div class="max-w-screen-lg mx-auto w-full sm:w-3/4 py-4 sm:py-8 flex flex-col sm:flex-row justify-center items-center my-4">
     <div class="bg-white shadow-none md:shadow-xl rounded-sm px-8 py-8 flex flex-col justify-center items-center w-full">
         <h2 class="font-semibold text-2xl text-gray-800 mb-8 text-center">
             {{formTitle | markdownify}}
         </h2>
-        <p class="emailoctopus-success-message"></p>
-        <p class="emailoctopus-error-message"></p>
 
         <form action="https://emailoctopus.com/lists/{{emailOctopus.listId}}/members/embedded/1.3s/add"
         method="post"
@@ -25,22 +23,28 @@
                 <input name="field_4" type="hidden" value="{{page.url}}">
                 <input name="field_5" type="hidden" value="{{tag | default: 'unknown'}}">
 
-                <label class="inline-flex items-center">
-                    <input
-                        type="checkbox"
-                        class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50"
-                        checked=""
-                        id="consent"
-                        name="consent"
-                    >
-                    <span class="ml-2">I consent to receiving your weekly newsletter and special offers</span>
-                </label>
+                <div class="emailoctopus-form-row-consent h-0">
+                    <label class="inline-flex items-center">
+                        <input
+                            type="checkbox"
+                            class="rounded border-gray-300 text-blue-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50"
+                            checked=""
+                            id="consent"
+                            name="consent"
+                        >
+                        <span class="ml-2">I consent to receiving your weekly newsletter and special offers</span>
+                    </label>
+                </div>
 
                 <div class="emailoctopus-form-row-hp">
                     <input type="text" name="{{emailOctopus.botKey}}" tabindex="-1" autocomplete="nope" class="absolute -left-96" aria-hidden="true">
                 </div>
                 <input type="hidden" name="successRedirectUrl" value="{{site.url}}{{emailOctopus.thankYouPagePath}}">
 
+                <div id="email-messages">
+                    <div class="emailoctopus-error-message text-red-600 font-medium text-center"></div>
+                </div>
+        
                 <button type="submit" class="mt-8 bg-blue-600 hover:bg-blue-800 text-white font-bold text-xl py-4 px-8 rounded space-x-4">
                     <i class="fa fa-envelope-o"></i><span>Sign up today</span>
                 </button>
@@ -48,9 +52,14 @@
             </div>
         </form>
 
-        <div class="emailoctopus-rewards">
+        <div class="emailoctopus-rewards pt-4 italic">
             Powered by
-            <a href="https://emailoctopus.com/?urli=7tKjm&amp;utm_medium=user_referral&amp;utm_source=builder" target="_blank">
+            <a
+                href="https://emailoctopus.com/?urli=7tKjm&amp;utm_medium=user_referral&amp;utm_source=builder"
+                target="_blank"
+                rel="noreferrer"
+                class="text-purple-900 hover:underline hover:text-purple-600"
+            >
                 EmailOctopus
             </a>
         </div>
