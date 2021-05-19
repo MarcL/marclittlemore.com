@@ -19,17 +19,7 @@
     </figure>
   </div>
 
-  <section class="py-4 w-full mx-auto flex flex-col items-center">
-    <div class="prose prose-xl">
-      {{ content }}
-    </div>
-  </section>
+  {{ content }}
   
-  {% if tags contains "post" %}
-  {% include partials/author.html %}
-  {% endif %}
-
-  {% include partials/emailOctopus/form.html, formTitle: "Get my **best articles**" %}
-
   {% include partials/webmentions.liquid %}
 </main>

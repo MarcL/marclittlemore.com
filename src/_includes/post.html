@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<section class="py-4 w-full mx-auto flex flex-col items-center">
+    <div class="prose prose-xl">
+        {{ content }}
+    </div>
+</section>
+    
+{% include partials/author.html %}
+
+{% include partials/emailOctopus/form.html, formTitle: "Get my **best articles**" %}
