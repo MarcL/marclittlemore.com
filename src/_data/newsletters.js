@@ -9,6 +9,11 @@ const EMAIL_OCTOPUS_BASE_URL = 'https://emailoctopus.com/api/1.5';
 
 module.exports = async () => {
     const {EMAIL_OCTOPUS_API_KEY: apiKey} = process.env;
+
+    if (!apiKey) {
+        throw new Error('Expecting EMAIL_OCTOPUS_API_KEY in environment variables!');
+    }
+    
     const {listId} = emailOctopusConfig;
     const url = `${EMAIL_OCTOPUS_BASE_URL}/lists/${listId}?api_key=${apiKey}`;
 

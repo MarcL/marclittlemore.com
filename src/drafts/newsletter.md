@@ -9,9 +9,12 @@ image:
     source: https://unsplash.com/photos/4vrZpOo7fTc
     creator: Mailchimp
     url: https://unsplash.com/@mailchimp
+
+sitemap:
+    exclude: yes
 ---
 
-Every Sunday, **{{newsletters.subscribers}} technical leaders, developers and creatives** rethink their relationship with money and ambition with my newsletter.
+Every Sunday, **{{newsletters.subscribers}} technical leaders, remote workers, and developers** learn more about .
 
 Join our global community now!
 
