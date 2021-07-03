@@ -17,8 +17,6 @@ landingpage:
         lid: "03ba3a616a"
         listname: "marclittlemore"
         botValue: "b_72d3502c470827973d3e8dd63_03ba3a616a"
-
-published: true
 ---
 
 ## Want to build better chatbots?

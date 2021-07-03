@@ -20,7 +20,6 @@ landingpage:
 
     images:
         upsell: "/images/landingpages/javascript-testing-beginners-course.jpg"
-published: true
 ---
 
 ## What you will learn
