@@ -65,7 +65,7 @@ Although `commitlint` allows you to validate against a variety of commit message
 npm install --save-dev @commitlint/config-conventional
 ```
 
-Not you can set up the `commitlint` configuration file called `commitlint.config.js` so it uses the `config-conventional` message format:
+Now you can set up the `commitlint` configuration file called `commitlint.config.js` so it uses the `config-conventional` message format:
 
 ```shell
 echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > commitlint.config.js
