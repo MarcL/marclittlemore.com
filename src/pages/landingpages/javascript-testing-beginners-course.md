@@ -3,7 +3,7 @@ layout: landingpage-long
 title: JavaScript Testing Beginners Course
 permalink: /javascript-testing-beginners-course/
 headerImage: /images/banners/computer-code.jpg
-description: Struggling to get started with JavaScript testing? Let me help you.
+description: Struggling to get started with JavaScript testing? Sign up now to get a FREE 7-day email course.
 
 landingpage:
     title: JavaScript Testing For Beginners
