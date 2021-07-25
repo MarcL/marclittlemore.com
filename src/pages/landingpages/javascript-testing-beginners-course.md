@@ -2,6 +2,7 @@
 layout: landingpage-long
 title: JavaScript Testing Beginners Course
 permalink: /javascript-testing-beginners-course/
+headerImage: /images/banners/computer-code.jpg
 description: Struggling to get started with JavaScript testing? Let me help you.
 
 landingpage:
