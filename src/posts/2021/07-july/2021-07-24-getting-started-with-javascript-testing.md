@@ -35,17 +35,17 @@ The types of tests you will want to add to your code may differ depending on how
 
 ## Adding tests to an existing codebase
 
-If you've already got an existing project with lots of code, a good approach is to start writing end-to-end tests. These test the functionality that the user will see and don't attempt to mock out any of your dependencies.
+If you've already got an existing project with lots of code, a good approach is to start writing [end-to-end tests](/different-types-of-software-tests/). These test the functionality that the user will see and don't attempt to mock out any of your dependencies.
 
-For end-to-end tests, you can use a fresh environment that you create to run the tests. This can match your production environment as closely as it can but it's created and intialised when you start running your end-to-end tests. Alternatively, you can initialise your data before your tests run and remove this data at the end of the test cycle. This is often known as the setup and tear-down process in a lot of test frameworks.
+For end-to-end tests, you can use a fresh development environment that you create to run the tests. This can match your production environment as closely as it can but it's created and intialised when you start running your end-to-end tests. Alternatively, you can initialise your data before your tests run and remove this data at the end of the test cycle. This is often known as the setup and tear-down process in a lot of test frameworks.
 
-Your database could be intialised via fixture files which are loaded from a file and contain the state of your application that you want to test. Your tests can assert that the data changes correctly as you run your test cases. It's good practice to ensure that your tests can run independently. You want to avoid sharing state between tests. You don't want a test to fail because a previous test has run incorrectly.
+Your database could be intialised via fixture files, data which is loaded from a file, and contain the initial state of your application that you want to test. Your tests can assert that the data changes correctly as you run your test cases. It's good practice to ensure that your tests can run independently. You want to avoid sharing state between tests. You don't want a test to fail because a previous test has run incorrectly.
 
 End-to-end tests are great because they mimic what a real user would do when they use your application. However, they can take longer to run and can take development time to get the data and environment set up correctly.
 
 If you want to start writing some end-to-end tests for your code then take a look at [Cypress](https://www.cypress.io/), [Test Cafe](https://testcafe.io/), or [Codecept](https://codecept.io/). These are all fantastic testing frameworks which will help you to get started.
 
-A good compromise, and a complement to end-to-end tests, are integration tests.
+A good compromise, and a complement to end-to-end tests, are [integration tests](/different-types-of-software-tests/).
 
 Integration tests can be used to test your code but for these tests you can mock or stub your dependencies with fake data. This means that things like upstream APIs or databases can have mocked data that you control. This allows you to avoid having to depend on parts of your system that you might not easily control. You are able to provide your application with both the happy path, when the code works as expected, and the unhappy paths, when there are errors or upstream APIs don't work as expected.
 
@@ -55,11 +55,11 @@ Integration tests can be harder to get started with as you have to understand ho
 
 ## How many tests to write
 
-Don't get hung up on your code's test coverage. This is a metric to determine what percentage of your code is covered by tests. The goal is to write tests that are easy to understand and maintain not to test everything. If you're not sure how many tests you need to write, start small and add more as you go.
+Don't get hung up on your code's test coverage. This is a metric to determine what percentage of your code modules, functions, and logic branches are covered by tests. The goal is to write tests that are easy to understand and maintain, not to test everything. If you're not sure how many tests you need to write, start small and add more as you go.
 
 Start by testing the primary flows of your code and then add more as you continue to add new features. It's more import to get started with small test cases than to have an exhaustive test suite.
 
-Decide on which parts of the flows could fail and how important that would be to the team's applications. If it's important part of your code, then you should write tests for that. For example, if you're developing an e-commerce application, consider testing your code to add and delete items from the shopping cart and ensure that your payment flows work. These would be the key business areas that should rarely fail as you'd lose money if they did.
+Decide on which parts of the flows could fail and how important that would be to the team or your users. If it's important part of your code, then you should write tests for that. For example, if you're developing an e-commerce application, consider testing the code to add and delete items from the shopping cart and ensure that your payment flows work. These would be the key business areas that should rarely fail as you'd lose money if they did.
 
 ## Conclusion
 
