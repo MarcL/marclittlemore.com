@@ -5,7 +5,7 @@ permalink: /how-to-unit-test-express-routes/
 headerImage: /images/banners/unit-testing-express-routes.jpg
 tags:
     - testing
-    - unit-testing
+    - javascript-testing
     - development
 description: How to unit test Express routes and some reasons why you should do it.
 ---

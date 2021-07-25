@@ -9,7 +9,7 @@ tags:
     - javascript
     - development
     - testing
-    - unit-testing
+    - javascript-testing
 ---
 
 {% callout "info" %}
