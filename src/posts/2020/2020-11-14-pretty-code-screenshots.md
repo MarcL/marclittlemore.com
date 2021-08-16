@@ -100,6 +100,6 @@ Mac users also have easy ways to create good looking screenshots using the OSX o
 
 Don't forget that posting screenshots of code aren't accessible. Make sure that you add a link to a [GitHub gist](https://gist.github.com) or to your code repository so that people with any visual impairments can read your code in other ways.
 
-Got any other ways to style your images that I've not mentioned? [Send me a message](./contact) and let me know.
+Got any other ways to style your images that I've not mentioned? [Send me a message](/contact) and let me know.
 
 👉🏻 Like this post? You should [follow me on Twitter]({{socialMedia.twitter.url}})
