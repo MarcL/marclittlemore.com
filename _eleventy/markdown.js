@@ -1,5 +1,6 @@
 const markdownIt = require('markdown-it');
 const markdownItAttributes = require('@gerhobbelt/markdown-it-attrs');
+const markdownEmoji = require('markdown-it-emoji');
 const string = require('string');
 
 // Create own markdown renderer so we can add class attributes
@@ -54,6 +55,7 @@ const markdownAnchorLinks = (md, options) => {
 
 markdownLib
     .use(markdownItAttributes)
-    .use(markdownAnchorLinks);
+    .use(markdownAnchorLinks)
+    .use(markdownEmoji);
 
 module.exports = markdownLib;
