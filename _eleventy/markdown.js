@@ -1,5 +1,5 @@
 const markdownIt = require('markdown-it');
-const markdownItAttributes = require('@gerhobbelt/markdown-it-attrs');
+const markdownItAttributes = require('markdown-it-attrs');
 const markdownEmoji = require('markdown-it-emoji');
 const string = require('string');
 
