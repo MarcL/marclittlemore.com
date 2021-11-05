@@ -9,7 +9,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-cache-assets": "^2.1.0",
-    "@11ty/eleventy-img": "^0.8.2",
+    "@11ty/eleventy-img": "^1.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@gerhobbelt/markdown-it-attrs": "^3.0.3-19",
     "@tailwindcss/aspect-ratio": "^0.2.0",
