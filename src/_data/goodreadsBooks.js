@@ -1,11 +1,27 @@
 const Cache = require("@11ty/eleventy-cache-assets");
-const querystring = require('querystring');
-
 const xml2js = require('xml2js');
+const books = require('./books');
+
+const extractGoodreadsBookMetadata = (goodReadsBook) => {
+    const {rating} = goodReadsBook
+    const {link, uri, title, image_url, authors} = goodReadsBook.book;
+    return {
+        uri,
+        link,
+        title,
+        imageUrl: image_url,
+        rating,
+        authorName: authors.author.name,
+        authorLink: authors.author.link
+    }
+};
+
+const extractReadingListMetadata = (list) => list.map(extractGoodreadsBookMetadata);
 
 const createGoodReadsUrl = (options) => {
     const reviewListUrl = 'https://www.goodreads.com/review/list';
-    const queryParameters = querystring.stringify(options);
+    const queryParameters = new URLSearchParams(options);
+
     return `${reviewListUrl}?${queryParameters}`;
 };
 
@@ -36,21 +52,38 @@ const getGoodreadsShelf = async (shelfName) => {
         const parser = xml2js.Parser({explicitArray: false});
         const data = await parser.parseStringPromise(response);
 
-        return data.GoodreadsResponse.reviews.review;
+        return extractReadingListMetadata(data.GoodreadsResponse.reviews.review);
     }
     catch(error) {
         console.error(error.toString());
         return [];
     }
-}
+};
+
+const updateBooks = (bookList) => {
+    return bookList.map(book => {
+        const {uri} = book;
+        const updatedBook = books.find(updated => updated.uri === uri);
+        const newBook = {
+            ...book,
+            ...updatedBook
+        };
+
+        return newBook;
+    });
+};
+
 
 const getGoodreadsBooks = async () => {
     const currentlyReading = await getGoodreadsShelf('currently-reading');
     const read = await getGoodreadsShelf('read');
     const books = {
-        currentlyReading,
-        read
+        currentlyReading: updateBooks(currentlyReading),
+        read: updateBooks(read)
     };
+
+    console.log({count: books.currentlyReading.length, book: books.currentlyReading[1]});
+    // console.log({count: books.read.length, book: books.read[8].book.authors});
 
     return books;
 };
