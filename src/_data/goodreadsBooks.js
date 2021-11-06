@@ -1,11 +1,11 @@
 const Cache = require("@11ty/eleventy-cache-assets");
-const querystring = require('querystring');
-
 const xml2js = require('xml2js');
+const books = require('./books');
 
 const createGoodReadsUrl = (options) => {
     const reviewListUrl = 'https://www.goodreads.com/review/list';
-    const queryParameters = querystring.stringify(options);
+    const queryParameters = new URLSearchParams(options);
+
     return `${reviewListUrl}?${queryParameters}`;
 };
 
@@ -44,13 +44,32 @@ const getGoodreadsShelf = async (shelfName) => {
     }
 }
 
+const updateBooks = (bookList) => {
+    return bookList.map(book => {
+        const {uri} = book.book;
+        const updatedBook = books.find(updated => updated.uri === uri);
+        const newBook = {
+            ...book,
+        };
+
+        newBook.book = {
+            ...newBook.book,
+            ...updatedBook
+        };
+
+        return newBook;
+    });
+};
+
 const getGoodreadsBooks = async () => {
     const currentlyReading = await getGoodreadsShelf('currently-reading');
     const read = await getGoodreadsShelf('read');
     const books = {
-        currentlyReading,
-        read
+        currentlyReading: updateBooks(currentlyReading),
+        read: updateBooks(read)
     };
+
+    console.log({count: books.read.length, book: books.read[9]});
 
     return books;
 };
