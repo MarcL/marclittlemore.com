@@ -6,6 +6,7 @@ description: "Want to become a senior developer or software engineering manager?
 tags:
     - writing
     - essay
+    - favourite
 image:
     source: https://unsplash.com/photos/KeGToDVN0l4
     creator: D A V I D S O N L U N A
