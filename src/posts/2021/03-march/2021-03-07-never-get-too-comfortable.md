@@ -6,6 +6,7 @@ description: "Everyone needs to feel comfortable at work. However, getting too c
 tags:
     - writing
     - essay
+    - favourite
 image:
     source: https://unsplash.com/photos/PIQCA1ReSgU
     creator: elizabeth lies
