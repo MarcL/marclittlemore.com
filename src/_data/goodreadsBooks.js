@@ -82,9 +82,6 @@ const getGoodreadsBooks = async () => {
         read: updateBooks(read)
     };
 
-    console.log({count: books.currentlyReading.length, book: books.currentlyReading[1]});
-    // console.log({count: books.read.length, book: books.read[8].book.authors});
-
     return books;
 };
 
