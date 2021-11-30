@@ -1,13 +1,8 @@
 [
   {
-    "url": "{{site.url}}/bots/sign-up-bot-building-for-beginners/?signup=website-bio",
-    "title": "👉🏻 FREE Chatfuel Bot JSON Guide 👈🏻"
-  },
-  {
     "url": "{{site.url}}/javascript-testing-beginners-course/?signup=website-bio ",
     "title": "👉🏻 FREE JavaScript Testing Course 👈🏻"
   },
-
   {
     "url": "https://twitter.com/marclittlemore",
     "title": "Follow me on Twitter",
@@ -25,5 +20,9 @@
     "url": "https://www.reddit.com/user/marclittlemore",
     "title": "Upvote me on Reddit",
     "icon": "fa-reddit"
+  },
+  {
+    "url": "{{site.url}}/bots/sign-up-bot-building-for-beginners/?signup=website-bio",
+    "title": "👉🏻 FREE Chatfuel Bot JSON Guide 👈🏻"
   }
 ]
