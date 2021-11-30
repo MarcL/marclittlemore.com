@@ -202,4 +202,4 @@ Hopefully this was an easy-to-read explanation of how to create unit tests for E
 * These tests are an additional layer of confidence and are especially useful for security concerns
 * You should **always** have additional integration tests which test the full flow of the routes
 
-If you've got any questions, need any clarification or have any comments on this then please [contact me](/contact) or tweet at me.
+If you've got any questions, need any clarification or have any comments on this then please [contact me](/contact/) or tweet at me.

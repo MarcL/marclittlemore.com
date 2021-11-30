@@ -13,7 +13,7 @@ Back in 2014 I almost died when I contracted an infection that quickly caused se
 
 I was invited to talk at Cheshire and Merseyside Critical Care Network (CMCCN) "Delirium Implementation of Best Practice Study Day" as a patient advocate to tell me story. Hopefully this will help both doctor's and patients to understand the challenges that ICU patients face both before and after ICU care.
 
-If you have any questions then get in [contact](/contact) or tweet at me on [Twitter]({{socialMedia.twitter.url}}).
+If you have any questions then get in [contact](/contact/) or tweet at me on [Twitter]({{socialMedia.twitter.url}}).
 
 ## Slides
 

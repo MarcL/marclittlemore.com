@@ -281,7 +281,7 @@ And that's it. You've now got a serverless Telegram bot deployed to Vercel which
 
 Now that you know how to deploy a Telegram bot using Vercel, it's time to update the code. Telegram has lots of fantastic features. You can send it commands and create a suite of automatic functions. You can use your bot to call out to external APIs to retrieve data for you. Have a think and see what amazing bots you can create!
 
-[Give me a shout](/contact) or reach out on [Twitter](https://twitter.com/marclittlemore) if you have any questions or need any help!
+[Give me a shout](/contact/) or reach out on [Twitter](https://twitter.com/marclittlemore) if you have any questions or need any help!
 ## Useful resources
 
 I've uploaded the code to a GitHub repository here: [https://github.com/MarcL/telegram-test-bot](https://github.com/MarcL/telegram-test-bot) Feel free to fork and reuse it how you wish.

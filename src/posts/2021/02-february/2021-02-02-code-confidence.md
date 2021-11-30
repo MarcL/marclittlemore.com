@@ -64,4 +64,4 @@ Depending on the scale of your application, you might want to consider performan
 
 Finally, once your code has been deployed to the production environment, you can test it here. These can be [smoke tests](https://en.wikipedia.org/wiki/Smoke_testing_(software)) or [regression tests](https://en.wikipedia.org/wiki/Regression_testing) to ensure that no features have been broken. You can also use any monitoring you have to ensure that alarms trigger if performance degrades or tests fail on the live environment.
 
-I hope this has given you some ideas for giving you more confidence in your development processes. Let me know on [Twitter]({{socialMedia.twitter.url}}) or via the [contact form](/contact) if you have any others.
+I hope this has given you some ideas for giving you more confidence in your development processes. Let me know on [Twitter]({{socialMedia.twitter.url}}) or via the [contact form](/contact/) if you have any others.
