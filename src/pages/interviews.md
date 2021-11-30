@@ -31,7 +31,7 @@ Earlier in 2020, I caught up with my long time internet friend, [Si Jobling](htt
 
 ### Yakker Bot Podcast - February 2018
 
-In this podcast I chatted with chatbot expert Thomas Hybki about Messenger Marketing and [chatbots](/bots). I delve deep into my software development past and share my thoughts on the future of conversational marketing.
+In this podcast I chatted with chatbot expert Thomas Hybki about Messenger Marketing and [chatbots](/bots/). I delve deep into my software development past and share my thoughts on the future of conversational marketing.
 
 {% include partials/spotifyEmbedPodcast, podcastEpisodeId: "0eX0dvjipXtPCHANcbsa2n" %}
 

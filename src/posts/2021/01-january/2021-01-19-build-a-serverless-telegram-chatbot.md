@@ -14,7 +14,7 @@ tags:
 
 I love helping people to automate their lives.
 
-Back in 2018/19, I spent a lot of time building [automated chatbots](/bots) using the Facebook Messenger platform. It was a great way for businesses to automate interactions with their customers. More recently, Facebook have made it much harder to build bots on their platform by limiting their API, [especially if you're a European user](https://about.fb.com/news/2020/12/changes-to-facebook-messaging-services-in-europe/).
+Back in 2018/19, I spent a lot of time building [automated chatbots](/bots/) using the Facebook Messenger platform. It was a great way for businesses to automate interactions with their customers. More recently, Facebook have made it much harder to build bots on their platform by limiting their API, [especially if you're a European user](https://about.fb.com/news/2020/12/changes-to-facebook-messaging-services-in-europe/).
 
 In the past year, I've moved over to using Telegram to build bots and often use them to integrate with other online services and APIs. They have their own fully-featured [bot API](https://core.telegram.org/bots/api) which makes it much easier to interact with.
 

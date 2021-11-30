@@ -9,7 +9,7 @@ description: 'After surviving a near-death experience when I contract an infecti
 speakerDeckId: 'c4e8cd0138fc40c1b22dc9ec625799a9'
 ---
 
-Back in 2014 I almost died when I contracted an infection that quickly caused sepsis. [I almost died](/how-i-almost-died). Through the hard work of the doctors in the intensive care unit (ICU) of Warrington Hospital, they managed to keep me alive and ultimately saved my life. I feel very lucky to be alive and I've often wanted to share my experiences in ICU with others.
+Back in 2014 I almost died when I contracted an infection that quickly caused sepsis. [I almost died](/how-i-almost-died/). Through the hard work of the doctors in the intensive care unit (ICU) of Warrington Hospital, they managed to keep me alive and ultimately saved my life. I feel very lucky to be alive and I've often wanted to share my experiences in ICU with others.
 
 I was invited to talk at Cheshire and Merseyside Critical Care Network (CMCCN) "Delirium Implementation of Best Practice Study Day" as a patient advocate to tell me story. Hopefully this will help both doctor's and patients to understand the challenges that ICU patients face both before and after ICU care.
 

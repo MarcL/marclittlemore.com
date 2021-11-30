@@ -8,7 +8,7 @@ headerImage: /images/banners/about-bg.jpg
 
 Hey! I'm Marc Littlemore. :wave:
 
-I'm a software engineer, a veteran of the video games industry with 18 years of games programming experience, [a house music DJ](https://www.djcruze.co.uk) since 1988, a [house music producer](https://soundcloud.com/djcruze), Messenger marketing and [chatbot builder](/bots), and lover of technology. I'm a husband to my fantastic wife [Clare](https://clarelittlemore.com) and we have two wonderful children.
+I'm a software engineer, a veteran of the video games industry with 18 years of games programming experience, [a house music DJ](https://www.djcruze.co.uk) since 1988, a [house music producer](https://soundcloud.com/djcruze), Messenger marketing and [chatbot builder](/bots/), and lover of technology. I'm a husband to my fantastic wife [Clare](https://clarelittlemore.com) and we have two wonderful children.
 
 My current role is as a Software Engineering Manager at [Beacon](https://beacon.com), although I started my software development journey in 1993 in the video games industry. I moved to the BBC in 2013 to help with their global games strategy to simplify third party developers integration with BBC gaming technologies. In 2015, my focus shifted and I helped to architect and build the audience-facing authentication and authorisation systems, otherwise known as [BBC Account](https://www.bbc.co.uk/usingthebbc/account/). In 2021, I moved on from the BBC and worked for a B2B telecoms company for a short while before moving on to a modern digital software company. I now build diverse and inclusive software teams as a Software Engineering Manager at Beacon, helping to modernise digital supply chains with my team. 
 

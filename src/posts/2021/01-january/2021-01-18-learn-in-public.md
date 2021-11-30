@@ -12,7 +12,7 @@ image:
     url: https://unsplash.com/@timmossholder
 ---
 
-I worked in the video games industry for almost 20 years. I [made quite a few games](/games) and worked on many more unreleased demos. Every company I worked at was incredibly secretive about their work. Very few teams shared what they were working on externally. Some didn't even share much between their internal teams either. We weren't really using open source software libraries. The encouragement was to create our own code and share with nobody.
+I worked in the video games industry for almost 20 years. I [made quite a few games](/games/) and worked on many more unreleased demos. Every company I worked at was incredibly secretive about their work. Very few teams shared what they were working on externally. Some didn't even share much between their internal teams either. We weren't really using open source software libraries. The encouragement was to create our own code and share with nobody.
 
 I moved to the BBC in 2013 and it changed the way I thought about my work. We started using GitHub to share code. We created pull requests and reviewed and critiqued each other's code. We almost never had code reviews in my games development days so this was new to me! I started seeing the value in sharing things with others before it was 100% complete.
 
@@ -47,7 +47,7 @@ When you haven't got all of the details correct, people may well tell you that y
 
 I don't know about you but I can't remember what I did last week.
 
-Learning in public is a great way to help future you remember what you learnt last year. It helps the person who was in your shoes six months ago who has picked up the technology for the first time and wants to get started. Once you start writing more about a subject, you'll start to become an expert on it. People will come to you for advice and ask you questions online. I did this with my [chatbots](/bots) knowledge. I'd never written a Facebook Messenger chatbot before the end of 2017 and within three or four months I had become an "expert" in the field by [sharing my videos](https://www.youtube.com/playlist?list=PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM) of what I'd learnt.
+Learning in public is a great way to help future you remember what you learnt last year. It helps the person who was in your shoes six months ago who has picked up the technology for the first time and wants to get started. Once you start writing more about a subject, you'll start to become an expert on it. People will come to you for advice and ask you questions online. I did this with my [chatbots](/bots/) knowledge. I'd never written a Facebook Messenger chatbot before the end of 2017 and within three or four months I had become an "expert" in the field by [sharing my videos](https://www.youtube.com/playlist?list=PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM) of what I'd learnt.
 
 In reality, a lot of online experts are online a few steps ahead of you. The reason you think they know so much is because they're sharing it with you. Most people don't do this. Share what you've just learnt publicly and you can quickly become an expert too. Eventually people will ask you for advice and may well offer to pay you for your time. Again, this has happened with me and I consulted on a few chatbot projects. Learning in public could lead to a new side project. It will definitely open the door to more opportunities. Who is a new employer going to look more favourably at? The person with a simple resumé or the person with a resumé which links to an expert blog post that other people reference?
 

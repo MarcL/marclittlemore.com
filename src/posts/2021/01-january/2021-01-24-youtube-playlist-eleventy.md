@@ -9,7 +9,7 @@ tags:
 
 Over the past couple of years I've been moving my personal websites from using WordPress to simple static HTML sites. WordPress is fantastic but I spent too much time being concerned about security risks, updating to new versions, and worrying about managing PHP versions on a server. These are things I didn't want to have to concern myself with so I wanted to use a [static site generator](https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/) to build plain HTML, CSS, and a little bit of client-side JavaScript where necessary. I discovered [Eleventy](https://www.11ty.dev/) back in early 2020 and this has quickly become my tool of choice.
 
-My [chatbots](/bots) page has a list of YouTube videos on it. Initially this was a static list of YouTube video IDs that I iterated over to generate the markup. I realised that using Eleventy's great data flow, I could automate this using the YouTube API. This means that I only need to regenerate the site when I add new videos to the playlist and I don't have to cut and paste a YouTube video ID into a markdown file each time. This makes things much simpler.
+My [chatbots](/bots/) page has a list of YouTube videos on it. Initially this was a static list of YouTube video IDs that I iterated over to generate the markup. I realised that using Eleventy's great data flow, I could automate this using the YouTube API. This means that I only need to regenerate the site when I add new videos to the playlist and I don't have to cut and paste a YouTube video ID into a markdown file each time. This makes things much simpler.
 
 Let's look at how to do this using Eleventy's data files.
 
@@ -167,7 +167,7 @@ Here's an example using a [Liquid](https://www.11ty.dev/docs/languages/liquid/) 
 ```
 {% endraw %}
 
-Take a look at the [chatbots](/bots) page to see it in action.
+Take a look at the [chatbots](/bots/) page to see it in action.
 
 ## Deployment to your environment
 
