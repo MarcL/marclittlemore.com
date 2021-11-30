@@ -92,7 +92,7 @@ Obsidian allows you to create an unlimited vault of notes but its power comes in
 
 ## Conclusion
 
-I've only scratched the surface with what Obsidian can do for your personal knowledge management system. It has a plugin system which allows more functionality to be added to it. It has a wonderful community around it who are incredibly helpful. You can find their [forums here](https://forum.obsidian.md/). The application is constantly being improved by the developers with new releases coming out every couple of weeks. Before you know it you'll be heading down the rabbit hole of [building a second brain](https://fortelabs.co/blog/basboverview/) and [Zettlekasten](https://zettelkasten.de/posts/overview/) like I have. Take a look at Obsidian if you're considering levelling up your note taking system and [let me know what you think](/contact).
+I've only scratched the surface with what Obsidian can do for your personal knowledge management system. It has a plugin system which allows more functionality to be added to it. It has a wonderful community around it who are incredibly helpful. You can find their [forums here](https://forum.obsidian.md/). The application is constantly being improved by the developers with new releases coming out every couple of weeks. Before you know it you'll be heading down the rabbit hole of [building a second brain](https://fortelabs.co/blog/basboverview/) and [Zettlekasten](https://zettelkasten.de/posts/overview/) like I have. Take a look at Obsidian if you're considering levelling up your note taking system and [let me know what you think](/contact/).
 
 ## Useful resources
 

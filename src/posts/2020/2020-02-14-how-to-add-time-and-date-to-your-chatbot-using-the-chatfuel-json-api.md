@@ -112,7 +112,7 @@ module.exports = router;
 
 The last thing you need to do is to use this code in your Chatfuel chatbot. You can use the redirect blocks to check the value of "hours" returned after calling your API. If they are greater than 18, or 6pm, you could consider it to be evening and change the user responses accordingly. In a similar way, you can check if the value is greater than 6, or 6am, and then consider it to be breakfast time. Once you've got the user's time and date, you can give timely responses to your user. Watch [my video](https://www.youtube.com/watch?v=UDrGpc4Dp8w) for more examples.
 
-All of the code is available on my [Chatfuel demo Glitch project](https://glitch.com/~chatfuel-demo-bot). Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please [send me a message](/contact). I love to hear from people and I'm always happy to answer your questions.
+All of the code is available on my [Chatfuel demo Glitch project](https://glitch.com/~chatfuel-demo-bot). Feel free to clone it and use it for your own APIs. If you spot any errors, or have any questions, then please [send me a message](/contact/). I love to hear from people and I'm always happy to answer your questions.
 
 {% callout "info" %}
 Want to learn more about JSON? Want to learn about the magic of JSON without being a developer? Get my [FREE JSON guide](/bots/sign-up-bot-building-for-beginners/) and you'll have JSON skills in no time!

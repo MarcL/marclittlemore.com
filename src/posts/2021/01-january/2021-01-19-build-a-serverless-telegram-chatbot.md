@@ -14,7 +14,7 @@ tags:
 
 I love helping people to automate their lives.
 
-Back in 2018/19, I spent a lot of time building [automated chatbots](/bots) using the Facebook Messenger platform. It was a great way for businesses to automate interactions with their customers. More recently, Facebook have made it much harder to build bots on their platform by limiting their API, [especially if you're a European user](https://about.fb.com/news/2020/12/changes-to-facebook-messaging-services-in-europe/).
+Back in 2018/19, I spent a lot of time building [automated chatbots](/bots/) using the Facebook Messenger platform. It was a great way for businesses to automate interactions with their customers. More recently, Facebook have made it much harder to build bots on their platform by limiting their API, [especially if you're a European user](https://about.fb.com/news/2020/12/changes-to-facebook-messaging-services-in-europe/).
 
 In the past year, I've moved over to using Telegram to build bots and often use them to integrate with other online services and APIs. They have their own fully-featured [bot API](https://core.telegram.org/bots/api) which makes it much easier to interact with.
 
@@ -281,7 +281,7 @@ And that's it. You've now got a serverless Telegram bot deployed to Vercel which
 
 Now that you know how to deploy a Telegram bot using Vercel, it's time to update the code. Telegram has lots of fantastic features. You can send it commands and create a suite of automatic functions. You can use your bot to call out to external APIs to retrieve data for you. Have a think and see what amazing bots you can create!
 
-[Give me a shout](/contact) or reach out on [Twitter](https://twitter.com/marclittlemore) if you have any questions or need any help!
+[Give me a shout](/contact/) or reach out on [Twitter](https://twitter.com/marclittlemore) if you have any questions or need any help!
 ## Useful resources
 
 I've uploaded the code to a GitHub repository here: [https://github.com/MarcL/telegram-test-bot](https://github.com/MarcL/telegram-test-bot) Feel free to fork and reuse it how you wish.

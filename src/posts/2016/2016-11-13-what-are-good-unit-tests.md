@@ -79,4 +79,4 @@ The best way to write high quality unit tests is to write the test with these qu
 
 If you answer all of those questions, you'll find you quickly have a higher quality unit test suite with high code coverage and you and your team can have much better confidence when deploying to your production environment.
 
-If you spot any errors or have and questions then please [contact me](/contact).
+If you spot any errors or have and questions then please [contact me](/contact/).

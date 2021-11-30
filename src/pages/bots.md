@@ -25,12 +25,12 @@ As a software engineer and chatbot developer, I've been experimenting with lots 
 {% callout "info" %}
 If you want to learn more about building great chatbots then I've got a mailing list which will provide you with great information each week about the lastest trends, tutorials and quick tips to build better chatbots? Sounds like something you're interested in? Great!
 
-Sign up to my free [chatbot builders email list now](/bots/sign-up-bot-building-for-beginners?signup=chatbot-page/) and I'll send you my **FREE** Chatfuel Chatbot JSON Guide!
+Sign up to my free [chatbot builders email list now](/bots/sign-up-bot-building-for-beginners/?signup=chatbot-page/) and I'll send you my **FREE** Chatfuel Chatbot JSON Guide!
 {% endcallout %}
 
 ## Chatbot Videos
 
-Interested in learning more about chatbots but don't know where to start? Don't worry! I've made some videos which will make life much easier. I've put them all on YouTube so you can enjoy them at your own pace. If you have some ideas for videos you want me to record then [let me know](/contact) and I'll add the ideas to my list.
+Interested in learning more about chatbots but don't know where to start? Don't worry! I've made some videos which will make life much easier. I've put them all on YouTube so you can enjoy them at your own pace. If you have some ideas for videos you want me to record then [let me know](/contact/) and I'll add the ideas to my list.
 
 <div class="flex flex-col sm:flex-row flex-wrap justify-center w-full prose prose-sm max-w-full">
 {%- for video in youTubeVideos.marketing.items -%}

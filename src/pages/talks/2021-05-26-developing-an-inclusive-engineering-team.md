@@ -24,4 +24,4 @@ https://www.youtube.com/watch?v=VLshCRF9pAs
 
 _This video was recorded on 26th May 2021._
 
-If you have any questions then get in [contact](/contact) or tweet at me on [Twitter]({{socialMedia.twitter.url}}).
+If you have any questions then get in [contact](/contact/) or tweet at me on [Twitter]({{socialMedia.twitter.url}}).

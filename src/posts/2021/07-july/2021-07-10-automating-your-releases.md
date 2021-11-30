@@ -288,4 +288,4 @@ In the example below, a `revert` type will trigger a new patch release and a `re
 
 Using `sematic-release` is a great way to take the stress out of your release process and help your team to move towards a continuous deployment process. Although this post mainly concentrates on a Node.js automatic release pipeline, the tools suggested could be used to create automated releases with other languages too.
 
-[Let me know](/contact) if you have any questions or spot any errors.
+[Let me know](/contact/) if you have any questions or spot any errors.
