@@ -16,7 +16,7 @@ In the middle of January 2021, I decided to start a [habit of writing](/creating
 
 I was inspired by the [#ship30for30](https://ship30for30.com/) community I'd seen on Twitter. The hashtags were appearing daily and I thought a writing habit would be good to start and could be a useful tool to clarify my thinking.
 
-Here are some of the lessons I learned after my [30 days of writing](/articles) experiment was over.
+Here are some of the lessons I learned after my [30 days of writing](/articles/) experiment was over.
 
 ## It took more than 30 days
 
