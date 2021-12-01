@@ -15,6 +15,6 @@ This page is inspired by Derek Siver's [now page](https://sivers.org/now) sugges
 - Building a Shopify integration to sync data with a CO3 ERP system
 - More meditation using Headspace
 
-Check out the current [books I'm reading](/books) here.
+Check out the current [books I'm reading](/books/) here.
 
 **Last updated:** 5th November, 2021

@@ -12,7 +12,7 @@ image:
     url: https://unsplash.com/@andreuuuw
 ---
 
-I wrote [video games](/games) for about 20 years and for a long time I made games for the Sony PlayStation consoles.
+I wrote [video games](/games/) for about 20 years and for a long time I made games for the Sony PlayStation consoles.
 
 Sony were famous for using rubber ducks in their console announcement demos. Here's some old footage of the PlayStation 3 announcement from the wonderful [Phil Harrison](https://twitter.com/mrphilharrison):
 
