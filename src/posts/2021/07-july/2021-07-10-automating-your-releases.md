@@ -140,7 +140,7 @@ These defaults can be changed by adding additional rules to `commit-analyzer` us
 
 Now that the script and plugins are ready to determine when a new release should be tagged, it's time to set up a [GitLab pipeline](https://docs.gitlab.com/ee/ci/pipelines/) to do so.
 
-How you do this will vary depending on your project's need. For our project, we first want to run our tests and linting jobs to ensure they all pass. After that, we can determine if we should create a release by running `semantic-release`. We only want to check this on our `main` branch so that we don't attempt to create a release for all branches pushed to GitLab which are used for merge requests. Finally, we have a deployment job that will run only if a new release has been tagged. This job is our continuous deployment step.
+How you do this will vary depending on your project's need. For our project, we first want to run our tests and linting jobs to ensure they all pass. After that, we can determine if we should create a release by running `semantic-release`. We only want to check this on our `main` branch so that we don't attempt to create a release for all branches pushed to GitLab which are used for merge requests. Finally, we have a deployment job that will run only if a new release has been tagged. This is our continuous deployment step.
 
 As we want to use GitLab's API to tag a release, we need to create an environment variable called `GITLAB_TOKEN` which is exposed to the pipeline. This will allow us to have write access to the API.
 
