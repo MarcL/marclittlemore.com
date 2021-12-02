@@ -22,7 +22,7 @@ A release will depend on your stack of choice and platform. For a desktop applic
 
 Our team creates a Node.js API that is consumed by multiple desktop and mobile clients. A release for us is a `git` tagged release which is then deployed to our development, QA, or production environments. We also bump our Node `package.json` version number, although as we're not versioning a library, this isn't strictly necessary.
 
-Version numbers in the Node.js ecosystem use the standard [semantic versioning](https://semver.org/) (also known as **SemVer**). This gives us a release number in the format of `major.minor.path`. A `major` version is determined by a breaking change, for example, the API makes incompatible changes. A `minor` version is generated if new functionality is added but the functionality is backwards compatible with previous releases. Finally, a `patch` version is changed if any bug fixes are made.
+Version numbers in the Node.js ecosystem use the standard [semantic versioning](https://semver.org/) (also known as **SemVer**). This gives us a release number in the format of `major.minor.patch`. A `major` version is determined by a breaking change, for example, the API makes incompatible changes. A `minor` version is generated if new functionality is added but the functionality is backwards compatible with previous releases. Finally, a `patch` version is changed if any bug fixes are made.
 
 So how do we determine when to change the version number? This is up to the development team to think about the changes that are made. However, we can infer it automatically if the team uses consistent `git` commit messages.
 
@@ -241,7 +241,7 @@ _**Note:** If your project is marked as private in your `package.json` file, the
 
 It avoids the team having to think about releasing manually. This is often a job that happens daily or weekly and it now happens automatically. Ultimately, you'll start to see a faster release cadence with these smaller, atomic changes.
 
-## <a id="gotchas" href="#gotchas"></a> Gotchas
+## Gotchas
 
 While using `semantic-release` has made life easier, there are some potential issues you might have to deal with.
 
