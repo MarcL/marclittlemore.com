@@ -4,8 +4,8 @@ const imageShortcode = require('./image');
 const callout = (content, type = 'info') => {
     const typeClasses = {
         info: {
-            background: 'bg-green-100 border-green-800',
-            icon: 'fa-info-circle text-green-800'
+            background: 'bg-emerald-100 border-emerald-800',
+            icon: 'fa-info-circle text-emerald-800'
         },
         warning: {
             background: 'bg-red-100 border-red-800',
