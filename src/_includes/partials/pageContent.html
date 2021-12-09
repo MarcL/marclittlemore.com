@@ -19,6 +19,12 @@
     </figure>
   </div>
 
+  {% if tags contains 'post' %}
+  <div class="text-sm md:text-xl text-gray-500 font-sm py-4 w-full mx-auto max-w-sm text-center">
+    Published on <time datetime="{{page.date | date: '%Y-%m-%d'}}">{{page.date | date: "%B %e, %Y"}}</time>
+  </div>
+  {% endif %}
+
   {{ content }}
   
   {% include partials/webmentions.liquid %}
