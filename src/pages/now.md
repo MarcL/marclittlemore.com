@@ -11,10 +11,11 @@ This page is inspired by Derek Siver's [now page](https://sivers.org/now) sugges
 
 ## Currently doing
 
-- Started a new job as a Software Engineering Manager at [Beacon](https://beacon.com)
+- Settling into my job as a Software Engineering Manager at [Beacon](https://beacon.com)
 - Building a Shopify integration to sync data with a CO3 ERP system
+- Getting ready for Christmas
 - More meditation using Headspace
 
 Check out the current [books I'm reading](/books/) here.
 
-**Last updated:** 5th November, 2021
+**Last updated:** 9th December, 2021
