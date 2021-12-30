@@ -5,7 +5,9 @@ const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
         throw new Error(`Missing \`alt\` on image from: ${src}`);
     }
 
-    const dataSrc = `./src${src}`;
+    // Is it a local or internet source?
+    let dataSrc = /^http[s]*/.test(src) ? src : `./src${src}`;
+    // const dataSrc = `./src${src}`;
 
     let metadata;
     try {
@@ -25,7 +27,7 @@ const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
     }
 
     const data = metadata.jpeg[0];
-    return `<img src="${data.url}" width="${data.width}" alt="${alt}" class="${className}" loading="lazy" decoding="async">`;
+    return `<img src="${data.url}" width="${data.width}" title="${alt}" alt="${alt}" class="${className}" loading="lazy" decoding="async">`;
 };
 
 module.exports = imageShortcode;
