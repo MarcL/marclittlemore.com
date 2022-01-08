@@ -9,13 +9,23 @@ date: 2015-10-09
 
 This page is inspired by Derek Siver's [now page](https://sivers.org/now) suggestion and his [Now Now Now](https://nownownow.com/) movement. The purpose of this page is to share my current focus.
 
-## Currently doing
+## What's happening right now?
+
+### Updated: 8th January 2022
+
+- Deploying and testing Shopify integration to sync data with a CO3 ERP system
+- Updating my wife's [Out Of The Woods Blog](http://www.outofthewoodsblog.com) using [Tailwind CSS](https://tailwindcss.com/) and [Eleventy](https://www.11ty.dev/)
+- Meditating using [Headspace](https://www.headspace.com/)
+- Starting to make music again with Ableton Live
+- Using social media less
+
+Check out the current [books I'm reading](/books/) here.
+
+## Previous Updates
+
+### 9th December 2021
 
 - Settling into my job as a Software Engineering Manager at [Beacon](https://beacon.com)
 - Building a Shopify integration to sync data with a CO3 ERP system
 - Getting ready for Christmas
 - More meditation using Headspace
-
-Check out the current [books I'm reading](/books/) here.
-
-**Last updated:** 9th December, 2021

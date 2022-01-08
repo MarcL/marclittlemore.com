@@ -1,5 +1,10 @@
 module.exports = [
     {
+        uri: 'kca://book/amzn1.gr.book.v1.4lXJhaIFPY-tDm_pjV5NNQ',
+        title: "So Good They Can't Ignore You",
+        imageUrl: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360564614l/13525945.jpg',
+      },
+    {
         uri: 'kca://book/amzn1.gr.book.v1.ZpgDpbP1Pa2Mt1_Be7W2jA',
         title: 'The Success Code: How to Stand Out and Get Noticed',
         imageUrl: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454870417l/28955298._SY475_.jpg'
