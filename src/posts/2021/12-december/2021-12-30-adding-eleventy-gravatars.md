@@ -1,7 +1,7 @@
 ---
-title:  "Adding Eleventy Gravatars"
-permalink: /adding-eleventy-gravatars/
-headerImage: /images/banners/eleventy-gravatar-avatars.jpg
+title:  "Easily Create Gravatar Images With Eleventy"
+permalink: /easily-create-gravatar-images-with-eleventy/
+headerImage: /images/banners/easily-create-gravatar-images-with-eleventy.jpg
 description: Some gravatar stuff
 tags:
     - development
@@ -10,6 +10,9 @@ image:
     creator: WDD Staff
     url: https://www.webdesignerdepot.com/author/WebdesignerDepot-Staff
 ---
+
+https://www.wpbeginner.com/beginners-guide/what-is-gravatar-and-why-you-should-start-using-it-right-away/
+https://wordpress.org/support/article/how-to-use-gravatars/
 
 ## What is a Gravatar?
 
@@ -56,4 +59,12 @@ Use it in your template and set the size
 ```
 {% endraw %}
 
-TODO: Image of the avatar
+## Display images
+
+Here's an image:
+
+### Me
+![Gravatar]({% gravatar "marc.littlemore@gmail.com" 150 %})
+
+### Matt Mullenweg
+![Gravatar]({% gravatar "matt@mullenweg.com" 150 %})
