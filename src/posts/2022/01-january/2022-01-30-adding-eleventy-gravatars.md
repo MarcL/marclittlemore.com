@@ -29,7 +29,7 @@ First, we add a shortcode to the Eleventy configuration file `.eleventy.js` to e
 
 {% codetitle ".eleventy.js" %}
 
-```javascript
+```js
 const gravatarShortcode = (email) => {
     // TODO: Return the Gravatar URL
 };
