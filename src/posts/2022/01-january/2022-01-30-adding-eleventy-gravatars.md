@@ -63,23 +63,23 @@ Finally, we need to return a Gravatar URL with the hash appended to it.
 
 {% codetitle ".eleventy.js" %}
 
-```javascript
-+const crypto = require('crypto');
+```js
+const crypto = require('crypto');
 
 const gravatarShortcode = (email) => {
     // Clean up the email address
     // - Remove any leading or trailing spaces
     // - Make it lowercase
-    +const cleanEmail = email.trim().toLowerCase();
+    const cleanEmail = email.trim().toLowerCase();
 
     // Create an MD5 hash from the cleaned email address
-    +const emailHash = crypto
+    const emailHash = crypto
         .createHash('md5')
         .update(cleanEmail)
         .digest('hex');
 
     // Return a URL image with the hash appended
-    +return `https://www.gravatar.com/avatar/${emailHash}`;
+    return `https://www.gravatar.com/avatar/${emailHash}`;
 };
 ```
 
