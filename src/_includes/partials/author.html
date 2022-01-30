@@ -1,6 +1,7 @@
 <div class="max-w-screen-lg mx-auto w-full sm:w-3/4 py-4 sm:py-8 bg-gray-50 text-gray-600 shadow-md flex flex-col sm:flex-row justify-center items-center my-4">
     <div class="w-full sm:w-1/3 flex justify-center">
-        {% image "/images/me/marc-littlemore-512x512.jpg" "Marc Littlemore" 150 "bg-white px-1 py-1 mx-4 my-4 rounded-full w-32 h-32 shadow-lg" %}
+        {% capture gravatarImageUrl %}{% gravatar site.email 150 %}{% endcapture %}
+        <img class="bg-white px-1 py-1 mx-4 my-4 rounded-full w-32 h-32 shadow-lg" src="{{gravatarImageUrl}}" title="Marc Littlemore" alt="Marc Littlemore avatar" />
     </div>
     <div class="w-full sm:w-2/3 text-xl font-medium flex flex-col justify-center space-y-4 px-4 pt-4 sm:pt-0">
         <p><strong>I'm Marc Littlemore.</strong> I’m a Software Engineering Manager who loves to help developers to build quality software.</p>

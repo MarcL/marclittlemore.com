@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const markdownLib = require('markdown-it')();
 const imageShortcode = require('./image');
 
@@ -31,10 +32,28 @@ const quote = (content, addQuotes = true) => {
     return `<div class="p-4 font-semibold text-xl sm:text-2xl italic border-l-4 border-red-600">${renderedHtml}</div>`;
 };
 
+const gravatarShortcode = (email, size = 80, defaultImage = 'mp') => {
+
+    // Create an MD5 hash from the email address
+    const emailHash = crypto
+        .createHash('md5')
+        .update(email.trim().toLowerCase())
+        .digest('hex');
+
+    // Return a URL image with the hash
+    return `https://www.gravatar.com/avatar/${emailHash}?d=${defaultImage}&s=${size}`;
+};
+
+const codeTitle = (title, heading = 'Filename') => {
+    return `<div class="text-sm"><span class="uppercase pr-4">${heading}</span> <span class="">${title}</span></div>`;
+};
+
 const addAll = (eleventyConfig) => {
     eleventyConfig.addPairedShortcode('quote', quote);
     eleventyConfig.addPairedShortcode('callout', callout);
     eleventyConfig.addLiquidShortcode('image', imageShortcode);
+    eleventyConfig.addShortcode('gravatar', gravatarShortcode);
+    eleventyConfig.addShortcode('codetitle', codeTitle);
 };
 
 module.exports = addAll;

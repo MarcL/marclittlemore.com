@@ -35,6 +35,10 @@ module.exports = (eleventyConfig) => {
 
     eleventyConfig.setDataDeepMerge(true);
 
+    eleventyConfig.setLiquidOptions({
+        dynamicPartials: false
+    });
+
     return {
         dir: {
             input: './src',

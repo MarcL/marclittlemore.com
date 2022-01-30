@@ -4,6 +4,16 @@
 
 My personal blog.
 
+## Shortcodes
+
+### `codetitle`
+
+Create a title for a codeblock
+
+### `gravatar`
+
+Add a gravatar
+
 ## Technologies used
 
 - Built with [11ty](https://www.11ty.dev/)

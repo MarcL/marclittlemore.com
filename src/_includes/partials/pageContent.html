@@ -10,7 +10,13 @@
 
   <div class="py-4">
     <figure>
-      <img class="rounded-lg shadow-lg" src="{% if headerImage %}{{ headerImage }}{% else %}{{ site.headerImage }}{% endif %}" title="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" alt="{{title}}{% if subtitle %} - {{subtitle}}{% endif %}" />
+      {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
+      {% if headerImage %}
+        {% image headerImage imageTitle 1024 "rounded-lg shadow-lg" %}
+      {% else %}
+        {% image site.headerImage  imageTitle 1024 "rounded-lg shadow-lg" %}
+      {% endif %}
+
       {% if image %}
       <figcaption class="py-2 text-center">
         <a href="{{image.source}}" title="Image by {{image.creator}}" class="underline" target="_blank" rel="noreferrer">Original image</a> by <a href="{{image.url}}" title="{{image.creator}}" class="underline" target="_blank" rel="noreferrer">{{image.creator}}</a>
