@@ -17,7 +17,7 @@ I'm a big fan of [Eleventy](https://www.11ty.dev/) as my static site generator a
 
 ## What is a Gravatar?
 
-A Gravatar is a Globally Recognised Avatar. It was an idea started by the ex-cofounder of GitHub, [Tom Preston-Werner](https://en.wikipedia.org/wiki/Tom_Preston-Werner) and eventually bought but [Automattic](https://automattic.com/), the company who wrote Wordpress. It is a user profile image or "avatar" which is attached to a specified email address. It can be uploaded and set on the Gravatar website, and used on any websites that support them. It makes it easy to update your picture in a single place and for it to appear on multiple websites.
+A Gravatar is a **Globally Recognised Avatar**. It was an idea started by the ex-cofounder of GitHub, [Tom Preston-Werner](https://en.wikipedia.org/wiki/Tom_Preston-Werner), and his Gravatar site and API was eventually bought by [Automattic](https://automattic.com/), the company who build Wordpress. A Gravatar is a user profile image or "avatar" which is attached to a specified email address. It can be uploaded and set on the Gravatar website, and used on any websites that support them. It makes it easy to update your picture in a single place and for it to appear on multiple websites.
 
 So now we know what a Gravatar is, how do we generate one for Eleventy?
 
@@ -43,7 +43,7 @@ modules.export = (eleventyConfig) => {
 };
 ```
 
-Adding this shortcode allows us to add the shortcode into one of our Markdown files to render an image.
+Adding this shortcode into the Eleventy configuration file allows us to add it into one of our Markdown files to render an image. Here's an example of how we might use it in a blog post's markdown to render the Gravatar for an email address.
 
 {% codetitle "posts/example-markdown.md" %}
 
@@ -55,9 +55,9 @@ Adding this shortcode allows us to add the shortcode into one of our Markdown fi
 
 ## Creating a Gravatar URL
 
-A [Gravatar image URL](https://en.gravatar.com/site/implement/images/) is created by creating an MD5 hash of the email you want to use. We can use the Node.js `crypto` module to do this.
+A [Gravatar image URL](https://en.gravatar.com/site/implement/images/) is created by calculating an [MD5 hash](https://en.wikipedia.org/wiki/MD5) of the email you want to use. We can use the Node.js `crypto` module to easily generate this.
 
-We need to ensure that the email address we pass to the hashing function is cleaned up. We can remove any leading or trailing spaces and make it lowercase. That will ensure it creates an identical hash if someone accidently calls it with a different case.
+We should ensure that the email address we pass to the hashing function is cleaned up. We can remove any leading or trailing spaces and make it lowercase. That will ensure it creates an identical hash if someone accidently calls it with a different case or some extra whitespace.
 
 Finally, we need to return a Gravatar URL with the hash appended to it.
 
@@ -96,10 +96,10 @@ In our template we'll now have an image URL for the email if a Gravatar exists f
 The above `gravatar` shortcode becomes this image URL:
 
 ```markdown
-![A Gravatar Image]({% gravatar "email@fakedomain.com" %})
+![A Gravatar Image](https://www.gravatar.com/avatar/4cfeb4eed871ce152cfef83b542ad62f)
 ```
 
-If you just wanted to use the shorcode in some HTML as an image tag you can do that too:
+If you wanted to use the shortcode in some HTML as an image tag you can do that too:
 
 {% raw %}
 ```html
@@ -119,15 +119,15 @@ Here is a Gravatar of me embedded into this Markdown file:
 
 ## Adding a size
 
-The Gravatar URL allows you to append some additional query parameters so we can update our shortcode to allow us to pass in a size. 
+The Gravatar URL allows you to append some additional query parameters to change the size of the image that the URL returns. We can update our shortcode to allow us to pass in a size so that the Gravatar URL renders it at the resolution we need. 
 
 {% codetitle ".eleventy.js" %}
 
 ```js
 const crypto = require('crypto');
 
-// Add a size parameter which defaults to 150
-const gravatarShortcode = (email, size = 150) => {
+// Add a size parameter which defaults to 80
+const gravatarShortcode = (email, size = 80) => {
     // Clean up the email address
     // - Remove any leading or trailing spaces
     // - Make it lowercase
@@ -145,19 +145,19 @@ const gravatarShortcode = (email, size = 150) => {
 };
 ```
 
-A larger Gravatar of me!
+Let's try it out and render a larger Gravatar of me!
 
 ![Gravatar]({% gravatar "marc.littlemore@gmail.com" 200 %})
 
 ## Adding a default image
 
-Finally, the Gravatar URL allows us to [use a default image](https://en.gravatar.com/site/implement/images#default-image) which will be rendered if no Gravatar is found for the email hash. We can add that as the `d` query parameter in the URL.
+Finally, the Gravatar URL allows us to [use a default image](https://en.gravatar.com/site/implement/images#default-image) which will be rendered if no Gravatar is found for the email hash. We can add that as another query parameter in the generated URL.
 
 ```js
 const crypto = require('crypto');
 
 // Add a defaultImage parameter which defaults to 'mp' (mystery person)
-const gravatarShortcode = (email, size = 150, defaultImage = 'mp') => {
+const gravatarShortcode = (email, size = 80, defaultImage = 'mp') => {
     // Clean up the email address
     // - Remove any leading or trailing spaces
     // - Make it lowercase
@@ -175,7 +175,7 @@ const gravatarShortcode = (email, size = 150, defaultImage = 'mp') => {
 };
 ```
 
-A default image for an unknown email address.
+Here's a default image for an unknown email address which uses the "mystery person" image.
 
 {% raw %}
 ```md
@@ -185,7 +185,7 @@ A default image for an unknown email address.
 
 ![Gravatar]({% gravatar "unknown@email.com" 150 %})
 
-Or you can render a robot as the default image instead.
+You could also render a robot as the default image instead.
 
 {% raw %}
 ```md
@@ -197,6 +197,6 @@ Or you can render a robot as the default image instead.
 
 ## Conclusion
 
-See how easy it is to add a Gravatar with Eleventy? Eleventy's awesome shortcode system gives us the ability to easily extend it and expose Gravatars in our templates.
+See how easy it is to add a Gravatar with Eleventy? Eleventy's awesome shortcode system gives us the ability to easily extend it and expose Gravatars in our templates. Try it out if you're moving your Wordpress site over to Eleventy.
 
-[Let me know](/contact/) if you have any questions or spot any errors.
+I hope you found it helpful but [let me know](/contact/) if you have any questions or spot any errors in the code.
