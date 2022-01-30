@@ -83,11 +83,28 @@ const gravatarShortcode = (email) => {
 };
 ```
 
-Use it in your template and set the size
+In our template we'll now have an image URL for the email if a Gravatar exists for it.
+
+{% codetitle "posts/example-markdown.md" %}
+
+{% raw %}
+```markdown
+![A Gravatar Image]({% gravatar "email@fakedomain.com" %})
+```
+{% endraw %}
+
+The above `gravatar` shortcode becomes this image URL:
+
+```markdown
+![A Gravatar Image]({% gravatar "email@fakedomain.com" %})
+```
+
+If you just wanted to use the shorcode in some HTML as an image tag you can do that too:
+
 {% raw %}
 ```html
     <img
-        src="{% gravatar "test@email.com" 150 %}" 
+        src="{% gravatar "email@fakedomain.com" %}" 
         title="Jane Doe"
         alt="Avatar of user"
         width="150"
@@ -96,38 +113,90 @@ Use it in your template and set the size
 ```
 {% endraw %}
 
+Here is a Gravatar of me embedded into this Markdown file:
+
+![Gravatar]({% gravatar "marc.littlemore@gmail.com" %})
+
 ## Adding a size
+
+The Gravatar URL allows you to append some additional query parameters so we can update our shortcode to allow us to pass in a size. 
+
+{% codetitle ".eleventy.js" %}
+
+```js
+const crypto = require('crypto');
+
+// Add a size parameter which defaults to 150
+const gravatarShortcode = (email, size = 150) => {
+    // Clean up the email address
+    // - Remove any leading or trailing spaces
+    // - Make it lowercase
+    const cleanEmail = email.trim().toLowerCase();
+
+    // Create an MD5 hash from the cleaned email address
+    const emailHash = crypto
+        .createHash('md5')
+        .update(cleanEmail)
+        .digest('hex');
+
+    // Return a URL image with the hash appended
+    // Append a size query parameter
+    return `https://www.gravatar.com/avatar/${emailHash}?s=${size}`;
+};
+```
+
+A larger Gravatar of me!
+
+![Gravatar]({% gravatar "marc.littlemore@gmail.com" 200 %})
 
 ## Adding a default image
 
-## Example images
+Finally, the Gravatar URL allows us to [use a default image](https://en.gravatar.com/site/implement/images#default-image) which will be rendered if no Gravatar is found for the email hash. We can add that as the `d` query parameter in the URL.
 
-#### Matt Mullenweg (Wordpress CEO)
+```js
+const crypto = require('crypto');
+
+// Add a defaultImage parameter which defaults to 'mp' (mystery person)
+const gravatarShortcode = (email, size = 150, defaultImage = 'mp') => {
+    // Clean up the email address
+    // - Remove any leading or trailing spaces
+    // - Make it lowercase
+    const cleanEmail = email.trim().toLowerCase();
+
+    // Create an MD5 hash from the cleaned email address
+    const emailHash = crypto
+        .createHash('md5')
+        .update(cleanEmail)
+        .digest('hex');
+
+    // Return a URL image with the hash appended
+    // Append a default image query parameter
+    return `https://www.gravatar.com/avatar/${emailHash}?s=${size}&d=${defaultImage}`;
+};
+```
+
+A default image for an unknown email address.
 
 {% raw %}
-```liquid
-![Matt Mullenweg]({% gravatar "matt@mullenweg.com" 150 %})
+```md
+![Gravatar]({% gravatar "unknown@email.com" 150 %})
 ```
 {% endraw %}
 
-![Gravatar]({% gravatar "matt@mullenweg.com" 150 %})
+![Gravatar]({% gravatar "unknown@email.com" 150 %})
 
-#### Tom Preston-Werner (Creator of Gravatar)
+Or you can render a robot as the default image instead.
+
 {% raw %}
-```liquid
-![Tom Preston-Werner]({% gravatar "tom@mojombo.com" 150 %})
+```md
+![Gravatar]({% gravatar "unknown@email.com" 150 "robohash" %})
 ```
 {% endraw %}
 
-![Gravatar]({% gravatar "tom@mojombo.com" 150 %})
+![Gravatar]({% gravatar "unknown@email.com" 150 "robohash" %})
 
-#### No Gravatar
-{% raw %}
-```liquid
-![No Gravatar]({% gravatar "test@test.com" 150 "robohash" %})
-```
-{% endraw %}
+## Conclusion
 
-See how easy it is to add a Gravatar with Eleventy?
+See how easy it is to add a Gravatar with Eleventy? Eleventy's awesome shortcode system gives us the ability to easily extend it and expose Gravatars in our templates.
 
 [Let me know](/contact/) if you have any questions or spot any errors.
