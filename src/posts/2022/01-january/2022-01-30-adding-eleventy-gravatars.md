@@ -95,11 +95,15 @@ In our template we'll now have an image URL for the email if a Gravatar exists f
 
 The above `gravatar` shortcode becomes this image URL:
 
+{% codetitle "posts/example-markdown.md" %}
+
 ```markdown
 ![A Gravatar Image](https://www.gravatar.com/avatar/4cfeb4eed871ce152cfef83b542ad62f)
 ```
 
 If you wanted to use the shortcode in some HTML as an image tag you can do that too:
+
+{% codetitle "example.html" %}
 
 {% raw %}
 ```html
@@ -153,6 +157,8 @@ Let's try it out and render a larger Gravatar of me!
 
 Finally, the Gravatar URL allows us to [use a default image](https://en.gravatar.com/site/implement/images#default-image) which will be rendered if no Gravatar is found for the email hash. We can add that as another query parameter in the generated URL.
 
+{% codetitle ".eleventy.js" %}
+
 ```js
 const crypto = require('crypto');
 
@@ -177,6 +183,8 @@ const gravatarShortcode = (email, size = 80, defaultImage = 'mp') => {
 
 Here's a default image for an unknown email address which uses the "mystery person" image.
 
+{% codetitle "posts/example-markdown.md" %}
+
 {% raw %}
 ```md
 ![Gravatar]({% gravatar "unknown@email.com" 150 %})
@@ -186,6 +194,8 @@ Here's a default image for an unknown email address which uses the "mystery pers
 ![Gravatar]({% gravatar "unknown@email.com" 150 %})
 
 You could also render a robot as the default image instead.
+
+{% codetitle "posts/example-markdown.md" %}
 
 {% raw %}
 ```md
