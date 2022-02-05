@@ -1,0 +1,102 @@
+{% if webmentions %}
+{% assign absoluteUrl = page.url | prepend: site.url %}
+{% assign webMentionsForPage = webmentions | webmentionsForUrl: absoluteUrl %}
+{% assign sortedMentionsForPage = webmentions | webmentionsSortedForUrl: absoluteUrl %}
+{% assign likes = sortedMentionsForPage['like-of'] %}
+{% assign reposts = sortedMentionsForPage['repost-of'] %}
+{% assign replies = sortedMentionsForPage['in-reply-to'] %}
+{% assign mentions = sortedMentionsForPage['mention-of'] %}
+
+{% if likes.length or reposts.length or replies.length or mentions.length %}
+
+<section id="webmentions" class="flex flex-row justify-center items-center mt-8 w-6/12 text-sm md:text-xl space-x-4">
+    <div class="text-red-500 font-extrabold flex flex-col justify-center items-center w-1/3">
+        <i class="fas fa-2x fa-heart"></i>
+        <span>{{likes.length | default: 0}}</span>
+    </div>
+    <div class="text-blue-500 font-extrabold flex flex-col justify-center items-center w-1/3">
+        <i class="fas fa-2x fa-retweet"></i>
+        <span>{{reposts.length | default: 0}}</span>
+    </div>
+    <div class="text-emerald-500 font-extrabold flex flex-col justify-center items-center w-1/3">
+        <i class="fas fa-2x fa-comment-dots"></i>
+        <span>{{replies.length | default: 0}}</span>
+    </div>
+    <div class="text-slate-500 font-extrabold flex flex-col justify-center items-center w-1/3">
+        <i class="fas fa-2x fa-quote-left"></i>
+        <span>{{mentions.length | default: 0}}</span>
+    </div>
+</section>
+{% endif %}
+
+<div class="prose prose-lg space-y-2 max-w-xs lg:max-w-2xl">
+
+{% if likes.length %}
+<div class="">
+<h3 class="">Likes</h3>
+<div class="flex flex-row flex-wrap space-x-2">
+    {% for like in likes %}
+    <a href="{{like.author.url}}" rel="ugc nofollow" target="_blank">
+        <img src="{{like.author.photo}}" title="{{like.author.name}}" class="rounded-full h-12 w-12 shadow-md my-1 object-cover"/>
+    </a>
+    {% endfor %}
+</div>
+</div>
+{% endif %}
+
+
+{% if mentions.length %}
+<div class="">
+<h3 class="">Mentions</h3>
+{% for mention in mentions %}
+<p class="">
+    <i class="fas fa-link"></i> <a href="{{mention.url}}" target="_blank" rel="ucg nofollow">{{mention.url}}</a>
+</p>
+{% endfor %}
+</div>
+{% endif %}
+
+{% if reposts.length %}
+<div class="">
+<h3 class="">Reposts</h3>
+{% for repost in reposts %}
+<p class="">
+    <i class="fas fa-retweet"></i> <a href="{{repost.url}}" target="_blank" rel="ucg nofollow">{{repost.url}}</a>
+</p>
+{% endfor %}
+</div>
+{% endif %}
+
+
+{% if replies.length %}
+<div class="">
+<h3 class="">Replies</h3>
+<div class="space-y-4">
+{% for reply in replies %}
+{% assign replyBgColour = "bg-white" %}
+
+{% if reply.author.name contains site.name %}
+{% assign replyBgColour = "bg-blue-50" %}
+{% endif %}
+
+<div class="{{replyBgColour}} p-4 shadow-md">
+    <div class="flex items-center space-x-4">
+        <img src="{{reply.author.photo}}" title="{{reply.author.name}}" class="rounded-full h-12 w-12 shadow-md my-1 object-cover"/>
+        <a href="{{reply.url}}" target="_blank" rel="ucg nofollow" class="font-bold">{{reply.author.name}}</a>
+    </div>
+    <div>
+        <p>{{reply.content.html}}</p>
+        <time datetime="{{reply["wm-received"] | date: "%Y-%m-%d %H:%M"}}" class="text-sm">
+            {{reply["wm-received"] | date: "%Y-%m-%d %H:%M"}}
+        </time>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+</div>
+{% endif %}
+
+</div>
+
+{% endif %}
