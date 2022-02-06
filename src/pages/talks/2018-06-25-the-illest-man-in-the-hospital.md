@@ -17,4 +17,4 @@ If you have any questions then get in [contact](/contact/) or tweet at me on [Tw
 
 ## Slides
 
-{% include partials/speakerDeckEmbed.html, speakerDeckId: {{speakerDeckId}} %}
+{% include partials/speakerDeckEmbed.html, speakerDeckId: speakerDeckId %}
