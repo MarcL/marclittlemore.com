@@ -16,7 +16,7 @@ Enjoy!
 
 ## Slides
 
-{% include partials/speakerDeckEmbed.html, speakerDeckId: {{speakerDeckId}} %}
+{% include partials/speakerDeckEmbed.html, speakerDeckId: speakerDeckId %}
 
 ## Video
 
