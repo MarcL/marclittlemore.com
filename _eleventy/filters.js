@@ -73,7 +73,8 @@ const addAll = (eleventyConfig) => {
     eleventyConfig.addFilter('getPostByPath', getPostByPath);
 
     // Webmentions
-    eleventyConfig.addFilter('webmentionsForUrl', webmentionsSortedByProperty);
+    eleventyConfig.addFilter('webmentionsForUrl', webmentionsForUrl);
+    eleventyConfig.addFilter('webmentionsSortedForUrl', webmentionsSortedByProperty);
 };
 
 module.exports = addAll;
