@@ -22,7 +22,7 @@ const callout = (content, type = 'info') => {
     const renderedHtml = markdownLib.render(content);
 
     const iconInfo = `<div class="w-1/6 text-center"><i class="fa fa-2x px-1 py-1 bg-white rounded-full shadow-sm ${chosenType.icon}"aria-hidden="true"></i></div>`;
-    return `<div class="w-full px-3 py-4 shadow-lg border-t-2 ${chosenType.background} flex flex-row items-center">${iconInfo}<div class="w-5/6">${renderedHtml}</div></div>`
+    return `<div class="w-full px-3 py-4 shadow-lg border-t-2 ${chosenType.background} flex flex-row items-center break-words">${iconInfo}<div class="w-5/6">${renderedHtml}</div></div>`
 };
 
 const quote = (content, addQuotes = true) => {
