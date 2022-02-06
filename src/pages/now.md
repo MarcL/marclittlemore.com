@@ -11,17 +11,25 @@ This page is inspired by Derek Siver's [now page](https://sivers.org/now) sugges
 
 ## What's happening right now?
 
-### Updated: 8th January 2022
+### Updated: 6th February 2022
+
+- Adding webmentions to this site
+- Writing more articles on this site again
+- Need to finish and deploy my wife's [Out Of The Woods Blog](http://www.outofthewoodsblog.com) using [Tailwind CSS](https://tailwindcss.com/) and [Eleventy](https://www.11ty.dev/)
+- Stretchs and physio exercises for a sciatic nerve issue
+- Making hip-hop beats in Ableton
+
+Check out the current [books I'm reading](/books/) here.
+
+## Previous Updates
+
+### 8th January 2022
 
 - Deploying and testing Shopify integration to sync data with a CO3 ERP system
 - Updating my wife's [Out Of The Woods Blog](http://www.outofthewoodsblog.com) using [Tailwind CSS](https://tailwindcss.com/) and [Eleventy](https://www.11ty.dev/)
 - Meditating using [Headspace](https://www.headspace.com/)
 - Starting to make music again with Ableton Live
 - Using social media less
-
-Check out the current [books I'm reading](/books/) here.
-
-## Previous Updates
 
 ### 9th December 2021
 
