@@ -35,7 +35,7 @@
 {% if likes.length %}
 <div class="">
 <h3 class="uppercase">Likes</h3>
-<div class="flex flex-auto flex-wrap justify-evenly">
+<div class="flex flex-auto flex-wrap justify-items-center">
     {% for like in likes %}
     <a href="{{like.author.url}}" rel="ugc nofollow" target="_blank" class="px-1">
         <img src="{{like.author.photo}}" title="{{like.author.name}}" class="rounded-full h-12 w-12 shadow-md my-1 object-cover"/>
