@@ -16,7 +16,11 @@ const extractGoodreadsBookMetadata = (goodReadsBook) => {
     }
 };
 
-const extractReadingListMetadata = (list) => list.map(extractGoodreadsBookMetadata);
+const extractReadingListMetadata = (list) => {
+    const extractList = Array.isArray(list) ? list : [list];
+    
+    return extractList.map(extractGoodreadsBookMetadata);
+};
 
 const createGoodReadsUrl = (options) => {
     const reviewListUrl = 'https://www.goodreads.com/review/list';
