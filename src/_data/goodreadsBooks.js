@@ -3,8 +3,9 @@ const xml2js = require('xml2js');
 const books = require('./books');
 
 const extractGoodreadsBookMetadata = (goodReadsBook) => {
-    const {rating} = goodReadsBook
+    const {rating, read_at} = goodReadsBook
     const {link, uri, title, image_url, authors} = goodReadsBook.book;
+    const finishedOn = read_at ? new Date(read_at) : null;
     return {
         uri,
         link,
@@ -12,7 +13,8 @@ const extractGoodreadsBookMetadata = (goodReadsBook) => {
         imageUrl: image_url,
         rating,
         authorName: authors.author.name,
-        authorLink: authors.author.link
+        authorLink: authors.author.link,
+        finishedOn
     }
 };
 
