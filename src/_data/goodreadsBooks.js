@@ -83,6 +83,8 @@ const updateBooks = (bookList) => {
 const getGoodreadsBooks = async () => {
     const currentlyReading = await getGoodreadsShelf('currently-reading');
     const read = await getGoodreadsShelf('read');
+    read.sort((first, second) => new Date(second.finishedOn) - new Date(first.finishedOn));
+
     const books = {
         currentlyReading: updateBooks(currentlyReading),
         read: updateBooks(read)
