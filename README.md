@@ -4,9 +4,19 @@
 
 The source code for my personal blog - [marclittlemore.com](https://marclittlemore.com)
 
+## Technologies used
+
+The site is built using [11ty](https://www.11ty.dev/). I ❤️ this static site generator and have moved most of my sites to using it.
+
+I originally styled the site using Tachyons but moved over to [Tailwind CSS](https://tailwindcss.com/). It's made it simple for someone with less CSS experience to responsively style the whole site. I use it on most projects now.
+
+The site is deployed using [Netlify](http://netlify.com/). I moved over from running my own [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) to using Netlify for most of my sites. This allows a simple Git-based workflow for previewing and deploying my site changes easily.
+
+There is very little client-side JavaScript but what is there uses [Parcel](https://parceljs.org/) to bundle the code into a single module.
+
 ## Shortcodes
 
-I added custom shortcodes to the setup to help me with quick markup blocks. Here is a list of them all and what they do.
+I added custom shortcodes to the setup to add helpers for posts and pages. Here is a list of them and what they do.
 
 ### callout
 
@@ -70,10 +80,4 @@ Adds a blockquote surrounded by quotes. The text is parsed as markdown. Pass `fa
 Some text goes here.
 {% endquote %}
 ```
-
-## Technologies used
-
-- Built with [11ty](https://www.11ty.dev/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
-- Deployed using [Netlify](http://netlify.com/)
 
