@@ -81,3 +81,38 @@ Some text goes here.
 {% endquote %}
 ```
 
+## Filters
+
+Here are the filters added to the codebase.
+
+### collectionLastUpdatedDate
+
+Pass a collection to determine the last updated date in from all of the items in it. It returns a [RFC822 formatted date](https://github.com/tjconcept/js-rfc822-date).
+
+```
+{{ collections.post | collectionLastUpdatedDate }} // E.g. 'Mon, 13 Sep 2013 14:27:00 +0200'
+```
+
+### getPostByPath
+
+Finds a post in a collection by its path. It will throw an error if no post is found.
+
+```
+{% assign cardPost = collections.all | getPostByPath: path %}
+```
+
+### keys
+
+### markdownify
+
+### starRating
+
+### rfc822Date
+
+### toISOString
+
+### xmlEscape
+
+### webmentionsForUrl
+
+### webmentionsSortedForUrl

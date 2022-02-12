@@ -63,14 +63,14 @@ const getPostByPath = (collection, path) => {
 }
 
 const addAll = (eleventyConfig) => {
+    eleventyConfig.addFilter('collectionLastUpdatedDate', collectionLastUpdatedDateFilter);
+    eleventyConfig.addFilter('getPostByPath', getPostByPath);
+    eleventyConfig.addFilter('keys', object => Object.keys(object));
+    eleventyConfig.addLiquidFilter('markdownify', markdownifyFilter);
+    eleventyConfig.addLiquidFilter('starRating', starRating);
     eleventyConfig.addLiquidFilter('rfc822Date', rfc822DateFilter);
     eleventyConfig.addLiquidFilter('toISOString', toISOStringFilter);
     eleventyConfig.addLiquidFilter('xmlEscape', xmlEscapeFilter);
-    eleventyConfig.addLiquidFilter('markdownify', markdownifyFilter);
-    eleventyConfig.addLiquidFilter('starRating', starRating);
-    eleventyConfig.addFilter('keys', object => Object.keys(object));
-    eleventyConfig.addFilter('collectionLastUpdatedDate', collectionLastUpdatedDateFilter);
-    eleventyConfig.addFilter('getPostByPath', getPostByPath);
 
     // Webmentions
     eleventyConfig.addFilter('webmentionsForUrl', webmentionsForUrl);
