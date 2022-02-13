@@ -49,11 +49,11 @@ const codeTitle = (title, heading = 'Filename') => {
 };
 
 const addAll = (eleventyConfig) => {
-    eleventyConfig.addPairedShortcode('quote', quote);
     eleventyConfig.addPairedShortcode('callout', callout);
-    eleventyConfig.addLiquidShortcode('image', imageShortcode);
-    eleventyConfig.addShortcode('gravatar', gravatarShortcode);
     eleventyConfig.addShortcode('codetitle', codeTitle);
+    eleventyConfig.addShortcode('gravatar', gravatarShortcode);
+    eleventyConfig.addLiquidShortcode('image', imageShortcode);
+    eleventyConfig.addPairedShortcode('quote', quote);
 };
 
 module.exports = addAll;

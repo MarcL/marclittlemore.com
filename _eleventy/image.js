@@ -7,7 +7,6 @@ const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
 
     // Is it a local or internet source?
     let dataSrc = /^http[s]*/.test(src) ? src : `./src${src}`;
-    // const dataSrc = `./src${src}`;
 
     let metadata;
     try {

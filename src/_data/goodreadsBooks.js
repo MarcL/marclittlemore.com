@@ -3,8 +3,9 @@ const xml2js = require('xml2js');
 const books = require('./books');
 
 const extractGoodreadsBookMetadata = (goodReadsBook) => {
-    const {rating} = goodReadsBook
+    const {rating, read_at} = goodReadsBook
     const {link, uri, title, image_url, authors} = goodReadsBook.book;
+    const finishedOn = read_at ? new Date(read_at) : null;
     return {
         uri,
         link,
@@ -12,11 +13,16 @@ const extractGoodreadsBookMetadata = (goodReadsBook) => {
         imageUrl: image_url,
         rating,
         authorName: authors.author.name,
-        authorLink: authors.author.link
+        authorLink: authors.author.link,
+        finishedOn
     }
 };
 
-const extractReadingListMetadata = (list) => list.map(extractGoodreadsBookMetadata);
+const extractReadingListMetadata = (list) => {
+    const extractList = Array.isArray(list) ? list : [list];
+    
+    return extractList.map(extractGoodreadsBookMetadata);
+};
 
 const createGoodReadsUrl = (options) => {
     const reviewListUrl = 'https://www.goodreads.com/review/list';
@@ -77,6 +83,8 @@ const updateBooks = (bookList) => {
 const getGoodreadsBooks = async () => {
     const currentlyReading = await getGoodreadsShelf('currently-reading');
     const read = await getGoodreadsShelf('read');
+    read.sort((first, second) => new Date(second.finishedOn) - new Date(first.finishedOn));
+
     const books = {
         currentlyReading: updateBooks(currentlyReading),
         read: updateBooks(read)
