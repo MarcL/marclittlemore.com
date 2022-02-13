@@ -103,16 +103,65 @@ Finds a post in a collection by its path. It will throw an error if no post is f
 
 ### keys
 
+Finds all of the keys for a specified object.
+
+```
+{% assign socialMediaKeys = socialMedia | keys %}
+```
+
 ### markdownify
+
+Renders the passed Markdown as HTML.
+
+```
+{{article.data.description | markdownify}}
+```
 
 ### starRating
 
+Returns HTML using [Font Awesome stars](https://fontawesome.com/v5/icons/star?s=solid). Pass in the number of starts to render as the value.
+
+```
+{{book.rating | starRating}}
+```
+
 ### rfc822Date
+
+Returns a [RFC822 formatted date](https://github.com/tjconcept/js-rfc822-date).
+
+```
+<pubDate>{{ post.date | rfc822Date }}</pubDate> // E.g. 'Mon, 13 Sep 2013 14:27:00 +0200'
+```
 
 ### toISOString
 
+Renders a date as an [ISO 8601 date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString).
+
+
+```
+<lastmod>{{ post.date | toISOString }}</lastmod>
+```
+
 ### xmlEscape
+
+Renders characters as HTML entities - see [lodash.escape](https://lodash.com/docs/#escape). Used for RSS feeds.
+
+```
+<description><![CDATA[{{ post.templateContent | xmlEscape }}]]></description>
+```
 
 ### webmentionsForUrl
 
+Returns an array of Webmentions for the specified absolute URL.
+
+```
+{% assign webMentionsForPage = webmentions | webmentionsForUrl: absoluteUrl %}
+```
+
 ### webmentionsSortedForUrl
+
+Returns a sorted object of Webmentions for the specified absolute URL. The keys are the different types of mentions.
+
+```
+{% assign webMentionsForPage = webmentions | webmentionsForUrl: absoluteUrl %}
+```
