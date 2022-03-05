@@ -8,3 +8,6 @@
 /guides/javascript-unit-testing-best-practices/ signup=:value /javascript-testing-beginners-course/?signup=:value 301
 /courses/javascript-testing-made-easy/ signup=:value /javascript-testing-beginners-course/?signup=:value 301
 /courses/javascript-testing-beginners-course/ signup=:value /javascript-testing-beginners-course/?signup=:value 301
+
+# URLs that have changed
+/books/ /reading/

@@ -1,7 +1,7 @@
 ---
-title: "Books"
+title: "Reading"
 description: I've tried to read a lot more books in the past few years and redeveloped my love of reading. Take a look at the books on my bookshelf and see what I've read and am currently reading.
-permalink: /books/
+permalink: /reading/
 headerImage: /images/banners/books.jpg
 date: 2020-08-23
 ---
@@ -14,9 +14,9 @@ These are the books that I've got at the side of my bed or on my Kindle. I usual
 
 {% include partials/bookshelf.html, bookshelf: goodreadsBooks.currentlyReading %}
 
-## Finished
+## Books I have finished
 
-This is a list of books I've previously read and mostly enjoyed.
+Here are all of the books I've read since I started recording them in Goodreads. You'll see the rating I've given them too.
 
 {% include partials/bookshelf.html, bookshelf: goodreadsBooks.read %}
 
