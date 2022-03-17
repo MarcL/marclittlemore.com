@@ -1,5 +1,16 @@
 const Image = require("@11ty/eleventy-img");
 
+// Tailwind sizes
+const tailwindSizesPixels = {
+    'sm': 640,
+    'md': 768,
+    'lg': 1024,
+    'xl': 1280,
+    '2xl': 1536,
+};
+
+const tailwindPixelList = Object.keys(tailwindSizesPixels).map(key => tailwindSizesPixels[key]);
+
 const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
     if (alt === undefined) {
         throw new Error(`Missing \`alt\` on image from: ${src}`);
@@ -11,7 +22,7 @@ const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
     let metadata;
     try {
         metadata = await Image(dataSrc, {
-            widths: [size],
+            widths: tailwindPixelList,
             formats: ['jpeg'],
             urlPath: '/images/generated/',
             outputDir: './_site/images/generated/'
@@ -24,9 +35,14 @@ const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
         console.log(error);
         throw error;
     }
-
-    const data = metadata.jpeg[0];
-    return `<img src="${data.url}" width="${data.width}" title="${alt}" alt="${alt}" class="${className}" loading="lazy" decoding="async">`;
+    
+    const imageAttributes = {
+        alt,
+        sizes: `(min-width: ${tailwindSizesPixels['sm']}px) 50vw, 100vw`,
+        loading: "lazy",
+        decoding: "async",
+    };    
+    return Image.generateHTML(metadata, imageAttributes);
 };
 
 module.exports = imageShortcode;
