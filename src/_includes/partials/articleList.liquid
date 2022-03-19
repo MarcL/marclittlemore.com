@@ -13,7 +13,7 @@
 <div class="w-full flex justify-center">
 {% if article.data.headerImage %}
 <a href="{{article.url}}" title="{{article.data.title}}" alt="{{article.data.title}}">
-{% image article.data.headerImage article.data.title 800 "rounded-md shadow-lg w-full" %}
+{% image article.data.headerImage article.data.title "rounded-md shadow-lg w-full" %}
 </a>
 {% elsif article.data.gameImage %}
 <img src="{{article.data.gameImage}}" class="rounded-lg shadow-lg" alt="{{article.data.title}}">
