@@ -12,9 +12,9 @@
     <figure>
       {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
       {% if headerImage %}
-        {% image headerImage imageTitle 1024 "rounded-lg shadow-lg" %}
+        {% image headerImage imageTitle "rounded-lg shadow-lg" %}
       {% else %}
-        {% image site.headerImage  imageTitle 1024 "rounded-lg shadow-lg" %}
+        {% image site.headerImage imageTitle "rounded-lg shadow-lg" %}
       {% endif %}
 
       {% if image %}

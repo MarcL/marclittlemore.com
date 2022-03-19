@@ -60,13 +60,10 @@ Add a resized image to a post within an `<img>` tag. Pass the following paramete
 
 * `src` - The source of the image. This can be local, which is assumed to be in the `/src/` directory, or a URL to an image.
 * `alt` - Alt text for the image. This is mandatory!
-* `size` - This is the size of the image to create.
 * `className` - This is an additional classes to add to the image. By default it adds a [Tailwind CSS](https://tailwindcss.com) medium shadow.
 
-**TODO: I need to look at supporting multiple images to support `srcset` in the near future.**
-
 ```
-{% image "/images/banners/marc-littlemore-homepage-banner-small.jpg" "Marc Littlemore" 500 "w-full sm:w-1/2 my-4 sm:my-0 shadow-lg sm:shadow-none rounded-md sm:rounded-none" %}
+{% image "/images/me/marc-littlemore.jpg" "Marc Littlemore" "w-full sm:w-1/2 my-4 sm:my-0 shadow-lg sm:shadow-none rounded-md sm:rounded-none" %}
 ```
 
 ### quote
