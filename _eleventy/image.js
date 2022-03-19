@@ -35,10 +35,15 @@ const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
         console.log(error);
         throw error;
     }
-    
+
+    const tailwindSizes = Object.keys(tailwindSizesPixels).map(key => {
+        const value = tailwindSizesPixels[key];
+        return `(min-width: ${value}) ${value}px`;
+    }).join(',\n');
+
     const imageAttributes = {
         alt,
-        sizes: `(min-width: ${tailwindSizesPixels['sm']}px) 50vw, 100vw`,
+        sizes: tailwindSizes,
         loading: "lazy",
         decoding: "async",
     };    
