@@ -17,13 +17,13 @@ const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
     }
 
     // Is it a local or internet source?
-    let dataSrc = /^http[s]*/.test(src) ? src : `./src${src}`;
+    const dataSrc = /^http[s]*/.test(src) ? src : `./src${src}`;
 
     let metadata;
     try {
         metadata = await Image(dataSrc, {
             widths: tailwindPixelList,
-            formats: ['jpeg'],
+            formats: ['webp', 'jpeg'],
             urlPath: '/images/generated/',
             outputDir: './_site/images/generated/'
         });
@@ -32,22 +32,39 @@ const imageShortcode = async (src, alt, size, className = 'shadow-md') => {
             throw new Error(`Couldn't create image metadata for: ${dataSrc}`);
         }
     } catch(error) {
-        console.log(error);
+        console.error(error);
         throw error;
     }
 
-    const tailwindSizes = Object.keys(tailwindSizesPixels).map(key => {
-        const value = tailwindSizesPixels[key];
-        return `(min-width: ${value}) ${value}px`;
-    }).join(',\n');
+    const highestResolutionJpeg = metadata.jpeg[metadata.jpeg.length - 1];
 
-    const imageAttributes = {
-        alt,
-        sizes: tailwindSizes,
-        loading: "lazy",
-        decoding: "async",
-    };    
-    return Image.generateHTML(metadata, imageAttributes);
+    const sources = Object.values(metadata).map(imageFormat => {
+        const imageSizes = imageFormat.map(entry => {
+            return `(min-width: ${entry.width}) ${entry.width}px`
+        }).join(', ');
+    
+        const srcset = imageFormat.map(entry => entry.srcset).join(', ');
+        return `\t<source
+            type="${imageFormat[0].sourceType}"
+            srcset="${srcset}"
+            sizes="${imageSizes}"
+        >`;
+    }).join('\n');
+
+    const pictureHtml = `<picture class="${className}">
+        ${sources}
+        <img
+            class="${className}"
+            src="${highestResolutionJpeg.url}"
+            width="${highestResolutionJpeg.width}"
+            height="${highestResolutionJpeg.height}"
+            alt="${alt}"
+            loading="lazy"
+            decoding="async"
+        />
+    </picture>`;
+
+    return pictureHtml;
 };
 
 module.exports = imageShortcode;
