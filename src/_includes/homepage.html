@@ -16,21 +16,23 @@ scripts:
     <div class="container max-w-screen-lg mx-auto px-4">
         <main class="py-4">
             <section class="flex flex-col flex-wrap items-center">
-                <div class="mb-0 sm:mb-8 max-w-screen-lg bg-white sm:bg-amber-50 flex flex-col sm:flex-row items-center justify-center shadow-none sm:shadow-md">
-                    <div class="w-full sm:w-1/2 px-0 sm:px-8 flex flex-col items-center sm:items-start">
-                        <h1 class="text-4xl lg:text-6xl leading-none font-extrabold tracking-tight text-gray-900 text-center sm:text-left">
+                <div class="mb-0 sm:mb-8 max-w-screen-lg bg-white grid grid-cols-1 sm:grid-cols-2 items-center content-center">
+                    <div class="w-full sm:w-5/6 px-0 sm:px-8">
+                        <h1 class="text-4xl lg:text-5xl leading-none font-extrabold tracking-tight text-gray-900 text-center sm:text-left">
                             {{subtitle}}
                         </h1>
                     </div>
-                    {% image "/images/banners/marc-littlemore-homepage-banner-small.jpg" "Marc Littlemore" 500 "w-full sm:w-1/2 my-4 sm:my-0 shadow-lg sm:shadow-none rounded-md sm:rounded-none" %}
+                    <div class="w-full">
+                        {% image "/images/me/marc-littlemore.jpg" "Marc Littlemore" 1024 "my-4 sm:my-0 shadow-lg rounded-md" %}
+                    </div>
                 </div>
         
-                <section id="main-content" class="text-center max-w-screen-lg mx-auto py-8">
-                    <div class="text-gray-800 text-2xl sm:text-3xl leading-9 space-y-10">
+                <section id="main-content" class="max-w-screen-lg mx-auto py-8">
+                    <div class="text-gray-800 text-2xl sm:text-3xl leading-9 space-y-10 prose prose-xl">
                         {{content}}
                     </div>
-                    <div class="w-full md:w-2/5 max-w-screen-lg mx-auto">
-                        <a class="block mt-10 px-6 py-4 bg-red-600 hover:bg-red-500 text-white shadow-md rounded-sm text-xl sm:text-2xl uppercase"
+                    <div class="w-full md:w-2/5 max-w-screen-lg mx-auto text-center">
+                        <a class="block mt-10 px-6 py-4 bg-red-600 hover:bg-red-500 text-white shadow-md rounded-sm text-xl sm:text-2xl uppercase font-bold"
                             href="/about/"
                             title="About Marc Littlemore"
                             alt="About Marc Littlemore"
