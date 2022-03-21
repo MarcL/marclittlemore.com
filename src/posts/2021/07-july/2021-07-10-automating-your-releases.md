@@ -157,7 +157,7 @@ Once the environment variable has been added to the pipeline, we can build the G
 Here's an example GitLab YAML pipeline:
 
 ```yaml
-# semantic-release requires null coalescing which
+# semantic-release requires optional chaining which
 # appears in Node 14.5+
 image: node:14.15
 
@@ -245,7 +245,7 @@ It avoids the team having to think about releasing manually. This is often a job
 
 While using `semantic-release` has made life easier, there are some potential issues you might have to deal with.
 
-Firstly, `semantic-release` claims to work with Node v10+. However, when I tried it in the GitLab pipeline, one of the plugins depends on a new JavaScript operator called the [nullish coalescing operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator). This only appears in Node 14.5 and beyond so make sure that any Docker containers, or the GitLab Node image you use, use Node 14.5 or later.
+Firstly, `semantic-release` claims to work with Node v10+. However, when I tried it in the GitLab pipeline, one of the plugins depends on a new JavaScript operator called the [optional chaining operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining). This only appears in Node 14.5 and beyond so make sure that any Docker containers, or the GitLab Node image you use, use Node 14.5 or later.
 
 If you use the `@semantic-release/git` plugin, it will commit the changes in your `CHANGELOG.md` or `package.json` files to your repository. This `git` commit will trigger a new pipeline on your `main` branch, and hence this can start another pipeline to re-check the release.
 
