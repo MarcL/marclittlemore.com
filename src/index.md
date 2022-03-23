@@ -2,7 +2,7 @@
 layout: homepage
 permalink: /
 title: Hello, I'm Marc Littlemore
-subtitle: Engineering Manager, public speaker, helping to build inclusive teams
+subtitle: I'm an Engineering Manager & public speaker, helping to build inclusive teams
 description: Hello! I'm Marc Littlemore, a Software Engineering Manager who writes about software development and technical leadership.
 ---
 
