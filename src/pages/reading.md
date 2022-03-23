@@ -1,7 +1,7 @@
 ---
-title: "Books"
+title: "Reading"
 description: I've tried to read a lot more books in the past few years and redeveloped my love of reading. Take a look at the books on my bookshelf and see what I've read and am currently reading.
-permalink: /books/
+permalink: /reading/
 headerImage: /images/banners/books.jpg
 date: 2020-08-23
 ---

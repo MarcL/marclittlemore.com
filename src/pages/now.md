@@ -16,7 +16,7 @@ This page is inspired by Derek Siver's [now page](https://sivers.org/now) sugges
 - Investigating React Native for a messaging application
 - Stretchs and physio exercises for a sciatic nerve issue
 
-Check out the current [books I'm reading](/books/) here.
+Check out the current [books I'm reading](/reading/) here.
 
 ## Previous Updates
 
