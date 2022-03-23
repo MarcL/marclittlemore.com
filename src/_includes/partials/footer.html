@@ -10,17 +10,17 @@
     {% else %}
     <a href="{{ socialItem.url }}" title="{{ socialItem.title }}" class="block hover:bg-gray-700 rounded-md px-3 py-3" aria-label="{{socialItem.name}} icon">
     {% endif %}
-        <i class="fa text-white {{socialItem.icon}} text-2xl"></i>
+        <i class="fa text-white {{socialItem.icon}} text-xl sm:text-2xl"></i>
     </a>
 {% endfor %}
 </div>
 
-  <div class="mt-4 uppercase space-x-8 mx-auto text-base md:text-lg lg:text-xl flex flex-row flex-wrap justify-center">
+  <div class="mt-4 uppercase space-x-0 sm:space-x-8 space-y-2 sm:space-y-0 mx-auto text-base md:text-lg lg:text-xl flex flex-col sm:flex-row flex-wrap justify-center items-center">
     {% for menuItem in footerMenu %}
-        <a href="{{menuItem.url}}" class="hover:underline">{{menuItem.name}}</a>
+      <a href="{{menuItem.url}}" class="hover:underline">{{menuItem.name}}</a>
     {% endfor %}
   </div>
-  <div class="my-4 mx-auto uppercase text-center">
+  <div class="my-4 mx-auto uppercase">
       Copyright &copy; 2007-{{"now" | date: "%Y"}} {{ site.title }} {{ site.time | date: '%Y' }}
   </div>
 </div>
