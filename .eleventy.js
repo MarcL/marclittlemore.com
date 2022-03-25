@@ -3,6 +3,7 @@ require('dotenv').config();
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const embedYouTube = require('eleventy-plugin-youtube-embed');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
+const util = require('util');
 
 const addAllShortcodes = require('./_eleventy/shortcodes');
 const addAllFilters = require('./_eleventy/filters');
@@ -32,6 +33,11 @@ module.exports = (eleventyConfig) => {
 
     addAllFilters(eleventyConfig);
     addAllShortcodes(eleventyConfig);
+
+    // Debug filter
+    eleventyConfig.addFilter('console', (value) => {
+        return util.inspect(value);
+    });
 
     eleventyConfig.setDataDeepMerge(true);
 
