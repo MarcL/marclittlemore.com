@@ -1,6 +1,6 @@
 ---
 title: Articles
-description: Articles I've written
+description: I've written a collection of articles and some of them might be ok!
 permalink: /articles/
 headerImage: /images/banners/old-typewriter.jpg
 image:
@@ -9,6 +9,6 @@ image:
     url: https://unsplash.com/@patrickian4
 ---
 
-Here is a collection of articles that I've written about technology, learning, and other things I've learnt about. I'm attempting to build a regular habit of writing in 2020 and beyond so expect regular updates. Enjoy!
+Here is a collection of **{{collections.post.length}} articles** that I've written over the past few years. I write about software development, [JavaScript testing](/javascript-testing/), [chatbots](/bots/), technical leadership, and other things I'm interested in. I'm attempting to build a regular habit of writing and I hope that you find something useful in my articles. Enjoy!
 
 {% include partials/articleList, collection: collections.post %}
