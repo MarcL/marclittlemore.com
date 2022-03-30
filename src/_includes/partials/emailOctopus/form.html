@@ -1,58 +1,71 @@
-<div class="bg-white px-2 md:px-8 flex flex-col justify-center items-center w-full mx-auto">
+<div class="bg-slate-50 border border-slate-100 shadow-lg px-2 flex flex-col justify-center items-center w-full mx-auto py-8 not-prose">
 
 {% if formTitle %}
-<h2 class="font-semibold text-2xl text-gray-800 mb-8 text-center">
+<h2 class="font-semibold text-2xl sm:text-4xl text-gray-800 text-center my-0 py-0">
 {{formTitle}}
 </h2>
 {% endif %}
 
 {% if formText %}
-{{formText}}
+<div class="text-center w-2/3 py-6 text-base sm:text-lg">
+    {{formText}}
+</div>
 {% endif %}
 
-<form action="https://emailoctopus.com/lists/{{- emailOctopus.listId -}}/members/embedded/1.3s/add"
-method="post"
-data-message-success="Thanks for subscribing!"
-data-message-missing-email-address="Your email address is required."
-data-message-invalid-email-address="Your email address looks incorrect, please try again."
-data-message-bot-submission-error="This doesn't look like a human submission."
-data-message-consent-required="Please check the checkbox to indicate your consent."
-data-message-invalid-parameters-error="This form has missing or invalid fields."
-data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later."
-class="emailoctopus-form"
-data-sitekey="{{emailOctopus.siteKey}}"
+<form action="https://emailoctopus.com/lists/{{ emailOctopus.listId }}/members/embedded/1.3s/add"
+    method="post"
+    data-message-success="Thanks for subscribing!"
+    data-message-missing-email-address="Your email address is required."
+    data-message-invalid-email-address="Your email address looks incorrect, please try again."
+    data-message-bot-submission-error="This doesn't look like a human submission."
+    data-message-consent-required="Please check the checkbox to indicate your consent."
+    data-message-invalid-parameters-error="This form has missing or invalid fields."
+    data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later."
+    class="emailoctopus-form"
+    data-sitekey="{{emailOctopus.siteKey}}"
 >
 <div class="w-full flex flex-col justify-center space-y-4">
-<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="field_0" name="field_0" type="email" placeholder="Email address" required />
-<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="field_1" name="field_1" type="text" placeholder="First name" required />
+    <label class="block" for="field_0">
+        <span class="text-base font-semibold">Email address</span>
+        <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="field_0" name="field_0" type="email" placeholder="your-email@domain.com" required />
+    </label>
+    <label class="block" for="field_1">
+        <span class="text-base font-semibold">First name</span>
+        <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="field_1" name="field_1" type="text" placeholder="First name" required />
+    </label>
+
 <input name="field_4" type="hidden" value="{{page.url}}">
 <input name="field_5" type="hidden" value="{{tag | default: 'unknown'}}">
 
 <div class="emailoctopus-form-row-consent pt-4">
-<label class="inline-flex items-center space-x-4">
+<label class="inline-flex items-center space-x-4" for="consent">
 <input
-type="checkbox"
-class="rounded border-gray-300 text-blue-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50"
-checked=""
-id="consent"
-name="consent"
+    type="checkbox"
+    class="rounded border-gray-300 text-red-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50"
+    checked=""
+    id="consent"
+    name="consent"
 >
-<span class="ml-2 text-base md:text-lg">I consent to receiving your weekly newsletter and special offers</span>
+<span class="ml-2 text-base md:text-lg">I consent to receiving your weekly newsletter.</span>
 </label>
 </div>
 
 <div class="emailoctopus-form-row-hp">
-<input type="text" name="{{emailOctopus.botKey}}" tabindex="-1" autocomplete="nope" class="absolute -left-96" aria-hidden="true">
+    <input type="text" name="{{emailOctopus.botKey}}" tabindex="-1" autocomplete="nope" class="absolute -left-96" aria-hidden="true">
 </div>
 <input type="hidden" name="successRedirectUrl" value="{{site.url}}{{emailOctopus.thankYouPagePath}}">
 
 <div id="email-messages">
-<div class="emailoctopus-error-message text-red-600 font-medium text-center"></div>
+    <div class="emailoctopus-error-message text-red-600 font-medium text-center"></div>
 </div>
 
-<button type="submit" class="mt-8 bg-blue-600 hover:bg-blue-800 text-white font-bold text-xl py-4 px-8 rounded space-x-4">
-<i class="fa fa-envelope-o"></i><span>Sign up today</span>
+<button type="submit" class="mt-8 bg-red-600 hover:bg-red-500 text-white font-bold text-xl py-4 px-8 rounded space-x-4 uppercase">
+<i class="fa fa-envelope-o"></i><span>Sign up</span>
 </button>
+
+<div class="italic text-xs sm:text-sm text-center">
+    I hate spam as much as you do: your email address will never be shared.    
+</div>
 
 </div>
 </form>

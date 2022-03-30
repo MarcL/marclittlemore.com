@@ -1,8 +1,8 @@
 ---
-title:  "Newsletter Sign Up"
+title:  "Join my newsletter"
 permalink: /newsletter/
 headerImage: /images/banners/newsletter-sign-up.jpg
-description: Sign up for my newsletter.
+description: A weekly newsletter teaching you about technical leadership, remote working, software engineering management, and helpful advice to grow your career.
 tags:
     - writing
 image:
@@ -14,16 +14,18 @@ sitemap:
     exclude: yes
 ---
 
-Every Sunday, **{{newsletters.subscribers}} technical leaders, remote workers, and developers** learn more about .
+Every week I help **{{newsletters.subscribers}} technical leaders, remote workers, and full-stack developers**, to learn more about working in the software industry.
 
-Join our global community now!
+In it you'll find my favourite articles and thoughts on intentional remote working, technical leadership, software engineering management, and I'll share helpful advice to grow your career in the software development.
+
+Enter your email address below to join our global community of technical leaders.
 
 {% capture formTitle %}
-Get my **best articles**
+Join my **weekly newsletter**
 {% endcapture %}
 
 {% capture formText %}
-Sign up for my newsletter to receive great stuff.
+Sign up for my newsletter to receive **weekly articles** on engineering managment, remote working, and growing your career.
 {% endcapture %}
 
 {% include partials/emailOctopus/form.html, formTitle: formTitle, formText: formText, tag: "testing" %}

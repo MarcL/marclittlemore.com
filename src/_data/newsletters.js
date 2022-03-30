@@ -4,7 +4,7 @@ const emailOctopusConfig = require('./emailOctopus.json')
 // TODO: Add back issue URLs in here eventually
 const backIssues = [];
 
-const MINIMUM_SUBSCRIBERS = 250;
+const MINIMUM_SUBSCRIBERS = 237;
 const EMAIL_OCTOPUS_BASE_URL = 'https://emailoctopus.com/api/1.5';
 
 module.exports = async () => {

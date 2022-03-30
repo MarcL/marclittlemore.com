@@ -13,6 +13,6 @@ sitemap:
     exclude: yes
 ---
 
-Thanks for signing up for my newsletter. I hope that you enjoy reading it each week. Check your inbox and don't forget to add me to your contacts.
+Thanks for signing up for my newsletter. I hope that you enjoy reading it each week. Check your inbox and don't forget to [add me to your contacts](https://www.campaignmonitor.com/resources/guides/whitelisting/).
 
 {% include partials/popularArticles.html %}
