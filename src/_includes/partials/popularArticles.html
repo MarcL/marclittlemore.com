@@ -1,0 +1,8 @@
+## Popular Articles
+
+Here are a few of my most popular articles that others have enjoyed reading.
+
+{% for path in popularArticles %}
+{% assign popular = collections.all | getPostByPath: path %}
+* [{{popular.data.title}}]({{popular.url}})
+{% endfor %}
