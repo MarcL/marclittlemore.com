@@ -12,4 +12,4 @@ I'm Marc Littlemore. I'm an **Software Engineering Manager** at [Beacon](https:/
 
 I love helping to hire and build **diverse and inclusive** teams of software engineers who understand, and are **intentional, about remote work**. I help teams to build quality software applications whilst not being in the same office.
 
-I [write articles](/articles/) about software development, [JavaScript testing](/javascript-testing/) and technical leadership.
+I [write articles](/articles/) about software development, [JavaScript testing](/javascript-testing/) remote working, and technical leadership.

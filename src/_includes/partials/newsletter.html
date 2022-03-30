@@ -1,0 +1,9 @@
+{% capture formTitle %}
+Join my **weekly newsletter**
+{% endcapture %}
+
+{% capture formText %}
+Sign up for my newsletter to receive **weekly articles** on engineering managment, remote working, and growing your career.
+{% endcapture %}
+
+{% include partials/emailOctopus/form.html, formTitle: formTitle, formText: formText, tag: "newsletter" %}

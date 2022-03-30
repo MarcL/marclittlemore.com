@@ -28,18 +28,9 @@ scripts:
                 </div>
         
                 <section id="main-content" class="max-w-screen-lg mx-auto py-8">
-                    <div class="text-gray-800 text-2xl sm:text-3xl leading-9 space-y-10 prose prose-xl">
+                    <div class="text-gray-800 leading-9 space-y-10 prose prose-2xl">
                         {{content}}
                     </div>
-                    <div class="w-full md:w-2/5 max-w-screen-lg mx-auto text-center">
-                        <a class="block mt-10 px-6 py-4 bg-red-600 hover:bg-red-500 text-white shadow-md rounded-sm text-xl sm:text-2xl uppercase font-bold"
-                            href="/about/"
-                            title="About Marc Littlemore"
-                            alt="About Marc Littlemore"
-                        >
-                            Start here
-                        </a>
-                    </div>                    
                 </section>
             </section>
         </main>
@@ -61,6 +52,11 @@ scripts:
             </div>
         </div>
     </div>
+
+    <section class="max-w-screen-xl mx-auto py-2 sm:py-8">
+        {% include partials/newsletter.html %}
+    </section>
+        
 
     <div class="bg-gray-100 text-gray-800 py-8">
         <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">

@@ -2,13 +2,13 @@
 
 {% if formTitle %}
 <h2 class="font-semibold text-2xl sm:text-4xl text-slate-800 text-center my-0 py-0">
-{{formTitle}}
+{{formTitle | markdownify}}
 </h2>
 {% endif %}
 
 {% if formText %}
 <div class="text-center w-2/3 py-6 text-base sm:text-lg">
-    {{formText}}
+    {{formText | markdownify}}
 </div>
 {% endif %}
 

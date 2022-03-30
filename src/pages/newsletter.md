@@ -20,15 +20,7 @@ In it you'll find my favourite articles and thoughts on intentional remote worki
 
 Enter your email address below to join our global community of technical leaders.
 
-{% capture formTitle %}
-Join my **weekly newsletter**
-{% endcapture %}
-
-{% capture formText %}
-Sign up for my newsletter to receive **weekly articles** on engineering managment, remote working, and growing your career.
-{% endcapture %}
-
-{% include partials/emailOctopus/form.html, formTitle: formTitle, formText: formText, tag: "testing" %}
+{% include partials/newsletter.html %}
 
 {% if newsletters.backissues.length > 0 %}
 ## Previous newsletters
