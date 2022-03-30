@@ -5,6 +5,7 @@
         "url": "/bots/",
         "title": "Learn how to create your own chatbot"
     },
+    { "name": "Newsletter", "url": "/newsletter/" },
     { "name": "Now", "url": "/now/" },
     { "name": "Uses", "url": "/uses/" },
     { "name": "Contact", "url": "/contact/" }
