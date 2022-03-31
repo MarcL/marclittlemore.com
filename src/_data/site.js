@@ -1,6 +1,12 @@
+// const isDevelopmentBuild = process.env.ELEVENTY_ENV === 'dev';
+const isDevelopmentBuild = false;
+
+// Netlify build URL
+const buildUrl = process.env.DEPLOY_PRIME_URL ?
+  process.env.DEPLOY_PRIME_URL : 'https://www.marclittlemore.com';
+
 // Point to localhost URL for development builds
-const url = process.env.ELEVENTY_ENV === 'dev' ?
-  'http://localhost:8080' : 'https://www.marclittlemore.com';
+const url = isDevelopmentBuild ? 'http://localhost:8080' : buildUrl;
 
 module.exports = {
   title: 'Marc Littlemore',
