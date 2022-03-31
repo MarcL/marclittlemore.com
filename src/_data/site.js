@@ -1,5 +1,4 @@
-// const isDevelopmentBuild = process.env.ELEVENTY_ENV === 'dev';
-const isDevelopmentBuild = false;
+const isDevelopmentBuild = process.env.ELEVENTY_ENV === 'dev';
 
 // Netlify build URL
 const buildUrl = process.env.DEPLOY_PRIME_URL ?
