@@ -1,5 +1,5 @@
 const Cache = require("@11ty/eleventy-cache-assets");
-const site = require('./site.json');
+const site = require('./site');
 
 const WEBMENTIONS_IO_API = 'https://webmention.io/api/mentions.jf2';
 const token = process.env.WEBMENTIONS_IO_API_TOKEN;
