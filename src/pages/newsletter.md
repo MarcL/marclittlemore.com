@@ -9,9 +9,6 @@ image:
     source: https://unsplash.com/photos/4vrZpOo7fTc
     creator: Mailchimp
     url: https://unsplash.com/@mailchimp
-
-sitemap:
-    exclude: yes
 ---
 
 Every week I help **{{newsletters.subscribers}} technical leaders, remote workers, and full-stack developers**, to learn more how to be successful in the software industry.
