@@ -20,6 +20,7 @@
     "dotenv": "^16.0.0",
     "eleventy-plugin-embed-twitter": "^1.1.0",
     "eleventy-plugin-time-to-read": "^1.2.0",
+    "eleventy-plugin-toc": "^1.1.5",
     "eleventy-plugin-youtube-embed": "^1.5.0",
     "googleapis": "^95.0.0",
     "lodash.escape": "^4.0.1",

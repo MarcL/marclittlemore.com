@@ -36,6 +36,16 @@
   </div>
   {% endif %}
 
+  {% if tableOfContents %}
+  <div class="w-full mx-auto bg-blue-50 text-lg border border-blue-100 shadow-sm prose prose-xl rounded-md prose-li:list-disc prose-a:underline">
+    <div class="p-4 space-x-2 font-semibold">
+      <i class="fa fa-info-circle"></i><span>What we'll cover</span>
+    </div>
+    {{content | toc}}
+  </div>
+  {% endif %}
+
+
   {{ content }}
   
   {% include partials/webmentions.html %}
