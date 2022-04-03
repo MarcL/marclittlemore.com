@@ -2398,6 +2398,11 @@ eleventy-plugin-embed-twitter@^1.1.0:
     "@11ty/eleventy-cache-assets" "^2.3.0"
     deepmerge "^4.2.2"
 
+eleventy-plugin-time-to-read@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-time-to-read/-/eleventy-plugin-time-to-read-1.2.0.tgz#990b1179e739981c294a57ce4a3aa395cfd52e60"
+  integrity sha512-6LZZTqwRlirzRQOXEXjGbjinwNnVvEGe6BzIGWJIC3cNtngJ+xnqTeyVjARoN+OU0WDd+QAqSHGy513sf0vB/g==
+
 eleventy-plugin-youtube-embed@^1.5.0:
   version "1.6.5"
   resolved "https://registry.yarnpkg.com/eleventy-plugin-youtube-embed/-/eleventy-plugin-youtube-embed-1.6.5.tgz#1cc43337332b3b264495f4d2aa7126d4c2ccfbd9"
