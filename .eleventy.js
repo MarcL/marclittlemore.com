@@ -18,7 +18,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(embedYouTube);
     eleventyConfig.addPlugin(embedTwitter);
     eleventyConfig.addPlugin(timeToRead, {style: 'short'});
-    eleventyConfig.addPlugin(tableOfContents, {tags: ['h2']});
+    eleventyConfig.addPlugin(tableOfContents, {tags: ['h2', 'h3']});
 
     eleventyConfig.setLibrary('md', markdownLib);
 
