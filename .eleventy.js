@@ -4,7 +4,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const embedYouTube = require('eleventy-plugin-youtube-embed');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
 const timeToRead = require('eleventy-plugin-time-to-read');
-const tableOfContents = require('eleventy-plugin-toc');
+const tableOfContents = require('eleventy-plugin-nesting-toc');
 
 const util = require('util');
 
@@ -18,7 +18,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(embedYouTube);
     eleventyConfig.addPlugin(embedTwitter);
     eleventyConfig.addPlugin(timeToRead, {style: 'short'});
-    eleventyConfig.addPlugin(tableOfContents, {tags: ['h2', 'h3']});
+    eleventyConfig.addPlugin(tableOfContents);
 
     eleventyConfig.setLibrary('md', markdownLib);
 
