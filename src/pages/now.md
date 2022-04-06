@@ -11,14 +11,21 @@ This page is inspired by Derek Siver's [now page](https://sivers.org/now) sugges
 
 ## What's happening right now?
 
-### Updated: 5th March 2022
+### Updated: 6th April 2022
 
-- Investigating React Native for a messaging application
-- Stretchs and physio exercises for a sciatic nerve issue
+- Starting an [intentional technical leadership newsletter](/newsletter)
+- Recovering from Covid
+- Building a messaging app using React Native and Firebase
+- Continued stretches and physio exercises for a sciatic nerve issue
 
 Check out the current [books I'm reading](/reading/) here.
 
 ## Previous Updates
+
+### Updated: 5th March 2022
+
+- Investigating React Native for a messaging application
+- Stretches and physio exercises for a sciatic nerve issue
 
 ### Updated: 6th February 2022
 
