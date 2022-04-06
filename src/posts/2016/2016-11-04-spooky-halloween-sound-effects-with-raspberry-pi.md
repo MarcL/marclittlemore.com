@@ -17,7 +17,7 @@ For Halloween back in 2015, I had an unused Raspberry Pi and decided that I shou
 
 Unfortunately, this year I've had a major operation so wasn't feeling up to recreating or bettering my Raspberry Pi project from last year. Instead, I decided to simplify it in order to play random spooky sound effects via the Raspberry Pi and combine it with some spooky ambient music from Spotify. This is a simple project to set up so read on if you want to scare your local trick or treaters!
 
-### What You'll Need
+## What You'll Need
 
 * A Raspberry Pi (v2/3 or Zero) and SD card with Raspbian installed
 * A PC or Mac with a Spotify account
@@ -35,7 +35,7 @@ You'll need a set of speakers attached to your computer in some way. I run the o
 
 Finally, you'll need something to mix the two audio sources together. I've spent nearly 30 years DJing so I had my Stanton DJ mixer to hand and plugged both the PC and the Raspberry Pi into it using RCA cables. This allowed me to alter the volumes of the two input sources and the final volume of the output to my amplifier. If you don't have an audio mixer, you can easily achieve the same thing by using a software mixer on your PC or Mac. Simply attach the output of the Raspberry Pi to the microphone input of your computer using a 3.5mm RCA cable and start the audio mixer in your settings or preferences panel. Note that the output of the Raspberry Pi seems to be really quiet in comparison to the output from the PC. You may be able to change this but I didn't investigate it too much. It just means that you'll need to make the Pi audio a lot higher than that from the PC using your hardware or software mixer.
 
-### Install Node.js on your Raspberry Pi
+## Install Node.js on your Raspberry Pi
 
 As I love working with Node.js and JavaScript, I decided that this was an easy way to get a project up and running. I installed Node when I first got the Raspberry Pi back in April 2015 so I have version 0.10 by following [this guide](http://weworkweplay.com/play/raspberry-pi-nodejs/). However, at the time of writing, I think the easiest way to install v4.2.1 is by following the instructions on the [Node Arm GitHub project](https://github.com/nathanjohnson320/node_arm) which does the following:
 
@@ -52,7 +52,7 @@ As Linux doesn't have the best out-of-the-box audio support, you'll also have to
 sudo apt-get install libasound2-dev
 ```
 
-### Install the code
+## Install the code
 
 Next you'll need to install my Halloween Pi project in order to play the random sounds. As mentioned above, the original project used a button and some LEDs last year so the master branch of the [Halloweenpi GitHub project](https://github.com/MarcL/halloweenpi) contains that code that uses the GPIOs to send signals from the buttons and to the LEDs. However, I've added a branch which just plays random sound effects in the `random-play-sounds` branch. Just clone the project from this specific branch and install all of the dependencies:
 
@@ -78,7 +78,7 @@ Here's a video of it running in my study, the speakers are hidden behind the cur
 
 https://www.youtube.com/watch?v={{youTubeId}}
 
-### Updating the sound effects
+## Updating the sound effects
 
 If you want to update the sound effects that are being played then it's really simple. First, you need to add the MP3 files to the `/assets` directory. Secondly, you need to update the config file which points at them. I chose to be explicit in what sound effects I wanted playing rather than just playing every file it finds in the assets directory. Just update the `/config/config.js` array of paths to the sound effects and add your new effects, or remove any that you don't want.
 

@@ -24,11 +24,13 @@ const markdownAnchorLinks = (md, options) => {
 
   const anchorOptions = Object.assign({}, defaultOptions, options);
 
+  const isAnchorableTag = (tag) => tag === 'h2' || tag === 'h3';
+
   md.renderer.rules.heading_open = function(tokens, index) {
     const contentToken = tokens[index + 1];
     const slug = slugify(contentToken.content);
 
-    if (tokens[index].tag === 'h2') {
+    if (isAnchorableTag(tokens[index].tag)) {
       return `
       <div class="${anchorOptions.divClass}">
         <${tokens[index].tag} id="${slug}">`;
@@ -40,7 +42,7 @@ const markdownAnchorLinks = (md, options) => {
     const contentToken = tokens[index - 1];
     const slug = slugify(contentToken.content);
 
-    if (tokens[index].tag === 'h2') {
+    if (isAnchorableTag(tokens[index].tag)) {
       return `
       </${tokens[index].tag}>
         <a class="${anchorOptions.anchorClass}" href="#${slug}">

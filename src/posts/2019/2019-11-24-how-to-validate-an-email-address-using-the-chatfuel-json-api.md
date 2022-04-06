@@ -28,21 +28,21 @@ Take a look at how I build this email validation using [Glitch](https://glitch.c
 
 https://www.youtube.com/watch?v=r4h4DD1DNE8
 
-### How to validate an email address?
+## How to validate an email address?
 
-#### Using a regular expression
+### Using a regular expression
 
 Validating email addresses correctly can be tricky. One way is to use something called a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). This is a sequence of characters that define a search pattern that you attempt to match against. You'll find hundreds of different email regular expressions on the internet which give you various queries to validate against. However, they often come with caveats that they make a trade-off between speed and accuracy. You can use one of these to match the given email address with a specific pattern but you may incorrectly accept or reject some email addresses. The official regular expression which matches all email addresses is [ridiculously big](http://www.ex-parrot.com/~pdw/Mail-RFC822-Address.html). I can't imagine attempting to debug this if it doesn't work as expected in your programming language. While a regular expression will confirm if your email matches a specific pattern, we can't confirm whether we can send an email to it.
 
-#### Send the user an email
+### Send the user an email
 
 A nicer way is to determine if you can [send an email to the given email address](https://medium.com/hackernoon/the-100-correct-way-to-validate-email-addresses-7c4818f24643). This works really well for verifying an email address when signing up for an online service, but it's not that easy when you need to validate an email in a chatbot flow. Flows in Messenger or WhatsApp can't wait for your user to check their email and click on a link.
 
-#### Checking the MX record
+### Checking the MX record
 
 However, we can do something better by checking that the email has a valid domain to send email to. If we find a domain name in the given email address, we can check the DNS (Domain Name Server) records for the domain. These records can tell us the IP address on which the domain is hosted. They can also be used to see if email can be sent to the domain. For this we can check if the domain has an MX (Mail eXchange) record. If it does, we can send email to it.
 
-#### Writing an API service to check for a valid email domain
+### Writing an API service to check for a valid email domain
 
 Checking for an MX record does take some time so first we can verify that the email address has the format of an email address. For this you can check for the presence of an @ symbol. If it exists then the user has at least attempted to give us something which is similar to an email address! If you retrieve the rest of the string after the @ symbol, this represents the domain name. In my video below, I use Node.js and the standard [dns library](https://nodejs.org/docs/latest/api/dns.html) to determine if an MX record exists for that domain. If it does, then you should be able to send email to that address and we can consider it valid.
 

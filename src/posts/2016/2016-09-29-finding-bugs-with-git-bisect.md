@@ -14,7 +14,7 @@ A source control system is an essential tool if you're writing software, even fo
 One `git` command that you might not have seen or used before is
 `git bisect`, which is something I've only recently started using too. It's a great tool for quickly tracking down bugs in your project so let's take a look at how we can use it.
 
-### A wild bug appears
+## A wild bug appears
 
 I'm currently working on some high-traffic Node.js projects for work and, as I normally do at the start of a new task, I ran `git pull` to ensure I had the latest code from our master branch, and then ran `npm install` to update any dependencies. I ran the tests to check everything was ok but an odd thing happened: our test suite hung when it finished although all of the tests still passed. **WHAT?** Time to investigate.
 
@@ -22,11 +22,11 @@ I'm currently working on some high-traffic Node.js projects for work and, as I n
 
 I had no idea why this bug had crept into the project, nor when it first appeared in the master branch. My initial thought was that it was the last pull request that had been merged, so I checked out the previous merge instead but again, the tests were still hanging. This felt like a perfect opportunity to try out `git bisect` for the first time in order to quickly work out which commit had caused the error.
 
-### What does the "git bisect" command do?
+## What does the "git bisect" command do?
 
 Bisect performs a [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) to quickly find out the revision that caused a bug in your project's history. You do this by telling it which was the "bad" commit, the one which contains the bug, and which was a "good" commit, one in which you think the bug wasn't there. You can then use `git bisect` to pick a commit which is halfway between the two endpoints and you determine whether that one is bad or good. This can be repeated by choosing the revision between these two points until you determine the specific commit which caused the bug. It's then up to you to look at the code to see what has changed and is probably the cause.
 
-### The "git bisect" process
+## The "git bisect" process
 
 The first thing we need to do is tell `git` that we're about to start using bisect by using the `git bisect start` command. Before you do this, you should make sure you've committed or stashed any local changes to avoid losing any work as it will checkout each revision as we attempt to find the version containing the bug.
 
@@ -86,7 +86,7 @@ git bisect reset
 
 Make sure you reset otherwise you will find your local working directory in a strange state, having checked out out a previous revision of the project.
 
-### Pro-tip: Bisect automation
+## Pro-tip: Bisect automation
 
 Manually finding the bugs in your code is helped by using `git bisect` but you can make things even faster by automating the process. You simply have to pass a script to be executed by `git bisect run`. Doing this will run the script against each bisected commit in order to determine which one causes the script to fail.
 
@@ -103,6 +103,6 @@ git bisect run gulp test
 
 You'll have to ensure the script that you're using fails with a non-zero return value for this to work. For the code that fails in my above discussion, our test suite hung so it wasn't as easy to use automation here.
 
-### Conclusion: Use "git bisect"
+## Conclusion: Use "git bisect"
 
 As you can see, using `git bisect` is an easy way to quickly determine where defects have crept into a `git` project. You should start using it as its an effective tool to understand. For more information have a read of this great git SCM article on [debugging with git](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git). Also, take some time to look at the [git bisect documentation](https://git-scm.com/docs/git-bisect) too.
