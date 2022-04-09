@@ -5,6 +5,7 @@ headerImage: /images/banners/newsletter-sign-up.jpg
 description: A weekly newsletter teaching you about technical leadership, intentional remote working, and growing your leadership career.
 tags:
     - writing
+    - leadership
 image:
     source: https://unsplash.com/photos/4vrZpOo7fTc
     creator: Mailchimp
@@ -13,9 +14,9 @@ image:
 
 Every week I help **{{newsletters.subscribers}} technical leaders, remote workers, and full-stack developers**, to learn more how to be successful in the software industry.
 
-In it you'll find my favourite articles and thoughts on intentional remote working, technical leadership, software engineering management, and I'll share helpful advice to grow your career.
+In it you'll find my favourite articles and thoughts on intentional remote working, technical leadership, software engineering management, and I'll share helpful advice to grow your career. Learn along with me as I discover new ways of working to build your leadership skills.
 
-Enter your email address below to join our global community of technical leaders.
+Enter your email address below to join our global community of intentional technical leaders.
 
 {% include partials/newsletter.html %}
 
