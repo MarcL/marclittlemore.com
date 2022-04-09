@@ -1,15 +1,6 @@
 const Cache = require("@11ty/eleventy-cache-assets");
 const emailOctopusConfig = require('./emailOctopus.json')
 
-// TODO: Add back issue URLs in here eventually
-const backIssues = [
-    // {
-    //     date: '04/02/2022',
-    //     title: 'Setting expectations',
-    //     url: 'https://marclittlemore.com/test'
-    // }
-];
-
 const MINIMUM_SUBSCRIBERS = 237;
 const EMAIL_OCTOPUS_BASE_URL = 'https://emailoctopus.com/api/1.5';
 
@@ -33,7 +24,6 @@ module.exports = async () => {
         MINIMUM_SUBSCRIBERS : actualSubscribers;
 
     return {
-        backIssues,
         subscribers
     };
 }
