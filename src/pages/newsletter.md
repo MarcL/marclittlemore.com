@@ -20,12 +20,14 @@ Enter your email address below to join our global community of intentional techn
 
 {% include partials/newsletter.html %}
 
-{% if newsletters.backIssues.length > 0 %}
+{% if newsletterArchive.length > 0 %}
 ## Previous newsletters
 
-Want to know what you're going to receive in my weekly newsletter? Check out my previous newsletters and see what to expect.
+Want to know what you're going to receive in my weekly newsletter?
 
-{% for issue in newsletters.backIssues %}
+Check out my [previous newsletters](/newsletter/archive/) and see what to expect.
+
+{% for issue in newsletterArchive %}
 * {{issue.date | date: "%A, %e %B %Y"}} - [{{issue.title}}]({{issue.url}})
 {% endfor %}
 
