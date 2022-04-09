@@ -14,21 +14,14 @@ image:
 
 Every week I help **{{newsletters.subscribers}} technical leaders, remote workers, and full-stack developers**, to learn more how to be successful in the software industry.
 
-In it you'll find my favourite articles and thoughts on intentional remote working, technical leadership, software engineering management, and I'll share helpful advice to grow your career. Learn along with me as I discover new ways of working to build your leadership skills.
+In it you'll find my favourite articles and thoughts on intentional remote working, technical leadership, software engineering management, and I'll share helpful advice to grow your career. Learn along with me as I discover new ways of working and help us both to build our leadership skills.
 
 Enter your email address below to join our global community of intentional technical leaders.
 
 {% include partials/newsletter.html %}
 
-{% if newsletterArchive.length > 0 %}
 ## Previous newsletters
 
 Want to know what you're going to receive in my weekly newsletter?
 
 Check out my [previous newsletters](/newsletter/archive/) and see what to expect.
-
-{% for issue in newsletterArchive %}
-* {{issue.date | date: "%A, %e %B %Y"}} - [{{issue.title}}]({{issue.url}})
-{% endfor %}
-
-{% endif %}
