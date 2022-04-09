@@ -5,12 +5,14 @@ const embedYouTube = require('eleventy-plugin-youtube-embed');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
 const timeToRead = require('eleventy-plugin-time-to-read');
 const tableOfContents = require('eleventy-plugin-nesting-toc');
+const externalLinks = require("@aloskutov/eleventy-plugin-external-links")
 
 const util = require('util');
 
 const addAllShortcodes = require('./_eleventy/shortcodes');
 const addAllFilters = require('./_eleventy/filters');
 const markdownLib = require('./_eleventy/markdown');
+const site = require('./src/_data/site');
 
 module.exports = (eleventyConfig) => {
     // Plugins
@@ -19,6 +21,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(embedTwitter);
     eleventyConfig.addPlugin(timeToRead, {style: 'short'});
     eleventyConfig.addPlugin(tableOfContents);
+    eleventyConfig.addPlugin(externalLinks, {url: site.url});
 
     eleventyConfig.setLibrary('md', markdownLib);
 
