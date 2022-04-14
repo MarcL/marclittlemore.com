@@ -2,7 +2,7 @@ const Cache = require("@11ty/eleventy-cache-assets");
 const emailOctopusConfig = require('./emailOctopus.json')
 
 const MINIMUM_SUBSCRIBERS = 237;
-const EMAIL_OCTOPUS_BASE_URL = 'https://emailoctopus.com/api/1.5';
+const EMAIL_OCTOPUS_BASE_URL = 'https://emailoctopus.com/api/1.6';
 
 module.exports = async () => {
     const {EMAIL_OCTOPUS_API_KEY: apiKey} = process.env;
