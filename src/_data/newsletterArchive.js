@@ -23,13 +23,16 @@ module.exports = async () => {
     // in case I start another!
     const newsletters = response.data.filter(newsletter => newsletter.to.includes(listId))
         .map(newsletter => {
-            const {id, name, content, sent_at: sent} = newsletter;
+            const {id, name, status, created_at: created, sent_at: sent} = newsletter;
             return {
-                date: sent,
+                created,
+                sent,
                 title: name,
-                url: `${EMAIL_OCTOPUS_WEB_VIEW_URL}?p=${id}&pt=campaign`
+                url: `${EMAIL_OCTOPUS_WEB_VIEW_URL}?p=${id}&pt=campaign`,
+                status,
             };
-        });
+        })
+        .filter(newsletter => newsletter.status.toLowerCase() === 'sent');
 
     return newsletters;
 };
