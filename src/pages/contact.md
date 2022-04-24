@@ -8,7 +8,7 @@ headerImage: /images/banners/contact-me.jpg
 
 I'm always happy to answer any questions people have or love it when people want to say hello. You can easily send me a message via [Twitter]({{socialMedia.twitter.url}}) or [GitHub]({{socialMedia.github.url}}) but if you want to send me an email, then use the form below and I'll reply as soon as possible.
 
-<form id="contact-form" class="" method="POST" action="/contact/thanks/" subject="Contact form" netlify>
+<form id="contact-form" class="" method="POST" action="/contact/thanks/" subject="Contact form" data-netlify="true">
   <div class="mt8 w-full space-y-8">
     <label class="block">
       <span class="text-gray-700">Email address (so I can email you back)</span>
