@@ -9,7 +9,7 @@ headerImage: /images/banners/contact-me.jpg
 I'm always happy to answer any questions people have or love it when people want to say hello. You can easily send me a message via [Twitter]({{socialMedia.twitter.url}}) or [GitHub]({{socialMedia.github.url}}) but if you want to send me an email, then use the form below and I'll reply as soon as possible.
 
 <form id="contact-form" class="" method="POST" action="/contact/thanks/" subject="Contact form" netlify>
-  <div class="mt8 max-w-2xl space-y-8">
+  <div class="mt8 w-full space-y-8">
     <label class="block">
       <span class="text-gray-700">Email address (so I can email you back)</span>
       <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="emailAddresss" name="email" placeholder="Enter your email address">
@@ -23,6 +23,6 @@ I'm always happy to answer any questions people have or love it when people want
   <input type="hidden" name="_subject" value="Website contact" />
   <input type="hidden" name="_next" value="{{site.url}}/contact/thanks/" />
   <div class="flex flex-col justify-center items-center">
-    <button type="submit" class="mt-8 bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-8 rounded">Get in touch</button>
+    <button type="submit" class="mt-8 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-8 rounded w-full lg:w-1/2">Get in touch</button>
   </div>
 </form>
