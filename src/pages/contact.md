@@ -21,6 +21,7 @@ I'm always happy to answer any questions people have or love it when people want
   
   </div>
   <input type="hidden" name="_subject" value="Website contact" />
+  <input type="hidden" name="_next" value="{{site.url}}/contact/thanks/" />
   <div class="flex flex-col justify-center items-center">
     <button type="submit" class="mt-8 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-8 rounded w-full lg:w-1/2">Get in touch</button>
   </div>
