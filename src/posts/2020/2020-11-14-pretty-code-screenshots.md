@@ -22,7 +22,8 @@ If you read the comments on these code tweets, you'll usually see a list of peop
 
 Read on to find out how to create beautiful code screenshots to share with your Twitter or Instagram followers.
 
-## [Carbon](https://carbon.now.sh)
+## Websites
+### [Carbon](https://carbon.now.sh)
 
 ![Carbon screenshot](/images/posts/carbon-screenshot.png)
 
@@ -34,13 +35,13 @@ Type your code into their online editor and you can see a prettified version of 
 If you use [GitHub gists](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-gists) then you can create an image from one of those. Append the identifier of your gist to the Carbon URL and you'll see a pretty version of your code. For example here's [my gist](https://gist.github.com/MarcL/0561c83e8445f3ffc801a5a13415abef) and it we use the ID "`0561c83e8445f3ffc801a5a13415abef`" in the Carbon URL like this "`https://carbon.now.sh/0561c83e8445f3ffc801a5a13415abef`" then we see the screenshot above.
 {% endcallout %}
 
-## Ray.so
+### Ray.so
 
 ![Ray.so screenshot](/images/posts/ray.so-screenshot.png)
 
 [Ray.so](https://ray.so) is another easy site to create beautiful screenshots. It's created by the team behind [Raycast](https://raycast.com/) and it's a lot more opinionated than Carbon. It only allows a minimal set of colour options but does have both light and dark modes. It supports lots of languages with its syntax highlighting support, allows you to change the title of the window, and also the padding. It offers a more curated experience than Carbon but it's similarly easy to use.
 
-## chalk.ist
+### Chalk.ist
 
 ![Chalk.ist screenshot](/images/posts/chalkist-screenshot.png)
 
