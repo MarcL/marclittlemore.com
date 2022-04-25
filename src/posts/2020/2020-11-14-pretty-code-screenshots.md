@@ -40,6 +40,13 @@ If you use [GitHub gists](https://docs.github.com/en/free-pro-team@latest/github
 
 [Ray.so](https://ray.so) is another easy site to create beautiful screenshots. It's created by the team behind [Raycast](https://raycast.com/) and it's a lot more opinionated than Carbon. It only allows a minimal set of colour options but does have both light and dark modes. It supports lots of languages with its syntax highlighting support, allows you to change the title of the window, and also the padding. It offers a more curated experience than Carbon but it's similarly easy to use.
 
+## chalk.ist
+
+![Chalk.ist screenshot](/images/posts/chalkist-screenshot.png)
+
+[Chalk.ist](https://chalk.ist/) is a new site which I found on Twitter in April 2022. It's created by a developer called [Kasper Mikiewicz](https://twitter.com/Idered) and adds some additional features to the normal code screenshot idea. It allows you to add your Twitter handle if you enable it. This will be great for social sharing.
+
+Another useful feature is a code difference view, like you'd see in your code editor. This is useful for sharing development tutorials or for teaching. While it currently only offers 3 colour themes, it does give you line numbers and a reflection to make it look different to the other sites.
 ## VS Code extensions
 
 If you're a developer who uses [VS Code](https://code.visualstudio.com/) there are a couple of extensions which will make creating pretty code screenshots incredibly easy. VS Code extensions add new features, themes, and more to the editor. If you install one of these extensions, you can avoid the need to use an external website and screenshot your code instantly.
