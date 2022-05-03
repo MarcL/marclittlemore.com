@@ -1,10 +1,10 @@
 ---
 title:  "Previous Newsletters"
 permalink: /newsletter/archive/
-headerImage: /images/banners/newsletter-archive.jpg
 description: An archive of my weekly newsletter.
 tags:
     - writing
+headerImage: /images/banners/newsletter-archive.jpg
 image:
     source: https://unsplash.com/photos/o6GEPQXnqMY
     creator: Mr Cup / Fabien Barral
@@ -16,5 +16,5 @@ Here is an archive of my previous newsletters where you'll find my favourite art
 Learn along with me as I discover new ways of working and help us both to build our leadership skills.
 
 {% for issue in newsletterArchive %}
-* [{{issue.title}}]({{issue.url}}) - {{issue.sent | date: "%A, %e %B %Y"}}
+* [{{issue.title}}](/newsletter/archive/{{issue.sentSlug}}/{{issue.title | slug}}/) - {{issue.sent | date: "%A, %e %B %Y"}}
 {% endfor %}

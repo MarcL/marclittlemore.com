@@ -1,0 +1,18 @@
+---
+layout: page
+pagination:
+    addAllPagesToCollections: true
+    data: newsletterArchive
+    size: 1
+    alias: newsletter
+permalink: "/newsletter/archive/{{newsletter.sentSlug}}/{{newsletter.title | slug}}/"
+eleventyComputed:
+    title: '{{newsletter.title}}'
+    subtitle: 'Newsletter - {{newsletter.sent | date: "%A, %e %B %Y"}}'
+headerImage: /images/banners/newsletter-archive-back-issue.jpg
+image:
+    source: https://unsplash.com/photos/Mwuod2cm8g4
+    creator: Mr Cup / Fabien Barral
+    url: https://unsplash.com/@iammrcup
+---
+{{newsletter.html}}
