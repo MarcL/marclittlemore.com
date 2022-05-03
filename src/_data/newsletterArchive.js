@@ -15,6 +15,8 @@ const formatDate = (dateString) => {
     return `${year}-${month}-${day}`;
 };
 
+const replaceFriendText = (text) => text.replace('{{FirstName|default("my friend")}}', 'my friend');
+
 const parseEmailOctopusHtml = (html) => {
     const dom = new JSDOM(html);
     const {window: {document}} = dom;
@@ -34,12 +36,26 @@ const parseEmailOctopusHtml = (html) => {
         if (paragraphs.length > 1) {
             // Replace: "Hello {{FirstName|default("my friend")}}!"
             // With: "Hello my friend!""
-            paragraphs[0].innerHTML = paragraphs[0].innerHTML.replace('{{FirstName|default("my friend")}}', 'my friend');
+            paragraphs[0].innerHTML = replaceFriendText(paragraphs[0].innerHTML);
         }
         return elements[1].innerHTML;
     }
 
-    // First issue wasn't built with MJML
+    // Hacky McHack!
+
+    // Get all paragraphs
+    const paragraphs = document.getElementsByTagName('p');
+
+    // Replace friend text
+    paragraphs[2].innerHTML = replaceFriendText(paragraphs[2].innerHTML);
+
+    // Remove "view page" text
+    paragraphs[0].parentNode.removeChild(paragraphs[0]);
+
+    // Remove blank line!
+    paragraphs[0].parentNode.removeChild(paragraphs[0]);
+
+    // First issue wasn't built with MJML 🤮
     return dom.window.document.body.innerHTML;
 };
 
