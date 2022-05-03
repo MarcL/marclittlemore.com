@@ -1,0 +1,11 @@
+---
+layout: page
+pagination:
+    data: newsletterArchive
+    size: 1
+    alias: newsletter
+permalink: "/newsletter/archive/{{newsletter.sentSlug}}/{{newsletter.title | slug}}/"
+eleventyComputed:
+    title: '{{newsletter.title}}'
+---
+{{newsletter.content.html}}
