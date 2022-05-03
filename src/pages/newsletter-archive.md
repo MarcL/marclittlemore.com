@@ -16,5 +16,5 @@ Here is an archive of my previous newsletters where you'll find my favourite art
 Learn along with me as I discover new ways of working and help us both to build our leadership skills.
 
 {% for issue in newsletterArchive %}
-* [{{issue.title}}]({{issue.url}}) - {{issue.sent | date: "%A, %e %B %Y"}}
+* [{{issue.title}}](/newsletter/archive/{{issue.sentSlug}}/{{issue.title | slug}}/) - {{issue.sent | date: "%A, %e %B %Y"}}
 {% endfor %}

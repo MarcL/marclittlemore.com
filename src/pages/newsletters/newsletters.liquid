@@ -1,11 +1,13 @@
 ---
 layout: page
 pagination:
+    addAllPagesToCollections: true
     data: newsletterArchive
     size: 1
     alias: newsletter
 permalink: "/newsletter/archive/{{newsletter.sentSlug}}/{{newsletter.title | slug}}/"
 eleventyComputed:
     title: '{{newsletter.title}}'
+    subtitle: 'Newsletter - {{newsletter.sent | date: "%A, %e %B %Y"}}'
 ---
-{{newsletter.content.html}}
+{{newsletter.html}}
