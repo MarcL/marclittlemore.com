@@ -16,3 +16,14 @@ image:
     url: https://unsplash.com/@iammrcup
 ---
 {{newsletter.html}}
+
+{% capture formTitle %}
+Not **signed up**?
+{% endcapture %}
+
+{% capture formText %}
+Enter your email below to sign up for my newsletter to receive **weekly articles**. Each week you will learn more about technical leadership, intentional remote working, and growing your leadership career.
+{% endcapture %}
+
+{% include partials/emailOctopus/form.html, formTitle: formTitle, formText: formText %}
+

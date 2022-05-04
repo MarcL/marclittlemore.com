@@ -12,10 +12,34 @@ const formatDate = (dateString) => {
     const day = date.toLocaleDateString(locale, { day: '2-digit' });
     const month = date.toLocaleDateString(locale, { month: '2-digit' });
     const year = date.toLocaleDateString(locale, { year: 'numeric' });
+
+    // Format date as YYYY-MM-DD
     return `${year}-${month}-${day}`;
 };
 
 const replaceFriendText = (text) => text.replace('{{FirstName|default("my friend")}}', 'my friend');
+
+const parseFirstPage = (document) => {
+    // Get all paragraphs
+    const paragraphs = document.getElementsByTagName('p');
+
+    // Replace friend text
+    paragraphs[2].innerHTML = replaceFriendText(paragraphs[2].innerHTML);
+
+    // Remove "view page" text
+    paragraphs[0].parentNode.removeChild(paragraphs[0]);
+
+    // Remove blank line!
+    paragraphs[0].parentNode.removeChild(paragraphs[0]);
+
+    // Remove last 4 paragraphs for the email footer
+    const length = paragraphs.length;
+    for(let i = 0; i < 6; i++) {
+        paragraphs[length - 1 - i].parentNode.removeChild(paragraphs[length - 1 - i]);
+    }
+
+    return document.body.innerHTML;
+};
 
 const parseEmailOctopusHtml = (html) => {
     const dom = new JSDOM(html);
@@ -34,29 +58,14 @@ const parseEmailOctopusHtml = (html) => {
         // Find first paragraph
         const paragraphs = elements[1].getElementsByTagName('p');
         if (paragraphs.length > 1) {
-            // Replace: "Hello {{FirstName|default("my friend")}}!"
-            // With: "Hello my friend!""
             paragraphs[0].innerHTML = replaceFriendText(paragraphs[0].innerHTML);
         }
         return elements[1].innerHTML;
     }
 
     // Hacky McHack!
-
-    // Get all paragraphs
-    const paragraphs = document.getElementsByTagName('p');
-
-    // Replace friend text
-    paragraphs[2].innerHTML = replaceFriendText(paragraphs[2].innerHTML);
-
-    // Remove "view page" text
-    paragraphs[0].parentNode.removeChild(paragraphs[0]);
-
-    // Remove blank line!
-    paragraphs[0].parentNode.removeChild(paragraphs[0]);
-
     // First issue wasn't built with MJML 🤮
-    return dom.window.document.body.innerHTML;
+    return parseFirstPage(document);
 };
 
 module.exports = async () => {
