@@ -5,34 +5,32 @@ sitemap:
   exclude: yes
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xmlEscape }}</title>
-    <description>{{ site.description | xmlEscape }}</description>
-    <link>{{ site.url }}/</link>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <link href="{{ page.url | prepend: site.url }}" rel="self"/>
+  <link href="{{ site.url }}"/>
+  <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ site.url }}</id>
+  <author>
+    <name>{{ site.name }}</name>
+    <email>{{ site.email }}</email>
+  </author>
+  {%- for post in collections.post reversed %}
+  {% capture absolutePostUrl %}{{ post.url | absoluteUrl: site.url }}{% endcapture %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <published>{{ post.date | dateToRfc3339 }}</published>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
     <author>
       <name>{{site.name}}</name>
-      <email>{{site.email}}</email>
-      <uri>{{site.url}}</uri>
     </author>
-    <atom:link href="{{ "/feed.xml" | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ collections.post | collectionLastUpdatedDate }}</pubDate>
-    <lastBuildDate>{{ collections.post | collectionLastUpdatedDate }}</lastBuildDate>
-    <generator>Eleventy</generator>
-    {%- for post in collections.post reversed -%}
-      <item>
-        <title>{{ post.data.title | xmlEscape }}</title>
-        {%- if post.data.excerpt -%}
-          <description>{{ post.data.excerpt | xmlEscape }}</description>
-        {%- elsif post.data.subtitle -%}
-          <description>{{ post.data.subtitle | xmlEscape }}</description>
-        {%- else -%}
-        <description><![CDATA[{{ post.templateContent | xmlEscape }}]]></description>
-        {%- endif -%}
-        <pubDate>{{ post.date | rfc822Date }}</pubDate>
-        <link>{{ post.url | prepend: site.url }}</link>
-        <guid>{{ post.url | prepend: site.url }}</guid>
-      </item>
-    {%- endfor -%}
-  </channel>
-</rss>
+    {%- if post.data.excerpt -%}
+    <summary>{{post.data.excerpt | xmlEscape }}</summary>
+    {% else %}
+    <content type="html">{{ post.templateContent | convertHtmlToAbsoluteUrls: absolutePostUrl | xmlEscape }}</content>
+    {% endif %}
+  </entry>
+  {%- endfor %}  
+</feed>

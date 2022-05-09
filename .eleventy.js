@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const rss = require('@11ty/eleventy-plugin-rss');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
 const timeToRead = require('eleventy-plugin-time-to-read');
@@ -22,6 +23,13 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(timeToRead, {style: 'short'});
     eleventyConfig.addPlugin(tableOfContents);
     eleventyConfig.addPlugin(externalLinks, {url: site.url});
+    
+    // RSS
+    eleventyConfig.addPlugin(rss);
+    eleventyConfig.addLiquidFilter('dateToRfc3339', rss.dateToRfc3339);
+    eleventyConfig.addLiquidFilter('getNewestCollectionItemDate', rss.getNewestCollectionItemDate);
+    eleventyConfig.addLiquidFilter('absoluteUrl', rss.absoluteUrl);
+    eleventyConfig.addLiquidFilter('convertHtmlToAbsoluteUrls', rss.convertHtmlToAbsoluteUrls);
 
     eleventyConfig.setLibrary('md', markdownLib);
 
