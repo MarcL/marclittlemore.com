@@ -29,7 +29,7 @@ sitemap:
     {%- if post.data.excerpt -%}
     <summary>{{post.data.excerpt | xmlEscape }}</summary>
     {% else %}
-    <content type="html">{{ post.templateContent | convertHtmlToAbsoluteUrls: absolutePostUrl | xmlEscape }}</content>
+    <content type="html">{{ post.data.description | convertHtmlToAbsoluteUrls: absolutePostUrl | xmlEscape }}</content>
     {% endif %}
   </entry>
   {%- endfor %}  
