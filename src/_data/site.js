@@ -15,6 +15,7 @@ module.exports = {
   description: 'Interesting articles from Marc Littlemore, an engineering manager, technical leader, full-stack developer, teacher, and life-long learner.',
   canonicalUrl: CANONICAL_URL,
   url,
+  domain: 'www.marclittlemore.com',
   googleAnalyticsId: 'UA-810717-3',
   twitterUsername: 'marclittlemore',
   facebookAppId: '534953096696612',

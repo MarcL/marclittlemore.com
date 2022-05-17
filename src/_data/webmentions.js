@@ -5,9 +5,7 @@ const WEBMENTIONS_IO_API = 'https://webmention.io/api/mentions.jf2';
 const token = process.env.WEBMENTIONS_IO_API_TOKEN;
 
 module.exports = async () => {
-    const {domain} = site;
-
-    const url = `${WEBMENTIONS_IO_API}?domain=${domain}&token=${token}&per-page=999`;
+    const url = `${WEBMENTIONS_IO_API}?domain=${site.domain}&token=${token}&per-page=999`;
 
     try {
         const response = await Cache(url, {
