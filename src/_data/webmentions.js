@@ -24,7 +24,6 @@ module.exports = async () => {
         const {children: webmentions} = parsedResponse;
 
         return webmentions;
-
     } catch(error) {
         console.error(error);
         return null;
