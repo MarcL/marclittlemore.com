@@ -12,8 +12,8 @@ sitemap:
   <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ site.url }}/</id>
   <author>
-    <name>{{ site.name }}</name>
-    <email>{{ site.email }}</email>
+    <name>{{site.author.name}}</name>
+    <email>{{site.author.email}}</email>
   </author>
   {%- for post in collections.post reversed %}
   {% capture absolutePostUrl %}{{ post.url | absoluteUrl: site.url }}{% endcapture %}
@@ -24,7 +24,7 @@ sitemap:
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <author>
-      <name>{{site.name}}</name>
+      <name>{{site.author.name}}</name>
     </author>
     {%- if post.data.excerpt -%}
     <summary>{{post.data.excerpt | xmlEscape }}</summary>

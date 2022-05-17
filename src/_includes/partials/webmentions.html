@@ -63,7 +63,7 @@
 {% for reply in replies %}
 {% assign replyBgColour = "bg-white" %}
 
-{% if reply.author.name contains site.name %}
+{% if reply.author.name contains site.author.name %}
 {% assign replyBgColour = "bg-blue-50" %}
 {% endif %}
 
