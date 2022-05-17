@@ -6,20 +6,64 @@ permalink: /about/
 headerImage: /images/banners/about-bg.jpg
 ---
 
-Hey! I'm Marc Littlemore. :wave:
+Hello! I'm Marc Littlemore. :wave:
 
-I'm a software engineer, a veteran of the video games industry with 19 years of games programming experience, [a house music DJ](https://www.djcruze.co.uk) since 1988, a [house music producer](https://soundcloud.com/djcruze), Messenger marketing and [chatbot builder](/bots/), and lover of technology. I'm a husband to my fantastic wife [Clare](https://clarelittlemore.com) and we have two wonderful children.
+I'm a Senior Software Engineering Manager at [Netlify](https://netlify.com/).
 
-My current role is as a Software Engineering Manager at [Beacon](https://beacon.com), although I started my software development journey in 1993 in the video games industry. I moved to the BBC in 2013 to help with their games strategy to simplify third party developers integration with BBC gaming technologies. In 2015, my focus shifted and I helped to architect and build the audience-facing authentication and authorisation systems, otherwise known as [BBC Account](https://www.bbc.co.uk/usingthebbc/account/). In 2021, I moved on from the BBC and worked for a B2B telecoms company for a short while before moving on to a modern digital software company. I now build diverse and inclusive software teams as a Software Engineering Manager at Beacon, helping to modernise digital supply chains with my team. 
+I love building diverse and inclusive software engineering team and love [lifting my team up](/lift-your-team-up/).
 
-I also nearly died from multiple organ failure due to sepsis after contracting a streptococcal infection in June 2014. I've written a brief version of [how I nearly died](/how-i-almost-died/) so please take a look if you wonder what happened. Obviously I'm still here but you can read about what happened and how our lives have changed. My wife Clare is blogging about our experience of my illness in more detail so you should probably read it on her [Out Of The Woods Blog](http://outofthewoodsblog.com).
+I really enjoy helping people like you learn to be a better [intentional technical leader](/newsletter/).
 
-You'll find my code on [GitHub]({{socialMedia.github.url}}) and I sometimes post photos on [Instagram]({{socialMedia.instagram.url}}).
+## I've been around
 
-If you want to know what games I've worked on then take a look at my [game list](/games/).
+I'm a veteran (old!) software engineer and started my love for computers when our family got a Commodore Vic-20 back in the early 80s. I spent my teenage years programming BASIC on various home computers and ended up at Manchester University from 1990 to 1993 studying Computer Science.
 
-My team at the BBC developed high availability web applications using JavaScript on the client and server using Node.js and React. I also became a test-driven development evangelist, encouraging the team to write solid code through [testing](/javascript-testing/).
+I spent a year writing gas chromatography software to move robot arms but my passion at the time was video games.
 
-Outside of work you'll find me playing with my kids and helping them to grow up to be wonderful human beings. I also spent the 25+ years DJing house music and producing house music as [DJ Cruze](https://www.djcruze.co.uk/). The site has recently been rebuilt using my favourite static site generator, [11ty](https://www.11ty.dev/).
+For 19 years I ended up making many [video games](/games/) on PC, PlayStation 2 and 3, and XBox 360. I worked for lots of famous games companies from the 90s and 2000s such as Ocean, Infogrames, Acclaim, Sony, and EA.
 
-You should follow my journey on [Twitter]({{socialMedia.twitter.url}}).
+In 2013, I decided to leave the world of video games and find a better work/life balance. I became a Principal Software Engineer at the BBC and helped to build their gaming APIs. I quickly learnt a lot about web technologies and cloud infrastructure.
+
+In 2015, my team became responsible for building [BBC Account](https://account.bbc.com/signin/) - the authentication and authorisation services for every audience member who uses the BBC's services. We enabled personalisation on a huge scale!
+
+While building BBC Account I learnt a lot about microservice architecture, Node.js and the npm ecosystem, the React JavaScript library, [JavaScript testing](/javascript-testing/), AWS infrastructure, and building scalable, resilient services. There's a quick learning curve when your services have to handle the spike of traffic that the [Strictly Come Dancing](https://en.wikipedia.org/wiki/Strictly_Come_Dancing) vote brings you!
+
+Although I managed teams back at Sony in the mid-2000s, I properly transitioned from a Principal Engineer role into a Software Engineering Team Lead management role at the BBC. This really changed my thinking about how to build effective software engineering teams. It allowed me to ensure we had a culture of inclusion and psychological safety. There's no such thing as a silly question in my team. Moving to team leadership made me think more about diversity and inclusing and how I can help to enable any software engineer to thrive.
+
+I've continued my journey into technical leadership after leaving the BBC with a number of Engineering Manager roles at different companies. I'm now settled as Senior Engineering Manager at [Netlify](https://netlify.com/) where I'm helping to build the future of the web.
+
+## I almost died
+
+Life also throws you curveballs sometimes. In June 2014, I contracted a streptococcal infection which caused sepsis. My body shut down and I suffered multiple organ failure.
+
+I [almost died](/how-i-almost-died/).
+
+I spent 45 days in intensive care, learning how to breathe, and eat again.
+
+I spent another 45 days on a hospital ward learning how to move my arms and walk again.
+
+It was tough going.
+ 
+Thankfully, I managed to survive but it's changed the way I look at life. My wife Clare also wrote about the experience for her and our children in more details. You should read her [Out Of The Woods Blog](https://outofthewoodsblog.com) where she gives an honest view of the challenges she had.
+
+## I :heart: music
+
+I've always loved music and in the early-80s hip-hop arrived in the UK. My brother and I loved to listen to the Streetsounds Electro compilations. Back in 1988 I realised I was never going to be a rapper so I convinced my parents to help me to buy a set of Technics 1210s and a Radio Shack Realistic DJ mixer. This helped me to learn how to mix 2 records together and how to cut and scratch.
+
+Although I continue to love hip-hop, the late 80s acid house movement gained pace and I went with it. I moved to Manchester in 1990 and spent my weekends clubbing at places like The Haçienda, The Boardwalk, The Academy, and The Millionaire's Club listening to the best house DJs of the time.
+
+I because a DJ regular on the Manchester house music circuit and DJed at lots of clubs in the city. I was a resident DJ at DNA and 2Kinky for many years. Through my good friend Mark Wyss, I started DJing in Germany under my pseudonym [DJ Cruze](https://www.djcruze.co.uk/). I continued to DJ in Germany from 1993 until around 2012 and played at many of Germany's finest club nights. Good times!
+
+Although rarely commercially released, I've been making dance music since the late 90s. You can find some of my tunes on my [Soundcloud](https://soundcloud.com/djcruze/).
+
+## IRL
+
+Outside of work you'll find me helping my beautiful wife [Clare Littlemore](https://clarelittlemore.com/) to persue her writing career. She writes Young Adult dystopian fiction which you can find on her [Amazon author page](https://www.amazon.co.uk/Clare-Littlemore/e/B00G9VGS0A). I help her with anything digital so she can concentrate on writing.
+
+I also love playing with my two teenage children and helping them to grow up to be wonderful human beings.
+
+## Learn to be an Intentional Technical Leader
+
+If you're interested in software engineering technical leadership, you should check out my weekly newsletter.
+
+{% include partials/newsletter.html %}

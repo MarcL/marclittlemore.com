@@ -8,7 +8,7 @@ description: Hello! I'm Marc Littlemore, a Software Engineering Manager who writ
 
 Hello there! 👋🏻
 
-I'm Marc Littlemore. I'm an **Software Engineering Manager** at [Beacon](https://beacon.com).
+I'm Marc Littlemore. I'm an **Senior Engineering Manager** at [Netlify](https://netlify.com).
 
 I love helping to hire and build **diverse and inclusive** teams of software engineers who understand, and are **intentional, about remote work**. I help teams to build quality software applications whilst not being in the same office.
 

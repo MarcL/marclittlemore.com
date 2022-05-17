@@ -19,5 +19,9 @@ module.exports = {
   googleAnalyticsId: 'UA-810717-3',
   twitterUsername: 'marclittlemore',
   author: 'https://www.facebook.com/marcdavidlittlemore',
-  facebookAppId: '534953096696612'
+  facebookAppId: '534953096696612',
+  author: {
+    name: 'Marc Littlemore',
+    email: 'marc@marclittlemore.com',
+  }
 };
