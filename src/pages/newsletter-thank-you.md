@@ -15,4 +15,4 @@ Thanks for signing up for my newsletter. I hope that you enjoy reading it each w
 
 Please don't forget to [add me to your contacts](https://www.campaignmonitor.com/resources/guides/whitelisting/) so that my emails don't go to your spam box. Thanks!
 
-{% include partials/popularArticles.html %}
+{% include partials/popularPages.html %}

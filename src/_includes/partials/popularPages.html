@@ -2,7 +2,7 @@
 
 Here are a few of my most popular articles that others have enjoyed reading.
 
-{% for path in popularArticles %}
-{% assign popular = collections.all | getPostByPath: path %}
+{% for article in popularPages %}
+{% assign popular = collections.all | getPostByPath: article.url %}
 * [{{popular.data.title}}]({{popular.url}})
 {% endfor %}

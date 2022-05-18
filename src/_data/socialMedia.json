@@ -9,41 +9,30 @@
     "name": "Twitter",
     "url": "https://twitter.com/marclittlemore",
     "icon": "fa-twitter",
-    "title": "You should follow me on Twitter",
-    "external": true
+    "title": "You should follow me on Twitter"
   },
   "github":   {
     "name": "GitHub",
     "url": "https://github.com/MarcL",
     "icon": "fa-github",
-    "title": "You should follow me on GitHub",
-    "external": true
+    "title": "You should follow me on GitHub"
   },
   "youtube":   {
     "name": "YouTube",
     "url": "https://www.youtube.com/c/MarcLittlemore",
     "icon": "fa-youtube",
-    "title": "Subscribe on YouTube",
-    "external": true
+    "title": "Subscribe on YouTube"
   },
   "instagram":   {
     "name": "Instagram",
     "url": "https://www.instagram.com/marclittlemore",
     "icon": "fa-instagram",
-    "title": "You should follow me on Instagram",
-    "external": true
-  },
-  "reddit":   {
-    "name": "Reddit",
-    "url": "https://www.reddit.com/user/marclittlemore",
-    "icon": "fa-reddit",
-    "title": "You should upvote me on Reddit",
-    "external": true
+    "title": "You should follow me on Instagram"
   },
   "linkedin":   {
     "name": "Linked In",
     "url": "https://www.linkedin.com/in/marclittlemore/",
     "icon": "fa-linkedin",
-    "title": "Connect with me on Linked In",
-    "external": true
-  }}
+    "title": "Connect with me on Linked In"
+  }
+}
