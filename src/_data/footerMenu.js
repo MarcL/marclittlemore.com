@@ -2,7 +2,7 @@ const popularPages = require('./popularPages');
 
 module.exports = [
     {
-        name: 'Hot links',
+        name: 'Explore',
         links: [
             {
                 name: 'Newsletter',
