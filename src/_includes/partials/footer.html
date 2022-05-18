@@ -1,28 +1,42 @@
-<footer class="bg-gradient-to-b from-gray-700 to-gray-900 text-white">
-<div class="max-w-screen-md mx-auto px-4 flex flex-col">
+<footer class="bg-gradient-to-b from-gray-700 to-gray-900">
+  <div class="max-w-screen-lg mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-4">
+      {% for column in footerMenu %}
+      <div class="px-8 md:px-4 py-2 md:py-4">
+        <h4 class="font-extrabold text-lg text-white">{{column.name}}</h4>
+        {% for link in column.links %}
+              <a
+                href="{{ link.url }}"
+                title="{{ link.title }}"
+                class="block hover:underline hover:text-slate-200 rounded-md text-slate-100"
+                aria-label="{{link.name}}">
+                  {{link.name}}
+              </a>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
 
-<div class="flex flex-row flex-wrap justify-center items-center mt-8 space-x-1">
-{% assign socialMediaKeys = socialMedia | keys %}
-{% for socialMediaKey in socialMediaKeys %}
-    {% assign socialItem = socialMedia[socialMediaKey] %}
-    {% if socialItem.external %}
-    <a href="{{ socialItem.url }}" target="_blank" rel="me noreferrer" title="{{ socialItem.title }}" class="block hover:bg-gray-700 rounded-md px-3 py-3" aria-label="{{socialItem.name}} icon">
-    {% else %}
-    <a href="{{ socialItem.url }}" title="{{ socialItem.title }}" class="block hover:bg-gray-700 rounded-md px-3 py-3" aria-label="{{socialItem.name}} icon">
-    {% endif %}
-        <i class="fa text-white {{socialItem.icon}} text-xl sm:text-2xl"></i>
-    </a>
-{% endfor %}
-</div>
-
-  <div class="mt-4 uppercase space-x-0 sm:space-x-8 space-y-2 sm:space-y-0 mx-auto text-base md:text-lg flex flex-col sm:flex-row flex-wrap justify-center items-center">
-    {% for menuItem in footerMenu %}
-      <a href="{{menuItem.url}}" class="hover:underline">{{menuItem.name}}</a>
-    {% endfor %}
+    <div class="max-w-screen-lg mx-auto py-4">
+      <div class="flex justify-center space-x-8 py-4">
+        {% assign socialMediaKeys = socialMedia | keys %}
+        {% for socialMediaKey in socialMediaKeys %}
+            {% assign socialItem = socialMedia[socialMediaKey] %}
+              <a
+                href="{{ socialItem.url }}"
+                title="{{ socialItem.title }}"
+                class="block rounded-md flex-none"
+                aria-label="{{socialItem.name}} icon">
+                <i class="fa text-white hover:text-slate-500 {{socialItem.icon}} text-xl sm:text-3xl"></i>
+              </a>
+        {% endfor %}
+      </div>
+      <div class="text-center font-semibold text-lg text-white">
+        <div>
+          Copyright &copy; 2007-{{"now" | date: "%Y"}}
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="my-4 mx-auto uppercase text-sm">
-      Copyright &copy; 2007-{{"now" | date: "%Y"}} {{ site.title }} {{ site.time | date: '%Y' }}
-  </div>
-</div>
-
 </footer>
+
