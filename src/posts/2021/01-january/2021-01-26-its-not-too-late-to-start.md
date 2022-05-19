@@ -4,8 +4,7 @@ permalink: /its-not-too-late-to-start/
 headerImage: /images/banners/its-not-too-late-to-start.jpg
 description: "Most people think they're too old or inexperienced to start something new. All you have to do is start."
 tags:
-    - writing
-    - essay
+    - learning
 image:
     source: https://unsplash.com/photos/IuLgi9PWETU
     creator: Danielle MacInnes

@@ -6,7 +6,6 @@ headerImage: /images/banners/second-brain-note-taking-obsidian.jpg
 description: "Obsidian is a wonderful tool to create a knowledge graph of linked notes. Let's look at how to use it."
 tags:
     - writing
-    - essay
 image:
     source: https://unsplash.com/photos/IHfOpAzzjHM
     creator: Robina Weermeijer

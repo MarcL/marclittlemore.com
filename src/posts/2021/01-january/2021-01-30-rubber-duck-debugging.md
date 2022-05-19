@@ -3,13 +3,12 @@ title:  "Rubber duck debugging"
 permalink: /rubber-duck-debugging/
 headerImage: /images/banners/rubber-duck-debugging.jpg
 description: "Don't know how to solve a problem in your code? It's time to say hello to a rubber duck."
-tags:
-    - writing
-    - essay
 image:
     source: https://unsplash.com/photos/59yg_LpcvzQ
     creator: Andrew Wulf
     url: https://unsplash.com/@andreuuuw
+tags:
+    - development
 ---
 
 I wrote [video games](/games/) for about 20 years and for a long time I made games for the Sony PlayStation consoles.

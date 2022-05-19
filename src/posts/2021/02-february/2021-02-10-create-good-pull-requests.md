@@ -4,8 +4,7 @@ permalink: /writing-great-pull-requests/
 headerImage: /images/banners/writing-great-pull-requests.jpg
 description: "Collaboration with other software developers is the key to great software. How do we make sure our code is merged into a project? By writing great pull requests."
 tags:
-    - writing
-    - essay
+    - development
 image:
     source: https://unsplash.com/photos/842ofHC6MaI
     creator: Yancy Min

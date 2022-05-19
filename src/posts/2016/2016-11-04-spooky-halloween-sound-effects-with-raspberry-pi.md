@@ -4,7 +4,6 @@ subtitle: "Scare the neighbours and create a spooky Halloween by using your Rasp
 permalink: /spooky-halloween-sound-effects-with-raspberry-pi-and-spotify/
 headerImage: /images/banners/raspberry-pi.jpg
 tags:
-    - raspberry-pi
     - development
 description: Scare the trick or treaters with this simple Raspberry Pi Node.js project to play spooky sound effects.
 youTubeId: "77df-OO72U0"

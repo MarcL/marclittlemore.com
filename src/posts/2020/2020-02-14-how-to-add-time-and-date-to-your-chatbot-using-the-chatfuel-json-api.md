@@ -5,8 +5,7 @@ permalink: /how-to-add-time-and-date-to-your-messenger-chatbot-using-the-chatfue
 description: "Let's help your customers decide if you're open by adding time and date to your Chatfuel chatbot."
 tags:
     - chatbot
-    - chatfuel
-    - json
+    - development
 headerImage: /images/banners/time-and-date.jpg
 ---
 

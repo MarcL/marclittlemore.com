@@ -4,8 +4,7 @@ permalink: /gain-confidence-at-public-speaking/
 headerImage: /images/banners/gain-confidence-in-public-speaking.jpg
 description: "I was shy. I hated speaking in public. Now I love it. Learn how you can overcome your fear of talking to an audience."
 tags:
-    - writing
-    - essay
+    - learning
 image:
     source: https://unsplash.com/photos/bzdhc5b3Bxs
     creator: Teemu Paananen

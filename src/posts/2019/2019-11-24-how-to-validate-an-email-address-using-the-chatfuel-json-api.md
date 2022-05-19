@@ -5,8 +5,7 @@ permalink: /how-to-validate-an-email-address-using-the-chatfuel-json-api/
 headerImage: /images/banners/gmail-interface.jpg
 tags:
     - chatbot
-    - chatfuel
-    - json
+    - development
 description: "When asking your chatbot user for an email address, how do you know if it's valid? Let's look at how you can validate an email address using the Chatfuel JSON API and a Node.js web server."
 ---
 

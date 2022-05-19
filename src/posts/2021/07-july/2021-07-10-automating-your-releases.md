@@ -4,8 +4,7 @@ permalink: /automating-your-releases-with-semantic-release-and-gitlab/
 headerImage: /images/banners/automating-your-releases-with-semantic-release-and-gitlab.jpg
 description: Releasing a new version of your application can easily be automated. Let's look at how we can use semantic-release and GitLab to make this process quick and simple.
 tags:
-    - writing
-    - essay
+    - development
 image:
     source: https://unsplash.com/photos/ZV_64LdGoao
     creator: Pankaj Patel

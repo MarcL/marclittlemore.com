@@ -4,8 +4,7 @@ permalink: /building-an-audience/
 headerImage: /images/banners/building-an-audience.jpg
 description: "Building an audience is a great way to expand your online network. It can help you to find a new role or perhaps sell digital products online. Here are some tips from [Nate Eliason](https://twitter.com/nateliason) which show how you can do it."
 tags:
-    - writing
-    - essay
+    - learning
 image:
     source: https://unsplash.com/photos/Sj_FOinWBPI
     creator: Roger Harris

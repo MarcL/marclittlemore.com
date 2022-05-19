@@ -4,8 +4,7 @@ permalink: /how-do-you-measure-success/
 headerImage: /images/banners/how-do-you-measure-success.jpg
 description: "Being successful means different things to different people. How do you measure your own success?"
 tags:
-    - writing
-    - essay
+    - leadership
 image:
     source: https://unsplash.com/photos/oqStl2L5oxI
     creator: Clark Tibbs

@@ -4,7 +4,7 @@ permalink: /add-youtube-playlists-to-eleventy-site/
 headerImage: /images/banners/youtube-playlist-eleventy.png
 description: "Want to add a YouTube playlist to your Eleventy website? Read on to find out how."
 tags:
-    - writing
+    - development
 ---
 
 Over the past couple of years I've been moving my personal websites from using WordPress to simple static HTML sites. WordPress is fantastic but I spent too much time being concerned about security risks, updating to new versions, and worrying about managing PHP versions on a server. These are things I didn't want to have to concern myself with so I wanted to use a [static site generator](https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/) to build plain HTML, CSS, and a little bit of client-side JavaScript where necessary. I discovered [Eleventy](https://www.11ty.dev/) back in early 2020 and this has quickly become my tool of choice.

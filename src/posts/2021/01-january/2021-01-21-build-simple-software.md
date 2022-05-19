@@ -4,8 +4,7 @@ permalink: /build-simple-software/
 headerImage: /images/banners/build-simple-software.jpg
 description: "Writing software is hard. It's inherently complex. How do we make it simpler?"
 tags:
-    - writing
-    - essay
+    - development
 image:
     source: https://unsplash.com/photos/l090uFWoPaI
     creator: John Barkiple

@@ -4,8 +4,7 @@ permalink: /learning-to-learn-software-development/
 headerImage: /images/banners/learning-to-learn-software-development.jpg
 description: "With a constant stream of information about software development, how do you stay on top of it all? Learning how to learn and being ruthless with your time is a great skill to learn."
 tags:
-    - writing
-    - essay
+    - learning
 image:
     source: https://unsplash.com/photos/eeSdJfLfx1A
     creator: Ed Robertson

@@ -4,8 +4,7 @@ permalink: /share-your-network/
 headerImage: /images/banners/share-your-network.jpg
 description: "Strong leaders build great networks over time. Sharing those networks can help to unlock your team's potential too."
 tags:
-    - writing
-    - essay
+    - leadership
 image:
     source: https://unsplash.com/photos/8bghKxNU1j0
     creator: JJ Ying

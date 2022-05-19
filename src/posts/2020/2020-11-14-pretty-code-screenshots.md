@@ -5,7 +5,7 @@ permalink: /create-pretty-code-screenshots/
 headerImage: /images/banners/create-pretty-code-screenshots.png
 description: "Want to share pretty code screenshots with your developer friends on Twitter? Read on to find out how."
 tags:
-    - devtip
+    - learning
 ---
 
 If you're a developer, and you hang out on developer Twitter, then you'll have seen people sharing their hot code tips. They're often accompanied by code examples and the "hot tip" fire 🔥 or lightbulb 💡 emojis.

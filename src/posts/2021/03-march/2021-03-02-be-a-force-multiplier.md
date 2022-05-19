@@ -4,9 +4,7 @@ permalink: /be-a-force-multiplier/
 headerImage: /images/banners/be-a-force-multiplier.jpg
 description: "Want to become a senior developer or software engineering manager? Forget being a 10x developer. Use the force!"
 tags:
-    - writing
-    - essay
-    - favourite
+    - leadership
 image:
     source: https://unsplash.com/photos/KeGToDVN0l4
     creator: D A V I D S O N L U N A

@@ -4,8 +4,6 @@ subtitle: "Adding error handling to your Express server doesn't have to be confu
 permalink: /simple-error-handling-for-your-production-express-server/
 headerImage: /images/banners/simple-error-handling-for-your-production-express-server.jpg
 tags:
-    - express
-    - javascript
     - development
 description: Adding error handling to your Express server doesn't have to be confusing. Follow this simple guide to add production ready error handling to your Node.js Express application.
 ---
