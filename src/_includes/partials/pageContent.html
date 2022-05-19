@@ -63,7 +63,7 @@
     {% if tag == 'post' %}
       {% assign tag = tags[1] %}
     {% endif %}
-    {% assign tagCollection = collections[tag] | collectionWithoutUrls: page.url %}
+    {% assign tagCollection = collections[tag] | collectionWithoutUrls: page.url | reverse | limitCollection: 3 %}
     {% include partials/taggedCollection.html collectionTitle: "Keep Reading" collection: tagCollection %}
   {% endif %}
 </main>

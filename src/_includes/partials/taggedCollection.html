@@ -14,13 +14,15 @@
 
         {% if collection.length %}
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            {% assign sortedCollection = collection | reverse  %}
+            {% assign sortedCollection = collection %}
             {% for article in sortedCollection %}
             <a class="block transition transform hover:-translate-y-4" href="{{article.url}}" >
             <div class="group">
                 {% image article.data.headerImage article.data.title "rounded-md object-cover h-32" %}
-                <h4 class="group-hover:underline">{{article.data.title}}</h4>
-                <p class="text-slate-600">{{article.data.description}}</p>
+                <div class="px-0 lg:px-2">
+                    <h4 class="group-hover:underline">{{article.data.title}}</h4>
+                    <p class="text-slate-600">{{article.data.description}}</p>
+                </div>
             </div>
             </a>
             {% endfor %}
