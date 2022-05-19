@@ -54,6 +54,10 @@ const collectionWithoutUrls = (collection, urls) => {
     return collection.filter(post => !filterUrls.includes(post.url));
 };
 
+const limitCollection = (collection, limit) => {
+    return collection.slice(0, limit);
+}
+
 const addAll = (eleventyConfig) => {
     eleventyConfig.addFilter('getPostByPath', getPostByPath);
     eleventyConfig.addFilter('keys', object => Object.keys(object));
@@ -64,6 +68,7 @@ const addAll = (eleventyConfig) => {
 
     // Collections
     eleventyConfig.addFilter('collectionWithoutUrls', collectionWithoutUrls);
+    eleventyConfig.addFilter('limitCollection', limitCollection);
 
     // Webmentions
     eleventyConfig.addFilter('webmentionsForUrl', webmentionsForUrl);
