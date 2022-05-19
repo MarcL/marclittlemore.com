@@ -3,8 +3,6 @@ title:  "Thanks for subscribing!"
 permalink: /newsletter/thank-you/
 headerImage: /images/banners/newsletter-thank-you.jpg
 description: Thank you for subscribing to my newsletter.
-tags:
-    - writing
 image:
     source: https://unsplash.com/photos/6hsfmat-t7k
     creator: Kevin Butz
