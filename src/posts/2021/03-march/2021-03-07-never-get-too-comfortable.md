@@ -5,7 +5,6 @@ headerImage: /images/banners/never-get-too-comfortable.jpg
 description: "Everyone needs to feel comfortable at work. However, getting too comfortable can become a problem."
 tags:
     - leadership
-    - favourite
 image:
     source: https://unsplash.com/photos/PIQCA1ReSgU
     creator: elizabeth lies
