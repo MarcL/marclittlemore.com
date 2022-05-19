@@ -46,7 +46,13 @@ const getPostByPath = (collection, path) => {
     }
 
     throw new Error(`getPostByPath filter: Can't find post '${path}'`)
-}
+};
+
+const collectionWithoutUrls = (collection, urls) => {
+    const filterUrls = Array.isArray(urls) ? urls : [urls];
+
+    return collection.filter(post => !filterUrls.includes(post.url));
+};
 
 const addAll = (eleventyConfig) => {
     eleventyConfig.addFilter('getPostByPath', getPostByPath);
@@ -55,6 +61,9 @@ const addAll = (eleventyConfig) => {
     eleventyConfig.addLiquidFilter('starRating', starRating);
     eleventyConfig.addLiquidFilter('toISOString', toISOStringFilter);
     eleventyConfig.addLiquidFilter('xmlEscape', xmlEscapeFilter);
+
+    // Collections
+    eleventyConfig.addFilter('collectionWithoutUrls', collectionWithoutUrls);
 
     // Webmentions
     eleventyConfig.addFilter('webmentionsForUrl', webmentionsForUrl);
