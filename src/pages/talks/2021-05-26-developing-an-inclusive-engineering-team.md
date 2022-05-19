@@ -2,8 +2,6 @@
 title: Developing an Inclusive Engineering Team
 permalink: /talks/developing-an-inclusive-engineering-team/
 headerImage: /images/banners/developing-an-inclusive-engineering-team.jpg
-tags:
-  - talk
 description: 'The key to writing great software is a great engineering team, but building those great teams is more than finding the best developers. It’s about creating a positive and inclusive environment which helps the whole team to thrive. In this talk, I share some ideas about how you can help to guide a team of fantastic software engineers to success.'
 speakerDeckId: '4db256067351404d99665c7cf953e8e2'
 ---
