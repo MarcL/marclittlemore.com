@@ -1,0 +1,32 @@
+<div class="prose prose-lg space-y-2 max-w-xs lg:max-w-2xl prose-a:no-underline">
+    <div class="flex items-baseline justify-between">
+        <h3 class="col-span-2">{{collectionTitle}}</h3>
+        <div class="col-span-1">
+            <a class="hover:underline" src="/tags/{{tags[1]}}/" title="Explore more">Explore more &rarr;</a>
+        </div>
+    </div>
+    <div class="grid gap-y-4">
+        {%- if collectionText -%}
+            <div class="grid col-span-1">
+            {{collectionText}}
+            </div>
+        {% endif %}
+
+        {% if collection.length %}
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            {% assign sortedCollection = collection | reverse  %}
+            {% for article in sortedCollection %}
+            <a class="block transition transform hover:-translate-y-4" href="{{article.url}}" >
+            <div class="group">
+                {% image article.data.headerImage article.data.title "rounded-md object-cover h-32" %}
+                <h4 class="group-hover:underline">{{article.data.title}}</h4>
+                <p class="text-slate-600">{{article.data.description}}</p>
+            </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+
+    </div>
+</div>
