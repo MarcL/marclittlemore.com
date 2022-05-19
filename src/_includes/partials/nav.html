@@ -1,7 +1,7 @@
 <header class="mx-auto text-xl uppercase">
     <nav class="text-gray-900 space-x-4 text-center hidden md:flex justify-center py-8" id="navLinksWeb">
         <div class="space-x-4 lg:space-x-8 items-center">
-            {% for menuItem in mainMenu %}
+            {% for menuItem in navigationMenu %}
                 {% if page.url contains menuItem.url and
                     menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
                     <a class="border-b-4 border-red-500 py-1 font-semibold" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
@@ -15,7 +15,7 @@
         <div class="flex flex-col justify-center items-center">
             <i class="fa fa-2x fa-bars w-16 py-4" aria-hidden="true" id="displayNavButton"></i>
             <div id="mobileLinks" class="flex flex-col justify-center items-center my-4 hidden">
-            {% for menuItem in mainMenu %}
+            {% for menuItem in navigationMenu %}
                 {% if page.url contains menuItem.url and
                     menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
                     <a class="w-28 border-b-4 border-red-500 py-1 font-semibold" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
