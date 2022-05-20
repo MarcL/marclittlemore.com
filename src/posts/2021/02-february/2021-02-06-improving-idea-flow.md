@@ -4,8 +4,7 @@ permalink: /creating-an-idea-habit/
 headerImage: /images/banners/creating-an-idea-habit.jpg
 description: "I sometimes struggle for ideas, especially as I try and a daily blog post for 30 days. Here are a few ideas on how to kickstart a habit of idea generation."
 tags:
-    - writing
-    - essay
+    - learning
 image:
     source: https://unsplash.com/photos/LUzyfImwDu0
     creator: Dstudio Bcn

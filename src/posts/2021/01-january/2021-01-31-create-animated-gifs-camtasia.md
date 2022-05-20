@@ -4,8 +4,7 @@ permalink: /create-animated-gifs-camtasia/
 headerImage: /images/banners/create-animated-gifs-camtasia.jpg
 description: "Everyone loves gifs right? In this article you'll learn how to make your own using Camtasia."
 tags:
-    - writing
-    - essay
+    - development
 image:
     source: https://unsplash.com/photos/59yg_LpcvzQ
     creator: Andrew Wulf

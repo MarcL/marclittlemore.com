@@ -4,9 +4,7 @@ permalink: /become-better-software-engineering-manager/
 headerImage: /images/banners/up-arrows.jpg
 description: "If you're not sure if you want to be involved in the management of teams building software, here are a few thoughts on what makes it takes to become a better software engineering manager."
 tags:
-    - writing
-    - development
-    - essay
+    - leadership
 image:
     source: https://unsplash.com/photos/cYUMaCqMYvI
     creator: Jungwoo Hong

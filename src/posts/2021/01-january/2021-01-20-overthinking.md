@@ -4,9 +4,7 @@ permalink: /stop-overthinking-everything/
 headerImage: /images/banners/lightbulb-thinking.jpg
 description: "Making your brain slow down and stop worrying about everything is hard sometimes. As an active overthinker, I'm trying to adopt strategies to deal with it."
 tags:
-    - writing
-    - essay
-
+    - leadership
 image:
     source: https://unsplash.com/photos/J1ActGs9Qzg
     creator: Martin Wilner

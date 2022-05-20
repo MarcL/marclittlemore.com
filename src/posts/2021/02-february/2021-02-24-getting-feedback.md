@@ -4,8 +4,7 @@ permalink: /asking-for-feedback-as-a-leader/
 headerImage: /images/banners/leader-feedback.jpg
 description: "Feedback is necessary for a growth mindset and to continuously improve. As a leader, we often give feedback to our team but forget to ask others for it."
 tags:
-    - writing
-    - essay
+    - leadership
 # image:
 #     source: https://lapwingeducation.co.uk/parent-carer-feedback
 ---

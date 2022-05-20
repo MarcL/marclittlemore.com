@@ -2,8 +2,6 @@
 title:  "Previous Newsletters"
 permalink: /newsletter/archive/
 description: An archive of my weekly newsletter.
-tags:
-    - writing
 headerImage: /images/banners/newsletter-archive.jpg
 image:
     source: https://unsplash.com/photos/o6GEPQXnqMY

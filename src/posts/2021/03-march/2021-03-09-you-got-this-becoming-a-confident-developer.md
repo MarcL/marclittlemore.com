@@ -4,8 +4,7 @@ permalink: /youve-got-this-become-a-confident-developer/
 headerImage: /images/banners/you-got-this.jpg
 description: "If you're early in your software development career, you might not realise how good you are yet. Here are a few ideas to boost your confidence."
 tags:
-    - writing
-    - essay
+    - development
 image:
     source: https://unsplash.com/photos/geM5lzDj4Iw
     creator: sydney Rae

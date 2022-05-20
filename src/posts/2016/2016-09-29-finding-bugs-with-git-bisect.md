@@ -4,7 +4,6 @@ subtitle: "A beginners guide to the world of git bisect."
 permalink: /how-to-find-bugs-using-git-bisect-with-this-easy-guide/
 headerImage: /images/banners/computer-code.jpg
 tags:
-    - git
     - development
 description: An essential guide that will teach you how to use git bisect to quickly and easily find bugs in the history of your project.
 ---

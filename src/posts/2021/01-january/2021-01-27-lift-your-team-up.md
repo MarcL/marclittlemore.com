@@ -4,8 +4,7 @@ permalink: /lift-your-team-up/
 headerImage: /images/banners/balloons-lift-your-team-up.jpg
 description: "Building a great culture in teams can be hard. If you help to lift them up, you create an inclusive team and everybody wins."
 tags:
-    - writing
-    - essay
+    - leadership
 image:
     source: https://unsplash.com/photos/4Xy08NbMBLM
     creator: Ankush Minda

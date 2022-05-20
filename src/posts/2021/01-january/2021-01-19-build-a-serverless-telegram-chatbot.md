@@ -4,9 +4,7 @@ permalink: /serverless-telegram-chatbot-vercel/
 headerImage: /images/banners/telegram-chatbot.jpg
 description: "Serverless functions are a perfect compliment to event driven chatbots. Let's see how we can quickly deploy a Telegram bot using Vercel"
 tags:
-    - writing
-    - essay
-
+    - chatbots
 # From the independent
 #image:
 #    source: https://www.independent.co.uk/life-style/gadgets-and-tech/whatsapp-privacy-telegram-world-leaders-b1787218.html

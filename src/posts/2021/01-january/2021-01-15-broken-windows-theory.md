@@ -4,8 +4,7 @@ permalink: /refactoring-code-broken-windows-theory/
 headerImage: /images/banners/broken-windows.jpg
 description: "Every time we touch our applications we incur technical debt. Make sure you keep a codebase healthy by fixing those broken windows."
 tags:
-    - writing
-    - essay
+    - development
 image:
     source: https://unsplash.com/photos/vT684iB7Ejg
     creator: Matt Artz

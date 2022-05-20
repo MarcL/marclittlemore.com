@@ -5,10 +5,6 @@ permalink: /different-types-of-software-tests/
 headerImage: /images/banners/heart-code.jpg
 description: "There are many different types of tests you can write. Let's find out about what they are."
 tags:
-    - express
-    - javascript
-    - development
-    - testing
     - javascript-testing
 ---
 

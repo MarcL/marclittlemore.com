@@ -4,8 +4,7 @@ permalink: /ship-your-code-with-confidence/
 headerImage: /images/banners/ship-your-code-with-confidence.jpg
 description: "All developers want to ship code on a daily basis. If we want to get our code to our users more frequently, how can we ensure we release with confidence?"
 tags:
-    - writing
-    - essay
+    - development
 image:
     source: https://unsplash.com/photos/ASmaVyS4AZM
     creator: Cameron Venti

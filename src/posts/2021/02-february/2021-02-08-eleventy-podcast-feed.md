@@ -4,8 +4,7 @@ permalink: /create-an-eleventy-podcast-feed/
 headerImage: /images/banners/create-an-eleventy-podcast-feed.jpg
 description: "Want to add an iTunes and Google friendly podcast feed to your Eleventy site? Here's how."
 tags:
-    - writing
-    - essay
+    - development
 image:
     source: https://unsplash.com/photos/Zxdf_tN9eC8
     creator: Jonathan Farber

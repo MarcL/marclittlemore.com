@@ -3,9 +3,6 @@ title:  "Join my newsletter"
 permalink: /newsletter/
 headerImage: /images/banners/newsletter-sign-up.jpg
 description: A weekly newsletter teaching you about technical leadership, intentional remote working, and growing your leadership career.
-tags:
-    - writing
-    - leadership
 image:
     source: https://unsplash.com/photos/4vrZpOo7fTc
     creator: Mailchimp

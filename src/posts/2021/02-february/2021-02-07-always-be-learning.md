@@ -4,8 +4,7 @@ permalink: /always-be-learning/
 headerImage: /images/banners/always-be-learning.jpg
 description: "Learning doesn't have to stop after school. Learning should be a lifelong passion that we all embrace."
 tags:
-    - writing
-    - essay
+    - learning
 image:
     source: https://unsplash.com/photos/O2u6gA2esAI
     creator: Sharon McCutcheon

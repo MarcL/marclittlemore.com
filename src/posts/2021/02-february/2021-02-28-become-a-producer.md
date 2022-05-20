@@ -4,8 +4,7 @@ permalink: /become-a-producer-not-a-consumer/
 headerImage: /images/banners/become-a-producer-not-a-consumer.jpg
 description: "Don't just spend your time doom scrolling on Twitter or liking Instagram pictures. It's time to become a content producer and not just a content consumer."
 tags:
-    - writing
-    - essay
+    - learning
 image:
     source: https://unsplash.com/photos/W3iCaxXtZZk
     creator: Jasmin Schreiber

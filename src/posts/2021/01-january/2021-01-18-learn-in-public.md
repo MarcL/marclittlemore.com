@@ -4,8 +4,7 @@ permalink: /learn-in-public/
 headerImage: /images/banners/love-to-learn.jpg
 description: "Most people consume content and then forget about it. The fastest way to learn something is to share it with others. So let's all learn in public."
 tags:
-    - writing
-    - essay
+    - learning
 image:
     source: https://unsplash.com/photos/WE_Kv_ZB1l0
     creator: Tim Mossholder

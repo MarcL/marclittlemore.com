@@ -4,8 +4,7 @@ permalink: /dont-repeat-your-years/
 headerImage: /images/banners/dont-repeat-your-years.jpg
 description: "Time is scarce. Life is short. Don't waste it. Don't repeat your years."
 tags:
-    - writing
-    - essay
+    - leadership
 image:
     source: https://unsplash.com/photos/81QkOoPGahY
     creator: Jose Aragones

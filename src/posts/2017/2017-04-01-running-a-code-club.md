@@ -4,7 +4,7 @@ subtitle: "Teaching children about computer programming is fun but challenging. 
 permalink: /lessons-learned-from-running-a-code-club/
 headerImage: /images/posts/lessons-learned-from-running-a-code-club.jpg
 tags:
-    - code-club
+    - learning
 description: A Code Club is a great place for children to learn more about computing, and for adults to learn about teaching. Here are some tips and tricks on how to make your Code Club a fun learning environment for everyone.
 ---
 
