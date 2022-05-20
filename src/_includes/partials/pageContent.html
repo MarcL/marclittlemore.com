@@ -64,6 +64,6 @@
       {% assign tag = tags[1] %}
     {% endif %}
     {% assign tagCollection = collections[tag] | collectionWithoutUrls: page.url | reverse | limitCollection: 3 %}
-    {% include partials/taggedCollection.html collectionTitle: "Keep Reading" collection: tagCollection %}
+    {% include partials/taggedCollection.html collectionTitle: "Want to read more?" collection: tagCollection %}
   {% endif %}
 </main>

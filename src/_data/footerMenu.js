@@ -28,6 +28,11 @@ module.exports = [
                 name: 'Uses',
                 url: '/uses/',
                 title: 'Applications and hardware I use everyday'
+            },
+            {
+                name: 'Topics',
+                url: '/topics/',
+                title: 'Topics that I write about'
             }
         ]    
     },

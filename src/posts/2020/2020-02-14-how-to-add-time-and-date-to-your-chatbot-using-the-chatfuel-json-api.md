@@ -4,7 +4,7 @@ subtitle: "Can your chatbot tell the time? Let's look at how we can make your ch
 permalink: /how-to-add-time-and-date-to-your-messenger-chatbot-using-the-chatfuel-json-api/
 description: "Let's help your customers decide if you're open by adding time and date to your Chatfuel chatbot."
 tags:
-    - chatbot
+    - chatbots
     - development
 headerImage: /images/banners/time-and-date.jpg
 ---

@@ -12,6 +12,9 @@ const tailwindSizesPixels = {
 const tailwindPixelList = Object.keys(tailwindSizesPixels).map(key => tailwindSizesPixels[key]);
 
 const imageShortcode = async (src, alt, className = 'shadow-md') => {
+    if (!src) {
+        throw new Error(`Missing \`src\` on image`);
+    }
     if (alt === undefined) {
         throw new Error(`Missing \`alt\` on image from: ${src}`);
     }
