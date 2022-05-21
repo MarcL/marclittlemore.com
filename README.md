@@ -10,7 +10,7 @@ The site is built using [11ty](https://www.11ty.dev/). I ❤️ this static site
 
 I originally styled the site using Tachyons but moved over to [Tailwind CSS](https://tailwindcss.com/). It's made it simple for someone with less CSS experience to responsively style the whole site. I use it on most projects now.
 
-The site is deployed using [Netlify](http://netlify.com/). I moved over from running my own [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) to using Netlify for most of my sites. This allows a simple Git-based workflow for previewing and deploying my site changes easily.
+The site is deployed using [Netlify](https://netlify.com/). I moved over from running my own [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) to using Netlify for most of my sites. This allows a simple Git-based workflow for previewing and deploying my site changes easily.
 
 There is very little client-side JavaScript but what is there uses [Parcel](https://parceljs.org/) to bundle the code into a single module.
 

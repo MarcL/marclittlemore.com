@@ -37,13 +37,13 @@ Check out the current [books I'm reading](/reading/) here.
 
 - Adding webmentions to this site
 - Writing more articles on this site again
-- Need to finish and deploy my wife's [Out Of The Woods Blog](http://www.outofthewoodsblog.com/) using [Tailwind CSS](https://tailwindcss.com/) and [Eleventy](https://www.11ty.dev/)
+- Need to finish and deploy my wife's [Out Of The Woods Blog](https://www.outofthewoodsblog.com/) using [Tailwind CSS](https://tailwindcss.com/) and [Eleventy](https://www.11ty.dev/)
 - Stretchs and physio exercises for a sciatic nerve issue
 - Making hip-hop beats in Ableton
 ### 8th January 2022
 
 - Deploying and testing Shopify integration to sync data with a CO3 ERP system
-- Updating my wife's [Out Of The Woods Blog](http://www.outofthewoodsblog.com/) using [Tailwind CSS](https://tailwindcss.com/) and [Eleventy](https://www.11ty.dev/)
+- Updating my wife's [Out Of The Woods Blog](https://www.outofthewoodsblog.com/) using [Tailwind CSS](https://tailwindcss.com/) and [Eleventy](https://www.11ty.dev/)
 - Meditating using [Headspace](https://www.headspace.com/)
 - Starting to make music again with Ableton Live
 - Using social media less
