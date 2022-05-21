@@ -20,6 +20,11 @@ module.exports = [
                 title: 'Learn how to create your own chatbot'
             },
             {
+                name: 'Interviews',
+                url: '/interviews/',
+                title: 'Interviews with Marc Littlemore'
+            },
+            {
                 name: 'Now',
                 url: '/now/',
                 title: 'What I\'m doing right now'
