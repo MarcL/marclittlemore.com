@@ -46,10 +46,10 @@ module.exports = [
         links: popularPages 
     },
     {
-        name: 'More',
+        name: 'More about me',
         links: [
             {
-                name: 'Contact me',
+                name: 'Contact',
                 url: '/contact/',
                 title: 'Send me a message and say hello'
             },
@@ -57,6 +57,16 @@ module.exports = [
                 name: 'About me',
                 url: '/about/',
                 title: 'Who is Marc Littlemore?'
+            },
+            {
+                name: 'How I almost died',
+                url: '/how-i-almost-died/',
+                title: 'Learn how I almost died'
+            },
+            {
+                name: 'Games I worked on',
+                url: '/games/',
+                title: 'Here are some of the video games I worked on.'
             },
         ] 
     }
