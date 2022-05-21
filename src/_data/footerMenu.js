@@ -35,7 +35,7 @@ module.exports = [
                 title: 'Applications and hardware I use everyday'
             },
             {
-                name: 'Topics',
+                name: 'Writing Topics',
                 url: '/topics/',
                 title: 'Topics that I write about'
             }
