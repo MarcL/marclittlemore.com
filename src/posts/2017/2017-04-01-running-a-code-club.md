@@ -67,9 +67,9 @@ Show the children the costume editor in Scratch and they can start creating thei
 *Tip: Discuss with your school what their internet policy is for the children. Allow them to get creative with their own graphics.*
 {% endcallout %}
 
-### Rubber duck debugging
+### [Rubber duck debugging](/rubber-duck-debugging/)
 
-In software engineering we have a method of finding problems in our code known as [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging). The idea is that in telling the problem to someone else, such as a rubber duck, you'll actually understand the problem and will explain the solution yourself. If you've never tried it before, please do. It works! The children sometimes couldn't work out why their code didn't work as expected. Instead of pointing out what was wrong, I'd ask them to explain what they've done. I'd ask questions about each line of Scratch code. Most of the children would instantly see the problem and could fix it themselves. Computer programming is all about failure. You have to get it wrong to fully understand how to correct it.
+In software engineering we have a method of finding problems in our code known as [rubber duck debugging](/rubber-duck-debugging/). The idea is that in telling the problem to someone else, such as a rubber duck, you'll actually understand the problem and will explain the solution yourself. If you've never tried it before, please do. It works! The children sometimes couldn't work out why their code didn't work as expected. Instead of pointing out what was wrong, I'd ask them to explain what they've done. I'd ask questions about each line of Scratch code. Most of the children would instantly see the problem and could fix it themselves. Computer programming is all about failure. You have to get it wrong to fully understand how to correct it.
 
 {% callout "tip" %}
 *Tip: If children have problems, ask them questions about their code. Try not to immediately offer solutions. They'll often work it out themselves.*

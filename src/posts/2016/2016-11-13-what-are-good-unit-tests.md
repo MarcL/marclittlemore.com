@@ -8,7 +8,7 @@ tags:
 description: How do you ensure that you're writing high quality unit tests? Here you'll learn how to write good quality unit tests with some ideas that you can use in your everyday testing.
 ---
 
-One of the often asked questions about unit testing is "how do I ensure I'm writing good quality unit tests?" It's easy to start of down the path of writing unit tests for your code but you need to make sure you're writing dependable tests which are easy to maintain. In this article, I talk about the defining characteristics of solid unit testing and how to ensure that the quality is high.
+One of the often asked questions about unit testing is "how do I ensure I'm writing good quality unit tests?" It's easy to start of down the path of [writing unit tests](/talks/7-tips-for-writing-great-unit-tests/) for your code but you need to make sure you're writing dependable tests which are easy to maintain. In this article, I talk about the defining characteristics of solid unit testing and how to ensure that the quality is high.
 
 ## What is a unit?
 
