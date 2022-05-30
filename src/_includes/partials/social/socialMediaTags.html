@@ -1,21 +1,17 @@
-{% assign pageDescription = subtitle %}
-{%if description %}
-{% assign pageDescription = description %}
-{% endif %}
-
-{% assign imageUrl = site.headerImage %}
-{% if headerImage %}
-{% assign imageUrl = headerImage %}
-{% endif %}
-
-{% assign pageDate = date | date: "%Y-%m-%d" %}
-
+{%- assign pageDescription = subtitle -%}
+{%- if description -%}
+{%- assign pageDescription = description -%}
+{%- endif -%}
+{%- assign imageUrl = site.headerImage -%}
+{%- if headerImage -%}
+{%- assign imageUrl = headerImage -%}
+{%- endif -%}
+{%- assign pageDate = date | date: "%Y-%m-%d" -%}
 <!-- Open Graph -->
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
 <meta property="og:title" content="{{ title }}" />
 <meta property="og:description" content="{{ pageDescription }}" />
-
 <meta property="og:image" content="{{ site.url }}{{ imageUrl }}" />
 <meta property="og:type" content="article" />
 <meta property="og:locale" content="en_GB" />
@@ -35,3 +31,8 @@
 <meta name="twitter:creator" content="@{{site.twitterUsername}}">
 <!-- Twitter summary card with large image must be at least 280x150px -->
 <meta name="twitter:image:src" content="{{ site.url }}{{ imageUrl }}">
+
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="{{site.author.name}}" />
+<meta name="twitter:label2" content="Reading time" />
+<meta name="twitter:data2" content="{{ content | timeToRead }} read" />
