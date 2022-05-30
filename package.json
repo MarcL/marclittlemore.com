@@ -25,6 +25,7 @@
     "eleventy-plugin-time-to-read": "^1.2.0",
     "eleventy-plugin-youtube-embed": "^1.5.0",
     "googleapis": "^95.0.0",
+    "hyperlink": "^5.0.4",
     "jsdom": "^19.0.0",
     "lodash.escape": "^4.0.1",
     "markdown-it": "^12.0.4",
@@ -35,16 +36,18 @@
     "postcss-cli": "^9.0.2",
     "string": "^3.3.3",
     "tailwindcss": "^3.0.0",
+    "tap-spot": "^1.1.2",
     "xml2js": "^0.4.23"
   },
   "scripts": {
-    "build": "NODE_ENV=production ELEVENTY_ENV=production yarn build:all",
+    "build": "NODE_ENV=production ELEVENTY_ENV=production yarn build:all && yarn links:internal",
     "build:all": "yarn build:css && yarn build:js && yarn build:site",
     "build:css": "postcss src/css/main.css -o _tmp/css/main.css",
     "build:css:watch": "npm run build:css -- --watch",
     "build:site": "eleventy",
     "build:js": "parcel build src/clientjs/index.js --dist-dir src/distjs",
-    "link-check": "blc http://localhost:4000 -ro",
+    "links:internal": "hyperlink -ri --root _site --canonicalroot https://marclittlemore.com/ --skip '/.netlify/functions' _site/*.html | tap-spot",
+    "links:external": "hyperlink -r --root _site --canonicalroot https://marclittlemore.com/ --skip '/.netlify/functions' _site/*.html | tap-spot",
     "serve": "yarn serve:js & ELEVENTY_ENV=dev eleventy --serve & yarn build:css:watch",
     "serve:js": "parcel watch src/clientjs/index.js"
   },
