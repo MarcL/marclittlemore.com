@@ -11,3 +11,6 @@
 
 # Moved page from /books/ to /reading/
 /books/ /reading/
+
+# Moved some auto-generated topics pages
+/topics/chatbots/ /bots/ 301

@@ -28,6 +28,11 @@ If you want to learn more about building great chatbots then I've got a mailing 
 Sign up to my free [chatbot builders email list now](/bots/sign-up-bot-building-for-beginners/?signup=chatbot-page/) and I'll send you my **FREE** Chatfuel Chatbot JSON Guide!
 {% endcallout %}
 
+## Chatbot Articles
+
+{% assign tagCollection = collections['chatbots'] | collectionWithoutUrls: page.url | reverse %}
+{% include partials/taggedCollection.html collection: tagCollection %}
+
 ## Chatbot Videos
 
 Interested in learning more about chatbots but don't know where to start? Don't worry! I've made some videos which will make life much easier. I've put them all on YouTube so you can enjoy them at your own pace. If you have some ideas for videos you want me to record then [let me know](/contact/) and I'll add the ideas to my list.

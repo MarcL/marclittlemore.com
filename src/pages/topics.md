@@ -11,11 +11,16 @@ image:
 
 {% for tag in collections.tagList %}
 {% assign capitalisedTag = tag | capitalize %}
+
 {% if topics[tag] %}
-{% assign capitalisedTag = topics[tag].title %}
+{%- assign capitalisedTag = topics[tag].title -%}
+{%- capture url -%}/topics/{{tag}}/{%- endcapture -%}
+{%- if topics[tag].url -%}
+{%- assign url = topics[tag].url -%}
+{%- endif -%}
 {% endif %}
 
-<h3><a href="/topics/{{tag}}/" title="{{capitalisedTag}}">{{capitalisedTag}}</a></h3>
+<h3><a href="{{url}}" title="{{capitalisedTag}}">{{capitalisedTag}}</a></h3>
 
 {% if topics[tag] and topics[tag].description  %}
 {{topics[tag].description}}
