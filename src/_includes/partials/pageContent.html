@@ -64,7 +64,7 @@
       {% assign tag = tags[1] %}
     {% endif %}
     {%- if tags and tags[1] -%}
-    {%- assign url = "/topics/{{tags[1]}}/" %}
+    {%- capture url -%}/topics/{{tags[1]}}/{%- endcapture -%}
     {%- endif -%}
     {%- if topics[tag].url -%}
     {%- assign url = topics[tag].url -%}
