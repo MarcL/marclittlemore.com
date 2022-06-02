@@ -1,12 +1,12 @@
 {%- if collection.length > 0 -%}
-<section class="prose prose-lg space-y-2 max-w-xs lg:max-w-2xl prose-a:no-underline">
+<section class="prose prose-xl space-y-2 prose-a:no-underline w-full mx-auto">
     <div class="flex items-baseline justify-between">
         {%- if collectionTitle -%}
         <h3 class="col-span-2">{{collectionTitle}}</h3>
         {%- endif -%}
-        {%- if tags and tags[1] -%}
+        {%- if url -%}
         <div class="col-span-1">
-            <a class="hover:underline" href="/topics/{{tags[1]}}/" title="Explore more">Explore more &rarr;</a>
+            <a class="hover:underline" href="{{url}}" title="Explore more">Explore more &rarr;</a>
         </div>
         {%- endif -%}
     </div>

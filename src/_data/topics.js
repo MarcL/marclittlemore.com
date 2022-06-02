@@ -2,7 +2,8 @@
 module.exports = {
     chatbots: {
         title: 'Chatbots',
-        description: 'Learn more about automating your life with conversational chatbots. Chatbots are software applications that use "artificial intelligence" & natural language processing to understand what a human wants, and guides them to their desired outcome with as little work for the end user as possible.'
+        description: 'Learn more about automating your life with conversational chatbots. Chatbots are software applications that use "artificial intelligence" & natural language processing to understand what a human wants, and guides them to their desired outcome with as little work for the end user as possible.',
+        url: '/bots/'
     },
     development: {
         title: 'Software development',
@@ -10,7 +11,8 @@ module.exports = {
     },
     'javascript-testing': {
         title: 'JavaScript Testing',
-        description: "I've worked with JavaScript and the Node.js ecosystem for a long time now. I built some of the BBC's microservices which run at high scale using JavaScript. Testing is a key part of the JavaScript software development lifecycle. Learn more about JavaScript testing here."
+        description: "I've worked with JavaScript and the Node.js ecosystem for a long time now. I built some of the BBC's microservices which run at high scale using JavaScript. Testing is a key part of the JavaScript software development lifecycle. Learn more about JavaScript testing here.",
+        url: '/javascript-testing/'
     },
     leadership: {
         title: "Leadership",

@@ -63,7 +63,13 @@
     {% if tag == 'post' %}
       {% assign tag = tags[1] %}
     {% endif %}
+    {%- if tags and tags[1] -%}
+    {%- capture url -%}/topics/{{tags[1]}}/{%- endcapture -%}
+    {%- endif -%}
+    {%- if topics[tag].url -%}
+    {%- assign url = topics[tag].url -%}
+    {%- endif -%}
     {% assign tagCollection = collections[tag] | collectionWithoutUrls: page.url | reverse | limitCollection: 3 %}
-    {% include partials/taggedCollection.html collectionTitle: "Want to read more?" collection: tagCollection %}
+    {% include partials/taggedCollection.html collectionTitle: "Want to read more?" collection: tagCollection url: url %}
   {% endif %}
 </main>

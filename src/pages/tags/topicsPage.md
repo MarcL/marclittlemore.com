@@ -10,6 +10,7 @@ pagination:
         - page
         - tagList
         - all
+        - chatbots
 permalink: "/topics/{{topic}}/"
 headerImage: /images/banners/topics.jpg
 eleventyComputed:
