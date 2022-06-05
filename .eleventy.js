@@ -22,7 +22,10 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(embedTwitter);
     eleventyConfig.addPlugin(timeToRead, {style: 'short'});
     eleventyConfig.addPlugin(tableOfContents);
-    eleventyConfig.addPlugin(externalLinks, {url: site.url});
+    eleventyConfig.addPlugin(externalLinks, {
+        url: site.url,
+        overwrite: false
+    });
 
     // Collections
     eleventyConfig.addCollection('tagList', (collection) => {
