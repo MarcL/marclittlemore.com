@@ -11,15 +11,21 @@ This page is inspired by Derek Siver's [now page](https://sivers.org/now) sugges
 
 ## What's happening right now?
 
-### Updated: 4th May 2022
+### Updated: 5th June 2022
 
+- Started my new role as a Senior Engineering Manager at [Netlify](https://netlify.com/)
 - Building an email list for [intentional technical leadership newsletter](/newsletter/)
-- Leaving my role at Beacon and starting something new soon 🤫
 - Continued stretches and physio exercises for a sciatic nerve issue
 
 Check out the current [books I'm reading](/reading/) here.
 
 ## Previous Updates
+
+### Updated: 4th May 2022
+
+- Building an email list for [intentional technical leadership newsletter](/newsletter/)
+- Leaving my role at Beacon and starting something new soon 🤫
+- Continued stretches and physio exercises for a sciatic nerve issue
 
 ### Updated: 6th April 2022
 
