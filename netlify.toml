@@ -6,7 +6,10 @@ command = "yarn dev"
 command = "yarn build"
 publish = "_site"
 
-# Edge functions for eleventy
+# Edge functions
+# Only run edge functions on these pages
+
+# Add signup tag for Mailchimp newsletters
 [[edge_functions]]
 function = "eleventy-edge"
 path = "/javascript-testing-beginners-course/"
@@ -15,7 +18,7 @@ path = "/javascript-testing-beginners-course/"
 function = "eleventy-edge"
 path = "/bots/sign-up-bot-building-for-beginners/"
 
-# Pages with the newsletter on it should run the edge function
+# Add signup tag for Email Octopus newsletters
 [[edge_functions]]
 function = "eleventy-edge"
 path = "/"

@@ -35,7 +35,7 @@
     </label>
 
 {%- edge -%}
-{%- assign signupKey = eleventy.edge.query.signup | default: "none" -%}
+{%- assign signupKey = eleventy.edge.query.signup | default: "none" | escape -%}
 <input type="hidden" name="field_6" id="field_6" value="{{signupKey}}">
 {%- endedge -%}
 
