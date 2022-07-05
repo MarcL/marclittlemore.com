@@ -3,7 +3,7 @@ framework = "#static"
 command = "npx @11ty/eleventy --quiet --watch"
 
 [build]
-command = "npx @11ty/eleventy"
+command = "yarn build"
 publish = "_site"
 
 # Edge functions for eleventy
