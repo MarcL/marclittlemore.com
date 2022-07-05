@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const {EleventyEdgePlugin} = require('@11ty/eleventy');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const rss = require('@11ty/eleventy-plugin-rss');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
@@ -26,6 +27,8 @@ module.exports = (eleventyConfig) => {
         url: site.url,
         overwrite: false
     });
+
+    eleventyConfig.addPlugin(EleventyEdgePlugin);
 
     // Collections
     eleventyConfig.addCollection('tagList', (collection) => {
@@ -60,8 +63,8 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({'src/robots.txt': 'robots.txt'});
     eleventyConfig.addPassthroughCopy({'src/browserconfig.xml': 'browserconfig.xml'});
     eleventyConfig.addPassthroughCopy({'src/distjs/': 'js/'});
-    eleventyConfig.addPassthroughCopy({'src/_redirects': '_redirects'});
     eleventyConfig.addPassthroughCopy({'./_tmp/css/main.css': 'css/main.css'});
+    eleventyConfig.addPassthroughCopy({'src/_redirects': '_redirects'});
 
     // Watch - including files in .gitignore
     eleventyConfig.setUseGitIgnore(false);

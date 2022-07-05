@@ -1,0 +1,16 @@
+[dev]
+framework = "#static"
+command = "npx @11ty/eleventy --quiet --watch"
+
+[build]
+command = "npx @11ty/eleventy"
+publish = "_site"
+
+# Edge functions for eleventy
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/javascript-testing-beginners-course/"
+
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/bots/sign-up-bot-building-for-beginners/"
