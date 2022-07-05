@@ -1,6 +1,6 @@
 [dev]
 framework = "#static"
-command = "npx @11ty/eleventy --quiet --watch"
+command = "yarn dev"
 
 [build]
 command = "yarn build"
@@ -14,3 +14,16 @@ path = "/javascript-testing-beginners-course/"
 [[edge_functions]]
 function = "eleventy-edge"
 path = "/bots/sign-up-bot-building-for-beginners/"
+
+# Pages with the newsletter on it should run the edge function
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/"
+
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/newsletter/"
+
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/about/"

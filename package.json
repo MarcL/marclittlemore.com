@@ -46,6 +46,7 @@
     "build:css:watch": "npm run build:css -- --watch",
     "build:site": "eleventy",
     "build:js": "parcel build src/clientjs/index.js --dist-dir src/distjs",
+    "dev": "npx @11ty/eleventy --quiet --watch & yarn build:css:watch",
     "links:internal": "hyperlink -ri --root _site --canonicalroot https://marclittlemore.com/ --skip '/.netlify/functions' _site/*.html | tap-spot",
     "links:external": "hyperlink -r --root _site --canonicalroot https://marclittlemore.com/ --skip '/.netlify/functions' _site/*.html | tap-spot",
     "serve": "yarn serve:js & ELEVENTY_ENV=dev eleventy --serve & yarn build:css:watch",
