@@ -25,7 +25,7 @@ As a software engineer and chatbot developer, I've been experimenting with lots 
 {% callout "info" %}
 If you want to learn more about building great chatbots then I've got a mailing list which will provide you with great information each week about the lastest trends, tutorials and quick tips to build better chatbots? Sounds like something you're interested in? Great!
 
-Sign up to my free [chatbot builders email list now](/bots/sign-up-bot-building-for-beginners/?signup=chatbot-page/) and I'll send you my **FREE** Chatfuel Chatbot JSON Guide!
+Sign up to my free [chatbot builders email list now](/bots/sign-up-bot-building-for-beginners/?signup=chatbot-page) and I'll send you my **FREE** Chatfuel Chatbot JSON Guide!
 {% endcallout %}
 
 ## Chatbot Articles

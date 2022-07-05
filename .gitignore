@@ -120,3 +120,9 @@ dist
 _site
 _tmp
 src/distjs/
+
+# Netlify
+.netlify/
+
+# Eleventy edge build data files
+netlify/edge-functions/_generated

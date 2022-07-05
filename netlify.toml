@@ -1,0 +1,32 @@
+[dev]
+framework = "#static"
+command = "yarn dev"
+
+[build]
+command = "yarn build"
+publish = "_site"
+
+# Edge functions
+# Only run edge functions on these pages
+
+# Add signup tag for Mailchimp newsletters
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/javascript-testing-beginners-course/"
+
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/bots/sign-up-bot-building-for-beginners/"
+
+# Add signup tag for Email Octopus newsletters
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/"
+
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/newsletter/"
+
+[[edge_functions]]
+function = "eleventy-edge"
+path = "/about/"
