@@ -41,6 +41,29 @@ const parseFirstPage = (document) => {
     return document.body.innerHTML;
 };
 
+// TODO:
+// - Add all of the newsletters and create archived data that can be edited
+// In the meantime, adding a hack to fix up the incorrect links
+const fixIncorrectLinks = (elements) => {
+    const links = elements[1].getElementsByTagName('a');
+    if (links.length > 0) {
+        for(const link of links) {
+            const href = link.getAttribute('href');
+            if (href.includes('https%3A/twitter.com/')) {
+                link.setAttribute('href', href.replace('https%3A/twitter.com/', 'https://twitter.com/'));
+            } else {
+                // regex to find string beginning with open bracket and ending with closed bracket
+                const regex = /\(.*\)/;
+                const matches = href.match(regex);
+                if (matches) {
+                    // Remove leading and trailing brackets
+                    link.setAttribute('href', href.replace('(', '').replace(')', ''));
+                }
+            }
+        }
+    }
+};
+
 const parseEmailOctopusHtml = (html) => {
     const dom = new JSDOM(html);
     const {window: {document}} = dom;
@@ -60,6 +83,10 @@ const parseEmailOctopusHtml = (html) => {
         if (paragraphs.length > 1) {
             paragraphs[0].innerHTML = replaceFriendText(paragraphs[0].innerHTML);
         }
+
+        // Hack: replace invalid links
+        fixIncorrectLinks(elements);
+
         return elements[1].innerHTML;
     }
 
