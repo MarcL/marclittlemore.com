@@ -17,10 +17,6 @@
             <div class="text-gray-500 italic text-base space-x-2">
                 <i class="fa fa-lock"></i><span>I hate spam as much as you do: your email address will <strong>never</strong> be shared.</span>
             </div>
-            {%- edge -%}
-            {%- assign signupKey = eleventy.edge.query.signup | default: "none" | escape -%}
-            <input type="hidden" name="SIGNUP" value="{{signupKey}}">
-            {%- endedge -%}
         </div>
 
     </form>
