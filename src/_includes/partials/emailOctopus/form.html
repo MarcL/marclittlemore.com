@@ -34,11 +34,6 @@
         <input class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50" id="field_1" name="field_1" type="text" placeholder="First name" required />
     </label>
 
-{%- edge -%}
-{%- assign signupKey = eleventy.edge.query.signup | default: "none" | escape -%}
-<input type="hidden" name="field_6" id="field_6" value="{{signupKey}}">
-{%- endedge -%}
-
 <input name="field_4" type="hidden" value="{{page.url}}">
 
 <div class="emailoctopus-form-row-consent pt-4">
