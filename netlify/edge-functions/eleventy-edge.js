@@ -2,6 +2,7 @@ import { EleventyEdge } from "eleventy:edge";
 import precompiledAppData from "./_generated/eleventy-edge-app-data.js";
 
 export default async (request, context) => {
+  console.log(context);
   try {
     let edge = new EleventyEdge("edge", {
       request,
