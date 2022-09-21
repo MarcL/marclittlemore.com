@@ -18,7 +18,7 @@
     p-queue "^6.6.2"
     short-hash "^1.0.0"
 
-"@11ty/eleventy-dev-server@^1.0.0-canary.14":
+"@11ty/eleventy-dev-server@^1.0.0-canary.13":
   version "1.0.0-canary.14"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-dev-server/-/eleventy-dev-server-1.0.0-canary.14.tgz#f7b592748d08fc5c4b020c8e850f57abbdb1ac30"
   integrity sha512-yIPRZCEieqe7943P8h+xG60db/82yp10iOgd8IRKiobLhWw43xDJtro8QnjTF4A9gRkx7UmulwTPkGbD1Lt8xQ==
@@ -80,13 +80,13 @@
   dependencies:
     normalize-path "^3.0.0"
 
-"@11ty/eleventy@2.0.0-canary.15":
-  version "2.0.0-canary.15"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-2.0.0-canary.15.tgz#e0ae6c2fabe7300ec72db852144ad0d8c98eaf2b"
-  integrity sha512-9FghghhTzX3lkT67tAuD/m2n4fRkcQ4raM9SciqoOiZDWMx8B5g9nsxWDl/gSxaamsvANawmD5yvWPbqGA5wSg==
+"@11ty/eleventy@2.0.0-canary.13":
+  version "2.0.0-canary.13"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-2.0.0-canary.13.tgz#f98169bb486279e5736b8abbc7a62cc30ca67704"
+  integrity sha512-9Ri/gcVlpzgIkGP7v9YKnNikSBuNHKi1Bn2u+lKVStgxKY2bzl7RbKhVyiRj0t8875VInBby2KEFlhBspYpKUg==
   dependencies:
     "@11ty/dependency-tree" "^2.0.1"
-    "@11ty/eleventy-dev-server" "^1.0.0-canary.14"
+    "@11ty/eleventy-dev-server" "^1.0.0-canary.13"
     "@11ty/eleventy-utils" "^1.0.1"
     "@iarna/toml" "^2.2.5"
     "@sindresorhus/slugify" "^1.1.2"
@@ -104,7 +104,7 @@
     is-glob "^4.0.3"
     iso-639-1 "^2.1.15"
     kleur "^4.1.5"
-    liquidjs "^9.40.0"
+    liquidjs "^9.39.1"
     lodash "^4.17.21"
     luxon "^3.0.1"
     markdown-it "^13.0.1"
@@ -116,8 +116,6 @@
     nunjucks "^3.2.3"
     path-to-regexp "^6.2.1"
     please-upgrade-node "^3.2.0"
-    posthtml "^0.16.6"
-    posthtml-urls "^1.0.0"
     pug "^3.0.2"
     recursive-copy "^2.0.14"
     semver "^7.3.7"
@@ -3547,7 +3545,7 @@ linkify-it@^4.0.1:
   dependencies:
     uc.micro "^1.0.1"
 
-liquidjs@^9.40.0:
+liquidjs@^9.39.1:
   version "9.42.0"
   resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.42.0.tgz#e0d98730c0bf410320970c6046c819716de90fd1"
   integrity sha512-krvhwGFrMCMGhybGkxJIvlWVVnoCSpYCn7NhEN43+uvlg2vOkYWpq8be+L3NMlOfwe4ZrKQ7hCh1EmS4yhLKow==
@@ -4589,7 +4587,7 @@ posthtml-render@^3.0.0:
   dependencies:
     is-json "^2.0.1"
 
-posthtml-urls@1.0.0, posthtml-urls@^1.0.0:
+posthtml-urls@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/posthtml-urls/-/posthtml-urls-1.0.0.tgz#3102d7b9e5c2fbdf19c8ec7ca825600dad3b9164"
   integrity sha512-CMJ0L009sGQVUuYM/g6WJdscsq6ooAwhUuF6CDlYPMLxKp2rmCYVebEU+wZGxnQstGJhZPMvXsRhtqekILd5/w==
