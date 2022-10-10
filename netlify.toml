@@ -10,8 +10,6 @@ publish = "_site"
 # Only run edge functions on these pages
 
 # Add signup tag for Mailchimp newsletters
-
-# 2022-10-01: Disabling edge functions until they work correctly
 [[edge_functions]]
 function = "eleventy-edge"
 path = "/javascript-testing-beginners-course/"
