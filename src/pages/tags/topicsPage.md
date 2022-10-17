@@ -11,10 +11,12 @@ pagination:
         - tagList
         - all
         - chatbots
+        - javascript-testing
 permalink: "/topics/{{topic}}/"
 headerImage: /images/banners/topics.jpg
 eleventyComputed:
     title: '{{topics[topic].title}}'
+    description: '{{topics[topic].description}}'
 ---
 
 {% if topics[topic] and topics[topic].description  %}
