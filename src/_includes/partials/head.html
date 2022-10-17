@@ -23,6 +23,15 @@
     </title>
     {%- endif -%}
 
+    <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "WebSite",
+        "name" : "{{site.title}}",
+        "url" : "{{site.url}}"
+    }
+    </script>    
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
     <link href="https://unpkg.com/prismjs@1.26.0/themes/prism-okaidia.css" rel="stylesheet" />
