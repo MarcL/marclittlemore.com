@@ -9,7 +9,18 @@
     {%- if page.url == "/" -%}
     <title>{{title}}</title>
     {%- else -%}
-    <title>{% if title %}{{ title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>
+        {% if title %}
+            {% assign totalSize = title.size | plus: site.title.size %}
+            {% if totalSize >= seo.maxTitleSize %}
+                {{ title }}
+            {% else %}
+                {{ title }} - {{ site.title }}
+            {% endif %}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
     {%- endif -%}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
