@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-const {EleventyEdgePlugin} = require('@11ty/eleventy');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const rss = require('@11ty/eleventy-plugin-rss');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
@@ -25,10 +24,9 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(tableOfContents);
     eleventyConfig.addPlugin(externalLinks, {
         url: site.url,
-        overwrite: false
+        overwrite: false,
+        rel: ['noreferrer', 'noopener', 'external'],
     });
-
-    eleventyConfig.addPlugin(EleventyEdgePlugin);
 
     // Collections
     eleventyConfig.addCollection('tagList', (collection) => {
