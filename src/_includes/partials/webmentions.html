@@ -36,7 +36,7 @@
 <h3 class="uppercase">Likes</h3>
 <div class="flex flex-auto flex-wrap justify-items-center">
     {% for like in likes %}
-    <a href="{{like.author.url}}" rel="ugc nofollow" target="_blank" class="px-1">
+    <a href="{{like.author.url}}" rel="ugc" target="_blank" class="px-1">
         <img src="{{like.author.photo}}" title="{{like.author.name}}" alt="Avatar image of {{like.author.name}}" class="rounded-full h-12 w-12 shadow-md my-1 object-cover"/>
     </a>
     {% endfor %}
@@ -50,7 +50,7 @@
 <h3 class="uppercase">Mentions</h3>
 {% for mention in mentions %}
 <p class="">
-    <i class="fas fa-link"></i> <a href="{{mention.url}}" target="_blank" rel="ucg nofollow">{{mention.url}}</a>
+    <i class="fas fa-link"></i> <a href="{{mention.url}}" target="_blank" rel="ucg">{{mention.url}}</a>
 </p>
 {% endfor %}
 </div>
@@ -70,7 +70,7 @@
 <div class="{{replyBgColour}} p-4 shadow-md">
     <div class="flex items-center space-x-4">
         <img src="{{reply.author.photo}}" title="{{reply.author.name}}" alt="Avatar image of {{reply.author.name}}" class="rounded-full h-12 w-12 shadow-md my-1 object-cover"/>
-        <a href="{{reply.url}}" target="_blank" rel="ucg nofollow" class="font-bold">{{reply.author.name}}</a>
+        <a href="{{reply.url}}" target="_blank" rel="ucg" class="font-bold">{{reply.author.name}}</a>
         <time datetime="{{reply["wm-received"] | date: "%Y-%m-%d %H:%M"}}" class="text-sm">
             {{reply["published"] | date: "%Y-%m-%d %H:%M"}}
         </time>
@@ -90,11 +90,11 @@
 <h3 class="uppercase">Reposts</h3>
 {% for repost in reposts %}
 <div class="break-words">
-    <i class="fas fa-retweet"></i> by <a href="{{repost.url}}" target="_blank" rel="ucg nofollow">{{repost.author.name}}</a>
+    <i class="fas fa-retweet"></i> by <a href="{{repost.url}}" target="_blank" rel="ucg">{{repost.author.name}}</a>
 </div>
 
 <div class="break-words">
-    <a href="{{repost.url}}" target="_blank" rel="ucg nofollow">{{repost.url}}</a>
+    <a href="{{repost.url}}" target="_blank" rel="ucg">{{repost.url}}</a>
 </div>
 {% endfor %}
 </div>
