@@ -24,7 +24,7 @@ const markdownAnchorLinks = (md, options) => {
 
   const anchorOptions = Object.assign({}, defaultOptions, options);
 
-  const isAnchorableTag = (tag) => tag === 'h2' || tag === 'h3';
+  const isAnchorableTag = (tag) => tag === 'h2' || tag === 'h3' || tag === 'h4';
 
   md.renderer.rules.heading_open = function(tokens, index) {
     const contentToken = tokens[index + 1];
