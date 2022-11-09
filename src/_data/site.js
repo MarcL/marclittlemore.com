@@ -22,5 +22,6 @@ module.exports = {
   author: {
     name: 'Marc Littlemore',
     email: 'marc@marclittlemore.com'
-  }
+  },
+  isDevelopmentBuild
 };
