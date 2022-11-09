@@ -13,6 +13,8 @@ sitemap:
 <loc>{{ site.url }}{{ post.url }}</loc>
 {%- if post.data.sitemap.lastmod -%}
 <lastmod>{{ post.data.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+{% elsif post.data.updatedDate %}
+<lastmod>{{ post.data.updatedDate | toISOString }}</lastmod>
 {% elsif post.date %}
 <lastmod>{{ post.date | toISOString }}</lastmod>
 {% endif %}
