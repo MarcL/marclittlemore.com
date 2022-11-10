@@ -23,21 +23,21 @@ Let's look at how to use the Obsidian Notes application for writing clearer note
 
 ## What is the Obsidian Notes taking app?
 
-**Obsidian is a beautiful, FREE note taking application which allows you to create and store your notes locally in the [Markdown](https://www.markdownguide.org/) file format. It allows you to link notes together and create a knowledge graph of information.**
+**The Obsidian app is a beautiful, FREE note taking application which allows you to create and store your notes locally in the [Markdown](https://www.markdownguide.org/) file format. It allows you to link notes together and create a knowledge graph of information.**
 
 **Obsidian notes are stored locally as files on your computer rather than in the cloud. Obsidian has a text editor which allows you to add markdown formatting to your notes. It also has a preview mode which allows you to see how your notes will look when they are rendered as HTML.**
 
-As a developer, Markdown is a format I write in regularly and this made Obsidian a perfect tool for me. 
+As a developer, Markdown is a format I write in regularly and this made the Obsidian app a perfect tool for me. 
 
 {% callout "info" %}
-While you can use Obsidian to edit your notes, markdown is a common format for software developers so **you can also edit your notes using any text editor that supports the markdown format.**
+While you can use the Obsidian app to edit your notes, markdown is a common format for software developers so **you can also edit your notes using any text editor that supports the markdown format.**
 
 If you're a software developer, you can use a tool like [Visual Studio Code](https://code.visualstudio.com/) to edit your notes if you like.
 {% endcallout %}
 
 ### Obsidian notes are stored locally
 
-**An important thing to know about Obsidian is that it stores your markdown notes locally on your computer rather than in the cloud. Obsidian notes are simply a folder of plain text files.**
+**An important thing to know about the Obsidian app is that it stores your markdown notes locally on your computer rather than in the cloud. Obsidian notes are simply a folder of plain text files.**
 
 As the files are stored locally, you never have to worry about a service being shut down or changing their pricing model. Markdown is an almost standard format so you can move your notes to a new note-taking application if you needed to.
 
