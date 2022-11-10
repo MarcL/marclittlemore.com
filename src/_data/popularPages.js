@@ -1,8 +1,8 @@
 module.exports = [
     {
-        name: 'Obsidian beginner\'s guide',
+        name: 'Obsidian Notes beginner\'s guide',
         url: '/beginners-guide-note-taking-obsidian/',
-        title: 'A beginner\'s guide to note-taking using Obsidian'
+        title: 'A beginner\'s guide to Obsidian note-taking'
     },
     {
         name: 'How I almost died',
