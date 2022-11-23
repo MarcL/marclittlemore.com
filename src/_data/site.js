@@ -23,5 +23,8 @@ module.exports = {
     name: 'Marc Littlemore',
     email: 'marc@marclittlemore.com'
   },
-  isDevelopmentBuild
+  isDevelopmentBuild,
+  rss: {
+    title: 'Marc Littlemore - latest articles'
+  }
 };

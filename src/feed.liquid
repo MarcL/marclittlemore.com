@@ -6,7 +6,7 @@ sitemap:
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.title }}</title>
+  <title>{{ site.rss.title }}</title>
   <link href="{{ page.url | prepend: site.url }}" rel="self"/>
   <link href="{{ site.url }}"/>
   <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
@@ -30,11 +30,7 @@ sitemap:
     <author>
       <name>{{site.author.name}}</name>
     </author>
-    {%- if post.data.excerpt -%}
-    <summary>{{post.data.excerpt | xmlEscape }}</summary>
-    {% else %}
-    <content type="html">{{ post.data.description | convertHtmlToAbsoluteUrls: absolutePostUrl | xmlEscape }}</content>
-    {% endif %}
+    <content type="html">{{ post.templateContent | convertHtmlToAbsoluteUrls: absolutePostUrl | xmlEscape }}</content>
   </entry>
   {%- endfor %}  
 </feed>
