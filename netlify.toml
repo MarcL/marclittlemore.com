@@ -30,3 +30,8 @@ path = "/newsletter/"
 [[edge_functions]]
 function = "replaceSignupQuery"
 path = "/about/"
+
+# Open Graph endpoint
+[[edge_functions]]
+function = "openGraph"
+path = "/og/"
