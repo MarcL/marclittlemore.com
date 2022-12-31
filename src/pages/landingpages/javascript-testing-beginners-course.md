@@ -11,7 +11,6 @@ landingpage:
     image: /images/landingpages/javascript-testing-for-beginners.jpg
     button:
         text: SEND ME THE FREE COURSE
-        icon: fa-envelope-o
     signup:
         title: "Sign up to get a **free 7-day beginners course**"
         uuid: "72d3502c470827973d3e8dd63"

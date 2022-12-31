@@ -10,7 +10,6 @@ landingpage:
     subtitle: "Unleash **JSON magic** in your Chatfuel chatbot without needing **a developer**"
     button:
         text: SEND ME THE FREE GUIDE
-        icon: fa-envelope-o
     signup:
         title: "Sign up now for your **FREE guide**"
         uuid: "72d3502c470827973d3e8dd63"
