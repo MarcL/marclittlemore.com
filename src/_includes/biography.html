@@ -23,7 +23,7 @@
                 <div class="block">
                     <a href="{{ bioItem.url }}" target="_blank" rel="noreferrer" title="{{ bioItem.title }}" alt="{{ bioItem.title }}" class="space-x-2">
                         {% if bioItem.icon %}
-                        <i class="fa {{bioItem.icon}}"></i>
+                        <span class="inline-block align-middle">{{bioItem.icon}}</span>
                         {% endif %}
                         <span>{{bioItem.title}}</span>
                     </a>

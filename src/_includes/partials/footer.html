@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-4">
       {% for column in footerMenu %}
       <div class="px-8 md:px-4 py-2 md:py-4">
-        <h4 class="font-extrabold text-lg text-white">{{column.name}}</h4>
+        <h4 class="font-extrabold text-lg text-white uppercase">{{column.name}}</h4>
         {% for link in column.links %}
               <a
                 href="{{ link.url }}"
@@ -18,21 +18,21 @@
     </div>
 
     <div class="max-w-screen-lg mx-auto py-4">
-      <div class="flex justify-center space-x-8 py-4">
+      <div class="flex flex-none items-center justify-center space-x-8 py-4 text-white">
         {% assign socialMediaKeys = socialMedia | keys %}
         {% for socialMediaKey in socialMediaKeys %}
             {% assign socialItem = socialMedia[socialMediaKey] %}
               <a
                 href="{{ socialItem.url }}"
                 title="{{ socialItem.title }}"
-                class="block rounded-md flex-none"
+                class="block transition ease-in-out hover:scale-110 w-10 h-10 text-white"
                 aria-label="{{socialItem.name}} icon"
                 rel="noreferrer noopener external me">
-                <i class="fa text-white hover:text-slate-500 {{socialItem.icon}} text-xl sm:text-3xl"></i>
+                {{socialItem.icon}}
               </a>
         {% endfor %}
       </div>
-      <div class="text-center font-semibold text-lg text-white">
+      <div class="text-center font-semibold text-lg text-white uppercase py-4">
         <div>
           Copyright &copy; 2007-{{"now" | date: "%Y"}}
         </div>
