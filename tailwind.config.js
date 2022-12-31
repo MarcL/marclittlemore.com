@@ -1,6 +1,7 @@
 module.exports = {
   content: [
     './src/**/*.{html,liquid,md,js}',
+    './_eleventy/**/*.js',
   ],
   theme: {
     extend: {},
