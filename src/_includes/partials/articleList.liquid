@@ -35,7 +35,7 @@
 {%- if article.data.icons -%}
 <div class="text-red-700 space-x-8 text-4xl flex justify-center">
 {%- for icon in article.data.icons -%}
-<i class="fa fa-{{icon}}"></i>
+{{icon}}
 {% endfor %}
 </div>
 {%- endif -%}
