@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-4">
       {% for column in footerMenu %}
       <div class="px-8 md:px-4 py-2 md:py-4">
-        <h4 class="font-extrabold text-lg text-white uppercase">{{column.name}}</h4>
+        <h3 class="font-extrabold text-lg text-white uppercase">{{column.name}}</h3>
         {% for link in column.links %}
               <a
                 href="{{ link.url }}"
