@@ -53,4 +53,8 @@
     {% endif %}
 
     {% include partials/social/facebookPixel.html %}
+
+    {%- if site.adverts.enabled -%}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{site.adverts.google.client}}" crossorigin="anonymous"></script>
+    {%- endif -%}
 </head>
