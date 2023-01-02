@@ -26,5 +26,11 @@ module.exports = {
   isDevelopmentBuild,
   rss: {
     title: 'Marc Littlemore - latest articles'
+  },
+  adverts: {
+    enabled: true,
+    google: {
+      client: 'ca-pub-5933342420580227',
+    }
   }
 };
