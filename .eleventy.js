@@ -59,6 +59,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({'src/images': 'images'});
     eleventyConfig.addPassthroughCopy({'src/favicons': 'favicons'});
     eleventyConfig.addPassthroughCopy({'src/robots.txt': 'robots.txt'});
+    eleventyConfig.addPassthroughCopy({'src/ads.txt': 'ads.txt'});
     eleventyConfig.addPassthroughCopy({'src/browserconfig.xml': 'browserconfig.xml'});
     eleventyConfig.addPassthroughCopy({'src/distjs/': 'js/'});
     eleventyConfig.addPassthroughCopy({'./_tmp/css/main.css': 'css/main.css'});
