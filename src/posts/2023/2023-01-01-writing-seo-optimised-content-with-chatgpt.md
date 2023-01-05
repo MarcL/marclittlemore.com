@@ -1,8 +1,8 @@
 ---
 title:  "ChatGPT: The Ultimate AI Assistant for SEO-Friendly Content Writing!"
-permalink: /writing-seo-optimised-content-using-chat-gpt/
+permalink: /writing-seo-friendly-content-using-chat-gpt/
 headerImage: /images/banners/seo-friendly-content-with-chat-gpt.jpg
-description: Needs a description here...
+description: Learn how to use ChatGPT and the power of AI to create SEO optimised content that helps you to bring more traffic to your website. Discover the art of AI prompt engineering and how it can help you to write SEO optimised content.
 tags:
     - development
 image:
@@ -11,7 +11,18 @@ image:
     url: https://unsplash.com/@retrosupply
 ---
 
-## Introduction
+You can't have been on the internet in late 2022 if you haven't heard about [ChatGPT](https://openai.com/blog/chatgpt/). When ChatGPT was released, the internet went crazy!
+
+**ChatGPT is a new Artificial Intelligence (AI) model than generates human-like text by using a [chatbot](/bots/) style interface from the team at [OpenAI](https://openai.com/). It seemed like everyone on Twitter was talking about it and so I started experimenting with it myself.**
+
+People have been using ChatGPT for all sorts of things like writing tweets, creating cover letters and resumes, and even writing blog posts. The results are so impressive that [Stack Overflow banned AI-generated answers](https://www.theverge.com/2022/12/5/23493932/chatgpt-ai-generated-answers-temporarily-banned-stack-overflow-llms-dangers) on their site.
+ 
+After playing around with ChatGPT for a few days, it got me thinking. I'd been trying to learn more about Search Engine Optimisation (SEO) for my website so could I use ChatGPT for SEO?
+
+The answers is a resounding "yes!"
+## What is ChatGPT and how can we use it for SEO?
+
+
 
 - Definition of SEO and its importance for website success
 
@@ -61,6 +72,10 @@ Use header tags and alt tags: Header tags (e.g., H1, H2) and alt tags (alternati
 
 - Researching keywords and using them effectively in your content
 
+Example:
+
+> I want you to act as an SEO website consultant. I will provide you with details related to an organization needing assistance creating blog posts for their website, and your role is to suggest ideas while also meeting the company’s business goals. You should use your knowledge of SEO to suggest keywords, topic clusters, and SEO-optimised paragraphs of text. My first request is “I need a blog post on chatbots.”
+
 ### Article outlines using ChatGPT
 
 - Creating useful, informative, and engaging content
@@ -82,3 +97,10 @@ Use header tags and alt tags: Header tags (e.g., H1, H2) and alt tags (alternati
 
 - Recap of the benefits of using ChatGPT for SEO content writing
 - Encouragement for readers to try ChatGPT and see the positive impact on their website's SEO and overall success.
+
+## Resources
+
+Here are some additional blog posts and articles which are useful for fine tuning your ChatGPT prompts:
+
+- [Best practices for ChatGPT prompt engineering](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
+- [An awesome collection of ChatGPT prompts](https://prompts.chat/) - [GitHub repo](https://github.com/f/awesome-chatgpt-prompts)
