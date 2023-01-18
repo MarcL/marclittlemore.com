@@ -18,22 +18,22 @@
     p-queue "^6.6.2"
     short-hash "^1.0.0"
 
-"@11ty/eleventy-dev-server@^1.0.0-canary.14":
-  version "1.0.0-canary.14"
-  resolved "https://registry.npmjs.org/@11ty/eleventy-dev-server/-/eleventy-dev-server-1.0.0-canary.14.tgz"
-  integrity sha512-yIPRZCEieqe7943P8h+xG60db/82yp10iOgd8IRKiobLhWw43xDJtro8QnjTF4A9gRkx7UmulwTPkGbD1Lt8xQ==
+"@11ty/eleventy-dev-server@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-dev-server/-/eleventy-dev-server-1.0.1.tgz#a2465d6244d1c117f4262a595cdce5cced7a597a"
+  integrity sha512-lTj9uAvXeArmdoEF1qpBbSq6h4ZgCe7DPhYrl1XcZxe10kpH/e9noajBT9EBzNOzKBcYvVAIin/IbhUMyyUy/g==
   dependencies:
-    "@11ty/eleventy-utils" "^1.0.0"
+    "@11ty/eleventy-utils" "^1.0.1"
     chokidar "^3.5.3"
-    debug "^4.3.3"
+    debug "^4.3.4"
     dev-ip "^1.0.1"
-    finalhandler "^1.1.2"
+    finalhandler "^1.2.0"
     mime "^3.0.0"
-    minimist "^1.2.6"
+    minimist "^1.2.7"
     morphdom "^2.6.1"
     please-upgrade-node "^3.2.0"
     ssri "^8.0.1"
-    ws "^8.5.0"
+    ws "^8.12.0"
 
 "@11ty/eleventy-fetch@^3.0.0":
   version "3.0.0"
@@ -73,20 +73,20 @@
     linkedom "^0.14.19"
     prismjs "^1.29.0"
 
-"@11ty/eleventy-utils@^1.0.0", "@11ty/eleventy-utils@^1.0.1":
+"@11ty/eleventy-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@11ty/eleventy-utils/-/eleventy-utils-1.0.1.tgz"
   integrity sha512-HPpCTz4PzudcQU+i+x6GSNHVqgnvRhnVYg5dLKaAoRWLN966odAGsBxKSyhF8i1MdlOPtsytYb2AGWP7jISC5w==
   dependencies:
     normalize-path "^3.0.0"
 
-"@11ty/eleventy@2.0.0-canary.23":
-  version "2.0.0-canary.23"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-2.0.0-canary.23.tgz#8f8303b49e17a70cea87033575b1b192cc9714d9"
-  integrity sha512-Vl8L/NjBvIgMusE3uBvWFCmUmiNw7OE6k1Dz9vRindqviJY9g77A8AFft7YEVPs7oVilzQFHVqtGeQigOrm6SA==
+"@11ty/eleventy@2.0.0-canary.33":
+  version "2.0.0-canary.33"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy/-/eleventy-2.0.0-canary.33.tgz#deaf017b1da679d5b198ff8db8f515af2d21e9c5"
+  integrity sha512-dILdQ7+cKPqC7SUd51h50APEomcnI4fetFCYISNcFpkSLLxX8/E+Hv6wzFml5PU8PgUmaIpF/0BJrC3n1ZhsOQ==
   dependencies:
     "@11ty/dependency-tree" "^2.0.1"
-    "@11ty/eleventy-dev-server" "^1.0.0-canary.14"
+    "@11ty/eleventy-dev-server" "^1.0.1"
     "@11ty/eleventy-utils" "^1.0.1"
     "@iarna/toml" "^2.2.5"
     "@sindresorhus/slugify" "^1.1.2"
@@ -104,11 +104,11 @@
     is-glob "^4.0.3"
     iso-639-1 "^2.1.15"
     kleur "^4.1.5"
-    liquidjs "^10.3.3"
+    liquidjs "^10.4.0"
     lodash.chunk "^4.2.0"
     lodash.get "^4.4.2"
     lodash.set "^4.3.2"
-    luxon "^3.1.1"
+    luxon "^3.2.1"
     markdown-it "^13.0.1"
     micromatch "^4.0.5"
     minimist "^1.2.7"
@@ -2424,9 +2424,9 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
-finalhandler@^1.1.2:
+finalhandler@^1.2.0:
   version "1.2.0"
-  resolved "https://registry.npmjs.org/finalhandler/-/finalhandler-1.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/finalhandler/-/finalhandler-1.2.0.tgz#7d23fe5731b207b4640e4fcd00aec1f9207a7b32"
   integrity sha512-5uXcUVftlQMFnWC9qu/svkWv3GTd2PfUhK/3PLkYNAe7FbqJMt3515HaxE6eRL74GdsriiwujiawdaB1BpEISg==
   dependencies:
     debug "2.6.9"
@@ -3541,10 +3541,10 @@ linkify-it@^4.0.1:
   dependencies:
     uc.micro "^1.0.1"
 
-liquidjs@^10.3.3:
-  version "10.3.3"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-10.3.3.tgz#4105d764130e6eedc9bb14d98dd8313330336648"
-  integrity sha512-o6s4rOn81x0FlF9SJEQEx3f/j3iL0Iq3zqOsbFEcsoi7Ivn6jEXBEi2Xl5k0oYc7KqYS54uGOa9XC4Ahk7zdFA==
+liquidjs@^10.4.0:
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-10.4.0.tgz#4993135c87a582389bccd3a4be2cabf044c01474"
+  integrity sha512-4fpR8KFJ96bXkzynK9Yo1jwn7sjOkJfKawSbEXINc39DZfy7r5SYtcAM5T/Ccg5n0xoZf6ap5Gap4VwFCJiQ1g==
 
 list-to-array@^1.1.0:
   version "1.1.0"
@@ -3698,10 +3698,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-luxon@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.1.1.tgz#b492c645b2474fb86f3bd3283213846b99c32c1e"
-  integrity sha512-Ah6DloGmvseB/pX1cAmjbFvyU/pKuwQMQqz7d0yvuDlVYLTs2WeDHQMpC8tGjm1da+BriHROW/OEIT/KfYg6xw==
+luxon@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.2.1.tgz#14f1af209188ad61212578ea7e3d518d18cee45f"
+  integrity sha512-QrwPArQCNLAKGO/C+ZIilgIuDnEnKx5QYODdDtbFaxzsbZcc/a7WFq7MhsVYgRlwawLtvOUESTlfJ+hc/USqPg==
 
 markdown-it-attrs@^4.1.0:
   version "4.1.4"
@@ -6096,7 +6096,12 @@ ws@^7.4.6:
   resolved "https://registry.npmjs.org/ws/-/ws-7.5.9.tgz"
   integrity sha512-F+P9Jil7UiSKSkppIiD94dN07AwvFixvLIj1Og1Rl9GGMuNipJnV9JzjD6XuqmAeiswGvUmNLjr5cFuXwNS77Q==
 
-ws@^8.5.0, ws@^8.9.0:
+ws@^8.12.0:
+  version "8.12.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.12.0.tgz#485074cc392689da78e1828a9ff23585e06cddd8"
+  integrity sha512-kU62emKIdKVeEIOIKVegvqpXMSTAMLJozpHZaJNDYqBjzlSYXQGviYwN1osDLJ9av68qHd4a2oSjd7yD4pacig==
+
+ws@^8.9.0:
   version "8.11.0"
   resolved "https://registry.npmjs.org/ws/-/ws-8.11.0.tgz"
   integrity sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==
