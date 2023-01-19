@@ -1,12 +1,12 @@
 require('dotenv').config();
 
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
 const embedYouTube = require('eleventy-plugin-youtube-embed');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
 const timeToRead = require('eleventy-plugin-time-to-read');
 const tableOfContents = require('eleventy-plugin-nesting-toc');
-const externalLinks = require("@aloskutov/eleventy-plugin-external-links")
+const externalLinks = require('@aloskutov/eleventy-plugin-external-links')
 
 const util = require('util');
 
