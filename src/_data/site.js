@@ -28,7 +28,7 @@ module.exports = {
     title: 'Marc Littlemore - latest articles'
   },
   adverts: {
-    enabled: true,
+    enabled: false,
     google: {
       client: 'ca-pub-5933342420580227',
     }
