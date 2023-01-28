@@ -1,46 +1,48 @@
+<section class="max-w-4xl not-prose">
 {%- for article in collection reversed -%}
-<article class="my-4 w-full">
+<article class="my-4 w-full text-slate-600 pb-4">
+    <div class="w-full px-6 md:px-1">
 
-<div class="w-full px-6 md:px-1">
-{% if article.url %}
-<a href="{{article.url}}" class="hover:bg-gray-400 w-full">
-    <h2 class="text-xl md:text-2xl text-gray-900 font-semibold pt-4 md:pt-0 pb-0">{{ article.data.title }}</h2>
-</a>
-{% else %}
-<h2 class="text-xl md:text-2xl text-gray-900 font-semibold pt-4 md:pt-0 pb-0">{{ article.data.title }}</h2>
-{% endif %}
+        {% if article.url %}
+            <a href="{{article.url}}" class="w-full">
+                <h2 class="text-xl md:text-3xl text-gray-900 font-semibold py-4 hover:underline hover:decoration-red-500 hover:underline-offset-4">{{ article.data.title }}</h2>
+            </a>
+        {% else %}
+            <h2 class="text-xl md:text-3xl text-gray-900 font-semibold py-4 hover:underline hover:decoration-red-500 hover:underline-offset-4">{{ article.data.title }}</h2>
+        {% endif %}
 
-<div class="w-full flex justify-center">
-{% if article.data.headerImage %}
-<a href="{{article.url}}" title="{{article.data.title}}" alt="{{article.data.title}}">
-{% image article.data.headerImage article.data.title "rounded-md shadow-lg w-full" %}
-</a>
-{% elsif article.data.gameImage %}
-<img src="{{article.data.gameImage}}" class="rounded-lg shadow-lg" alt="{{article.data.title}}">
-{% endif %}
-</div>
+    <div class="w-full flex justify-center">
+        {% if article.data.headerImage %}
+            <a href="{{article.url}}" title="{{article.data.title}}" alt="{{article.data.title}}" class="block pb-4">
+                {% image article.data.headerImage article.data.title "rounded-md shadow-md w-full" %}
+            </a>
+        {% elsif article.data.gameImage %}
+            <img src="{{article.data.gameImage}}" class="rounded-md shadow-md w-full" alt="{{article.data.title}}">
+        {% endif %}
+    </div>
 
-{% if article.data.subtitle %}
-<div class="text-lg md:text-xl italic leading-7">
-{{article.data.subtitle}}
-</div>
-{% endif %}
+    {% if article.data.subtitle %}
+    <div class="text-lg md:text-xl italic py-2 md:py-4 text-center">
+        {{article.data.subtitle}}
+    </div>
+    {% endif %}
 
-{% if article.data.description %}
-<div class="font-normal text-xl md:text-2xl">
-{{article.data.description | markdownify}}
-</div>
-{% endif %}
+    {% if article.data.description %}
+        <div class="font-normal text-xl md:text-2xl">
+            {{article.data.description | markdownify}}
+        </div>
+    {% endif %}
 
-{%- if article.data.icons -%}
-<div class="text-red-700 space-x-8 text-4xl flex justify-center">
-{%- for icon in article.data.icons -%}
-{{icon}}
-{% endfor %}
-</div>
-{%- endif -%}
+    {%- if article.data.icons -%}
+    <div class="text-red-700 space-x-8 text-4xl flex justify-center">
+    {%- for icon in article.data.icons -%}
+    {{icon}}
+    {% endfor %}
+    </div>
+    {%- endif -%}
 
-</div>
+    </div>
 
 </article>
 {%- endfor -%}
+</section>
