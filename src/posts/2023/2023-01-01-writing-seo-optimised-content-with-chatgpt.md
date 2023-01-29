@@ -74,7 +74,33 @@ Use header tags and alt tags: Header tags (e.g., H1, H2) and alt tags (alternati
 
 Example:
 
-> I want you to act as an SEO website consultant. I will provide you with details related to an organization needing assistance creating blog posts for their website, and your role is to suggest ideas while also meeting the company’s business goals. You should use your knowledge of SEO to suggest keywords, topic clusters, and SEO-optimised paragraphs of text. My first request is “I need a blog post on chatbots.”
+{% capture promptAnswer %}
+I want you to act as an SEO website consultant. I will provide you with details related to an organization needing assistance creating blog posts for their website, and your role is to suggest ideas while also meeting the company’s business goals. You should use your knowledge of SEO to suggest keywords, topic clusters, and SEO-optimised paragraphs of text. My first request is “I need a blog post on chatbots.”
+
+@@@
+
+Sure, I'd be happy to help. Here are some ideas for a blog post on chatbots:
+
+1. "The Future of Customer Service: How Chatbots are Revolutionizing the Industry" - This post could discuss the benefits of using chatbots for customer service, such as 24/7 availability, faster response times, and cost savings. It could also touch on the latest advancements in chatbot technology and how they're becoming more human-like in their interactions.
+
+* Keywords: chatbots, customer service, AI, automation
+* Topic Cluster: chatbots, customer service, AI, automation
+
+2. "5 Ways Chatbots Can Improve Your Business Operations" - This post could provide concrete examples of how chatbots can be used in various industries (e.g. e-commerce, healthcare, finance) to streamline processes and improve efficiency.
+Keywords: chatbots, business operations, automation, efficiency
+Topic Cluster: chatbots, business operations, automation, efficiency
+"Chatbot Best Practices: How to Create an Engaging and Effective AI Assistant" - This post could provide tips and guidelines for businesses that want to implement chatbots on their website. It could cover topics such as user experience design, natural language processing, and how to train chatbots to understand and respond to customer queries.
+
+* Keywords: chatbots, AI, user experience, natural language processing
+* Topic Cluster: chatbots, AI, user experience, natural language processing
+
+SEO-optimized Paragraph:
+
+"Chatbots have become increasingly popular in recent years as a way to provide quick and efficient customer service. By using natural language processing and machine learning, chatbots can understand and respond to customer queries in real-time, 24/7. This not only improves customer satisfaction but also allows businesses to automate certain processes and save on labor costs. When creating a chatbot for your business, it is important to focus on user experience design and training the chatbot to understand a wide range of customer queries. By following these chatbot best practices, you can create an engaging and effective AI assistant for your customers."
+{% endcapture %}
+
+{%- assign response = promptAnswer | chatgpt -%}
+{% include partials/chatgpt.html response: response %}
 
 ### Article outlines using ChatGPT
 

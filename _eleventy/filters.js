@@ -59,6 +59,16 @@ const limitCollection = (collection, limit) => {
     return collection.slice(0, limit);
 }
 
+const chatgptFilter = (content) => {
+    const parts = content.split('@@@')
+    const response = {
+        prompt: parts[0].trim(),
+        answer: parts[1].trim()
+    };
+
+    return response;
+};
+
 const addAll = (eleventyConfig) => {
     eleventyConfig.addFilter('getPostByPath', getPostByPath);
     eleventyConfig.addFilter('keys', object => Object.keys(object));
@@ -74,6 +84,9 @@ const addAll = (eleventyConfig) => {
     // Webmentions
     eleventyConfig.addFilter('webmentionsForUrl', webmentionsForUrl);
     eleventyConfig.addFilter('webmentionsSortedForUrl', webmentionsSortedByProperty);
+
+    // ChatGPT
+    eleventyConfig.addFilter('chatgpt', chatgptFilter);
 };
 
 module.exports = addAll;
