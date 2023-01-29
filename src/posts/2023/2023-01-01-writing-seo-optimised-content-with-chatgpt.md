@@ -100,7 +100,7 @@ SEO-optimized Paragraph:
 {% endcapture %}
 
 {%- assign response = promptAnswer | chatgpt -%}
-{% include partials/chatgpt.html response: response %}
+{% include partials/chatGpt.html response: response %}
 
 ### Article outlines using ChatGPT
 
