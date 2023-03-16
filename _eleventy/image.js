@@ -1,4 +1,5 @@
-const Image = require("@11ty/eleventy-img");
+const path = require('path');
+const Image = require('@11ty/eleventy-img');
 
 // Tailwind sizes
 const tailwindSizesPixels = {
@@ -28,7 +29,13 @@ const imageShortcode = async (src, alt, className = 'shadow-md', lazyLoad = true
             widths: tailwindPixelList,
             formats: ['webp', 'jpeg'],
             urlPath: '/images/generated/',
-            outputDir: './_site/images/generated/'
+            outputDir: './_site/images/generated/',
+            filenameFormat: (id, src, width, format) => {
+                const extension = path.extname(src);
+                const name = path.basename(src, extension);
+        
+                return `${name}-${width}w.${format}`;
+            }
         });
 
         if (!metadata) {
