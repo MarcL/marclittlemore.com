@@ -1,4 +1,5 @@
-const Image = require("@11ty/eleventy-img");
+const path = require('path');
+const Image = require('@11ty/eleventy-img');
 
 // Tailwind sizes
 const tailwindSizesPixels = {
@@ -11,7 +12,7 @@ const tailwindSizesPixels = {
 
 const tailwindPixelList = Object.keys(tailwindSizesPixels).map(key => tailwindSizesPixels[key]);
 
-const imageShortcode = async (src, alt, className = 'shadow-md') => {
+const imageShortcode = async (src, alt, className = 'shadow-md', lazyLoad = true) => {
     if (!src) {
         throw new Error(`Missing \`src\` on image`);
     }
@@ -28,7 +29,13 @@ const imageShortcode = async (src, alt, className = 'shadow-md') => {
             widths: tailwindPixelList,
             formats: ['webp', 'jpeg'],
             urlPath: '/images/generated/',
-            outputDir: './_site/images/generated/'
+            outputDir: './_site/images/generated/',
+            filenameFormat: (id, src, width, format) => {
+                const extension = path.extname(src);
+                const name = path.basename(src, extension);
+        
+                return `${name}-${width}w.${format}`;
+            }
         });
 
         if (!metadata) {
@@ -54,6 +61,13 @@ const imageShortcode = async (src, alt, className = 'shadow-md') => {
         >`;
     }).join('\n');
 
+    let imageAttributes = '';
+    if (lazyLoad) {
+        imageAttributes = 'loading="lazy" decoding="async"';
+    } else {
+        imageAttributes = 'fetchpriority="high"';
+    }
+
     const pictureHtml = `<picture class="${className}">
         ${sources}
         <img
@@ -62,10 +76,7 @@ const imageShortcode = async (src, alt, className = 'shadow-md') => {
             width="${highestResolutionJpeg.width}"
             height="${highestResolutionJpeg.height}"
             alt="${alt}"
-            loading="lazy"
-            decoding="async"
-        />
-    </picture>`;
+            ${imageAttributes}/></picture>`;
 
     return pictureHtml;
 };
