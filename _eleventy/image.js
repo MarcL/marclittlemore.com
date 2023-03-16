@@ -11,7 +11,7 @@ const tailwindSizesPixels = {
 
 const tailwindPixelList = Object.keys(tailwindSizesPixels).map(key => tailwindSizesPixels[key]);
 
-const imageShortcode = async (src, alt, className = 'shadow-md') => {
+const imageShortcode = async (src, alt, className = 'shadow-md', lazyLoad = true) => {
     if (!src) {
         throw new Error(`Missing \`src\` on image`);
     }
@@ -54,6 +54,13 @@ const imageShortcode = async (src, alt, className = 'shadow-md') => {
         >`;
     }).join('\n');
 
+    let imageAttributes = '';
+    if (lazyLoad) {
+        imageAttributes = 'loading="lazy" decoding="async"';
+    } else {
+        imageAttributes = 'fetchpriority="high"';
+    }
+
     const pictureHtml = `<picture class="${className}">
         ${sources}
         <img
@@ -62,10 +69,7 @@ const imageShortcode = async (src, alt, className = 'shadow-md') => {
             width="${highestResolutionJpeg.width}"
             height="${highestResolutionJpeg.height}"
             alt="${alt}"
-            loading="lazy"
-            decoding="async"
-        />
-    </picture>`;
+            ${imageAttributes}/></picture>`;
 
     return pictureHtml;
 };

@@ -16,9 +16,9 @@
     <figure>
       {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
       {% if headerImage %}
-        {% image headerImage imageTitle "rounded-lg shadow-lg" %}
+        {% image headerImage imageTitle "rounded-lg shadow-lg" false %}
       {% else %}
-        {% image site.headerImage imageTitle "rounded-lg shadow-lg" %}
+        {% image site.headerImage imageTitle "rounded-lg shadow-lg" false %}
       {% endif %}
 
       {% if image %}
