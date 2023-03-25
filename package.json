@@ -41,16 +41,16 @@
     "xml2js": "^0.4.23"
   },
   "scripts": {
-    "build": "NODE_ENV=production ELEVENTY_ENV=production yarn build:all && yarn links:internal",
-    "build:all": "yarn build:css && yarn build:js && yarn build:site",
+    "build": "NODE_ENV=production ELEVENTY_ENV=production npm run build:all && npm run links:internal",
+    "build:all": "npm run build:css && npm run build:js && npm run build:site",
     "build:css": "postcss src/css/main.css -o _tmp/css/main.css",
     "build:css:watch": "npm run build:css -- --watch",
     "build:site": "eleventy",
     "build:js": "parcel build src/clientjs/index.js --dist-dir src/distjs",
-    "dev": "npx @11ty/eleventy --quiet --watch & yarn build:css:watch",
+    "dev": "npx @11ty/eleventy --quiet --watch & npm run build:css:watch",
     "links:internal": "hyperlink -ri --root _site --canonicalroot https://marclittlemore.com/ --skip '/.netlify/functions' _site/*.html | tap-spot",
     "links:external": "hyperlink -r --root _site --canonicalroot https://marclittlemore.com/ --skip '/.netlify/functions' _site/*.html | tap-spot",
-    "serve": "yarn serve:js & ELEVENTY_ENV=dev eleventy --serve & yarn build:css:watch",
+    "serve": "npm run serve:js & ELEVENTY_ENV=dev eleventy --serve & npm run build:css:watch",
     "serve:js": "parcel watch src/clientjs/index.js"
   },
   "app": "src/distjs/bundle.js",
