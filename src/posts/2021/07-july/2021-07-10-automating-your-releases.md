@@ -1,8 +1,9 @@
 ---
-title:  "Automating your releases with semantic-release and GitLab"
+title:  "Streamline Your Workflow: Automate GitLab Releases with Semantic-Release"
+subtitle: "Maximise Your Development Time: Learn How to Automate GitLab Releases with Semantic-Release"
 permalink: /automating-your-releases-with-semantic-release-and-gitlab/
 headerImage: /images/banners/automating-your-releases-with-semantic-release-and-gitlab.jpg
-description: Releasing a new version of your application can easily be automated. Let's look at how we can use semantic-release and GitLab to make this process quick and simple.
+description: "Revolutionise your GitLab workflow with automated releases. Discover how to use semantic-release for seamless deployment."
 tags:
     - development
 image:

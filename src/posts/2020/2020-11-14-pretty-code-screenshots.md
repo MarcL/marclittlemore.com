@@ -1,9 +1,9 @@
 ---
-title:  "Create pretty code screenshots"
-subtitle: "Learn how to make pretty code screenshots and impress your developer friends on Twitter!"
+title:  "Visualise your code in style with pretty screenshots"
+subtitle: "The Power of Visuals: How Pretty Code Screenshots Can Make Your Code Shine"
 permalink: /create-pretty-code-screenshots/
 headerImage: /images/banners/create-pretty-code-screenshots.png
-description: "Want to share pretty code screenshots with your developer friends on Twitter? Read on to find out how."
+description: "Enhance your online portfolio with pretty code screenshots. Learn how to create eye-catching visuals that stand out."
 tags:
     - learning
 ---
