@@ -1,9 +1,9 @@
 [dev]
 framework = "#static"
-command = "yarn dev"
+command = "npm run dev"
 
 [build]
-command = "yarn build"
+command = "npm run build"
 publish = "_site"
 
 # Edge functions
