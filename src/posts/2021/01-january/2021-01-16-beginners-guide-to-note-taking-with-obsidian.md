@@ -1,9 +1,9 @@
 ---
 title:  "A beginner's guide to using the Obsidian Notes application"
-subtitle: "Learn to build your second brain using the Obsidian Notes application"
+subtitle: "Discover the Power of Obsidian Notes for Writing, Planning and Productivity"
 permalink: /beginners-guide-note-taking-obsidian/
 headerImage: /images/banners/second-brain-note-taking-obsidian.jpg
-description: "Obsidian Notes is a tool the helps you to create a knowledge graph of linked notes. It uses the simple markdown format and stores your Obsidian notes locally rather than in the cloud."
+description: "Learn how to use the Obsidian Notes app with this simple beginner's guide. Improve your note-taking and productivity."
 tags:
     - writing
 image:

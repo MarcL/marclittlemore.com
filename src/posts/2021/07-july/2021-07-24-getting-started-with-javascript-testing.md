@@ -1,8 +1,8 @@
 ---
-title:  "Getting Started With JavaScript Testing"
+title:  "Improving Your Workflow with JavaScript Testing: Best Practices"
 permalink: /javascript-testing/getting-started-with-javascript-testing/
 headerImage: /images/banners/getting-started-with-javascript-testing.jpg
-description: It's easy to be overwhelmed when you start writing tests for your JavaScript code. You want to test everything but don't know where to start. Here are some ideas for what to focus on first.
+description: "Improve your coding skills with tips and best practices for writing effective JavaScript tests."
 tags:
     - javascript-testing
 image:

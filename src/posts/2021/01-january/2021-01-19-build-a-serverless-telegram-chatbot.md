@@ -1,8 +1,8 @@
 ---
-title:  "Build a serverless Telegram chatbot deployed using Vercel"
+title:  "Create a serverless chatbot for Telegram using Vercel - the ultimate guide"
 permalink: /serverless-telegram-chatbot-vercel/
 headerImage: /images/banners/telegram-chatbot.jpg
-description: "Serverless functions are a perfect compliment to event driven chatbots. Let's see how we can quickly deploy a Telegram bot using Vercel"
+description: "Learn how to build a Telegram chatbot using Vercel serverless functions. Deploy your chatbot to the cloud and automate your messaging with ease."
 tags:
     - chatbots
 # From the independent
