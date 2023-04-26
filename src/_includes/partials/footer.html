@@ -1,14 +1,14 @@
-<footer class="bg-gradient-to-b from-gray-700 to-gray-900">
+<footer class="{{theme.page.footer.background}}">
   <div class="max-w-screen-lg mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-4">
       {% for column in footerMenu %}
       <div class="px-8 md:px-4 py-2 md:py-4">
-        <h3 class="font-extrabold text-lg text-white uppercase">{{column.name}}</h3>
+        <h3 class="font-extrabold text-lg {{theme.page.footer.column.title}} uppercase">{{column.name}}</h3>
         {% for link in column.links %}
               <a
                 href="{{ link.url }}"
                 title="{{ link.title }}"
-                class="block hover:underline hover:text-slate-200 rounded-md text-slate-100"
+                class="block {{theme.page.footer.column.content}} rounded-md"
                 aria-label="{{link.name}}">
                   {{link.name}}
               </a>
@@ -18,21 +18,21 @@
     </div>
 
     <div class="max-w-screen-lg mx-auto py-4">
-      <div class="flex flex-none items-center justify-center space-x-8 py-4 text-white">
+      <div class="flex flex-none items-center justify-center space-x-8 py-4 {{theme.page.footer.icon.main}}">
         {% assign socialMediaKeys = socialMedia | keys %}
         {% for socialMediaKey in socialMediaKeys %}
             {% assign socialItem = socialMedia[socialMediaKey] %}
               <a
                 href="{{ socialItem.url }}"
                 title="{{ socialItem.title }}"
-                class="block transition ease-in-out hover:scale-110 w-10 h-10 text-white"
+                class="block transition ease-in-out hover:scale-110 w-10 h-10 {{theme.page.footer.icon.main}}"
                 aria-label="{{socialItem.name}} icon"
                 rel="noreferrer noopener external me">
                 {{socialItem.icon}}
               </a>
         {% endfor %}
       </div>
-      <div class="text-center font-semibold text-lg text-white uppercase py-4">
+      <div class="{{theme.page.footer.copyright.main}} text-center font-semibold text-lg uppercase py-4">
         <div>
           Copyright &copy; 2007-{{"now" | date: "%Y"}}
         </div>
