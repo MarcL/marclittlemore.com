@@ -72,5 +72,18 @@ module.exports = {
             content: 'text-gray-500',
             link: 'underline hover:text-red-700'
         }
+    },
+    contact: {
+        background: 'bg-white',
+        text: {
+            label: 'text-gray-700'
+        },
+        button: {
+            background: 'bg-red-600',
+            text: 'hover:bg-red-700 text-white font-bold'
+        },
+        input: {
+            background: 'border-gray-300 focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50'
+        }
     }
 };

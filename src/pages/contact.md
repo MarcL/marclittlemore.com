@@ -15,21 +15,21 @@ As a writer, I love hearing from my readers. Your feedback, comments, and ideas 
 
 The easiest and quickest way to get in touch with me is by filling out the contact form below. Just enter your name, email address, and message, and I'll get back to you as soon as possible.
 
-<form id="contact-form" class="" method="POST" action="/contact/thanks/" subject="Contact form" data-netlify="true">
+<form id="contact-form" class="{{theme.contact.background}}" method="POST" action="/contact/thanks/" subject="Contact form" data-netlify="true">
   <div class="mt8 w-full space-y-8">
     <label class="block">
-      <span class="text-gray-700">Email address (so I can email you back)</span>
-      <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" id="emailAddresss" name="email" placeholder="Enter your email address">
+      <span class="{{theme.contact.text.label}}">Email address (so I can email you back)</span>
+      <input type="email" class="mt-1 block w-full shadow-sm rounded-md {{theme.contact.input.background}}" id="emailAddresss" name="email" placeholder="Enter your email address">
     </label>
     <label class="block">
-      <span class="text-gray-700">What's up?</span>
-      <textarea class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" rows="3" spellcheck="false" placeholder="Ask me anything..." name="message" id="message"></textarea>
+      <span class="{{theme.contact.text.label}}">What's up?</span>
+      <textarea class="mt-1 block w-full rounded-md shadow-sm {{theme.contact.input.background}}" rows="3" spellcheck="false" placeholder="Ask me anything..." name="message" id="message"></textarea>
     </label>
   
   </div>
   <input type="hidden" name="_subject" value="Website contact" />
   <div class="flex flex-col justify-center items-center">
-    <button type="submit" class="mt-8 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-8 rounded w-full lg:w-1/2">Get in touch</button>
+    <button type="submit" class="mt-8 {{theme.contact.button.background}} {{theme.contact.button.text}} py-2 px-8 rounded w-full lg:w-1/2 uppercase">Get in touch</button>
   </div>
 </form>
 
