@@ -47,5 +47,30 @@ module.exports = {
                 main: 'text-white'
             }
         }
+    },
+    article: {
+        text: {
+            title: 'text-gray-900 font-semibold',
+            content: 'text-slate-600',
+            hover: 'hover:decoration-red-500 hover:underline hover:decoration-red-500 hover:underline-offset-4'
+        },
+        icons: {
+            main: 'text-red-700'
+        }
+    },
+    bookshelf: {
+        text: {
+            title: 'text-gray-900',
+            author: 'text-gray-600',
+            content: 'text-gray-600',
+            star: 'text-amber-400'
+        }
+    },
+    card: {
+        background: 'bg-white',
+        text: {
+            content: 'text-gray-500',
+            link: 'underline hover:text-red-700'
+        }
     }
 };
