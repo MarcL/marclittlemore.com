@@ -1,9 +1,10 @@
 module.exports = {
     page: {
+        font: 'font-sans antialiased',
         background: 'bg-white',
         text: {
             title: 'text-gray-900',
-            subtitle: 'text-gray-900',
+            subtitle: 'text-gray-600',
             content: 'text-gray-800',
         },
         sectionDark: {
@@ -18,6 +19,12 @@ module.exports = {
             text: {
                 title: 'text-gray-800',
             }
+        },
+        metadata: {
+            text: 'text-slate-700'
+        },
+        tableOfContents: {
+            background: 'bg-blue-50 border-blue-100',
         }
     }
 };
