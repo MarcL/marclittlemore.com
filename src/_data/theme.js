@@ -91,5 +91,44 @@ module.exports = {
         input: {
             background: 'border-slate-300 focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50'
         }
+    },
+    landingpage: {
+        background: 'bg-white',
+        header: {
+            background: 'bg-slate-200',
+        },
+        text: {
+            title: 'text-slate-700'
+        },
+        form: {
+            button: 'bg-red-600 hover:bg-red-800 text-white font-bold',
+            text: {
+                title: 'text-slate-800 font-semibold',
+                content: 'text-slate-600'
+            },
+            input: {
+                background: 'border-slate-300 focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50'
+            }
+        }
+    },
+    confirmationPage: {
+        background: 'bg-slate-200',
+        card: {
+            background: 'bg-white',
+            text: {
+                title: 'text-slate-900 font-bold',
+                subtitle: 'text-slate-600 font-semibold',
+                timer: 'text-slate-800 font-extrabold'
+            },
+            timer: {
+                background: 'bg-red-100',
+                main: 'bg-red-600'
+            },
+            step: {
+                completed: 'bg-slate-200 text-slate-600',
+                selected: 'bg-white text-slate-600',
+                icon: 'fill-red-600'
+            }
+        }
     }
 };
