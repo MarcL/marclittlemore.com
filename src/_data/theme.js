@@ -58,7 +58,7 @@ module.exports = {
             main: 'text-red-700'
         },
         image: {
-            hover: 'hover:hue-rotate-30'
+            hover: 'hover:grayscale'
         }
     },
     bookshelf: {
@@ -75,8 +75,8 @@ module.exports = {
             content: 'text-slate-600',
             link: 'underline hover:text-red-700'
         },
-        hover: {
-            image: 'hover:hue-rotate-30'
+        image: {
+            hover: 'hover:grayscale'
         }
     },
     contact: {
