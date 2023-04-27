@@ -1,5 +1,5 @@
 <div id="signup-form" class="bg-white shadow-none md:shadow-xl rounded-sm px-8 py-8 flex flex-col justify-center items-center">
-    <h3 class="font-semibold text-2xl text-gray-800 mb-8 text-center">
+    <h3 class="{{theme.landingpage.form.text.title}} text-2xl mb-8 text-center">
         {{landingpage.signup.title | markdownify}}
     </h3>
 
@@ -9,13 +9,13 @@
         </div>
 
         <div class="w-full flex flex-col justify-center space-y-4">
-            <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="FNAME" type="text" placeholder="First name" required />
-            <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="EMAIL" type="email" placeholder="Email address" required />
-            <button type="submit" class="mt-8 bg-blue-600 hover:bg-blue-800 text-white font-bold text-xl py-4 px-8 rounded space-x-4">
+            <input class="{{theme.landingpage.form.input.background}} mt-1 block w-full rounded-md shadow-sm" name="FNAME" type="text" placeholder="First name" required />
+            <input class="{{theme.landingpage.form.input.background}} mt-1 block w-full rounded-md shadow-sm" name="EMAIL" type="email" placeholder="Email address" required />
+            <button type="submit" class="mt-8 {{theme.landingpage.form.button}} text-xl py-4 px-8 rounded space-x-4">
                 <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-8 h-8 fill-current" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
                 <span>{{ landingpage.button.text }}</span>
             </button>
-            <div class="text-gray-500 italic text-base space-x-2">
+            <div class="{{theme.landingpage.form.text.content}} italic text-base space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 fill-current" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>
                 <span>I hate spam as much as you do: your email address will <strong>never</strong> be shared.</span>
             </div>

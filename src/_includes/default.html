@@ -7,7 +7,7 @@ scripts:
 
 {% include partials/head.html %}
 
-<body class="bg-white font-sans text-gray-500 antialiased">
+<body class="{{theme.page.background}} {{theme.page.text.content}} {{theme.page.font}}">
     {%- include partials/social/facebookSDK.html -%}
     <div class="mx-auto px-4 max-w-screen-xl">
         {% include partials/nav.html %}

@@ -6,22 +6,22 @@
 
 {% include partials/head.html %}
 
-<body class="max-w-screen-md mx-auto font-sans bg-slate-600 antialiased">
+<body class="{{theme.biography.background}} max-w-screen-md mx-auto">
     <div class="flex flex-col justify-center items-center space-y-10 px-2 pb-10">
         <div class="flex flex-col justify-center items-center pt-8">
             <a href="/" target="_blank" rel="noreferrer" title="Marc Littlemore" alt="Marc Littlemore" class="">
                 <img src="/images/me/marc-littlemore-512x512.jpg" class="shadow-lg rounded-full w-36 h-3w-36" alt="avatar">
             </a>
-            <h1 class="text-2xl font-semibold text-white py-4 uppercase">
+            <h1 class="{{theme.biography.text.title}} text-2xl font-semibold py-4 uppercase">
                 <a href="/" title="Marc Littlemore" alt="Marc Littlemore" class="hover:underline">Marc Littlemore</a>
             </h1>
         </div>
 
         <div class="text-xl font-medium text-center space-y-8 w-full md:w-2/3">
             {% for bioItem in biography %}
-            <article class="bg-white px-8 py-4 rounded-md shadow-lg hover:bg-slate-300">
+            <article class="{{theme.biography.card.background}} px-8 py-4 rounded-md shadow-lg">
                 <div class="block">
-                    <a href="{{ bioItem.url }}" target="_blank" rel="noreferrer" title="{{ bioItem.title }}" alt="{{ bioItem.title }}" class="space-x-2">
+                    <a href="{{ bioItem.url }}" target="_blank" rel="noreferrer" title="{{ bioItem.title }}" alt="{{ bioItem.title }}" class="{{theme.biography.card.text.main}} space-x-2">
                         {% if bioItem.icon %}
                         <span class="inline-block align-middle">{{bioItem.icon}}</span>
                         {% endif %}

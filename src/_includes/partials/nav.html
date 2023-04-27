@@ -1,17 +1,17 @@
 <header class="mx-auto text-xl uppercase">
-    <nav class="text-gray-900 space-x-4 text-center hidden md:flex justify-center py-8" id="navLinksWeb">
+    <nav class="{{theme.page.navigation.text.main}} space-x-4 text-center hidden md:flex justify-center py-8" id="navLinksWeb">
         <div class="space-x-4 lg:space-x-8 items-center">
             {% for menuItem in navigationMenu %}
                 {% if page.url contains menuItem.url and
                     menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
-                    <a class="border-b-4 border-red-500 py-1 font-semibold" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                    <a class="{{theme.page.navigation.text.selected}} py-1 font-semibold" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
                 {% else %}
-                    <a class="font-medium border-b-4 border-white py-1 hover:border-red-500" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                    <a class="font-medium border-b-4 {{theme.page.navigation.text.hover}} py-1" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
                 {% endif %}
             {% endfor %}
         </div>
     </nav>
-    <nav class="text-gray-900 space-x-4 pb-0 text-center block md:hidden" id="navLinksMobile">
+    <nav class="{{theme.page.navigation.text.main}} space-x-4 pb-0 text-center block md:hidden" id="navLinksMobile">
         <div class="flex flex-col justify-center items-center">
             <div class="w-10 py-4" aria-hidden="true" id="displayNavButton">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
@@ -20,9 +20,9 @@
             {% for menuItem in navigationMenu %}
                 {% if page.url contains menuItem.url and
                     menuItem.url != "/" or page.url == "/" and menuItem.url == "/" or tags contains menuItem.tag %}        
-                    <a class="w-28 border-b-4 border-red-500 py-1 font-semibold" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                    <a class="w-28 {{theme.page.navigation.text.selected}} py-1 font-semibold" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
                 {% else %}
-                    <a class="w-28 inline-block font-medium border-b-4 border-white py-1 hover:border-red-500 hover:text-gray-500" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
+                    <a class="w-28 inline-block font-medium border-b-4 {{theme.page.navigation.text.hover}} py-1" href="{{ menuItem.url }}" title="{{ menuItem.title }}">{{ menuItem.name }}</a>
                 {% endif %}
             {% endfor %}
             </div>

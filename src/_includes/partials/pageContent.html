@@ -1,6 +1,6 @@
 <main id="main-content" class="flex flex-col justify-center items-center max-w-screen-lg mx-auto pt-4 pb-8">
   <div class="text-center">
-      <h1 class="font-bold text-5xl text-gray-900 py-4">
+      <h1 class="{{theme.page.text.title}} font-bold text-5xl py-4">
         {% if title %}
           {{ title }}
         {% else %}
@@ -8,7 +8,7 @@
         {% endif %}
       </h1>
       {% if subtitle %}
-        <h2 class="font-normal text-3xl text-gray-600 pb-4">{{ subtitle }}</h2>
+        <h2 class="{{theme.page.text.subtitle}} font-normal text-3xl pb-4">{{ subtitle }}</h2>
       {% endif %}
   </div>
 
@@ -30,7 +30,7 @@
   </div>
 
   {% if tags contains 'post' %}
-  <div class="text-slate-700 font-sm py-4 w-full mx-auto max-w-lg text-center space-y-2">
+  <div class="{{theme.page.metadata.text}} font-sm py-4 w-full mx-auto max-w-lg text-center space-y-2">
     <div class="text-lg md:text-xl font-medium space-x-1">
       {% if author and author.name %}
       <div>By {{author.name}}</div>
@@ -55,7 +55,7 @@
   {% if tableOfContents %}
   {% assign tocContents = content | toc %}
   {% if tocContents != ""  %}
-  <div class="w-full mx-auto bg-blue-50 text-lg border border-blue-100 shadow-sm prose prose-xl rounded-md prose-li:list-disc prose-a:underline my-0 lg:my-8">
+  <div class="w-full mx-auto {{theme.page.tableOfContents.background}} text-lg border shadow-sm prose prose-xl rounded-md prose-li:list-disc prose-a:underline my-0 lg:my-8">
     <div class="p-4 space-x-2 text-xl font-semibold">
       <svg class="h-6 w-6 inline" viewBox="0 0 512 512"><path d="M88 56H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16V72a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm416 24H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8zm0-320H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8V88a8 8 0 00-8-8zm0 160H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8z"></path></svg>
       <span>What's in this article?</span>

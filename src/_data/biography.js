@@ -1,5 +1,6 @@
 const site = require('./site');
-const svgClass = 'fill-slate-800 hover:fill-slate-600 w-6 h-6';
+const theme = require('./theme');
+const svgClass = `${theme.biography.card.icon} w-6 h-6`;
 
 module.exports = [
   {

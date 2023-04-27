@@ -8,23 +8,19 @@ scripts:
 
 {% include partials/head.html %}
 
-<body class="bg-white font-sans text-gray-500 antialiased">
+<body class="{{theme.page.background}} {{theme.page.text.content}} {{theme.page.font}}">
 
 {%- include partials/social/facebookSDK.html -%}
 
-<div class="bg-gray-200 pb-4 sm:pb-32">
+<div class="{{theme.landingpage.header.background}} pb-4 sm:pb-32">
     <div class="container mx-auto px-4 max-w-screen-md">
         <div class="relative">
             <section class="flex flex-col md:flex-row justify-center items-center py-0 md:py-8">
                 <div class="px-4 py-4 w-full md:w-7/12">
-                    <h1 class="text-4xl text-gray-700 text-center sm:text-left">{{ landingpage.subtitle | markdownify}}</h1>
+                    <h1 class="{{theme.landingpage.text.title}} text-4xl text-center sm:text-left">{{ landingpage.subtitle | markdownify}}</h1>
                 </div>
                 <div class="py-4 w-full md:w-5/12">
-                    {% if landingpage.image %}
-                        <img src="{{landingpage.image}}" class="w-full object-fill h-3/4 shadow-lg">
-                    {% else %}
-                        <h1 class="f1 mb2">{{ landingpage.title }}</h1>
-                    {% endif %}
+                    <img src="{{landingpage.image}}" class="w-full object-fill h-3/4 shadow-lg">
                 </div>
             </section>
         </div>
@@ -36,20 +32,17 @@ scripts:
     </section>
 </div>
 
-<div class=" bg-white">
+<div class="{{theme.landingpage.background}}">
+    <section class="container mx-auto px-4 py-16 max-w-screen-md prose prose-2xl flex flex-col items-center">
+        {{content}}
 
-<section class="container mx-auto px-4 py-16 max-w-screen-md prose prose-2xl flex flex-col items-center">
-    {{content}}
-
-    <a href="#signup-form">
-        <button class="mt-8 bg-blue-600 hover:bg-blue-800 text-white font-bold text-2xl py-4 px-8 rounded space-x-4">
-            {% if landingpage.button.icon %}<i class="fa {{landingpage.button.icon}}"></i>{% endif %}&nbsp;&nbsp;{{ landingpage.button.text }}
-        </button>
-    </a>
-</section>
+        <a href="#signup-form">
+            <button class="{{theme.landingpage.form.button}} mt-8 text-2xl py-4 px-8 rounded space-x-4">
+                {% if landingpage.button.icon %}<i class="fa {{landingpage.button.icon}}"></i>{% endif %}&nbsp;&nbsp;{{ landingpage.button.text }}
+            </button>
+        </a>
+    </section>
 </div>
-
-<div class="bg-near-white pt4 bt bw1 b--light-gray relative"></div>
 
 </body>
 </html>

@@ -7,7 +7,7 @@ scripts:
 
 {% include partials/head.html %}
 
-<body class="bg-white font-sans text-gray-500 antialiased">
+<body class="{{theme.page.background}} {{theme.page.text.content}} {{theme.page.font}}">
     <div class="container mx-auto px-4">
 
         {% include partials/nav.html %}
@@ -18,7 +18,7 @@ scripts:
             <section class="flex flex-col flex-wrap items-center">
                 <div class="mb-0 sm:mb-8 max-w-screen-lg bg-white grid grid-cols-1 sm:grid-cols-2 items-center content-center">
                     <div class="w-full sm:w-5/6 px-0 sm:px-8">
-                        <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 text-center sm:text-left">
+                        <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight {{theme.page.text.title}} text-center sm:text-left">
                             {{subtitle}}
                         </h1>
                     </div>
@@ -28,7 +28,7 @@ scripts:
                 </div>
         
                 <section id="main-content" class="max-w-screen-lg mx-auto py-8">
-                    <div class="text-gray-800 space-y-10 prose prose-2xl">
+                    <div class="{{theme.page.text.content}} space-y-10 prose prose-2xl">
                         {{content}}
                     </div>
                 </section>
@@ -36,9 +36,9 @@ scripts:
         </main>
     </div>
 
-    <div class="bg-gray-700 text-gray-800 py-8">
+    <div class="{{theme.page.sectionDark.background}} py-8">
         <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
-            <h2 class="text-white text-3xl sm:text-4xl font-bold pb-4 sm:pb-8 uppercase">Latest posts</h2>
+            <h2 class="{{theme.page.sectionDark.text.title}} text-3xl sm:text-4xl font-bold pb-4 sm:pb-8 uppercase">Latest posts</h2>
             <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
                 {% assign latestPosts = collections.post | reverse %}
                 {% for post in latestPosts limit: 2 %}
@@ -46,7 +46,7 @@ scripts:
                 {% endfor %}
             </div>
             <div class="py-2 sm:py-4">
-                <a href="/articles/" title="See all articles" alt="See all articles" class="text-white font-medium text-xl sm:text-2xl uppercase hover:text-gray-200 hover:underline">
+                <a href="/articles/" title="See all articles" alt="See all articles" class="{{theme.page.sectionDark.text.link}} font-medium text-xl sm:text-2xl uppercase">
                     See all articles
                 </a>
             </div>
@@ -58,9 +58,9 @@ scripts:
     </section>
         
 
-    <div class="bg-gray-100 text-gray-800 py-8">
+    <div class="{{theme.page.sectionLight.background}} py-8">
         <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
-            <h2 class="text-gray-800 text-3xl sm:text-4xl font-bold pb-4 sm:pb-8 uppercase">Featured</h2>
+            <h2 class="{{theme.page.sectionLight.text.title}} text-3xl sm:text-4xl font-bold pb-4 sm:pb-8 uppercase">Featured</h2>
             <div class="container max-w-screen-lg mx-auto px-4 flex flex-row flex-wrap justify-center">
                 {% for path in featured %}
                     {% assign cardPost = collections.all | getPostByPath: path %}

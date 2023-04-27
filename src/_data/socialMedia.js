@@ -1,4 +1,5 @@
-const svgClass = 'fill-white hover:fill-blue-500';
+const theme = require('./theme');
+const svgClass = theme.page.footer.icon.fill;
 
 module.exports = {
   feed:   {
