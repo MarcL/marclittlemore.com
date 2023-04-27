@@ -6,7 +6,7 @@
         {%- endif -%}
         {%- if url -%}
         <div class="col-span-1">
-            <a class="hover:underline" href="{{url}}" title="Explore more">Explore more &rarr;</a>
+            <a class="{{theme.card.text.link}}" href="{{url}}" title="Explore more">Explore more &rarr;</a>
         </div>
         {%- endif -%}
     </div>
@@ -26,8 +26,8 @@
                 {% image article.data.headerImage article.data.title "rounded-md object-cover h-32" %}
                 {%- endif -%}
                 <div class="px-0 lg:px-2">
-                    <h4 class="group-hover:underline">{{article.data.title}}</h4>
-                    <p class="text-slate-600">{{article.data.description}}</p>
+                    <h4 class="{{theme.card.text.groupLink}}">{{article.data.title}}</h4>
+                    <p class="{{theme.card.text.content}}">{{article.data.description}}</p>
                 </div>
             </div>
             </a>

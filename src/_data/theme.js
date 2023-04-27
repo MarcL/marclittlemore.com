@@ -73,7 +73,8 @@ module.exports = {
         background: 'bg-white',
         text: {
             content: 'text-slate-600',
-            link: 'underline hover:text-red-700'
+            link: 'underline hover:text-red-700',
+            groupLink: 'group-hover:underline group-hover:text-red-700'
         },
         image: {
             hover: 'hover:grayscale'
@@ -143,5 +144,12 @@ module.exports = {
             },
             icon: 'fill-slate-800 hover:fill-slate-600'
         }
+    },
+    authorCard: {
+        background: 'bg-blue-50 border border-blue-100',
+        text: {
+            main: 'text-slate-600'
+        },
+        image: 'bg-white'
     }
 };
