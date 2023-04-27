@@ -130,5 +130,18 @@ module.exports = {
                 icon: 'fill-red-600'
             }
         }
+    },
+    biography: {
+        background: 'bg-slate-600 font-sans antialiased',
+        text: {
+            title: 'text-white'
+        },
+        card: {
+            background: 'bg-white hover:bg-red-300',
+            text: {
+                main: 'text-slate-900'
+            },
+            icon: 'fill-slate-800 hover:fill-slate-600'
+        }
     }
 };
