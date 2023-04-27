@@ -151,5 +151,32 @@ module.exports = {
             main: 'text-slate-600'
         },
         image: 'bg-white'
+    },
+    webmentions: {
+        like: 'text-red-500',
+        repost: 'text-blue-500',
+        reply: 'text-emerald-500',
+        mention: 'text-slate-500',
+        replyCard: {
+            background: 'bg-white',
+            author: 'bg-blue-50'
+        }
+    },
+    newsletterForm: {
+        background: 'bg-slate-50 border border-slate-100 ',
+        text: {
+            title: 'text-slate-800',
+            link: 'text-purple-900 hover:underline hover:text-purple-600'
+        },
+        input: {
+            background: 'border-slate-300 focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50'
+        },
+        checkbox: {
+            background: 'border-slate-300 text-red-600 shadow-sm focus:border-red-300 focus:ring focus:ring-offset-0 focus:ring-red-200 focus:ring-opacity-50'
+        },
+        message: {
+            error: 'text-red-600'
+        },
+        button: 'bg-red-600 hover:bg-red-500 text-white font-bold'
     }
 };
