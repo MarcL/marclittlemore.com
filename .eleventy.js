@@ -6,8 +6,9 @@ const embedYouTube = require('eleventy-plugin-youtube-embed');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
 const timeToRead = require('eleventy-plugin-time-to-read');
 const tableOfContents = require('eleventy-plugin-nesting-toc');
-const externalLinks = require('@aloskutov/eleventy-plugin-external-links')
-
+const externalLinks = require('@aloskutov/eleventy-plugin-external-links');
+const webC = require('@11ty/eleventy-plugin-webc');
+const { EleventyRenderPlugin } = require('@11ty/eleventy');
 const util = require('util');
 
 const addAllShortcodes = require('./_eleventy/shortcodes');
@@ -27,6 +28,10 @@ module.exports = (eleventyConfig) => {
         overwrite: false,
         rel: ['noreferrer', 'noopener', 'external'],
     });
+    eleventyConfig.addPlugin(webC, {
+        components: './src/_includes/components/**/*.webc',
+    });
+    eleventyConfig.addPlugin(EleventyRenderPlugin);
 
     // Collections
     eleventyConfig.addCollection('tagList', (collection) => {

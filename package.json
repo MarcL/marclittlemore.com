@@ -59,5 +59,7 @@
       "context": "browser"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "@11ty/eleventy-plugin-webc": "^0.11.1"
+  }
 }
