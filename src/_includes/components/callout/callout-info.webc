@@ -1,0 +1,15 @@
+<template webc:type="11ty" 11ty:type="liquid,md">
+<div class="w-full px-3 py-4 shadow-lg border-t-2 bg-emerald-100 border-emerald-800 flex flex-row items-center break-words">
+<div class="w-1/6">
+    <div class="flex flex-none items-center justify-center bg-white rounded-full w-10 h-10 mx-auto">
+    <svg class="w-8 h-8 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 inline-block fill-emerald-800" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"/></svg>
+    </svg>
+  </div>
+</div>
+
+<div class="w-5/6">
+  <slot>Fallback content goes here... {{site.domain}}</slot>
+</div>
+</div>
+</template>

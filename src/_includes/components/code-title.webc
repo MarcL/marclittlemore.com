@@ -1,0 +1,4 @@
+<div class="text-sm">
+    <span class="uppercase pr-4" @text="heading"></span>
+    <span @text="title"></span>
+</div>
