@@ -1,9 +1,13 @@
 ---
 layout: default
+hasSidebar: false
+showAuthor: false
+showWebmentions: false
+showMoreArticles: true
 ---
 
-<section class="py-4 w-full mx-auto flex-none lg:flex flex-col items-center">
-    <div class="prose prose-xl">
+<section class="py-4 w-full mx-auto flex-none lg:flex flex-col items-center" id="pageContent">
+    <div class="prose prose-xl w-full max-w-none">
         {{ content }}
     </div>
 </section>
