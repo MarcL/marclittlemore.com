@@ -1,4 +1,4 @@
-<main id="main-content" class="flex flex-col justify-center items-center max-w-screen-lg mx-auto pt-4 pb-8">
+<main id="main-content" class="flex flex-col justify-center items-center max-w-screen-xl mx-auto pt-4 pb-8">
   <div class="text-center">
       <h1 class="{{theme.page.text.title}} font-bold text-5xl py-4">
         {% if title %}
@@ -52,23 +52,53 @@
   </div>
   {% endif %}
 
-  {% if tableOfContents %}
-  {% assign tocContents = content | toc %}
-  {% if tocContents != ""  %}
-  <div class="w-full mx-auto {{theme.page.tableOfContents.background}} text-lg border shadow-sm prose prose-xl rounded-md prose-li:list-disc prose-a:underline my-0 lg:my-8">
-    <div class="p-4 space-x-2 text-xl font-semibold">
-      <svg class="h-6 w-6 inline" viewBox="0 0 512 512"><path d="M88 56H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16V72a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm416 24H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8zm0-320H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8V88a8 8 0 00-8-8zm0 160H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8z"></path></svg>
-      <span>What's in this article?</span>
+  {% if hasSidebar %}
+  <section id="mainContent" class="w-full grid grid-cols-1 md:grid-cols-4">
+    <div id="sidebar" class="col-span-1 md:col-span-1 px-0 md:pr-8">
+      {% if tableOfContents %}
+      {% assign tocContents = content | toc %}
+      {% if tocContents != ""  %}
+      <section id="tableOfContents" class="w-full sticky top-0">
+        <div class="w-full mx-auto {{theme.page.tableOfContents.background}} text-lg prose prose-xl rounded-md prose-li:list-disc prose-a:underline my-4 md:my-0">
+          <div class="p-4 space-x-2 text-xl font-semibold">
+            <svg class="h-6 w-6 inline" viewBox="0 0 512 512"><path d="M88 56H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16V72a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm416 24H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8zm0-320H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8V88a8 8 0 00-8-8zm0 160H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8z"></path></svg>
+            <span>Table of contents</span>
+          </div>
+          {{tocContents}}
+        </div>
+      </section>
+      {% endif %}
+      {% endif %}
     </div>
-    {{tocContents}}
-  </div>
-  {% endif %}
+    <div class="col-span-1 md:col-span-3 px-0 md:px-2" id="textContent">
+      <section class="py-4 w-full mx-auto">
+        <div class="prose prose-xl w-full max-w-none">
+            {{ content }}
+        </div>
+      </section>
+    </div>
+  </section>
+  {% else %}
+  <div class="w-full" id="textContent">
+    <section class="py-4 w-full mx-auto">
+      <div class="prose prose-xl w-full max-w-none">
+          {{ content }}
+      </div>
+    </section>
+</div>
   {% endif %}
 
-  {{ content }}
-  
+  {% if showAuthor %}
+  <section id="author">
+    {% include partials/author.html %}
+  </section>
+  {% endif %}
+
+  {% if showWebmentions %}
   {% include partials/webmentions.html %}
+  {% endif %}
 
+  {% if showMoreArticles %}
   {% if tags contains 'post' %}
     {% assign tag = tags[0] %}
     {% if tag == 'post' %}
@@ -80,7 +110,9 @@
     {%- if topics[tag].url -%}
     {%- assign url = topics[tag].url -%}
     {%- endif -%}
-    {% assign tagCollection = collections[tag] | collectionWithoutUrls: page.url | reverse | limitCollection: 3 %}
+    {% assign tagCollection = collections[tag] | collectionWithoutUrls: page.url | reverse | limitCollection: 4 %}
     {% include partials/taggedCollection.html collectionTitle: "Want to read more?" collection: tagCollection url: url %}
   {% endif %}
+  {% endif %}
+
 </main>

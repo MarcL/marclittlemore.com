@@ -1,3 +1,7 @@
 {
-    "layout": "page"
+    "layout": "default",
+    "hasSidebar": false,
+    "showAuthor": false,
+    "showWebmentions": false,
+    "showMoreArticles": true
 }

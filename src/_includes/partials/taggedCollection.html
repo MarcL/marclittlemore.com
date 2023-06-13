@@ -1,5 +1,5 @@
 {%- if collection.length > 0 -%}
-<section class="prose prose-xl space-y-2 prose-a:no-underline w-full mx-auto">
+<section class="prose prose-xl space-y-2 prose-a:no-underline w-full mx-auto max-w-none">
     <div class="flex items-baseline justify-between">
         {%- if collectionTitle -%}
         <h3 class="col-span-2">{{collectionTitle}}</h3>
@@ -17,13 +17,13 @@
             </div>
         {%- endif -%}
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
             {%- assign sortedCollection = collection -%}
             {%- for article in sortedCollection -%}
             <a class="block transition transform hover:-translate-y-4" href="{{article.url}}" >
             <div class="group">
                 {%- if article.data.headerImage -%}
-                {% image article.data.headerImage article.data.title "rounded-md object-cover h-32" %}
+                {% image article.data.headerImage article.data.title "rounded-md object-cover h-48" %}
                 {%- endif -%}
                 <div class="px-0 lg:px-2">
                     <h4 class="{{theme.card.text.groupLink}}">{{article.data.title}}</h4>
