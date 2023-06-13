@@ -71,13 +71,21 @@
       {% endif %}
     </div>
     <div class="col-span-1 md:col-span-3 px-0 md:px-2" id="textContent">
-        {{ content }}
+      <section class="py-4 w-full mx-auto">
+        <div class="prose prose-xl w-full max-w-none">
+            {{ content }}
+        </div>
+      </section>
     </div>
   </section>
   {% else %}
   <div class="w-full" id="textContent">
-    {{ content }}
-  </div>
+    <section class="py-4 w-full mx-auto">
+      <div class="prose prose-xl w-full max-w-none">
+          {{ content }}
+      </div>
+    </section>
+</div>
   {% endif %}
 
   {% if showAuthor %}

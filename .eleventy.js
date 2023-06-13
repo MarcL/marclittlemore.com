@@ -21,7 +21,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPlugin(embedYouTube);
     eleventyConfig.addPlugin(embedTwitter);
     eleventyConfig.addPlugin(timeToRead, {style: 'short'});
-    eleventyConfig.addPlugin(tableOfContents);
+    eleventyConfig.addPlugin(tableOfContents, {tags: ['h2']});
     eleventyConfig.addPlugin(externalLinks, {
         url: site.url,
         overwrite: false,
