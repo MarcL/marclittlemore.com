@@ -13,6 +13,7 @@
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@aloskutov/eleventy-plugin-external-links": "^2.0.0",
+    "@atproto/api": "^0.6.23",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.8",
