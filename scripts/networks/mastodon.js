@@ -8,6 +8,18 @@ const createClient = (url, accessToken) => {
   });
 };
 
+const transformResponse = (response) => {
+  // ensure we get a consistent id for each platform
+  // and the original response
+  const { uri: id, url } = response;
+
+  return {
+    id,
+    url,
+    original: response,
+  };
+};
+
 const postToMastodon = async (content, visibility = 'public') => {
   const client = createClient(
     process.env.MASTODON_INSTANCE_URL,
@@ -21,9 +33,9 @@ const postToMastodon = async (content, visibility = 'public') => {
     };
     const response = await client.v1.statuses.create(options);
 
-    console.log(response);
+    const transformedResponse = transformResponse(response);
 
-    return response;
+    return transformedResponse;
   } catch (error) {
     console.log(error);
   }

@@ -2,6 +2,8 @@ require('dotenv').config();
 const { BskyAgent, RichText } = require('@atproto/api');
 
 const BLUESKY_SERVICE = 'https://bsky.social';
+const BLUESKY_URL = 'https://bsky.app';
+const BLUESKY_USERNAME = 'marclittlemore.com';
 
 const createAgent = async (appIdentifier, appPassword) => {
   const agent = new BskyAgent({ service: BLUESKY_SERVICE });
@@ -12,6 +14,21 @@ const createAgent = async (appIdentifier, appPassword) => {
   });
 
   return agent;
+};
+
+const transformResponse = (response) => {
+  // ensure we get a consistent id for each platform
+  // and the original response
+  const { uri: id } = response;
+
+  const postId = id.split('/')[id.split('/').length - 1];
+  const url = `${BLUESKY_URL}/profile/${BLUESKY_USERNAME}/post/${postId}`;
+
+  return {
+    id,
+    url,
+    original: response,
+  };
 };
 
 const postToBluesky = async (text) => {
@@ -29,7 +46,9 @@ const postToBluesky = async (text) => {
       facets: richText.facets,
     });
 
-    return response;
+    const transformedResponse = transformResponse(response);
+
+    return transformedResponse;
   } catch (error) {
     console.log(error);
   }
