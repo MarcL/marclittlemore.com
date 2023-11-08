@@ -24,10 +24,12 @@ const postToBluesky = async (text) => {
     const richText = new RichText({ text });
     await richText.detectFacets(agent);
 
-    await agent.post({
+    const response = await agent.post({
       text: richText.text,
       facets: richText.facets,
     });
+
+    return response;
   } catch (error) {
     console.log(error);
   }

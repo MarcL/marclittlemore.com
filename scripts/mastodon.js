@@ -8,7 +8,7 @@ const createClient = (url, accessToken) => {
   });
 };
 
-const postToMastodon = async (content) => {
+const postToMastodon = async (content, visibility = 'public') => {
   const client = createClient(
     process.env.MASTODON_INSTANCE_URL,
     process.env.MASTODON_ACCESS_TOKEN
@@ -17,9 +17,13 @@ const postToMastodon = async (content) => {
   try {
     const options = {
       status: content,
-      visibility: 'private',
+      visibility,
     };
-    await client.v1.statuses.create(options);
+    const response = await client.v1.statuses.create(options);
+
+    console.log(response);
+
+    return response;
   } catch (error) {
     console.log(error);
   }

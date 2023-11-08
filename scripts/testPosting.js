@@ -1,20 +1,21 @@
-const postToMastodon = require('./mastadon');
+const postToMastodon = require('./mastodon');
 const postToBluesky = require('./bluesky');
 
-// (async () => {
-//   try {
-//     await postToMastodon(
-//       'Hello from my blog! #testing @marclittlemore@indieweb.social'
-//     );
-//   } catch (error) {
-//     console.error(error);
-//   }
-// })();
+const message =
+  'Hello from my blog! Does Open Graph unfurling work?: Testing it via an API call and here is a link to my blog. https://www.marclittlemore.com/ #api #testing #mastodon';
 
 (async () => {
   try {
-    await postToBluesky('Hello from my blog! #testing @marclittlemore.com');
+    await postToMastodon(message);
   } catch (error) {
     console.error(error);
   }
 })();
+
+// (async () => {
+//   try {
+//     await postToBluesky(message);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// })();
