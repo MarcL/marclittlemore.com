@@ -1,8 +1,8 @@
 ---
-title: Notes
+title: Microblog Notes
 description: Microblogging notes
 permalink: /notes/
-headerImage: /images/banners/talks.jpg
+hideImage: true
 ---
 
 {% for note in collections.note %}

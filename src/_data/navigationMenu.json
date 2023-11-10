@@ -1,6 +1,22 @@
 [
   { "name": "Home", "url": "/", "title": "marclittlemore.com", "tag": null },
-  { "name": "Articles", "url": "/articles/", "title": "Latest articles", "tag": "post" },
-  { "name": "Talks", "url": "/talks/", "title": "Ideas I've shared in public", "tag": "talk" },
-  { "name": "About", "url": "/about/", "title": "Find out more about me", "tag": null }
+  {
+    "name": "Articles",
+    "url": "/articles/",
+    "title": "Latest articles",
+    "tag": "post"
+  },
+  { "name": "Notes", "url": "/notes/", "title": "Latest notes", "tag": "note" },
+  {
+    "name": "Talks",
+    "url": "/talks/",
+    "title": "Ideas I've shared in public",
+    "tag": "talk"
+  },
+  {
+    "name": "About",
+    "url": "/about/",
+    "title": "Find out more about me",
+    "tag": null
+  }
 ]

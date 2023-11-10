@@ -1,5 +1,6 @@
 {
   "layout": "default",
   "tags": ["note"],
-  "date": "Last Modified"
+  "date": "Last Modified",
+  "hideImage": "true"
 }

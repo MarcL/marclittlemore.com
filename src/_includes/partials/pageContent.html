@@ -12,6 +12,7 @@
       {% endif %}
   </div>
 
+  {% unless hideImage %}
   <div class="py-4">
     <figure>
       {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
@@ -28,6 +29,7 @@
       {% endif %}
     </figure>
   </div>
+  {% endunless %}
 
   {% if tags contains 'post' %}
   <div class="{{theme.page.metadata.text}} font-sm py-4 w-full mx-auto max-w-lg text-center space-y-2">
