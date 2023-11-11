@@ -38,9 +38,10 @@ const postToThreads = async (text) => {
 
     const transformedResponse = transformResponse(response);
 
+    console.debug(`Posted to Threads: ${transformedResponse.url}`);
     return transformedResponse;
   } catch (error) {
-    console.log(error);
+    console.error(`Error posting to Threads: ${error}`);
   }
 };
 

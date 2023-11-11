@@ -48,9 +48,10 @@ const postToBluesky = async (text) => {
 
     const transformedResponse = transformResponse(response);
 
+    console.debug(`Posted to Bluesky: ${transformedResponse.url}`);
     return transformedResponse;
   } catch (error) {
-    console.log(error);
+    console.error(`Error posting to Bluesky: ${error}`);
   }
 };
 

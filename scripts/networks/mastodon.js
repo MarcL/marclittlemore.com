@@ -21,12 +21,13 @@ const transformResponse = (response) => {
 };
 
 const postToMastodon = async (content, visibility = 'public') => {
-  const client = createClient(
-    process.env.MASTODON_INSTANCE_URL,
-    process.env.MASTODON_ACCESS_TOKEN
-  );
-
+  
   try {
+    const client = createClient(
+      process.env.MASTODON_INSTANCE_URL,
+      process.env.MASTODON_ACCESS_TOKEN
+    );
+
     const options = {
       status: content,
       visibility,
@@ -35,9 +36,11 @@ const postToMastodon = async (content, visibility = 'public') => {
 
     const transformedResponse = transformResponse(response);
 
+    console.debug(`Posted to Mastodon: ${transformedResponse.url}`);
+
     return transformedResponse;
   } catch (error) {
-    console.log(error);
+    console.error(`Error posting to Mastodon: ${error}`);
   }
 };
 
