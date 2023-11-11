@@ -1,6 +1,8 @@
 {
-  "layout": "default",
+  "layout": "note",
   "tags": ["note"],
   "date": "Last Modified",
-  "hideImage": "true"
+  "hideImage": "true",
+  "syndicate": "true",
+  "title": "Hello"
 }

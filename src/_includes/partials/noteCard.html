@@ -6,6 +6,6 @@
       {% image note.data.image.url note.data.image.alt "my-4 sm:my-0 shadow-lg rounded-md" false %}
     {% endif %}
     <div class="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">
-        {{note.date | date: "%H:%M %p - %b %d, %Y"}}
+        {{note.date | date: "%H:%M %p - %b %d, %Y"}} | <a href="{{note.url}}" alt="Permalink to note">Permalink</a>
     </div>
 </div>
