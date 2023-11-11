@@ -24,15 +24,24 @@ const transformResponse = (response) => {
   };
 };
 
-const postToThreads = async (text) => {
+const MAX_MESSAGE_LENGTH = 500;
+const validateMessageLength = (message) => {
+  if (message.length > MAX_MESSAGE_LENGTH) {
+    throw new Error('Tweet is too long.');
+  }
+};
+
+const postToThreads = async (message) => {
   try {
+    validateMessageLength(message);
+
     const client = await createClient(
       process.env.THREADS_USERNAME,
       process.env.THREADS_PASSWORD
     );
 
     const options = {
-      contents: text,
+      contents: message,
     };
     const response = await client.posts.create(client.userId, options);
 

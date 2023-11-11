@@ -31,14 +31,23 @@ const transformResponse = (response) => {
   };
 };
 
-const postToBluesky = async (text) => {
+const MAX_MESSAGE_LENGTH = 280;
+const validateMessageLength = (message) => {
+  if (message.length > MAX_MESSAGE_LENGTH) {
+    throw new Error('Tweet is too long.');
+  }
+};
+
+const postToBluesky = async (message) => {
   try {
+    validateMessageLength(message);
+
     const agent = await createAgent(
       process.env.BLUESKY_APP_IDENTIFIER,
       process.env.BLUESKY_APP_PASSWORD
     );
 
-    const richText = new RichText({ text });
+    const richText = new RichText({ text: message });
     await richText.detectFacets(agent);
 
     const response = await agent.post({

@@ -5,6 +5,6 @@
 syndicate: true
 ---
 
-👋 This is a first note to test whether I can start a microblog on my website. The aim is to post once and and syndicate the content to multiple social media platforms following the [POSSE](https://indieweb.org/POSSE) idea - Publish (on your) Own Site, Syndicate Elsewhere.
+👋 This is a test note via API from my blog. The aim is to post once and and syndicate the content to multiple social media platforms following the [POSSE](https://indieweb.org/POSSE) idea - Publish (on your) Own Site, Syndicate Elsewhere.
 
 Let's see if this works!

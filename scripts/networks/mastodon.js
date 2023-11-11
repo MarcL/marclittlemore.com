@@ -11,25 +11,33 @@ const createClient = (url, accessToken) => {
 const transformResponse = (response) => {
   // ensure we get a consistent id for each platform
   // and the original response
-  const { uri: id, url } = response;
+  // const { uri: id, url } = response;
 
   return {
-    id,
-    url,
+    // id,
+    // url,
     original: response,
   };
 };
 
-const postToMastodon = async (content, visibility = 'public') => {
-  
+const MAX_MESSAGE_LENGTH = 500;
+const validateMessageLength = (message) => {
+  if (message.length > MAX_MESSAGE_LENGTH) {
+    throw new Error('Tweet is too long.');
+  }
+};
+
+const postToMastodon = async (message, visibility = 'public') => {
   try {
+    validateMessageLength(message);
+
     const client = createClient(
       process.env.MASTODON_INSTANCE_URL,
       process.env.MASTODON_ACCESS_TOKEN
     );
 
     const options = {
-      status: content,
+      status: message,
       visibility,
     };
     const response = await client.v1.statuses.create(options);

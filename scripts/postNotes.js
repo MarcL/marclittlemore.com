@@ -4,6 +4,7 @@ const markdownToTxt = require('./markdown/markdownToText');
 const postToMastodon = require('./networks/mastodon');
 const postToBluesky = require('./networks/bluesky');
 const postToThreads = require('./networks/threads');
+const postToTwitter = require('./networks/twitter');
 const publishedNotes = require('../src/_data/publishedNotes.json');
 
 // Post notes to social platforms
@@ -23,22 +24,27 @@ const hasBeenPosted = (path) => {
 // TODO: Check each platform separately
 const postToPlatforms = async (text) => {
   try {
-    const mastodon = await postToMastodon(text);
-    const bluesky = await postToBluesky(text);
-    const threads = await postToThreads(text);
+    // const mastodon = await postToMastodon(text);
+    // const bluesky = await postToBluesky(text);
+    // const threads = await postToThreads(text);
+    const twitter = await postToTwitter(text);
 
     return {
-      mastodon: {
-        id: mastodon.id,
-        url: mastodon.url,
-      },
-      bluesky: {
-        id: bluesky.id,
-        url: bluesky.url,
-      },
-      threads: {
-        id: threads.id,
-        url: threads.url,
+      //   mastodon: {
+      //     id: mastodon.id,
+      //     url: mastodon.url,
+      //   },
+      //   bluesky: {
+      //     id: bluesky.id,
+      //     url: bluesky.url,
+      //   },
+      //   threads: {
+      //     id: threads.id,
+      //     url: threads.url,
+      //   },
+      twitter: {
+        id: twitter.id,
+        url: twitter.url,
       },
     };
   } catch (error) {
@@ -75,7 +81,11 @@ const postLatestNotes = async () => {
 
     const { metadata, content } = parseMd(fileContent);
     const text = markdownToTxt(content);
-    console.log({ path, metadata, content, text });
+
+    console.log({ path, metadata, content, text, length: text.length });
+
+    // TODO: Check content length against the platform
+    // and split accordingly - perhaps link back to the note post?
 
     if (shouldPost(metadata)) {
       if (!hasBeenPosted(path)) {
