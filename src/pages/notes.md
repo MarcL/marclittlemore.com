@@ -1,6 +1,6 @@
 ---
-title: Microblog Notes
-description: Microblogging notes
+title: Notes
+description: Notes for my microblog which are syndicated to social media platforms.
 permalink: /notes/
 hideImage: true
 ---

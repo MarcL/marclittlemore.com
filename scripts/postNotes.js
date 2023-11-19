@@ -14,6 +14,9 @@ const socialPlatforms = {
   twitter: postToTwitter,
 };
 
+// TODO: Add threads once the API is official
+const DEFAULT_PLATFORMS_TO_POST_TO = ['mastodon', 'bluesky', 'twitter'];
+
 const shouldPost = (metadata) => {
   // Assume that we post if there's no metadata
   // or if there is metadata and syndicate is true
@@ -21,12 +24,11 @@ const shouldPost = (metadata) => {
   return !metadata || metadata?.syndicate;
 };
 
-const hasBeenPosted = (path) => {
-  return publishedNotes[path];
-};
+const getUrlFromPath = (path) => path.replace('src/', '').replace('.md', '');
 
-// TODO: Add threads once the API is official
-const DEFAULT_PLATFORMS_TO_POST_TO = ['mastodon', 'bluesky', 'twitter'];
+const hasBeenPosted = (path) => {
+  return publishedNotes[getUrlFromPath(path)];
+};
 
 // TODO: Pass in image and post image if it exists
 // TODO: Check each platform separately
@@ -64,7 +66,7 @@ const updatedPublishedNotes = async (path, urls) => {
   }
 
   try {
-    publishedNotes[path] = urls;
+    publishedNotes[getUrlFromPath(path)] = urls;
 
     await fs.writeFile(
       'src/_data/publishedNotes.json',

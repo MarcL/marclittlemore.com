@@ -1,1 +1,103 @@
-{}
+{
+  "notes/2023/2023-11-06-first-note": {
+    "mastodon": {
+      "id": "https://indieweb.social/users/marclittlemore/statuses/111439594080187603",
+      "url": "https://indieweb.social/@marclittlemore/111439594080187603",
+      "original": {
+        "id": "111439594080187603",
+        "createdAt": "2023-11-19T22:34:19.280Z",
+        "inReplyToId": null,
+        "inReplyToAccountId": null,
+        "sensitive": false,
+        "spoilerText": "",
+        "visibility": "public",
+        "language": "en",
+        "uri": "https://indieweb.social/users/marclittlemore/statuses/111439594080187603",
+        "url": "https://indieweb.social/@marclittlemore/111439594080187603",
+        "repliesCount": 0,
+        "reblogsCount": 0,
+        "favouritesCount": 0,
+        "editedAt": null,
+        "favourited": false,
+        "reblogged": false,
+        "muted": false,
+        "bookmarked": false,
+        "pinned": false,
+        "content": "<p>👋 Testing out posting notes via API from my blog. The aim is to post once and syndicate the content to multiple social media platforms following the POSSE (<a href=\"https://indieweb.org/POSSE\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">indieweb.org/POSSE</span><span class=\"invisible\"></span></a>) idea - Publish (on your) Own Site, Syndicate Elsewhere.</p>",
+        "filtered": [],
+        "reblog": null,
+        "application": {
+          "name": "MicroblogSync",
+          "website": "https://www.marclittlemore.com"
+        },
+        "account": {
+          "id": "110728828511946588",
+          "username": "marclittlemore",
+          "acct": "marclittlemore",
+          "displayName": "Marc Littlemore",
+          "locked": false,
+          "bot": false,
+          "discoverable": true,
+          "group": false,
+          "createdAt": "2023-07-17T00:00:00.000Z",
+          "note": "<p>Senior Engineering Manager @ Netlify<br />I 😍 building software and teams<br />A big fan of 11ty</p>",
+          "url": "https://indieweb.social/@marclittlemore",
+          "uri": "https://indieweb.social/users/marclittlemore",
+          "avatar": "https://cdn.masto.host/indiewebsocial/accounts/avatars/110/728/828/511/946/588/original/cc30e40619234177.jpg",
+          "avatarStatic": "https://cdn.masto.host/indiewebsocial/accounts/avatars/110/728/828/511/946/588/original/cc30e40619234177.jpg",
+          "header": "https://cdn.masto.host/indiewebsocial/accounts/headers/110/728/828/511/946/588/original/826ad08d80990a5e.jpg",
+          "headerStatic": "https://cdn.masto.host/indiewebsocial/accounts/headers/110/728/828/511/946/588/original/826ad08d80990a5e.jpg",
+          "followersCount": 24,
+          "followingCount": 77,
+          "statusesCount": 19,
+          "lastStatusAt": "2023-11-19",
+          "noindex": true,
+          "emojis": [],
+          "roles": [],
+          "fields": [
+            {
+              "name": "Website",
+              "value": "<a href=\"https://marclittlemore.com\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">marclittlemore.com</span><span class=\"invisible\"></span></a>",
+              "verifiedAt": "2023-08-24T13:32:26.874+00:00"
+            },
+            {
+              "name": "Twitter",
+              "value": "<a href=\"https://twitter.com/marclittlemore\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">twitter.com/marclittlemore</span><span class=\"invisible\"></span></a>",
+              "verifiedAt": null
+            },
+            {
+              "name": "Threads",
+              "value": "<a href=\"https://www.threads.net/@marclittlemore\" target=\"_blank\" rel=\"nofollow noopener noreferrer me\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"\">threads.net/@marclittlemore</span><span class=\"invisible\"></span></a>",
+              "verifiedAt": null
+            }
+          ]
+        },
+        "mediaAttachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "card": null,
+        "poll": null
+      }
+    },
+    "bluesky": {
+      "id": "at://did:plc:6mf3ewamoesq5rufc6b2syyo/app.bsky.feed.post/3kel5waqd5l2f",
+      "url": "https://bsky.app/profile/marclittlemore.com/post/3kel5waqd5l2f",
+      "original": {
+        "uri": "at://did:plc:6mf3ewamoesq5rufc6b2syyo/app.bsky.feed.post/3kel5waqd5l2f",
+        "cid": "bafyreif64n3af6mgzeiuczpbw6arv2olgtu45cjfudwqruvelrf45quvya"
+      }
+    },
+    "twitter": {
+      "id": "1726368331832193371",
+      "url": "https://twitter.com/MarcLittlemore/status/1726368331832193371",
+      "original": {
+        "data": {
+          "edit_history_tweet_ids": ["1726368331832193371"],
+          "id": "1726368331832193371",
+          "text": "👋 Testing out posting notes via API from my blog. The aim is to post once and syndicate the content to multiple social media platforms following the POSSE (https://t.co/gvfGfuZiKQ) idea - Publish (on your) Own Site, Syndicate Elsewhere."
+        }
+      }
+    }
+  }
+}
