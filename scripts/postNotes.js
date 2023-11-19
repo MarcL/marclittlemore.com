@@ -7,7 +7,12 @@ const postToThreads = require('./networks/threads');
 const postToTwitter = require('./networks/twitter');
 const publishedNotes = require('../src/_data/publishedNotes.json');
 
-// Post notes to social platforms
+const socialPlatforms = {
+  bluesky: postToBluesky,
+  mastodon: postToMastodon,
+  threads: postToThreads,
+  twitter: postToTwitter,
+};
 
 const shouldPost = (metadata) => {
   // Assume that we post if there's no metadata
@@ -20,33 +25,34 @@ const hasBeenPosted = (path) => {
   return publishedNotes[path];
 };
 
+// TODO: Add threads once the API is official
+const DEFAULT_PLATFORMS_TO_POST_TO = ['mastodon', 'bluesky', 'twitter'];
+
 // TODO: Pass in image and post image if it exists
 // TODO: Check each platform separately
-const postToPlatforms = async (text) => {
-  try {
-    // const mastodon = await postToMastodon(text);
-    // const bluesky = await postToBluesky(text);
-    // const threads = await postToThreads(text);
-    const twitter = await postToTwitter(text);
+const postToPlatforms = async (
+  text,
+  platformsToPostTo = DEFAULT_PLATFORMS_TO_POST_TO
+) => {
+  const socialApiCalls = platformsToPostTo.map((platform) => {
+    return socialPlatforms[platform](text);
+  });
 
-    return {
-      //   mastodon: {
-      //     id: mastodon.id,
-      //     url: mastodon.url,
-      //   },
-      //   bluesky: {
-      //     id: bluesky.id,
-      //     url: bluesky.url,
-      //   },
-      //   threads: {
-      //     id: threads.id,
-      //     url: threads.url,
-      //   },
-      twitter: {
-        id: twitter.id,
-        url: twitter.url,
-      },
-    };
+  try {
+    const all = await Promise.allSettled(socialApiCalls);
+
+    let results = {};
+    all.forEach((result, index) => {
+      if (result.status === 'rejected') {
+        const platform = platformsToPostTo[index];
+        console.error(`Error posting to ${platform}: ${result.reason}`);
+      } else {
+        const platform = platformsToPostTo[index];
+        results[platform] = result.value;
+      }
+    });
+
+    return results;
   } catch (error) {
     console.error(`Error posting to platforms: ${error}`);
   }
@@ -59,6 +65,7 @@ const updatedPublishedNotes = async (path, urls) => {
 
   try {
     publishedNotes[path] = urls;
+
     await fs.writeFile(
       'src/_data/publishedNotes.json',
       JSON.stringify(publishedNotes, null, 2)

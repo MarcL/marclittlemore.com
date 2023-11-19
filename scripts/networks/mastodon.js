@@ -11,11 +11,11 @@ const createClient = (url, accessToken) => {
 const transformResponse = (response) => {
   // ensure we get a consistent id for each platform
   // and the original response
-  // const { uri: id, url } = response;
+  const { uri: id, url } = response;
 
   return {
-    // id,
-    // url,
+    id,
+    url,
     original: response,
   };
 };
