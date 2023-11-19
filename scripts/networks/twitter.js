@@ -30,7 +30,7 @@ const transformResponse = (response) => {
 const MAX_MESSAGE_LENGTH = 280;
 const validateMessageLength = (message) => {
   if (message.length > MAX_MESSAGE_LENGTH) {
-    throw new Error('Tweet is too long.');
+    throw new Error('Tweet is too long for Twitter.');
   }
 };
 

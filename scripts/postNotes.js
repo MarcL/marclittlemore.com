@@ -89,8 +89,6 @@ const postLatestNotes = async () => {
     const { metadata, content } = parseMd(fileContent);
     const text = markdownToTxt(content);
 
-    console.log({ path, metadata, content, text, length: text.length });
-
     // TODO: Check content length against the platform
     // and split accordingly - perhaps link back to the note post?
 
