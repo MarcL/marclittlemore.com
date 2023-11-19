@@ -12,7 +12,8 @@ const url = isDevelopmentBuild ? 'http://localhost:8080' : netlifyBuildUrl;
 module.exports = {
   title: 'Marc Littlemore',
   headerImage: '/images/banners/home-bg.jpg',
-  description: 'Interesting articles from Marc Littlemore, an engineering manager, technical leader, full-stack developer, teacher, and life-long learner.',
+  description:
+    'Interesting articles from Marc Littlemore, an engineering manager, technical leader, full-stack developer, teacher, and life-long learner.',
   canonicalUrl: CANONICAL_URL,
   url,
   domain: 'www.marclittlemore.com',
@@ -21,16 +22,16 @@ module.exports = {
   facebookAppId: '534953096696612',
   author: {
     name: 'Marc Littlemore',
-    email: 'marc@marclittlemore.com'
+    email: 'marc@marclittlemore.com',
   },
   isDevelopmentBuild,
   rss: {
-    title: 'Marc Littlemore - latest articles'
+    title: 'Marc Littlemore',
   },
   adverts: {
     enabled: false,
     google: {
       client: 'ca-pub-5933342420580227',
-    }
-  }
+    },
+  },
 };
