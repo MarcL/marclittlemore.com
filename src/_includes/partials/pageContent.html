@@ -1,17 +1,16 @@
 <main id="main-content" class="flex flex-col justify-center items-center max-w-screen-xl mx-auto pt-4 pb-8">
   <div class="text-center">
+    {% if title %}
       <h1 class="{{theme.page.text.title}} font-bold text-5xl py-4">
-        {% if title %}
           {{ title }}
-        {% else %}
-          {{ site.title }}
-        {% endif %}
       </h1>
+      {% endif %}
       {% if subtitle %}
         <h2 class="{{theme.page.text.subtitle}} font-normal text-3xl pb-4">{{ subtitle }}</h2>
       {% endif %}
   </div>
 
+  {% unless hideImage %}
   <div class="py-4">
     <figure>
       {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
@@ -28,6 +27,7 @@
       {% endif %}
     </figure>
   </div>
+  {% endunless %}
 
   {% if tags contains 'post' %}
   <div class="{{theme.page.metadata.text}} font-sm py-4 w-full mx-auto max-w-lg text-center space-y-2">
