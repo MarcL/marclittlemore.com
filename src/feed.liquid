@@ -9,16 +9,17 @@ sitemap:
   <title>{{ site.rss.title }}</title>
   <link href="{{ page.url | prepend: site.url }}" rel="self"/>
   <link href="{{ site.url }}"/>
-  <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <updated>{{ collections.feed | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ site.url }}/</id>
   <author>
     <name>{{site.author.name}}</name>
     <email>{{site.author.email}}</email>
   </author>
-  {%- for post in collections.post reversed %}
+  {%- for post in collections.feed reversed %}
   {% capture absolutePostUrl %}{{ post.url | absoluteUrl: site.url }}{% endcapture %}
   <entry>
-    <title>{{ post.data.title }}</title>
+    {% assign noteDate = post.date | date: "%Y-%m-%d %H:%M" %}
+    <title>{{ post.data.title | default: "📝 Note - " | append: noteDate }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <published>{{ post.date | dateToRfc3339 }}</published>
     {% if post.data.updatedDate %}
