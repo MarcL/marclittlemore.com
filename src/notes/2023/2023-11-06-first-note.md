@@ -1,7 +1,7 @@
 ---
-# image:
-#   url: /images/posts/a-wild-bug-appeared.jpg
-#   alt: Testing alt text
+image:
+  url: /images/posts/a-wild-bug-appeared.jpg
+  alt: Testing alt text
 syndicate: true
 ---
 

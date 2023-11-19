@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<pre>
-    {{page.data}}
-</pre>
-{% include partials/noteCard.html, note: page %}
+<div>
+    {% include partials/noteCard.html, noteContent: content, noteImage: image, noteDate: page.date %}
+</div>
