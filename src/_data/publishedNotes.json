@@ -1,5 +1,5 @@
 {
-  "notes/2023/2023-11-06-first-note": {
+  "notes/2023/2023-11-19-first-note": {
     "mastodon": {
       "id": "https://indieweb.social/users/marclittlemore/statuses/111439594080187603",
       "url": "https://indieweb.social/@marclittlemore/111439594080187603",
@@ -93,16 +93,14 @@
       "url": "https://twitter.com/MarcLittlemore/status/1726368331832193371",
       "original": {
         "data": {
-          "edit_history_tweet_ids": [
-            "1726368331832193371"
-          ],
+          "edit_history_tweet_ids": ["1726368331832193371"],
           "id": "1726368331832193371",
           "text": "👋 Testing out posting notes via API from my blog. The aim is to post once and syndicate the content to multiple social media platforms following the POSSE (https://t.co/gvfGfuZiKQ) idea - Publish (on your) Own Site, Syndicate Elsewhere."
         }
       }
     }
   },
-  "notes/2023-11-06-first-note": {
+  "notes/2023-11-19-first-note": {
     "mastodon": {
       "id": "https://indieweb.social/users/marclittlemore/statuses/111439736856811184",
       "url": "https://indieweb.social/@marclittlemore/111439736856811184",
@@ -196,9 +194,7 @@
       "url": "https://twitter.com/MarcLittlemore/status/1726377469165359345",
       "original": {
         "data": {
-          "edit_history_tweet_ids": [
-            "1726377469165359345"
-          ],
+          "edit_history_tweet_ids": ["1726377469165359345"],
           "id": "1726377469165359345",
           "text": "👋 Testing out posting notes from my blog via APIs. The aim is to post once and syndicate the content to multiple social media platforms following the POSSE (https://t.co/gvfGfuZiKQ) idea - Publish (on your) Own Site, Syndicate Elsewhere. Let's see how this works!"
         }
