@@ -77,7 +77,7 @@ const updatedPublishedNotes = async (path, urls) => {
   }
 };
 
-const postLatestNotes = async () => {
+const postLatestNotes = async (dryRun = false) => {
   const { default: parseMd } = await import('parse-md');
 
   const notePaths = await glob(['src/notes/**/*.md'], {
@@ -96,9 +96,13 @@ const postLatestNotes = async () => {
 
     if (shouldPost(metadata)) {
       if (!hasBeenPosted(path)) {
-        console.debug(`Posting ${path} to social platforms`);
-        const urls = await postToPlatforms(text);
-        await updatedPublishedNotes(path, urls);
+        if (!dryRun) {
+          console.debug(`Posting ${path} to social platforms`);
+          const urls = await postToPlatforms(text);
+          await updatedPublishedNotes(path, urls);
+        } else {
+          console.debug(`Dry run: not posting ${path} to social platforms`);
+        }
       } else {
         console.debug(`Skipping ${path} as it's already been posted`);
       }
