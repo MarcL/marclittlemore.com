@@ -16,14 +16,22 @@ const transformResponse = (response) => {
   return {
     id,
     url,
-    original: response,
+    original: {
+      id,
+      url,
+      createdAt: response.createdAt,
+      visibility: response.visibility,
+      content: response.content,
+    },
   };
 };
 
 const MAX_MESSAGE_LENGTH = 500;
 const validateMessageLength = (message) => {
   if (message.length > MAX_MESSAGE_LENGTH) {
-    throw new Error('Toot is too long for Mastodon.');
+    throw new Error(
+      `Toot is too long for Mastodon: ${message.length} characters`
+    );
   }
 };
 

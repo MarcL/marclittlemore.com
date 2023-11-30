@@ -12,6 +12,12 @@ const empty = () => '';
 
 // Text followed by the link in brackets
 const formatLink = (href, title, text) => {
+  // Is it already a link?
+  // If so, don't add the link after it
+  if (text.includes('http')) {
+    return text;
+  }
+
   return `${text} (${href})`;
 };
 

@@ -113,5 +113,5 @@ const postLatestNotes = async (dryRun = false) => {
 };
 
 (async () => {
-  await postLatestNotes(true);
+  await postLatestNotes();
 })();
