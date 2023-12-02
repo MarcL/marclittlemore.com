@@ -11,24 +11,31 @@ image:
     url: https://leonardo.ai
 ---
 
-## Introduction
+As someone who has been using Twitter since 2008, it's been a big part of my life since the early days of the [fail whale](https://www.theatlantic.com/technology/archive/2015/01/the-story-behind-twitters-fail-whale/384313/). Honestly, I was probably addicted to it at times and took it on and off my phone to try and break the scrolling habit.
 
-- Mention Twitter and why you want to move off it
-- Other social media platforms: Mastodon, Bluesky, Threads, even LinkedIn
-- FOMO - where do you post your thoughts? How do you connect with your people?
+I've met lots of fantastic people through it, I've learned a lot from it, and I've probably shared far too much on it. But since a billionaire finally bought it and took it over in October 2022, it's not the same place it was when I joined. It's become a place of anger, hate, and misinformation. Most of the great people I have followed have stopped tweeting.
 
-- Highlight the growing trend of sharing thoughts and ideas on social media platforms.
-- Introduce the IndieWeb and the POSSE (Publish (on your) Own Site, Syndicate Elsewhere) concept.
+As we all did, I looked for an alternative platform and I signed up to all of them, as most techies did. So, you can find me on [Mastodon]({{socialMedia.mastodon.url}}), [Bluesky]({{socialMedia.bluesky.url}}), [Threads]({{socialMedia.threads.url}}), and yes, I'm on [LinkedIn]({{socialMedia.linkedin.url}}) too if that's your thing.
 
-## Understanding IndieWeb and POSSE
+The trouble with all of these platforms is that I get FOMO (Fear Of Missing Out) that I'm posting my content to the wrong platform. What's the right place to share my ramblings with the world? :smile:
 
-- Explain the IndieWeb movement and its goal of decentralizing the web.
-- Define the POSSE concept and how it encourages users to publish content on their own websites before sharing it on social media platforms.
-- Discuss the advantages of POSSE, such as maintaining control over your content and owning your online presence.
+## Enter the IndieWeb
 
-[POSSE](https://indieweb.org/POSSE)
+{% callout "info" %}
+**What is the IndieWeb?**
 
-## Eleventy: Create a note collection
+The [IndieWeb](https://indieweb.org/IndieWeb) is a community of independent & personal websites connected by simple standards, based on the principles of: owning your domain & using it as your primary identity, publishing on your own site (optionally syndicating elsewhere), and owning your data.
+{% endcallout %}
+
+I've been following the [IndieWeb](https://indieweb.org/) movement for a while and it got me thinking about how I can use their ideas to keep my content on my site but syndicate it to the various social media platforms. This idea is known as [POSSE](https://indieweb.org/POSSE) - Publish (on your) Own Site, Syndicate Elsewhere. This means you own your content and publish your thoughts on your own site first, then syndicate it to other platforms in a format that suits it.
+
+I was inspired by some great articles by [Max Böck](https://mxb.dev/blog/syndicating-content-to-twitter-with-netlify-functions/) and [Matthias Ott](https://matthiasott.com/notes/syndicating-posts-personal-website-twitter-mastodon) who have both written about how they syndicate their content to other platforms. As a developer, it sounded like a fun challenge to see how I could use 11ty to post small notes to my site and automate the process of sending them to other platforms.
+
+So let's do it...
+
+## Create an Eleventy note collection
+
+
 
 - Guide readers on how to set up a personal website or blog using platforms like WordPress, Jekyll, or Hugo.
 - Explain the importance of having a domain name and web hosting.
