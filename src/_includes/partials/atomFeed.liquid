@@ -1,22 +1,16 @@
----
-layout: null
-permalink: "/feed.xml"
-sitemap:
-  exclude: yes
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.rss.title }}</title>
-  <link href="{{ page.url | prepend: site.url }}" rel="self"/>
-  <link href="{{ site.url }}"/>
-  <updated>{{ collections.feed | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ site.url }}/</id>
+  <title>{{ feedTitle }}</title>
+  <link href="{{ pageUrl | prepend: siteUrl }}" rel="self"/>
+  <link href="{{ siteUrl }}"/>
+  <updated>{{ collection | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ siteUrl }}/</id>
   <author>
-    <name>{{site.author.name}}</name>
-    <email>{{site.author.email}}</email>
+    <name>{{siteAuthor.name}}</name>
+    <email>{{siteAuthor.email}}</email>
   </author>
-  {%- for post in collections.feed reversed %}
-  {% capture absolutePostUrl %}{{ post.url | absoluteUrl: site.url }}{% endcapture %}
+  {%- for post in collection reversed %}
+  {% capture absolutePostUrl %}{{ post.url | absoluteUrl: siteUrl }}{% endcapture %}
   <entry>
     {% assign noteDate = post.date | date: "%Y-%m-%d %H:%M" %}
     <title>{{ post.data.title | default: "📝 Note - " | append: noteDate }}</title>
@@ -29,7 +23,7 @@ sitemap:
     {% endif %}
     <id>{{ absolutePostUrl }}</id>
     <author>
-      <name>{{site.author.name}}</name>
+      <name>{{siteAuthor.name}}</name>
     </author>
     <content type="html">{{ post.templateContent | convertHtmlToAbsoluteUrls: absolutePostUrl | xmlEscape }}</content>
   </entry>

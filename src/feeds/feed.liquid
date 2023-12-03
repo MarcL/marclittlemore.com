@@ -1,0 +1,8 @@
+---
+# Main Feed for the site
+layout: null
+permalink: "/feed.xml"
+sitemap:
+  exclude: yes
+---
+{% render partials/atomFeed.liquid feedTitle: site.rss.title, siteUrl: site.url, siteAuthor: site.author, pageUrl: page.url, collection: collections.feed %}
