@@ -11,7 +11,7 @@ image:
     url: https://leonardo.ai
 ---
 
-As someone who has been using Twitter since 2008, it's been a big part of my life since the early days of the [fail whale](https://www.theatlantic.com/technology/archive/2015/01/the-story-behind-twitters-fail-whale/384313/). Honestly, I was probably addicted to it at times and took it on and off my phone to try and break the scrolling habit.
+As someone who has been using Twitter since 2008, it's been a big part of my life since the early days of the [fail whale](https://business.time.com/2013/11/06/how-twitter-slayed-the-fail-whale/). Honestly, I was probably addicted to it at times and took the Twitter app on and off my phone to try and break the scrolling habit.
 
 I've met lots of fantastic people through it, I've learned a lot from it, and I've probably shared far too much on it. But since a billionaire finally bought it and took it over in October 2022, it's not the same place it was when I joined. It's become a place of anger, hate, and misinformation. Most of the great people I have followed have stopped tweeting.
 
@@ -35,35 +35,108 @@ So let's do it...
 
 ## Create an Eleventy note collection
 
+Creating a new [eleventy collection](https://www.11ty.dev/docs/collections/) to group my notes together is the easy part!
+
+Using its tagging system, you can create a new collection. I like to put each collection into a new folder in my project as 11ty allows you to have per-directory configuration. This means we can set all of our note settings in one place.
 
 
-- Guide readers on how to set up a personal website or blog using platforms like WordPress, Jekyll, or Hugo.
-- Explain the importance of having a domain name and web hosting.
-- Provide tips on choosing a user-friendly and customizable theme for your website.
+ I created a new folder called `notes` and added a new file called `notes.json` to it. I set up a `layout` to be able to render each note on its own URL and added a `tags` array to allow me to create a `notes` collection. I also added a `syndicate` flag to allow me to filter notes that I want to syndicate to other platforms or not on a per-note basis. This will be an enhancement that I've not implemented yet.
+
+ Here's what the configuration looks like:
+
+{% codetitle "notes/notes.json" "Eleventy config" %}
+
+```json
+{
+  "layout": "note",
+  "tags": ["note"],
+  "syndicate": "true",
+}
+```
+
+Each note is a markdown file with some front matter set up. It's up to you want you want to post to social media but at a basic level it's some text content with a `date`. You don't really need a title for it but you could add one if you wanted to display it on the note page. The date is used on my site and won't 100% reflect the point when the note was posted to social media as it'll depend on when we actually post it. Also, the `date` can be set via the filename if you want to and it doesn't have to be set in the front matter. I'm not too worried about that at the moment but it's probably something I can look to improve by writing back to the file at the point of posting with the API.
+
+Here's an example note markdown file:
+
+{% codetitle "notes/2023-11-20-syndicating-notes.md" "Note markdown file" %}
+
+{% raw %}
+```markdown
+---
+syndicate: true
+date: 2023-11-19T23:10:00.000Z
+---
+
+👋 Testing out posting notes from my blog via APIs.
+```
+{% endraw %}
+
+
+I also created a `/notes` page to render all of the notes on my site. This is a simple [11ty liquid template](https://www.11ty.dev/docs/languages/liquid/) that loops through all of the notes in a collection and renders them using the `note` partial. It doesn't yet have pagination but I'll added that as an improvement once I start posting more notes.
+
+{% codetitle "notes.md" "Notes page" %}
+
+{% raw %}
+```liquid
+---
+title: Notes
+description: Notes for my microblog which are syndicated to social media platforms.
+permalink: /notes/
+---
+
+<div>
+    {% for note in collections.note reversed %}
+        {% include partials/noteCard.html, noteContent: note.content, noteImage: note.data.image, noteDate: note.date, noteUrl: note.url %}
+    {% endfor %}
+</div>
+```
+{% endraw %}
+
+My `note` layout is very simple. It renders the content of the note and adds a link to the original note on my site. I add in a link to the note page if it's not being rendered in our specific note layout.
+
+{% codetitle "partials/noteCard.html" "Note template" %}
+
+{% raw %}
+```liquid
+{% assign isDetailView = layout == 'note' %}
+
+<div class="prose-slate shadow-xl rounded-md p-4 noteCard">
+    {% if noteImage %}
+      <div>
+        {% image noteImage.url noteImage.alt "my-4 sm:my-0 shadow-lg rounded-md" false %}
+      </div>
+    {% endif %}
+    <div class="content">
+      {{noteContent}}
+    </div>
+    <div class="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">
+      {{noteDate | date: "%H:%M %p - %b %d, %Y"}}
+      {% if isDetailView == false %}| <a href="{{noteUrl}}">Note link</a>{% endif %}
+    </div>
+</div>
+```
+{% endraw %}
+
+If you take a look at my [notes page](/notes/) you'll see it in action.
+
+So now we've got a collection of notes. I can add a new markdown file and it will be added to the collection and displayed on my notes page. So far, so good!
+
+Now we need to look at how we can post these notes to our social media platforms.
 
 ## Create Node.js scripts to share notes
-- Discuss popular note-taking tools and systems such as Evernote, OneNote, or plain text files.
-- Emphasize the importance of choosing a system that allows easy integration with your personal website.
-- Recommend tools that support both web-based and offline note-taking for flexibility.
+
+- Provide step-by-step instructions on syndicating notes to social media platforms like Twitter, Mastodon, or LinkedIn.
 
 ## Check we've not posted them already
 
 - Generate a JSON file with links to the existing notes
-- Explain the process of creating notes on your personal website or blog.
-- Guide readers on how to format and organize notes for optimal presentation.
-- Provide step-by-step instructions on syndicating notes to social media platforms like Twitter, Mastodon, or LinkedIn.
-
-## Automation and Tools
-- Introduce automation tools and plugins that simplify the POSSE process.
-- Discuss the benefits of using services like Zapier or IFTTT to automatically share notes across multiple platforms.
-- Provide examples of how automation can save time and streamline the syndication workflow.
-
-## Best Practices for Effective Note Syndication
-- Offer tips on crafting engaging and shareable notes for social media.
-- Emphasize the importance of maintaining consistency in tone and style across platforms.
-- Encourage readers to actively engage with their audience on social media to foster meaningful discussions.
+- Check the JSON file to see if we've posted it already
 
 ## What's next?
+
+### Automation and Tools
+
+- Use GitHub workflow to post notes automatically on merge
 
 ### Add Threads API
 
