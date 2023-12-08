@@ -33,7 +33,7 @@
     "jsdom": "^22.1.0",
     "lodash": "^4.17.21",
     "lodash.escape": "^4.0.1",
-    "markdown-it": "^13.0.2",
+    "markdown-it": "^14.0.0",
     "markdown-it-attrs": "^4.1.0",
     "markdown-it-emoji": "^2.0.0",
     "marked": "^10.0.0",
