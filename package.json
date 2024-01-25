@@ -28,7 +28,7 @@
     "eleventy-plugin-youtube-embed": "^1.7.1",
     "fast-glob": "^3.3.2",
     "googleapis": "^128.0.0",
-    "husky": "^8.0.2",
+    "husky": "^9.0.0",
     "hyperlink": "^5.0.4",
     "jsdom": "^22.1.0",
     "lodash": "^4.17.21",
