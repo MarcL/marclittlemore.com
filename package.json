@@ -36,7 +36,7 @@
     "markdown-it": "^13.0.2",
     "markdown-it-attrs": "^4.1.0",
     "markdown-it-emoji": "^2.0.0",
-    "marked": "^10.0.0",
+    "marked": "^12.0.0",
     "masto": "^6.4.2",
     "parcel": "^2.8.0",
     "parse-md": "^3.0.3",
