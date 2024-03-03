@@ -9,8 +9,6 @@ image:
     url: https://unsplash.com/@trulysoutheastasia
 ---
 
-{{collections.tagList}}
-
 {% for tag in collections.tagList %}
 {% assign capitalisedTag = tag | capitalize %}
 
