@@ -13,9 +13,13 @@ Every week I help **{{newsletters.subscribers}} technical leaders, remote worker
 
 In it you'll find my favourite articles and thoughts on intentional remote working, technical leadership, software engineering management, and I'll share helpful advice to grow your career. Learn along with me as I discover new ways of working and help us both to build our leadership skills.
 
-Enter your email address below to join our global community of intentional technical leaders.
+{% callout "info" %}
+**For the time being, I'm not sending out any new newsletters. Life got a bit hectic so I've put it on pause for now.**
 
-{% include partials/newsletter.html %}
+Take a look through the archive of old newsletters. There's some great content in there and I hope you find it useful.
+{% endcallout %}
+
+
 
 ## Previous newsletters
 
