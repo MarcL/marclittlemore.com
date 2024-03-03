@@ -1,9 +1,9 @@
 [
   { "name": "Home", "url": "/", "title": "marclittlemore.com", "tag": null },
   {
-    "name": "Articles",
-    "url": "/articles/",
-    "title": "Latest articles",
+    "name": "Writing",
+    "url": "/writing/",
+    "title": "Latest articles and blog posts",
     "tag": "post"
   },
   { "name": "Notes", "url": "/notes/", "title": "Latest notes", "tag": "note" },

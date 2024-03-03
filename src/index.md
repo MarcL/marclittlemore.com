@@ -12,4 +12,4 @@ I'm Marc Littlemore. I'm an **Senior Engineering Manager** at [Netlify](https://
 
 I love helping to hire and build **diverse and inclusive** teams of software engineers who understand, and are **intentional, about remote work**. I help teams to build quality software applications whilst not being in the same office.
 
-I regularly [write articles](/articles/) about software development, [JavaScript testing](/javascript-testing/), remote working, and technical leadership.
+I regularly [write](/writing/) about software development, [JavaScript testing](/javascript-testing/), remote working, and technical leadership.

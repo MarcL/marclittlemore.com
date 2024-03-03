@@ -52,13 +52,17 @@ module.exports = {
         text: {
             title: 'text-slate-900 font-semibold',
             content: 'text-slate-600',
-            hover: 'hover:decoration-red-500 hover:underline hover:decoration-red-500 hover:underline-offset-4'
+            hover: 'group-hover:underline group-hover:underline-offset-4'
+        },
+        date: {
+            text: 'text-slate-600 font-light',
+            icon: 'fill-slate-600',
         },
         icons: {
             main: 'text-red-700'
         },
         image: {
-            hover: 'hover:grayscale'
+            hover: 'group-hover:opacity-50'
         }
     },
     bookshelf: {

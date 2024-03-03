@@ -20,3 +20,6 @@
 # Moved some auto-generated topics pages
 /topics/chatbots/ /bots/ 301
 /topics/javascript-testing/ /javascript-testing/ 301
+
+# Change the /articles page to /writing
+/articles/ /writing/ 301
