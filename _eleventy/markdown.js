@@ -1,6 +1,6 @@
 const markdownIt = require('markdown-it');
 const markdownItAttributes = require('markdown-it-attrs');
-const markdownEmoji = require('markdown-it-emoji');
+const markdownEmoji = require('markdown-it-emoji').full;
 const string = require('string');
 
 // Create own markdown renderer so we can add class attributes
