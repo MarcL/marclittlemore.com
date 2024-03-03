@@ -1,9 +1,9 @@
-<article class="my-4 w-full pb-4 grid grid-cols-1 md:grid-cols-4">
+<article class="my-4 w-full pb-4 grid grid-cols-1 md:grid-cols-4 group">
     <div class="w-full col-span-1 md:col-span-2 md:px-4">
         <div>
         {% if article.data.headerImage %}
             <a href="{{article.url}}" title="{{article.data.title}}" alt="{{article.data.title}}" class="block pb-4 {{theme.article.image.hover}}">
-                {% image article.data.headerImage article.data.title "rounded-md shadow-md w-full" %}
+                {% image article.data.headerImage article.data.title "rounded-md shadow-md w-full bg-white" %}
             </a>
         {% endif %}
         </div>

@@ -1,10 +1,10 @@
 <article class="w-full rounded-lg px-0 md:px-2 py-2 group">
-    <a href="{{article.url}}" class="group-hover:opacity-50">
-        <img class="bg-white rounded-t-lg" src="{{article.data.headerImage}}" alt="" />
+    <a href="{{article.url}}" class="group-hover:opacity-50 {{theme.article.image.hover}}">
+        {% image article.data.headerImage article.data.title "rounded-md shadow-md w-full bg-white" %}
     </a>
     <div class="p-2">
         {% render partials/articles/articleDate.html article:article theme:theme %}
-        <a href="{{article.url}}" class="group-hover:underline">
+        <a href="{{article.url}}" class="{{theme.article.text.hover}}">
             <h5 class="mb-2 text-2xl font-bold tracking-tight">{{article.data.title}}</h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{article.data.description | markdownify}}</p>
