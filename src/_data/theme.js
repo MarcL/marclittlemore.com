@@ -54,6 +54,10 @@ module.exports = {
             content: 'text-slate-600',
             hover: 'hover:decoration-red-500 hover:underline hover:decoration-red-500 hover:underline-offset-4'
         },
+        date: {
+            text: 'text-slate-600 font-light',
+            icon: 'fill-slate-600',
+        },
         icons: {
             main: 'text-red-700'
         },
