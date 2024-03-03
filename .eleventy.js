@@ -32,7 +32,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addCollection('tagList', (collection) => {
     let tagSet = new Set();
 
-    const filteredTags = ['post', 'talk'];
+    // Ignore these tags
+    const filteredTags = ['post', 'talk', 'note'];
     collection.getAll().forEach((item) => {
       if (!item.data.tags) {
         return;

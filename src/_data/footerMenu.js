@@ -44,6 +44,11 @@ module.exports = [
         url: '/topics/',
         title: 'Topics that I write about',
       },
+      {
+        name: 'Notes',
+        url: '/notes/',
+        title: "Notes that I've written",
+      },
     ],
   },
   {
