@@ -27,7 +27,7 @@ The trouble with all of these platforms is that I get FOMO (Fear Of Missing Out)
 The [IndieWeb](https://indieweb.org/IndieWeb) is a community of independent & personal websites connected by simple standards, based on the principles of: owning your domain & using it as your primary identity, publishing on your own site (optionally syndicating elsewhere), and owning your data.
 {% endcallout %}
 
-I've been following the [IndieWeb](https://indieweb.org/) movement for a while and it got me thinking about how I can use their ideas to keep my content on my site but syndicate it to the various social media platforms. This idea is known as [POSSE](https://indieweb.org/POSSE) - Publish (on your) Own Site, Syndicate Elsewhere. This means you own your content and publish your thoughts on your own site first, then syndicate it to other platforms in a format that suits it.
+I've been following the [IndieWeb](https://indieweb.org/) movement for a while and it got me thinking about how I can use their ideas to keep my content on my site but syndicate it to the various social media platforms. This idea is known as [POSSE](https://indieweb.org/POSSE) - Publish (on your) Own Site, Syndicate Elsewhere. This means you own your content and publish your thoughts on your own site first, then syndicate it to other platforms in a format that suits.
 
 I was inspired by some great articles by [Max Böck](https://mxb.dev/blog/syndicating-content-to-twitter-with-netlify-functions/) and [Matthias Ott](https://matthiasott.com/notes/syndicating-posts-personal-website-twitter-mastodon) who have both written about how they syndicate their content to other platforms. As a developer, it sounded like a fun challenge to see how I could use 11ty to post small notes to my site and automate the process of sending them to other platforms.
 
@@ -35,10 +35,9 @@ So let's do it...
 
 ## Create an Eleventy note collection
 
-Creating a new [eleventy collection](https://www.11ty.dev/docs/collections/) to group my notes together is the easy part!
+Creating a new [eleventy collection](https://www.11ty.dev/docs/collections/) to group my notes together is the easy part if you've got an 11ty site!
 
 Using its tagging system, you can create a new collection. I like to put each collection into a new folder in my project as 11ty allows you to have per-directory configuration. This means we can set all of our note settings in one place.
-
 
  I created a new folder called `notes` and added a new file called `notes.json` to it. I set up a `layout` to be able to render each note on its own URL and added a `tags` array to allow me to create a `notes` collection. I also added a `syndicate` flag to allow me to filter notes that I want to syndicate to other platforms or not on a per-note basis. This will be an enhancement that I've not implemented yet.
 
@@ -125,7 +124,72 @@ Now we need to look at how we can post these notes to our social media platforms
 
 ## Create Node.js scripts to share notes
 
-- Provide step-by-step instructions on syndicating notes to social media platforms like Twitter, Mastodon, or LinkedIn.
+As I've used JavaScript for a long time now, I wanted to make an easy way to post all new notes using Node.js. I created a script which needs to do the following:
+
+- Find all of the `notes` markdown files in the collection
+- Read the file and extract both the YAML front matter and the content
+- *[Optional]* Convert any markdown in the content back to plain text
+- Determine if the post has already been posted
+- Post the note to the social media platform if needed
+- Record the fact that the note has been posted
+
+### Find all of the notes
+
+I use a [glob](https://en.wikipedia.org/wiki/Glob_(programming)) library to find all of the markdown files in the `notes` folder. I use `fast-glob` but you can use any library you like. It would be good to leverage 11ty to do this but there's no easy way to hook into it as a post-build step.
+
+{% codetitle "scripts/postNotes.js" "Find all of the notes" %}
+
+```javascript
+
+{% codetitle "scripts/postNotes.js" "Note template" %}
+
+```javascript
+
+{% codetitle "scripts/postNotes.js" "Note template" %}
+
+```javascript
+const glob = require('fast-glob');
+
+const postLatestNotes = async () => {
+  // Because 'parse-md' is an ESM module, we have to dynamically import it
+  const { default: parseMd } = await import('parse-md');
+
+  const notePaths = await glob(['src/notes/**/*.md'], {
+    cwd: process.cwd(),
+  });
+
+  // More code to come...
+};
+
+// I'm still using CommonJS (not ESM) so I need to wrap the async function in an IIFE
+(async () => {
+  await postLatestNotes();
+})();
+```
+
+### Read and parse each note
+
+We need to iterate through each file and read the contents. As we're reading markdown, we'll can separate the front matter for our configuration from the content. We'll use a library called [parse-md](https://github.com/rpearce/parse-md) to do this. Note in the code above that I'm using a dynamic `import` to load the library. This is because my script is using CommonJS and the library is using ESM.
+
+I also remove the markdown from the content using my own code. It adds a markdown renderer which changes each token to plain text. I've not included the code here as this is something you don't need to do if you're not using markdown syntax in your notes.
+
+{% codetitle "scripts/postNotes.js" "Read and parse each note" %}
+
+```javascript
+  // Iterate over each note markdown file that we found
+  notePaths.map(async (path) => {
+    // Read the markdown file
+    const fileContent = await fs.readFile(path, 'utf-8');
+
+    // Parse the markdown file into front matter metadata and content
+    const { metadata, content } = parseMd(fileContent);
+    
+    // Optional: Remove markdown from the content
+    const text = markdownToTxt(content);
+    
+    // ...
+  });
+```
 
 ## Check we've not posted them already
 
