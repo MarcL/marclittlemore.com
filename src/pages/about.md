@@ -61,9 +61,3 @@ Although rarely commercially released, I've been making dance music since the la
 Outside of work you'll find me helping my beautiful wife [Clare Littlemore](https://clarelittlemore.com/) to persue her writing career. She writes Young Adult dystopian fiction which you can find on her [Amazon author page](https://www.amazon.co.uk/Clare-Littlemore/e/B00G9VGS0A). I help her with anything digital so she can concentrate on writing.
 
 I also love playing with my two teenage children and helping them to grow up to be wonderful human beings.
-
-## Learn to be an Intentional Technical Leader
-
-If you're interested in software engineering technical leadership, you should check out my weekly newsletter.
-
-{% include partials/newsletter.html %}
