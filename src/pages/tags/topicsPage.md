@@ -1,17 +1,9 @@
 ---
 pagination:
     addAllPagesToCollections: true
-    data: collections
+    data: collections.tagList
     size: 1
     alias: topic
-    filter:
-        - post
-        - talk
-        - page
-        - tagList
-        - all
-        - chatbots
-        - javascript-testing
 permalink: "/topics/{{topic}}/"
 headerImage: /images/banners/topics.jpg
 eleventyComputed:
