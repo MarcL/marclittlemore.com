@@ -257,7 +257,7 @@ Take notes of the ideas that you find and start to link them together using Obsi
 
 ## Useful resources to learn more about Obsidian notes
 
-[Francesco D'Alessio](https://twitter.com/francescod_ales) from [Keep Productive](https://www.keepproductive.com/) has a great getting started guide for Obsidian:
+[Francesco D'Alessio](https://twitter.com/francescod_ales) from [Tool Finder](https://toolfinder.co/) has a great getting started guide for Obsidian:
 
 https://www.youtube.com/watch?v=bLoukY64gYk
 
