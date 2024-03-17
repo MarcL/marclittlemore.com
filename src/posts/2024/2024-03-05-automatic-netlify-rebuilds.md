@@ -22,15 +22,19 @@ Many developers have come from the world of Wordpress where using PHP to dynamic
 
 Or you could just rebuild it automatically. :robot:
 
-## Automation services
+## Let's start automating
 
 My original plan for rebuilding my sites was to trigger this rebuild via a cron service, like [cron-job.org](https://cron-job.org/en/) or [Easy Cron](https://www.easycron.com/) or automation platform like [Zapier](https://zapier.com).
 
 I tried using the automation service [make.com](https://make.com) to schedule a yearly rebuild of my site to update the footer. However, I soon hit the limits of their free tier which only allows 2 scenarios and I wanted to update multiple websites. You could bundle the rebuild requests into a single scenario and update each site in a sequence, but then you lack single responsibility and it's harder to debug if anything goes wrong with a single update.
 
-## Using Netlify to rebuild
+Instead, I decided to use [Netlify](https://www.netlify.com/).
 
-I host all of my sites on Netlify and have done for a long time. _Disclaimer: I work for Netlify but I've been doing this way before I worked there._ Netlify provides you with the ability to rebuild your site via a [webhook](https://en.wikipedia.org/wiki/Webhook) - a HTTP POST request which allows you to kick-off a new build and deployment of your site.
+## Using Netlify to rebuild your site
+
+_Disclaimer: I work for Netlify but I've used their platform for years before I worked there._
+
+I host all of my sites on Netlify and have done for a long time. Netlify provides you with the ability to rebuild your site via a [webhook](https://en.wikipedia.org/wiki/Webhook) - a HTTP POST request which allows you to kick-off a new build and deployment of your site.
 
 While there are plenty of other options for running scheduled tasks, I thought I'd just move over to using Netlify's [scheduled functions](https://docs.netlify.com/functions/scheduled-functions/) to automate this. This has the advantage of me having complete control over the code and when the rebuild happens. I can add in any additional notifications, like messaging me on Slack or Telegram, and it allows me to commit it to my site's repository as part of the infrastructure - [infrastructure as code (IaC)](https://en.wikipedia.org/wiki/Infrastructure_as_code). This allows me to version my scheduled tasks along with the code and stops me from having to remember which service I used to rebuild the site.
 
@@ -129,7 +133,7 @@ You have to `export` a `config` object with a `schedule` property to tell Netlif
 
 ## Testing the scheduled function locally
 
-You can test the scheduled function locally using the Netlify CLI.
+You'll want to test the scheduled function locally using the Netlify CLI to check that it works as expected.
 
 Install the Netlify CLI if you haven't already:
 
@@ -143,9 +147,9 @@ Then run the following command to start the development server for your static s
 netlify dev
 ```
 
-This will start a local server and you can access your scheduled function at `http://localhost:8888/.netlify/functions/rebuild-yearly`.
+This will start a local server and you can access your scheduled function at `http://localhost:8888/.netlify/functions/rebuild-yearly` in your browser.
 
-You can also test the function by running the following CURL command:
+You can't test scheduled functions, so you'll have to invoke the function manually. In another terminal window, you can trigger the function by running the following CURL command:
 
 ```bash
 netlify functions:invoke rebuild-yearly
@@ -153,9 +157,29 @@ netlify functions:invoke rebuild-yearly
 
 _Note: The name of the function matches the name of the file without the file extension._
 
+You can check the Netlify dashboard to see if a new deployment has been created. If it has, then your scheduled function is working as expected. :tada:
+
+## Updating your site footer with the latest date
+
+Now that we've got a scheduled function to rebuild our site, we can update the footer with the latest year. You can do this by using a JavaScript function to get the current year and update the footer text.
+
+For my 11ty site I use the following `liquid` template code to update the footer:
+
+{% raw %}
+```liquid
+<footer>
+    <p>Copyright &copy; 2007-{{"now" | date: "%Y"}}</p>
+</footer>
+```
+{% endraw %}
+
+Liquid templates allow the keyword `now` or `today` to get today's date and then we format it to only take the year. This will update the footer with the latest year when the site is rebuilt.
+
 ## Deploying the scheduled function
 
-Once you're happy with your scheduled function, you can deploy it to Netlify using the Netlify CLI. Run the following command to deploy your function:
+Once you're happy with your scheduled function, you can deploy it to Netlify. If you have a git repository linked to a Netlify site, you can simply push your changes to the repository and Netlify will automatically deploy your scheduled function.
+
+You can also use the Netlify CLI. Run the following command to deploy your function to production (or leave off the `--prod` flag to create a deploy preview):
 
 ```bash
 netlify deploy --prod
@@ -163,16 +187,20 @@ netlify deploy --prod
 
 This will deploy your function to Netlify and you can check the Netlify dashboard to see your scheduled function in the "Functions" section.
 
+And that's it! All done! :tada:
+
 ## Use cases
 
 I've used this to update the footer on my site but you can use this approach to automate any other tasks that you need to run on a schedule.
 
-- **Weekly newsletter updates**: I use the [EmailOctopus](https://emailoctopus.com/) email email service to send out a newsletter and each week I automatically update my site with the latest newsletter from their API.
-- **Scheduled blog posts**: If you're missing Wordpress scheduled posts, you can do the same thing with a static site by setting a publish date in your post metadta. Use Netlify scheduled functiont to automatically publish them on your site on a specific date.
+- **Weekly newsletter updates**: I use the [EmailOctopus](https://emailoctopus.com/) email service to send out a newsletter and each week I automatically update my site with the latest newsletter from their API.
+- **Scheduled blog posts**: If you're missing Wordpress scheduled posts, you can do the same thing with a static site by setting a publish date in your post metadta. Use Netlify scheduled functions to automatically publish them on your site on a specific date. Remy Sharp has a great post on [scheduled and draft blog posts with Eleventy](https://remysharp.com/2019/06/26/scheduled-and-draft-11ty-posts) which will show you how to do this.
 - **Activity feed**: I use the GoodReads API to update my site with the latest books I've read and you can regularly update this with a scheduled function. You could do the same with Strava for your latest runs or rides, or Last.fm for your latest music listens.
 - **Bookmarks**: Use a bookmark manager like [Pocket](https://getpocket.com/) or [Raindrop.io](https://raindrop.io/) to save your favourite links and use their APIs to update your site with the latest bookmarks you've saved.
 
 
 ## Conclusion
 
-And that's it! You've now got a scheduled function that will trigger a new build and deployment of your site every year. You can use this approach to automate any other tasks that you need to run on a schedule, like updating your site with the latest newsletter from your provider's API or scheduling blog posts.
+Automating regular website updates for your static site using Netlify scheduled functions is a great way to set it and forget it. You can stop worrying about manual updates and focus on creating new content for your site.
+
+Go and automate your static site updates today! :robot:
