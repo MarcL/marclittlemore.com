@@ -12,31 +12,31 @@ image:
     url: https://unsplash.com/@echaparro
 ---
 
-## Introduction
-
 I laugh every year when I see this meme about updating your website footer:
 
 https://twitter.com/iamdevloper/status/1212320688050229249
 
-Many developers have come from the world of Wordpress where using PHP to dynamically update the year in the footer is common. As PHP is a server-side language, you're constantly rebuilding the page when someone requests a URL when you often don't need to. But if you have a static site then your code only updates when you build it manually and redeploy the latest version. If you have dynamic content on the page, then you have to remember to rebuild the site when the data changes or use some client-side JavaScript.
+If you're a developer who has come from the world of Wordpress where using PHP to dynamically update the year in the footer then I'm sure you're wondering what the fuss is about. As PHP is a server-side language, you're constantly rebuilding a page when someone requests a URL.
 
-Or you could just rebuild it automatically. :robot:
+But if you have a static site then your code only updates when you build it manually and redeploy the latest version. If you have dynamic content on the page, such as a year in your footer, then you have to remember to rebuild the site when the data changes or maybe use some client-side JavaScript.
+
+This site is generated with [11ty](https://www.11ty.dev/) which is staticly generated so I need to remember to rebuild my site each year if I want to do something like update my footer. But clicking on a deploy button in the Netlify dashboard is a bit of a faff and I'm likely to forget to do it. So why not automate it? 🤖
 
 ## Let's start automating
 
 My original plan for rebuilding my sites was to trigger this rebuild via a cron service, like [cron-job.org](https://cron-job.org/en/) or [Easy Cron](https://www.easycron.com/) or automation platform like [Zapier](https://zapier.com).
 
-I tried using the automation service [make.com](https://make.com) to schedule a yearly rebuild of my site to update the footer. However, I soon hit the limits of their free tier which only allows 2 scenarios and I wanted to update multiple websites. You could bundle the rebuild requests into a single scenario and update each site in a sequence, but then you lack single responsibility and it's harder to debug if anything goes wrong with a single update.
+I tried using the automation service [make.com](https://make.com) to schedule the yearly rebuild of my site. However, I soon hit the limits of their free tier which only allows 2 "scenarios" (a set of automation steps) and I wanted to update multiple websites. You could bundle multiple rebuild requests into a single scenario and update each site in a sequence, but then you lack single responsibility and it's harder to debug if anything goes wrong with a single update.
 
-Instead, I decided to use [Netlify](https://www.netlify.com/).
+So as my site was already hosted there, I decided to use [Netlify](https://www.netlify.com/).
+
+_Disclaimer: I am a Senior Software Engineering Manager at Netlify but I've used their platform for years before I worked there._
 
 ## Using Netlify to rebuild your site
 
-_Disclaimer: I work for Netlify but I've used their platform for years before I worked there._
+I host all of my sites on Netlify and have done for a long time. Netlify provides you with the ability to rebuild your site via a [build hook](https://docs.netlify.com/configure-builds/build-hooks/). This is special kind of [webhook](https://en.wikipedia.org/wiki/Webhook), a function that responds to a HTTP POST request, which allows you to kick-off a new build and deployment of your site.
 
-I host all of my sites on Netlify and have done for a long time. Netlify provides you with the ability to rebuild your site via a [webhook](https://en.wikipedia.org/wiki/Webhook) - a HTTP POST request which allows you to kick-off a new build and deployment of your site.
-
-While there are plenty of other options for running scheduled tasks, I thought I'd just move over to using Netlify's [scheduled functions](https://docs.netlify.com/functions/scheduled-functions/) to automate this. This has the advantage of me having complete control over the code and when the rebuild happens. I can add in any additional notifications, like messaging me on Slack or Telegram, and it allows me to commit it to my site's repository as part of the infrastructure - [infrastructure as code (IaC)](https://en.wikipedia.org/wiki/Infrastructure_as_code). This allows me to version my scheduled tasks along with the code and stops me from having to remember which service I used to rebuild the site.
+While there are plenty of other options for running scheduled tasks, I thought I'd just move over to using Netlify's [scheduled functions](https://docs.netlify.com/functions/scheduled-functions/) to automate this. This has the advantage of having complete control over the code and when the rebuild happens. I can also add in any additional notifications, like sending me a message on Slack or Telegram, and it allows me to commit it to my site's repository as part of the infrastructure, known as [infrastructure as code (IaC)](https://en.wikipedia.org/wiki/Infrastructure_as_code). This allows me to version my scheduled tasks along with the code and stops me from having to remember which service I used to rebuild the site.
 
 This approach is easy to implement, even for beginners with no prior experience with Netlify functions. So, buckle up and get ready to make website maintenance easy with the power of automation!
 
@@ -49,14 +49,14 @@ Go to the Netlify dashboard and select the site you want to add your build hook 
 ![Netlify build hook](/images/posts/netlify-build-hooks.png)
 
 {% callout 'warning' %}
-Remember that this build hook URL should be considered a secret and should be kept safe. If you accidentally expose it, you allow anyone to trigger a new build and deployment of your site. This might not seem like a big deal but you don't want people to be able to rack up build minutes on your behalf.
+Remember that this build hook URL should be considered a secret and must be kept safe. If you accidentally expose it, you allow anyone to trigger a new build and deployment of your site. This might not seem like a big deal but you don't want people to be able to rack up build minutes on your behalf.
 {% endcallout %}
 
 
 It will give you a URL that you can use to trigger a new build and deployment of your site and you can test it out using a CURL command to send a HTTP POST request to it.
 
 ```bash
-curl -X POST -d {} https://api.netlify.com/build_hooks/your-build-hook
+curl -X POST -d {} https://api.netlify.com/build_hooks/<your-build-hook>
 ```
 
 Take a look at your deployments in the Netlify application and you should see a new deployment being created.
@@ -75,7 +75,7 @@ Ok great! So now we've got a build hook so let's create some code in a Netlify s
 
 ## Adding a Netlify rebuild scheduled function
 
-If you've never used scheduled functions before, think of them as silent workers who can automate tasks for you while you sleep and do this on a consistent schedule! :robot:
+If you've never used scheduled functions before, think of them as robot workers who can automate tasks for you while you sleep and do this on a consistent schedule! :robot:
 
 Create a new file in your `netlify/functions` directory called `rebuild-yearly.mts`.  This will be the scheduled code that calls our rebuild hook.
 
@@ -187,20 +187,24 @@ netlify deploy --prod
 
 This will deploy your function to Netlify and you can check the Netlify dashboard to see your scheduled function in the "Functions" section.
 
+Your function will now run every year and you'll see it in your deploys in the Netlify dashboard:
+
+![Netlify automated production deploy](/images/posts/netlify-automated-production-deploy.png)
+
 And that's it! All done! :tada:
 
-## Use cases
+## Example use cases
 
 I've used this to update the footer on my site but you can use this approach to automate any other tasks that you need to run on a schedule.
 
 - **Weekly newsletter updates**: I use the [EmailOctopus](https://emailoctopus.com/) email service to send out a newsletter and each week I automatically update my site with the latest newsletter from their API.
-- **Scheduled blog posts**: If you're missing Wordpress scheduled posts, you can do the same thing with a static site by setting a publish date in your post metadta. Use Netlify scheduled functions to automatically publish them on your site on a specific date. Remy Sharp has a great post on [scheduled and draft blog posts with Eleventy](https://remysharp.com/2019/06/26/scheduled-and-draft-11ty-posts) which will show you how to do this.
+- **Scheduled blog posts**: If you're missing Wordpress scheduled posts, you can do the same thing with a static site by setting a publish date in your post metadata. Use Netlify scheduled functions to automatically publish them on your site on a specific date. Remy Sharp has a great post on [scheduled and draft blog posts with Eleventy](https://remysharp.com/2019/06/26/scheduled-and-draft-11ty-posts) which will show you how to do this.
 - **Activity feed**: I use the GoodReads API to update my site with the latest books I've read and you can regularly update this with a scheduled function. You could do the same with Strava for your latest runs or rides, or Last.fm for your latest music listens.
 - **Bookmarks**: Use a bookmark manager like [Pocket](https://getpocket.com/) or [Raindrop.io](https://raindrop.io/) to save your favourite links and use their APIs to update your site with the latest bookmarks you've saved.
 
 
-## Conclusion
+## That's all folks!
 
 Automating regular website updates for your static site using Netlify scheduled functions is a great way to set it and forget it. You can stop worrying about manual updates and focus on creating new content for your site.
 
-Go and automate your static site updates today! :robot:
+Go and automate your static site updates with Netlify scheduled functions today! :robot:
