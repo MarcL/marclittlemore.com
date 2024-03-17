@@ -18,8 +18,12 @@ sitemap:
   {%- for post in collections.feed reversed %}
   {% capture absolutePostUrl %}{{ post.url | absoluteUrl: site.url }}{% endcapture %}
   <entry>
+    {% if post.data.tags contains "note" %}
     {% assign noteDate = post.date | date: "%Y-%m-%d %H:%M" %}
     <title>{{ post.data.title | default: "📝 Note - " | append: noteDate }}</title>
+    {% else %}
+    <title>{{ post.data.title }}</title>
+    {% endif %}
     <link href="{{ absolutePostUrl }}"/>
     <published>{{ post.date | dateToRfc3339 }}</published>
     {% if post.data.updatedDate %}
