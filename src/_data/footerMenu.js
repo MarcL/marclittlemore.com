@@ -45,9 +45,9 @@ module.exports = [
         title: 'Topics that I write about',
       },
       {
-        name: 'Notes',
-        url: '/notes/',
-        title: "Notes that I've written",
+        name: 'Links',
+        url: '/links/',
+        title: "Interesting links that I've found",
       },
     ],
   },
