@@ -3,7 +3,7 @@ const COLLECTION_NAME = 'marclittlemore.com links';
 const makeAuthenticatedCall = async (url, options) => {
     const response = await fetch(url, {
         headers: {
-            Authorization: `Bearer ${process.env.RAINDROP_TOKEN}`
+            Authorization: `Bearer ${process.env.RAINDROP_API_TOKEN}`
         },
         ...options
     });
@@ -28,8 +28,6 @@ const getRaindropLinks = async () => {
 
     // Sort links by date
     const sortedLinks = links.items.sort((a, b) => new Date(b.created) - new Date(a.created));
-
-    console.log(sortedLinks);
 
     return sortedLinks;
 };
