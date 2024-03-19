@@ -3,7 +3,7 @@ title:  "Automate Your Static Site Rebuilds with Netlify Scheduled Functions"
 subtitle: "Never forget to update your copyright footer again!"
 permalink: /automate-site-rebuilds-with-netlify-scheduled-functions/
 headerImage: /images/banners/automate-site-rebuilds-with-netlify-functions.jpg
-description: Effortlessly automate regular website updates for your static site using Netlify scehduled functions. Set it and forget it - never worry about manual updates again!
+description: Effortlessly automate regular website updates for your static site using Netlify scheduled functions. Set it and forget it - never worry about manual updates again!
 tags:
     - development
 image:
