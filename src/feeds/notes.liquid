@@ -1,0 +1,8 @@
+---
+# Feed for the notes
+layout: null
+permalink: "/notes/feed.xml"
+sitemap:
+  exclude: yes
+---
+{% render partials/atomFeed.liquid feedTitle: site.rss.title, siteUrl: site.url, siteAuthor: site.author, pageUrl: page.url, collection: collections.note %}

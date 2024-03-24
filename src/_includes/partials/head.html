@@ -57,4 +57,8 @@
     {%- if site.adverts.enabled -%}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{site.adverts.google.client}}" crossorigin="anonymous"></script>
     {%- endif -%}
+
+    <!-- RSS feeds -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.rss.title }} - RSS Feed" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.rss.title }} - Notes RSS Feed" href="/notes/feed.xml" />
 </head>
