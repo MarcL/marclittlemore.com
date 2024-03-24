@@ -1,4 +1,7 @@
 // Metadata for the auto-generated topic pages
+
+// TODO: If you add page URLs here then you need to
+// filter them out on the topicsPage to avoid a page duplication
 module.exports = {
     chatbots: {
         title: 'Chatbots',
