@@ -4,6 +4,9 @@ pagination:
     data: collections.tagList
     size: 1
     alias: topic
+    filter:
+        - chatbots
+        - javascript-testing
 permalink: "/topics/{{topic}}/"
 headerImage: /images/banners/topics.jpg
 eleventyComputed:
