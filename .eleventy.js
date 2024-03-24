@@ -14,6 +14,7 @@ const addAllShortcodes = require('./_eleventy/shortcodes');
 const addAllFilters = require('./_eleventy/filters');
 const markdownLib = require('./_eleventy/markdown');
 const site = require('./src/_data/site');
+const addCollections = require('./_eleventy/collections');
 
 module.exports = (eleventyConfig) => {
   // Plugins
@@ -29,31 +30,7 @@ module.exports = (eleventyConfig) => {
   });
 
   // Collections
-  eleventyConfig.addCollection('tagList', (collection) => {
-    let tagSet = new Set();
-
-    // Ignore these tags
-    const filteredTags = ['post', 'talk', 'note'];
-    collection.getAll().forEach((item) => {
-      if (!item.data.tags) {
-        return;
-      }
-
-      item.data.tags
-        .filter((tag) => !filteredTags.includes(tag))
-        .forEach((tag) => tagSet.add(tag));
-    });
-
-    return [...tagSet].sort((first, second) => first.localeCompare(second));
-  });
-
-  // Collection for RSS feed
-  eleventyConfig.addCollection('feed', (collection) => {
-    return collection.getFilteredByGlob([
-      'src/posts/**/*.md',
-      'src/notes/**/*.md',
-    ]);
-  });
+  addCollections(eleventyConfig);
 
   // RSS
   eleventyConfig.addPlugin(rss);
