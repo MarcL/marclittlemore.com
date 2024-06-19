@@ -128,9 +128,21 @@ So now we've got a collection of notes. I can add a new markdown file and it wil
 
 Now we need to look at how we can post these notes to our social media platforms.
 
-## Create Node.js scripts to share notes
+## Publish the notes on Social Media
 
-- Provide step-by-step instructions on syndicating notes to social media platforms like Twitter, Mastodon, or LinkedIn.
+Now we've got a collection of notes, we need to publish them to the social networks we want to syndicate to.
+
+You'll need to create an account on the social media platform you want to post to and generate some credentials to allow you to post to it.
+
+### Twitter
+
+Look, I'll level with you.
+
+The Twitter API is free but the free tier is pretty limited now. It allows you to post 1500 tweets per month, plenty for what we need to do, but it only allows you access to tweet via the v2 API, and limited access to the v1 API. See the details on their [Twitter API access level page](https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api#v2-access-level). If you want to read tweets then you'll have to spend $100 per month on the basic tier.
+
+Twitter will still allow you to create an app and generate API keys. You can do this by going to the [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard) and creating a new app. To use the v2 API to post a tweet, you'll need to generate a bearer token to authorise your requests. As this is an app-only authentication, you don't need to consider user authentication. Follow the instructions on the [Twitter Developer site](https://developer.twitter.com/en/docs/authentication/oauth-2-0/bearer-tokens) to generate a bearer token.
+
+
 
 ## Check we've not posted them already
 
