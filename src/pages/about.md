@@ -30,7 +30,7 @@ While building BBC Account I learnt a lot about microservice architecture, Node.
 
 Although I managed teams back at Sony in the mid-2000s, I properly transitioned from a Principal Engineer role into a Software Engineering Team Lead management role at the BBC. This really changed my thinking about how to build effective software engineering teams. It allowed me to ensure we had a culture of inclusion and psychological safety. There's no such thing as a silly question in my team. Moving to team leadership made me think more about diversity and inclusing and how I can help to enable any software engineer to thrive.
 
-I've continued my journey into technical leadership after leaving the BBC with a number of Engineering Manager roles at different companies. I'm now settled as Senior Engineering Manager at [Netlify](https://netlify.com/) where I'm helping to build the future of the web.
+I've continued my journey into technical leadership after leaving the BBC with a number of Engineering Manager roles at different companies. I'm now settled as an {{site.work.title}} at [{{site.work.companyName}}]({{site.work.url}}).
 
 ## I almost died
 

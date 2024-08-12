@@ -24,6 +24,11 @@ module.exports = {
     name: 'Marc Littlemore',
     email: 'marc@marclittlemore.com',
   },
+  work: {
+    companyName: 'n8n',
+    title: 'Engineering Manager',
+    url: 'https://n8n.io'
+  },
   isDevelopmentBuild,
   rss: {
     title: 'Marc Littlemore',
