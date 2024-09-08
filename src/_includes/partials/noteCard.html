@@ -1,17 +1,28 @@
 {% assign isDetailView = layout == 'note' %}
 
-<div class="prose-slate shadow-xl rounded-md p-4 noteCard">
-    {% if noteImage %}
-      <div>
-        {% image noteImage.url noteImage.alt "my-4 sm:my-0 shadow-lg rounded-md" false %}
-      </div>
-    {% endif %}
-    <div class="content">
-      {{noteContent}}
+<div class="mb-4">
+    <div class="prose-slate bg-slate-100 shadow-sm rounded-md px-4 py-2">
+        {% if noteImage %}
+        <div>
+            {% image noteImage.url noteImage.alt "my-4 sm:my-0 shadow-lg
+            rounded-md" false %}
+        </div>
+        {% endif %}
+        <div class="content">
+            <div>{{noteContent}}</div>
+            {% if isDetailView == false %}
+            <div>
+                <a href="{{noteUrl}}">Read more →</a>
+            </div>
+            {% endif %}
+        </div>
     </div>
-    <div class="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">
-      {{noteDate | date: "%H:%M %p - %b %d, %Y"}}
-      {% if isDetailView == false %}| <a href="{{noteUrl}}">Note link</a>{% endif %}
+    <div class="grid grid-cols-2">
+        <div class="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">
+            {{noteDate | date: "%H:%M %p - %b %d, %Y"}}
+        </div>
+        <div class="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">
+            {% noteIcons noteUrl %}
+        </div>
     </div>
 </div>
-  
