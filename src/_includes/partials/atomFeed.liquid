@@ -30,6 +30,9 @@
       <name>{{siteAuthor.name}}</name>
     </author>
     <content type="html">{{ post.templateContent | convertHtmlToAbsoluteUrls: absolutePostUrl | xmlEscape }}</content>
+    {% for category in post.data.categories %}
+      <category term="{{category}}" label="{{category}}" />
+    {% endfor %}
   </entry>
   {%- endfor %}  
 </feed>
