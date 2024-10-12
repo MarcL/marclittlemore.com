@@ -7,9 +7,8 @@ const embedTwitter = require('eleventy-plugin-embed-twitter');
 const timeToRead = require('eleventy-plugin-time-to-read');
 const tableOfContents = require('eleventy-plugin-nesting-toc');
 const externalLinks = require('@aloskutov/eleventy-plugin-external-links');
-const UpgradeHelper = require('@11ty/eleventy-upgrade-help');
 
-const util = require('util');
+const util = require('node:util');
 
 const addAllShortcodes = require('./_eleventy/shortcodes');
 const addAllFilters = require('./_eleventy/filters');
@@ -80,8 +79,6 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.setLiquidOptions({
         dynamicPartials: false,
     });
-
-    eleventyConfig.addPlugin(UpgradeHelper);
 
     return {
         dir: {
