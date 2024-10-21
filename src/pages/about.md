@@ -8,11 +8,9 @@ headerImage: /images/banners/about-bg.jpg
 
 Hello! I'm Marc Littlemore. :wave:
 
-I'm a Senior Software Engineering Manager at [Netlify](https://netlify.com/).
+I'm an {{site.work.title}} at [{{site.work.companyName}}]({{site.work.url}}).
 
 I love building diverse and inclusive software engineering team and love [lifting my team up](/lift-your-team-up/).
-
-I really enjoy helping people like you learn to be a better [intentional technical leader](/newsletter/).
 
 ## I've been around
 

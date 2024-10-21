@@ -5,14 +5,26 @@ description: Inspired by Derek Sivers, this is my now page. It tells you what I'
 permalink: /now/
 headerImage: /images/banners/home-office.jpg
 date: 2015-10-09
-updatedDate: 2023-11-05
+updatedDate: 2024-10-16
 ---
 
 This page is inspired by Derek Siver's [now page](https://sivers.org/now) suggestion and his [Now Now Now](https://nownownow.com/) movement. The purpose of this page is to share my current focus.
 
 ## What's happening right now?
 
-### Updated: 5th November 2023
+### Updated: 16th October 2024
+
+I started a new role in August 2024 and I'm now working as an {{site.work.title}} at [{{site.work.companyName}}]({{site.work.url}}). It wasn't initially a planned move as I was laid off from Netlify in May 2023, but I'm loving working on a really interesting automation tool.
+
+I'm still working out on a regular basis and have been working out 4 times per week at a great gym called Mens Hub. It's more of a circuits training class with personal trainers and weights. I really enjoy it and it's done wonders for my health.
+
+I've been making a lot more music recently and have been making remixes and new tracks in Ableton. The plan is to post more of those online and I want to investigate create a digital record label.
+
+We're also now looking at universities and drama schools for my son who turned 17 earlier in the year. He'll be looking at starting in 2025 so I'm preparing for him leaving home too. :sob:
+
+### Older updates
+
+#### Updated: 5th November 2023
 
 I've been helping my wife [Clare](https://www.clarelittlemore.com) as she has published the 4th and last book in her [The Bellator Chronicles series](https://clarelittlemore.com/the-bellator-chronicles/), [Alliance](https://clarelittlemore.com/the-bellator-chronicles/alliance/). It's been a long journey for her and I'm really proud of what she's achieved. I can't believe that she's got two series, and 8 books released!
 
