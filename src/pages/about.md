@@ -8,7 +8,7 @@ headerImage: /images/banners/about-bg.jpg
 
 Hello! I'm Marc Littlemore. :wave:
 
-I'm a Senior Software Engineering Manager at [Netlify](https://netlify.com/).
+I'm an {{site.work.title}} at [{{site.work.companyName}}]({{site.work.url}}).
 
 I love building diverse and inclusive software engineering team and love [lifting my team up](/lift-your-team-up/).
 
@@ -43,7 +43,7 @@ I spent 45 days in intensive care, learning how to breathe, and eat again.
 I spent another 45 days on a hospital ward learning how to move my arms and walk again.
 
 It was tough going.
- 
+
 Thankfully, I managed to survive but it's changed the way I look at life. My wife Clare also wrote about the experience for her and our children in more details. You should read her [Out Of The Woods Blog](https://outofthewoodsblog.com) where she gives an honest view of the challenges she had.
 
 ## I :heart: music
