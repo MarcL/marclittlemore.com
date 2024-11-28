@@ -13,7 +13,7 @@ Here is a collection of **{{collections.post.length}} posts** that I've written 
 
 I enjoy writing about [software development](/topics/development/), [JavaScript testing](/javascript-testing/), [chatbots](/bots/), [technical leadership](/topics/leadership/), and [other things I'm interested in](/topics/). I'm attempting to build a regular habit of writing and I hope that you find something useful in my articles.
 
-You can subscribe to the RSS feed for my blog posts by clicking [here](/feed.xml).
+You can [subscribe to the RSS feed](/feed.xml) for my blog posts to see the latest updates.
 
 Enjoy! :clap:
 
