@@ -55,14 +55,14 @@ module.exports = {
             hover: 'group-hover:underline group-hover:underline-offset-4',
         },
         date: {
-            text: 'text-slate-600 font-light',
+            text: 'text-slate-600 font-medium',
             icon: 'fill-slate-600',
         },
         icons: {
             main: 'text-red-700',
         },
         image: {
-            hover: 'group-hover:opacity-50',
+            hover: 'transform transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1 group-hover:shadow-lg',
         },
     },
     bookshelf: {

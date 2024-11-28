@@ -1,19 +1,7 @@
 {% assign allArticles = collection | reverse %}
-<section class="grid grid-cols-1 not-prose py-4">
-    {%- for article in allArticles limit: 1 -%}
-        {% render partials/articles/bigCard.html article:article theme:theme %}
-    {%- endfor -%}
-</section>
-    
-<section class="grid grid-cols-1 md:grid-cols-2 not-prose">
-{%- for article in allArticles offset: 1 limit: 4 -%}
-    {% render partials/articles/smallCard.html article:article theme:theme %}
-{%- endfor -%}
-</section>
-
-<section class="grid grid-cols-1 md:grid-cols-4 not-prose">
-    {%- for article in allArticles offset: 5 -%}
-        {% render partials/articles/smallCard.html article:article theme:theme %}
+<section class="grid grid-cols-1 not-prose py-4 space-y-10">
+    {%- for article in allArticles -%}
+        {% render partials/articles/standardCard.html article:article theme:theme %}
     {%- endfor -%}
 </section>
     

@@ -9,6 +9,12 @@ image:
     url: https://unsplash.com/@patrickian4
 ---
 
-Here is a collection of **{{collections.post.length}} posts** that I've written over the past few years. I write about [software development](/topics/development/), [JavaScript testing](/javascript-testing/), [chatbots](/bots/), [technical leadership](/topics/leadership/), and [other things I'm interested in](/topics/). I'm attempting to build a regular habit of writing and I hope that you find something useful in my articles. Enjoy! :clap:
+Here is a collection of **{{collections.post.length}} posts** that I've written over the past few years.
+
+I enjoy writing about [software development](/topics/development/), [JavaScript testing](/javascript-testing/), [chatbots](/bots/), [technical leadership](/topics/leadership/), and [other things I'm interested in](/topics/). I'm attempting to build a regular habit of writing and I hope that you find something useful in my articles.
+
+You can [subscribe to the RSS feed](/feed.xml) for my blog posts to see the latest updates.
+
+Enjoy! :clap:
 
 {% render partials/articles/writingList.html, collection: collections.post theme:theme %}
