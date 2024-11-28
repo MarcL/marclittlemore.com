@@ -62,7 +62,7 @@ module.exports = {
             main: 'text-red-700',
         },
         image: {
-            hover: 'group-hover:scale-125',
+            hover: 'transform transition-transform duration-300 group-hover:scale-105 group-hover:rotate-1 group-hover:shadow-lg',
         },
     },
     bookshelf: {
