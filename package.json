@@ -58,6 +58,7 @@
     "dev": "npx @11ty/eleventy --quiet --watch & npm run build:css:watch",
     "links:internal": "hyperlink -ri --root _site --canonicalroot https://marclittlemore.com/ --skip '/.netlify/functions' _site/*.html | tap-spot",
     "links:external": "hyperlink -r --root _site --canonicalroot https://marclittlemore.com/ --skip '/.netlify/functions' _site/*.html | tap-spot",
+    "post:new": "node scripts/postNew.js",
     "postNotes": "node scripts/postNotes.js",
     "serve": "npm run serve:js & ELEVENTY_ENV=dev eleventy --serve & npm run build:css:watch",
     "serve:js": "parcel watch src/clientjs/index.js"
