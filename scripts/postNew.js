@@ -2,19 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-// ---
-// title:  "Starting Writing Again"
-// subtitle: "Time to get blogging again!"
-// permalink: /starting-writing-again/
-// headerImage: /images/banners/automate-site-rebuilds-with-netlify-functions.jpg
-// description: Effortlessly automate regular website updates for your static site using Netlify scheduled functions. Set it and forget it - never worry about manual updates again!
-// tags:
-//     - writing
-// image:
-//     source: https://unsplash.com/photos/unpaired-shoe-lot-Lh-CTP558tc
-//     creator: Edgar Chaparro
-//     url: https://unsplash.com/@echaparro
-// ---
+const POSTS_DIRECTORY = 'posts';
 
 const createFrontmatterString = (frontmatter) => {
     const frontmatterPairs = Object.entries(frontmatter)
@@ -50,7 +38,7 @@ const createPost = (title) => {
         description: '',
     });
 
-    const postDir = path.join(__dirname, '..', 'src', 'posts', year.toString());
+    const postDir = path.join(__dirname, '..', 'src', POSTS_DIRECTORY, year.toString());
     const postFile = path.join(postDir, `${date}-${slug}.md`);
 
     // Create post directory if it doesn't exist
