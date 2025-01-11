@@ -5,11 +5,11 @@ date: "2025-01-11"
 headerImage: "/images/banners/write-ideas.jpg"
 description: "It's been a long time since I've written much on this blog. It's time to change that and start writing again!"
 tags:
-    -
+    - writing
 image:
-    source: ""
-    creator: ""
-    url: ""
+    source: https://unsplash.com/photos/AXqMy8MSSdk
+    creator: Aaron Burden
+    url: https://unsplash.com/@aaronburden
 hasSidebar: false
 ---
 
