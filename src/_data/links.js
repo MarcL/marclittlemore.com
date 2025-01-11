@@ -18,16 +18,22 @@ const getLinks = async (collectionId) => {
 };
 
 const getRaindropLinks = async () => {
-    const data = await makeAuthenticatedCall('https://api.raindrop.io/rest/v1/collections');
+    let sortedLinks = [];
 
-    // Find the collection
-    const collection = data.items.find(collection => collection.title === COLLECTION_NAME);
-    const {_id: id} = collection;
-
-    const links = await getLinks(id);
-
-    // Sort links by date
-    const sortedLinks = links.items.sort((a, b) => new Date(b.created) - new Date(a.created));
+    try {
+        const data = await makeAuthenticatedCall('https://api.raindrop.io/rest/v1/collections');
+    
+        // Find the collection
+        const collection = data.items.find(collection => collection.title === COLLECTION_NAME);
+        const {_id: id} = collection;
+    
+        const links = await getLinks(id);
+    
+        // Sort links by date
+        const sortedLinks = links.items.sort((a, b) => new Date(b.created) - new Date(a.created));
+    } catch (error) {
+        console.error('Unable to get Raindrop links: ', error.message);
+    }
 
     return sortedLinks;
 };
