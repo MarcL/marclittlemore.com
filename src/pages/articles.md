@@ -17,4 +17,6 @@ You can [subscribe to the RSS feed](/feed.xml) for my blog posts to see the late
 
 Enjoy! :clap:
 
+---
+
 {% render partials/articles/writingList.html, collection: collections.post theme:theme %}
