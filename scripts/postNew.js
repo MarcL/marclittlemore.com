@@ -24,11 +24,11 @@ const createFrontmatterString = (frontmatter) => {
     // convert to yaml string
     const image = {source: '', creator: '', url: ''};
     const imagePairs = Object.entries(image)
-        .map(([key, value]) => `\t${key}: "${value}"`)
+        .map(([key, value]) => `    ${key}: "${value}"`)
         .join('\n');
 
     
-    return `---\n${frontmatterPairs}\ntags:\n\t-\nimage:\n${imagePairs}\n---\n\n`;
+    return `---\n${frontmatterPairs}\ntags:\n    -\nimage:\n${imagePairs}\n---\n\n`;
 };
 
 const createPost = (title) => {
