@@ -27,7 +27,7 @@ const markdownAnchorLinks = (md, options) => {
 
   const isAnchorableTag = (tag) => tag === 'h2' || tag === 'h3';
 
-  md.renderer.rules.heading_open = function(tokens, index) {
+  md.renderer.rules.heading_open = (tokens, index) => {
     const contentToken = tokens[index + 1];
     const slug = slugify(contentToken.content);
 
@@ -39,7 +39,7 @@ const markdownAnchorLinks = (md, options) => {
     return `<${tokens[index].tag}>`;
   };
 
-  md.renderer.rules.heading_close = function(tokens, index) {
+  md.renderer.rules.heading_close = (tokens, index) => {
     const contentToken = tokens[index - 1];
     const slug = slugify(contentToken.content);
 
