@@ -24,7 +24,7 @@ module.exports = {
             text: 'text-slate-700',
         },
         tableOfContents: {
-            background: 'bg-white',
+            background: 'bg-slate-100',
         },
         navigation: {
             text: {

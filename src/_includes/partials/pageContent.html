@@ -16,8 +16,6 @@
       {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
       {% if headerImage %}
         {% image headerImage imageTitle "rounded-lg shadow-lg" false %}
-      {% else %}
-        {% image site.headerImage imageTitle "rounded-lg shadow-lg" false %}
       {% endif %}
 
       {% if image %}
@@ -43,7 +41,7 @@
           {%- if updatedDate -%}
             {%- assign renderedDate = updatedDate -%}
           {%- endif -%}
-          <time datetime="{{renderedDate | date: '%Y-%m-%d'}}">Updated: {{renderedDate | date: "%B %e, %Y"}}</time>
+          <time datetime="{{renderedDate | date: '%Y-%m-%d'}}">{{renderedDate | date: "%B %e, %Y"}}</time>
         </span>
         <span>&bull;</span>
         <span>{{ content | timeToRead }} read</span>
@@ -52,14 +50,15 @@
   </div>
   {% endif %}
 
-  {% if hasSidebar %}
+  {% if tableOfContents %}
+  {% assign tocContents = content | toc %}
+  {% endif %}
+
+  {% if hasSidebar and tocContents != "" %}
   <section id="mainContent" class="w-full grid grid-cols-1 md:grid-cols-4">
     <div id="sidebar" class="col-span-1 md:col-span-1 px-0 md:pr-8">
-      {% if tableOfContents %}
-      {% assign tocContents = content | toc %}
-      {% if tocContents != ""  %}
       <section id="tableOfContents" class="w-full sticky top-0">
-        <div class="w-full mx-auto {{theme.page.tableOfContents.background}} text-lg prose prose-xl rounded-md prose-li:list-disc prose-a:underline my-4 md:my-0">
+        <div class="w-full mx-auto {{theme.page.tableOfContents.background}} text-lg prose prose-xl rounded-md prose-li:list-disc prose-a:underline my-4 md:my-0 px-2 py-2">
           <div class="p-4 space-x-2 text-xl font-semibold">
             <svg class="h-6 w-6 inline" viewBox="0 0 512 512"><path d="M88 56H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16V72a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm416 24H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8zm0-320H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8V88a8 8 0 00-8-8zm0 160H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8z"></path></svg>
             <span>Table of contents</span>
@@ -67,8 +66,6 @@
           {{tocContents}}
         </div>
       </section>
-      {% endif %}
-      {% endif %}
     </div>
     <div class="col-span-1 md:col-span-3 px-0 md:px-2" id="textContent">
       <section class="py-4 w-full mx-auto">
