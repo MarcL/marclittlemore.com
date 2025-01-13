@@ -15,7 +15,7 @@
     <figure>
       {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
       {% if headerImage %}
-        <img src="{{headerImage}}" alt="{{imageTitle}}" class="rounded-lg shadow-lg">
+        <img src="{{headerImage}}" alt="{{imageTitle}}" class="rounded-lg shadow-lg" width="2048">
       {% endif %}
 
       {% if image %}
