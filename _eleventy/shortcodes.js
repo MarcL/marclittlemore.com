@@ -1,8 +1,6 @@
-const crypto = require('crypto');
+const crypto = require('node:crypto');
 const markdownLib = require('markdown-it')();
-const imageShortcode = require('./image');
 const publishedNotes = require('../src/_data/publishedNotes.json');
-const theme = require('../src/_data/theme');
 
 const callout = (content, type = 'info') => {
     const iconClass = 'w-8 h-8 inline-block';
@@ -100,9 +98,6 @@ const noteIconsShortcode = (url) => {
         )}</span>`;
 
         return iconGrid;
-    } else {
-        console.log({ url });
-        return 'ttttt';
     }
 };
 
@@ -111,7 +106,6 @@ const addAll = (eleventyConfig) => {
     eleventyConfig.addShortcode('codetitle', codeTitle);
     eleventyConfig.addShortcode('gravatar', gravatarShortcode);
     eleventyConfig.addShortcode('noteIcons', noteIconsShortcode);
-    eleventyConfig.addLiquidShortcode('image', imageShortcode);
     eleventyConfig.addPairedShortcode('quote', quote);
 };
 
