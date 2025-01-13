@@ -9,6 +9,7 @@ landingpage:
     title: JavaScript Testing For Beginners
     subtitle: "Become a JavaScript testing expert in **just 7 days**"
     image: /images/landingpages/javascript-testing-for-beginners.jpg
+    alt: "JavaScript Testing For Beginners"
     button:
         text: SEND ME THE FREE COURSE
     signup:
