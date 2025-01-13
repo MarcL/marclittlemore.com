@@ -23,7 +23,7 @@
             <a class="block transition transform hover:-translate-y-4" href="{{article.url}}" >
             <div class="group">
                 {%- if article.data.headerImage -%}
-                {% image article.data.headerImage article.data.title "rounded-md object-cover h-48" %}
+                <img src="{{article.data.headerImage}}" alt="{{article.data.title}}" class="rounded-md object-cover h-48" width="300">
                 {%- endif -%}
                 <div class="px-0 lg:px-2">
                     <h4 class="{{theme.card.text.groupLink}}">{{article.data.title}}</h4>

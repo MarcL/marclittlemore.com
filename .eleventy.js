@@ -2,6 +2,8 @@ require('dotenv').config();
 
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
 const embedYouTube = require('eleventy-plugin-youtube-embed');
 const embedTwitter = require('eleventy-plugin-embed-twitter');
 const timeToRead = require('eleventy-plugin-time-to-read');
@@ -18,6 +20,7 @@ const addCollections = require('./_eleventy/collections');
 
 module.exports = (eleventyConfig) => {
     // Plugins
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(embedYouTube);
     eleventyConfig.addPlugin(embedTwitter);

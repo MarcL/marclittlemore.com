@@ -54,18 +54,6 @@ Add a [Gravatar](https://gravatar.com) avatar image inside a post. Pass the foll
 {% gravatar "unknown@email.com" 150 "robohash" %}
 ```
 
-### image
-
-Add a resized image to a post within an `<img>` tag. Pass the following parameters:
-
-* `src` - The source of the image. This can be local, which is assumed to be in the `/src/` directory, or a URL to an image.
-* `alt` - Alt text for the image. This is mandatory!
-* `className` - This is an additional classes to add to the image. By default it adds a [Tailwind CSS](https://tailwindcss.com) medium shadow.
-
-```
-{% image "/images/me/marc-littlemore.jpg" "Marc Littlemore" "w-full sm:w-1/2 my-4 sm:my-0 shadow-lg sm:shadow-none rounded-md sm:rounded-none" %}
-```
-
 ### quote
 
 Adds a blockquote surrounded by quotes. The text is parsed as markdown. Pass `false` as the first parameter to remove the quoatations.

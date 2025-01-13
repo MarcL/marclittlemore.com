@@ -4,8 +4,7 @@
     <div class="prose-slate bg-slate-100 shadow-sm rounded-md px-4 py-2">
         {% if noteImage %}
         <div>
-            {% image noteImage.url noteImage.alt "my-4 sm:my-0 shadow-lg
-            rounded-md" false %}
+            <img src="{{noteImage.url}}" alt="{{noteImage.alt}}" class="my-4 sm:my-0 shadow-lg rounded-md">
         </div>
         {% endif %}
         <div class="content">

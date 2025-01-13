@@ -68,6 +68,17 @@ const parseEmailOctopusHtml = (html) => {
     const dom = new JSDOM(html);
     const {window: {document}} = dom;
 
+    // Check all images for alt tags to ensure eleventy-img doesn't complain
+    const images = document.getElementsByTagName('img');
+    for(const image of images) {
+        if (!image.hasAttribute('alt')) {
+            console.log(`Newsletter image without alt: ${image.src}`);
+
+            // Set to a blank string to stop eleventy-img complaining
+            image.setAttribute('alt', '');
+        }
+    }
+
     // Providing I don't change the template
     // this should work - a bit hacky I know
     // -> div with class "mj-column-per-100 mj-outlook-group-fix"
