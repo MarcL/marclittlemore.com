@@ -8,10 +8,6 @@ tags:
     - javascript-testing
 ---
 
-{% callout "info" %}
-Want to learn more about testing your JavaScript code but don't know where to start? Get my [FREE 7-day testing course](/javascript-testing-beginners-course/?signup=testing-page") and you'll be a JavaScript testing expert in no time!
-{% endcallout %}
-
 ## Understanding types of software testing
 
 New developers often don't know where to start with testing their code. They know that it's a good idea but there's an overwhelming amount of information out there. Common questions and comments I hear are:
@@ -82,6 +78,6 @@ https://www.youtube.com/watch?v=pMmXJcDLUFA
 If this post was valuable to you, you can [follow my journey on Twitter]({{socialMedia.twitter.url}}).
 
 {% callout "info" %}
-Want to learn more about testing your JavaScript code but don't know where to start? Get my [FREE 7-day testing course](/javascript-testing-beginners-course/?signup=testing-page") and you'll be a JavaScript testing expert in no time!
+Want to learn more about testing your JavaScript code? Check out my [other JavaScript testing articles](/javascript-testing/) for more tips and techniques!
 {% endcallout %}
 

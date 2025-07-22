@@ -12,10 +12,6 @@ publish = "_site"
 # Add signup tag for Mailchimp newsletters
 [[edge_functions]]
 function = "replaceSignupQuery"
-path = "/javascript-testing-beginners-course/"
-
-[[edge_functions]]
-function = "replaceSignupQuery"
 path = "/bots/sign-up-bot-building-for-beginners/"
 
 # Add signup tag for Email Octopus newsletters
