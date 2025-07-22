@@ -22,11 +22,7 @@ While email is a great way to connect with your users or followers, the open rat
 
 As a software engineer and chatbot developer, I've been experimenting with lots of platforms like [Chatfuel](https://chatfuel.com), [ManyChat](https://manychat.com/), [BotKit](https://botkit.ai/), and [DialogFlow](https://dialogflow.com/) over the past year and I'm really excited about the possibilities.
 
-{% callout "info" %}
-If you want to learn more about building great chatbots then I've got a mailing list which will provide you with great information each week about the lastest trends, tutorials and quick tips to build better chatbots? Sounds like something you're interested in? Great!
 
-Sign up to my free [chatbot builders email list now](/bots/sign-up-bot-building-for-beginners/?signup=chatbot-page) and I'll send you my **FREE** Chatfuel Chatbot JSON Guide!
-{% endcallout %}
 
 ## Chatbot Articles
 

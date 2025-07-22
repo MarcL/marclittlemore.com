@@ -17,5 +17,8 @@
 /topics/chatbots/ /bots/ 301
 /topics/javascript-testing/ /javascript-testing/ 301
 
+# Redirect removed chatbot landing page to main bots page
+/bots/sign-up-bot-building-for-beginners/ /bots/ 301
+
 # Change the /articles page to /writing
 /articles/ /writing/ 301
