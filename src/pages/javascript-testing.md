@@ -11,7 +11,7 @@ Over the past few years I've been introduced to test driven development (TDD) in
 However, it's often very confusing and difficult for beginners to get started. Here I hope to help beginners to get started with testing their JavaScript and also encourage less experienced developers to gain unit and integration testing skills for their JavaScript code.
 
 {% callout "info" %}
-Want to learn more about testing your JavaScript code but don't know where to start? Get my [FREE 7-day testing course](/javascript-testing-beginners-course/?signup=testing-page) and you'll be a JavaScript testing expert in no time!
+Want to learn more about testing your JavaScript code? Check out my articles below and follow me on social media for more JavaScript testing tips!
 {% endcallout %}
 
 {% render partials/articles/writingList.html, collection: collections["javascript-testing"] theme:theme %}

@@ -68,5 +68,5 @@ It is easier than you think to get started with testing your code. If you're new
 Let me know if you have any questions or comments and I'd be happy to help.
 
 {% callout "info" %}
-Want to learn more about testing your JavaScript code but don't know where to start? Get my [FREE 7-day testing course](/javascript-testing-beginners-course/?signup=testing-page) and you'll be a JavaScript testing expert in no time!
+Want to learn more about testing your JavaScript code? Check out my [other JavaScript testing articles](/javascript-testing/) for more tips and techniques!
 {% endcallout %}

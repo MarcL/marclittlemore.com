@@ -4,15 +4,11 @@
 # Redirect first post to new url
 /posts/how-to-find-bugs-using-git-bisect-with-this-easy-guide/ /how-to-find-bugs-using-git-bisect-with-this-easy-guide/
 
-# Redirect old landing pages
-/guides/javascript-unit-testing-best-practices/ signup=:value /javascript-testing-beginners-course/?signup=:value 301
-/guides/javascript-unit-testing-best-practices/ /javascript-testing-beginners-course/ 301
-
-/courses/javascript-testing-made-easy/ signup=:value /javascript-testing-beginners-course/?signup=:value 301
-/courses/javascript-testing-made-easy/ /javascript-testing-beginners-course/ 301
-
-/courses/javascript-testing-beginners-course/ signup=:value /javascript-testing-beginners-course/?signup=:value 301
-/courses/javascript-testing-beginners-course/ /javascript-testing-beginners-course/ 301
+# Redirect old landing pages to main JavaScript testing page
+/guides/javascript-unit-testing-best-practices/ /javascript-testing/ 301
+/courses/javascript-testing-made-easy/ /javascript-testing/ 301
+/courses/javascript-testing-beginners-course/ /javascript-testing/ 301
+/javascript-testing-beginners-course/ /javascript-testing/ 301
 
 # Moved page from /books/ to /reading/
 /books/ /reading/
