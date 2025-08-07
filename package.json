@@ -70,6 +70,6 @@
     }
   },
   "dependencies": {
-    "@netlify/functions": "^2.8.2"
+    "@netlify/functions": "^4.0.0"
   }
 }
