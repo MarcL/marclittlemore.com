@@ -24,7 +24,11 @@ The site requires several API keys for full functionality:
 - `WEBMENTIONS_IO_API_TOKEN` - for webmentions
 - `RAINDROP_API_TOKEN` - for bookmarks/links
 
-**Without these API keys, the build will work but with reduced functionality and warning messages. The data files are designed to gracefully handle missing APIs.**
+**CRITICAL**: Without these API keys, the build will FAIL with error messages. For development/testing:
+1. **Create `.env` file** with dummy values: `EMAIL_OCTOPUS_API_KEY=dummy GOODREADS_API_KEY=dummy` etc.
+2. **Or set environment variables** before build: `EMAIL_OCTOPUS_API_KEY=dummy npm run build:site`
+
+The site will show warning messages for failed API calls but will build successfully with empty data.
 
 ### Development Server
 - **Full Development**: `npm run serve` - starts all services (Eleventy, Parcel, CSS watch)
@@ -159,6 +163,16 @@ After making changes, **ALWAYS validate**:
 ```bash
 # Bootstrap
 npm install
+
+# Setup for development (required for builds without real API keys)
+cat > .env << 'EOF'
+EMAIL_OCTOPUS_API_KEY=dummy
+GOODREADS_USER_ID=dummy
+GOODREADS_API_KEY=dummy
+WEBMENTIONS_IO_API_TOKEN=dummy
+YOUTUBE_API_KEY=dummy
+RAINDROP_API_TOKEN=dummy
+EOF
 
 # Development
 npm run serve                    # Full dev server
