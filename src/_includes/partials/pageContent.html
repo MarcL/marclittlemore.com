@@ -30,11 +30,6 @@
   {% if tags contains 'post' %}
   <div class="{{theme.page.metadata.text}} font-sm py-4 w-full mx-auto max-w-lg text-center space-y-2">
     <div class="text-lg md:text-xl font-medium space-x-1">
-      {% if author and author.name %}
-      <div>By {{author.name}}</div>
-      {% else %}
-      <div>By {{site.author.name}}</div>
-      {% endif %}
       <div>
         <span>
           {%- assign renderedDate = page.date -%}
