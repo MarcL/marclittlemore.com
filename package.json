@@ -60,6 +60,7 @@
     "links:external": "hyperlink -r --root _site --canonicalroot https://marclittlemore.com/ --skip '/.netlify/functions' _site/*.html | tap-spot",
     "post:new": "node scripts/postNew.js",
     "postNotes": "node scripts/postNotes.js",
+    "newsletter:export": "node scripts/export-newsletters.js",
     "serve": "npm run serve:js & ELEVENTY_ENV=dev eleventy --serve & npm run build:css:watch",
     "serve:js": "parcel watch src/clientjs/index.js"
   },
