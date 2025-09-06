@@ -55,8 +55,8 @@ module.exports = {
             hover: 'group-hover:underline group-hover:underline-offset-4',
         },
         date: {
-            text: 'text-slate-600 font-medium',
-            icon: 'fill-slate-600',
+            text: 'text-red-600 font-medium',
+            icon: 'fill-red-600',
         },
         icons: {
             main: 'text-red-700',
