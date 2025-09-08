@@ -126,3 +126,4 @@ src/distjs/
 
 # Eleventy edge build data files
 netlify/edge-functions/_generated
+.env
