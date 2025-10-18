@@ -25,8 +25,10 @@ The site requires several API keys for full functionality:
 - `RAINDROP_API_TOKEN` - for bookmarks/links
 
 **CRITICAL**: Without these API keys, the build will FAIL with error messages. For development/testing:
-1. **Create `.env` file** with dummy values: `EMAIL_OCTOPUS_API_KEY=dummy GOODREADS_API_KEY=dummy` etc.
-2. **Or set environment variables** before build: `EMAIL_OCTOPUS_API_KEY=dummy npm run build:site`
+1. **Create `.env` file** with dummy values:  
+   `EMAIL_OCTOPUS_API_KEY=dummy GOODREADS_USER_ID=dummy GOODREADS_API_KEY=dummy YOUTUBE_API_KEY=dummy WEBMENTIONS_IO_API_TOKEN=dummy RAINDROP_API_TOKEN=dummy`
+2. **Or set environment variables** before build:  
+   `EMAIL_OCTOPUS_API_KEY=dummy GOODREADS_USER_ID=dummy GOODREADS_API_KEY=dummy YOUTUBE_API_KEY=dummy WEBMENTIONS_IO_API_TOKEN=dummy RAINDROP_API_TOKEN=dummy npm run build:site`
 
 The site will show warning messages for failed API calls but will build successfully with empty data.
 
