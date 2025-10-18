@@ -169,11 +169,11 @@ npm install
 # Setup for development (required for builds without real API keys)
 cat > .env << 'EOF'
 EMAIL_OCTOPUS_API_KEY=dummy
-GOODREADS_USER_ID=dummy
 GOODREADS_API_KEY=dummy
+GOODREADS_USER_ID=dummy
+RAINDROP_API_TOKEN=dummy
 WEBMENTIONS_IO_API_TOKEN=dummy
 YOUTUBE_API_KEY=dummy
-RAINDROP_API_TOKEN=dummy
 EOF
 
 # Development
