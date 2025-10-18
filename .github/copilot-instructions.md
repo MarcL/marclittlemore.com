@@ -7,13 +7,13 @@ Marc Littlemore's personal blog is an 11ty (Eleventy) static site generator-base
 ## Working Effectively
 
 ### Bootstrap and Build
-- **Node.js Version**: Use Node.js v20 (as specified in `.nvmrc`). Current system has v20.19.4 which is compatible.
-- **Install Dependencies**: `npm install` (takes ~37 seconds)
+- **Node.js Version**: Use Node.js v22 LTS (as specified in `.nvmrc`).
+- **Install Dependencies**: `npm install`
 - **Build Components**:
-  - CSS: `npm run build:css` (takes ~2 seconds)
-  - JavaScript: `npm run build:js` (takes ~1 second) 
-  - Site: `npm run build:site` (takes ~4 seconds without API keys, longer with network calls)
-  - **Full Build**: `npm run build:all` (takes ~7-8 seconds) - **NEVER CANCEL**. Set timeout to 120+ seconds.
+  - CSS: `npm run build:css`
+  - JavaScript: `npm run build:js` 
+  - Site: `npm run build:site`
+  - **Full Build**: `npm run build:all` - **NEVER CANCEL**. Set timeout to 120+ seconds.
   - **Production Build**: `npm run build` - includes production optimizations and link checking
 
 ### Required Environment Variables
@@ -40,25 +40,21 @@ The site will show warning messages for failed API calls but will build successf
   - `npm run build:css:watch` - PostCSS in watch mode
 
 ### Validation and Testing
-- **Link Checking**: `npm run links:internal` (takes ~5 seconds) - validates internal site links
+- **Link Checking**: `npm run links:internal` - validates internal site links
 - **External Links**: `npm run links:external` - checks external links (takes longer)
-- **Content Creation**: `npm run post:new` (takes ~0.2 seconds) - creates new blog post template
+- **Content Creation**: `npm run post:new` - creates new blog post template
 - **Notes**: `npm run postNotes` - creates social media posts from notes
 
 ### Pre-commit Validation
 - **Pre-push Hook**: Automatically runs `npm run links:internal` via Husky
 - **Always run link checking before committing** to avoid CI failures
 
-## Timing Expectations
+## Essential Build Guidelines
 - **NEVER CANCEL builds or long-running commands**
-- `npm install`: 30-40 seconds  
-- `npm run build:css`: 1-3 seconds
-- `npm run build:js`: 1-2 seconds  
-- `npm run build:site`: 4-10 seconds (depending on network)
-- `npm run build:all`: 7-15 seconds - **Set timeout to 120+ seconds**
-- `npm run build` (production): 10-30 seconds - **Set timeout to 180+ seconds**
-- `npm run links:internal`: 3-6 seconds - **Set timeout to 60+ seconds**
-- Development server startup: 5-10 seconds
+- Set appropriate timeouts for build commands:
+  - `npm run build:all`: Set timeout to 120+ seconds
+  - `npm run build` (production): Set timeout to 180+ seconds
+  - `npm run links:internal`: Set timeout to 60+ seconds
 
 ## Validation Scenarios
 After making changes, **ALWAYS validate**:
