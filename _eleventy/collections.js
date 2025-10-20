@@ -1,20 +1,25 @@
 const addCollections = (eleventyConfig) => {
     const isDevelopmentBuild = process.env.ELEVENTY_ENV === 'dev';
 
+    // Helper function to filter out draft posts
+    const filterPublishedPosts = (posts) => posts.filter(post => !post.data.draft);
+
     // Create filtered post collections based on environment
     eleventyConfig.addCollection('publishedPosts', (collection) => {
         // Always return posts that are not drafts
-        return collection.getFilteredByTag('post').filter(post => !post.data.draft);
+        return filterPublishedPosts(collection.getFilteredByTag('post'));
     });
 
     eleventyConfig.addCollection('allPosts', (collection) => {
+        const allPosts = collection.getFilteredByTag('post');
+        
         // In development, return all posts including drafts
         if (isDevelopmentBuild) {
-            return collection.getFilteredByTag('post');
+            return allPosts;
         }
         
         // In production, filter out draft posts (same as publishedPosts)
-        return collection.getFilteredByTag('post').filter(post => !post.data.draft);
+        return filterPublishedPosts(allPosts);
     });
 
     // Tag list for specific tag pages
@@ -40,7 +45,7 @@ const addCollections = (eleventyConfig) => {
     // RSS feed
     // - Only add published (non-draft) posts
     eleventyConfig.addCollection('feed', (collection) => {
-        return collection.getFilteredByTag('post').filter(post => !post.data.draft);
+        return filterPublishedPosts(collection.getFilteredByTag('post'));
     });
 };
 
