@@ -1,4 +1,22 @@
 const addCollections = (eleventyConfig) => {
+    const isDevelopmentBuild = process.env.ELEVENTY_ENV === 'dev';
+
+    // Create filtered post collections based on environment
+    eleventyConfig.addCollection('publishedPosts', (collection) => {
+        // Always return posts that are not drafts
+        return collection.getFilteredByTag('post').filter(post => !post.data.draft);
+    });
+
+    eleventyConfig.addCollection('allPosts', (collection) => {
+        // In development, return all posts including drafts
+        if (isDevelopmentBuild) {
+            return collection.getFilteredByTag('post');
+        }
+        
+        // In production, filter out draft posts (same as publishedPosts)
+        return collection.getFilteredByTag('post').filter(post => !post.data.draft);
+    });
+
     // Tag list for specific tag pages
     eleventyConfig.addCollection('tagList', (collection) => {
         let tagSet = new Set();
@@ -20,9 +38,9 @@ const addCollections = (eleventyConfig) => {
     });
 
     // RSS feed
-    // - Only add posts for now
+    // - Only add published (non-draft) posts
     eleventyConfig.addCollection('feed', (collection) => {
-        return collection.getFilteredByGlob(['src/posts/**/*.md']);
+        return collection.getFilteredByTag('post').filter(post => !post.data.draft);
     });
 };
 

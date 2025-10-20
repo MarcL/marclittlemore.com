@@ -5,9 +5,14 @@
         </a>
     </div>
     <div class="col-span-8 md:col-span-7">
-        <a href="{{article.url}}" class="{{theme.article.text.hover}}">
-            <h2 class="text-2xl font-bold tracking-tight">{{article.data.title}}</h2>
-        </a>
+        <div class="flex items-center">
+            <a href="{{article.url}}" class="{{theme.article.text.hover}}">
+                <h2 class="text-2xl font-bold tracking-tight">{{article.data.title}}</h2>
+            </a>
+            {%- if article.data.draft -%}
+                <span class="inline-block ml-3 px-2 py-1 text-xs font-semibold bg-yellow-100 text-yellow-800 rounded-md">DRAFT</span>
+            {%- endif -%}
+        </div>
         {% render partials/articles/articleDate.html article:article theme:theme %}
         <p class="font-normal text-gray-700 dark:text-gray-400">{{article.data.description | markdownify}}</p>
     </div>
