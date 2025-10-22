@@ -19,6 +19,25 @@ const addCollections = (eleventyConfig) => {
         return [...tagSet].sort((first, second) => first.localeCompare(second));
     });
 
+    // Combined notes collection (local notes + Google Sheets notes)
+    eleventyConfig.addCollection('allNotes', async (collection) => {
+        // Get local notes
+        const localNotes = collection.getFilteredByTag('note');
+        
+        // Get Google Sheets notes directly - they are available as global data
+        const googleSheetsNotesModule = require('../src/_data/googleSheetsNotes.js');
+        const googleSheetsNotes = await googleSheetsNotesModule();
+        
+        // Combine and sort by date (newest first)
+        const allNotes = [...localNotes, ...googleSheetsNotes].sort((a, b) => {
+            const dateA = new Date(a.date || a.data?.date);
+            const dateB = new Date(b.date || b.data?.date);
+            return dateB - dateA;
+        });
+        
+        return allNotes;
+    });
+
     // RSS feed
     // - Only add posts for now
     eleventyConfig.addCollection('feed', (collection) => {
