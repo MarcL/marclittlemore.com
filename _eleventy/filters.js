@@ -1,10 +1,21 @@
 const escape = require('lodash.escape');
 const markdownLib = require('./markdown');
+const linkifyHtml = require('linkify-html');
 
 const dateToISO = dateValue => new Date(dateValue).toISOString();
 const toISOStringFilter = dateValue => dateToISO(dateValue);
 const xmlEscapeFilter = value => escape(value);
 const markdownifyFilter = value => markdownLib.render(value);
+
+const linkifyOptions = {
+    // Automatically add target="_blank" and rel for external links
+    target: '_blank', 
+    rel: 'noopener noreferrer', 
+    
+    // This is a common requirement to convert only plain URLs
+    // If your text might contain other HTML tags, you might need linkify-string instead
+    // or a more complex setup to avoid linkifying text *within* existing tags.
+};
 
 const starRating = value => {
     const rating = Number.parseInt(value, 10);
@@ -57,7 +68,13 @@ const collectionWithoutUrls = (collection, urls) => {
 
 const limitCollection = (collection, limit) => {
     return collection.slice(0, limit);
-}
+};
+
+const linkify = (text) => {
+    if (!text) return ''; // Handle empty or null input
+
+    return linkifyHtml(text, linkifyOptions);
+};
 
 const addAll = (eleventyConfig) => {
     eleventyConfig.addFilter('getPostByPath', getPostByPath);
@@ -74,6 +91,9 @@ const addAll = (eleventyConfig) => {
     // Webmentions
     eleventyConfig.addFilter('webmentionsForUrl', webmentionsForUrl);
     eleventyConfig.addFilter('webmentionsSortedForUrl', webmentionsSortedByProperty);
+
+    // Text processing
+    eleventyConfig.addFilter('linkify', linkify);
 };
 
 module.exports = addAll;
