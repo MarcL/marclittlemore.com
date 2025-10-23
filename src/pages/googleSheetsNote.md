@@ -9,8 +9,8 @@ hideImage: true
 syndicate: true
 showWebmentions: true
 eleventyComputed:
-  title: "{{ note.title }}"
+  title: "{{ note.date | date: '%B %d, %Y %H:%M' }}"
   date: "{{ note.date }}"
 ---
 
-{{ note.content }}
+{{ note.content | linkify | raw }}

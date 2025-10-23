@@ -8,7 +8,7 @@
         </div>
         {% endif %}
         <div class="content">
-            <div>{{noteContent}}</div>
+            <div>{{noteContent | linkify | raw}}</div>
             {% if isDetailView == false %}
             <div>
                 <a href="{{noteUrl}}">Read more →</a>
@@ -19,6 +19,7 @@
     <div class="grid grid-cols-2">
         <div class="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">
             {{noteDate | date: "%H:%M %p - %b %d, %Y"}}
+            {{ noteDate }}
         </div>
         <div class="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">
             {% noteIcons noteUrl %}
