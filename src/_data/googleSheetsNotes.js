@@ -25,7 +25,6 @@ const getGoogleSheetsNotes = async () => {
             console.log('Loading Google Sheets notes from cache');
             
             const rows = await asset.getCachedValue();
-            console.log({rows});
             return rows;
         }
 
@@ -49,9 +48,6 @@ const getGoogleSheetsNotes = async () => {
 
         const rows = response.data.values || [];
 
-        console.log(`Fetched ${rows.length} rows from Google Sheets`);
-        console.log({rows});
-        
         const notes = rows
             .filter(row => row[0] && row[1] && row[2]) // Must have timestamp, content, and slug
             .map(row => {
@@ -69,7 +65,7 @@ const getGoogleSheetsNotes = async () => {
                     return null;
                 }
 
-                return {
+                const returnData = {
                     title: slug,
                     content: content,
                     slug: slug,
@@ -81,22 +77,17 @@ const getGoogleSheetsNotes = async () => {
                     twitterUrl: twitterUrl || null,
                     imageUrl: imageUrl || null,
                     telegramImageId: telegramImageId || null,
-                    // Mark as syndicated to distinguish from local notes
-                    syndicated: true,
-                    // Match local notes structure
-                    syndicate: true,
-                    categories: ['twitter', 'threads', 'mastodon', 'bluesky'],
-                    data: {
-                        syndicate: true,
-                        syndicated: true
-                    }
                 };
+
+                return returnData;
             })
             .filter(note => note !== null); // Remove invalid entries
 
+        // sort notes by date descending
+        notes.sort((a, b) => b.date - a.date);
+        
         await asset.save(notes, 'json');
         
-        console.log(`Loaded ${notes.length} notes from Google Sheets`);
         return notes;
 
     } catch (error) {
