@@ -6,14 +6,12 @@ hideImage: true
 ---
 
 <div class="max-w-screen-md mx-auto py-2 grid grid-cols-1">
-{% for note in googleSheetsNotes %}
-
-{% assign noteContent = note.content %}
-{% assign noteImage = note.data.image %}
-{% assign noteDate = note.date %}
-{% assign noteUrl = note.url %}
-
-{% include partials/noteCard.html, noteContent: noteContent, noteImage: noteImage, noteDate: noteDate, noteUrl: noteUrl, note: note %}
-{% endfor %}
+{%- for note in googleSheetsNotes -%}
+{%- assign noteContent = note.content -%}
+{%- assign noteImage = note.data.image -%}
+{%- assign noteDate = note.date -%}
+{%- assign noteUrl = note.url -%}
+{%- include partials/noteCard.html, noteContent: noteContent, noteImage-: noteImage, noteDate: noteDate, noteUrl: noteUrl, note: note %}
+{%- endfor -%}
 </div>
 
