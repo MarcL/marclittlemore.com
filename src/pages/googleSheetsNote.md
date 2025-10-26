@@ -7,9 +7,8 @@ pagination:
 permalink: '/notes/{{ note.slug }}/'
 hideImage: true
 syndicate: true
-showWebmentions: true
+showWebmentions: false
 eleventyComputed:
-  title: "📝 {{ note.date | date: '%B %d, %Y %H:%M' }}"
   date: "{{ note.date }}"
   noteDate: "{{ note.date }}"
   note: {{ note | json }}

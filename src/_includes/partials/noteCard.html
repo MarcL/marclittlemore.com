@@ -1,27 +1,59 @@
 {% assign isDetailView = layout == 'note' %}
 
-<div class="mb-4">
-    <div class="prose-slate bg-slate-100 shadow-sm rounded-md px-4 py-2">
-        {% if noteImage %}
-        <div>
-            <img src="{{noteImage.url}}" alt="{{noteImage.alt}}" class="my-4 sm:my-0 shadow-lg rounded-md">
-        </div>
-        {% endif %}
-        <div class="content">
-            <div>{{noteContent | linkify | raw}}</div>
+<article class="py-2 border-b border-slate-100 dark:border-slate-200">
+
+    {% if noteImage %}
+    <div class="pb-3">
+        <img src="{{noteImage.url}}" alt="{{noteImage.alt}}" class="shadow-lg rounded-md max-w-full h-auto">
+    </div>
+    {% endif %}
+
+    <div class="prose prose-lg max-w-none">
+        {{ noteContent | linkify | raw }}
+    </div>
+    
+    <footer class="flex justify-between items-center mt-3">
+        <div class="text-sm">
             {% if isDetailView == false %}
-            <div>
-                <a href="{{noteUrl}}">Read more →</a>
-            </div>
+            <a href="{{ noteUrl }}" 
+               class="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 hover:underline" 
+               title="Permalink">
+                <time datetime="{{ noteDate | date: '%Y-%m-%dT%H:%M:%S%z' }}">
+                    {{ noteDate | date: "%b %d, %Y at %H:%M" }}
+                </time>
+            </a>
+            {% else %}
+            <span class="text-gray-500 dark:text-gray-400">
+                <time datetime="{{ noteDate | date: '%Y-%m-%dT%H:%M:%S%z' }}">
+                    {{ noteDate | date: "%b %d, %Y at %H:%M" }}
+                </time>
+            </span>
             {% endif %}
         </div>
-    </div>
-    <div class="grid grid-cols-2">
-        <div class="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">
-            {{noteDate | date: "%H:%M %p - %b %d, %Y"}}
+        
+        <div class="flex items-center space-x-2">
+            {% if note.blueskyUrl %}
+            <a href="{{ note.blueskyUrl }}" target="_blank" rel="noopener noreferrer me" title="View on Bluesky"
+               class="text-gray-400 hover:text-blue-500 dark:text-gray-500 dark:hover:text-blue-400 transition-colors">
+                <span class="sr-only">View on Bluesky</span>
+                {% include icons/bluesky.liquid, class: "w-4 h-4" %}
+            </a>
+            {% endif %}
+            {% if note.mastodonUrl %}
+            <a href="{{ note.mastodonUrl }}" target="_blank" rel="noopener noreferrer me" title="View on Mastodon"
+               class="text-gray-400 hover:text-red-500 dark:text-gray-500 dark:hover:text-red-400 transition-colors">
+                <span class="sr-only">View on Mastodon</span>
+                {% include icons/mastodon.liquid, class: "w-4 h-4" %}
+            </a>
+            {% endif %}
+            {% if note.twitterUrl %}
+            <a href="{{ note.twitterUrl }}" target="_blank" rel="noopener noreferrer me" title="View on X/Twitter"
+               class="text-gray-400 hover:text-black dark:text-gray-500 dark:hover:text-white transition-colors">
+                <span class="sr-only">View on X/Twitter</span>
+                {% include icons/twitter.liquid, class: "w-4 h-4" %}
+            </a>
+            {% endif %}
         </div>
-        <div class="text-gray-500 dark:text-gray-400 text-base py-1 my-0.5">
-            {% noteIcons noteUrl %}
-        </div>
-    </div>
-</div>
+    </footer>
+    
+</article>
