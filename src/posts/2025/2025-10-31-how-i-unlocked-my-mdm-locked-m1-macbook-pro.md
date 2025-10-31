@@ -3,7 +3,8 @@ title: "How I Unlocked My MDM-Locked M1 MacBook Pro"
 subtitle: ""
 permalink: "/how-i-unlocked-my-mdm-locked-m1-macbook-pro/"
 date: "2025-10-31"
-headerImage: "/images/banners/how-i-unlocked-my-mdm-locked-m1-macbook-pro.jpg"
+# headerImage: "/images/banners/how-i-unlocked-my-mdm-locked-m1-macbook-pro.jpg"
+headerImage: "/images/banners/write-ideas.jpg"
 description: ""
 tags:
     -
