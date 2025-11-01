@@ -4,7 +4,7 @@
   <subtitle>A collection of notes from {{siteUrl}}</subtitle>
   <link href="{{ pageUrl | prepend: siteUrl }}" rel="self"/>
   <link href="{{ siteUrl }}"/>
-  <updated>{{ notes[0].date }}</updated>
+  <updated>{{ notes[0].date | dateToRfc3339 }}</updated>
   <id>{{ siteUrl }}/</id>
   <generator uri="https://www.11ty.dev/">{{ eleventy.generator }}</generator>
   <author>
@@ -17,8 +17,8 @@
     {% capture absolutePostUrl %}{{ note.slug | prepend: "/notes/" | absoluteUrl: siteUrl }}{% endcapture %}
     <title>{{ note.excerpt }}</title>
     <link href="{{ absolutePostUrl }}" rel="alternate"/>
-    <published>{{ note.date }}</published>
-    <updated>{{ note.date }}</updated>
+    <published>{{ note.date | dateToRfc3339 }}</published>
+    <updated>{{ note.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <author>
       <name>{{siteAuthor.name}}</name>
