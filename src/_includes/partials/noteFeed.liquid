@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title type="text">{{ feedTitle }}: Notes</title>
+  <subtitle>A collection of notes from {{siteUrl}}</subtitle>
   <link href="{{ pageUrl | prepend: siteUrl }}" rel="self"/>
   <link href="{{ siteUrl }}"/>
   <updated>{{ notes[0].date }}</updated>
@@ -10,6 +11,7 @@
     <name>{{siteAuthor.name}}</name>
     <email>{{siteAuthor.email}}</email>
   </author>
+  <category term="note"/>
   {%- for note in notes %}
   <entry>
     {% capture absolutePostUrl %}{{ note.slug | prepend: "/notes/" | absoluteUrl: siteUrl }}{% endcapture %}
@@ -21,7 +23,9 @@
     <author>
       <name>{{siteAuthor.name}}</name>
     </author>
+    <summary>{{ note.excerpt }}</summary>
     <content type="text">{{ note.content | xmlEscape }}</content>
+    <category term="note"/>
   </entry>
   {%- endfor %}  
 </feed>
