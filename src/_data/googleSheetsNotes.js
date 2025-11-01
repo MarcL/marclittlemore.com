@@ -34,7 +34,12 @@ const getGoogleSheetsNotes = async () => {
             console.log('Loading Google Sheets notes from cache');
             
             const rows = await asset.getCachedValue();
-            return rows;
+            
+            // Convert date strings back to Date objects
+            return rows.map(note => ({
+                ...note,
+                date: new Date(note.date)
+            }));
         }
 
         console.log('Loading Google Sheets notes from API');
