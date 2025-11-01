@@ -9,6 +9,15 @@ const credentials = {
     private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')
 };
 
+const truncateText = (text, length = 100) => {
+    if (!text) return '';
+
+    const clean = text.trim();
+    return clean.length > length
+        ? clean.slice(0, length - 1).trimEnd() + '…'
+        : clean;
+};
+
 const getGoogleSheetsNotes = async () => {
     const {GOOGLE_SHEETS_API_KEY, GOOGLE_SHEETS_SPREADSHEET_ID} = process.env;
 
@@ -68,6 +77,7 @@ const getGoogleSheetsNotes = async () => {
                 const returnData = {
                     title: slug,
                     content: content,
+                    excerpt: truncateText(content, 50),
                     slug: slug,
                     date: date,
                     url: `/notes/${slug}/`,
