@@ -46,7 +46,7 @@ After nearly 20 years, it was time to take back control.
 
 ## Moving to My Own Feed
 
-First, I needed to create a proper podcast feed on my own domain. Years ago, I'd moved away from Wordpress to a static site built with [Eleventy](https://www.11ty.dev/). Back in 2021, I'd actually [written about how to create an Eleventy podcast feed](/eleventy-podcast-feed/), so I already had the technical infrastructure in place.
+First, I needed to create a proper podcast feed on my own domain. Years ago, I'd moved away from Wordpress to a static site built with [Eleventy](https://www.11ty.dev/). Back in 2021, I'd actually [written about how to create an Eleventy podcast feed](/create-an-eleventy-podcast-feed/), so I already had the technical infrastructure in place.
 
 My new feed would live at: `https://www.djcruze.co.uk/podcasts/feed.xml`
 
