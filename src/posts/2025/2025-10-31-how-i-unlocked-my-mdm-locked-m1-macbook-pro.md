@@ -14,196 +14,154 @@ image:
     url: ""
 ---
 
-A few weeks ago, I found myself staring at a MacBook Pro that had become an expensive paperweight. It was a laptop I'd been given by my previous employer, Beacon, when I left the company three years ago. It had been sitting in a cupboard ever since, and I thought it was time to put it to good use.
+Back in 2021, I joined a small logistics startup called Beacon. Although, I didn't end up working there for very long, I ended up with a company MacBook Pro M1 sitting in my wardrobe. It should have been sent back but due to a major family health emergency at the same time, it sat forgotten in the back of my wardrobe.
 
-The problem? It was completely locked down with MDM (Mobile Device Management) software and I couldn't get past the recovery lock screen.
+It's now October 2025 and my son has just gone off to university in Glasgow. In his first week he managed to damage his laptop screen with an ill-timed AirPod case incident which made it difficult for him to use. After some digging in the cupboards for an old laptop, I realised I had the MacBook and should see if it was still usable.
 
-Let me show you how I finally got it working again using Apple Configurator 2 and a process called DFU restore.
+It booted up fine but it was completely locked down with MDM (Mobile Device Management) software, JAMF, and I didn't have any credentials to login.
 
-## What was the problem?
+So here's the story of a series of challenges to finally unlock the machine. As I struggled to find any concerete information online, I thought I'd share it here for anyone else who might face similar issues.
 
-When I tried to boot up the MacBook Pro, I was greeted with a Jamf login screen asking for a Google Account. Beacon had been using Jamf as their MDM solution to manage company devices.
+## So what was the problem?
 
-I contacted Beacon and they were happy for me to keep the laptop. They asked their IT provider, Jigsaw24, to remove it from their MDM system and Apple Business Manager. Jigsaw24 confirmed they'd done this, but when I tried to use the laptop again, it still booted to the same Jamf screen.
+Beacon had been using JAMF as their MDM solution to manage company devices so when I tried to boot up the laptop, I was greeted with a JAMF login screen asking for a Google Account.
 
-When I tried to boot into recovery mode to reinstall macOS, it asked for an admin recovery key. Unfortunately, Jigsaw24 had already deleted the password from their systems and couldn't provide it.
+I contacted an old friend who is stil at Beacon and, as he's now the head of engineering, the were happy for me to keep the laptop. They asked their IT provider, Jigsaw24, to remove it from their MDM system and Apple Business Manager. I spoke to Jigsaw24 on the phone and they confirmed they'd done this, but when I tried to use the laptop again, it still booted to the same JAMF screen. After another phonecall, they confirmed that you have to reformat the machine to remove the MDM profile properly after de-enrolment.
 
-I was stuck with a bricked laptop.
+When I tried to boot into recovery mode to reinstall macOS, it asked for an admin recovery key. I'd never been given one so there was now no way to format the machine. I rang Jigsaw24 again and spoke to one of their agents who told me that I had 100% been removed from MDM but they had no records of my recovery key as they'd deleted it from the system. Normally, you or the company should be given the recovery keys but nobody had this.
 
-## Understanding the M1 Mac difference
+It looked like I was about to be stuck with a bricked laptop.
 
-Here's something important I learned: M1 Macs (Apple Silicon) handle security differently from older Intel-based Macs.
+## Understanding Mac security
 
-Intel Macs with the T2 chip used something called a "firmware password" to lock down the computer. M1 Macs don't support firmware passwords at all. Instead, they use a "Recovery Lock" which is set through MDM software.
+Here's where I went down the rabbit hole of trying to understand how MacBook security works. This was a new Apple Silicon M1 chip so these differ from the old Intel-based Macs.
 
-Even after a device is removed from Apple Business Manager and MDM, M1 Macs can retain cached activation records that still see the machine as a corporate device. This is exactly what happened to me.
+Older Intel Macs with the T2 chip used a firmware password to lockdown the computer. Apple Silicon Macs use a recovery lock (TODO: Is this for the file vault?) when you're enrolled in MDM. This is a very long unique key which you need to unlock the recovery system.
 
-I called Apple Support and they confirmed they couldn't help without the original proof of purchase from when Beacon first bought the laptop. This is a security feature to prevent stolen devices from being unlocked.
+Even after a device is removed from Apple Business Manager and MDM, M1 Macs can retain cached activation records that still see the machine as a corporate device. Without the recovery key you're a bit buggered as you can't enter the recovery mode.
+
+I was told to call Apple Support by the folks at Jigsaw24. They suggested that they were able to remove the recovery lock if I could provide proof of purchase, which I had. I called Apple Support and when I eventually got through to someone technical, he was somewhat patronising but kind of helpful. He confirmed that they couldn't help to remove the recovery key as it's an important security feature to prevent stolen devices from being unlocked. This totally makes sense and I understand that they don't want stolen laptops to be used. He suggested that MDM hadn't been removed as I could still see the login screen and to ring Jigsaw24 back but this was actually a red herring.
+
+Again, I was stuck with a bricked laptop.
 
 ## The solution: DFU restore with Apple Configurator 2
 
-After a lot of research, I discovered that recovery locks on M1 Macs can be bypassed by using something called DFU (Device Firmware Update) mode to completely restore the machine.
+As any good geek does, I did a lot of Googling.
 
-DFU mode is a special startup mode that allows you to reinstall the firmware and operating system, bypassing all locks including the recovery lock. The downside is that it completely erases everything on the Mac, but since this was a company laptop I couldn't access anyway, that wasn't a problem.
+After a lot of research, I discovered that recovery locks on M1 Macs can be bypassed by using something called DFU (Device Firmware Update) mode to completely restore the machine. However, this can only be done if the MDM profile has been removed and the machine has been removed from Apple Business Management.
 
-Here's what I needed:
+DFU mode is a special startup mode that allows you to reinstall the firmware and operating system, bypassing all locks including the recovery lock. The downside is that it completely erases everything on the Mac, but since this was a laptop I couldn't access anyway, that wasn't a problem.
+
+In order to do this, I needed:
 
 - Another Mac running macOS Sonoma 14 or later
 - Apple Configurator 2 (a free app from the Mac App Store)
 - A USB-C to USB-C data cable (importantly, NOT a Thunderbolt cable)
 - The power adapter for the locked MacBook Pro
-- A lot of patience!
+- A hell of a lot of patience!
+
+{% callout "info" %}
+**Note:** I found that one of my USB cables didn't work but I'm not 100% sure why. You might have to try a few cables for it to work properly.
+{% endcallout %}
 
 ## Getting started with Apple Configurator 2
 
 I started by installing Apple Configurator 2 on my working Mac from the App Store. This is a free tool that Apple provides for managing iOS and macOS devices.
 
-I made sure my working Mac was connected to power and had a stable internet connection. I'd recommend using Ethernet if possible as you'll be downloading a large firmware file.
+I made sure my working Mac was connected to power and had a stable internet connection. As it downloads the firmware and an version of macOS, make sure you've got a decent connection. The OS is around 14 GB so it might take a while.
 
-## Booting into DFU mode (the tricky part)
+## Booting into DFU mode (the trickiest part)
 
-Getting the M1 MacBook Pro into DFU mode was by far the hardest part of this process. The timing is incredibly precise and it took me multiple attempts to get it right.
+Getting the MacBook Pro into DFU mode was by far the hardest part of this process. The timing is incredibly precise and it took me multiple attempts over a few hours to get it right. It's probably the most frustrating part of this process.
 
 Here's what you need to do:
 
-1. Make sure the locked MacBook Pro is completely powered off (hold the power button for 15 seconds)
+1. Make sure the locked MacBook Pro is completely powered off (you have to hold the power button for 15 seconds)
 2. Connect it to your working Mac using the USB-C cable
 3. Connect the locked MacBook Pro to its power adapter
 4. Open Apple Configurator 2 on your working Mac
 
+Some online articles suggest that you have to plug in the USB-C cable into the furthest back USB port on the left-hand side of the laptop in order to trigger DFU.
+
 Now comes the timing-critical part:
 
 1. Press and release the power button on the locked MacBook Pro
-2. Immediately press and hold all four keys simultaneously: Power button + Left Control + Left Option + Right Shift
-3. Hold all four keys for exactly 10 seconds
+2. Immediately press and hold the following four keys simultaneously: Power button + Left Control + Left Option + Right Shift
+3. Hold all four keys for exactly 10 seconds. Yes, you do have to count "one-thousand, two-thousand" etc.!
 4. After 10 seconds, release the three keyboard keys but keep holding the power button
 5. Continue holding the power button until you see "DFU" appear in Apple Configurator 2 (usually another 5-10 seconds)
+6. Tear your hair out when it doesn't work and then repeat!
 
-An important note: the MacBook Pro's screen should stay completely black during this entire process. If you see an Apple logo, it means the Mac has started booting normally and you need to try again.
+{% callout "info" %}
+**Important:** The MacBook Pro's screen should stay completely black during this entire process. If you see an Apple logo appear, it means the Mac has started booting normally and you need to try again. Why Apple decided that you need a Voodoo incantation with precise timing to boot the machine, I'll never know!
+{% endcallout %}
 
-I had to try this about 8-10 times before I got the timing right. Don't give up! Count out loud to maintain the timing.
+I had to try this at least 20 times before I got the timing right. Don't give up! And don't forget to count out loud to maintain the timing!
 
 ## Downloading the IPSW file first
 
-Once I could get into DFU mode reliably, I faced another problem: the restore process kept failing with error messages.
+Once I could get into DFU mode, I faced yet another problem: the restore process kept failing with the following error message:
 
-After the fourth failed attempt, I discovered the key to success: pre-downloading the macOS firmware file (called an IPSW file) instead of letting Apple Configurator 2 download it during the restore.
+TODO: Add error message image that I took.
 
-Here's what I did:
+After the fourth failed attempt, and much swearing, I used Claude to try to see if there were any alternatives. It was incredibly helpful and shared the key to my eventual victory: pre-downloading the macOS firmware file (called an IPSW file) instead of letting Apple Configurator 2 download it during the restore.
 
-1. Went to https://ipsw.me on my working Mac
-2. Selected MacBook Pro from the list
-3. Selected my specific model (MacBook Pro 16-inch, 2021, M1)
-4. Downloaded the latest signed IPSW file (it was about 13-15 GB)
-5. Saved it to my Desktop
+Here's what you need to do:
+
+1. Go to https://ipsw.me on the working Mac
+2. Select MacBook Pro from the list
+3. Select the specific model (for me it was a MacBook Pro 16-inch, 2021, M1)
+4. Download the latest signed IPSW file (it was about 13-15 GB). I chose to install Sonoma 14.6 because it's what I was using on the working Mactop
 
 This single change made all the difference.
 
-## Performing the restore
+## Performing the DFU restore
 
-With the IPSW file downloaded and my MacBook Pro in DFU mode, I was ready to perform the restore.
+With the IPSW file downloaded and my MacBook Pro in DFU mode, I was ready to try again.
 
-In Apple Configurator 2, I could see a large "DFU" icon representing my locked MacBook Pro. I simply dragged the IPSW file from my Desktop and dropped it onto the DFU icon.
+In Apple Configurator 2, I could see a large "DFU" icon representing my locked MacBook Pro. You have to drag the downloaded IPSW file from your folder and drop it onto the DFU icon.
 
-This started the restore process. I could see progress bars showing:
-- Preparing...
-- Installing (Step 1 of 4, 2 of 4, etc.)
+This starts the restore process and some anxiety that it was going to fail again.
 
-The entire process took about 30-40 minutes. During this time, the Apple logo appeared and disappeared on the MacBook Pro a few times - this is completely normal.
+The entire process took about 30-40 minutes. During this time, the Apple logo appeared and disappeared on the MacBook Pro a few times but it's completely normal.
 
-I made sure neither Mac went to sleep during this process and kept everything plugged in.
+You have to ensure that neither Mac goes to sleep during this process and keep everything plugged in.
 
-## Success!
+## Victory was mine!
 
-When the restore completed, the MacBook Pro automatically restarted and booted into the macOS Setup Assistant - the "Welcome" screen you see on a brand new Mac.
+When the restore completed, the MacBook Pro automatically restarted and booted into the macOS Setup Assistant. It showed the "Hello!" welcome screen you see on a brand new Mac and I think I actually shouted "FUCK YEAH!"
 
-The recovery lock was gone. The MDM enrollment was gone. It was completely clean and ready to set up as my own.
+The recovery lock was gone. The MDM enrollment was gone. It was completely clean and ready to set up as a new laptop.
 
-I went through the setup process, created a user account, and the MacBook Pro was finally working properly. I'm now setting it up for my son to use at university.
+I went through the setup process, created a user account, and the MacBook Pro was finally working properly. Just to double check, I booted it into recovery mode to confirm that the recovery key was gone and it was!
 
-## Common issues I encountered
+## Main issue to be aware of
 
-**Getting into DFU mode was incredibly frustrating**
+Here are all of the challenges you could have if you need to do this!
 
-The timing has to be absolutely precise. All four keys must be pressed at exactly the same moment. I found it helpful to position my fingers hovering over the keys before starting, then press them all together like playing a chord on a piano. Counting out loud helped me maintain the timing.
+### Getting into DFU mode was incredibly frustrating
+
+The timing has to be absolutely precise. All four keys must be pressed at exactly the same moment or it just reboots the machine. I found it helpful to position my fingers hovering over the keys before starting, then press them all together like playing a chord on a piano. As stupid as it sounds, counting out loud helps to maintain the timing.
 
 It took me 8-10 attempts before I successfully got into DFU mode. If you see the Apple logo appear on the screen, you've missed the window and the Mac has started booting normally. Just power it off and try again.
 
-**Not all USB-C cables work**
+I did find that booting into recovery mode and then shutting down seemed to help. This could be anecdotal though as I couldn't find any reference to this online.
 
-I initially struggled to get into DFU mode and it turned out my USB-C cable was the problem. Once I switched to the charging cable that came with the MacBook Pro, everything worked perfectly.
+I nearly rage-quit many times whilst doing this.
 
-Make sure you're using a regular USB-C data cable and NOT a Thunderbolt 3 or 4 cable. Thunderbolt cables won't work for this process.
+### Not all USB-C cables work
 
-**The restore kept failing with error messages**
+I initially struggled to get into DFU mode and it turned out my USB-C cable was the problem. Once I switched to the charging cable that came with the MacBook Pro, it booted into DFU mode.
 
-After successfully getting into DFU mode, I tried to restore the Mac four times and each time it failed with "AMRestoreErrorDomain error 10". This was incredibly frustrating after all the work to get into DFU mode.
+Make sure you're using a regular USB-C data cable and NOT a Thunderbolt 3 or 4 cable as those don't work.
 
-The solution was pre-downloading the IPSW firmware file from ipsw.me instead of letting Apple Configurator 2 download it during the restore. This eliminates network issues during the critical restore phase. Once I did this, the restore completed successfully on the first attempt.
+Again, it could just be the precise timing of DFU mode that was the problem but swapping the USB cable worked for me.
 
-**Keeping both Macs awake**
+### The DFU restore kept failing
 
-During my failed attempts, I realized that my working Mac was going to sleep partway through the download, which was causing the restore to fail. I had to adjust my Energy Saver settings to prevent sleep during the process.
+After successfully getting into DFU mode, I tried to restore the Mac four times and each time it failed with "AMRestoreErrorDomain error 10". This was incredibly frustrating after the pain of getting into DFU mode.
 
-Make sure both Macs stay awake and connected to power throughout the entire restore process, which can take 30-60 minutes.
-
-## What I learned
-
-Here are the key things I learned from this experience:
-
-**M1 Macs are different:** They don't use firmware passwords like Intel Macs. Recovery locks can only be removed by completely restoring the firmware via DFU mode.
-
-**DFU timing is frustrating but achievable:** Getting into DFU mode requires incredibly precise timing. It's normal to need 5-15 attempts. Don't give up! The key is pressing all four keys simultaneously and maintaining exact timing.
-
-**Pre-download the IPSW file:** This was the key to my success. Downloading the firmware file first eliminates network issues during the restore process and significantly improves your chances of success.
-
-**Cable matters:** Make sure you're using a proper USB-C data cable, not a Thunderbolt cable. The charging cable that came with the MacBook Pro works perfectly.
-
-**This completely wipes the Mac:** A DFU restore erases everything. All data is lost, but all locks are also removed.
-
-**Patience is essential:** The entire process from start to finish took me about 3 hours, including all the failed DFU attempts and restore errors. Set aside enough time and don't rush it.
-
-## Example use cases
-
-While I used this process to unlock a corporate MacBook Pro that I'd been given, this same method can be used for:
-
-**Forgotten recovery locks:** If you've set a recovery lock via MDM and forgotten the password, this will remove it.
-
-**Purchased second-hand Mac:** If you've bought a used M1 Mac that still has MDM enrollment (though you should always check this before purchasing).
-
-**Decommissioned corporate devices:** If your company is properly decommissioning Macs and removing them from Apple Business Manager, but the recovery lock persists.
-
-**Unresponsive M1 Macs:** If your M1 Mac has become completely unresponsive due to a failed update or other issue, DFU restore can bring it back to life.
-
-## Frequently asked questions (FAQ)
-
-### Can Apple Support remove the recovery lock?
-
-Apple Consumer Support cannot remove recovery locks without the original proof of purchase from when the device was first purchased. You might have better luck with Apple Business Support if you have written authorization from the original corporate owner, but this is uncertain.
-
-### Will this work on Intel Macs?
-
-This process works for M1 Macs (Apple Silicon). Intel Macs with the T2 chip use a different process, though Apple Configurator 2 can also help with those. The key difference is that Intel T2 Macs can have firmware passwords removed via DFU restore as well.
-
-### Do I need to contact my former employer?
-
-If your former employer is willing to help, the easiest solution is for them to provide the recovery lock password. However, many companies delete these passwords when employees leave. In that case, the DFU restore method is your best option.
-
-### How long does the whole process take?
-
-Getting into DFU mode can take 30-60 minutes of attempts if you're struggling with the timing. Once you're in DFU mode and have the IPSW file ready, the actual restore takes 30-60 minutes depending on your computer's speed. Budget at least 2-3 hours for the entire process.
-
-### Will I lose all my data?
-
-Yes. A DFU restore completely erases the Mac and reinstalls everything from scratch. However, if you can't access the Mac due to the recovery lock, you don't have access to that data anyway.
-
-### Can I do this on my own or do I need to take it to Apple?
-
-You can do this on your own if you have access to another Mac. An Apple Store or Apple Authorized Service Provider can also perform this process for you if you prefer professional help.
-
-### What if I don't have another Mac?
-
-You need another Mac to use Apple Configurator 2. If you don't have one, you could borrow one from a friend, or take the locked Mac to an Apple Store or authorized repair center.
+Make sure you download the IPSW firmware file from https://ipsw.me instead of letting Apple Configurator 2 download it during the restore. This eliminates potential network issues during the critical restore phase. Once I did this, the restore completed successfully on the first attempt.
 
 ## Useful resources
 
@@ -213,4 +171,3 @@ You need another Mac to use Apple Configurator 2. If you don't have one, you cou
 - [Mr. Macintosh's guide](https://mrmacintosh.com/restore-macos-firmware-on-an-apple-silicon-mac-boot-to-dfu-mode/) - Detailed video tutorial on DFU mode
 
 I hope this helps anyone else who finds themselves in a similar situation with a locked M1 Mac. It's a frustrating process, but it's definitely possible to recover a locked device if you have the patience to work through it! 😄
-

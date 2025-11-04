@@ -19,7 +19,7 @@ const truncateText = (text, length = 100) => {
 };
 
 const getGoogleSheetsNotes = async () => {
-    const {GOOGLE_SHEETS_API_KEY, GOOGLE_SHEETS_SPREADSHEET_ID} = process.env;
+    const {GOOGLE_SHEETS_SPREADSHEET_ID} = process.env;
 
     // Return empty array if API key is not configured or is dummy
     if (credentials.client_email === '') {
