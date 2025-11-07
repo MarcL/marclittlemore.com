@@ -1,6 +1,5 @@
 const crypto = require('node:crypto');
 const markdownLib = require('markdown-it')();
-const publishedNotes = require('../src/_data/publishedNotes.json');
 
 const callout = (content, type = 'info') => {
     const iconClass = 'w-8 h-8 inline-block';
@@ -69,43 +68,10 @@ const getPlatformIcon = (platform) => {
     return platformIcons[platform] || '';
 };
 
-const noteIconsShortcode = (url) => {
-    // Remove leading and trailing slashes
-    if (!url) {
-        return '';
-    }
-
-    const cleanedUrl = url.replace(/^\/|\/$/g, '');
-
-    // Do we have a published note with this URL?
-    const publishedNote = publishedNotes[cleanedUrl];
-    if (publishedNote) {
-        // Find platforms
-        const platforms = Object.keys(publishedNote);
-        const platfformString = platforms.join(', ');
-        console.log(platfformString);
-        const platformIcons = platforms.map((platform) => {
-            const icon = getPlatformIcon(platform);
-            if (icon) {
-                return `<a href="${publishedNote[platform].url}" title="${platform}">${icon}</a>`;
-            }
-
-            return '';
-        });
-
-        const iconGrid = `<span class="inline-grid grid-cols-4 justify-items-center items-center float-right space-x-2">${platformIcons.join(
-            ''
-        )}</span>`;
-
-        return iconGrid;
-    }
-};
-
 const addAll = (eleventyConfig) => {
     eleventyConfig.addPairedShortcode('callout', callout);
     eleventyConfig.addShortcode('codetitle', codeTitle);
     eleventyConfig.addShortcode('gravatar', gravatarShortcode);
-    eleventyConfig.addShortcode('noteIcons', noteIconsShortcode);
     eleventyConfig.addPairedShortcode('quote', quote);
 };
 

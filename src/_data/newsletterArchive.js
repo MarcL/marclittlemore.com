@@ -109,38 +109,44 @@ const parseEmailOctopusHtml = (html) => {
 module.exports = async () => {
     const {EMAIL_OCTOPUS_API_KEY: apiKey} = process.env;
 
-    if (!apiKey) {
-        throw new Error('Expecting EMAIL_OCTOPUS_API_KEY in environment variables!');
+    if (!apiKey || apiKey === 'dummy') {
+        console.log('Warning: EMAIL_OCTOPUS_API_KEY not configured, returning empty newsletters');
+        return [];
     }
     
-    const {listId} = emailOctopusConfig;
-    const url = `${EMAIL_OCTOPUS_BASE_URL}/campaigns?api_key=${apiKey}`;
+    try {
+        const {listId} = emailOctopusConfig;
+        const url = `${EMAIL_OCTOPUS_BASE_URL}/campaigns?api_key=${apiKey}`;
 
-    const response = await Cache(url, {
-        duration: '1d',
-        type: 'json',
-    });
+        const response = await Cache(url, {
+            duration: '1d',
+            type: 'json',
+        });
 
-    // Retrieve newsletters that match the list ID for this site
-    // in case I start another!
-    const newsletters = response.data.filter(newsletter => newsletter.to.includes(listId))
-        .map(newsletter => {
-            const {id, name, status, created_at: created, sent_at: sent, content} = newsletter;
+        // Retrieve newsletters that match the list ID for this site
+        // in case I start another!
+        const newsletters = response.data.filter(newsletter => newsletter.to.includes(listId))
+            .map(newsletter => {
+                const {id, name, status, created_at: created, sent_at: sent, content} = newsletter;
 
-            const html = parseEmailOctopusHtml(content.html);
+                const html = parseEmailOctopusHtml(content.html);
 
-            return {
-                created,
-                sent,
-                sentSlug: formatDate(sent),
-                title: name,
-                url: `${EMAIL_OCTOPUS_WEB_VIEW_URL}?p=${id}&pt=campaign`,
-                status,
-                content,
-                html
-            };
-        })
-        .filter(newsletter => newsletter.status.toLowerCase() === 'sent');
+                return {
+                    created,
+                    sent,
+                    sentSlug: formatDate(sent),
+                    title: name,
+                    url: `${EMAIL_OCTOPUS_WEB_VIEW_URL}?p=${id}&pt=campaign`,
+                    status,
+                    content,
+                    html
+                };
+            })
+            .filter(newsletter => newsletter.status.toLowerCase() === 'sent');
 
-    return newsletters;
+        return newsletters;
+    } catch (error) {
+        console.error('Error fetching newsletter archive:', error.toString());
+        return [];
+    }
 };

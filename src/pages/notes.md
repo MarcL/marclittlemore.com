@@ -5,9 +5,13 @@ permalink: /notes/
 hideImage: true
 ---
 
-<div class="max-w-full mx-auto py-4 grid grid-cols-1">
-{% for note in collections.note reversed %}
-{% include partials/noteCard.html, noteContent: note.content, noteImage: note.data.image, noteDate: note.date, noteUrl: note.url %}
-{% endfor %}
+<div class="max-w-screen-md mx-auto py-2 grid grid-cols-1">
+{%- for note in googleSheetsNotes -%}
+{%- assign noteContent = note.content -%}
+{%- assign noteImage = note.data.image -%}
+{%- assign noteDate = note.date -%}
+{%- assign noteUrl = note.url -%}
+{%- include partials/noteCard.html, noteContent: noteContent, noteImage-: noteImage, noteDate: noteDate, noteUrl: noteUrl, note: note %}
+{%- endfor -%}
 </div>
 
