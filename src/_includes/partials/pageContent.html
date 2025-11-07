@@ -30,11 +30,6 @@
   {% if tags contains 'post' %}
   <div class="{{theme.page.metadata.text}} font-sm py-4 w-full mx-auto max-w-lg text-center space-y-2">
     <div class="text-lg md:text-xl font-medium space-x-1">
-      {% if author and author.name %}
-      <div>By {{author.name}}</div>
-      {% else %}
-      <div>By {{site.author.name}}</div>
-      {% endif %}
       <div>
         <span>
           {%- assign renderedDate = page.date -%}
@@ -55,7 +50,7 @@
   {% endif %}
 
   {% if hasSidebar and tocContents != "" %}
-  <section id="mainContent" class="w-full grid grid-cols-1 md:grid-cols-4">
+  <section id="mainContent" class="w-full max-w-screen-lg grid grid-cols-1 md:grid-cols-4">
     <div id="sidebar" class="col-span-1 md:col-span-1 px-0 md:pr-8">
       <section id="tableOfContents" class="w-full sticky top-0">
         <div class="w-full mx-auto {{theme.page.tableOfContents.background}} text-lg prose prose-xl rounded-md prose-li:list-disc prose-a:underline my-4 md:my-0 px-2 py-2">
@@ -76,7 +71,7 @@
     </div>
   </section>
   {% else %}
-  <div class="w-full" id="textContent">
+  <div class="w-full max-w-screen-lg" id="textContent">
     <section class="py-4 w-full mx-auto">
       <div class="prose prose-xl w-full max-w-none">
           {{ content }}
