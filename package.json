@@ -70,7 +70,7 @@
     }
   },
   "dependencies": {
-    "@netlify/functions": "^2.8.2",
+    "@netlify/functions": "^5.0.0",
     "linkify-html": "^4.3.2",
     "linkifyjs": "^4.3.2"
   }
