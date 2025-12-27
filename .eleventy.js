@@ -4,8 +4,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
-const embedYouTube = require('eleventy-plugin-youtube-embed');
-const embedTwitter = require('eleventy-plugin-embed-twitter');
+const embedEverything = require('eleventy-plugin-embed-everything');
 const timeToRead = require('eleventy-plugin-time-to-read');
 const tableOfContents = require('eleventy-plugin-nesting-toc');
 const externalLinks = require('@aloskutov/eleventy-plugin-external-links');
@@ -22,8 +21,7 @@ module.exports = (eleventyConfig) => {
     // Plugins
     eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     eleventyConfig.addPlugin(syntaxHighlight);
-    eleventyConfig.addPlugin(embedYouTube);
-    eleventyConfig.addPlugin(embedTwitter);
+    eleventyConfig.addPlugin(embedEverything);
     eleventyConfig.addPlugin(timeToRead, { style: 'short' });
     eleventyConfig.addPlugin(tableOfContents, { tags: ['h2'] });
     eleventyConfig.addPlugin(externalLinks, {
