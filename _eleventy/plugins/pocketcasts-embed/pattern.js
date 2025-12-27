@@ -11,7 +11,8 @@
  *
  * Capture groups:
  * - [0]: The entire match
- * - [1]: The ID/slug
+ * - [1]: The type (podcast or episode) - may be undefined
+ * - [2]: The ID/slug
  */
 
-module.exports = /<p>\s*(?:<a [^>]*?>)?\s*(?:https?:)?(?:\/\/)?pca\.st\/(?:(?:podcast|episode)\/)?([\w-]+)[^\s<>]*\s*(?:<\/a>)?\s*<\/p>/g;
+module.exports = /<p>\s*(?:<a [^>]*?>)?\s*(?:https?:)?(?:\/\/)?pca\.st\/(?:(podcast|episode)\/)?([\w-]+)[^\s<>]*\s*(?:<\/a>)?\s*<\/p>/g;

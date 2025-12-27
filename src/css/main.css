@@ -119,7 +119,23 @@ color: #f92672;
 .eleventy-plugin-embed-tiktok,
 .eleventy-plugin-embed-instagram,
 .eleventy-plugin-embed-mastodon,
-.eleventy-plugin-embed-bluesky,
-.eleventy-plugin-embed-pocketcasts {
+.eleventy-plugin-embed-bluesky {
 	@apply my-6;
+}
+
+/* Pocket Casts link card */
+.eleventy-plugin-embed-pocketcasts {
+	@apply my-6 flex items-center gap-3 p-4 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-800 no-underline transition-colors;
+}
+
+.eleventy-plugin-embed-pocketcasts:hover {
+	@apply border-red-400 dark:border-red-500 bg-slate-100 dark:bg-slate-700;
+}
+
+.eleventy-plugin-embed-pocketcasts__icon {
+	@apply text-red-500 flex-shrink-0;
+}
+
+.eleventy-plugin-embed-pocketcasts__text {
+	@apply text-slate-700 dark:text-slate-200 font-medium;
 }
