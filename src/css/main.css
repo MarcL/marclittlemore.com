@@ -109,3 +109,16 @@ color: #f92672;
 .token.entity {
 	cursor: help;
 }
+
+/* Embed plugin spacing */
+.eleventy-plugin-youtube-embed,
+.eleventy-plugin-embed-spotify,
+.eleventy-plugin-embed-twitter,
+.eleventy-plugin-vimeo-embed,
+.eleventy-plugin-embed-soundcloud,
+.eleventy-plugin-embed-tiktok,
+.eleventy-plugin-embed-instagram,
+.eleventy-plugin-embed-mastodon,
+.eleventy-plugin-embed-bluesky {
+	@apply my-6;
+}
