@@ -6,7 +6,9 @@ module.exports = function (match, options, oembedData) {
 
 	// If we have oEmbed data, use the iframe it provides
 	if (oembedData && oembedData.html) {
-		return `<div class="${options.embedClass}">${oembedData.html}</div>`;
+		let out = `<p><a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a></p>`;
+		out += `<div class="${options.embedClass}">${oembedData.html}</div>`;
+		return out;
 	}
 
 	// Fallback to styled card if oEmbed fails
