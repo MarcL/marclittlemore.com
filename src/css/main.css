@@ -119,6 +119,7 @@ color: #f92672;
 .eleventy-plugin-embed-tiktok,
 .eleventy-plugin-embed-instagram,
 .eleventy-plugin-embed-mastodon,
-.eleventy-plugin-embed-bluesky {
+.eleventy-plugin-embed-bluesky,
+.eleventy-plugin-embed-pocketcasts {
 	@apply my-6;
 }
