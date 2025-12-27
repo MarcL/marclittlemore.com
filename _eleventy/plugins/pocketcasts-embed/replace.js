@@ -1,5 +1,5 @@
 module.exports = function (match, options) {
-	const [, , , id] = match;
+	const [, id] = match;
 
 	let out = `<div class="${options.embedClass}">`;
 	out += `<iframe src="https://pca.st/embed/${id}" `;
