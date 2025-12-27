@@ -123,12 +123,21 @@ color: #f92672;
 	@apply my-6;
 }
 
-/* Pocket Casts link card */
+/* Pocket Casts embed */
 .eleventy-plugin-embed-pocketcasts {
+	@apply my-6;
+}
+
+.eleventy-plugin-embed-pocketcasts iframe {
+	@apply w-full rounded-lg;
+}
+
+/* Pocket Casts fallback link card */
+.eleventy-plugin-embed-pocketcasts--fallback {
 	@apply my-6 flex items-center gap-3 p-4 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-800 no-underline transition-colors;
 }
 
-.eleventy-plugin-embed-pocketcasts:hover {
+.eleventy-plugin-embed-pocketcasts--fallback:hover {
 	@apply border-red-400 dark:border-red-500 bg-slate-100 dark:bg-slate-700;
 }
 
