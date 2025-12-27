@@ -13,10 +13,9 @@
  * - [0]: The entire match
  * - [1]: Whitespace before URL
  * - [2]: Whitespace after opening anchor (if present)
- * - [3]: Optional path type (podcast, episode, or empty for direct IDs)
- * - [4]: The ID/slug
- * - [5]: Whitespace before closing anchor (if present)
- * - [6]: Whitespace at end
+ * - [3]: The ID/slug
+ * - [4]: Whitespace before closing anchor (if present)
+ * - [5]: Whitespace at end
  */
 
-module.exports = /<p>(?=(\s*))\1(?:<a [^>]*?>)??(?=(\s*))\2(?:https?:)??(?:\/\/)??pca\.st\/??(podcast|episode)??\/??([\w-]+)(?:[^\s<>]*)(?=(\s*))\5(?:<\/a>)??(?=(\s*))\6<\/p>/g;
+module.exports = /<p>(?=(\s*))\1(?:<a [^>]*?>)??(?=(\s*))\2(?:https?:)??(?:\/\/)??pca\.st\/(?:(?:podcast|episode)\/)?([\w-]+)(?:[^\s<>]*)(?=(\s*))\3(?:<\/a>)??(?=(\s*))\4<\/p>/g;
