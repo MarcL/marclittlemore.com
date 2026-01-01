@@ -4,7 +4,7 @@
   <subtitle>A collection of notes from {{siteUrl}}</subtitle>
   <link href="{{ pageUrl | prepend: siteUrl }}" rel="self"/>
   <link href="{{ siteUrl }}"/>
-  <updated>{{ notes[0].date | dateToRfc3339 }}</updated>
+  {% if notes.size > 0 %}<updated>{{ notes[0].date | dateToRfc3339 }}</updated>{% endif %}
   <id>{{ siteUrl }}/</id>
   <generator uri="https://www.11ty.dev/">{{ eleventy.generator }}</generator>
   <author>

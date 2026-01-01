@@ -32,9 +32,15 @@ const createGoodReadsUrl = (options) => {
 };
 
 const getGoodreadsShelf = async (shelfName) => {
+    const { GOODREADS_USER_ID: id, GOODREADS_API_KEY: apiKey } =
+        process.env;
+
+    if (!id || !apiKey) {
+        console.log('Warning: Goodreads credentials not configured, returning empty shelf');
+        return [];
+    }
+
     try {
-        const { GOODREADS_USER_ID: id, GOODREADS_API_KEY: apiKey } =
-            process.env;
 
         const searchParams = {
             v: 2,

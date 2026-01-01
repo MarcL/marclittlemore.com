@@ -5,6 +5,11 @@ const WEBMENTIONS_IO_API = 'https://webmention.io/api/mentions.jf2';
 const token = process.env.WEBMENTIONS_IO_API_TOKEN;
 
 module.exports = async () => {
+    if (!token) {
+        console.log('Warning: WEBMENTIONS_IO_API_TOKEN not configured, returning empty webmentions');
+        return [];
+    }
+
     const url = `${WEBMENTIONS_IO_API}?domain=${site.domain}&token=${token}&per-page=999`;
 
     try {

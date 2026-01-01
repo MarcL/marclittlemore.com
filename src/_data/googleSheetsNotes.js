@@ -1,14 +1,6 @@
 const {google} = require('googleapis');
 const {AssetCache} = require("@11ty/eleventy-cache-assets");
 
-const credentials = {
-    project_id: process.env.GOOGLE_PROJECT_ID,
-    client_email: process.env.GOOGLE_CLIENT_EMAIL,
-    // 2. This is the magic trick:
-    //    It replaces the escaped "\\n" (from process.env) with actual newlines.
-    private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')
-};
-
 const truncateText = (text, length = 100) => {
     if (!text) return '';
 
@@ -19,13 +11,25 @@ const truncateText = (text, length = 100) => {
 };
 
 const getGoogleSheetsNotes = async () => {
-    const {GOOGLE_SHEETS_API_KEY, GOOGLE_SHEETS_SPREADSHEET_ID} = process.env;
+    const {
+        GOOGLE_PROJECT_ID,
+        GOOGLE_CLIENT_EMAIL,
+        GOOGLE_PRIVATE_KEY,
+        GOOGLE_SHEETS_SPREADSHEET_ID
+    } = process.env;
 
-    // Return empty array if API key is not configured or is dummy
-    if (credentials.client_email === '') {
+    // Return empty array if credentials are not configured
+    if (!GOOGLE_CLIENT_EMAIL || !GOOGLE_PRIVATE_KEY) {
         console.log('Warning: Google Sheets API not configured, returning empty notes');
         return [];
     }
+
+    const credentials = {
+        project_id: GOOGLE_PROJECT_ID,
+        client_email: GOOGLE_CLIENT_EMAIL,
+        // Replace the escaped "\\n" (from process.env) with actual newlines.
+        private_key: GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n')
+    };
 
     try {
         const asset = new AssetCache('google-sheets-notes');

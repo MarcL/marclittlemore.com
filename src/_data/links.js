@@ -18,6 +18,11 @@ const getLinks = async (collectionId) => {
 };
 
 const getRaindropLinks = async () => {
+    if (!process.env.RAINDROP_API_TOKEN) {
+        console.log('Warning: RAINDROP_API_TOKEN not configured, returning empty links');
+        return [];
+    }
+
     let sortedLinks = [];
 
     try {
