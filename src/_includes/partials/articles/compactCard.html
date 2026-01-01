@@ -1,0 +1,20 @@
+<article class="group py-3">
+    <a href="{{article.url}}" class="flex gap-4 items-center">
+        <div class="hidden md:block flex-shrink-0 w-20 h-20 overflow-hidden rounded-md">
+            <img
+                src="{{article.data.headerImage}}"
+                alt="{{article.data.title}}"
+                class="w-full h-full object-cover {{theme.article.image.hover}}"
+                loading="lazy"
+            >
+        </div>
+        <div class="flex-1 min-w-0">
+            <h3 class="text-lg font-semibold tracking-tight {{theme.article.text.title}} {{theme.article.text.hover}}">
+                {{article.data.title}}
+            </h3>
+            <time datetime="{{article.date}}" class="text-sm {{theme.article.date.text}}">
+                {{article.date | date: "%B %d, %Y"}}
+            </time>
+        </div>
+    </a>
+</article>

@@ -1,0 +1,23 @@
+<article class="group flex flex-col md:flex-row gap-6">
+    <a href="{{article.url}}" class="block md:w-1/2">
+        <div class="overflow-hidden rounded-xl">
+            <img
+                src="{{article.data.headerImage}}"
+                alt="{{article.data.title}}"
+                class="aspect-video w-full object-cover {{theme.article.image.hover}}"
+                loading="lazy"
+            >
+        </div>
+    </a>
+    <div class="md:w-1/2 flex flex-col justify-center">
+        <a href="{{article.url}}" class="block">
+            <h2 class="text-2xl md:text-3xl font-bold tracking-tight {{theme.article.text.title}} {{theme.article.text.hover}}">
+                {{article.data.title}}
+            </h2>
+        </a>
+        {% render partials/articles/articleDate.html article:article theme:theme %}
+        <p class="mt-2 text-base text-gray-700 dark:text-gray-400">
+            {{article.data.description | markdownify}}
+        </p>
+    </div>
+</article>

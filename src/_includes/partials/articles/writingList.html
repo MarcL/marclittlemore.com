@@ -1,7 +1,49 @@
 {% assign allArticles = collection | reverse %}
-<section class="grid grid-cols-1 not-prose py-4 space-y-10">
-    {%- for article in allArticles -%}
-        {% render partials/articles/standardCard.html article:article theme:theme %}
-    {%- endfor -%}
+
+<!-- Featured Section - Latest Post -->
+<section class="not-prose py-8 w-full">
+    <h2 class="text-2xl font-bold tracking-tight {{theme.page.text.title}} mb-8">Latest Post</h2>
+
+    {% assign heroArticle = allArticles | first %}
+    {% render partials/articles/heroCard.html article:heroArticle theme:theme %}
 </section>
-    
+
+<!-- Archive Section with year grouping -->
+<section class="not-prose py-8 w-full">
+    <h2 class="text-2xl font-bold tracking-tight {{theme.page.text.title}} mb-6">Archive</h2>
+
+    {% assign currentYear = "" %}
+    {% assign yearArticles = "" | split: "" %}
+
+    {% for article in allArticles offset:1 %}
+        {% assign articleYear = article.date | date: "%Y" %}
+
+        {% if articleYear != currentYear %}
+            {% if currentYear != "" %}
+            <!-- Render previous year's articles in 2-column grid -->
+            <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem;">
+                {% for yearArticle in yearArticles %}
+                    {% render partials/articles/compactCard.html article:yearArticle theme:theme %}
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% assign currentYear = articleYear %}
+            {% assign yearArticles = "" | split: "" %}
+            <h3 class="text-xl font-semibold {{theme.page.text.subtitle}} mt-8 mb-4 first:mt-0">
+                {{ currentYear }}
+            </h3>
+        {% endif %}
+
+        {% assign yearArticles = yearArticles | push: article %}
+    {% endfor %}
+
+    <!-- Render final year's articles -->
+    {% if yearArticles.size > 0 %}
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 2rem;">
+        {% for yearArticle in yearArticles %}
+            {% render partials/articles/compactCard.html article:yearArticle theme:theme %}
+        {% endfor %}
+    </div>
+    {% endif %}
+</section>

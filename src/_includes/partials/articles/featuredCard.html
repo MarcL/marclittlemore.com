@@ -1,0 +1,14 @@
+<div class="group">
+    <a href="{{article.url}}" class="block">
+        <img
+            src="{{article.data.headerImage}}"
+            alt="{{article.data.title}}"
+            class="rounded-lg object-cover h-48 w-full"
+            loading="lazy"
+        >
+        <h3 class="mt-3 text-xl font-bold tracking-tight {{theme.article.text.title}} group-hover:underline group-hover:underline-offset-4">
+            {{article.data.title}}
+        </h3>
+        {% render partials/articles/articleDate.html article:article theme:theme %}
+    </a>
+</div>
