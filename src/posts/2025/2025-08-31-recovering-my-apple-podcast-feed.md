@@ -1,7 +1,7 @@
 ---
 title: "Recovering My Apple Podcast Feed"
 permalink: "/recovering-my-apple-podcast-feed/"
-date: "2025-08-31"
+date: "2025-11-18"
 headerImage: "/images/banners/recovering-my-apple-podcast-feed.jpg"
 description: "How I reclaimed ownership of my podcast feed after nearly 20 years."
 excerpt: When you post your podcast to Apple Podcasts back in 2005, it's tricky to get ownership of your feed so here's how I did it.
@@ -13,15 +13,15 @@ image:
     url: https://unsplash.com/@chris_lynch_
 ---
 
-Way back in the early 2000s, I was still quite a successful DJ under my alter ego of [DJ Cruze](https://www.djcruze.co.uk/). I was regularly travelling to Germany and playing at various clubs and I wanted to share my mixes with a wider audience, and get more gigs! Around this time I discovered podcasts and started digging into what they were and how to create them.
+Way back in the mid 2000s, I was still quite a successful DJ under my alter ego of [DJ Cruze](https://www.djcruze.co.uk/). I was regularly travelling to Germany and playing at various clubs and I wanted to share my mixes with a wider audience, and yes, try to get a few more DJ gigs! I also discovered podcasts for the first time and started digging into what they were and listened to a few, mainly Leo Laporte's "This Week In Tech (TWIT)" and Adam Curry's "The Daily Source Code". Nerdy ones!
 
-As I was a video games programmer at the time, I wasn't an expert on the web so I had originally set up my DJ Cruze website as a Blogger site and then moved over to a self-hosted Wordpress site when I needed more control over it. I knew that Wordpress supported RSS and with a couple of extra plugins, I soon had an RSS feed set up for a new podcast.
+As I was a video games programmer at the time, I wasn't an expert on the web so I had naively set up my DJ Cruze website as a Blogger site. This worked for a while but I moved over to self-hosted Wordpress to get a bit more control over it once I started finding the limitations of Blogger. It also allowed me to set up an RSS feed for my blog posts and then I discovered that this was the key to podcasting. I knew that Wordpress supported RSS and after some research, and with a couple of extra Wordpress plugins, I soon had an RSS feed set up for a new podcast.
 
-Around 2005, Apple leaned heavily into podcasting and allowed you to submit your podcast to their iTunes directory. I submitted my podcast and quickly discovered that I needed to cache my feed to stop my shared Dreamhost website from quickly using up all of its bandwidth. I really was a noob when it came to understanding web technologies at the time!
+Around 2005, Apple leaned heavily into podcasting and allowed you to submit your podcast to their iTunes directory. I submitted my podcast into the ether and thought nothing much of it. However, I soon gained some fans and quickly discovered that I needed to cache my feed to stop my shared Dreamhost website from quickly using up all of its bandwidth. I really was a noob when it came to understanding web technologies at the time!
 
 ## Enter Feedburner
 
-Feedburner was a web service that let you manage RSS feeds and, more importantly for me, it could cache them and handle all the bandwidth. I remember the relief when I found it - finally, a solution to my bandwidth problems that didn't involve paying for better hosting!
+Feedburner was a web service that let you manage RSS feeds and, more importantly for me, it could cache them and handle all the bandwidth. I remember the relief when I found it. Finally, a solution to my bandwidth problems that didn't involve me paying for better hosting! I was far too much of a cheapskate back then.
 
 I quickly set up a redirect so my Wordpress feed URL pointed to Feedburner instead:
 
@@ -30,11 +30,11 @@ Original feed: http://www.djcruze.co.uk/cms/index.php?feed=rss2&category_name=po
 Feedburner URL: https://feeds.feedburner.com/djcruzepodcast
 ```
 
-I submitted this new Feedburner URL to iTunes, and everything worked perfectly. My first podcast episode went live on 30th September 2005 - [Episode 1: Something Fresh](https://www.djcruze.co.uk/podcasts/episode-1-something-fresh/) - and subscribers started rolling in. Problem solved.
-
-Or so I thought.
+I submitted this new Feedburner URL to iTunes, and everything worked perfectly. My first podcast episode went live on 30th September 2005, [Episode 1: Something Fresh](https://www.djcruze.co.uk/podcasts/episode-1-something-fresh/), and subscribers started increasing.
 
 ## The Problem with Third-Party Feeds
+
+// TODO: Talk about redirecting the feed from Wordpress to Feedburner but then not being able to control the Feedburner URL in Apple Podcasts.
 
 For years, this setup worked great. Feedburner cached my feed, saved my bandwidth, and even provided some basic analytics. I didn't think twice about it.
 
@@ -64,21 +64,23 @@ Here's what I added to my RSS podcast feed:
 
 This tag tells podcast apps: "Hey, this feed has moved. Update your subscription to this new URL instead."
 
-Apple recommends keeping this redirect in place for at least two weeks to give subscribers time to migrate. I kept mine active for a few months to be safe. After that, the Feedburner feed could be retired and all subscribers would be pulling from my own domain.
+Apple recommends keeping this redirect in place for at least two weeks to give subscribers time to migrate. I've kept mine in the feed forerver just to be safe. After that, the Feedburner feed could be retired and all subscribers would be pulling from my own domain.
 
 ## The Critical Importance of GUIDs
 
-Here's where things get technical, and where many podcast migrations go wrong.
-
-Every episode in your podcast feed has a GUID (Globally Unique Identifier). Think of it like a social security number for each episode. Podcast apps use these GUIDs to track which episodes a subscriber has already downloaded or listened to.
+Every episode in your podcast feed has a GUID (Globally Unique Identifier). This can be anything you want it to be but I've chosen to use my URLs as these ideally should never change. Podcast apps use these GUIDs to track which episodes a subscriber has already downloaded or listened to.
 
 Here's an example GUID from one of my episodes:
 
 ```xml
-<guid isPermaLink="false">cruze-podcast-001</guid>
+<guid isPermaLink="false">http://www.djcruze.co.uk/cms/?p=820</guid>
 ```
 
 **If you change the GUIDs when migrating your feed, you're in for a world of pain.** Podcast apps will think all your episodes are brand new, and subscribers will re-download everything. They'll also lose their play progress and which episodes they've already heard.
+
+{% callout "warning" %}
+As you can see, I had to use my old Wordpress post ID URLs as my GUIDs to ensure continuity. New episodes can use my new URL structure but to avoid people re-downloading old episodes, the GUIDs must remain the same as when they were hosted in Wordpress.
+{% endcallout %}
 
 When I migrated from Feedburner to my own feed, I made absolutely certain that every episode kept its original GUID. I went through my Feedburner feed XML, noted down each episode's GUID, and made sure my new Eleventy-generated feed used the exact same identifiers.
 
