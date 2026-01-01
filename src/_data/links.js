@@ -1,17 +1,22 @@
+const FileType = require('file-type');
+
 const COLLECTION_NAME = 'marclittlemore.com links';
 const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400?text=Image+Unavailable';
+const SUPPORTED_IMAGE_TYPES = ['jpg', 'png', 'gif', 'webp'];
 
 const isImageValid = async (url) => {
     if (!url) return false;
     try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 5000);
-        const response = await fetch(url, {
-            method: 'HEAD',
-            signal: controller.signal
-        });
+        const response = await fetch(url, { signal: controller.signal });
         clearTimeout(timeoutId);
-        return response.ok;
+        if (!response.ok) return false;
+
+        const buffer = Buffer.from(await response.arrayBuffer());
+        const fileType = await FileType.fromBuffer(buffer);
+
+        return fileType && SUPPORTED_IMAGE_TYPES.includes(fileType.ext);
     } catch {
         return false;
     }
@@ -29,9 +34,29 @@ const makeAuthenticatedCall = async (url, options) => {
 };
 
 const getLinks = async (collectionId) => {
-    const data = await makeAuthenticatedCall(`https://api.raindrop.io/rest/v1/raindrops/${collectionId}`);
+    const perPage = 50; // max allowed by API
+    let page = 0;
+    let allItems = [];
 
-    return data;
+    while (true) {
+        const url = `https://api.raindrop.io/rest/v1/raindrops/${collectionId}?page=${page}&perpage=${perPage}`;
+        const data = await makeAuthenticatedCall(url);
+
+        if (!data.items || data.items.length === 0) {
+            break;
+        }
+
+        allItems = allItems.concat(data.items);
+
+        // If we got fewer items than requested, we've reached the end
+        if (data.items.length < perPage) {
+            break;
+        }
+
+        page++;
+    }
+
+    return { items: allItems };
 };
 
 const getRaindropLinks = async () => {

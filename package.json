@@ -70,6 +70,7 @@
   "dependencies": {
     "@netlify/functions": "^2.8.2",
     "eleventy-plugin-embed-everything": "^1.21.1",
+    "file-type": "^16.5.4",
     "linkify-html": "^4.3.2",
     "linkifyjs": "^4.3.2"
   }
