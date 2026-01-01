@@ -2,7 +2,7 @@
 layout: default
 title: Links
 permalink: /links/
-# headerImage: /images/banners/links.jpg
+headerImage: /images/banners/links.jpg
 description: A collection of fascinating links I've encountered across the web, encompassing a variety of topics which intrigued me.
 image:
     source: https://unsplash.com/photos/low-angle-photography-of-gray-metal-chains-K8iHtzoIKQ4

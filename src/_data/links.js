@@ -1,4 +1,21 @@
 const COLLECTION_NAME = 'marclittlemore.com links';
+const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400?text=Image+Unavailable';
+
+const isImageValid = async (url) => {
+    if (!url) return false;
+    try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+        const response = await fetch(url, {
+            method: 'HEAD',
+            signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+        return response.ok;
+    } catch {
+        return false;
+    }
+};
 
 const makeAuthenticatedCall = async (url, options) => {
     const response = await fetch(url, {
@@ -35,7 +52,15 @@ const getRaindropLinks = async () => {
         const links = await getLinks(id);
     
         // Sort links by date
-        const sortedLinks = links.items.sort((a, b) => new Date(b.created) - new Date(a.created));
+        sortedLinks = links.items.sort((a, b) => new Date(b.created) - new Date(a.created));
+
+        // Validate cover images and replace broken ones with placeholder
+        for (const link of sortedLinks) {
+            if (!await isImageValid(link.cover)) {
+                console.log(`Invalid cover image for "${link.title}": ${link.cover}`);
+                link.cover = PLACEHOLDER_IMAGE;
+            }
+        }
     } catch (error) {
         console.error('Unable to get Raindrop links: ', error.message);
     }
