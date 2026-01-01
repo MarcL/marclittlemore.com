@@ -11,7 +11,10 @@ const isImageValid = async (url) => {
             signal: controller.signal
         });
         clearTimeout(timeoutId);
-        return response.ok;
+        if (!response.ok) return false;
+        // Ensure the Content-Type is actually an image
+        const contentType = response.headers.get('content-type');
+        return contentType && contentType.startsWith('image/');
     } catch {
         return false;
     }
@@ -29,9 +32,29 @@ const makeAuthenticatedCall = async (url, options) => {
 };
 
 const getLinks = async (collectionId) => {
-    const data = await makeAuthenticatedCall(`https://api.raindrop.io/rest/v1/raindrops/${collectionId}`);
+    const perPage = 50; // max allowed by API
+    let page = 0;
+    let allItems = [];
 
-    return data;
+    while (true) {
+        const url = `https://api.raindrop.io/rest/v1/raindrops/${collectionId}?page=${page}&perpage=${perPage}`;
+        const data = await makeAuthenticatedCall(url);
+
+        if (!data.items || data.items.length === 0) {
+            break;
+        }
+
+        allItems = allItems.concat(data.items);
+
+        // If we got fewer items than requested, we've reached the end
+        if (data.items.length < perPage) {
+            break;
+        }
+
+        page++;
+    }
+
+    return { items: allItems };
 };
 
 const getRaindropLinks = async () => {
