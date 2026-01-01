@@ -1,33 +1,22 @@
+const FileType = require('file-type');
+
 const COLLECTION_NAME = 'marclittlemore.com links';
 const PLACEHOLDER_IMAGE = 'https://placehold.co/600x400?text=Image+Unavailable';
+const SUPPORTED_IMAGE_TYPES = ['jpg', 'png', 'gif', 'webp'];
 
 const isImageValid = async (url) => {
     if (!url) return false;
     try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 5000);
-        const response = await fetch(url, {
-            signal: controller.signal
-        });
+        const response = await fetch(url, { signal: controller.signal });
         clearTimeout(timeoutId);
         if (!response.ok) return false;
 
-        // Fetch the image content and check magic bytes
-        const buffer = await response.arrayBuffer();
-        const bytes = new Uint8Array(buffer.slice(0, 12));
+        const buffer = Buffer.from(await response.arrayBuffer());
+        const fileType = await FileType.fromBuffer(buffer);
 
-        // Check for valid image formats supported by sharp
-        // JPEG: FF D8 FF
-        if (bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff) return true;
-        // PNG: 89 50 4E 47
-        if (bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4e && bytes[3] === 0x47) return true;
-        // GIF: 47 49 46 38
-        if (bytes[0] === 0x47 && bytes[1] === 0x49 && bytes[2] === 0x46 && bytes[3] === 0x38) return true;
-        // WebP: RIFF....WEBP
-        if (bytes[0] === 0x52 && bytes[1] === 0x49 && bytes[2] === 0x46 && bytes[3] === 0x46 &&
-            bytes[8] === 0x57 && bytes[9] === 0x45 && bytes[10] === 0x42 && bytes[11] === 0x50) return true;
-
-        return false;
+        return fileType && SUPPORTED_IMAGE_TYPES.includes(fileType.ext);
     } catch {
         return false;
     }
