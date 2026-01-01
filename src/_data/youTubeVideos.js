@@ -1,14 +1,9 @@
 const {google} = require('googleapis');
 const {AssetCache} = require("@11ty/eleventy-cache-assets");
 
-const youTubeService = google.youtube({
-    version: 'v3',
-    auth: process.env.YOUTUBE_API_KEY
-});
-
 const MESSENGER_MARKETING_PLAYLIST_ID = 'PLDvWRKT9Cd2g-L4_hStYOcmOfTF87U8FM';
 
-const getCachedPlaylist = async (id) => {
+const getCachedPlaylist = async (id, youTubeService) => {
     const asset = new AssetCache(`youtube-playlist-${id}`);
     
     if (asset.isCacheValid('1d')) {
@@ -29,9 +24,24 @@ const getCachedPlaylist = async (id) => {
 };
 
 const getYouTubeVideos = async () => {
+    const apiKey = process.env.YOUTUBE_API_KEY;
+
+    if (!apiKey) {
+        console.log('Warning: YOUTUBE_API_KEY not configured, returning empty videos');
+        return {
+            marketing: {
+                items: []
+            }
+        };
+    }
+
+    const youTubeService = google.youtube({
+        version: 'v3',
+        auth: apiKey
+    });
 
     try {
-        const response = await getCachedPlaylist(MESSENGER_MARKETING_PLAYLIST_ID);
+        const response = await getCachedPlaylist(MESSENGER_MARKETING_PLAYLIST_ID, youTubeService);
         
         return {
             marketing: response.data
