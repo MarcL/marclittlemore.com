@@ -1,0 +1,17 @@
+<div class="pb-4 w-full mx-auto" webc:if="headerImage">
+  <figure class="flex flex-col items-center">
+    <img :src="headerImage" :alt="title" class="rounded-lg shadow-lg" width="1240">
+    <figcaption webc:if="imageSource" class="py-2 text-center">
+      <a :href="imageSource" :title="'Image by ' + imageCreator" class="underline" target="_blank" rel="noreferrer">Original image</a>
+      by
+      <a :href="imageUrl" :title="imageCreator" class="underline" target="_blank" rel="noreferrer" @text="imageCreator"></a>
+    </figcaption>
+  </figure>
+</div>
+<script webc:setup>
+const headerImage = this['header-image'] || '';
+const title = this.title || '';
+const imageSource = this['image-source'] || '';
+const imageCreator = this['image-creator'] || '';
+const imageUrl = this['image-url'] || '';
+</script>

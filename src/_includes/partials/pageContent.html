@@ -48,20 +48,14 @@
     <div class="col-span-1 md:col-span-3 px-0 md:px-2" id="textContent">
       <section class="w-full mx-auto">
       {% unless hideImage %}
-      <div class="pb-4 w-full mx-auto">
-        <figure class="flex flex-col items-center">
-          {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
-          {% if headerImage %}
-            <img src="{{headerImage}}" alt="{{imageTitle}}" class="rounded-lg shadow-lg" width="1240">
-          {% endif %}
-
-          {% if image %}
-          <figcaption class="py-2 text-center">
-            <a href="{{image.source}}" title="Image by {{image.creator}}" class="underline" target="_blank" rel="noreferrer">Original image</a> by <a href="{{image.url}}" title="{{image.creator}}" class="underline" target="_blank" rel="noreferrer">{{image.creator}}</a>
-          </figcaption>
-          {% endif %}
-        </figure>
-      </div>
+        {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
+        <post-image
+          title="{{imageTitle}}"
+          header-image="{{headerImage}}"
+          image-source="{{image.source}}"
+          image-creator="{{image.creator}}"
+          image-url="{{image.url}}"
+        ></post-image>
       {% endunless %}
 
         <div class="prose prose-xl w-full max-w-none">
@@ -73,20 +67,14 @@
   {% else %}
   <div class="w-full" id="textContent">
       {% unless hideImage %}
-      <div class="py-4 w-full mx-auto">
-        <figure class="flex flex-col items-center">
-          {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
-          {% if headerImage %}
-            <img src="{{headerImage}}" alt="{{imageTitle}}" class="rounded-lg shadow-lg" width="1240">
-          {% endif %}
-
-          {% if image %}
-          <figcaption class="py-2 text-center">
-            <a href="{{image.source}}" title="Image by {{image.creator}}" class="underline" target="_blank" rel="noreferrer">Original image</a> by <a href="{{image.url}}" title="{{image.creator}}" class="underline" target="_blank" rel="noreferrer">{{image.creator}}</a>
-          </figcaption>
-          {% endif %}
-        </figure>
-      </div>
+        {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
+        <post-image
+          title="{{imageTitle}}"
+          header-image="{{headerImage}}"
+          image-source="{{image.source}}"
+          image-creator="{{image.creator}}"
+          image-url="{{image.url}}"
+        ></post-image>
       {% endunless %}
 
     <section class="py-4 w-full mx-auto">
