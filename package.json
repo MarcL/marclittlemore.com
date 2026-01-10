@@ -12,6 +12,7 @@
     "@11ty/eleventy-img": "^6.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
     "@aloskutov/eleventy-plugin-external-links": "^2.1.1",
     "@atproto/api": "^0.13.14",
     "@tailwindcss/aspect-ratio": "^0.4.2",
