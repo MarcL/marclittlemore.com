@@ -11,7 +11,7 @@
   </div>
 
   {% if tags contains 'post' %}
-  <div class="{{theme.page.metadata.text}} font-sm py-4 w-full mx-auto max-w-lg text-center space-y-2">
+  <div class="{{theme.page.metadata.text}} font-sm pb-4 lg:pb-8 w-full mx-auto max-w-lg text-center space-y-2">
     <div class="text-lg md:text-xl font-medium space-x-1">
       <div>
         <span>
@@ -35,7 +35,7 @@
   {% if hasSidebar and tocContents != "" %}
   <section id="mainContent" class="w-full grid grid-cols-1 md:grid-cols-4">
     <div id="sidebar" class="col-span-1 md:col-span-1 px-0 md:pr-8">
-      <section id="tableOfContents" class="w-full sticky top-0 h-screen">
+      <section id="tableOfContents" class="w-full sticky top-0">
         <div class="w-full mx-auto {{theme.page.tableOfContents.background}} text-lg prose prose-xl rounded-md prose-li:list-disc prose-a:underline my-4 md:my-0 px-2 py-2">
           <div class="p-4 space-x-2 text-xl font-semibold">
             <svg class="h-6 w-6 inline" viewBox="0 0 512 512"><path d="M88 56H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16V72a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm0 160H40a16 16 0 00-16 16v48a16 16 0 0016 16h48a16 16 0 0016-16v-48a16 16 0 00-16-16zm416 24H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8zm0-320H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8V88a8 8 0 00-8-8zm0 160H168a8 8 0 00-8 8v16a8 8 0 008 8h336a8 8 0 008-8v-16a8 8 0 00-8-8z"></path></svg>
@@ -48,7 +48,7 @@
     <div class="col-span-1 md:col-span-3 px-0 md:px-2" id="textContent">
       <section class="w-full mx-auto">
       {% unless hideImage %}
-      <div class="py-4 w-full mx-auto">
+      <div class="pb-4 w-full mx-auto">
         <figure class="flex flex-col items-center">
           {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
           {% if headerImage %}
