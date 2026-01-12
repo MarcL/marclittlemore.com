@@ -1,49 +1,25 @@
-<main id="main-content" class="flex flex-col justify-center items-center max-w-screen-xl mx-auto pt-4 pb-8 overflow-x-hidden break-words">
-  <div class="text-center max-w-3xl">
+<main id="main-content" class="flex flex-col justify-center items-center max-w-screen-xl mx-auto pb-8 break-words">
+  <div class="text-center max-w-3xl pb-4">
     {% if title %}
-      <h1 class="{{theme.page.text.title}} font-bold text-5xl py-4">
+      <h1 class="{{theme.page.text.title}} font-extrabold text-5xl tracking-tight text-balance py-4">
           {{ title }}
       </h1>
       {% endif %}
       {% if subtitle %}
-        <h2 class="{{theme.page.text.subtitle}} font-normal text-3xl pb-4">{{ subtitle }}</h2>
+        <h2 class="{{theme.page.text.subtitle}} font-normal text-3xl tracking-tighter text-balance">{{ subtitle }}</h2>
       {% endif %}
   </div>
 
-  {% unless hideImage %}
-  <div class="py-4">
-    <figure>
-      {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
-      {% if headerImage %}
-        <img src="{{headerImage}}" alt="{{imageTitle}}" class="rounded-lg shadow-lg" width="1240">
-      {% endif %}
+{% if tags contains 'post' %}
+  {%- assign renderedDate = page.date -%}
+  {%- if updatedDate -%}{%- assign renderedDate = updatedDate -%}{%- endif -%}
 
-      {% if image %}
-      <figcaption class="py-2 text-center">
-        <a href="{{image.source}}" title="Image by {{image.creator}}" class="underline" target="_blank" rel="noreferrer">Original image</a> by <a href="{{image.url}}" title="{{image.creator}}" class="underline" target="_blank" rel="noreferrer">{{image.creator}}</a>
-      </figcaption>
-      {% endif %}
-    </figure>
-  </div>
-  {% endunless %}
-
-  {% if tags contains 'post' %}
-  <div class="{{theme.page.metadata.text}} font-sm py-4 w-full mx-auto max-w-lg text-center space-y-2">
-    <div class="text-lg md:text-xl font-medium space-x-1">
-      <div>
-        <span>
-          {%- assign renderedDate = page.date -%}
-          {%- if updatedDate -%}
-            {%- assign renderedDate = updatedDate -%}
-          {%- endif -%}
-          <time datetime="{{renderedDate | date: '%Y-%m-%d'}}">{{renderedDate | date: "%B %e, %Y"}}</time>
-        </span>
-        <span>&bull;</span>
-        <span>{{ content | timeToRead }} read</span>
-      </div>
-    </div>
-  </div>
-  {% endif %}
+  <post-meta
+    :theme-class="`{{ theme.page.metadata.text }}`"
+    :date="`{{ renderedDate | date: '%Y-%m-%d' }}`"
+    :reading-time="`{{ content | timeToRead }}`"
+  ></post-meta>
+{% endif %}
 
   {% if tableOfContents %}
   {% assign tocContents = content | toc %}
@@ -63,7 +39,18 @@
       </section>
     </div>
     <div class="col-span-1 md:col-span-3 px-0 md:px-2" id="textContent">
-      <section class="py-4 w-full mx-auto">
+      <section class="w-full mx-auto">
+      {% unless hideImage %}
+        {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
+        <post-image
+          title="{{imageTitle}}"
+          header-image="{{headerImage}}"
+          image-source="{{image.source}}"
+          image-creator="{{image.creator}}"
+          image-url="{{image.url}}"
+        ></post-image>
+      {% endunless %}
+
         <div class="prose prose-xl w-full max-w-none">
             {{ content }}
         </div>
@@ -71,7 +58,18 @@
     </div>
   </section>
   {% else %}
-  <div class="w-full max-w-screen-lg" id="textContent">
+  <div class="w-full" id="textContent">
+      {% unless hideImage %}
+        {% capture imageTitle %}{{title}}{% if subtitle %} - {{subtitle}}{% endif %}{% endcapture %}
+        <post-image
+          title="{{imageTitle}}"
+          header-image="{{headerImage}}"
+          image-source="{{image.source}}"
+          image-creator="{{image.creator}}"
+          image-url="{{image.url}}"
+        ></post-image>
+      {% endunless %}
+
     <section class="py-4 w-full mx-auto">
       <div class="prose prose-xl w-full max-w-none">
           {{ content }}

@@ -3,6 +3,7 @@ require('dotenv').config();
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const rss = require('@11ty/eleventy-plugin-rss');
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+const webc = require("@11ty/eleventy-plugin-webc");
 
 const embedEverything = require('eleventy-plugin-embed-everything');
 const embedPocketCasts = require('./_eleventy/plugins/pocketcasts-embed');
@@ -22,6 +23,10 @@ module.exports = (eleventyConfig) => {
     // Plugins
     eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(webc, {
+        components: "src/_includes/components/**/*.webc",
+        useTransform: true
+    });
     eleventyConfig.addPlugin(embedEverything);
     eleventyConfig.addPlugin(embedPocketCasts);
     eleventyConfig.addPlugin(timeToRead, { style: 'short' });

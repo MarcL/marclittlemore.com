@@ -1,0 +1,17 @@
+<div 
+  webc:if="date"
+  :class="(typeof themeClass !== 'undefined' ? themeClass : '') + ' font-sm pb-4 lg:pb-8 w-full mx-auto max-w-lg text-center space-y-2'"
+>
+  <div class="text-lg md:text-xl font-medium space-x-1">
+    <div>
+      <span>
+        <time 
+          :datetime="new Date(date).toISOString().split('T')[0]" 
+          @text="new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })"
+        ></time>
+      </span>
+      <span>&bull;</span>
+      <span @text="(typeof readingTime !== 'undefined' ? readingTime : '') + ' read'"></span>
+    </div>
+  </div>
+</div>
