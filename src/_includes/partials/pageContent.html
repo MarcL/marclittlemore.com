@@ -10,23 +10,16 @@
       {% endif %}
   </div>
 
-  {% if tags contains 'post' %}
-  <div class="{{theme.page.metadata.text}} font-sm pb-4 lg:pb-8 w-full mx-auto max-w-lg text-center space-y-2">
-    <div class="text-lg md:text-xl font-medium space-x-1">
-      <div>
-        <span>
-          {%- assign renderedDate = page.date -%}
-          {%- if updatedDate -%}
-            {%- assign renderedDate = updatedDate -%}
-          {%- endif -%}
-          <time datetime="{{renderedDate | date: '%Y-%m-%d'}}">{{renderedDate | date: "%B %e, %Y"}}</time>
-        </span>
-        <span>&bull;</span>
-        <span>{{ content | timeToRead }} read</span>
-      </div>
-    </div>
-  </div>
-  {% endif %}
+{% if tags contains 'post' %}
+  {%- assign renderedDate = page.date -%}
+  {%- if updatedDate -%}{%- assign renderedDate = updatedDate -%}{%- endif -%}
+
+  <post-meta
+    :theme-class="`{{ theme.page.metadata.text }}`"
+    :date="`{{ renderedDate | date: '%Y-%m-%d' }}`"
+    :reading-time="`{{ content | timeToRead }}`"
+  ></post-meta>
+{% endif %}
 
   {% if tableOfContents %}
   {% assign tocContents = content | toc %}
