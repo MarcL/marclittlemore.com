@@ -15,8 +15,6 @@ image:
 
 Way back in the mid 2000s, I was still a mildly successful DJ under my alter ego of [DJ Cruze](https://www.djcruze.co.uk/).
 
-Humblebrag, I know.
-
 ## Discovering podcasts
 
 I was regularly travelling to Germany and playing at various clubs and I wanted to share my mixes with a wider audience, and yes, try to get a few more DJ gigs! 
