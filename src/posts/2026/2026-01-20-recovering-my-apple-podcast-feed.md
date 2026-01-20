@@ -1,7 +1,7 @@
 ---
 title: "Recovering My Apple Podcast Feed"
 permalink: "/recovering-my-apple-podcast-feed/"
-date: "2026-01-13"
+date: "2026-01-20"
 headerImage: "/images/banners/recovering-my-apple-podcast-feed.jpg"
 description: "How I reclaimed ownership of my podcast feed after nearly 20 years."
 excerpt: When you post your podcast to Apple Podcasts back in 2005, and lose your RSS feed, it's tricky to get ownership of your feed so here's how I did it.
@@ -61,7 +61,7 @@ Here's what I added to my RSS podcast feed:
 
 This tag tells Apple that you feed has moved to the URL. Make sure you leave the old HTTP 301 redirect in place from the old feed URL to the new one as well.
 
-Apple [recommends](https://podcasters.apple.com/support/837-change-the-rss-feed-url) keeping this redirect in place for at least four weeks to give subscribers time to migrate. I've kept mine in the feed forerver just to be safe. After this, the old feed can be retired and all subscribers should be receiving updates from the new feed.
+Apple [recommends](https://podcasters.apple.com/support/837-change-the-rss-feed-url) keeping this redirect in place for at least four weeks to give subscribers time to migrate. I've kept mine in the feed forever just to be safe. After this, the old feed can be retired and all subscribers should be receiving updates from the new feed.
 
 ## The importance of GUIDs
 
