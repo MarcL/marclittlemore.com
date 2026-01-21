@@ -1,3 +1,4 @@
+const Fetch = require('@11ty/eleventy-fetch');
 const FileType = require('file-type');
 
 const COLLECTION_NAME = 'marclittlemore.com links';
@@ -9,11 +10,14 @@ const isImageValid = async (url) => {
     try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 5000);
-        const response = await fetch(url, { signal: controller.signal });
+        const arrayBuffer = await Fetch(url, {
+            duration: '1d',
+            type: 'buffer',
+            fetchOptions: { signal: controller.signal }
+        });
         clearTimeout(timeoutId);
-        if (!response.ok) return false;
 
-        const buffer = Buffer.from(await response.arrayBuffer());
+        const buffer = Buffer.from(arrayBuffer);
         const fileType = await FileType.fromBuffer(buffer);
 
         return fileType && SUPPORTED_IMAGE_TYPES.includes(fileType.ext);
@@ -22,15 +26,18 @@ const isImageValid = async (url) => {
     }
 };
 
-const makeAuthenticatedCall = async (url, options) => {
-    const response = await fetch(url, {
-        headers: {
-            Authorization: `Bearer ${process.env.RAINDROP_API_TOKEN}`
-        },
-        ...options
+const makeAuthenticatedCall = async (url) => {
+    const response = await Fetch(url, {
+        duration: '1d',
+        type: 'json',
+        fetchOptions: {
+            headers: {
+                Authorization: `Bearer ${process.env.RAINDROP_API_TOKEN}`
+            }
+        }
     });
 
-    return await response.json();
+    return response;
 };
 
 const getLinks = async (collectionId) => {
