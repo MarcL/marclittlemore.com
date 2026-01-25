@@ -1,26 +1,30 @@
 ---
-title: "How I Unlocked My MDM-Locked M1 MacBook Pro"
-subtitle: ""
-permalink: "/how-i-unlocked-my-mdm-locked-m1-macbook-pro/"
-date: "2025-10-31"
-# headerImage: "/images/banners/how-i-unlocked-my-mdm-locked-m1-macbook-pro.jpg"
-headerImage: "/images/banners/write-ideas.jpg"
-description: ""
+title: Rescuing My "Bricked" M1 MacBook Pro
+subtitle: "A guide to surviving MDM locks and Apple’s DFU."
+permalink: "/rescuing-my-bricked-m1-macbook-pro/"
+date: "2026-01-25"
+headerImage: "/images/banners/rescuing-my-bricked-m1-macbook-pro.jpg"
+description: "Found a locked M1 Mac in the wardrobe? Here is how to bypass the MDM recovery lock using DFU mode without losing your mind."
 tags:
-    -
+    - tech
+    - hardware
 image:
-    source: ""
-    creator: ""
-    url: ""
+    source: "https://unsplash.com/photos/slightly-opened-silver-macbook-mP7aPSUm7aE"
+    creator: "Dmitry Chernyshov"
+    url: "https://unsplash.com/@oneor0"
 ---
 
-Back in 2021, I joined a small logistics startup called Beacon. Although, I didn't end up working there for very long, I ended up with a company MacBook Pro M1 sitting in my wardrobe. It should have been sent back but due to a major family health emergency at the same time, it sat forgotten in the back of my wardrobe.
+Back in 2021, I joined a small logistics startup called Beacon. Although, I didn't end up working there for very long, I still had the company MacBook Pro M1. It should have been sent back but due to a major family health emergency at the same time, I forgot about it in the back of my wardrobe.
 
-It's now October 2025 and my son has just gone off to university in Glasgow. In his first week he managed to damage his laptop screen with an ill-timed AirPod case incident which made it difficult for him to use. After some digging in the cupboards for an old laptop, I realised I had the MacBook and should see if it was still usable.
+In last September 2025, my son had just gone off to university. In his first week he managed to damage his laptop screen with an ill-timed AirPod case incident which made it difficult for him to use. After some digging in the cupboards for an old laptop, I realised I had the MacBook and thought I'd see if it was still usable.
 
-It booted up fine but it was completely locked down with MDM (Mobile Device Management) software, JAMF, and I didn't have any credentials to login.
+It booted up fine but it was completely locked down with MDM (Mobile Device Management) software, [JAMF](https://www.jamf.com/), and I didn't have any credentials to login.
 
-So here's the story of a series of challenges to finally unlock the machine. As I struggled to find any concerete information online, I thought I'd share it here for anyone else who might face similar issues.
+So here's the story of a series of challenges to unlock the machine. As I struggled to find any concerete information online, I thought I'd share it here for anyone else who might face similar issues.
+
+{% callout "warning" %}
+**This will not help you to unlock a stolen MacBook Pro.** This post is only for legitimately owned devices that are locked but released from MDM profiles. It won't help you bypass Activation Lock or any other security features designed to prevent theft.
+{% endcallout %}
 
 ## So what was the problem?
 
