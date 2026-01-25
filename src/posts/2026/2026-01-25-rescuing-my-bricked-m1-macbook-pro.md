@@ -1,5 +1,5 @@
 ---
-title: Rescuing My "Bricked" M1 MacBook Pro
+title: Rescuing My Bricked M1 MacBook Pro
 subtitle: "A guide to surviving MDM locks and Apple's DFU."
 permalink: "/rescuing-my-bricked-m1-macbook-pro/"
 date: "2026-01-25"
@@ -17,9 +17,9 @@ image:
 
 Back in 2021, I joined a logistics startup called Beacon. I didn't stay long, but I walked away with a company MacBook Pro M1. It should have been sent back, but a major family health emergency happened at the same time and I completely forgot about it in the back of my wardrobe.
 
-Fast forward to last September. My son had just gone off to university and, within a week, he'd managed to damage his laptop screen with an ill-timed AirPod case incident. Since he was struggling to use it, I went digging in the cupboards for a spare.
+Fast forward to September 2025. My son had just gone off to university and, within a week, he'd managed to damage his laptop screen with an ill-timed AirPod case incident. Since he was struggling to use it, I went digging in the cupboards for a spare.
 
-I rediscovered the MacBook and thought I'd see if it was still usable after I'd previously wiped it. It booted up fine, but it was completely locked down with [JAMF](https://www.jamf.com/), and I didn't have any credentials to log in. JAMF is a Mobile Device Management (MDM) system that companies use to manage their Apple devices.
+I rediscovered the MacBook and thought I'd see if it was still usable after I'd previously wiped it. It booted up fine, but it was completely locked down with [JAMF](https://www.jamf.com/), and I didn't have any credentials to log in. JAMF is a Mobile Device Management (MDM) system that companies use to manage their company devices.
 
 What followed was a massive rabbit hole of trying to unlock a machine that everyone told me was a "brick." As I struggled to find any concrete information online, I thought I'd share the process here for anyone else facing the same headache.
 
@@ -44,17 +44,17 @@ This is where I went down a rabbit hole. Since this was an Apple Silicon M1 chip
 Essentially, there are two different layers of the security onion:
 
 * **FileVault** is disk encryption. It makes your data unreadable if the laptop is stolen, but it doesn't stop someone from wiping the whole machine.
-* **Recovery Lock** is what I was dealing with. It's an MDM hurdle that locks the recovery partition itself. It's there to stop someone from simply hitting "factory reset."
+* **Recovery Lock** is what I was dealing with. It's an MDM hurdle that locks the recovery partition itself. It's there to stop someone from simply hitting "factory reset" on a stolen laptop and reusing it.
 
-I was eventually told by the IT provider to call Apple Support. They suggested they could remove the recovery lock if I provided proof of purchase (which I had). When I finally got through to someone technical, he was a bit patronising but somewhat helpful. He confirmed they couldn't actually remove the recovery key as it's a core security feature.
+I was eventually told by the IT provider to call Apple Support. They suggested that Apple could remove the recovery lock if I provided proof of purchase (which I had). When I finally escalating the issue to someone technical at Apple, he was a bit patronising but somewhat helpful. He confirmed they couldn't actually remove the recovery key as it's a core security feature.
 
-He suggested the MDM hadn't actually been removed since I could still see the login screen. It turned out that was a total red herring, but it confirmed one thing: I was on my own to figure out how to wipe the hardware.
+He suggested the MDM hadn't actually been removed since I could still see the login screen. It turned out that this wasn't actually correct, but it confirmed one thing: I was on my own to figure out how to wipe the hardware as nobody knew how to!
 
-Even after a device is removed from Apple Business Manager, M1 Macs can keep "cached" records that still see the machine as a corporate device. Without the recovery key, you're a bit buggered as you can't even enter recovery mode to wipe the drive.
+Even after a device is removed from Apple Business Manager, M1 Macs seem to keep cached records that still see the machine as a corporate device. Without the recovery key, you're a bit buggered as you can't even enter recovery mode to wipe the drive.
 
 ## The solution: DFU restore
 
-After a lot of research, I discovered that recovery locks on M1 Macs can be bypassed using DFU (Device Firmware Update) mode to completely restore the machine. 
+After a lot of research, I discovered that recovery locks on M1 Macs can be bypassed using DFU (Device Firmware Update) mode to completely restore the machine. Again, this can only be done if the laptop has been unenrolled from MDM.
 
 DFU mode allows you to reinstall the firmware and OS, bypassing all locks. The downside is that it erases everything on the Mac, but since I couldn't access it anyway, that wasn't an issue.
 
@@ -111,10 +111,10 @@ The recovery lock was gone. The MDM was gone. It was completely clean and ready 
 
 ## What I learned
 
-If you're facing a similar situation, here are the "small wins" to keep in mind:
+If you're facing a similar situation, here are the small wins to keep in mind:
 
 * **The Cable Matters:** Not all USB-C cables are created equal. If DFU isn't triggering, swap the cable.
 * **Manual Downloads:** Always get the IPSW file yourself. It's much more reliable than letting the app handle it.
-* **Counting Out Loud:** It sounds stupid, but it's the only way to hit that 10-second window accurately.
+* **Counting Out Loud:** It sounds stupid, but it's the only way to hit that 10-second window accurately for DFU mode.
 
-It's a frustrating process, but it's definitely possible to recover a "bricked" device if you have the patience to work through it! :smile:
+It's a frustrating process, but it's definitely possible to recover a bricked device if you have the patience to work through it! :smile:
