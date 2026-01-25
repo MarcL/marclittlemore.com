@@ -46,7 +46,7 @@ Essentially, there are two different layers of the security onion:
 * **FileVault** is disk encryption. It makes your data unreadable if the laptop is stolen, but it doesn't stop someone from wiping the whole machine.
 * **Recovery Lock** is what I was dealing with. It's an MDM hurdle that locks the recovery partition itself. It's there to stop someone from simply hitting "factory reset" on a stolen laptop and reusing it.
 
-I was eventually told by the IT provider to call Apple Support. They suggested that Apple could remove the recovery lock if I provided proof of purchase (which I had). When I finally escalating the issue to someone technical at Apple, he was a bit patronising but somewhat helpful. He confirmed they couldn't actually remove the recovery key as it's a core security feature.
+I was eventually told by the IT provider to call Apple Support. They suggested that Apple could remove the recovery lock if I provided proof of purchase (which I had). When I finally escalated the issue to someone technical at Apple, he was a bit patronising but somewhat helpful. He confirmed they couldn't actually remove the recovery key as it's a core security feature.
 
 He suggested the MDM hadn't actually been removed since I could still see the login screen. It turned out that this wasn't actually correct, but it confirmed one thing: I was on my own to figure out how to wipe the hardware as nobody knew how to!
 
